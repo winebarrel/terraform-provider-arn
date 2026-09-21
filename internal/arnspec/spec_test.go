@@ -109,7 +109,7 @@ func TestSnakeCase(t *testing.T) {
 // entries are pinned. A rename here is a breaking change for every
 // configuration that calls the function.
 func TestGeneratedSpecs(t *testing.T) {
-	require.NotEmpty(t, arnspec.All)
+	require.NotEmpty(t, arnspec.All())
 
 	for _, tt := range []struct {
 		name string
@@ -131,7 +131,7 @@ func TestGeneratedSpecs(t *testing.T) {
 // Every generated name must be usable as a Terraform identifier, and unique.
 func TestGeneratedNamesAreValidAndUnique(t *testing.T) {
 	seen := map[string]bool{}
-	for _, s := range arnspec.All {
+	for _, s := range arnspec.All() {
 		assert.Regexp(t, `^[a-z][a-z0-9_]*$`, s.Name)
 		assert.False(t, seen[s.Name], "duplicate %s", s.Name)
 		seen[s.Name] = true
@@ -145,7 +145,7 @@ func TestGeneratedNamesAreValidAndUnique(t *testing.T) {
 // Every generated template must build once it is given values and arguments.
 func TestGeneratedSpecsAllBuild(t *testing.T) {
 	v := arnspec.Values{Partition: "aws", Region: "ap-northeast-1", AccountID: "111111111111"}
-	for _, s := range arnspec.All {
+	for _, s := range arnspec.All() {
 		args := make([]string, len(s.Args))
 		for i := range args {
 			args[i] = "x"

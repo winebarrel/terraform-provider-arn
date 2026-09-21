@@ -56,8 +56,9 @@ func (p *ARNProvider) DataSources(_ context.Context) []func() datasource.DataSou
 // is why the specs are generated into the binary rather than fetched from the
 // AWS service reference feed at run time.
 func (p *ARNProvider) Functions(_ context.Context) []func() function.Function {
-	out := make([]func() function.Function, 0, len(arnspec.All))
-	for _, s := range arnspec.All {
+	all := arnspec.All()
+	out := make([]func() function.Function, 0, len(all))
+	for _, s := range all {
 		out = append(out, func() function.Function {
 			return ARNFunction{spec: s, cache: p.cache}
 		})

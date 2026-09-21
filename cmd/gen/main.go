@@ -18,6 +18,7 @@ import (
 	"net/http"
 	"os"
 	"os/exec"
+	"path/filepath"
 	"sort"
 	"strings"
 	"sync"
@@ -54,7 +55,7 @@ type entry struct {
 
 func main() {
 	endpoint := flag.String("endpoint", defaultEndpoint, "AWS service reference endpoint")
-	out := flag.String("out", "internal/arnspec/spec_gen.go", "output file")
+	dir := flag.String("dir", "internal/arnspec", "output directory")
 	flag.Parse()
 
 	client := &http.Client{Timeout: httpTimeout}
@@ -74,12 +75,57 @@ func main() {
 	}
 	log.Printf("functions: %d", len(entries))
 
-	if err := os.WriteFile(*out, render(entries, *endpoint), 0o644); err != nil { //nolint:gosec
-		log.Fatalf("write %s: %v", *out, err)
+	written, err := write(*dir, entries, *endpoint)
+	if err != nil {
+		log.Fatal(err)
 	}
-	if err := exec.Command("gofmt", "-w", *out).Run(); err != nil {
-		log.Fatalf("gofmt %s: %v", *out, err)
+	log.Printf("files: %d", written)
+}
+
+// write emits one file per service and removes the files of services that are
+// no longer in the feed. Splitting by service keeps each file small enough to
+// read and makes a diff after regeneration show which services actually
+// changed, instead of one 2000-line file moving around.
+func write(dir string, entries []entry, endpoint string) (int, error) {
+	byService := map[string][]entry{}
+	for _, e := range entries {
+		byService[e.Service] = append(byService[e.Service], e)
 	}
+
+	// Two services must not map to the same file. They cannot today, since
+	// the feed's service names are unique and already lowercase, but the
+	// filename goes through SnakeCase and a future name with a different
+	// separator could collide.
+	paths := map[string]string{}
+	for svc := range byService {
+		p := filepath.Join(dir, "spec_"+arnspec.SnakeCase(svc)+"_gen.go")
+		if prev, dup := paths[p]; dup {
+			return 0, fmt.Errorf("services %q and %q both map to %s", prev, svc, p)
+		}
+		paths[p] = svc
+	}
+
+	stale, err := filepath.Glob(filepath.Join(dir, "spec_*_gen.go"))
+	if err != nil {
+		return 0, err
+	}
+	for _, p := range stale {
+		if _, keep := paths[p]; !keep {
+			if err := os.Remove(p); err != nil {
+				return 0, fmt.Errorf("remove %s: %w", p, err)
+			}
+		}
+	}
+
+	for p, svc := range paths {
+		if err := os.WriteFile(p, render(svc, byService[svc], endpoint), 0o644); err != nil { //nolint:gosec
+			return 0, fmt.Errorf("write %s: %w", p, err)
+		}
+	}
+	if err := exec.Command("gofmt", "-w", dir).Run(); err != nil {
+		return 0, fmt.Errorf("gofmt %s: %w", dir, err)
+	}
+	return len(paths), nil
 }
 
 func fetchAll(client *http.Client, index []indexEntry) []serviceDoc {
@@ -187,25 +233,27 @@ func validIdent(s string) bool {
 	return true
 }
 
-func render(entries []entry, endpoint string) []byte {
+func render(service string, entries []entry, endpoint string) []byte {
 	var b strings.Builder
 	fmt.Fprintf(&b, `// Code generated from the AWS service reference using cmd/gen; DO NOT EDIT.
 //
-// Source: %s
+// Service: %s
+// Source: %s/v1/%s/%s.json
 // Functions: %d
 //
 // Regenerate with: make gen
 
 package arnspec
 
-var specs = []Spec{
-`, endpoint, len(entries))
+func init() {
+	register([]Spec{
+`, service, endpoint, service, service, len(entries))
 
 	for _, e := range entries {
-		fmt.Fprintf(&b, "\t{Name: %q, Service: %q, Resource: %q, Template: %q},\n",
+		fmt.Fprintf(&b, "\t\t{Name: %q, Service: %q, Resource: %q, Template: %q},\n",
 			e.Name, e.Service, e.Resource, e.Template)
 	}
-	b.WriteString("}\n")
+	b.WriteString("\t})\n}\n")
 	return []byte(b.String())
 }
 

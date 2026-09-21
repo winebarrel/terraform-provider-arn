@@ -164,10 +164,12 @@ $ make docs          # regenerate docs/
 ```
 
 `make gen` refetches the AWS service reference and rewrites
-`internal/arnspec/spec_gen.go`. The table is committed so that the set of
-functions is fixed at build time: the provider declares its functions at
-startup, before any network call could be allowed to fail, and a plan should
-not change because AWS published a new resource type this morning.
+`internal/arnspec/spec_<service>_gen.go`, one file per service. The tables are
+committed so that the set of functions is fixed at build time: the provider
+declares its functions at startup, before any network call could be allowed to
+fail, and a plan should not change because AWS published a new resource type
+this morning. Regenerating is idempotent, and a service that leaves the feed
+has its file deleted.
 
 ## License
 

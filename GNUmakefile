@@ -24,7 +24,7 @@ lint:
 
 .PHONY: gen
 gen:
-	go run ./cmd/gen -out internal/arnspec/spec_gen.go
+	go run ./cmd/gen -dir internal/arnspec
 
 .PHONY: clean
 clean:
