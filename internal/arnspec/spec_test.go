@@ -318,8 +318,12 @@ func TestBuildAllowsSlashInArgument(t *testing.T) {
 // test here.
 func TestGeneratedPlaceholderPositions(t *testing.T) {
 	// Field index counted in colons: 1 partition, 2 service, 3 region,
-	// 4 account, 5 and beyond the resource part.
+	// 4 account, 5 and beyond the resource part. Field 0 is the text before
+	// the first colon, which is the literal "arn" in every template. It is
+	// carried through with an empty set so that a placeholder landing there
+	// fails the assertions below instead of panicking on a nil map.
 	want := map[int]map[string]bool{
+		0: {},
 		1: {"Partition": true},
 		2: {"Vendor": true},
 		3: {"Region": true},
@@ -331,7 +335,7 @@ func TestGeneratedPlaceholderPositions(t *testing.T) {
 		},
 	}
 
-	counts := map[int]map[string]int{1: {}, 2: {}, 3: {}, 4: {}}
+	counts := map[int]map[string]int{0: {}, 1: {}, 2: {}, 3: {}, 4: {}}
 
 	for _, s := range arnspec.All() {
 		rest, field := s.Template, 0
@@ -357,6 +361,7 @@ func TestGeneratedPlaceholderPositions(t *testing.T) {
 	// The counts themselves, so a template moving between fields shows up
 	// even when the name is already known.
 	assert.Equal(t, map[int]map[string]int{
+		0: {},
 		1: {"Partition": 2321},
 		2: {"Vendor": 1},
 		3: {"Region": 2095},
