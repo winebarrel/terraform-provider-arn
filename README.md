@@ -1,5 +1,8 @@
 # terraform-provider-arn
 
+[![CI](https://github.com/winebarrel/terraform-provider-arn/actions/workflows/ci.yml/badge.svg)](https://github.com/winebarrel/terraform-provider-arn/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/winebarrel/terraform-provider-arn/graph/badge.svg?token=YsOFKSDseA)](https://codecov.io/gh/winebarrel/terraform-provider-arn)
+
 Terraform functions that build AWS ARNs.
 
 Interpolating the account id into every ARN makes a configuration hard to
