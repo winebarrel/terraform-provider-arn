@@ -1,0 +1,169 @@
+---
+page_title: "arn Provider"
+description: |-
+  Builds AWS ARNs from a small configuration file.
+---
+
+# arn Provider
+
+Builds AWS ARNs, so a configuration does not have to interpolate
+`data.aws_caller_identity.current.account_id` into every ARN string:
+
+```hcl
+# arn:aws:iam::${data.aws_caller_identity.current.account_id}:role/my-role
+provider::arn::iam_role("my-role")
+```
+
+There is one function per resource type in the
+[AWS service reference](https://servicereference.us-east-1.amazonaws.com),
+named `<service>_<resource>`.
+
+## Configuration file
+
+The account, region and partition come from `.arn.hcl` in the directory
+Terraform runs in. Set `ARN_CONFIG` to read a different path. The file is
+required, though an empty one is enough for ARNs that need nothing from it.
+
+```hcl
+account_id = "111111111111"
+region     = "ap-northeast-1"
+
+account "prod" {
+  account_id = "222222222222"
+}
+
+account "us" {
+  account_id = "333333333333"
+  region     = "us-east-1"
+}
+```
+
+Provider-defined functions cannot read provider configuration, which is why
+these values live in a file rather than in a `provider "arn"` block.
+
+An `account` block inherits every field it does not set, so `prod` above uses
+the top-level `ap-northeast-1`. `partition` defaults to `aws`.
+
+## Options
+
+Every function takes an optional trailing map:
+
+```hcl
+provider::arn::iam_role("my-role", { account = "prod" })
+provider::arn::sqs_queue("my-queue", { region = "us-east-1" })
+provider::arn::s3_bucket("my-bucket", { partition = "aws-cn" })
+provider::arn::iam_role("my-role", { account_id = "999999999999" })
+```
+
+| Option | Meaning |
+|---|---|
+| `account` | Name of an `account` block in the configuration file |
+| `account_id` | A literal account id, bypassing the `account` blocks |
+| `region` | Region to use instead of the resolved one |
+| `partition` | Partition to use instead of the resolved one |
+
+`account` and `account_id` cannot be given together. An unrecognized option
+is an error rather than a silent fallback to the default account, and so is an
+explicitly empty value: write nothing, or `null`, to use the default.
+
+## Validation
+
+The values are checked for shape, not existence. An account that does not
+exist, or a region AWS has not built yet, is not something a string can be
+asked about. What the checks catch is the value that could never be right,
+which would otherwise be interpolated into a syntactically valid ARN and fail
+much later, at apply time, somewhere unhelpful.
+
+An ARN is `arn:partition:service:region:account:resource`.
+
+| Field | Rule |
+|---|---|
+| `partition` | `aws`, `aws-` plus one or more words, or `*` |
+| `region` | A name like `ap-northeast-1`, including `us-gov-west-1` and `us-iso-east-1`, or `*` |
+| `account` | Twelve digits, `aws`, or `*` |
+| Arguments | Not empty, and no `:` in a structural field |
+
+`aws` is the account AWS-managed policies carry, and `*` is how an ARN written
+for an IAM policy wildcards a field. IAM Access Analyzer reports the supported
+partitions as `*, aws, aws-cn, aws-us-gov`.
+
+```hcl
+provider::arn::iam_policy("AdministratorAccess", { account_id = "aws" })
+# arn:aws:iam::aws:policy/AdministratorAccess
+
+provider::arn::ec2_vpc("*", { region = "*" })
+# arn:aws:ec2:*:111111111111:vpc/*
+
+provider::arn::s3_object("my-bucket", "*", { partition = "*" })
+# arn:*:s3:::my-bucket/*
+```
+
+A rule applies wherever its field comes from. Most templates take the account
+from the configuration, but a few spell it as a placeholder, so it arrives as
+an argument instead: chime and datasync write `${AccountId}` rather than
+`${Account}`. Those arguments are checked like any other account id, and which
+ones they are follows from the field's position in the template rather than
+from what AWS named the placeholder.
+
+```hcl
+provider::arn::chime_meeting("abc", "m1")
+# invalid account id "abc"
+```
+
+An argument in one of the five structural fields cannot contain a `:` either,
+because that would shift every field after it and name something else
+entirely.
+
+Inside the resource part a colon is just a character, and what it separates is
+up to the service, so it is left alone:
+
+```hcl
+provider::arn::s3_object("my-bucket", "a:b/c.txt")
+# arn:aws:s3:::my-bucket/a:b/c.txt
+
+provider::arn::lambda_function_alias("fn", "PROD")
+# arn:aws:lambda:ap-northeast-1:111111111111:function:fn:PROD
+```
+
+A slash is never a field separator, and IAM role paths, S3 object keys and log
+group names all contain them:
+
+```hcl
+provider::arn::iam_role("path/to/my-role")
+# arn:aws:iam::111111111111:role/path/to/my-role
+```
+
+The configuration file goes through the same check, so a typo there is
+reported even when the call site overrides nothing.
+
+## Arguments
+
+The arguments are the ARN template's placeholders, in order, excluding
+`${Partition}`, `${Region}` and `${Account}`. Most resource types need one:
+
+```hcl
+# arn:${Partition}:iam::${Account}:role/${RoleNameWithPath}
+provider::arn::iam_role("my-role")
+```
+
+Some need more:
+
+```hcl
+# arn:${Partition}:access-analyzer:${Region}:${Account}:analyzer/${AnalyzerName}/archive-rule/${RuleName}
+provider::arn::access_analyzer_archive_rule("my-analyzer", "my-rule")
+```
+
+A few resource types publish more than one ARN format, always because AWS kept
+an older API's shape alongside the current one. The extras take a numeric
+suffix, and each function's page shows the template it builds:
+
+```hcl
+# arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/authorizers/${AuthorizerId}
+provider::arn::apigateway_authorizer("api1", "auth1")
+
+# arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/authorizers/${AuthorizerId}
+provider::arn::apigateway_authorizer_2("rest1", "auth1")
+```
+
+<!-- schema generated by tfplugindocs -->
+## Schema
