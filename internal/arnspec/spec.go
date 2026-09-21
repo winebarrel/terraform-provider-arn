@@ -49,6 +49,11 @@ type Spec struct {
 	// parts[0] + holes[0] + parts[1] + ... with one more part than hole.
 	parts []string
 	holes []string
+
+	// holeField is the ARN field each hole lands in, same order and length
+	// as holes. Build reads it rather than counting separators again, since
+	// the answer cannot change once the template is parsed.
+	holeField []int
 }
 
 // Parse fills in the derived fields of a spec from its Template. It is called
@@ -72,8 +77,10 @@ func Parse(s *Spec) error {
 	// arn:partition:service:region:account:resource, so everything from the
 	// fifth colon on is the resource part.
 	colons := 0
+	s.holeField = make([]int, len(holes))
 	for i, h := range holes {
 		colons += strings.Count(parts[i], ":")
+		s.holeField[i] = colons
 		switch colons {
 		case partitionFieldIndex:
 			// Always available: it defaults to "aws".
@@ -151,14 +158,13 @@ func (s *Spec) Build(v Values, args []string) (string, error) {
 
 	var b strings.Builder
 	b.Grow(len(s.Template) + 32)
-	arg, colons := 0, 0
+	arg := 0
 	for i, p := range s.parts {
 		b.WriteString(p)
 		if i >= len(s.holes) {
 			break
 		}
-		colons += strings.Count(p, ":")
-		switch h := s.holes[i]; colons {
+		switch h := s.holes[i]; s.holeField[i] {
 		case partitionFieldIndex:
 			b.WriteString(v.Partition)
 		case regionFieldIndex:
