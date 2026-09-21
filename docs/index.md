@@ -62,7 +62,9 @@ provider::arn::iam_role("my-role", { account_id = "999999999999" })
 | `region` | Region to use instead of the resolved one |
 | `partition` | Partition to use instead of the resolved one |
 
-`account` and `account_id` cannot be given together.
+`account` and `account_id` cannot be given together. An unrecognized option
+is an error rather than a silent fallback to the default account, and so is an
+explicitly empty value: write nothing, or `null`, to use the default.
 
 ## Arguments
 

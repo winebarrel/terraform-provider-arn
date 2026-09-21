@@ -86,3 +86,12 @@ func TestDiagSummary(t *testing.T) {
 	}
 	assert.Equal(t, "summary only; with detail: the detail", provider.DiagSummary(diags))
 }
+
+func TestParseOptsRejectsEmptyValues(t *testing.T) {
+	_, err := provider.ParseOpts(context.Background(), optsMap(t, map[string]attr.Value{
+		"account": types.StringValue(""),
+		"region":  types.StringValue(""),
+	}))
+	require.Error(t, err)
+	assert.Contains(t, err.Error(), "option(s) account, region set to an empty string")
+}

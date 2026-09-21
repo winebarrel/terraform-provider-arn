@@ -200,18 +200,27 @@ func override(dst *string, src *string) {
 // Cache memoizes a single Config for the lifetime of the provider process.
 // Terraform keeps the provider alive for the whole plan or apply, so the
 // file is read once no matter how many ARNs a configuration builds.
+//
+// The path is fixed at construction rather than passed to Get, so that the
+// memoized value cannot disagree with the path a caller asked for.
 type Cache struct {
+	path string
 	once sync.Once
 	cfg  *Config
 	err  error
 }
 
+// NewCache returns a cache that will read path on first use.
+func NewCache(path string) *Cache {
+	return &Cache{path: path}
+}
+
 // Get loads the configuration on first use. The error, if any, is cached
 // too: a malformed file should report the same diagnostic on every function
 // call rather than being retried per call.
-func (c *Cache) Get(path string) (*Config, error) {
+func (c *Cache) Get() (*Config, error) {
 	c.once.Do(func() {
-		c.cfg, c.err = Load(path)
+		c.cfg, c.err = Load(c.path)
 	})
 	return c.cfg, c.err
 }

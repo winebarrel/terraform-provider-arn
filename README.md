@@ -124,8 +124,9 @@ provider::arn::iam_role("my-role", { account_id = "999999999999" })
 ```
 
 `partition` defaults to `aws`. `account` and `account_id` cannot be given
-together, and an unrecognized option is an error rather than a silent
-fallback to the default account.
+together. An unrecognized option is an error rather than a silent fallback to
+the default account, and so is an explicitly empty value: write nothing, or
+`null`, to use the default.
 
 ## Why a file instead of a provider block
 

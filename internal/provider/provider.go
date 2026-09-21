@@ -68,6 +68,9 @@ func (p *ARNProvider) Functions(_ context.Context) []func() function.Function {
 
 func New(version string) func() provider.Provider {
 	return func() provider.Provider {
-		return &ARNProvider{version: version, cache: &arnconf.Cache{}}
+		// The path is resolved here, once per provider process, rather than
+		// per function call: ARN_CONFIG changing midway through a plan would
+		// be a confusing thing to honour.
+		return &ARNProvider{version: version, cache: arnconf.NewCache(arnconf.DefaultPath())}
 	}
 }

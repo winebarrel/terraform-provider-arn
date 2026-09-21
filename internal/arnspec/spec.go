@@ -118,7 +118,7 @@ func (s *Spec) Build(v Values, args []string) (string, error) {
 		return "", fmt.Errorf("%s takes %d argument(s), got %d", s.Name, len(s.Args), len(args))
 	}
 	if v.Partition == "" {
-		return "", fmt.Errorf("partition is empty")
+		return "", fmt.Errorf("%s needs a partition: set partition in the configuration file, or pass { partition = ... }", s.Name)
 	}
 	if s.NeedsRegion && v.Region == "" {
 		return "", fmt.Errorf("%s needs a region: set region in the configuration file, or pass { region = ... }", s.Name)

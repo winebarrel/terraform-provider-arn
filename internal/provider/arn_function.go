@@ -63,7 +63,8 @@ func (f ARNFunction) Definition(_ context.Context, _ function.DefinitionRequest,
 
 const optionsDoc = "Optional overrides: `account` (the name of an `account` block in the configuration file), " +
 	"`account_id` (a literal account id), `region` and `partition`. " +
-	"At most one options map may be given."
+	"At most one options map may be given. An unrecognized key, or a value set to an empty string, is an error; " +
+	"omit an option, or set it to `null`, to use the default."
 
 func (f ARNFunction) markdownDescription() string {
 	var b strings.Builder
@@ -117,7 +118,7 @@ func (f ARNFunction) Run(ctx context.Context, req function.RunRequest, resp *fun
 	// Both failure modes name the file themselves: the not-found error spells
 	// out the path, and HCL diagnostics carry the filename and position. A
 	// wrapper here would only repeat it.
-	cfg, err := f.cache.Get(arnconf.DefaultPath())
+	cfg, err := f.cache.Get()
 	if err != nil {
 		resp.Error = function.ConcatFuncErrors(resp.Error, function.NewFuncError(err.Error()))
 		return
@@ -157,9 +158,18 @@ func parseOpts(ctx context.Context, m types.Map) (arnconf.Opts, error) {
 	}
 
 	var o arnconf.Opts
-	var unknown []string
+	var unknown, empty []string
 	for k, v := range raw {
 		if v.IsNull() || v.IsUnknown() {
+			continue
+		}
+		// An explicitly empty value is rejected for the same reason an
+		// unknown key is: { account = "" } reads as a deliberate choice, but
+		// falling back to the default account would build a valid-looking ARN
+		// pointing somewhere else. A caller who wants the default writes
+		// nothing, or null.
+		if v.ValueString() == "" {
+			empty = append(empty, k)
 			continue
 		}
 		switch k {
@@ -179,6 +189,11 @@ func parseOpts(ctx context.Context, m types.Map) (arnconf.Opts, error) {
 		sort.Strings(unknown)
 		return arnconf.Opts{}, fmt.Errorf("unknown option(s) %s: valid options are %s, %s, %s, %s",
 			strings.Join(unknown, ", "), optAccount, optAccountID, optPartition, optRegion)
+	}
+	if len(empty) > 0 {
+		sort.Strings(empty)
+		return arnconf.Opts{}, fmt.Errorf("option(s) %s set to an empty string: omit the option, or set it to null, to use the default",
+			strings.Join(empty, ", "))
 	}
 	if o.Account != "" && o.AccountID != "" {
 		return arnconf.Opts{}, fmt.Errorf("%s and %s are mutually exclusive", optAccount, optAccountID)

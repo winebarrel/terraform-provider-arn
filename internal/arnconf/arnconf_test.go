@@ -139,3 +139,33 @@ func TestDefaultPath(t *testing.T) {
 	t.Setenv(arnconf.EnvConfig, "/tmp/other.hcl")
 	assert.Equal(t, "/tmp/other.hcl", arnconf.DefaultPath())
 }
+
+// The cache reads its path once, and keeps reporting the same result.
+func TestCacheReadsOnce(t *testing.T) {
+	path := write(t, `account_id = "111111111111"`)
+	c := arnconf.NewCache(path)
+
+	first, err := c.Get()
+	require.NoError(t, err)
+
+	require.NoError(t, os.WriteFile(path, []byte(`account_id = "222222222222"`), 0o600))
+
+	second, err := c.Get()
+	require.NoError(t, err)
+	assert.Same(t, first, second, "the file is read once per process")
+
+	v, err := second.Resolve(arnconf.Opts{})
+	require.NoError(t, err)
+	assert.Equal(t, "111111111111", v.AccountID)
+}
+
+// A load failure is cached too, so a malformed file reports the same
+// diagnostic on every call instead of being retried per call site.
+func TestCacheRemembersFailure(t *testing.T) {
+	c := arnconf.NewCache(filepath.Join(t.TempDir(), "absent.hcl"))
+
+	_, err1 := c.Get()
+	require.Error(t, err1)
+	_, err2 := c.Get()
+	assert.Equal(t, err1, err2)
+}

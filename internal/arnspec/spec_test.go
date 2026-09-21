@@ -156,3 +156,57 @@ func TestGeneratedSpecsAllBuild(t *testing.T) {
 		assert.NotContains(t, got, "${", "%s: %s", s.Name, got)
 	}
 }
+
+// A handful of resource types publish more than one ARN format, and the
+// numeric suffix is positional on the feed's ARNFormats order. If AWS ever
+// reorders that list, apigateway_authorizer would quietly start building the
+// REST API shape instead of the HTTP API one, which no other test would
+// notice. Pinning every multi-format function turns that into a failure at
+// regeneration time.
+func TestGeneratedMultiFormatFunctions(t *testing.T) {
+	want := map[string]string{
+		"apigateway_authorizer":             "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/authorizers/${AuthorizerId}",
+		"apigateway_authorizer_2":           "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/authorizers/${AuthorizerId}",
+		"apigateway_authorizers":            "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/authorizers",
+		"apigateway_authorizers_2":          "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/authorizers",
+		"apigateway_deployment":             "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/deployments/${DeploymentId}",
+		"apigateway_deployment_2":           "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/deployments/${DeploymentId}",
+		"apigateway_deployments":            "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/deployments",
+		"apigateway_deployments_2":          "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/deployments",
+		"apigateway_integration":            "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/integrations/${IntegrationId}",
+		"apigateway_integration_2":          "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}/integration",
+		"apigateway_integration_response":   "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/integrations/${IntegrationId}/integrationresponses/${IntegrationResponseId}",
+		"apigateway_integration_response_2": "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}/integration/responses/${StatusCode}",
+		"apigateway_model":                  "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/models/${ModelId}",
+		"apigateway_model_2":                "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/models/${ModelName}",
+		"apigateway_models":                 "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/models",
+		"apigateway_models_2":               "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/models",
+		"apigateway_stage":                  "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/stages/${StageName}",
+		"apigateway_stage_2":                "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/stages/${StageName}",
+		"apigateway_stages":                 "arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/stages",
+		"apigateway_stages_2":               "arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/stages",
+		"greengrass_deployment":             "arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/groups/${GroupId}/deployments/${DeploymentId}",
+		"greengrass_deployment_2":           "arn:${Partition}:greengrass:${Region}:${Account}:deployments:${DeploymentId}",
+		"lex_bot":                           "arn:${Partition}:lex:${Region}:${Account}:bot/${BotId}",
+		"lex_bot_2":                         "arn:${Partition}:lex:${Region}:${Account}:bot:${BotName}",
+		"lex_bot_alias":                     "arn:${Partition}:lex:${Region}:${Account}:bot-alias/${BotId}/${BotAliasId}",
+		"lex_bot_alias_2":                   "arn:${Partition}:lex:${Region}:${Account}:bot:${BotName}:${BotAlias}",
+	}
+
+	// Collect what the generated table actually declares, so a new
+	// multi-format resource type shows up as a failure too rather than
+	// slipping in unpinned.
+	type key struct{ service, resource string }
+
+	got := map[string]string{}
+	byResource := map[key]int{}
+	for _, s := range arnspec.All() {
+		byResource[key{s.Service, s.Resource}]++
+	}
+	for _, s := range arnspec.All() {
+		if byResource[key{s.Service, s.Resource}] > 1 {
+			got[s.Name] = s.Template
+		}
+	}
+	assert.Equal(t, want, got)
+}
