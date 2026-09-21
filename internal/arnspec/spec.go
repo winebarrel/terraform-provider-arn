@@ -44,6 +44,10 @@ type Spec struct {
 	// used when reporting which part of the template was left empty.
 	argsRaw []string
 
+	// argStructural marks the arguments that land in one of the ARN's five
+	// structural fields rather than in the resource part. See Build.
+	argStructural []bool
+
 	NeedsRegion  bool
 	NeedsAccount bool
 
@@ -62,7 +66,12 @@ func Parse(s *Spec) error {
 	}
 	s.parts, s.holes = parts, holes
 
-	for _, h := range holes {
+	// colons counts the ARN field separators seen so far. An ARN is
+	// arn:partition:service:region:account:resource, so everything from the
+	// fifth colon on is the resource part.
+	colons := 0
+	for i, h := range holes {
+		colons += strings.Count(parts[i], ":")
 		switch h {
 		case phPartition:
 			// Always available: it defaults to "aws".
@@ -73,10 +82,15 @@ func Parse(s *Spec) error {
 		default:
 			s.argsRaw = append(s.argsRaw, h)
 			s.Args = append(s.Args, SnakeCase(h))
+			s.argStructural = append(s.argStructural, colons < resourceFieldIndex)
 		}
 	}
 	return nil
 }
+
+// resourceFieldIndex is the number of colons that precede the resource part
+// of an ARN: arn:partition:service:region:account:resource.
+const resourceFieldIndex = 5
 
 // split breaks a template into literal parts and placeholder names.
 func split(tmpl string) (parts, holes []string, err error) {
@@ -146,13 +160,18 @@ func (s *Spec) Build(v Values, args []string) (string, error) {
 			if args[arg] == "" {
 				return "", fmt.Errorf("%s: argument %s (%s) is empty", s.Name, s.Args[arg], h)
 			}
-			// A colon is the ARN's own field separator. Interpolating one
-			// would silently produce an ARN with more fields than it should
-			// have, which reads as a different resource entirely. Where AWS
-			// really does append a colon-separated qualifier there is a
-			// function for it, lambda_function_alias next to lambda_function.
-			if strings.Contains(args[arg], ":") {
-				return "", fmt.Errorf("%s: argument %s (%s) contains a colon, which separates ARN fields: %q",
+			// A colon in one of the five structural fields would shift every
+			// field after it, so the ARN would name something else entirely.
+			// A few templates put an argument there: chime and datasync spell
+			// the account field ${AccountId} rather than ${Account}, and
+			// backup_recovery_point parameterises the service field itself.
+			//
+			// Inside the resource part a colon is just a character, and what
+			// it separates is up to the service. S3 object keys may contain
+			// one, so rejecting it there would block an ARN that is perfectly
+			// valid.
+			if s.argStructural[arg] && strings.Contains(args[arg], ":") {
+				return "", fmt.Errorf("%s: argument %s (%s) is an ARN field and cannot contain a colon: %q",
 					s.Name, s.Args[arg], h, args[arg])
 			}
 			b.WriteString(args[arg])
@@ -214,3 +233,7 @@ func isLowerOrDigit(c rune) bool { return isLower(c) || (c >= '0' && c <= '9') }
 // "RoleNameWithPath" where Args[i] is "role_name_with_path". Documentation
 // and diagnostics use it to point back at the template.
 func (s *Spec) ArgRaw(i int) string { return s.argsRaw[i] }
+
+// ArgIsStructural reports whether argument i lands in one of the ARN's five
+// structural fields rather than in the resource part.
+func (s *Spec) ArgIsStructural(i int) bool { return s.argStructural[i] }

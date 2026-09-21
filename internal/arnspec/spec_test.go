@@ -211,16 +211,81 @@ func TestGeneratedMultiFormatFunctions(t *testing.T) {
 	assert.Equal(t, want, got)
 }
 
-func TestBuildRejectsColonInArgument(t *testing.T) {
-	s := parse(t, "arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}")
+// A colon in one of the five structural fields shifts every field after it.
+func TestBuildRejectsColonInAStructuralArgument(t *testing.T) {
+	// chime spells the account field ${AccountId}, so it arrives as an
+	// argument rather than from the configuration.
+	s := parse(t, "arn:${Partition}:chime:${Region}:${AccountId}:meeting/${MeetingId}")
+	v := arnspec.Values{Partition: "aws", Region: "us-east-1"}
+
+	_, err := s.Build(v, []string{"111111111111:evil", "m1"})
+	require.ErrorContains(t, err, "is an ARN field and cannot contain a colon")
+
+	got, err := s.Build(v, []string{"111111111111", "m1"})
+	require.NoError(t, err)
+	assert.Equal(t, "arn:aws:chime:us-east-1:111111111111:meeting/m1", got)
+}
+
+// Inside the resource part a colon is just a character, and what it means is
+// up to the service. S3 object keys may contain one.
+func TestBuildAllowsColonInTheResourcePart(t *testing.T) {
 	v := arnspec.Values{Partition: "aws", Region: "us-east-1", AccountID: "111111111111"}
 
-	_, err := s.Build(v, []string{"my-func:PROD"})
-	require.ErrorContains(t, err, "contains a colon")
-
-	got, err := s.Build(v, []string{"my-func"})
+	s := parse(t, "arn:${Partition}:s3:::${BucketName}/${ObjectName}")
+	got, err := s.Build(v, []string{"my-bucket", "a:b/c.txt"})
 	require.NoError(t, err)
-	assert.Equal(t, "arn:aws:lambda:us-east-1:111111111111:function:my-func", got)
+	assert.Equal(t, "arn:aws:s3:::my-bucket/a:b/c.txt", got)
+
+	s = parse(t, "arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}")
+	got, err = s.Build(v, []string{"my-func:PROD"})
+	require.NoError(t, err)
+	assert.Equal(t, "arn:aws:lambda:us-east-1:111111111111:function:my-func:PROD", got)
+}
+
+// The classification is derived from the template, so pin both sides of it.
+func TestGeneratedStructuralArguments(t *testing.T) {
+	structural := map[string][]string{}
+	for _, s := range arnspec.All() {
+		for i, a := range s.Args {
+			if s.ArgIsStructural(i) {
+				structural[s.Name] = append(structural[s.Name], a)
+			}
+		}
+	}
+
+	// Every template that parameterises one of the first five fields.
+	assert.Equal(t, map[string][]string{
+		"account_account_in_organization":                {"management_account_id"},
+		"backup_recovery_point":                          {"vendor"},
+		"chime_app_instance":                             {"account_id"},
+		"chime_app_instance_bot":                         {"account_id"},
+		"chime_app_instance_user":                        {"account_id"},
+		"chime_channel":                                  {"account_id"},
+		"chime_channel_flow":                             {"account_id"},
+		"chime_media_insights_pipeline_configuration":    {"account_id"},
+		"chime_media_pipeline":                           {"account_id"},
+		"chime_media_pipeline_kinesis_video_stream_pool": {"account_id"},
+		"chime_meeting":                                  {"account_id"},
+		"chime_sip_media_application":                    {"account_id"},
+		"chime_voice_connector":                          {"account_id"},
+		"chime_voice_profile":                            {"account_id"},
+		"chime_voice_profile_domain":                     {"account_id"},
+		"datasync_agent":                                 {"account_id"},
+		"datasync_discoveryjob":                          {"account_id"},
+		"datasync_location":                              {"account_id"},
+		"datasync_storagesystem":                         {"account_id"},
+		"datasync_task":                                  {"account_id"},
+		"datasync_taskexecution":                         {"account_id"},
+		"kafka_vpc_connection":                           {"vpc_owner_account"},
+		"sso_application":                                {"account_id"},
+		"sso_oauth_application":                          {"account_id"},
+		"sso_trusted_token_issuer":                       {"account_id"},
+	}, structural)
+
+	// The common case is the other way round.
+	s, ok := arnspec.Lookup("iam_role")
+	require.True(t, ok)
+	assert.False(t, s.ArgIsStructural(0))
 }
 
 // A slash is not a field separator, and is part of plenty of legitimate

@@ -76,14 +76,14 @@ func errStep(t *testing.T, config string, phrases ...string) {
 		TerraformVersionChecks:   []tfversion.TerraformVersionCheck{tfversion.SkipBelow(tfversion.Version1_8_0)},
 		ProtoV6ProviderFactories: testAccProtoV6ProviderFactories,
 		Steps: []resource.TestStep{
-			{Config: config, ExpectError: WrapTolerant(phrases)},
+			{Config: config, ExpectError: wrapTolerant(phrases)},
 		},
 	})
 }
 
 // wrapTolerant turns plain phrases into one pattern: every run of spaces
 // matches any whitespace, and the phrases may be separated by anything.
-func WrapTolerant(phrases []string) *regexp.Regexp {
+func wrapTolerant(phrases []string) *regexp.Regexp {
 	parts := make([]string, 0, len(phrases))
 	for _, p := range phrases {
 		words := strings.Fields(p)
@@ -218,12 +218,38 @@ func TestFunction_RejectsMalformedValues(t *testing.T) {
 	errStep(t, out(`provider::arn::iam_role("r", { account_id = "111111111111:evil" })`), `invalid account id`)
 }
 
-// A colon in an argument would add an ARN field rather than land inside one.
-func TestFunction_RejectsColonInArgument(t *testing.T) {
+// A colon in one of the ARN's five structural fields shifts every field after
+// it. chime spells the account field ${AccountId}, so it arrives as an
+// argument rather than from the configuration.
+func TestFunction_RejectsColonInAStructuralArgument(t *testing.T) {
 	useConfig(t, testConfigFile)
-	errStep(t, out(`provider::arn::lambda_function("fn:PROD")`), `contains a colon`)
+	errStep(t, out(`provider::arn::chime_meeting("111111111111:evil", "m1")`),
+		`is an ARN field and cannot contain a colon`)
+	okStep(t, out(`provider::arn::chime_meeting("111111111111", "m1")`),
+		"arn:aws:chime:ap-northeast-1:111111111111:meeting/m1")
+}
+
+// Inside the resource part a colon is just a character. S3 object keys may
+// contain one, and a lambda alias ARN is written with one.
+func TestFunction_AllowsColonInTheResourcePart(t *testing.T) {
+	useConfig(t, testConfigFile)
+	okStep(t, out(`provider::arn::s3_object("my-bucket", "a:b/c.txt")`), "arn:aws:s3:::my-bucket/a:b/c.txt")
 	okStep(t, out(`provider::arn::lambda_function_alias("fn", "PROD")`),
 		"arn:aws:lambda:ap-northeast-1:111111111111:function:fn:PROD")
+}
+
+// The single most commonly hand-written IAM ARN: an AWS-managed policy.
+func TestFunction_AWSManagedPolicy(t *testing.T) {
+	useConfig(t, testConfigFile)
+	okStep(t, out(`provider::arn::iam_policy("AdministratorAccess", { account_id = "aws" })`),
+		"arn:aws:iam::aws:policy/AdministratorAccess")
+}
+
+// An ARN written for an IAM policy may wildcard the region and the account.
+func TestFunction_Wildcards(t *testing.T) {
+	useConfig(t, testConfigFile)
+	okStep(t, out(`provider::arn::ec2_vpc("*", { region = "*" })`), "arn:aws:ec2:*:111111111111:vpc/*")
+	okStep(t, out(`provider::arn::iam_role("*", { account_id = "*" })`), "arn:aws:iam::*:role/*")
 }
 
 // A slash is part of plenty of legitimate names.
@@ -252,12 +278,12 @@ file..`
 
 	// What the hand-written pattern did, and why it only failed in CI.
 	assert.NotRegexp(t, `(?s)Missing expression`, ciOutput)
-	assert.Regexp(t, WrapTolerant([]string{"Missing expression"}), ciOutput)
-	assert.Regexp(t, WrapTolerant([]string{"found the end of the file"}), ciOutput)
+	assert.Regexp(t, wrapTolerant([]string{"Missing expression"}), ciOutput)
+	assert.Regexp(t, wrapTolerant([]string{"found the end of the file"}), ciOutput)
 
 	// Phrases must match in order, and metacharacters are literal.
 	const wrapped = "unknown account \"nope\": declared\naccounts are prod, us."
-	assert.Regexp(t, WrapTolerant([]string{`unknown account "nope"`, "prod, us"}), wrapped)
-	assert.NotRegexp(t, WrapTolerant([]string{"prod, us", `unknown account "nope"`}), wrapped)
-	assert.NotRegexp(t, WrapTolerant([]string{"unknown account .nope."}), wrapped)
+	assert.Regexp(t, wrapTolerant([]string{`unknown account "nope"`, "prod, us"}), wrapped)
+	assert.NotRegexp(t, wrapTolerant([]string{"prod, us", `unknown account "nope"`}), wrapped)
+	assert.NotRegexp(t, wrapTolerant([]string{"unknown account .nope."}), wrapped)
 }

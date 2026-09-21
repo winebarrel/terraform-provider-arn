@@ -171,17 +171,21 @@ func TestCacheRemembersFailure(t *testing.T) {
 }
 
 func TestResolveValidatesAccountID(t *testing.T) {
-	for _, id := range []string{"abc", "12345", "111111111111111111", "11111111111a", "111111111111:evil"} {
+	for _, id := range []string{"abc", "12345", "111111111111111111", "11111111111a", "111111111111:evil", "AWS"} {
 		c, err := arnconf.Load(write(t, `account_id = "`+id+`"`))
 		require.NoError(t, err)
 		_, err = c.Resolve(arnconf.Opts{})
 		require.ErrorContains(t, err, "invalid account id", id)
 	}
 
-	c, err := arnconf.Load(write(t, `account_id = "111111111111"`))
-	require.NoError(t, err)
-	_, err = c.Resolve(arnconf.Opts{})
-	require.NoError(t, err)
+	// "aws" is what AWS-managed policies carry, and "*" is how an ARN
+	// written for an IAM policy wildcards the field.
+	for _, id := range []string{"111111111111", "aws", "*"} {
+		c, err := arnconf.Load(write(t, `account_id = "`+id+`"`))
+		require.NoError(t, err)
+		_, err = c.Resolve(arnconf.Opts{})
+		require.NoError(t, err, id)
+	}
 }
 
 func TestResolveValidatesRegion(t *testing.T) {
@@ -192,7 +196,7 @@ func TestResolveValidatesRegion(t *testing.T) {
 	for _, r := range []string{
 		"us-east-1", "ap-northeast-1", "eu-central-1", "us-gov-west-1",
 		"cn-north-1", "us-iso-east-1", "us-isob-east-1", "il-central-1",
-		"ap-southeast-7",
+		"ap-southeast-7", "*",
 	} {
 		_, err := c.Resolve(arnconf.Opts{Region: r})
 		require.NoError(t, err, r)

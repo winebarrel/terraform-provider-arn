@@ -76,23 +76,41 @@ much later, at apply time, somewhere unhelpful.
 
 | Value | Rule |
 |---|---|
-| `account_id` | Twelve digits |
-| `region` | A name like `ap-northeast-1`, including `us-gov-west-1` and `us-iso-east-1` |
+| `account_id` | Twelve digits, `aws`, or `*` |
+| `region` | A name like `ap-northeast-1`, including `us-gov-west-1` and `us-iso-east-1`, or `*` |
 | `partition` | `aws`, or `aws-` plus one or more words |
-| Arguments | Not empty, and no `:` |
+| Arguments | Not empty |
 
-A colon in an argument is rejected because it is the ARN's own field
-separator: `lambda_function("fn:PROD")` would build an ARN with an extra
-field rather than a name containing a colon. Where AWS really does append a
-colon-separated qualifier there is a function for it:
+`aws` is the account AWS-managed policies carry, and `*` is how an ARN written
+for an IAM policy wildcards a field:
 
 ```hcl
+provider::arn::iam_policy("AdministratorAccess", { account_id = "aws" })
+# arn:aws:iam::aws:policy/AdministratorAccess
+
+provider::arn::ec2_vpc("*", { region = "*" })
+# arn:aws:ec2:*:111111111111:vpc/*
+```
+
+An ARN is `arn:partition:service:region:account:resource`. An argument that
+lands in one of the five structural fields cannot contain a `:`, because that
+would shift every field after it and name something else entirely. A few
+templates do put an argument there: chime and datasync spell the account field
+`${AccountId}` rather than `${Account}`.
+
+Inside the resource part a colon is just a character, and what it separates is
+up to the service, so it is left alone:
+
+```hcl
+provider::arn::s3_object("my-bucket", "a:b/c.txt")
+# arn:aws:s3:::my-bucket/a:b/c.txt
+
 provider::arn::lambda_function_alias("fn", "PROD")
 # arn:aws:lambda:ap-northeast-1:111111111111:function:fn:PROD
 ```
 
-A slash is left alone, since IAM role paths, S3 object keys and log group
-names all contain them:
+A slash is never a field separator, and IAM role paths, S3 object keys and log
+group names all contain them:
 
 ```hcl
 provider::arn::iam_role("path/to/my-role")

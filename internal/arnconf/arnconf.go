@@ -187,18 +187,24 @@ func (c *Config) Resolve(o Opts) (Values, error) {
 // pointing nowhere near the configuration.
 var (
 	// An AWS account id is exactly twelve digits, and has been for the life
-	// of the service.
-	reAccountID = regexp.MustCompile(`^[0-9]{12}$`)
+	// of the service. Two other values belong in the field:
+	//
+	//   - "aws", which is what AWS-managed policies carry:
+	//     arn:aws:iam::aws:policy/AdministratorAccess.
+	//   - "*", since an ARN written for an IAM policy may wildcard the field.
+	reAccountID = regexp.MustCompile(`^([0-9]{12}|aws|\*)$`)
 
 	// Region names run "xx-word-N", with extra words for the isolated
 	// partitions: us-east-1, ap-northeast-1, us-gov-west-1, us-iso-east-1.
 	// Global resources carry an empty region field rather than a name like
-	// "aws-global", so there is no such case to allow through here.
-	reRegion = regexp.MustCompile(`^[a-z]{2}(-[a-z]+)+-[0-9]+$`)
+	// "aws-global", so there is no such case to allow through here. "*" is
+	// allowed for the same reason as in the account field.
+	reRegion = regexp.MustCompile(`^([a-z]{2}(-[a-z]+)+-[0-9]+|\*)$`)
 
 	// Every partition to date is "aws" or "aws-" plus one or more words:
 	// aws-cn, aws-us-gov, aws-iso-b. Matching the shape rather than a fixed
-	// list means a new partition works without a release here.
+	// list means a new partition works without a release here. Unlike the
+	// other two fields, AWS does not accept a wildcard here.
 	rePartition = regexp.MustCompile(`^aws(-[a-z0-9]+)*$`)
 )
 
@@ -207,10 +213,10 @@ var (
 // call-site options without having to check each separately.
 func (v Values) validate() error {
 	if v.AccountID != "" && !reAccountID.MatchString(v.AccountID) {
-		return fmt.Errorf("invalid account id %q: an AWS account id is twelve digits", v.AccountID)
+		return fmt.Errorf("invalid account id %q: expected twelve digits, \"aws\" for an AWS-managed resource, or \"*\"", v.AccountID)
 	}
 	if v.Region != "" && !reRegion.MatchString(v.Region) {
-		return fmt.Errorf("invalid region %q: expected a name like ap-northeast-1", v.Region)
+		return fmt.Errorf("invalid region %q: expected a name like ap-northeast-1, or \"*\"", v.Region)
 	}
 	if !rePartition.MatchString(v.Partition) {
 		return fmt.Errorf("invalid partition %q: expected aws, aws-cn, aws-us-gov or another aws- partition", v.Partition)
