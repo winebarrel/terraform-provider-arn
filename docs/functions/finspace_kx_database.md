@@ -14,7 +14,7 @@ Builds the ARN for `finspace` `kxDatabase`:
 arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxDatabase/${KxDatabase}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

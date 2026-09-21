@@ -14,7 +14,7 @@ Builds the ARN for `mediaconnect` `Flow`:
 arn:${Partition}:mediaconnect:${Region}:${Account}:flow:${FlowId}:${FlowName}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

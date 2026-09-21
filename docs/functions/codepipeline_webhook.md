@@ -14,7 +14,7 @@ Builds the ARN for `codepipeline` `webhook`:
 arn:${Partition}:codepipeline:${Region}:${Account}:webhook:${WebhookName}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

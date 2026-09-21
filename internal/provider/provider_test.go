@@ -219,14 +219,14 @@ func TestFunction_RejectsMalformedValues(t *testing.T) {
 }
 
 // A colon in one of the ARN's five structural fields shifts every field after
-// it. chime spells the account field ${AccountId}, so it arrives as an
-// argument rather than from the configuration.
+// it. backup_recovery_point parameterises the service field, the only one
+// still filled from an argument.
 func TestFunction_RejectsColonInAStructuralArgument(t *testing.T) {
 	useConfig(t, testConfigFile)
-	errStep(t, out(`provider::arn::chime_meeting("111111111111:evil", "m1")`),
+	errStep(t, out(`provider::arn::backup_recovery_point("backup:evil", "rt", "rp")`),
 		`is an ARN field and cannot contain a colon`)
-	okStep(t, out(`provider::arn::chime_meeting("111111111111", "m1")`),
-		"arn:aws:chime:ap-northeast-1:111111111111:meeting/m1")
+	okStep(t, out(`provider::arn::backup_recovery_point("backup", "rt", "rp")`),
+		"arn:aws:backup:ap-northeast-1:*:rt:rp")
 }
 
 // Inside the resource part a colon is just a character. S3 object keys may
@@ -253,13 +253,22 @@ func TestFunction_Wildcards(t *testing.T) {
 	okStep(t, out(`provider::arn::s3_object("my-bucket", "*", { partition = "*" })`), "arn:*:s3:::my-bucket/*")
 }
 
-// chime spells the account field as a template placeholder, so it arrives as
-// an argument. It gets the same check as { account_id = ... } does.
-func TestFunction_ValidatesAnAccountFieldArgument(t *testing.T) {
+// The account field is identified by position, so chime, which spells it
+// ${AccountId}, takes the account from the configuration like any other.
+func TestFunction_AccountFieldByPosition(t *testing.T) {
 	useConfig(t, testConfigFile)
-	errStep(t, out(`provider::arn::chime_meeting("abc", "m1")`), `invalid account id "abc"`)
-	okStep(t, out(`provider::arn::chime_meeting("222222222222", "m1")`),
+	okStep(t, out(`provider::arn::chime_meeting("m1")`),
+		"arn:aws:chime:ap-northeast-1:111111111111:meeting/m1")
+	okStep(t, out(`provider::arn::chime_meeting("m1", { account = "prod" })`),
 		"arn:aws:chime:ap-northeast-1:222222222222:meeting/m1")
+}
+
+// ${AccountId} in the resource part stays an argument. organizations carries
+// both in one template.
+func TestFunction_ResourcePartAccountIDStaysAnArgument(t *testing.T) {
+	useConfig(t, testConfigFile)
+	okStep(t, out(`provider::arn::organizations_account("o-abc", "222222222222")`),
+		"arn:aws:organizations::111111111111:account/o-o-abc/222222222222")
 }
 
 // A slash is part of plenty of legitimate names.

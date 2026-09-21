@@ -14,7 +14,7 @@ Builds the ARN for `polly` `lexicon`:
 arn:${Partition}:polly:${Region}:${Account}:lexicon/${LexiconName}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

@@ -14,7 +14,7 @@ Builds the ARN for `ec2` `vpc-block-public-access-exclusion`:
 arn:${Partition}:ec2:${Region}:${Account}:vpc-block-public-access-exclusion/${VpcBlockPublicAccessExclusionId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

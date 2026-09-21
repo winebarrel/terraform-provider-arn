@@ -14,7 +14,7 @@ Builds the ARN for `ram` `customer-managed-permission`:
 arn:${Partition}:ram:${Region}:${Account}:permission/${ResourcePath}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

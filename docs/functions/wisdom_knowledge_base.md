@@ -14,7 +14,7 @@ Builds the ARN for `wisdom` `KnowledgeBase`:
 arn:${Partition}:wisdom:${Region}:${Account}:knowledge-base/${KnowledgeBaseId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

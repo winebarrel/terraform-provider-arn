@@ -14,7 +14,7 @@ Builds the ARN for `ec2` `license-configuration`:
 arn:${Partition}:license-manager:${Region}:${Account}:license-configuration:${LicenseConfigurationId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

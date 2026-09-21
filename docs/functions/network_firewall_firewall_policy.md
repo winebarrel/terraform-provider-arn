@@ -14,7 +14,7 @@ Builds the ARN for `network-firewall` `FirewallPolicy`:
 arn:${Partition}:network-firewall:${Region}:${Account}:firewall-policy/${Name}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

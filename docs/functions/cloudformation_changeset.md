@@ -14,7 +14,7 @@ Builds the ARN for `cloudformation` `changeset`:
 arn:${Partition}:cloudformation:${Region}:${Account}:changeSet/${ChangeSetName}/${Id}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

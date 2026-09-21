@@ -70,7 +70,10 @@ func (f ARNFunction) markdownDescription() string {
 	var b strings.Builder
 	fmt.Fprintf(&b, "Builds the ARN for `%s` `%s`:\n\n```\n%s\n```\n\n",
 		f.spec.Service, f.spec.Resource, f.spec.Template)
-	fmt.Fprintf(&b, "`${Partition}`, `${Region}` and `${Account}` come from the configuration file "+
+	// Named by field rather than by placeholder, because AWS does not spell
+	// the account field the same way everywhere: chime writes ${AccountId},
+	// kafka ${VpcOwnerAccount}.
+	fmt.Fprintf(&b, "The partition, region and account fields come from the configuration file "+
 		"(`.arn.hcl`, or the path in `ARN_CONFIG`).")
 	if len(f.spec.Args) > 0 {
 		b.WriteString(" The remaining placeholders are the arguments, in template order.")

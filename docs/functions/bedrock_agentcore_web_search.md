@@ -14,7 +14,7 @@ Builds the ARN for `bedrock-agentcore` `web-search`:
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:tool/web-search.v1
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
 
 

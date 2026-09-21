@@ -14,7 +14,7 @@ Builds the ARN for `neptune-graph` `export-task`:
 arn:${Partition}:neptune-graph:${Region}:${Account}:export-task/${ResourceId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

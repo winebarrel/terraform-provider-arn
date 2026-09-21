@@ -14,7 +14,7 @@ Builds the ARN for `events` `stop-instance`:
 arn:${Partition}:events:${Region}:${Account}:target/stop-instance
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
 
 

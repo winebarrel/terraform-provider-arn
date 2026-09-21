@@ -14,7 +14,7 @@ Builds the ARN for `iotwireless` `cert`:
 arn:${Partition}:iot:${Region}:${Account}:cert/${Certificate}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

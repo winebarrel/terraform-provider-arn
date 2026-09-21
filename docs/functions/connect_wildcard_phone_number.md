@@ -14,7 +14,7 @@ Builds the ARN for `connect` `wildcard-phone-number`:
 arn:${Partition}:connect:${Region}:${Account}:phone-number/*
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
 
 

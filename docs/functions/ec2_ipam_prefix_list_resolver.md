@@ -14,7 +14,7 @@ Builds the ARN for `ec2` `ipam-prefix-list-resolver`:
 arn:${Partition}:ec2::${Account}:ipam-prefix-list-resolver/${IpamPrefixListResolverId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

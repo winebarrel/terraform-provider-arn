@@ -14,7 +14,7 @@ Builds the ARN for `route53resolver` `resolver-endpoint`:
 arn:${Partition}:route53resolver:${Region}:${Account}:resolver-endpoint/${ResourceId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

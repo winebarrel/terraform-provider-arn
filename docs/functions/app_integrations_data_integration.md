@@ -14,7 +14,7 @@ Builds the ARN for `app-integrations` `data-integration`:
 arn:${Partition}:app-integrations:${Region}:${Account}:data-integration/${DataIntegrationId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

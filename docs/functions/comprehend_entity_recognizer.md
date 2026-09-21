@@ -14,7 +14,7 @@ Builds the ARN for `comprehend` `entity-recognizer`:
 arn:${Partition}:comprehend:${Region}:${Account}:entity-recognizer/${EntityRecognizerName}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

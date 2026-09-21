@@ -14,7 +14,7 @@ Builds the ARN for `migrationhub-orchestrator` `workflow`:
 arn:${Partition}:migrationhub-orchestrator:${Region}:${Account}:workflow/${ResourceId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

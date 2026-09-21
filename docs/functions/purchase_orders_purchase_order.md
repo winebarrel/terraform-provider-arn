@@ -14,7 +14,7 @@ Builds the ARN for `purchase-orders` `purchase-order`:
 arn:${Partition}:purchase-orders::${Account}:purchase-order/${ResourceName}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

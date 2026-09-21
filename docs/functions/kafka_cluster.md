@@ -14,7 +14,7 @@ Builds the ARN for `kafka` `cluster`:
 arn:${Partition}:kafka:${Region}:${Account}:cluster/${ClusterName}/${Uuid}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

@@ -14,7 +14,7 @@ Builds the ARN for `cloudfront` `continuous-deployment-policy`:
 arn:${Partition}:cloudfront::${Account}:continuous-deployment-policy/${Id}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

@@ -14,7 +14,7 @@ Builds the ARN for `events` `create-snapshot`:
 arn:${Partition}:events:${Region}:${Account}:target/create-snapshot
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
 
 

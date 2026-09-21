@@ -14,7 +14,7 @@ Builds the ARN for `devicefarm` `testgrid-project`:
 arn:${Partition}:devicefarm:${Region}:${Account}:testgrid-project:${ResourceId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 
