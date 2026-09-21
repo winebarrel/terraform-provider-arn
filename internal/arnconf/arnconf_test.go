@@ -169,3 +169,64 @@ func TestCacheRemembersFailure(t *testing.T) {
 	_, err2 := c.Get()
 	assert.Equal(t, err1, err2)
 }
+
+func TestResolveValidatesAccountID(t *testing.T) {
+	for _, id := range []string{"abc", "12345", "111111111111111111", "11111111111a", "111111111111:evil"} {
+		c, err := arnconf.Load(write(t, `account_id = "`+id+`"`))
+		require.NoError(t, err)
+		_, err = c.Resolve(arnconf.Opts{})
+		require.ErrorContains(t, err, "invalid account id", id)
+	}
+
+	c, err := arnconf.Load(write(t, `account_id = "111111111111"`))
+	require.NoError(t, err)
+	_, err = c.Resolve(arnconf.Opts{})
+	require.NoError(t, err)
+}
+
+func TestResolveValidatesRegion(t *testing.T) {
+	c, err := arnconf.Load(write(t, `account_id = "111111111111"`))
+	require.NoError(t, err)
+
+	// Every partition's naming scheme has to survive the check.
+	for _, r := range []string{
+		"us-east-1", "ap-northeast-1", "eu-central-1", "us-gov-west-1",
+		"cn-north-1", "us-iso-east-1", "us-isob-east-1", "il-central-1",
+		"ap-southeast-7",
+	} {
+		_, err := c.Resolve(arnconf.Opts{Region: r})
+		require.NoError(t, err, r)
+	}
+
+	for _, r := range []string{"not-a-region", "AP-NORTHEAST-1", "useast1", "us-east", "us-east-1:x", "aws-global"} {
+		_, err := c.Resolve(arnconf.Opts{Region: r})
+		require.ErrorContains(t, err, "invalid region", r)
+	}
+}
+
+func TestResolveValidatesPartition(t *testing.T) {
+	c, err := arnconf.Load(write(t, `account_id = "111111111111"`))
+	require.NoError(t, err)
+
+	for _, p := range []string{"aws", "aws-cn", "aws-us-gov", "aws-iso", "aws-iso-b"} {
+		_, err := c.Resolve(arnconf.Opts{Partition: p})
+		require.NoError(t, err, p)
+	}
+
+	for _, p := range []string{"nonsense", "AWS", "aws:cn", "aws-", "azure"} {
+		_, err := c.Resolve(arnconf.Opts{Partition: p})
+		require.ErrorContains(t, err, "invalid partition", p)
+	}
+}
+
+// The file is checked by the same pass as the options, so a typo there is
+// reported even when the call site overrides nothing.
+func TestResolveValidatesTheFileItself(t *testing.T) {
+	c, err := arnconf.Load(write(t, `
+account_id = "111111111111"
+region     = "nihon"
+`))
+	require.NoError(t, err)
+	_, err = c.Resolve(arnconf.Opts{})
+	require.ErrorContains(t, err, `invalid region "nihon"`)
+}

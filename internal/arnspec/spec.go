@@ -146,6 +146,15 @@ func (s *Spec) Build(v Values, args []string) (string, error) {
 			if args[arg] == "" {
 				return "", fmt.Errorf("%s: argument %s (%s) is empty", s.Name, s.Args[arg], h)
 			}
+			// A colon is the ARN's own field separator. Interpolating one
+			// would silently produce an ARN with more fields than it should
+			// have, which reads as a different resource entirely. Where AWS
+			// really does append a colon-separated qualifier there is a
+			// function for it, lambda_function_alias next to lambda_function.
+			if strings.Contains(args[arg], ":") {
+				return "", fmt.Errorf("%s: argument %s (%s) contains a colon, which separates ARN fields: %q",
+					s.Name, s.Args[arg], h, args[arg])
+			}
 			b.WriteString(args[arg])
 			arg++
 		}

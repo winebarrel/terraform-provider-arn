@@ -182,3 +182,37 @@ func TestFunction_MalformedConfigFile(t *testing.T) {
 	useConfig(t, `account_id = `)
 	errStep(t, out(`provider::arn::iam_role("r")`), `(?s)Missing expression`)
 }
+
+func TestFunction_RejectsMalformedValues(t *testing.T) {
+	useConfig(t, testConfigFile)
+
+	errStep(t, out(`provider::arn::iam_role("r", { account_id = "abc" })`), `(?s)invalid account id\s+"abc"`)
+	errStep(t, out(`provider::arn::iam_role("r", { account_id = "12345" })`), `(?s)invalid account\s+id`)
+	errStep(t, out(`provider::arn::sqs_queue("q", { region = "not-a-region" })`), `(?s)invalid region\s+"not-a-region"`)
+	errStep(t, out(`provider::arn::s3_bucket("b", { partition = "nonsense" })`), `(?s)invalid partition\s+"nonsense"`)
+	errStep(t, out(`provider::arn::iam_role("r", { account_id = "111111111111:evil" })`), `(?s)invalid account id`)
+}
+
+// A colon in an argument would add an ARN field rather than land inside one.
+func TestFunction_RejectsColonInArgument(t *testing.T) {
+	useConfig(t, testConfigFile)
+	errStep(t, out(`provider::arn::lambda_function("fn:PROD")`), `(?s)contains a\s+colon`)
+	okStep(t, out(`provider::arn::lambda_function_alias("fn", "PROD")`),
+		"arn:aws:lambda:ap-northeast-1:111111111111:function:fn:PROD")
+}
+
+// A slash is part of plenty of legitimate names.
+func TestFunction_AllowsSlashInArgument(t *testing.T) {
+	useConfig(t, testConfigFile)
+	okStep(t, out(`provider::arn::iam_role("path/to/my-role")`), "arn:aws:iam::111111111111:role/path/to/my-role")
+}
+
+// A bad value in the configuration file is reported even when the call site
+// overrides nothing.
+func TestFunction_RejectsMalformedConfigValues(t *testing.T) {
+	useConfig(t, `
+account_id = "111111111111"
+region     = "nihon"
+`)
+	errStep(t, out(`provider::arn::sqs_queue("q")`), `(?s)invalid region\s+"nihon"`)
+}

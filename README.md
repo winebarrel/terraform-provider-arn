@@ -128,6 +128,42 @@ together. An unrecognized option is an error rather than a silent fallback to
 the default account, and so is an explicitly empty value: write nothing, or
 `null`, to use the default.
 
+## Validation
+
+The values are checked for shape, not existence. An account that does not
+exist, or a region AWS has not built yet, is not something a string can be
+asked about. What the checks catch is the value that could never be right,
+which would otherwise be interpolated into a syntactically valid ARN and fail
+much later, at apply time, somewhere unhelpful.
+
+| Value | Rule |
+|---|---|
+| `account_id` | Twelve digits |
+| `region` | A name like `ap-northeast-1`, including `us-gov-west-1` and `us-iso-east-1` |
+| `partition` | `aws`, or `aws-` plus one or more words |
+| Arguments | Not empty, and no `:` |
+
+A colon in an argument is rejected because it is the ARN's own field
+separator: `lambda_function("fn:PROD")` would build an ARN with an extra
+field rather than a name containing a colon. Where AWS really does append a
+colon-separated qualifier there is a function for it:
+
+```hcl
+provider::arn::lambda_function_alias("fn", "PROD")
+# arn:aws:lambda:ap-northeast-1:111111111111:function:fn:PROD
+```
+
+A slash is left alone, since IAM role paths, S3 object keys and log group
+names all contain them:
+
+```hcl
+provider::arn::iam_role("path/to/my-role")
+# arn:aws:iam::111111111111:role/path/to/my-role
+```
+
+The configuration file goes through the same check, so a typo there is
+reported even when the call site overrides nothing.
+
 ## Why a file instead of a provider block
 
 Provider-defined functions cannot read provider configuration, so values in a
@@ -171,7 +207,3 @@ declares its functions at startup, before any network call could be allowed to
 fail, and a plan should not change because AWS published a new resource type
 this morning. Regenerating is idempotent, and a service that leaves the feed
 has its file deleted.
-
-## License
-
-[MIT](LICENSE)

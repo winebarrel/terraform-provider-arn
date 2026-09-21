@@ -210,3 +210,24 @@ func TestGeneratedMultiFormatFunctions(t *testing.T) {
 	}
 	assert.Equal(t, want, got)
 }
+
+func TestBuildRejectsColonInArgument(t *testing.T) {
+	s := parse(t, "arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}")
+	v := arnspec.Values{Partition: "aws", Region: "us-east-1", AccountID: "111111111111"}
+
+	_, err := s.Build(v, []string{"my-func:PROD"})
+	require.ErrorContains(t, err, "contains a colon")
+
+	got, err := s.Build(v, []string{"my-func"})
+	require.NoError(t, err)
+	assert.Equal(t, "arn:aws:lambda:us-east-1:111111111111:function:my-func", got)
+}
+
+// A slash is not a field separator, and is part of plenty of legitimate
+// names: IAM role paths, S3 object keys, CloudWatch log group names.
+func TestBuildAllowsSlashInArgument(t *testing.T) {
+	s := parse(t, "arn:${Partition}:iam::${Account}:role/${RoleNameWithPath}")
+	got, err := s.Build(arnspec.Values{Partition: "aws", AccountID: "111111111111"}, []string{"path/to/my-role"})
+	require.NoError(t, err)
+	assert.Equal(t, "arn:aws:iam::111111111111:role/path/to/my-role", got)
+}
