@@ -3,12 +3,12 @@
 page_title: "ec2_host_reservation function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 host-reservation ARN
+  ec2 host-reservation ARN
 ---
 
 # function: ec2_host_reservation
 
-Builds the ARN of an `ec2` `host-reservation`:
+Builds the ARN for `ec2` `host-reservation`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:host-reservation/${HostReservationId}

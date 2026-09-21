@@ -3,12 +3,12 @@
 page_title: "cleanrooms_analysistemplate function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms analysistemplate ARN
+  cleanrooms analysistemplate ARN
 ---
 
 # function: cleanrooms_analysistemplate
 
-Builds the ARN of an `cleanrooms` `analysistemplate`:
+Builds the ARN for `cleanrooms` `analysistemplate`:
 
 ```
 arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/analysistemplate/${AnalysisTemplateId}

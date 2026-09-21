@@ -3,12 +3,12 @@
 page_title: "waf_sizeconstraintset function - arn"
 subcategory: ""
 description: |-
-  Builds an waf sizeconstraintset ARN
+  waf sizeconstraintset ARN
 ---
 
 # function: waf_sizeconstraintset
 
-Builds the ARN of an `waf` `sizeconstraintset`:
+Builds the ARN for `waf` `sizeconstraintset`:
 
 ```
 arn:${Partition}:waf::${Account}:sizeconstraintset/${Id}

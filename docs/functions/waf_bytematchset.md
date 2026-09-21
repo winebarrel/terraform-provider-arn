@@ -3,12 +3,12 @@
 page_title: "waf_bytematchset function - arn"
 subcategory: ""
 description: |-
-  Builds an waf bytematchset ARN
+  waf bytematchset ARN
 ---
 
 # function: waf_bytematchset
 
-Builds the ARN of an `waf` `bytematchset`:
+Builds the ARN for `waf` `bytematchset`:
 
 ```
 arn:${Partition}:waf::${Account}:bytematchset/${Id}

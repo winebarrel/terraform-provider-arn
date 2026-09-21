@@ -3,12 +3,12 @@
 page_title: "mediaconvert_preset function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconvert Preset ARN
+  mediaconvert Preset ARN
 ---
 
 # function: mediaconvert_preset
 
-Builds the ARN of an `mediaconvert` `Preset`:
+Builds the ARN for `mediaconvert` `Preset`:
 
 ```
 arn:${Partition}:mediaconvert:${Region}:${Account}:presets/${PresetName}

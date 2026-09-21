@@ -3,12 +3,12 @@
 page_title: "states_labelled_execution function - arn"
 subcategory: ""
 description: |-
-  Builds an states labelled execution ARN
+  states labelled execution ARN
 ---
 
 # function: states_labelled_execution
 
-Builds the ARN of an `states` `labelled execution`:
+Builds the ARN for `states` `labelled execution`:
 
 ```
 arn:${Partition}:states:${Region}:${Account}:execution:${StateMachineName}/${MapRunLabel}:${ExecutionId}

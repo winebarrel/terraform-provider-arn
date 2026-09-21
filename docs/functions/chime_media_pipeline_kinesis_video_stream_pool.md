@@ -3,12 +3,12 @@
 page_title: "chime_media_pipeline_kinesis_video_stream_pool function - arn"
 subcategory: ""
 description: |-
-  Builds an chime media-pipeline-kinesis-video-stream-pool ARN
+  chime media-pipeline-kinesis-video-stream-pool ARN
 ---
 
 # function: chime_media_pipeline_kinesis_video_stream_pool
 
-Builds the ARN of an `chime` `media-pipeline-kinesis-video-stream-pool`:
+Builds the ARN for `chime` `media-pipeline-kinesis-video-stream-pool`:
 
 ```
 arn:${Partition}:chime:${Region}:${AccountId}:media-pipeline-kinesis-video-stream-pool/${PoolName}

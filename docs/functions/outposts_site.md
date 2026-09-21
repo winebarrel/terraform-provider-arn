@@ -3,12 +3,12 @@
 page_title: "outposts_site function - arn"
 subcategory: ""
 description: |-
-  Builds an outposts site ARN
+  outposts site ARN
 ---
 
 # function: outposts_site
 
-Builds the ARN of an `outposts` `site`:
+Builds the ARN for `outposts` `site`:
 
 ```
 arn:${Partition}:outposts:${Region}:${Account}:site/${SiteId}

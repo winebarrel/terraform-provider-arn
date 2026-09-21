@@ -3,12 +3,12 @@
 page_title: "events_terminate_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an events terminate-instance ARN
+  events terminate-instance ARN
 ---
 
 # function: events_terminate_instance
 
-Builds the ARN of an `events` `terminate-instance`:
+Builds the ARN for `events` `terminate-instance`:
 
 ```
 arn:${Partition}:events:${Region}:${Account}:target/terminate-instance

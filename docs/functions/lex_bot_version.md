@@ -3,12 +3,12 @@
 page_title: "lex_bot_version function - arn"
 subcategory: ""
 description: |-
-  Builds an lex bot version ARN
+  lex bot version ARN
 ---
 
 # function: lex_bot_version
 
-Builds the ARN of an `lex` `bot version`:
+Builds the ARN for `lex` `bot version`:
 
 ```
 arn:${Partition}:lex:${Region}:${Account}:bot:${BotName}:${BotVersion}

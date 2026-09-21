@@ -3,12 +3,12 @@
 page_title: "codebuild_sandbox function - arn"
 subcategory: ""
 description: |-
-  Builds an codebuild sandbox ARN
+  codebuild sandbox ARN
 ---
 
 # function: codebuild_sandbox
 
-Builds the ARN of an `codebuild` `sandbox`:
+Builds the ARN for `codebuild` `sandbox`:
 
 ```
 arn:${Partition}:codebuild:${Region}:${Account}:sandbox/${SandboxId}

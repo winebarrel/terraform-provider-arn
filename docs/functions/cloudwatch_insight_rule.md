@@ -3,12 +3,12 @@
 page_title: "cloudwatch_insight_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudwatch insight-rule ARN
+  cloudwatch insight-rule ARN
 ---
 
 # function: cloudwatch_insight_rule
 
-Builds the ARN of an `cloudwatch` `insight-rule`:
+Builds the ARN for `cloudwatch` `insight-rule`:
 
 ```
 arn:${Partition}:cloudwatch:${Region}:${Account}:insight-rule/${InsightRuleName}

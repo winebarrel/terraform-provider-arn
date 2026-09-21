@@ -3,12 +3,12 @@
 page_title: "qbusiness_data_accessor function - arn"
 subcategory: ""
 description: |-
-  Builds an qbusiness data-accessor ARN
+  qbusiness data-accessor ARN
 ---
 
 # function: qbusiness_data_accessor
 
-Builds the ARN of an `qbusiness` `data-accessor`:
+Builds the ARN for `qbusiness` `data-accessor`:
 
 ```
 arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/data-accessor/${DataAccessorId}

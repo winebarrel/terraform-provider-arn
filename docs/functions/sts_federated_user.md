@@ -3,12 +3,12 @@
 page_title: "sts_federated_user function - arn"
 subcategory: ""
 description: |-
-  Builds an sts federated-user ARN
+  sts federated-user ARN
 ---
 
 # function: sts_federated_user
 
-Builds the ARN of an `sts` `federated-user`:
+Builds the ARN for `sts` `federated-user`:
 
 ```
 arn:${Partition}:sts::${Account}:federated-user/${FederatedUserName}

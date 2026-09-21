@@ -3,12 +3,12 @@
 page_title: "glacier_vault function - arn"
 subcategory: ""
 description: |-
-  Builds an glacier vault ARN
+  glacier vault ARN
 ---
 
 # function: glacier_vault
 
-Builds the ARN of an `glacier` `vault`:
+Builds the ARN for `glacier` `vault`:
 
 ```
 arn:${Partition}:glacier:${Region}:${Account}:vaults/${VaultName}

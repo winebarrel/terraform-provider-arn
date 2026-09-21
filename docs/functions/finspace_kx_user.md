@@ -3,12 +3,12 @@
 page_title: "finspace_kx_user function - arn"
 subcategory: ""
 description: |-
-  Builds an finspace kxUser ARN
+  finspace kxUser ARN
 ---
 
 # function: finspace_kx_user
 
-Builds the ARN of an `finspace` `kxUser`:
+Builds the ARN for `finspace` `kxUser`:
 
 ```
 arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxUser/${UserName}

@@ -3,12 +3,12 @@
 page_title: "ssm_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm instance ARN
+  ssm instance ARN
 ---
 
 # function: ssm_instance
 
-Builds the ARN of an `ssm` `instance`:
+Builds the ARN for `ssm` `instance`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:instance/${InstanceId}

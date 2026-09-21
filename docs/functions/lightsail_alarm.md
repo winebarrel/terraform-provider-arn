@@ -3,12 +3,12 @@
 page_title: "lightsail_alarm function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail Alarm ARN
+  lightsail Alarm ARN
 ---
 
 # function: lightsail_alarm
 
-Builds the ARN of an `lightsail` `Alarm`:
+Builds the ARN for `lightsail` `Alarm`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:Alarm/${Id}

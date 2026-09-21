@@ -3,12 +3,12 @@
 page_title: "personalize_recipe function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize recipe ARN
+  personalize recipe ARN
 ---
 
 # function: personalize_recipe
 
-Builds the ARN of an `personalize` `recipe`:
+Builds the ARN for `personalize` `recipe`:
 
 ```
 arn:${Partition}:personalize:::recipe/${ResourceId}

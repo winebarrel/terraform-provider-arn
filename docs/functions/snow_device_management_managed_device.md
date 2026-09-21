@@ -3,12 +3,12 @@
 page_title: "snow_device_management_managed_device function - arn"
 subcategory: ""
 description: |-
-  Builds an snow-device-management managed-device ARN
+  snow-device-management managed-device ARN
 ---
 
 # function: snow_device_management_managed_device
 
-Builds the ARN of an `snow-device-management` `managed-device`:
+Builds the ARN for `snow-device-management` `managed-device`:
 
 ```
 arn:${Partition}:snow-device-management:${Region}:${Account}:managed-device/${ResourceId}

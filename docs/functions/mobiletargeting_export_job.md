@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_export_job function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting export-job ARN
+  mobiletargeting export-job ARN
 ---
 
 # function: mobiletargeting_export_job
 
-Builds the ARN of an `mobiletargeting` `export-job`:
+Builds the ARN for `mobiletargeting` `export-job`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/jobs/export/${JobId}

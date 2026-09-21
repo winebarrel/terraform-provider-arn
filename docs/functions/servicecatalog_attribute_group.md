@@ -3,12 +3,12 @@
 page_title: "servicecatalog_attribute_group function - arn"
 subcategory: ""
 description: |-
-  Builds an servicecatalog AttributeGroup ARN
+  servicecatalog AttributeGroup ARN
 ---
 
 # function: servicecatalog_attribute_group
 
-Builds the ARN of an `servicecatalog` `AttributeGroup`:
+Builds the ARN for `servicecatalog` `AttributeGroup`:
 
 ```
 arn:${Partition}:servicecatalog:${Region}:${Account}:/attribute-groups/${AttributeGroupId}

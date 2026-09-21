@@ -3,12 +3,12 @@
 page_title: "finspace_kx_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an finspace kxEnvironment ARN
+  finspace kxEnvironment ARN
 ---
 
 # function: finspace_kx_environment
 
-Builds the ARN of an `finspace` `kxEnvironment`:
+Builds the ARN for `finspace` `kxEnvironment`:
 
 ```
 arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}

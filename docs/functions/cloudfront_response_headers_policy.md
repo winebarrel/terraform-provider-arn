@@ -3,12 +3,12 @@
 page_title: "cloudfront_response_headers_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront response-headers-policy ARN
+  cloudfront response-headers-policy ARN
 ---
 
 # function: cloudfront_response_headers_policy
 
-Builds the ARN of an `cloudfront` `response-headers-policy`:
+Builds the ARN for `cloudfront` `response-headers-policy`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:response-headers-policy/${Id}

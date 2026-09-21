@@ -3,12 +3,12 @@
 page_title: "apigateway_authorizers function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Authorizers ARN
+  apigateway Authorizers ARN
 ---
 
 # function: apigateway_authorizers
 
-Builds the ARN of an `apigateway` `Authorizers`:
+Builds the ARN for `apigateway` `Authorizers`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/authorizers

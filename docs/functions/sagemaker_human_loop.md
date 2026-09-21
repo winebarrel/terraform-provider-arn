@@ -3,12 +3,12 @@
 page_title: "sagemaker_human_loop function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker human-loop ARN
+  sagemaker human-loop ARN
 ---
 
 # function: sagemaker_human_loop
 
-Builds the ARN of an `sagemaker` `human-loop`:
+Builds the ARN for `sagemaker` `human-loop`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:human-loop/${HumanLoopName}

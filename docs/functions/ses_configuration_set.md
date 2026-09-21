@@ -3,12 +3,12 @@
 page_title: "ses_configuration_set function - arn"
 subcategory: ""
 description: |-
-  Builds an ses configuration-set ARN
+  ses configuration-set ARN
 ---
 
 # function: ses_configuration_set
 
-Builds the ARN of an `ses` `configuration-set`:
+Builds the ARN for `ses` `configuration-set`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:configuration-set/${ConfigurationSetName}

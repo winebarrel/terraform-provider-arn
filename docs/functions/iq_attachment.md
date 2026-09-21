@@ -3,12 +3,12 @@
 page_title: "iq_attachment function - arn"
 subcategory: ""
 description: |-
-  Builds an iq attachment ARN
+  iq attachment ARN
 ---
 
 # function: iq_attachment
 
-Builds the ARN of an `iq` `attachment`:
+Builds the ARN for `iq` `attachment`:
 
 ```
 arn:${Partition}:iq:${Region}::attachment/${AttachmentId}

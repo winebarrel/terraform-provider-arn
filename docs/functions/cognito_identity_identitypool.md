@@ -3,12 +3,12 @@
 page_title: "cognito_identity_identitypool function - arn"
 subcategory: ""
 description: |-
-  Builds an cognito-identity identitypool ARN
+  cognito-identity identitypool ARN
 ---
 
 # function: cognito_identity_identitypool
 
-Builds the ARN of an `cognito-identity` `identitypool`:
+Builds the ARN for `cognito-identity` `identitypool`:
 
 ```
 arn:${Partition}:cognito-identity:${Region}:${Account}:identitypool/${IdentityPoolId}

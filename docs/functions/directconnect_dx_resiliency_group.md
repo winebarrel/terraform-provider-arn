@@ -3,12 +3,12 @@
 page_title: "directconnect_dx_resiliency_group function - arn"
 subcategory: ""
 description: |-
-  Builds an directconnect dx-resiliency-group ARN
+  directconnect dx-resiliency-group ARN
 ---
 
 # function: directconnect_dx_resiliency_group
 
-Builds the ARN of an `directconnect` `dx-resiliency-group`:
+Builds the ARN for `directconnect` `dx-resiliency-group`:
 
 ```
 arn:${Partition}:directconnect::${Account}:dx-resiliency-group/${ResiliencyGroupId}

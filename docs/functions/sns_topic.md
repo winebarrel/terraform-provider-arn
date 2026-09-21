@@ -3,12 +3,12 @@
 page_title: "sns_topic function - arn"
 subcategory: ""
 description: |-
-  Builds an sns topic ARN
+  sns topic ARN
 ---
 
 # function: sns_topic
 
-Builds the ARN of an `sns` `topic`:
+Builds the ARN for `sns` `topic`:
 
 ```
 arn:${Partition}:sns:${Region}:${Account}:${TopicName}

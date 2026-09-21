@@ -3,12 +3,12 @@
 page_title: "signin_oauth2_resource_service_principal function - arn"
 subcategory: ""
 description: |-
-  Builds an signin oauth2-resource-service-principal ARN
+  signin oauth2-resource-service-principal ARN
 ---
 
 # function: signin_oauth2_resource_service_principal
 
-Builds the ARN of an `signin` `oauth2-resource-service-principal`:
+Builds the ARN for `signin` `oauth2-resource-service-principal`:
 
 ```
 arn:${Partition}:signin:${Region}:${Account}:service-principal/${ServicePrincipalName}

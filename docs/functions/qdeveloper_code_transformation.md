@@ -3,12 +3,12 @@
 page_title: "qdeveloper_code_transformation function - arn"
 subcategory: ""
 description: |-
-  Builds an qdeveloper codeTransformation ARN
+  qdeveloper codeTransformation ARN
 ---
 
 # function: qdeveloper_code_transformation
 
-Builds the ARN of an `qdeveloper` `codeTransformation`:
+Builds the ARN for `qdeveloper` `codeTransformation`:
 
 ```
 arn:${Partition}:qdeveloper:${Region}:${Account}:codeTransformation/${Identifier}

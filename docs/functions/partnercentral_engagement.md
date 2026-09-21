@@ -3,12 +3,12 @@
 page_title: "partnercentral_engagement function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral Engagement ARN
+  partnercentral Engagement ARN
 ---
 
 # function: partnercentral_engagement
 
-Builds the ARN of an `partnercentral` `Engagement`:
+Builds the ARN for `partnercentral` `Engagement`:
 
 ```
 arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement/${Identifier}

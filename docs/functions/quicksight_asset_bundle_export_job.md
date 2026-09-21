@@ -3,12 +3,12 @@
 page_title: "quicksight_asset_bundle_export_job function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight assetBundleExportJob ARN
+  quicksight assetBundleExportJob ARN
 ---
 
 # function: quicksight_asset_bundle_export_job
 
-Builds the ARN of an `quicksight` `assetBundleExportJob`:
+Builds the ARN for `quicksight` `assetBundleExportJob`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:asset-bundle-export-job/${ResourceId}

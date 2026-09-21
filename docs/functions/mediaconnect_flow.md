@@ -3,12 +3,12 @@
 page_title: "mediaconnect_flow function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconnect Flow ARN
+  mediaconnect Flow ARN
 ---
 
 # function: mediaconnect_flow
 
-Builds the ARN of an `mediaconnect` `Flow`:
+Builds the ARN for `mediaconnect` `Flow`:
 
 ```
 arn:${Partition}:mediaconnect:${Region}:${Account}:flow:${FlowId}:${FlowName}

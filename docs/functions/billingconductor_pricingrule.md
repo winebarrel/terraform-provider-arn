@@ -3,12 +3,12 @@
 page_title: "billingconductor_pricingrule function - arn"
 subcategory: ""
 description: |-
-  Builds an billingconductor pricingrule ARN
+  billingconductor pricingrule ARN
 ---
 
 # function: billingconductor_pricingrule
 
-Builds the ARN of an `billingconductor` `pricingrule`:
+Builds the ARN for `billingconductor` `pricingrule`:
 
 ```
 arn:${Partition}:billingconductor::${Account}:pricingrule/${PricingRuleId}

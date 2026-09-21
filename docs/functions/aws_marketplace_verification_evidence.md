@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_verification_evidence function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace VerificationEvidence ARN
+  aws-marketplace VerificationEvidence ARN
 ---
 
 # function: aws_marketplace_verification_evidence
 
-Builds the ARN of an `aws-marketplace` `VerificationEvidence`:
+Builds the ARN for `aws-marketplace` `VerificationEvidence`:
 
 ```
 arn:${Partition}:aws-marketplace:${Region}:${Account}:verification-type/${VerificationType}/verification-evidence/${ResourceId}

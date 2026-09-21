@@ -3,12 +3,12 @@
 page_title: "wisdom_ai_prompt function - arn"
 subcategory: ""
 description: |-
-  Builds an wisdom AIPrompt ARN
+  wisdom AIPrompt ARN
 ---
 
 # function: wisdom_ai_prompt
 
-Builds the ARN of an `wisdom` `AIPrompt`:
+Builds the ARN for `wisdom` `AIPrompt`:
 
 ```
 arn:${Partition}:wisdom:${Region}:${Account}:ai-prompt/${AssistantId}/${AIPromptId}

@@ -3,12 +3,12 @@
 page_title: "es_opensearchservice_role function - arn"
 subcategory: ""
 description: |-
-  Builds an es opensearchservice_role ARN
+  es opensearchservice_role ARN
 ---
 
 # function: es_opensearchservice_role
 
-Builds the ARN of an `es` `opensearchservice_role`:
+Builds the ARN for `es` `opensearchservice_role`:
 
 ```
 arn:${Partition}:iam::${Account}:role/aws-service-role/opensearchservice.amazonaws.com/AWSServiceRoleForAmazonOpenSearchService

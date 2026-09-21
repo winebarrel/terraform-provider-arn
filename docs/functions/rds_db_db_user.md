@@ -3,12 +3,12 @@
 page_title: "rds_db_db_user function - arn"
 subcategory: ""
 description: |-
-  Builds an rds-db db-user ARN
+  rds-db db-user ARN
 ---
 
 # function: rds_db_db_user
 
-Builds the ARN of an `rds-db` `db-user`:
+Builds the ARN for `rds-db` `db-user`:
 
 ```
 arn:${Partition}:rds-db:${Region}:${Account}:dbuser:${DbiResourceId}/${DbUserName}

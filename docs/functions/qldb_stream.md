@@ -3,12 +3,12 @@
 page_title: "qldb_stream function - arn"
 subcategory: ""
 description: |-
-  Builds an qldb stream ARN
+  qldb stream ARN
 ---
 
 # function: qldb_stream
 
-Builds the ARN of an `qldb` `stream`:
+Builds the ARN for `qldb` `stream`:
 
 ```
 arn:${Partition}:qldb:${Region}:${Account}:stream/${LedgerName}/${StreamId}

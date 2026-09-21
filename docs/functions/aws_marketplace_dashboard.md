@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_dashboard function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace Dashboard ARN
+  aws-marketplace Dashboard ARN
 ---
 
 # function: aws_marketplace_dashboard
 
-Builds the ARN of an `aws-marketplace` `Dashboard`:
+Builds the ARN for `aws-marketplace` `Dashboard`:
 
 ```
 arn:${Partition}:aws-marketplace::${Account}:${Catalog}/ReportingData/${FactTable}/Dashboard/${DashboardName}

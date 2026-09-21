@@ -3,12 +3,12 @@
 page_title: "connect_notification function - arn"
 subcategory: ""
 description: |-
-  Builds an connect notification ARN
+  connect notification ARN
 ---
 
 # function: connect_notification
 
-Builds the ARN of an `connect` `notification`:
+Builds the ARN for `connect` `notification`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/notification/${NotificationId}

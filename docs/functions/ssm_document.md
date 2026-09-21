@@ -3,12 +3,12 @@
 page_title: "ssm_document function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm document ARN
+  ssm document ARN
 ---
 
 # function: ssm_document
 
-Builds the ARN of an `ssm` `document`:
+Builds the ARN for `ssm` `document`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:document/${DocumentName}

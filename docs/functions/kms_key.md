@@ -3,12 +3,12 @@
 page_title: "kms_key function - arn"
 subcategory: ""
 description: |-
-  Builds an kms key ARN
+  kms key ARN
 ---
 
 # function: kms_key
 
-Builds the ARN of an `kms` `key`:
+Builds the ARN for `kms` `key`:
 
 ```
 arn:${Partition}:kms:${Region}:${Account}:key/${KeyId}

@@ -3,12 +3,12 @@
 page_title: "route53resolver_resolver_config function - arn"
 subcategory: ""
 description: |-
-  Builds an route53resolver resolver-config ARN
+  route53resolver resolver-config ARN
 ---
 
 # function: route53resolver_resolver_config
 
-Builds the ARN of an `route53resolver` `resolver-config`:
+Builds the ARN for `route53resolver` `resolver-config`:
 
 ```
 arn:${Partition}:route53resolver:${Region}:${Account}:resolver-config/${ResourceId}

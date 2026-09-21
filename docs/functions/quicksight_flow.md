@@ -3,12 +3,12 @@
 page_title: "quicksight_flow function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight flow ARN
+  quicksight flow ARN
 ---
 
 # function: quicksight_flow
 
-Builds the ARN of an `quicksight` `flow`:
+Builds the ARN for `quicksight` `flow`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:flow/${ResourceId}

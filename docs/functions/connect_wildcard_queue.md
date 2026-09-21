@@ -3,12 +3,12 @@
 page_title: "connect_wildcard_queue function - arn"
 subcategory: ""
 description: |-
-  Builds an connect wildcard-queue ARN
+  connect wildcard-queue ARN
 ---
 
 # function: connect_wildcard_queue
 
-Builds the ARN of an `connect` `wildcard-queue`:
+Builds the ARN for `connect` `wildcard-queue`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/queue/*

@@ -3,12 +3,12 @@
 page_title: "ec2_ipam_resource_discovery function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 ipam-resource-discovery ARN
+  ec2 ipam-resource-discovery ARN
 ---
 
 # function: ec2_ipam_resource_discovery
 
-Builds the ARN of an `ec2` `ipam-resource-discovery`:
+Builds the ARN for `ec2` `ipam-resource-discovery`:
 
 ```
 arn:${Partition}:ec2::${Account}:ipam-resource-discovery/${IpamResourceDiscoveryId}

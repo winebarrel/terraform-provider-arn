@@ -3,12 +3,12 @@
 page_title: "license_manager_user_subscriptions_identity_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an license-manager-user-subscriptions identity-provider ARN
+  license-manager-user-subscriptions identity-provider ARN
 ---
 
 # function: license_manager_user_subscriptions_identity_provider
 
-Builds the ARN of an `license-manager-user-subscriptions` `identity-provider`:
+Builds the ARN for `license-manager-user-subscriptions` `identity-provider`:
 
 ```
 arn:${Partition}:license-manager-user-subscriptions:${Region}:${Account}:identity-provider/${IdentityProviderId}

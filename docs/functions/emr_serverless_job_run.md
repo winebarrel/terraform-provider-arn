@@ -3,12 +3,12 @@
 page_title: "emr_serverless_job_run function - arn"
 subcategory: ""
 description: |-
-  Builds an emr-serverless jobRun ARN
+  emr-serverless jobRun ARN
 ---
 
 # function: emr_serverless_job_run
 
-Builds the ARN of an `emr-serverless` `jobRun`:
+Builds the ARN for `emr-serverless` `jobRun`:
 
 ```
 arn:${Partition}:emr-serverless:${Region}:${Account}:/applications/${ApplicationId}/jobruns/${JobRunId}

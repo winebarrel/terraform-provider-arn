@@ -3,12 +3,12 @@
 page_title: "appfabric_appbundle function - arn"
 subcategory: ""
 description: |-
-  Builds an appfabric appbundle ARN
+  appfabric appbundle ARN
 ---
 
 # function: appfabric_appbundle
 
-Builds the ARN of an `appfabric` `appbundle`:
+Builds the ARN for `appfabric` `appbundle`:
 
 ```
 arn:${Partition}:appfabric:${Region}:${Account}:appbundle/${AppBundleIdentifier}

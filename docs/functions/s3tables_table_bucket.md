@@ -3,12 +3,12 @@
 page_title: "s3tables_table_bucket function - arn"
 subcategory: ""
 description: |-
-  Builds an s3tables TableBucket ARN
+  s3tables TableBucket ARN
 ---
 
 # function: s3tables_table_bucket
 
-Builds the ARN of an `s3tables` `TableBucket`:
+Builds the ARN for `s3tables` `TableBucket`:
 
 ```
 arn:${Partition}:s3tables:${Region}:${Account}:bucket/${TableBucketName}

@@ -3,12 +3,12 @@
 page_title: "macie2_allow_list function - arn"
 subcategory: ""
 description: |-
-  Builds an macie2 AllowList ARN
+  macie2 AllowList ARN
 ---
 
 # function: macie2_allow_list
 
-Builds the ARN of an `macie2` `AllowList`:
+Builds the ARN for `macie2` `AllowList`:
 
 ```
 arn:${Partition}:macie2:${Region}:${Account}:allow-list/${ResourceId}

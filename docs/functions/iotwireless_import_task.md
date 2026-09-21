@@ -3,12 +3,12 @@
 page_title: "iotwireless_import_task function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless ImportTask ARN
+  iotwireless ImportTask ARN
 ---
 
 # function: iotwireless_import_task
 
-Builds the ARN of an `iotwireless` `ImportTask`:
+Builds the ARN for `iotwireless` `ImportTask`:
 
 ```
 arn:${Partition}:iotwireless:${Region}:${Account}:ImportTask/${ImportTaskId}

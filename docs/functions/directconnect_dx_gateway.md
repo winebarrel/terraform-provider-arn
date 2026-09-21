@@ -3,12 +3,12 @@
 page_title: "directconnect_dx_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an directconnect dx-gateway ARN
+  directconnect dx-gateway ARN
 ---
 
 # function: directconnect_dx_gateway
 
-Builds the ARN of an `directconnect` `dx-gateway`:
+Builds the ARN for `directconnect` `dx-gateway`:
 
 ```
 arn:${Partition}:directconnect::${Account}:dx-gateway/${DirectConnectGatewayId}

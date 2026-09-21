@@ -3,12 +3,12 @@
 page_title: "rds_snapshot_tenant_database function - arn"
 subcategory: ""
 description: |-
-  Builds an rds snapshot-tenant-database ARN
+  rds snapshot-tenant-database ARN
 ---
 
 # function: rds_snapshot_tenant_database
 
-Builds the ARN of an `rds` `snapshot-tenant-database`:
+Builds the ARN for `rds` `snapshot-tenant-database`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:snapshot-tenant-database:${SnapshotName}:${TenantResourceId}

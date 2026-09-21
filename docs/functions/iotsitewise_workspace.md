@@ -3,12 +3,12 @@
 page_title: "iotsitewise_workspace function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise workspace ARN
+  iotsitewise workspace ARN
 ---
 
 # function: iotsitewise_workspace
 
-Builds the ARN of an `iotsitewise` `workspace`:
+Builds the ARN for `iotsitewise` `workspace`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:workspace/${WorkspaceName}

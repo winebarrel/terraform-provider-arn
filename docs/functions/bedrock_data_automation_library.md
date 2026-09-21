@@ -3,12 +3,12 @@
 page_title: "bedrock_data_automation_library function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock data-automation-library ARN
+  bedrock data-automation-library ARN
 ---
 
 # function: bedrock_data_automation_library
 
-Builds the ARN of an `bedrock` `data-automation-library`:
+Builds the ARN for `bedrock` `data-automation-library`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:data-automation-library/${DataAutomationLibraryId}

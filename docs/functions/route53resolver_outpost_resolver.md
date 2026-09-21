@@ -3,12 +3,12 @@
 page_title: "route53resolver_outpost_resolver function - arn"
 subcategory: ""
 description: |-
-  Builds an route53resolver outpost-resolver ARN
+  route53resolver outpost-resolver ARN
 ---
 
 # function: route53resolver_outpost_resolver
 
-Builds the ARN of an `route53resolver` `outpost-resolver`:
+Builds the ARN for `route53resolver` `outpost-resolver`:
 
 ```
 arn:${Partition}:route53resolver:${Region}:${Account}:outpost-resolver/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "comprehend_pii_entities_detection_job function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend pii-entities-detection-job ARN
+  comprehend pii-entities-detection-job ARN
 ---
 
 # function: comprehend_pii_entities_detection_job
 
-Builds the ARN of an `comprehend` `pii-entities-detection-job`:
+Builds the ARN for `comprehend` `pii-entities-detection-job`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:pii-entities-detection-job/${JobId}

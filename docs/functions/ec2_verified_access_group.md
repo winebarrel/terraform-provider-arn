@@ -3,12 +3,12 @@
 page_title: "ec2_verified_access_group function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 verified-access-group ARN
+  ec2 verified-access-group ARN
 ---
 
 # function: ec2_verified_access_group
 
-Builds the ARN of an `ec2` `verified-access-group`:
+Builds the ARN for `ec2` `verified-access-group`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:verified-access-group/${VerifiedAccessGroupId}

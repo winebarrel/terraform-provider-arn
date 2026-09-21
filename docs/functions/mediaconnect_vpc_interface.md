@@ -3,12 +3,12 @@
 page_title: "mediaconnect_vpc_interface function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconnect VpcInterface ARN
+  mediaconnect VpcInterface ARN
 ---
 
 # function: mediaconnect_vpc_interface
 
-Builds the ARN of an `mediaconnect` `VpcInterface`:
+Builds the ARN for `mediaconnect` `VpcInterface`:
 
 ```
 arn:${Partition}:mediaconnect:${Region}:${Account}:flow:${FlowId}:${FlowName}/vpcInterface/${VpcInterfaceName}

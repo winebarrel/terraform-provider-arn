@@ -3,12 +3,12 @@
 page_title: "ivs_channel function - arn"
 subcategory: ""
 description: |-
-  Builds an ivs Channel ARN
+  ivs Channel ARN
 ---
 
 # function: ivs_channel
 
-Builds the ARN of an `ivs` `Channel`:
+Builds the ARN for `ivs` `Channel`:
 
 ```
 arn:${Partition}:ivs:${Region}:${Account}:channel/${ResourceId}

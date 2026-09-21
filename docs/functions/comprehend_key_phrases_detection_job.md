@@ -3,12 +3,12 @@
 page_title: "comprehend_key_phrases_detection_job function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend key-phrases-detection-job ARN
+  comprehend key-phrases-detection-job ARN
 ---
 
 # function: comprehend_key_phrases_detection_job
 
-Builds the ARN of an `comprehend` `key-phrases-detection-job`:
+Builds the ARN for `comprehend` `key-phrases-detection-job`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:key-phrases-detection-job/${JobId}

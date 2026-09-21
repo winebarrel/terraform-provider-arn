@@ -3,12 +3,12 @@
 page_title: "glue_tableversion function - arn"
 subcategory: ""
 description: |-
-  Builds an glue tableversion ARN
+  glue tableversion ARN
 ---
 
 # function: glue_tableversion
 
-Builds the ARN of an `glue` `tableversion`:
+Builds the ARN for `glue` `tableversion`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:tableVersion/${DatabaseName}/${TableName}/${TableVersionName}

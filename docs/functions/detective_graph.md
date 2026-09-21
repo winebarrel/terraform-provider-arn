@@ -3,12 +3,12 @@
 page_title: "detective_graph function - arn"
 subcategory: ""
 description: |-
-  Builds an detective Graph ARN
+  detective Graph ARN
 ---
 
 # function: detective_graph
 
-Builds the ARN of an `detective` `Graph`:
+Builds the ARN for `detective` `Graph`:
 
 ```
 arn:${Partition}:detective:${Region}:${Account}:graph:${ResourceId}

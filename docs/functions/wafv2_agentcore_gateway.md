@@ -3,12 +3,12 @@
 page_title: "wafv2_agentcore_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an wafv2 agentcore-gateway ARN
+  wafv2 agentcore-gateway ARN
 ---
 
 # function: wafv2_agentcore_gateway
 
-Builds the ARN of an `wafv2` `agentcore-gateway`:
+Builds the ARN for `wafv2` `agentcore-gateway`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:gateway/${GatewayId}

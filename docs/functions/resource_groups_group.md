@@ -3,12 +3,12 @@
 page_title: "resource_groups_group function - arn"
 subcategory: ""
 description: |-
-  Builds an resource-groups group ARN
+  resource-groups group ARN
 ---
 
 # function: resource_groups_group
 
-Builds the ARN of an `resource-groups` `group`:
+Builds the ARN for `resource-groups` `group`:
 
 ```
 arn:${Partition}:resource-groups:${Region}:${Account}:group/${GroupName}

@@ -3,12 +3,12 @@
 page_title: "ec2_internet_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 internet-gateway ARN
+  ec2 internet-gateway ARN
 ---
 
 # function: ec2_internet_gateway
 
-Builds the ARN of an `ec2` `internet-gateway`:
+Builds the ARN for `ec2` `internet-gateway`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:internet-gateway/${InternetGatewayId}

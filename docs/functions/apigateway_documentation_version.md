@@ -3,12 +3,12 @@
 page_title: "apigateway_documentation_version function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway DocumentationVersion ARN
+  apigateway DocumentationVersion ARN
 ---
 
 # function: apigateway_documentation_version
 
-Builds the ARN of an `apigateway` `DocumentationVersion`:
+Builds the ARN for `apigateway` `DocumentationVersion`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/documentation/versions/${DocumentationVersionId}

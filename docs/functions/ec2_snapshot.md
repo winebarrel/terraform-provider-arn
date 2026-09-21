@@ -3,12 +3,12 @@
 page_title: "ec2_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 snapshot ARN
+  ec2 snapshot ARN
 ---
 
 # function: ec2_snapshot
 
-Builds the ARN of an `ec2` `snapshot`:
+Builds the ARN for `ec2` `snapshot`:
 
 ```
 arn:${Partition}:ec2:${Region}::snapshot/${SnapshotId}

@@ -3,12 +3,12 @@
 page_title: "backup_recovery_point function - arn"
 subcategory: ""
 description: |-
-  Builds an backup recoveryPoint ARN
+  backup recoveryPoint ARN
 ---
 
 # function: backup_recovery_point
 
-Builds the ARN of an `backup` `recoveryPoint`:
+Builds the ARN for `backup` `recoveryPoint`:
 
 ```
 arn:${Partition}:${Vendor}:${Region}:*:${ResourceType}:${RecoveryPointId}

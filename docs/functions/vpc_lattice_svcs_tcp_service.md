@@ -3,12 +3,12 @@
 page_title: "vpc_lattice_svcs_tcp_service function - arn"
 subcategory: ""
 description: |-
-  Builds an vpc-lattice-svcs TCP Service ARN
+  vpc-lattice-svcs TCP Service ARN
 ---
 
 # function: vpc_lattice_svcs_tcp_service
 
-Builds the ARN of an `vpc-lattice-svcs` `TCP Service`:
+Builds the ARN for `vpc-lattice-svcs` `TCP Service`:
 
 ```
 arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}

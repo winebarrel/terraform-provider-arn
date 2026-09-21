@@ -3,12 +3,12 @@
 page_title: "chime_sip_media_application function - arn"
 subcategory: ""
 description: |-
-  Builds an chime sip-media-application ARN
+  chime sip-media-application ARN
 ---
 
 # function: chime_sip_media_application
 
-Builds the ARN of an `chime` `sip-media-application`:
+Builds the ARN for `chime` `sip-media-application`:
 
 ```
 arn:${Partition}:chime:${Region}:${AccountId}:sma/${SipMediaApplicationId}

@@ -3,12 +3,12 @@
 page_title: "medialive_eventbridge_rule_template function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive eventbridge-rule-template ARN
+  medialive eventbridge-rule-template ARN
 ---
 
 # function: medialive_eventbridge_rule_template
 
-Builds the ARN of an `medialive` `eventbridge-rule-template`:
+Builds the ARN for `medialive` `eventbridge-rule-template`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:eventbridge-rule-template:${EventBridgeRuleTemplateId}

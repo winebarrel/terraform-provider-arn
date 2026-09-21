@@ -3,12 +3,12 @@
 page_title: "ec2_local_gateway_route_table_virtual_interface_group_association function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 local-gateway-route-table-virtual-interface-group-association ARN
+  ec2 local-gateway-route-table-virtual-interface-group-association ARN
 ---
 
 # function: ec2_local_gateway_route_table_virtual_interface_group_association
 
-Builds the ARN of an `ec2` `local-gateway-route-table-virtual-interface-group-association`:
+Builds the ARN for `ec2` `local-gateway-route-table-virtual-interface-group-association`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:local-gateway-route-table-virtual-interface-group-association/${LocalGatewayRouteTableVirtualInterfaceGroupAssociationId}

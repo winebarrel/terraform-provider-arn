@@ -3,12 +3,12 @@
 page_title: "notifications_event_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an notifications EventRule ARN
+  notifications EventRule ARN
 ---
 
 # function: notifications_event_rule
 
-Builds the ARN of an `notifications` `EventRule`:
+Builds the ARN for `notifications` `EventRule`:
 
 ```
 arn:${Partition}:notifications::${Account}:configuration/${NotificationConfigurationId}/rule/${EventRuleId}

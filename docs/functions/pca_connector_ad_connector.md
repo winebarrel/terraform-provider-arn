@@ -3,12 +3,12 @@
 page_title: "pca_connector_ad_connector function - arn"
 subcategory: ""
 description: |-
-  Builds an pca-connector-ad Connector ARN
+  pca-connector-ad Connector ARN
 ---
 
 # function: pca_connector_ad_connector
 
-Builds the ARN of an `pca-connector-ad` `Connector`:
+Builds the ARN for `pca-connector-ad` `Connector`:
 
 ```
 arn:${Partition}:pca-connector-ad:${Region}:${Account}:connector/${ConnectorId}

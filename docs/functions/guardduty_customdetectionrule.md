@@ -3,12 +3,12 @@
 page_title: "guardduty_customdetectionrule function - arn"
 subcategory: ""
 description: |-
-  Builds an guardduty customdetectionrule ARN
+  guardduty customdetectionrule ARN
 ---
 
 # function: guardduty_customdetectionrule
 
-Builds the ARN of an `guardduty` `customdetectionrule`:
+Builds the ARN for `guardduty` `customdetectionrule`:
 
 ```
 arn:${Partition}:guardduty::aws:detection-rule/custom/${RuleId}

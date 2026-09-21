@@ -3,12 +3,12 @@
 page_title: "fsx_volume function - arn"
 subcategory: ""
 description: |-
-  Builds an fsx volume ARN
+  fsx volume ARN
 ---
 
 # function: fsx_volume
 
-Builds the ARN of an `fsx` `volume`:
+Builds the ARN for `fsx` `volume`:
 
 ```
 arn:${Partition}:fsx:${Region}:${Account}:volume/${FileSystemId}/${VolumeId}

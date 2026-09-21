@@ -3,12 +3,12 @@
 page_title: "tnb_network_package function - arn"
 subcategory: ""
 description: |-
-  Builds an tnb network-package ARN
+  tnb network-package ARN
 ---
 
 # function: tnb_network_package
 
-Builds the ARN of an `tnb` `network-package`:
+Builds the ARN for `tnb` `network-package`:
 
 ```
 arn:${Partition}:tnb:${Region}:${Account}:network-package/${NetworkPackageId}

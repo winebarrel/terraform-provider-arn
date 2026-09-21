@@ -3,12 +3,12 @@
 page_title: "route53globalresolver_global_resolver function - arn"
 subcategory: ""
 description: |-
-  Builds an route53globalresolver global-resolver ARN
+  route53globalresolver global-resolver ARN
 ---
 
 # function: route53globalresolver_global_resolver
 
-Builds the ARN of an `route53globalresolver` `global-resolver`:
+Builds the ARN for `route53globalresolver` `global-resolver`:
 
 ```
 arn:${Partition}:route53globalresolver::${Account}:global-resolver/${Id}

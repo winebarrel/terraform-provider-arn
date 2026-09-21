@@ -3,12 +3,12 @@
 page_title: "fsx_task function - arn"
 subcategory: ""
 description: |-
-  Builds an fsx task ARN
+  fsx task ARN
 ---
 
 # function: fsx_task
 
-Builds the ARN of an `fsx` `task`:
+Builds the ARN for `fsx` `task`:
 
 ```
 arn:${Partition}:fsx:${Region}:${Account}:task/${TaskId}

@@ -3,12 +3,12 @@
 page_title: "transcribe_vocabularyfilter function - arn"
 subcategory: ""
 description: |-
-  Builds an transcribe vocabularyfilter ARN
+  transcribe vocabularyfilter ARN
 ---
 
 # function: transcribe_vocabularyfilter
 
-Builds the ARN of an `transcribe` `vocabularyfilter`:
+Builds the ARN for `transcribe` `vocabularyfilter`:
 
 ```
 arn:${Partition}:transcribe:${Region}:${Account}:vocabulary-filter/${VocabularyFilterName}

@@ -3,12 +3,12 @@
 page_title: "geo_maps_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an geo-maps provider ARN
+  geo-maps provider ARN
 ---
 
 # function: geo_maps_provider
 
-Builds the ARN of an `geo-maps` `provider`:
+Builds the ARN for `geo-maps` `provider`:
 
 ```
 arn:${Partition}:geo-maps:${Region}::provider/default

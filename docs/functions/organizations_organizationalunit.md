@@ -3,12 +3,12 @@
 page_title: "organizations_organizationalunit function - arn"
 subcategory: ""
 description: |-
-  Builds an organizations organizationalunit ARN
+  organizations organizationalunit ARN
 ---
 
 # function: organizations_organizationalunit
 
-Builds the ARN of an `organizations` `organizationalunit`:
+Builds the ARN for `organizations` `organizationalunit`:
 
 ```
 arn:${Partition}:organizations::${Account}:ou/o-${OrganizationId}/ou-${OrganizationalUnitId}

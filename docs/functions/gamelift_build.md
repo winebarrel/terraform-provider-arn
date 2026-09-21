@@ -3,12 +3,12 @@
 page_title: "gamelift_build function - arn"
 subcategory: ""
 description: |-
-  Builds an gamelift build ARN
+  gamelift build ARN
 ---
 
 # function: gamelift_build
 
-Builds the ARN of an `gamelift` `build`:
+Builds the ARN for `gamelift` `build`:
 
 ```
 arn:${Partition}:gamelift:${Region}:${Account}:build/${BuildId}

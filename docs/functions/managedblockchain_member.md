@@ -3,12 +3,12 @@
 page_title: "managedblockchain_member function - arn"
 subcategory: ""
 description: |-
-  Builds an managedblockchain member ARN
+  managedblockchain member ARN
 ---
 
 # function: managedblockchain_member
 
-Builds the ARN of an `managedblockchain` `member`:
+Builds the ARN for `managedblockchain` `member`:
 
 ```
 arn:${Partition}:managedblockchain:${Region}:${Account}:members/${MemberId}

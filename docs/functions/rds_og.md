@@ -3,12 +3,12 @@
 page_title: "rds_og function - arn"
 subcategory: ""
 description: |-
-  Builds an rds og ARN
+  rds og ARN
 ---
 
 # function: rds_og
 
-Builds the ARN of an `rds` `og`:
+Builds the ARN for `rds` `og`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:og:${OptionGroupName}

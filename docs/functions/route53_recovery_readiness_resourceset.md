@@ -3,12 +3,12 @@
 page_title: "route53_recovery_readiness_resourceset function - arn"
 subcategory: ""
 description: |-
-  Builds an route53-recovery-readiness resourceset ARN
+  route53-recovery-readiness resourceset ARN
 ---
 
 # function: route53_recovery_readiness_resourceset
 
-Builds the ARN of an `route53-recovery-readiness` `resourceset`:
+Builds the ARN for `route53-recovery-readiness` `resourceset`:
 
 ```
 arn:${Partition}:route53-recovery-readiness::${Account}:resource-set/${ResourceId}

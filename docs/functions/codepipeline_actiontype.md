@@ -3,12 +3,12 @@
 page_title: "codepipeline_actiontype function - arn"
 subcategory: ""
 description: |-
-  Builds an codepipeline actiontype ARN
+  codepipeline actiontype ARN
 ---
 
 # function: codepipeline_actiontype
 
-Builds the ARN of an `codepipeline` `actiontype`:
+Builds the ARN for `codepipeline` `actiontype`:
 
 ```
 arn:${Partition}:codepipeline:${Region}:${Account}:actiontype:${Owner}/${Category}/${Provider}/${Version}

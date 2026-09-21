@@ -3,12 +3,12 @@
 page_title: "arc_region_switch_plan function - arn"
 subcategory: ""
 description: |-
-  Builds an arc-region-switch plan ARN
+  arc-region-switch plan ARN
 ---
 
 # function: arc_region_switch_plan
 
-Builds the ARN of an `arc-region-switch` `plan`:
+Builds the ARN for `arc-region-switch` `plan`:
 
 ```
 arn:${Partition}:arc-region-switch::${Account}:plan/${ResourceId}

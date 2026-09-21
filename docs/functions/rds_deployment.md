@@ -3,12 +3,12 @@
 page_title: "rds_deployment function - arn"
 subcategory: ""
 description: |-
-  Builds an rds deployment ARN
+  rds deployment ARN
 ---
 
 # function: rds_deployment
 
-Builds the ARN of an `rds` `deployment`:
+Builds the ARN for `rds` `deployment`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:deployment:${BlueGreenDeploymentIdentifier}

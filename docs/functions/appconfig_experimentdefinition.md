@@ -3,12 +3,12 @@
 page_title: "appconfig_experimentdefinition function - arn"
 subcategory: ""
 description: |-
-  Builds an appconfig experimentdefinition ARN
+  appconfig experimentdefinition ARN
 ---
 
 # function: appconfig_experimentdefinition
 
-Builds the ARN of an `appconfig` `experimentdefinition`:
+Builds the ARN for `appconfig` `experimentdefinition`:
 
 ```
 arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}/experimentdefinition/${ExperimentDefinitionId}

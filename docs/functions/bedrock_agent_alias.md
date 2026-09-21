@@ -3,12 +3,12 @@
 page_title: "bedrock_agent_alias function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock agent-alias ARN
+  bedrock agent-alias ARN
 ---
 
 # function: bedrock_agent_alias
 
-Builds the ARN of an `bedrock` `agent-alias`:
+Builds the ARN for `bedrock` `agent-alias`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:agent-alias/${AgentId}/${AgentAliasId}

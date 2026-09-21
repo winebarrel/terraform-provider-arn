@@ -3,12 +3,12 @@
 page_title: "iq_permission function - arn"
 subcategory: ""
 description: |-
-  Builds an iq permission ARN
+  iq permission ARN
 ---
 
 # function: iq_permission
 
-Builds the ARN of an `iq` `permission`:
+Builds the ARN for `iq` `permission`:
 
 ```
 arn:${Partition}:iq-permission:${Region}::permission/${PermissionRequestId}

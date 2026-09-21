@@ -3,12 +3,12 @@
 page_title: "evidently_experiment function - arn"
 subcategory: ""
 description: |-
-  Builds an evidently Experiment ARN
+  evidently Experiment ARN
 ---
 
 # function: evidently_experiment
 
-Builds the ARN of an `evidently` `Experiment`:
+Builds the ARN for `evidently` `Experiment`:
 
 ```
 arn:${Partition}:evidently:${Region}:${Account}:project/${ProjectName}/experiment/${ExperimentName}

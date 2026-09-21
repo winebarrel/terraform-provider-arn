@@ -3,12 +3,12 @@
 page_title: "s3_storagelensconfiguration function - arn"
 subcategory: ""
 description: |-
-  Builds an s3 storagelensconfiguration ARN
+  s3 storagelensconfiguration ARN
 ---
 
 # function: s3_storagelensconfiguration
 
-Builds the ARN of an `s3` `storagelensconfiguration`:
+Builds the ARN for `s3` `storagelensconfiguration`:
 
 ```
 arn:${Partition}:s3:${Region}:${Account}:storage-lens/${ConfigId}

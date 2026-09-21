@@ -3,12 +3,12 @@
 page_title: "iotanalytics_pipeline function - arn"
 subcategory: ""
 description: |-
-  Builds an iotanalytics pipeline ARN
+  iotanalytics pipeline ARN
 ---
 
 # function: iotanalytics_pipeline
 
-Builds the ARN of an `iotanalytics` `pipeline`:
+Builds the ARN for `iotanalytics` `pipeline`:
 
 ```
 arn:${Partition}:iotanalytics:${Region}:${Account}:pipeline/${PipelineName}

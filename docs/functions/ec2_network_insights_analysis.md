@@ -3,12 +3,12 @@
 page_title: "ec2_network_insights_analysis function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 network-insights-analysis ARN
+  ec2 network-insights-analysis ARN
 ---
 
 # function: ec2_network_insights_analysis
 
-Builds the ARN of an `ec2` `network-insights-analysis`:
+Builds the ARN for `ec2` `network-insights-analysis`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:network-insights-analysis/${NetworkInsightsAnalysisId}

@@ -3,12 +3,12 @@
 page_title: "dms_replication_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an dms ReplicationInstance ARN
+  dms ReplicationInstance ARN
 ---
 
 # function: dms_replication_instance
 
-Builds the ARN of an `dms` `ReplicationInstance`:
+Builds the ARN for `dms` `ReplicationInstance`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:rep:*

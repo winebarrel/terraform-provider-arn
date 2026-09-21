@@ -3,12 +3,12 @@
 page_title: "lookoutequipment_model function - arn"
 subcategory: ""
 description: |-
-  Builds an lookoutequipment model ARN
+  lookoutequipment model ARN
 ---
 
 # function: lookoutequipment_model
 
-Builds the ARN of an `lookoutequipment` `model`:
+Builds the ARN for `lookoutequipment` `model`:
 
 ```
 arn:${Partition}:lookoutequipment:${Region}:${Account}:model/${ModelName}/${ModelId}

@@ -3,12 +3,12 @@
 page_title: "appmesh_preview_mesh function - arn"
 subcategory: ""
 description: |-
-  Builds an appmesh-preview mesh ARN
+  appmesh-preview mesh ARN
 ---
 
 # function: appmesh_preview_mesh
 
-Builds the ARN of an `appmesh-preview` `mesh`:
+Builds the ARN for `appmesh-preview` `mesh`:
 
 ```
 arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}

@@ -3,12 +3,12 @@
 page_title: "rtbfabric_requester_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an rtbfabric RequesterGateway ARN
+  rtbfabric RequesterGateway ARN
 ---
 
 # function: rtbfabric_requester_gateway
 
-Builds the ARN of an `rtbfabric` `RequesterGateway`:
+Builds the ARN for `rtbfabric` `RequesterGateway`:
 
 ```
 arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}

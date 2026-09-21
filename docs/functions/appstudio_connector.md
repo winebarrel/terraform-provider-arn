@@ -3,12 +3,12 @@
 page_title: "appstudio_connector function - arn"
 subcategory: ""
 description: |-
-  Builds an appstudio connector ARN
+  appstudio connector ARN
 ---
 
 # function: appstudio_connector
 
-Builds the ARN of an `appstudio` `connector`:
+Builds the ARN for `appstudio` `connector`:
 
 ```
 arn:${Partition}:appstudio:${Region}:${Account}:connector/${ConnectionId}

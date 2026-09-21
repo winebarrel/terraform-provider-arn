@@ -3,12 +3,12 @@
 page_title: "codeguru_profiler_profiling_group function - arn"
 subcategory: ""
 description: |-
-  Builds an codeguru-profiler ProfilingGroup ARN
+  codeguru-profiler ProfilingGroup ARN
 ---
 
 # function: codeguru_profiler_profiling_group
 
-Builds the ARN of an `codeguru-profiler` `ProfilingGroup`:
+Builds the ARN for `codeguru-profiler` `ProfilingGroup`:
 
 ```
 arn:${Partition}:codeguru-profiler:${Region}:${Account}:profilingGroup/${ProfilingGroupName}

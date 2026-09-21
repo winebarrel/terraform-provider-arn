@@ -3,12 +3,12 @@
 page_title: "ec2_license_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 license-configuration ARN
+  ec2 license-configuration ARN
 ---
 
 # function: ec2_license_configuration
 
-Builds the ARN of an `ec2` `license-configuration`:
+Builds the ARN for `ec2` `license-configuration`:
 
 ```
 arn:${Partition}:license-manager:${Region}:${Account}:license-configuration:${LicenseConfigurationId}

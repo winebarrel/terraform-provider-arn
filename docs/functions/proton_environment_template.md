@@ -3,12 +3,12 @@
 page_title: "proton_environment_template function - arn"
 subcategory: ""
 description: |-
-  Builds an proton environment-template ARN
+  proton environment-template ARN
 ---
 
 # function: proton_environment_template
 
-Builds the ARN of an `proton` `environment-template`:
+Builds the ARN for `proton` `environment-template`:
 
 ```
 arn:${Partition}:proton:${Region}:${Account}:environment-template/${Name}

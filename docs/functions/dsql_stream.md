@@ -3,12 +3,12 @@
 page_title: "dsql_stream function - arn"
 subcategory: ""
 description: |-
-  Builds an dsql Stream ARN
+  dsql Stream ARN
 ---
 
 # function: dsql_stream
 
-Builds the ARN of an `dsql` `Stream`:
+Builds the ARN for `dsql` `Stream`:
 
 ```
 arn:${Partition}:dsql:${Region}:${Account}:cluster/${ClusterId}/stream/${StreamId}

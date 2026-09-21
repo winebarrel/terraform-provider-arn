@@ -3,12 +3,12 @@
 page_title: "apigateway_portal function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Portal ARN
+  apigateway Portal ARN
 ---
 
 # function: apigateway_portal
 
-Builds the ARN of an `apigateway` `Portal`:
+Builds the ARN for `apigateway` `Portal`:
 
 ```
 arn:${Partition}:apigateway:${Region}:${Account}:/portals/${PortalId}

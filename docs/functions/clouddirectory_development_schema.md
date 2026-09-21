@@ -3,12 +3,12 @@
 page_title: "clouddirectory_development_schema function - arn"
 subcategory: ""
 description: |-
-  Builds an clouddirectory developmentSchema ARN
+  clouddirectory developmentSchema ARN
 ---
 
 # function: clouddirectory_development_schema
 
-Builds the ARN of an `clouddirectory` `developmentSchema`:
+Builds the ARN for `clouddirectory` `developmentSchema`:
 
 ```
 arn:${Partition}:clouddirectory:${Region}:${Account}:schema/development/${SchemaName}

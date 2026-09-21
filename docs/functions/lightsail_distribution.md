@@ -3,12 +3,12 @@
 page_title: "lightsail_distribution function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail Distribution ARN
+  lightsail Distribution ARN
 ---
 
 # function: lightsail_distribution
 
-Builds the ARN of an `lightsail` `Distribution`:
+Builds the ARN for `lightsail` `Distribution`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:Distribution/${Id}

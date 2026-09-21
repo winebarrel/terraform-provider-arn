@@ -3,12 +3,12 @@
 page_title: "ecs_capacity_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs capacity-provider ARN
+  ecs capacity-provider ARN
 ---
 
 # function: ecs_capacity_provider
 
-Builds the ARN of an `ecs` `capacity-provider`:
+Builds the ARN for `ecs` `capacity-provider`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:capacity-provider/${CapacityProviderName}

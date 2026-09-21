@@ -3,12 +3,12 @@
 page_title: "iot_cacert function - arn"
 subcategory: ""
 description: |-
-  Builds an iot cacert ARN
+  iot cacert ARN
 ---
 
 # function: iot_cacert
 
-Builds the ARN of an `iot` `cacert`:
+Builds the ARN for `iot` `cacert`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:cacert/${CACertificate}

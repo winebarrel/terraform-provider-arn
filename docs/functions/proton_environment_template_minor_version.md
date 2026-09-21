@@ -3,12 +3,12 @@
 page_title: "proton_environment_template_minor_version function - arn"
 subcategory: ""
 description: |-
-  Builds an proton environment-template-minor-version ARN
+  proton environment-template-minor-version ARN
 ---
 
 # function: proton_environment_template_minor_version
 
-Builds the ARN of an `proton` `environment-template-minor-version`:
+Builds the ARN for `proton` `environment-template-minor-version`:
 
 ```
 arn:${Partition}:proton:${Region}:${Account}:environment-template/${TemplateName}:${MajorVersionId}.${MinorVersionId}

@@ -3,12 +3,12 @@
 page_title: "appconfig_configurationprofile function - arn"
 subcategory: ""
 description: |-
-  Builds an appconfig configurationprofile ARN
+  appconfig configurationprofile ARN
 ---
 
 # function: appconfig_configurationprofile
 
-Builds the ARN of an `appconfig` `configurationprofile`:
+Builds the ARN for `appconfig` `configurationprofile`:
 
 ```
 arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}/configurationprofile/${ConfigurationProfileId}

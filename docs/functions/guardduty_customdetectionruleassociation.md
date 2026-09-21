@@ -3,12 +3,12 @@
 page_title: "guardduty_customdetectionruleassociation function - arn"
 subcategory: ""
 description: |-
-  Builds an guardduty customdetectionruleassociation ARN
+  guardduty customdetectionruleassociation ARN
 ---
 
 # function: guardduty_customdetectionruleassociation
 
-Builds the ARN of an `guardduty` `customdetectionruleassociation`:
+Builds the ARN for `guardduty` `customdetectionruleassociation`:
 
 ```
 arn:${Partition}:guardduty:${Region}:${Account}:detection-rule/custom/${RuleId}/association/${AssociationId}

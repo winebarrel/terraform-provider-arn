@@ -3,12 +3,12 @@
 page_title: "iotwireless_fuota_task function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless FuotaTask ARN
+  iotwireless FuotaTask ARN
 ---
 
 # function: iotwireless_fuota_task
 
-Builds the ARN of an `iotwireless` `FuotaTask`:
+Builds the ARN for `iotwireless` `FuotaTask`:
 
 ```
 arn:${Partition}:iotwireless:${Region}:${Account}:FuotaTask/${FuotaTaskId}

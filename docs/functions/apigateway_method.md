@@ -3,12 +3,12 @@
 page_title: "apigateway_method function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Method ARN
+  apigateway Method ARN
 ---
 
 # function: apigateway_method
 
-Builds the ARN of an `apigateway` `Method`:
+Builds the ARN for `apigateway` `Method`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}

@@ -3,12 +3,12 @@
 page_title: "iotsitewise_portal function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise portal ARN
+  iotsitewise portal ARN
 ---
 
 # function: iotsitewise_portal
 
-Builds the ARN of an `iotsitewise` `portal`:
+Builds the ARN for `iotsitewise` `portal`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:portal/${PortalId}

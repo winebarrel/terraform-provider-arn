@@ -3,12 +3,12 @@
 page_title: "apigateway_exported_api function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway ExportedAPI ARN
+  apigateway ExportedAPI ARN
 ---
 
 # function: apigateway_exported_api
 
-Builds the ARN of an `apigateway` `ExportedAPI`:
+Builds the ARN for `apigateway` `ExportedAPI`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/exports/${Specification}

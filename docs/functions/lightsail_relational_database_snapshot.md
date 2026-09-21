@@ -3,12 +3,12 @@
 page_title: "lightsail_relational_database_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail RelationalDatabaseSnapshot ARN
+  lightsail RelationalDatabaseSnapshot ARN
 ---
 
 # function: lightsail_relational_database_snapshot
 
-Builds the ARN of an `lightsail` `RelationalDatabaseSnapshot`:
+Builds the ARN for `lightsail` `RelationalDatabaseSnapshot`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:RelationalDatabaseSnapshot/${Id}

@@ -3,12 +3,12 @@
 page_title: "ds_directory function - arn"
 subcategory: ""
 description: |-
-  Builds an ds directory ARN
+  ds directory ARN
 ---
 
 # function: ds_directory
 
-Builds the ARN of an `ds` `directory`:
+Builds the ARN for `ds` `directory`:
 
 ```
 arn:${Partition}:ds:${Region}:${Account}:directory/${DirectoryId}

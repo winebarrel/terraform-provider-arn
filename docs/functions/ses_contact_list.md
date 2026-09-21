@@ -3,12 +3,12 @@
 page_title: "ses_contact_list function - arn"
 subcategory: ""
 description: |-
-  Builds an ses contact-list ARN
+  ses contact-list ARN
 ---
 
 # function: ses_contact_list
 
-Builds the ARN of an `ses` `contact-list`:
+Builds the ARN for `ses` `contact-list`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:contact-list/${ContactListName}

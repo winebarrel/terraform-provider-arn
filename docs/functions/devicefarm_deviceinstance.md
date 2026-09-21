@@ -3,12 +3,12 @@
 page_title: "devicefarm_deviceinstance function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm deviceinstance ARN
+  devicefarm deviceinstance ARN
 ---
 
 # function: devicefarm_deviceinstance
 
-Builds the ARN of an `devicefarm` `deviceinstance`:
+Builds the ARN for `devicefarm` `deviceinstance`:
 
 ```
 arn:${Partition}:devicefarm:${Region}::deviceinstance:${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "apprunner_observabilityconfiguration function - arn"
 subcategory: ""
 description: |-
-  Builds an apprunner observabilityconfiguration ARN
+  apprunner observabilityconfiguration ARN
 ---
 
 # function: apprunner_observabilityconfiguration
 
-Builds the ARN of an `apprunner` `observabilityconfiguration`:
+Builds the ARN for `apprunner` `observabilityconfiguration`:
 
 ```
 arn:${Partition}:apprunner:${Region}:${Account}:observabilityconfiguration/${ObservabilityConfigurationName}/${ObservabilityConfigurationVersion}/${ObservabilityConfigurationId}

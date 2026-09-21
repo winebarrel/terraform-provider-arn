@@ -3,12 +3,12 @@
 page_title: "cloudfront_cache_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront cache-policy ARN
+  cloudfront cache-policy ARN
 ---
 
 # function: cloudfront_cache_policy
 
-Builds the ARN of an `cloudfront` `cache-policy`:
+Builds the ARN for `cloudfront` `cache-policy`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:cache-policy/${Id}

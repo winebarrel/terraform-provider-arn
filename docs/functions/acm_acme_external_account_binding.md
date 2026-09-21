@@ -3,12 +3,12 @@
 page_title: "acm_acme_external_account_binding function - arn"
 subcategory: ""
 description: |-
-  Builds an acm acme-external-account-binding ARN
+  acm acme-external-account-binding ARN
 ---
 
 # function: acm_acme_external_account_binding
 
-Builds the ARN of an `acm` `acme-external-account-binding`:
+Builds the ARN for `acm` `acme-external-account-binding`:
 
 ```
 arn:${Partition}:acm:${Region}:${Account}:acme-endpoint/${AcmeEndpointId}/acme-external-account-binding/${ExternalAccountBindingId}

@@ -3,12 +3,12 @@
 page_title: "comprehend_targeted_sentiment_detection_job function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend targeted-sentiment-detection-job ARN
+  comprehend targeted-sentiment-detection-job ARN
 ---
 
 # function: comprehend_targeted_sentiment_detection_job
 
-Builds the ARN of an `comprehend` `targeted-sentiment-detection-job`:
+Builds the ARN for `comprehend` `targeted-sentiment-detection-job`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:targeted-sentiment-detection-job/${JobId}

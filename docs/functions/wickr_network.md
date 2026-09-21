@@ -3,12 +3,12 @@
 page_title: "wickr_network function - arn"
 subcategory: ""
 description: |-
-  Builds an wickr network ARN
+  wickr network ARN
 ---
 
 # function: wickr_network
 
-Builds the ARN of an `wickr` `network`:
+Builds the ARN for `wickr` `network`:
 
 ```
 arn:${Partition}:wickr:${Region}:${Account}:network/${NetworkId}

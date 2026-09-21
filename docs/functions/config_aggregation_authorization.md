@@ -3,12 +3,12 @@
 page_title: "config_aggregation_authorization function - arn"
 subcategory: ""
 description: |-
-  Builds an config AggregationAuthorization ARN
+  config AggregationAuthorization ARN
 ---
 
 # function: config_aggregation_authorization
 
-Builds the ARN of an `config` `AggregationAuthorization`:
+Builds the ARN for `config` `AggregationAuthorization`:
 
 ```
 arn:${Partition}:config:${Region}:${Account}:aggregation-authorization/${AggregatorAccount}/${AggregatorRegion}

@@ -3,12 +3,12 @@
 page_title: "thinclient_device function - arn"
 subcategory: ""
 description: |-
-  Builds an thinclient device ARN
+  thinclient device ARN
 ---
 
 # function: thinclient_device
 
-Builds the ARN of an `thinclient` `device`:
+Builds the ARN for `thinclient` `device`:
 
 ```
 arn:${Partition}:thinclient:${Region}:${Account}:device/${DeviceId}

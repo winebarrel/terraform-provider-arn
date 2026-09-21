@@ -3,12 +3,12 @@
 page_title: "glue_job function - arn"
 subcategory: ""
 description: |-
-  Builds an glue job ARN
+  glue job ARN
 ---
 
 # function: glue_job
 
-Builds the ARN of an `glue` `job`:
+Builds the ARN for `glue` `job`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:job/${JobName}

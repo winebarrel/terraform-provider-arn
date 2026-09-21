@@ -3,12 +3,12 @@
 page_title: "deadline_worker function - arn"
 subcategory: ""
 description: |-
-  Builds an deadline worker ARN
+  deadline worker ARN
 ---
 
 # function: deadline_worker
 
-Builds the ARN of an `deadline` `worker`:
+Builds the ARN for `deadline` `worker`:
 
 ```
 arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/fleet/${FleetId}/worker/${WorkerId}

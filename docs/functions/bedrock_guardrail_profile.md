@@ -3,12 +3,12 @@
 page_title: "bedrock_guardrail_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock guardrail-profile ARN
+  bedrock guardrail-profile ARN
 ---
 
 # function: bedrock_guardrail_profile
 
-Builds the ARN of an `bedrock` `guardrail-profile`:
+Builds the ARN for `bedrock` `guardrail-profile`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:guardrail-profile/${ResourceId}

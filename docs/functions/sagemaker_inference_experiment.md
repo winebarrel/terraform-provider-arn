@@ -3,12 +3,12 @@
 page_title: "sagemaker_inference_experiment function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker inference-experiment ARN
+  sagemaker inference-experiment ARN
 ---
 
 # function: sagemaker_inference_experiment
 
-Builds the ARN of an `sagemaker` `inference-experiment`:
+Builds the ARN for `sagemaker` `inference-experiment`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:inference-experiment/${InferenceExperimentName}

@@ -3,12 +3,12 @@
 page_title: "ec2_customer_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 customer-gateway ARN
+  ec2 customer-gateway ARN
 ---
 
 # function: ec2_customer_gateway
 
-Builds the ARN of an `ec2` `customer-gateway`:
+Builds the ARN for `ec2` `customer-gateway`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:customer-gateway/${CustomerGatewayId}

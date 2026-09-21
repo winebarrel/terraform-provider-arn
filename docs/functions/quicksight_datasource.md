@@ -3,12 +3,12 @@
 page_title: "quicksight_datasource function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight datasource ARN
+  quicksight datasource ARN
 ---
 
 # function: quicksight_datasource
 
-Builds the ARN of an `quicksight` `datasource`:
+Builds the ARN for `quicksight` `datasource`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:datasource/${ResourceId}

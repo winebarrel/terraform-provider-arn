@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_import_job function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting import-job ARN
+  mobiletargeting import-job ARN
 ---
 
 # function: mobiletargeting_import_job
 
-Builds the ARN of an `mobiletargeting` `import-job`:
+Builds the ARN for `mobiletargeting` `import-job`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/jobs/import/${JobId}

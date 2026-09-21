@@ -3,12 +3,12 @@
 page_title: "securitylake_data_lake function - arn"
 subcategory: ""
 description: |-
-  Builds an securitylake data-lake ARN
+  securitylake data-lake ARN
 ---
 
 # function: securitylake_data_lake
 
-Builds the ARN of an `securitylake` `data-lake`:
+Builds the ARN for `securitylake` `data-lake`:
 
 ```
 arn:${Partition}:securitylake:${Region}:${Account}:data-lake/default

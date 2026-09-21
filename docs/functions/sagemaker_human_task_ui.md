@@ -3,12 +3,12 @@
 page_title: "sagemaker_human_task_ui function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker human-task-ui ARN
+  sagemaker human-task-ui ARN
 ---
 
 # function: sagemaker_human_task_ui
 
-Builds the ARN of an `sagemaker` `human-task-ui`:
+Builds the ARN for `sagemaker` `human-task-ui`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:human-task-ui/${HumanTaskUiName}

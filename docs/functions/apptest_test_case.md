@@ -3,12 +3,12 @@
 page_title: "apptest_test_case function - arn"
 subcategory: ""
 description: |-
-  Builds an apptest TestCase ARN
+  apptest TestCase ARN
 ---
 
 # function: apptest_test_case
 
-Builds the ARN of an `apptest` `TestCase`:
+Builds the ARN for `apptest` `TestCase`:
 
 ```
 arn:${Partition}:apptest:${Region}:${Account}:testcase/${TestCaseId}

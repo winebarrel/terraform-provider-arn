@@ -3,12 +3,12 @@
 page_title: "bedrock_async_invoke function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock async-invoke ARN
+  bedrock async-invoke ARN
 ---
 
 # function: bedrock_async_invoke
 
-Builds the ARN of an `bedrock` `async-invoke`:
+Builds the ARN for `bedrock` `async-invoke`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:async-invoke/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "rds_secgrp function - arn"
 subcategory: ""
 description: |-
-  Builds an rds secgrp ARN
+  rds secgrp ARN
 ---
 
 # function: rds_secgrp
 
-Builds the ARN of an `rds` `secgrp`:
+Builds the ARN for `rds` `secgrp`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:secgrp:${SecurityGroupName}

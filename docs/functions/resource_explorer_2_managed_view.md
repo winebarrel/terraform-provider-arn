@@ -3,12 +3,12 @@
 page_title: "resource_explorer_2_managed_view function - arn"
 subcategory: ""
 description: |-
-  Builds an resource-explorer-2 managed-view ARN
+  resource-explorer-2 managed-view ARN
 ---
 
 # function: resource_explorer_2_managed_view
 
-Builds the ARN of an `resource-explorer-2` `managed-view`:
+Builds the ARN for `resource-explorer-2` `managed-view`:
 
 ```
 arn:${Partition}:resource-explorer-2:${Region}:${Account}:managed-view/${ManagedViewName}/${ManagedViewUuid}

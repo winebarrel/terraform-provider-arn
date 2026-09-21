@@ -3,12 +3,12 @@
 page_title: "dax_application function - arn"
 subcategory: ""
 description: |-
-  Builds an dax application ARN
+  dax application ARN
 ---
 
 # function: dax_application
 
-Builds the ARN of an `dax` `application`:
+Builds the ARN for `dax` `application`:
 
 ```
 arn:${Partition}:dax:${Region}:${Account}:cache/${ClusterName}

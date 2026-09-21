@@ -3,12 +3,12 @@
 page_title: "organizations_resourcepolicy function - arn"
 subcategory: ""
 description: |-
-  Builds an organizations resourcepolicy ARN
+  organizations resourcepolicy ARN
 ---
 
 # function: organizations_resourcepolicy
 
-Builds the ARN of an `organizations` `resourcepolicy`:
+Builds the ARN for `organizations` `resourcepolicy`:
 
 ```
 arn:${Partition}:organizations::${Account}:resourcepolicy/o-${OrganizationId}/rp-${ResourcePolicyId}

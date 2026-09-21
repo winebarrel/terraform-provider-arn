@@ -3,12 +3,12 @@
 page_title: "lookoutequipment_dataset function - arn"
 subcategory: ""
 description: |-
-  Builds an lookoutequipment dataset ARN
+  lookoutequipment dataset ARN
 ---
 
 # function: lookoutequipment_dataset
 
-Builds the ARN of an `lookoutequipment` `dataset`:
+Builds the ARN for `lookoutequipment` `dataset`:
 
 ```
 arn:${Partition}:lookoutequipment:${Region}:${Account}:dataset/${DatasetName}/${DatasetId}

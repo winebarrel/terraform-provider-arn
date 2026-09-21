@@ -3,12 +3,12 @@
 page_title: "backup_gateway_virtualmachine function - arn"
 subcategory: ""
 description: |-
-  Builds an backup-gateway virtualmachine ARN
+  backup-gateway virtualmachine ARN
 ---
 
 # function: backup_gateway_virtualmachine
 
-Builds the ARN of an `backup-gateway` `virtualmachine`:
+Builds the ARN for `backup-gateway` `virtualmachine`:
 
 ```
 arn:${Partition}:backup-gateway:${Region}:${Account}:vm/${VirtualmachineId}

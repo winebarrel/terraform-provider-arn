@@ -3,12 +3,12 @@
 page_title: "a4b_gatewaygroup function - arn"
 subcategory: ""
 description: |-
-  Builds an a4b gatewaygroup ARN
+  a4b gatewaygroup ARN
 ---
 
 # function: a4b_gatewaygroup
 
-Builds the ARN of an `a4b` `gatewaygroup`:
+Builds the ARN for `a4b` `gatewaygroup`:
 
 ```
 arn:${Partition}:a4b:${Region}:${Account}:gateway-group/${ResourceId}

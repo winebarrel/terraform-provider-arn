@@ -3,12 +3,12 @@
 page_title: "signin_oauth2_public_client_remote function - arn"
 subcategory: ""
 description: |-
-  Builds an signin oauth2-public-client-remote ARN
+  signin oauth2-public-client-remote ARN
 ---
 
 # function: signin_oauth2_public_client_remote
 
-Builds the ARN of an `signin` `oauth2-public-client-remote`:
+Builds the ARN for `signin` `oauth2-public-client-remote`:
 
 ```
 arn:${Partition}:signin:${Region}:${Account}:oauth2/public-client/remote

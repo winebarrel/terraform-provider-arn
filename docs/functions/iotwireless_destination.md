@@ -3,12 +3,12 @@
 page_title: "iotwireless_destination function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless Destination ARN
+  iotwireless Destination ARN
 ---
 
 # function: iotwireless_destination
 
-Builds the ARN of an `iotwireless` `Destination`:
+Builds the ARN for `iotwireless` `Destination`:
 
 ```
 arn:${Partition}:iotwireless:${Region}:${Account}:Destination/${DestinationName}

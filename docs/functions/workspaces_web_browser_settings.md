@@ -3,12 +3,12 @@
 page_title: "workspaces_web_browser_settings function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces-web browserSettings ARN
+  workspaces-web browserSettings ARN
 ---
 
 # function: workspaces_web_browser_settings
 
-Builds the ARN of an `workspaces-web` `browserSettings`:
+Builds the ARN for `workspaces-web` `browserSettings`:
 
 ```
 arn:${Partition}:workspaces-web:${Region}:${Account}:browserSettings/${BrowserSettingsId}

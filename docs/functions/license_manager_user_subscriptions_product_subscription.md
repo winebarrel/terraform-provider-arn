@@ -3,12 +3,12 @@
 page_title: "license_manager_user_subscriptions_product_subscription function - arn"
 subcategory: ""
 description: |-
-  Builds an license-manager-user-subscriptions product-subscription ARN
+  license-manager-user-subscriptions product-subscription ARN
 ---
 
 # function: license_manager_user_subscriptions_product_subscription
 
-Builds the ARN of an `license-manager-user-subscriptions` `product-subscription`:
+Builds the ARN for `license-manager-user-subscriptions` `product-subscription`:
 
 ```
 arn:${Partition}:license-manager-user-subscriptions:${Region}:${Account}:product-subscription/${ProductSubscriptionId}

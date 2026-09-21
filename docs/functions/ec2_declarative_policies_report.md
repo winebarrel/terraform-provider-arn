@@ -3,12 +3,12 @@
 page_title: "ec2_declarative_policies_report function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 declarative-policies-report ARN
+  ec2 declarative-policies-report ARN
 ---
 
 # function: ec2_declarative_policies_report
 
-Builds the ARN of an `ec2` `declarative-policies-report`:
+Builds the ARN for `ec2` `declarative-policies-report`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:declarative-policies-report/${DeclarativePoliciesReportId}

@@ -3,12 +3,12 @@
 page_title: "ec2_secondary_interface function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 secondary-interface ARN
+  ec2 secondary-interface ARN
 ---
 
 # function: ec2_secondary_interface
 
-Builds the ARN of an `ec2` `secondary-interface`:
+Builds the ARN for `ec2` `secondary-interface`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:secondary-interface/${SecondaryInterfaceId}

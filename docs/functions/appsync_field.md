@@ -3,12 +3,12 @@
 page_title: "appsync_field function - arn"
 subcategory: ""
 description: |-
-  Builds an appsync field ARN
+  appsync field ARN
 ---
 
 # function: appsync_field
 
-Builds the ARN of an `appsync` `field`:
+Builds the ARN for `appsync` `field`:
 
 ```
 arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/types/${TypeName}/fields/${FieldName}

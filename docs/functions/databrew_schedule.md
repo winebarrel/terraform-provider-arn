@@ -3,12 +3,12 @@
 page_title: "databrew_schedule function - arn"
 subcategory: ""
 description: |-
-  Builds an databrew Schedule ARN
+  databrew Schedule ARN
 ---
 
 # function: databrew_schedule
 
-Builds the ARN of an `databrew` `Schedule`:
+Builds the ARN for `databrew` `Schedule`:
 
 ```
 arn:${Partition}:databrew:${Region}:${Account}:schedule/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "identitystore_group_membership function - arn"
 subcategory: ""
 description: |-
-  Builds an identitystore GroupMembership ARN
+  identitystore GroupMembership ARN
 ---
 
 # function: identitystore_group_membership
 
-Builds the ARN of an `identitystore` `GroupMembership`:
+Builds the ARN for `identitystore` `GroupMembership`:
 
 ```
 arn:${Partition}:identitystore:::membership/${MembershipId}

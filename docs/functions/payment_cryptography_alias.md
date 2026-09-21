@@ -3,12 +3,12 @@
 page_title: "payment_cryptography_alias function - arn"
 subcategory: ""
 description: |-
-  Builds an payment-cryptography alias ARN
+  payment-cryptography alias ARN
 ---
 
 # function: payment_cryptography_alias
 
-Builds the ARN of an `payment-cryptography` `alias`:
+Builds the ARN for `payment-cryptography` `alias`:
 
 ```
 arn:${Partition}:payment-cryptography:${Region}:${Account}:alias/${Alias}

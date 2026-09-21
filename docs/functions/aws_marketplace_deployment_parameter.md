@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_deployment_parameter function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace DeploymentParameter ARN
+  aws-marketplace DeploymentParameter ARN
 ---
 
 # function: aws_marketplace_deployment_parameter
 
-Builds the ARN of an `aws-marketplace` `DeploymentParameter`:
+Builds the ARN for `aws-marketplace` `DeploymentParameter`:
 
 ```
 arn:${Partition}:aws-marketplace:${Region}:${Account}:DeploymentParameter:catalogs/${CatalogName}/products/${ProductId}/${ResourceId}

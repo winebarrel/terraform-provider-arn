@@ -3,12 +3,12 @@
 page_title: "wellarchitected_workload function - arn"
 subcategory: ""
 description: |-
-  Builds an wellarchitected workload ARN
+  wellarchitected workload ARN
 ---
 
 # function: wellarchitected_workload
 
-Builds the ARN of an `wellarchitected` `workload`:
+Builds the ARN for `wellarchitected` `workload`:
 
 ```
 arn:${Partition}:wellarchitected:${Region}:${Account}:workload/${ResourceId}

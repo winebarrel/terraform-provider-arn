@@ -3,12 +3,12 @@
 page_title: "sagemaker_compilation_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker compilation-job ARN
+  sagemaker compilation-job ARN
 ---
 
 # function: sagemaker_compilation_job
 
-Builds the ARN of an `sagemaker` `compilation-job`:
+Builds the ARN for `sagemaker` `compilation-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:compilation-job/${CompilationJobName}

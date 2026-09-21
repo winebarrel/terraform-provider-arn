@@ -3,12 +3,12 @@
 page_title: "iam_server_certificate function - arn"
 subcategory: ""
 description: |-
-  Builds an iam server-certificate ARN
+  iam server-certificate ARN
 ---
 
 # function: iam_server_certificate
 
-Builds the ARN of an `iam` `server-certificate`:
+Builds the ARN for `iam` `server-certificate`:
 
 ```
 arn:${Partition}:iam::${Account}:server-certificate/${CertificateNameWithPath}

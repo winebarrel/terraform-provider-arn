@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_event_stream function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting event-stream ARN
+  mobiletargeting event-stream ARN
 ---
 
 # function: mobiletargeting_event_stream
 
-Builds the ARN of an `mobiletargeting` `event-stream`:
+Builds the ARN for `mobiletargeting` `event-stream`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/eventstream

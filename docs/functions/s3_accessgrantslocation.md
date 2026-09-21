@@ -3,12 +3,12 @@
 page_title: "s3_accessgrantslocation function - arn"
 subcategory: ""
 description: |-
-  Builds an s3 accessgrantslocation ARN
+  s3 accessgrantslocation ARN
 ---
 
 # function: s3_accessgrantslocation
 
-Builds the ARN of an `s3` `accessgrantslocation`:
+Builds the ARN for `s3` `accessgrantslocation`:
 
 ```
 arn:${Partition}:s3:${Region}:${Account}:access-grants/default/location/${Token}

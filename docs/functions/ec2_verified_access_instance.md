@@ -3,12 +3,12 @@
 page_title: "ec2_verified_access_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 verified-access-instance ARN
+  ec2 verified-access-instance ARN
 ---
 
 # function: ec2_verified_access_instance
 
-Builds the ARN of an `ec2` `verified-access-instance`:
+Builds the ARN for `ec2` `verified-access-instance`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:verified-access-instance/${VerifiedAccessInstanceId}

@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_application_metrics function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting application-metrics ARN
+  mobiletargeting application-metrics ARN
 ---
 
 # function: mobiletargeting_application_metrics
 
-Builds the ARN of an `mobiletargeting` `application-metrics`:
+Builds the ARN for `mobiletargeting` `application-metrics`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/kpis/daterange/${KpiName}

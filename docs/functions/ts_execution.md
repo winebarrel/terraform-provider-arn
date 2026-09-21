@@ -3,12 +3,12 @@
 page_title: "ts_execution function - arn"
 subcategory: ""
 description: |-
-  Builds an ts execution ARN
+  ts execution ARN
 ---
 
 # function: ts_execution
 
-Builds the ARN of an `ts` `execution`:
+Builds the ARN for `ts` `execution`:
 
 ```
 arn:${Partition}:ts::${Account}:execution/${UserId}/${ToolId}/${ExecutionId}

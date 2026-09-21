@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_payment_manager function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore payment-manager ARN
+  bedrock-agentcore payment-manager ARN
 ---
 
 # function: bedrock_agentcore_payment_manager
 
-Builds the ARN of an `bedrock-agentcore` `payment-manager`:
+Builds the ARN for `bedrock-agentcore` `payment-manager`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:payment-manager/${PaymentManagerId}

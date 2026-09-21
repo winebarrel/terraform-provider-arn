@@ -3,12 +3,12 @@
 page_title: "connect_security_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an connect security-profile ARN
+  connect security-profile ARN
 ---
 
 # function: connect_security_profile
 
-Builds the ARN of an `connect` `security-profile`:
+Builds the ARN for `connect` `security-profile`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/security-profile/${SecurityProfileId}

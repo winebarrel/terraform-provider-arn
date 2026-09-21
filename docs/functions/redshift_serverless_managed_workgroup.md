@@ -3,12 +3,12 @@
 page_title: "redshift_serverless_managed_workgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift-serverless managed-workgroup ARN
+  redshift-serverless managed-workgroup ARN
 ---
 
 # function: redshift_serverless_managed_workgroup
 
-Builds the ARN of an `redshift-serverless` `managed-workgroup`:
+Builds the ARN for `redshift-serverless` `managed-workgroup`:
 
 ```
 arn:${Partition}:redshift-serverless:${Region}:${Account}:managed-workgroup/${ManagedWorkgroupName}

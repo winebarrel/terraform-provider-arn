@@ -3,12 +3,12 @@
 page_title: "dynamodb_index function - arn"
 subcategory: ""
 description: |-
-  Builds an dynamodb index ARN
+  dynamodb index ARN
 ---
 
 # function: dynamodb_index
 
-Builds the ARN of an `dynamodb` `index`:
+Builds the ARN for `dynamodb` `index`:
 
 ```
 arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/index/${IndexName}

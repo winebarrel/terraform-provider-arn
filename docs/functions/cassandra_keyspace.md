@@ -3,12 +3,12 @@
 page_title: "cassandra_keyspace function - arn"
 subcategory: ""
 description: |-
-  Builds an cassandra keyspace ARN
+  cassandra keyspace ARN
 ---
 
 # function: cassandra_keyspace
 
-Builds the ARN of an `cassandra` `keyspace`:
+Builds the ARN for `cassandra` `keyspace`:
 
 ```
 arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/

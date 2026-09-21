@@ -3,12 +3,12 @@
 page_title: "batch_job function - arn"
 subcategory: ""
 description: |-
-  Builds an batch job ARN
+  batch job ARN
 ---
 
 # function: batch_job
 
-Builds the ARN of an `batch` `job`:
+Builds the ARN for `batch` `job`:
 
 ```
 arn:${Partition}:batch:${Region}:${Account}:job/${JobId}

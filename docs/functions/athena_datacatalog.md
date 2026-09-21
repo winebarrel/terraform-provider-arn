@@ -3,12 +3,12 @@
 page_title: "athena_datacatalog function - arn"
 subcategory: ""
 description: |-
-  Builds an athena datacatalog ARN
+  athena datacatalog ARN
 ---
 
 # function: athena_datacatalog
 
-Builds the ARN of an `athena` `datacatalog`:
+Builds the ARN for `athena` `datacatalog`:
 
 ```
 arn:${Partition}:athena:${Region}:${Account}:datacatalog/${DataCatalogName}

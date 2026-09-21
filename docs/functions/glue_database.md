@@ -3,12 +3,12 @@
 page_title: "glue_database function - arn"
 subcategory: ""
 description: |-
-  Builds an glue database ARN
+  glue database ARN
 ---
 
 # function: glue_database
 
-Builds the ARN of an `glue` `database`:
+Builds the ARN for `glue` `database`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:database/${DatabaseName}

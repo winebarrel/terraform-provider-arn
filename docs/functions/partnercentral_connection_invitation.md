@@ -3,12 +3,12 @@
 page_title: "partnercentral_connection_invitation function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral ConnectionInvitation ARN
+  partnercentral ConnectionInvitation ARN
 ---
 
 # function: partnercentral_connection_invitation
 
-Builds the ARN of an `partnercentral` `ConnectionInvitation`:
+Builds the ARN for `partnercentral` `ConnectionInvitation`:
 
 ```
 arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/connection-invitation/${Identifier}

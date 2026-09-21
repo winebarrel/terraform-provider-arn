@@ -3,12 +3,12 @@
 page_title: "s3_object function - arn"
 subcategory: ""
 description: |-
-  Builds an s3 object ARN
+  s3 object ARN
 ---
 
 # function: s3_object
 
-Builds the ARN of an `s3` `object`:
+Builds the ARN for `s3` `object`:
 
 ```
 arn:${Partition}:s3:::${BucketName}/${ObjectName}

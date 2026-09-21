@@ -3,12 +3,12 @@
 page_title: "vendor_insights_security_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an vendor-insights SecurityProfile ARN
+  vendor-insights SecurityProfile ARN
 ---
 
 # function: vendor_insights_security_profile
 
-Builds the ARN of an `vendor-insights` `SecurityProfile`:
+Builds the ARN for `vendor-insights` `SecurityProfile`:
 
 ```
 arn:${Partition}:vendor-insights:::security-profile:${ResourceId}

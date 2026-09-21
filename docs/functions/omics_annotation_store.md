@@ -3,12 +3,12 @@
 page_title: "omics_annotation_store function - arn"
 subcategory: ""
 description: |-
-  Builds an omics AnnotationStore ARN
+  omics AnnotationStore ARN
 ---
 
 # function: omics_annotation_store
 
-Builds the ARN of an `omics` `AnnotationStore`:
+Builds the ARN for `omics` `AnnotationStore`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:annotationStore/${AnnotationStoreName}

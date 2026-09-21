@@ -3,12 +3,12 @@
 page_title: "ebs_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an ebs snapshot ARN
+  ebs snapshot ARN
 ---
 
 # function: ebs_snapshot
 
-Builds the ARN of an `ebs` `snapshot`:
+Builds the ARN for `ebs` `snapshot`:
 
 ```
 arn:${Partition}:ec2:${Region}::snapshot/${SnapshotId}

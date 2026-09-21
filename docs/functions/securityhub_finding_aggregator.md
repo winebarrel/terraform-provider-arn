@@ -3,12 +3,12 @@
 page_title: "securityhub_finding_aggregator function - arn"
 subcategory: ""
 description: |-
-  Builds an securityhub finding-aggregator ARN
+  securityhub finding-aggregator ARN
 ---
 
 # function: securityhub_finding_aggregator
 
-Builds the ARN of an `securityhub` `finding-aggregator`:
+Builds the ARN for `securityhub` `finding-aggregator`:
 
 ```
 arn:${Partition}:securityhub:${Region}:${Account}:finding-aggregator/${FindingAggregatorId}

@@ -3,12 +3,12 @@
 page_title: "medialive_offering function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive offering ARN
+  medialive offering ARN
 ---
 
 # function: medialive_offering
 
-Builds the ARN of an `medialive` `offering`:
+Builds the ARN for `medialive` `offering`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:offering:${OfferingId}

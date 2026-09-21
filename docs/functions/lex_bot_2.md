@@ -3,12 +3,12 @@
 page_title: "lex_bot_2 function - arn"
 subcategory: ""
 description: |-
-  Builds an lex bot ARN
+  lex bot ARN
 ---
 
 # function: lex_bot_2
 
-Builds the ARN of an `lex` `bot`:
+Builds the ARN for `lex` `bot`:
 
 ```
 arn:${Partition}:lex:${Region}:${Account}:bot:${BotName}

@@ -3,12 +3,12 @@
 page_title: "identity_sync_sync_target_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an identity-sync SyncTargetResource ARN
+  identity-sync SyncTargetResource ARN
 ---
 
 # function: identity_sync_sync_target_resource
 
-Builds the ARN of an `identity-sync` `SyncTargetResource`:
+Builds the ARN for `identity-sync` `SyncTargetResource`:
 
 ```
 arn:${Partition}:identity-sync:${Region}:${Account}:target/${SyncProfileName}/${SyncTargetName}

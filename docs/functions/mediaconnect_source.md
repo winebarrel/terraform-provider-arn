@@ -3,12 +3,12 @@
 page_title: "mediaconnect_source function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconnect Source ARN
+  mediaconnect Source ARN
 ---
 
 # function: mediaconnect_source
 
-Builds the ARN of an `mediaconnect` `Source`:
+Builds the ARN for `mediaconnect` `Source`:
 
 ```
 arn:${Partition}:mediaconnect:${Region}:${Account}:source:${SourceId}:${SourceName}

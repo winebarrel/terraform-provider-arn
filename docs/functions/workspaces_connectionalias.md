@@ -3,12 +3,12 @@
 page_title: "workspaces_connectionalias function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces connectionalias ARN
+  workspaces connectionalias ARN
 ---
 
 # function: workspaces_connectionalias
 
-Builds the ARN of an `workspaces` `connectionalias`:
+Builds the ARN for `workspaces` `connectionalias`:
 
 ```
 arn:${Partition}:workspaces:${Region}:${Account}:connectionalias/${ConnectionAliasId}

@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_issued_tax_invoice function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace IssuedTaxInvoice ARN
+  aws-marketplace IssuedTaxInvoice ARN
 ---
 
 # function: aws_marketplace_issued_tax_invoice
 
-Builds the ARN of an `aws-marketplace` `IssuedTaxInvoice`:
+Builds the ARN for `aws-marketplace` `IssuedTaxInvoice`:
 
 ```
 arn:${Partition}:aws-marketplace:${Region}:${Account}:catalog/${Catalog}/issued-tax-invoice/${ResourceId}

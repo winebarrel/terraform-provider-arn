@@ -3,12 +3,12 @@
 page_title: "ec2_spot_fleet_request function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 spot-fleet-request ARN
+  ec2 spot-fleet-request ARN
 ---
 
 # function: ec2_spot_fleet_request
 
-Builds the ARN of an `ec2` `spot-fleet-request`:
+Builds the ARN for `ec2` `spot-fleet-request`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:spot-fleet-request/${SpotFleetRequestId}

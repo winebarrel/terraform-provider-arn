@@ -3,12 +3,12 @@
 page_title: "appsync_function function - arn"
 subcategory: ""
 description: |-
-  Builds an appsync function ARN
+  appsync function ARN
 ---
 
 # function: appsync_function
 
-Builds the ARN of an `appsync` `function`:
+Builds the ARN for `appsync` `function`:
 
 ```
 arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/functions/${FunctionId}

@@ -3,12 +3,12 @@
 page_title: "workmailmessageflow_raw_message function - arn"
 subcategory: ""
 description: |-
-  Builds an workmailmessageflow RawMessage ARN
+  workmailmessageflow RawMessage ARN
 ---
 
 # function: workmailmessageflow_raw_message
 
-Builds the ARN of an `workmailmessageflow` `RawMessage`:
+Builds the ARN for `workmailmessageflow` `RawMessage`:
 
 ```
 arn:${Partition}:workmailmessageflow:${Region}:${Account}:message/${OrganizationId}/${Context}/${MessageId}

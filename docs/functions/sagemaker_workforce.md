@@ -3,12 +3,12 @@
 page_title: "sagemaker_workforce function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker workforce ARN
+  sagemaker workforce ARN
 ---
 
 # function: sagemaker_workforce
 
-Builds the ARN of an `sagemaker` `workforce`:
+Builds the ARN for `sagemaker` `workforce`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:workforce/${WorkforceName}

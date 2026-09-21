@@ -3,12 +3,12 @@
 page_title: "athena_session function - arn"
 subcategory: ""
 description: |-
-  Builds an athena session ARN
+  athena session ARN
 ---
 
 # function: athena_session
 
-Builds the ARN of an `athena` `session`:
+Builds the ARN for `athena` `session`:
 
 ```
 arn:${Partition}:athena:${Region}:${Account}:workgroup/${WorkGroupName}/session/${SessionId}

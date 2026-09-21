@@ -3,12 +3,12 @@
 page_title: "quicksight_vpcconnection function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight vpcconnection ARN
+  quicksight vpcconnection ARN
 ---
 
 # function: quicksight_vpcconnection
 
-Builds the ARN of an `quicksight` `vpcconnection`:
+Builds the ARN for `quicksight` `vpcconnection`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:vpcConnection/${ResourceId}

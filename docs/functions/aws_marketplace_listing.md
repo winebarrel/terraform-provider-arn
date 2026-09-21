@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_listing function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace Listing ARN
+  aws-marketplace Listing ARN
 ---
 
 # function: aws_marketplace_listing
 
-Builds the ARN of an `aws-marketplace` `Listing`:
+Builds the ARN for `aws-marketplace` `Listing`:
 
 ```
 arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/listing/${ListingId}

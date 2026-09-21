@@ -3,12 +3,12 @@
 page_title: "guardduty_trustedentityset function - arn"
 subcategory: ""
 description: |-
-  Builds an guardduty trustedentityset ARN
+  guardduty trustedentityset ARN
 ---
 
 # function: guardduty_trustedentityset
 
-Builds the ARN of an `guardduty` `trustedentityset`:
+Builds the ARN for `guardduty` `trustedentityset`:
 
 ```
 arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/trustedentityset/${TrustedEntitySetId}

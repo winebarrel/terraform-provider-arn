@@ -3,12 +3,12 @@
 page_title: "wafv2_appsync function - arn"
 subcategory: ""
 description: |-
-  Builds an wafv2 appsync ARN
+  wafv2 appsync ARN
 ---
 
 # function: wafv2_appsync
 
-Builds the ARN of an `wafv2` `appsync`:
+Builds the ARN for `wafv2` `appsync`:
 
 ```
 arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}

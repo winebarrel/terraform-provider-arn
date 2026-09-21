@@ -3,12 +3,12 @@
 page_title: "connect_hours_of_operation function - arn"
 subcategory: ""
 description: |-
-  Builds an connect hours-of-operation ARN
+  connect hours-of-operation ARN
 ---
 
 # function: connect_hours_of_operation
 
-Builds the ARN of an `connect` `hours-of-operation`:
+Builds the ARN for `connect` `hours-of-operation`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/operating-hours/${HoursOfOperationId}

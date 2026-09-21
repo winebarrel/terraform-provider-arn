@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_oauth2credentialprovider function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore oauth2credentialprovider ARN
+  bedrock-agentcore oauth2credentialprovider ARN
 ---
 
 # function: bedrock_agentcore_oauth2credentialprovider
 
-Builds the ARN of an `bedrock-agentcore` `oauth2credentialprovider`:
+Builds the ARN for `bedrock-agentcore` `oauth2credentialprovider`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:token-vault/${TokenVaultId}/oauth2credentialprovider/${Name}

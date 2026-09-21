@@ -3,12 +3,12 @@
 page_title: "lex_slottype_version function - arn"
 subcategory: ""
 description: |-
-  Builds an lex slottype version ARN
+  lex slottype version ARN
 ---
 
 # function: lex_slottype_version
 
-Builds the ARN of an `lex` `slottype version`:
+Builds the ARN for `lex` `slottype version`:
 
 ```
 arn:${Partition}:lex:${Region}:${Account}:slottype:${SlotName}:${SlotVersion}

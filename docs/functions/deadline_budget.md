@@ -3,12 +3,12 @@
 page_title: "deadline_budget function - arn"
 subcategory: ""
 description: |-
-  Builds an deadline budget ARN
+  deadline budget ARN
 ---
 
 # function: deadline_budget
 
-Builds the ARN of an `deadline` `budget`:
+Builds the ARN for `deadline` `budget`:
 
 ```
 arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/budget/${BudgetId}

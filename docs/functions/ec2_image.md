@@ -3,12 +3,12 @@
 page_title: "ec2_image function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 image ARN
+  ec2 image ARN
 ---
 
 # function: ec2_image
 
-Builds the ARN of an `ec2` `image`:
+Builds the ARN for `ec2` `image`:
 
 ```
 arn:${Partition}:ec2:${Region}::image/${ImageId}

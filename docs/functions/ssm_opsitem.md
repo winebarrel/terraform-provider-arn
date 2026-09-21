@@ -3,12 +3,12 @@
 page_title: "ssm_opsitem function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm opsitem ARN
+  ssm opsitem ARN
 ---
 
 # function: ssm_opsitem
 
-Builds the ARN of an `ssm` `opsitem`:
+Builds the ARN for `ssm` `opsitem`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:opsitem/${ResourceId}

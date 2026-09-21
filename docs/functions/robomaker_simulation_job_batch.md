@@ -3,12 +3,12 @@
 page_title: "robomaker_simulation_job_batch function - arn"
 subcategory: ""
 description: |-
-  Builds an robomaker simulationJobBatch ARN
+  robomaker simulationJobBatch ARN
 ---
 
 # function: robomaker_simulation_job_batch
 
-Builds the ARN of an `robomaker` `simulationJobBatch`:
+Builds the ARN for `robomaker` `simulationJobBatch`:
 
 ```
 arn:${Partition}:robomaker:${Region}:${Account}:simulation-job-batch/${SimulationJobBatchId}

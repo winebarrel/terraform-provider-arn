@@ -3,12 +3,12 @@
 page_title: "identitystore_identitystore function - arn"
 subcategory: ""
 description: |-
-  Builds an identitystore Identitystore ARN
+  identitystore Identitystore ARN
 ---
 
 # function: identitystore_identitystore
 
-Builds the ARN of an `identitystore` `Identitystore`:
+Builds the ARN for `identitystore` `Identitystore`:
 
 ```
 arn:${Partition}:identitystore::${Account}:identitystore/${IdentityStoreId}

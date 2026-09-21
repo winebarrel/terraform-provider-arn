@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_harness_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore harness-endpoint ARN
+  bedrock-agentcore harness-endpoint ARN
 ---
 
 # function: bedrock_agentcore_harness_endpoint
 
-Builds the ARN of an `bedrock-agentcore` `harness-endpoint`:
+Builds the ARN for `bedrock-agentcore` `harness-endpoint`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:harness/${HarnessId}/harness-endpoint/${Name}

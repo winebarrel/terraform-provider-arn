@@ -3,12 +3,12 @@
 page_title: "ec2_ipam_scope function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 ipam-scope ARN
+  ec2 ipam-scope ARN
 ---
 
 # function: ec2_ipam_scope
 
-Builds the ARN of an `ec2` `ipam-scope`:
+Builds the ARN for `ec2` `ipam-scope`:
 
 ```
 arn:${Partition}:ec2::${Account}:ipam-scope/${IpamScopeId}

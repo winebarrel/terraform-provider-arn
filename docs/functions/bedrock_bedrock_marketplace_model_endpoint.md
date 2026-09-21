@@ -3,12 +3,12 @@
 page_title: "bedrock_bedrock_marketplace_model_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock bedrock-marketplace-model-endpoint ARN
+  bedrock bedrock-marketplace-model-endpoint ARN
 ---
 
 # function: bedrock_bedrock_marketplace_model_endpoint
 
-Builds the ARN of an `bedrock` `bedrock-marketplace-model-endpoint`:
+Builds the ARN for `bedrock` `bedrock-marketplace-model-endpoint`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:marketplace/model-endpoint/all-access

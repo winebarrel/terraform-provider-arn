@@ -3,12 +3,12 @@
 page_title: "opensearch_application function - arn"
 subcategory: ""
 description: |-
-  Builds an opensearch application ARN
+  opensearch application ARN
 ---
 
 # function: opensearch_application
 
-Builds the ARN of an `opensearch` `application`:
+Builds the ARN for `opensearch` `application`:
 
 ```
 arn:${Partition}:opensearch:${Region}:${Account}:application/${AppId}

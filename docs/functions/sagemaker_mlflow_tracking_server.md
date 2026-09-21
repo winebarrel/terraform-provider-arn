@@ -3,12 +3,12 @@
 page_title: "sagemaker_mlflow_tracking_server function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker mlflow-tracking-server ARN
+  sagemaker mlflow-tracking-server ARN
 ---
 
 # function: sagemaker_mlflow_tracking_server
 
-Builds the ARN of an `sagemaker` `mlflow-tracking-server`:
+Builds the ARN for `sagemaker` `mlflow-tracking-server`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:mlflow-tracking-server/${MlflowTrackingServerName}

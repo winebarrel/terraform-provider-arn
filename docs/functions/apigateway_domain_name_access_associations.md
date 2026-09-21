@@ -3,12 +3,12 @@
 page_title: "apigateway_domain_name_access_associations function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway DomainNameAccessAssociations ARN
+  apigateway DomainNameAccessAssociations ARN
 ---
 
 # function: apigateway_domain_name_access_associations
 
-Builds the ARN of an `apigateway` `DomainNameAccessAssociations`:
+Builds the ARN for `apigateway` `DomainNameAccessAssociations`:
 
 ```
 arn:${Partition}:apigateway:${Region}:${Account}:/domainnameaccessassociations

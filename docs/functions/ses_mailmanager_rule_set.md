@@ -3,12 +3,12 @@
 page_title: "ses_mailmanager_rule_set function - arn"
 subcategory: ""
 description: |-
-  Builds an ses mailmanager-rule-set ARN
+  ses mailmanager-rule-set ARN
 ---
 
 # function: ses_mailmanager_rule_set
 
-Builds the ARN of an `ses` `mailmanager-rule-set`:
+Builds the ARN for `ses` `mailmanager-rule-set`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:mailmanager-rule-set/${RuleSetId}

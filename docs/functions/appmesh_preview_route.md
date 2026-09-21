@@ -3,12 +3,12 @@
 page_title: "appmesh_preview_route function - arn"
 subcategory: ""
 description: |-
-  Builds an appmesh-preview route ARN
+  appmesh-preview route ARN
 ---
 
 # function: appmesh_preview_route
 
-Builds the ARN of an `appmesh-preview` `route`:
+Builds the ARN for `appmesh-preview` `route`:
 
 ```
 arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}/virtualRouter/${VirtualRouterName}/route/${RouteName}

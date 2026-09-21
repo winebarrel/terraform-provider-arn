@@ -3,12 +3,12 @@
 page_title: "wisdom_content function - arn"
 subcategory: ""
 description: |-
-  Builds an wisdom Content ARN
+  wisdom Content ARN
 ---
 
 # function: wisdom_content
 
-Builds the ARN of an `wisdom` `Content`:
+Builds the ARN for `wisdom` `Content`:
 
 ```
 arn:${Partition}:wisdom:${Region}:${Account}:content/${KnowledgeBaseId}/${ContentId}

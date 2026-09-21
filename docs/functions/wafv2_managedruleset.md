@@ -3,12 +3,12 @@
 page_title: "wafv2_managedruleset function - arn"
 subcategory: ""
 description: |-
-  Builds an wafv2 managedruleset ARN
+  wafv2 managedruleset ARN
 ---
 
 # function: wafv2_managedruleset
 
-Builds the ARN of an `wafv2` `managedruleset`:
+Builds the ARN for `wafv2` `managedruleset`:
 
 ```
 arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/managedruleset/${Name}/${Id}

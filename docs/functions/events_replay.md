@@ -3,12 +3,12 @@
 page_title: "events_replay function - arn"
 subcategory: ""
 description: |-
-  Builds an events replay ARN
+  events replay ARN
 ---
 
 # function: events_replay
 
-Builds the ARN of an `events` `replay`:
+Builds the ARN for `events` `replay`:
 
 ```
 arn:${Partition}:events:${Region}:${Account}:replay/${ReplayName}

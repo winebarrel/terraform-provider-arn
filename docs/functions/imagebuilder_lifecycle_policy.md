@@ -3,12 +3,12 @@
 page_title: "imagebuilder_lifecycle_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an imagebuilder lifecyclePolicy ARN
+  imagebuilder lifecyclePolicy ARN
 ---
 
 # function: imagebuilder_lifecycle_policy
 
-Builds the ARN of an `imagebuilder` `lifecyclePolicy`:
+Builds the ARN for `imagebuilder` `lifecyclePolicy`:
 
 ```
 arn:${Partition}:imagebuilder:${Region}:${Account}:lifecycle-policy/${LifecyclePolicyName}

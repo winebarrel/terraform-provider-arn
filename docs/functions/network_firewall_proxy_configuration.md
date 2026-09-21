@@ -3,12 +3,12 @@
 page_title: "network_firewall_proxy_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an network-firewall ProxyConfiguration ARN
+  network-firewall ProxyConfiguration ARN
 ---
 
 # function: network_firewall_proxy_configuration
 
-Builds the ARN of an `network-firewall` `ProxyConfiguration`:
+Builds the ARN for `network-firewall` `ProxyConfiguration`:
 
 ```
 arn:${Partition}:network-firewall:${Region}:${Account}:proxy-configuration/${Name}

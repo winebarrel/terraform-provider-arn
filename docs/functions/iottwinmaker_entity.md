@@ -3,12 +3,12 @@
 page_title: "iottwinmaker_entity function - arn"
 subcategory: ""
 description: |-
-  Builds an iottwinmaker entity ARN
+  iottwinmaker entity ARN
 ---
 
 # function: iottwinmaker_entity
 
-Builds the ARN of an `iottwinmaker` `entity`:
+Builds the ARN for `iottwinmaker` `entity`:
 
 ```
 arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}/entity/${EntityId}

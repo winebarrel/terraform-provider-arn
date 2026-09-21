@@ -3,12 +3,12 @@
 page_title: "q_plugin function - arn"
 subcategory: ""
 description: |-
-  Builds an q plugin ARN
+  q plugin ARN
 ---
 
 # function: q_plugin
 
-Builds the ARN of an `q` `plugin`:
+Builds the ARN for `q` `plugin`:
 
 ```
 arn:${Partition}:qdeveloper:${Region}:${Account}:plugin/${Identifier}

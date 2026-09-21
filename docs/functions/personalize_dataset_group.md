@@ -3,12 +3,12 @@
 page_title: "personalize_dataset_group function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize datasetGroup ARN
+  personalize datasetGroup ARN
 ---
 
 # function: personalize_dataset_group
 
-Builds the ARN of an `personalize` `datasetGroup`:
+Builds the ARN for `personalize` `datasetGroup`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:dataset-group/${ResourceId}

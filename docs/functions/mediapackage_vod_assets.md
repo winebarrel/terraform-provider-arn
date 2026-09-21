@@ -3,12 +3,12 @@
 page_title: "mediapackage_vod_assets function - arn"
 subcategory: ""
 description: |-
-  Builds an mediapackage-vod assets ARN
+  mediapackage-vod assets ARN
 ---
 
 # function: mediapackage_vod_assets
 
-Builds the ARN of an `mediapackage-vod` `assets`:
+Builds the ARN for `mediapackage-vod` `assets`:
 
 ```
 arn:${Partition}:mediapackage-vod:${Region}:${Account}:assets/${AssetIdentifier}

@@ -3,12 +3,12 @@
 page_title: "application_signals_instrumentation_config function - arn"
 subcategory: ""
 description: |-
-  Builds an application-signals instrumentationConfig ARN
+  application-signals instrumentationConfig ARN
 ---
 
 # function: application_signals_instrumentation_config
 
-Builds the ARN of an `application-signals` `instrumentationConfig`:
+Builds the ARN for `application-signals` `instrumentationConfig`:
 
 ```
 arn:${Partition}:application-signals:${Region}:${Account}:instrumentationConfig/${Service}/${Environment}/${SignalType}/${LocationHash}

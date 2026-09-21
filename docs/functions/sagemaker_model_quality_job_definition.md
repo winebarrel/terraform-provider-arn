@@ -3,12 +3,12 @@
 page_title: "sagemaker_model_quality_job_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker model-quality-job-definition ARN
+  sagemaker model-quality-job-definition ARN
 ---
 
 # function: sagemaker_model_quality_job_definition
 
-Builds the ARN of an `sagemaker` `model-quality-job-definition`:
+Builds the ARN for `sagemaker` `model-quality-job-definition`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:model-quality-job-definition/${ModelQualityJobDefinitionName}

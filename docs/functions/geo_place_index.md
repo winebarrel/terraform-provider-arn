@@ -3,12 +3,12 @@
 page_title: "geo_place_index function - arn"
 subcategory: ""
 description: |-
-  Builds an geo place-index ARN
+  geo place-index ARN
 ---
 
 # function: geo_place_index
 
-Builds the ARN of an `geo` `place-index`:
+Builds the ARN for `geo` `place-index`:
 
 ```
 arn:${Partition}:geo:${Region}:${Account}:place-index/${IndexName}

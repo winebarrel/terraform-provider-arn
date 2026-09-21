@@ -3,12 +3,12 @@
 page_title: "connect_routing_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an connect routing-profile ARN
+  connect routing-profile ARN
 ---
 
 # function: connect_routing_profile
 
-Builds the ARN of an `connect` `routing-profile`:
+Builds the ARN for `connect` `routing-profile`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/routing-profile/${RoutingProfileId}

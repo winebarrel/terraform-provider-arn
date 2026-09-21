@@ -3,12 +3,12 @@
 page_title: "storagegateway_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an storagegateway gateway ARN
+  storagegateway gateway ARN
 ---
 
 # function: storagegateway_gateway
 
-Builds the ARN of an `storagegateway` `gateway`:
+Builds the ARN for `storagegateway` `gateway`:
 
 ```
 arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}

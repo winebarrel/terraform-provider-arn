@@ -3,12 +3,12 @@
 page_title: "resiliencehub_test_template function - arn"
 subcategory: ""
 description: |-
-  Builds an resiliencehub test-template ARN
+  resiliencehub test-template ARN
 ---
 
 # function: resiliencehub_test_template
 
-Builds the ARN of an `resiliencehub` `test-template`:
+Builds the ARN for `resiliencehub` `test-template`:
 
 ```
 arn:${Partition}:resiliencehub:${Region}:${Account}:test-template/${TestTemplateId}

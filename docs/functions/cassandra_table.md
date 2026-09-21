@@ -3,12 +3,12 @@
 page_title: "cassandra_table function - arn"
 subcategory: ""
 description: |-
-  Builds an cassandra table ARN
+  cassandra table ARN
 ---
 
 # function: cassandra_table
 
-Builds the ARN of an `cassandra` `table`:
+Builds the ARN for `cassandra` `table`:
 
 ```
 arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/table/${TableName}

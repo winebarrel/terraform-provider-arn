@@ -3,12 +3,12 @@
 page_title: "workspaces_workspacespool function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces workspacespool ARN
+  workspaces workspacespool ARN
 ---
 
 # function: workspaces_workspacespool
 
-Builds the ARN of an `workspaces` `workspacespool`:
+Builds the ARN for `workspaces` `workspacespool`:
 
 ```
 arn:${Partition}:workspaces:${Region}:${Account}:workspacespool/${PoolId}

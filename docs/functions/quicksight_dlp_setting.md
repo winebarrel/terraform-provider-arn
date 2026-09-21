@@ -3,12 +3,12 @@
 page_title: "quicksight_dlp_setting function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight dlpSetting ARN
+  quicksight dlpSetting ARN
 ---
 
 # function: quicksight_dlp_setting
 
-Builds the ARN of an `quicksight` `dlpSetting`:
+Builds the ARN for `quicksight` `dlpSetting`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:dlpsetting/${ResourceId}

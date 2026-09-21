@@ -3,12 +3,12 @@
 page_title: "mediatailor_playback_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an mediatailor playbackConfiguration ARN
+  mediatailor playbackConfiguration ARN
 ---
 
 # function: mediatailor_playback_configuration
 
-Builds the ARN of an `mediatailor` `playbackConfiguration`:
+Builds the ARN for `mediatailor` `playbackConfiguration`:
 
 ```
 arn:${Partition}:mediatailor:${Region}:${Account}:playbackConfiguration/${ResourceId}

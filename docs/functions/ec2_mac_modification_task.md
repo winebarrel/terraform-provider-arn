@@ -3,12 +3,12 @@
 page_title: "ec2_mac_modification_task function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 mac-modification-task ARN
+  ec2 mac-modification-task ARN
 ---
 
 # function: ec2_mac_modification_task
 
-Builds the ARN of an `ec2` `mac-modification-task`:
+Builds the ARN for `ec2` `mac-modification-task`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:mac-modification-task/${MacModificationTaskId}

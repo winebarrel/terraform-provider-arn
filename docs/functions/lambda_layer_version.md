@@ -3,12 +3,12 @@
 page_title: "lambda_layer_version function - arn"
 subcategory: ""
 description: |-
-  Builds an lambda layerVersion ARN
+  lambda layerVersion ARN
 ---
 
 # function: lambda_layer_version
 
-Builds the ARN of an `lambda` `layerVersion`:
+Builds the ARN for `lambda` `layerVersion`:
 
 ```
 arn:${Partition}:lambda:${Region}:${Account}:layer:${LayerName}:${LayerVersion}

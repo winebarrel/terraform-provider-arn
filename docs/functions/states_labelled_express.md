@@ -3,12 +3,12 @@
 page_title: "states_labelled_express function - arn"
 subcategory: ""
 description: |-
-  Builds an states labelled express ARN
+  states labelled express ARN
 ---
 
 # function: states_labelled_express
 
-Builds the ARN of an `states` `labelled express`:
+Builds the ARN for `states` `labelled express`:
 
 ```
 arn:${Partition}:states:${Region}:${Account}:express:${StateMachineName}/${MapRunLabel}:${ExecutionId}:${ExpressId}

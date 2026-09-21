@@ -3,12 +3,12 @@
 page_title: "imagebuilder_lifecycle_execution function - arn"
 subcategory: ""
 description: |-
-  Builds an imagebuilder lifecycleExecution ARN
+  imagebuilder lifecycleExecution ARN
 ---
 
 # function: imagebuilder_lifecycle_execution
 
-Builds the ARN of an `imagebuilder` `lifecycleExecution`:
+Builds the ARN for `imagebuilder` `lifecycleExecution`:
 
 ```
 arn:${Partition}:imagebuilder:${Region}:${Account}:lifecycle-execution/${LifecycleExecutionId}

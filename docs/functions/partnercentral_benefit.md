@@ -3,12 +3,12 @@
 page_title: "partnercentral_benefit function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral Benefit ARN
+  partnercentral Benefit ARN
 ---
 
 # function: partnercentral_benefit
 
-Builds the ARN of an `partnercentral` `Benefit`:
+Builds the ARN for `partnercentral` `Benefit`:
 
 ```
 arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/benefit/${Identifier}

@@ -3,12 +3,12 @@
 page_title: "quicksight_agent function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight agent ARN
+  quicksight agent ARN
 ---
 
 # function: quicksight_agent
 
-Builds the ARN of an `quicksight` `agent`:
+Builds the ARN for `quicksight` `agent`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:agent/${ResourceId}

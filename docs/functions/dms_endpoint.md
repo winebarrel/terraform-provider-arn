@@ -3,12 +3,12 @@
 page_title: "dms_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an dms Endpoint ARN
+  dms Endpoint ARN
 ---
 
 # function: dms_endpoint
 
-Builds the ARN of an `dms` `Endpoint`:
+Builds the ARN for `dms` `Endpoint`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:endpoint:*

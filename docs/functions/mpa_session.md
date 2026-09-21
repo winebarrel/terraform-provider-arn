@@ -3,12 +3,12 @@
 page_title: "mpa_session function - arn"
 subcategory: ""
 description: |-
-  Builds an mpa session ARN
+  mpa session ARN
 ---
 
 # function: mpa_session
 
-Builds the ARN of an `mpa` `session`:
+Builds the ARN for `mpa` `session`:
 
 ```
 arn:${Partition}:mpa:${Region}:${Account}:session/${SessionId}

@@ -3,12 +3,12 @@
 page_title: "apigateway_integration_response_2 function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway IntegrationResponse ARN
+  apigateway IntegrationResponse ARN
 ---
 
 # function: apigateway_integration_response_2
 
-Builds the ARN of an `apigateway` `IntegrationResponse`:
+Builds the ARN for `apigateway` `IntegrationResponse`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}/integration/responses/${StatusCode}

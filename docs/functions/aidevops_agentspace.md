@@ -3,12 +3,12 @@
 page_title: "aidevops_agentspace function - arn"
 subcategory: ""
 description: |-
-  Builds an aidevops agentspace ARN
+  aidevops agentspace ARN
 ---
 
 # function: aidevops_agentspace
 
-Builds the ARN of an `aidevops` `agentspace`:
+Builds the ARN for `aidevops` `agentspace`:
 
 ```
 arn:${Partition}:aidevops:${Region}:${Account}:agentspace/${AgentSpaceId}

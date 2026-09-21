@@ -3,12 +3,12 @@
 page_title: "wellarchitected_review_template function - arn"
 subcategory: ""
 description: |-
-  Builds an wellarchitected review-template ARN
+  wellarchitected review-template ARN
 ---
 
 # function: wellarchitected_review_template
 
-Builds the ARN of an `wellarchitected` `review-template`:
+Builds the ARN for `wellarchitected` `review-template`:
 
 ```
 arn:${Partition}:wellarchitected:${Region}:${Account}:review-template/${ResourceId}

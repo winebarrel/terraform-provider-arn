@@ -3,12 +3,12 @@
 page_title: "elastictranscoder_preset function - arn"
 subcategory: ""
 description: |-
-  Builds an elastictranscoder preset ARN
+  elastictranscoder preset ARN
 ---
 
 # function: elastictranscoder_preset
 
-Builds the ARN of an `elastictranscoder` `preset`:
+Builds the ARN for `elastictranscoder` `preset`:
 
 ```
 arn:${Partition}:elastictranscoder:${Region}:${Account}:preset/${PresetId}

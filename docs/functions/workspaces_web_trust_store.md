@@ -3,12 +3,12 @@
 page_title: "workspaces_web_trust_store function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces-web trustStore ARN
+  workspaces-web trustStore ARN
 ---
 
 # function: workspaces_web_trust_store
 
-Builds the ARN of an `workspaces-web` `trustStore`:
+Builds the ARN for `workspaces-web` `trustStore`:
 
 ```
 arn:${Partition}:workspaces-web:${Region}:${Account}:trustStore/${TrustStoreId}

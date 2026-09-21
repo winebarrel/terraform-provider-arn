@@ -3,12 +3,12 @@
 page_title: "route53_recovery_control_config_controlpanel function - arn"
 subcategory: ""
 description: |-
-  Builds an route53-recovery-control-config controlpanel ARN
+  route53-recovery-control-config controlpanel ARN
 ---
 
 # function: route53_recovery_control_config_controlpanel
 
-Builds the ARN of an `route53-recovery-control-config` `controlpanel`:
+Builds the ARN for `route53-recovery-control-config` `controlpanel`:
 
 ```
 arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}

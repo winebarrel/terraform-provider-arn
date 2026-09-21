@@ -3,12 +3,12 @@
 page_title: "ec2_vpc_block_public_access_exclusion function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 vpc-block-public-access-exclusion ARN
+  ec2 vpc-block-public-access-exclusion ARN
 ---
 
 # function: ec2_vpc_block_public_access_exclusion
 
-Builds the ARN of an `ec2` `vpc-block-public-access-exclusion`:
+Builds the ARN for `ec2` `vpc-block-public-access-exclusion`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:vpc-block-public-access-exclusion/${VpcBlockPublicAccessExclusionId}

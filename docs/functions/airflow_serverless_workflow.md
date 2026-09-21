@@ -3,12 +3,12 @@
 page_title: "airflow_serverless_workflow function - arn"
 subcategory: ""
 description: |-
-  Builds an airflow-serverless Workflow ARN
+  airflow-serverless Workflow ARN
 ---
 
 # function: airflow_serverless_workflow
 
-Builds the ARN of an `airflow-serverless` `Workflow`:
+Builds the ARN for `airflow-serverless` `Workflow`:
 
 ```
 arn:${Partition}:airflow-serverless:${Region}:${Account}:workflow/${WorkflowId}

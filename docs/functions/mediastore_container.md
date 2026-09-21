@@ -3,12 +3,12 @@
 page_title: "mediastore_container function - arn"
 subcategory: ""
 description: |-
-  Builds an mediastore container ARN
+  mediastore container ARN
 ---
 
 # function: mediastore_container
 
-Builds the ARN of an `mediastore` `container`:
+Builds the ARN for `mediastore` `container`:
 
 ```
 arn:${Partition}:mediastore:${Region}:${Account}:container/${ContainerName}

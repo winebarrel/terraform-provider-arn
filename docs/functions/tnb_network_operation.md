@@ -3,12 +3,12 @@
 page_title: "tnb_network_operation function - arn"
 subcategory: ""
 description: |-
-  Builds an tnb network-operation ARN
+  tnb network-operation ARN
 ---
 
 # function: tnb_network_operation
 
-Builds the ARN of an `tnb` `network-operation`:
+Builds the ARN for `tnb` `network-operation`:
 
 ```
 arn:${Partition}:tnb:${Region}:${Account}:network-operation/${NetworkOperationId}

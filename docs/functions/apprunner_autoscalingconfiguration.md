@@ -3,12 +3,12 @@
 page_title: "apprunner_autoscalingconfiguration function - arn"
 subcategory: ""
 description: |-
-  Builds an apprunner autoscalingconfiguration ARN
+  apprunner autoscalingconfiguration ARN
 ---
 
 # function: apprunner_autoscalingconfiguration
 
-Builds the ARN of an `apprunner` `autoscalingconfiguration`:
+Builds the ARN for `apprunner` `autoscalingconfiguration`:
 
 ```
 arn:${Partition}:apprunner:${Region}:${Account}:autoscalingconfiguration/${AutoscalingConfigurationName}/${AutoscalingConfigurationVersion}/${AutoscalingConfigurationId}

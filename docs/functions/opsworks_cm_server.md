@@ -3,12 +3,12 @@
 page_title: "opsworks_cm_server function - arn"
 subcategory: ""
 description: |-
-  Builds an opsworks-cm server ARN
+  opsworks-cm server ARN
 ---
 
 # function: opsworks_cm_server
 
-Builds the ARN of an `opsworks-cm` `server`:
+Builds the ARN for `opsworks-cm` `server`:
 
 ```
 arn:${Partition}:opsworks-cm::${Account}:server/${ServerName}/${UniqueId}

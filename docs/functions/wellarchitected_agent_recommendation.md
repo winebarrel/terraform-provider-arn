@@ -3,12 +3,12 @@
 page_title: "wellarchitected_agent_recommendation function - arn"
 subcategory: ""
 description: |-
-  Builds an wellarchitected agent-recommendation ARN
+  wellarchitected agent-recommendation ARN
 ---
 
 # function: wellarchitected_agent_recommendation
 
-Builds the ARN of an `wellarchitected` `agent-recommendation`:
+Builds the ARN for `wellarchitected` `agent-recommendation`:
 
 ```
 arn:${Partition}:wellarchitected:${Region}:${Account}:agent-recommendation/${ResourceId}

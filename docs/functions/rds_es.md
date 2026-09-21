@@ -3,12 +3,12 @@
 page_title: "rds_es function - arn"
 subcategory: ""
 description: |-
-  Builds an rds es ARN
+  rds es ARN
 ---
 
 # function: rds_es
 
-Builds the ARN of an `rds` `es`:
+Builds the ARN for `rds` `es`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:es:${SubscriptionName}

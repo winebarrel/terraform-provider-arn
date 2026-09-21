@@ -3,12 +3,12 @@
 page_title: "ec2_route_server function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 route-server ARN
+  ec2 route-server ARN
 ---
 
 # function: ec2_route_server
 
-Builds the ARN of an `ec2` `route-server`:
+Builds the ARN for `ec2` `route-server`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:route-server/${RouteServerId}

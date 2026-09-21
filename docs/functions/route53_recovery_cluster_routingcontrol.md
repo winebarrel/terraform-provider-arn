@@ -3,12 +3,12 @@
 page_title: "route53_recovery_cluster_routingcontrol function - arn"
 subcategory: ""
 description: |-
-  Builds an route53-recovery-cluster routingcontrol ARN
+  route53-recovery-cluster routingcontrol ARN
 ---
 
 # function: route53_recovery_cluster_routingcontrol
 
-Builds the ARN of an `route53-recovery-cluster` `routingcontrol`:
+Builds the ARN for `route53-recovery-cluster` `routingcontrol`:
 
 ```
 arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}/routingcontrol/${RoutingControlId}

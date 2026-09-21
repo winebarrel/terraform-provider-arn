@@ -3,12 +3,12 @@
 page_title: "securityagent_private_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an securityagent PrivateConnection ARN
+  securityagent PrivateConnection ARN
 ---
 
 # function: securityagent_private_connection
 
-Builds the ARN of an `securityagent` `PrivateConnection`:
+Builds the ARN for `securityagent` `PrivateConnection`:
 
 ```
 arn:${Partition}:securityagent:${Region}:${Account}:private-connection/${PrivateConnectionName}

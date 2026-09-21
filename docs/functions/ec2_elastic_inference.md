@@ -3,12 +3,12 @@
 page_title: "ec2_elastic_inference function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 elastic-inference ARN
+  ec2 elastic-inference ARN
 ---
 
 # function: ec2_elastic_inference
 
-Builds the ARN of an `ec2` `elastic-inference`:
+Builds the ARN for `ec2` `elastic-inference`:
 
 ```
 arn:${Partition}:elastic-inference:${Region}:${Account}:elastic-inference-accelerator/${AcceleratorId}

@@ -3,12 +3,12 @@
 page_title: "codestar_user function - arn"
 subcategory: ""
 description: |-
-  Builds an codestar user ARN
+  codestar user ARN
 ---
 
 # function: codestar_user
 
-Builds the ARN of an `codestar` `user`:
+Builds the ARN for `codestar` `user`:
 
 ```
 arn:${Partition}:iam::${Account}:user/${AwsUserName}

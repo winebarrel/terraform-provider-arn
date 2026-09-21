@@ -3,12 +3,12 @@
 page_title: "ivs_composition function - arn"
 subcategory: ""
 description: |-
-  Builds an ivs Composition ARN
+  ivs Composition ARN
 ---
 
 # function: ivs_composition
 
-Builds the ARN of an `ivs` `Composition`:
+Builds the ARN for `ivs` `Composition`:
 
 ```
 arn:${Partition}:ivs:${Region}:${Account}:composition/${ResourceId}

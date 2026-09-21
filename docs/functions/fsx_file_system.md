@@ -3,12 +3,12 @@
 page_title: "fsx_file_system function - arn"
 subcategory: ""
 description: |-
-  Builds an fsx file-system ARN
+  fsx file-system ARN
 ---
 
 # function: fsx_file_system
 
-Builds the ARN of an `fsx` `file-system`:
+Builds the ARN for `fsx` `file-system`:
 
 ```
 arn:${Partition}:fsx:${Region}:${Account}:file-system/${FileSystemId}

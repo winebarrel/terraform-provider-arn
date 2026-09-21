@@ -3,12 +3,12 @@
 page_title: "glue_blueprint function - arn"
 subcategory: ""
 description: |-
-  Builds an glue blueprint ARN
+  glue blueprint ARN
 ---
 
 # function: glue_blueprint
 
-Builds the ARN of an `glue` `blueprint`:
+Builds the ARN for `glue` `blueprint`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:blueprint/${BlueprintName}

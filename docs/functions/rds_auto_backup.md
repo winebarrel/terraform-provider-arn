@@ -3,12 +3,12 @@
 page_title: "rds_auto_backup function - arn"
 subcategory: ""
 description: |-
-  Builds an rds auto-backup ARN
+  rds auto-backup ARN
 ---
 
 # function: rds_auto_backup
 
-Builds the ARN of an `rds` `auto-backup`:
+Builds the ARN for `rds` `auto-backup`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:auto-backup:${DbInstanceAutomatedBackupId}

@@ -3,12 +3,12 @@
 page_title: "notifications_managed_notification_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an notifications ManagedNotificationConfiguration ARN
+  notifications ManagedNotificationConfiguration ARN
 ---
 
 # function: notifications_managed_notification_configuration
 
-Builds the ARN of an `notifications` `ManagedNotificationConfiguration`:
+Builds the ARN for `notifications` `ManagedNotificationConfiguration`:
 
 ```
 arn:${Partition}:notifications::${Account}:managed-notification-configuration/category/${Category}/sub-category/${Subcategory}

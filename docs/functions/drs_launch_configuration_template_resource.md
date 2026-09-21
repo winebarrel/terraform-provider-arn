@@ -3,12 +3,12 @@
 page_title: "drs_launch_configuration_template_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an drs LaunchConfigurationTemplateResource ARN
+  drs LaunchConfigurationTemplateResource ARN
 ---
 
 # function: drs_launch_configuration_template_resource
 
-Builds the ARN of an `drs` `LaunchConfigurationTemplateResource`:
+Builds the ARN for `drs` `LaunchConfigurationTemplateResource`:
 
 ```
 arn:${Partition}:drs:${Region}:${Account}:launch-configuration-template/${LaunchConfigurationTemplateID}

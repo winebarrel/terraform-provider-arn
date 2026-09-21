@@ -3,12 +3,12 @@
 page_title: "acm_acme_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an acm acme-endpoint ARN
+  acm acme-endpoint ARN
 ---
 
 # function: acm_acme_endpoint
 
-Builds the ARN of an `acm` `acme-endpoint`:
+Builds the ARN for `acm` `acme-endpoint`:
 
 ```
 arn:${Partition}:acm:${Region}:${Account}:acme-endpoint/${AcmeEndpointId}

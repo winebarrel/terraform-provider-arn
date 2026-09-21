@@ -3,12 +3,12 @@
 page_title: "vpc_lattice_resource_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an vpc-lattice ResourceGateway ARN
+  vpc-lattice ResourceGateway ARN
 ---
 
 # function: vpc_lattice_resource_gateway
 
-Builds the ARN of an `vpc-lattice` `ResourceGateway`:
+Builds the ARN for `vpc-lattice` `ResourceGateway`:
 
 ```
 arn:${Partition}:vpc-lattice:${Region}:${Account}:resourcegateway/${ResourceGatewayId}

@@ -3,12 +3,12 @@
 page_title: "sagemaker_model_bias_job_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker model-bias-job-definition ARN
+  sagemaker model-bias-job-definition ARN
 ---
 
 # function: sagemaker_model_bias_job_definition
 
-Builds the ARN of an `sagemaker` `model-bias-job-definition`:
+Builds the ARN for `sagemaker` `model-bias-job-definition`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:model-bias-job-definition/${ModelBiasJobDefinitionName}

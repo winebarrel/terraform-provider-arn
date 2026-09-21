@@ -3,12 +3,12 @@
 page_title: "connect_traffic_distribution_group function - arn"
 subcategory: ""
 description: |-
-  Builds an connect traffic-distribution-group ARN
+  connect traffic-distribution-group ARN
 ---
 
 # function: connect_traffic_distribution_group
 
-Builds the ARN of an `connect` `traffic-distribution-group`:
+Builds the ARN for `connect` `traffic-distribution-group`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:traffic-distribution-group/${TrafficDistributionGroupId}

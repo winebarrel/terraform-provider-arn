@@ -3,12 +3,12 @@
 page_title: "mpa_identity_source function - arn"
 subcategory: ""
 description: |-
-  Builds an mpa identity-source ARN
+  mpa identity-source ARN
 ---
 
 # function: mpa_identity_source
 
-Builds the ARN of an `mpa` `identity-source`:
+Builds the ARN for `mpa` `identity-source`:
 
 ```
 arn:${Partition}:mpa:${Region}:${Account}:identity-source/${IdentitySourceId}

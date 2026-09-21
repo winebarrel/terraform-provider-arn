@@ -3,12 +3,12 @@
 page_title: "grafana_workspace function - arn"
 subcategory: ""
 description: |-
-  Builds an grafana workspace ARN
+  grafana workspace ARN
 ---
 
 # function: grafana_workspace
 
-Builds the ARN of an `grafana` `workspace`:
+Builds the ARN for `grafana` `workspace`:
 
 ```
 arn:${Partition}:grafana:${Region}:${Account}:/workspaces/${ResourceId}

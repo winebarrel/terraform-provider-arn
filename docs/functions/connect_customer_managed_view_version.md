@@ -3,12 +3,12 @@
 page_title: "connect_customer_managed_view_version function - arn"
 subcategory: ""
 description: |-
-  Builds an connect customer-managed-view-version ARN
+  connect customer-managed-view-version ARN
 ---
 
 # function: connect_customer_managed_view_version
 
-Builds the ARN of an `connect` `customer-managed-view-version`:
+Builds the ARN for `connect` `customer-managed-view-version`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/view/${ViewId}:${ViewVersion}

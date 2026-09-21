@@ -3,12 +3,12 @@
 page_title: "appsync_datasource function - arn"
 subcategory: ""
 description: |-
-  Builds an appsync datasource ARN
+  appsync datasource ARN
 ---
 
 # function: appsync_datasource
 
-Builds the ARN of an `appsync` `datasource`:
+Builds the ARN for `appsync` `datasource`:
 
 ```
 arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/datasources/${DatasourceName}

@@ -3,12 +3,12 @@
 page_title: "mediaconnect_router_output function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconnect RouterOutput ARN
+  mediaconnect RouterOutput ARN
 ---
 
 # function: mediaconnect_router_output
 
-Builds the ARN of an `mediaconnect` `RouterOutput`:
+Builds the ARN for `mediaconnect` `RouterOutput`:
 
 ```
 arn:${Partition}:mediaconnect:${Region}:${Account}:routerOutput:${RouterOutputId}

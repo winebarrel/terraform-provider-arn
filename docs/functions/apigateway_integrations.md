@@ -3,12 +3,12 @@
 page_title: "apigateway_integrations function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Integrations ARN
+  apigateway Integrations ARN
 ---
 
 # function: apigateway_integrations
 
-Builds the ARN of an `apigateway` `Integrations`:
+Builds the ARN for `apigateway` `Integrations`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/integrations

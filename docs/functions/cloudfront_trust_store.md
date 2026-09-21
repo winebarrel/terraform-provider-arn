@@ -3,12 +3,12 @@
 page_title: "cloudfront_trust_store function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront trust-store ARN
+  cloudfront trust-store ARN
 ---
 
 # function: cloudfront_trust_store
 
-Builds the ARN of an `cloudfront` `trust-store`:
+Builds the ARN for `cloudfront` `trust-store`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:trust-store/${Id}

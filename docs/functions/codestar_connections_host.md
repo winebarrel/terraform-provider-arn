@@ -3,12 +3,12 @@
 page_title: "codestar_connections_host function - arn"
 subcategory: ""
 description: |-
-  Builds an codestar-connections Host ARN
+  codestar-connections Host ARN
 ---
 
 # function: codestar_connections_host
 
-Builds the ARN of an `codestar-connections` `Host`:
+Builds the ARN for `codestar-connections` `Host`:
 
 ```
 arn:${Partition}:codestar-connections:${Region}:${Account}:host/${HostId}

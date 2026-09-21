@@ -3,12 +3,12 @@
 page_title: "waf_ratebasedrule function - arn"
 subcategory: ""
 description: |-
-  Builds an waf ratebasedrule ARN
+  waf ratebasedrule ARN
 ---
 
 # function: waf_ratebasedrule
 
-Builds the ARN of an `waf` `ratebasedrule`:
+Builds the ARN for `waf` `ratebasedrule`:
 
 ```
 arn:${Partition}:waf::${Account}:ratebasedrule/${Id}

@@ -3,12 +3,12 @@
 page_title: "redshift_parametergroup function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift parametergroup ARN
+  redshift parametergroup ARN
 ---
 
 # function: redshift_parametergroup
 
-Builds the ARN of an `redshift` `parametergroup`:
+Builds the ARN for `redshift` `parametergroup`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:parametergroup:${ParameterGroupName}

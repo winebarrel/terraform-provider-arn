@@ -3,12 +3,12 @@
 page_title: "notifications_managed_notification_event function - arn"
 subcategory: ""
 description: |-
-  Builds an notifications ManagedNotificationEvent ARN
+  notifications ManagedNotificationEvent ARN
 ---
 
 # function: notifications_managed_notification_event
 
-Builds the ARN of an `notifications` `ManagedNotificationEvent`:
+Builds the ARN for `notifications` `ManagedNotificationEvent`:
 
 ```
 arn:${Partition}:notifications::${Account}:managed-notification-configuration/category/${Category}/sub-category/${Subcategory}/event/${NotificationEventId}

@@ -3,12 +3,12 @@
 page_title: "mgn_replication_configuration_template_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgn ReplicationConfigurationTemplateResource ARN
+  mgn ReplicationConfigurationTemplateResource ARN
 ---
 
 # function: mgn_replication_configuration_template_resource
 
-Builds the ARN of an `mgn` `ReplicationConfigurationTemplateResource`:
+Builds the ARN for `mgn` `ReplicationConfigurationTemplateResource`:
 
 ```
 arn:${Partition}:mgn:${Region}:${Account}:replication-configuration-template/${ReplicationConfigurationTemplateID}

@@ -3,12 +3,12 @@
 page_title: "imagebuilder_image_version function - arn"
 subcategory: ""
 description: |-
-  Builds an imagebuilder imageVersion ARN
+  imagebuilder imageVersion ARN
 ---
 
 # function: imagebuilder_image_version
 
-Builds the ARN of an `imagebuilder` `imageVersion`:
+Builds the ARN for `imagebuilder` `imageVersion`:
 
 ```
 arn:${Partition}:imagebuilder:${Region}:${Account}:image/${ImageName}/${ImageVersion}

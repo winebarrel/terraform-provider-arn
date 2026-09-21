@@ -3,12 +3,12 @@
 page_title: "kendra_ranking_rescore_execution_plan function - arn"
 subcategory: ""
 description: |-
-  Builds an kendra-ranking rescore-execution-plan ARN
+  kendra-ranking rescore-execution-plan ARN
 ---
 
 # function: kendra_ranking_rescore_execution_plan
 
-Builds the ARN of an `kendra-ranking` `rescore-execution-plan`:
+Builds the ARN for `kendra-ranking` `rescore-execution-plan`:
 
 ```
 arn:${Partition}:kendra-ranking:${Region}:${Account}:rescore-execution-plan/${RescoreExecutionPlanId}

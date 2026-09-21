@@ -3,12 +3,12 @@
 page_title: "ec2_carrier_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 carrier-gateway ARN
+  ec2 carrier-gateway ARN
 ---
 
 # function: ec2_carrier_gateway
 
-Builds the ARN of an `ec2` `carrier-gateway`:
+Builds the ARN for `ec2` `carrier-gateway`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:carrier-gateway/${CarrierGatewayId}

@@ -3,12 +3,12 @@
 page_title: "quicksight_approval_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight approvalPolicy ARN
+  quicksight approvalPolicy ARN
 ---
 
 # function: quicksight_approval_policy
 
-Builds the ARN of an `quicksight` `approvalPolicy`:
+Builds the ARN for `quicksight` `approvalPolicy`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:approval-policy/${ResourceId}

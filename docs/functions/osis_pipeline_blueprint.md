@@ -3,12 +3,12 @@
 page_title: "osis_pipeline_blueprint function - arn"
 subcategory: ""
 description: |-
-  Builds an osis pipeline-blueprint ARN
+  osis pipeline-blueprint ARN
 ---
 
 # function: osis_pipeline_blueprint
 
-Builds the ARN of an `osis` `pipeline-blueprint`:
+Builds the ARN for `osis` `pipeline-blueprint`:
 
 ```
 arn:${Partition}:osis:${Region}:${Account}:blueprint/${BlueprintName}

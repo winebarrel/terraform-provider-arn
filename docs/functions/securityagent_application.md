@@ -3,12 +3,12 @@
 page_title: "securityagent_application function - arn"
 subcategory: ""
 description: |-
-  Builds an securityagent Application ARN
+  securityagent Application ARN
 ---
 
 # function: securityagent_application
 
-Builds the ARN of an `securityagent` `Application`:
+Builds the ARN for `securityagent` `Application`:
 
 ```
 arn:${Partition}:securityagent:${Region}:${Account}:application/${ApplicationId}

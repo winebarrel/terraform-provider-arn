@@ -3,12 +3,12 @@
 page_title: "sms_voice_registration_attachment function - arn"
 subcategory: ""
 description: |-
-  Builds an sms-voice RegistrationAttachment ARN
+  sms-voice RegistrationAttachment ARN
 ---
 
 # function: sms_voice_registration_attachment
 
-Builds the ARN of an `sms-voice` `RegistrationAttachment`:
+Builds the ARN for `sms-voice` `RegistrationAttachment`:
 
 ```
 arn:${Partition}:sms-voice:${Region}:${Account}:registration-attachment/${RegistrationAttachmentId}

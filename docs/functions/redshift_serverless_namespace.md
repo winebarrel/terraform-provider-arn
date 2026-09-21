@@ -3,12 +3,12 @@
 page_title: "redshift_serverless_namespace function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift-serverless namespace ARN
+  redshift-serverless namespace ARN
 ---
 
 # function: redshift_serverless_namespace
 
-Builds the ARN of an `redshift-serverless` `namespace`:
+Builds the ARN for `redshift-serverless` `namespace`:
 
 ```
 arn:${Partition}:redshift-serverless:${Region}:${Account}:namespace/${NamespaceId}

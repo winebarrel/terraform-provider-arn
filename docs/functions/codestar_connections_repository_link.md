@@ -3,12 +3,12 @@
 page_title: "codestar_connections_repository_link function - arn"
 subcategory: ""
 description: |-
-  Builds an codestar-connections RepositoryLink ARN
+  codestar-connections RepositoryLink ARN
 ---
 
 # function: codestar_connections_repository_link
 
-Builds the ARN of an `codestar-connections` `RepositoryLink`:
+Builds the ARN for `codestar-connections` `RepositoryLink`:
 
 ```
 arn:${Partition}:codestar-connections:${Region}:${Account}:repository-link/${RepositoryLinkId}

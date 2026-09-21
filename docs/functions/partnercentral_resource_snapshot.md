@@ -3,12 +3,12 @@
 page_title: "partnercentral_resource_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral ResourceSnapshot ARN
+  partnercentral ResourceSnapshot ARN
 ---
 
 # function: partnercentral_resource_snapshot
 
-Builds the ARN of an `partnercentral` `ResourceSnapshot`:
+Builds the ARN for `partnercentral` `ResourceSnapshot`:
 
 ```
 arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/engagement/${EngagementIdentifier}/resource/${ResourceType}/${ResourceIdentifier}/template/${TemplateIdentifier}/resource-snapshot/${SnapshotRevision}

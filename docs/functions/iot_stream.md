@@ -3,12 +3,12 @@
 page_title: "iot_stream function - arn"
 subcategory: ""
 description: |-
-  Builds an iot stream ARN
+  iot stream ARN
 ---
 
 # function: iot_stream
 
-Builds the ARN of an `iot` `stream`:
+Builds the ARN for `iot` `stream`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:stream/${StreamId}

@@ -3,12 +3,12 @@
 page_title: "transfer_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an transfer profile ARN
+  transfer profile ARN
 ---
 
 # function: transfer_profile
 
-Builds the ARN of an `transfer` `profile`:
+Builds the ARN for `transfer` `profile`:
 
 ```
 arn:${Partition}:transfer:${Region}:${Account}:profile/${ProfileId}

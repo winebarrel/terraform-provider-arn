@@ -3,12 +3,12 @@
 page_title: "elasticbeanstalk_applicationversion function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticbeanstalk applicationversion ARN
+  elasticbeanstalk applicationversion ARN
 ---
 
 # function: elasticbeanstalk_applicationversion
 
-Builds the ARN of an `elasticbeanstalk` `applicationversion`:
+Builds the ARN for `elasticbeanstalk` `applicationversion`:
 
 ```
 arn:${Partition}:elasticbeanstalk:${Region}:${Account}:applicationversion/${ApplicationName}/${VersionLabel}

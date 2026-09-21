@@ -3,12 +3,12 @@
 page_title: "eks_access_entry function - arn"
 subcategory: ""
 description: |-
-  Builds an eks access-entry ARN
+  eks access-entry ARN
 ---
 
 # function: eks_access_entry
 
-Builds the ARN of an `eks` `access-entry`:
+Builds the ARN for `eks` `access-entry`:
 
 ```
 arn:${Partition}:eks:${Region}:${Account}:access-entry/${ClusterName}/${IamIdentityType}/${IamIdentityAccountID}/${IamIdentityName}/${UUID}

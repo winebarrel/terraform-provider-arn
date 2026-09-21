@@ -3,12 +3,12 @@
 page_title: "deadline_fleet function - arn"
 subcategory: ""
 description: |-
-  Builds an deadline fleet ARN
+  deadline fleet ARN
 ---
 
 # function: deadline_fleet
 
-Builds the ARN of an `deadline` `fleet`:
+Builds the ARN for `deadline` `fleet`:
 
 ```
 arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/fleet/${FleetId}

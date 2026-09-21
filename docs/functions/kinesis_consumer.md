@@ -3,12 +3,12 @@
 page_title: "kinesis_consumer function - arn"
 subcategory: ""
 description: |-
-  Builds an kinesis consumer ARN
+  kinesis consumer ARN
 ---
 
 # function: kinesis_consumer
 
-Builds the ARN of an `kinesis` `consumer`:
+Builds the ARN for `kinesis` `consumer`:
 
 ```
 arn:${Partition}:kinesis:${Region}:${Account}:${StreamType}/${StreamName}/consumer/${ConsumerName}:${ConsumerCreationTimpstamp}

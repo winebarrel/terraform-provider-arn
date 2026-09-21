@@ -3,12 +3,12 @@
 page_title: "omics_sequence_store function - arn"
 subcategory: ""
 description: |-
-  Builds an omics sequenceStore ARN
+  omics sequenceStore ARN
 ---
 
 # function: omics_sequence_store
 
-Builds the ARN of an `omics` `sequenceStore`:
+Builds the ARN for `omics` `sequenceStore`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:sequenceStore/${SequenceStoreId}

@@ -3,12 +3,12 @@
 page_title: "waf_regional_xssmatchset function - arn"
 subcategory: ""
 description: |-
-  Builds an waf-regional xssmatchset ARN
+  waf-regional xssmatchset ARN
 ---
 
 # function: waf_regional_xssmatchset
 
-Builds the ARN of an `waf-regional` `xssmatchset`:
+Builds the ARN for `waf-regional` `xssmatchset`:
 
 ```
 arn:${Partition}:waf-regional:${Region}:${Account}:xssmatchset/${Id}

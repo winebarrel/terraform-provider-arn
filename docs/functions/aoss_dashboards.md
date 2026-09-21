@@ -3,12 +3,12 @@
 page_title: "aoss_dashboards function - arn"
 subcategory: ""
 description: |-
-  Builds an aoss Dashboards ARN
+  aoss Dashboards ARN
 ---
 
 # function: aoss_dashboards
 
-Builds the ARN of an `aoss` `Dashboards`:
+Builds the ARN for `aoss` `Dashboards`:
 
 ```
 arn:${Partition}:aoss:${Region}:${Account}:dashboards/default

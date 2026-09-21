@@ -3,12 +3,12 @@
 page_title: "geo_api_key function - arn"
 subcategory: ""
 description: |-
-  Builds an geo api-key ARN
+  geo api-key ARN
 ---
 
 # function: geo_api_key
 
-Builds the ARN of an `geo` `api-key`:
+Builds the ARN for `geo` `api-key`:
 
 ```
 arn:${Partition}:geo:${Region}:${Account}:api-key/${KeyName}

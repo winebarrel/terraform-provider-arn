@@ -3,12 +3,12 @@
 page_title: "bedrock_custom_model_deployment function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock custom-model-deployment ARN
+  bedrock custom-model-deployment ARN
 ---
 
 # function: bedrock_custom_model_deployment
 
-Builds the ARN of an `bedrock` `custom-model-deployment`:
+Builds the ARN for `bedrock` `custom-model-deployment`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:custom-model-deployment/${ResourceId}

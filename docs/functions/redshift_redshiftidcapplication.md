@@ -3,12 +3,12 @@
 page_title: "redshift_redshiftidcapplication function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift redshiftidcapplication ARN
+  redshift redshiftidcapplication ARN
 ---
 
 # function: redshift_redshiftidcapplication
 
-Builds the ARN of an `redshift` `redshiftidcapplication`:
+Builds the ARN for `redshift` `redshiftidcapplication`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:redshiftidcapplication:${RedshiftIdcApplicationId}

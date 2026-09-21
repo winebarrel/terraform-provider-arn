@@ -3,12 +3,12 @@
 page_title: "bugbust_event function - arn"
 subcategory: ""
 description: |-
-  Builds an bugbust Event ARN
+  bugbust Event ARN
 ---
 
 # function: bugbust_event
 
-Builds the ARN of an `bugbust` `Event`:
+Builds the ARN for `bugbust` `Event`:
 
 ```
 arn:${Partition}:bugbust:${Region}:${Account}:events/${EventId}

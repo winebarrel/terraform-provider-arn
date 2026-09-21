@@ -3,12 +3,12 @@
 page_title: "wisdom_assistant function - arn"
 subcategory: ""
 description: |-
-  Builds an wisdom Assistant ARN
+  wisdom Assistant ARN
 ---
 
 # function: wisdom_assistant
 
-Builds the ARN of an `wisdom` `Assistant`:
+Builds the ARN for `wisdom` `Assistant`:
 
 ```
 arn:${Partition}:wisdom:${Region}:${Account}:assistant/${AssistantId}

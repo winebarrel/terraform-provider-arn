@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_web_search function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore web-search ARN
+  bedrock-agentcore web-search ARN
 ---
 
 # function: bedrock_agentcore_web_search
 
-Builds the ARN of an `bedrock-agentcore` `web-search`:
+Builds the ARN for `bedrock-agentcore` `web-search`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:tool/web-search.v1

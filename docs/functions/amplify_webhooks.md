@@ -3,12 +3,12 @@
 page_title: "amplify_webhooks function - arn"
 subcategory: ""
 description: |-
-  Builds an amplify webhooks ARN
+  amplify webhooks ARN
 ---
 
 # function: amplify_webhooks
 
-Builds the ARN of an `amplify` `webhooks`:
+Builds the ARN for `amplify` `webhooks`:
 
 ```
 arn:${Partition}:amplify:${Region}:${Account}:webhooks/${WebhookId}

@@ -3,12 +3,12 @@
 page_title: "sagemaker_partner_app function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker partner-app ARN
+  sagemaker partner-app ARN
 ---
 
 # function: sagemaker_partner_app
 
-Builds the ARN of an `sagemaker` `partner-app`:
+Builds the ARN for `sagemaker` `partner-app`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:partner-app/${AppId}

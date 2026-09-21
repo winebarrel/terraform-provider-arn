@@ -3,12 +3,12 @@
 page_title: "devicefarm_suite function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm suite ARN
+  devicefarm suite ARN
 ---
 
 # function: devicefarm_suite
 
-Builds the ARN of an `devicefarm` `suite`:
+Builds the ARN for `devicefarm` `suite`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:suite:${ResourceId}

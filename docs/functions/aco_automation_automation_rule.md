@@ -3,12 +3,12 @@
 page_title: "aco_automation_automation_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an aco-automation AutomationRule ARN
+  aco-automation AutomationRule ARN
 ---
 
 # function: aco_automation_automation_rule
 
-Builds the ARN of an `aco-automation` `AutomationRule`:
+Builds the ARN for `aco-automation` `AutomationRule`:
 
 ```
 arn:${Partition}:compute-optimizer::${Account}:automation-rule/${RuleId}

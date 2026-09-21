@@ -3,12 +3,12 @@
 page_title: "bcm_dashboards_scheduled_report function - arn"
 subcategory: ""
 description: |-
-  Builds an bcm-dashboards scheduled-report ARN
+  bcm-dashboards scheduled-report ARN
 ---
 
 # function: bcm_dashboards_scheduled_report
 
-Builds the ARN of an `bcm-dashboards` `scheduled-report`:
+Builds the ARN for `bcm-dashboards` `scheduled-report`:
 
 ```
 arn:${Partition}:bcm-dashboards::${Account}:scheduled-report/${ScheduledReportName}

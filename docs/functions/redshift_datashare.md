@@ -3,12 +3,12 @@
 page_title: "redshift_datashare function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift datashare ARN
+  redshift datashare ARN
 ---
 
 # function: redshift_datashare
 
-Builds the ARN of an `redshift` `datashare`:
+Builds the ARN for `redshift` `datashare`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:datashare:${ProducerClusterNamespace}/${DataShareName}

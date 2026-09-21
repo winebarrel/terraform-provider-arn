@@ -3,12 +3,12 @@
 page_title: "refactor_spaces_route function - arn"
 subcategory: ""
 description: |-
-  Builds an refactor-spaces route ARN
+  refactor-spaces route ARN
 ---
 
 # function: refactor_spaces_route
 
-Builds the ARN of an `refactor-spaces` `route`:
+Builds the ARN for `refactor-spaces` `route`:
 
 ```
 arn:${Partition}:refactor-spaces:${Region}:${Account}:environment/${EnvironmentId}/application/${ApplicationId}/route/${RouteId}

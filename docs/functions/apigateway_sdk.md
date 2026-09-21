@@ -3,12 +3,12 @@
 page_title: "apigateway_sdk function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Sdk ARN
+  apigateway Sdk ARN
 ---
 
 # function: apigateway_sdk
 
-Builds the ARN of an `apigateway` `Sdk`:
+Builds the ARN for `apigateway` `Sdk`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/stages/${StageName}/sdks/${SdkType}

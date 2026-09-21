@@ -3,12 +3,12 @@
 page_title: "b2bi_partnership function - arn"
 subcategory: ""
 description: |-
-  Builds an b2bi partnership ARN
+  b2bi partnership ARN
 ---
 
 # function: b2bi_partnership
 
-Builds the ARN of an `b2bi` `partnership`:
+Builds the ARN for `b2bi` `partnership`:
 
 ```
 arn:${Partition}:b2bi:${Region}:${Account}:partnership/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "apigateway_model_2 function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Model ARN
+  apigateway Model ARN
 ---
 
 # function: apigateway_model_2
 
-Builds the ARN of an `apigateway` `Model`:
+Builds the ARN for `apigateway` `Model`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/models/${ModelName}

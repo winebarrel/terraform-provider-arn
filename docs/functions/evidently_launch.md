@@ -3,12 +3,12 @@
 page_title: "evidently_launch function - arn"
 subcategory: ""
 description: |-
-  Builds an evidently Launch ARN
+  evidently Launch ARN
 ---
 
 # function: evidently_launch
 
-Builds the ARN of an `evidently` `Launch`:
+Builds the ARN for `evidently` `Launch`:
 
 ```
 arn:${Partition}:evidently:${Region}:${Account}:project/${ProjectName}/launch/${LaunchName}

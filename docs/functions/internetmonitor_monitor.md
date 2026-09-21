@@ -3,12 +3,12 @@
 page_title: "internetmonitor_monitor function - arn"
 subcategory: ""
 description: |-
-  Builds an internetmonitor Monitor ARN
+  internetmonitor Monitor ARN
 ---
 
 # function: internetmonitor_monitor
 
-Builds the ARN of an `internetmonitor` `Monitor`:
+Builds the ARN for `internetmonitor` `Monitor`:
 
 ```
 arn:${Partition}:internetmonitor:${Region}:${Account}:monitor/${MonitorName}

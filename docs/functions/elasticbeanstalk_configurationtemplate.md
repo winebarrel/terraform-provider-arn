@@ -3,12 +3,12 @@
 page_title: "elasticbeanstalk_configurationtemplate function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticbeanstalk configurationtemplate ARN
+  elasticbeanstalk configurationtemplate ARN
 ---
 
 # function: elasticbeanstalk_configurationtemplate
 
-Builds the ARN of an `elasticbeanstalk` `configurationtemplate`:
+Builds the ARN for `elasticbeanstalk` `configurationtemplate`:
 
 ```
 arn:${Partition}:elasticbeanstalk:${Region}:${Account}:configurationtemplate/${ApplicationName}/${TemplateName}

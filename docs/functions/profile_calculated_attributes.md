@@ -3,12 +3,12 @@
 page_title: "profile_calculated_attributes function - arn"
 subcategory: ""
 description: |-
-  Builds an profile calculated-attributes ARN
+  profile calculated-attributes ARN
 ---
 
 # function: profile_calculated_attributes
 
-Builds the ARN of an `profile` `calculated-attributes`:
+Builds the ARN for `profile` `calculated-attributes`:
 
 ```
 arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/calculated-attributes/${CalculatedAttributeName}

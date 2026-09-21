@@ -3,12 +3,12 @@
 page_title: "ecs_task_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs task-definition ARN
+  ecs task-definition ARN
 ---
 
 # function: ecs_task_definition
 
-Builds the ARN of an `ecs` `task-definition`:
+Builds the ARN for `ecs` `task-definition`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:task-definition/${TaskDefinitionFamilyName}:${TaskDefinitionRevisionNumber}

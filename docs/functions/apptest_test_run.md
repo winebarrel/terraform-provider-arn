@@ -3,12 +3,12 @@
 page_title: "apptest_test_run function - arn"
 subcategory: ""
 description: |-
-  Builds an apptest TestRun ARN
+  apptest TestRun ARN
 ---
 
 # function: apptest_test_run
 
-Builds the ARN of an `apptest` `TestRun`:
+Builds the ARN for `apptest` `TestRun`:
 
 ```
 arn:${Partition}:apptest:${Region}:${Account}:testrun/${TestRunId}

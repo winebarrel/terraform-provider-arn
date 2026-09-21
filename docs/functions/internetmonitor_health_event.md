@@ -3,12 +3,12 @@
 page_title: "internetmonitor_health_event function - arn"
 subcategory: ""
 description: |-
-  Builds an internetmonitor HealthEvent ARN
+  internetmonitor HealthEvent ARN
 ---
 
 # function: internetmonitor_health_event
 
-Builds the ARN of an `internetmonitor` `HealthEvent`:
+Builds the ARN for `internetmonitor` `HealthEvent`:
 
 ```
 arn:${Partition}:internetmonitor:${Region}:${Account}:monitor/${MonitorName}/health-event/${EventId}

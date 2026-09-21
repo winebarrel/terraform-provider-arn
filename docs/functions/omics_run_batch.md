@@ -3,12 +3,12 @@
 page_title: "omics_run_batch function - arn"
 subcategory: ""
 description: |-
-  Builds an omics runBatch ARN
+  omics runBatch ARN
 ---
 
 # function: omics_run_batch
 
-Builds the ARN of an `omics` `runBatch`:
+Builds the ARN for `omics` `runBatch`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:runBatch/${BatchId}

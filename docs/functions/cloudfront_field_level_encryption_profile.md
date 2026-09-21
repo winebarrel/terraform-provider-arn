@@ -3,12 +3,12 @@
 page_title: "cloudfront_field_level_encryption_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront field-level-encryption-profile ARN
+  cloudfront field-level-encryption-profile ARN
 ---
 
 # function: cloudfront_field_level_encryption_profile
 
-Builds the ARN of an `cloudfront` `field-level-encryption-profile`:
+Builds the ARN for `cloudfront` `field-level-encryption-profile`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:field-level-encryption-profile/${Id}

@@ -3,12 +3,12 @@
 page_title: "ssm_sap_component function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm-sap component ARN
+  ssm-sap component ARN
 ---
 
 # function: ssm_sap_component
 
-Builds the ARN of an `ssm-sap` `component`:
+Builds the ARN for `ssm-sap` `component`:
 
 ```
 arn:${Partition}:ssm-sap:${Region}:${Account}:${ApplicationType}/${ApplicationId}/COMPONENT/${ComponentId}

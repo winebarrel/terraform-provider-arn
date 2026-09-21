@@ -3,12 +3,12 @@
 page_title: "transcribe_callanalyticscategory function - arn"
 subcategory: ""
 description: |-
-  Builds an transcribe callanalyticscategory ARN
+  transcribe callanalyticscategory ARN
 ---
 
 # function: transcribe_callanalyticscategory
 
-Builds the ARN of an `transcribe` `callanalyticscategory`:
+Builds the ARN for `transcribe` `callanalyticscategory`:
 
 ```
 arn:${Partition}:transcribe:${Region}:${Account}:analytics-category/${CategoryName}

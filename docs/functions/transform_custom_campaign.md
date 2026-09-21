@@ -3,12 +3,12 @@
 page_title: "transform_custom_campaign function - arn"
 subcategory: ""
 description: |-
-  Builds an transform-custom campaign ARN
+  transform-custom campaign ARN
 ---
 
 # function: transform_custom_campaign
 
-Builds the ARN of an `transform-custom` `campaign`:
+Builds the ARN for `transform-custom` `campaign`:
 
 ```
 arn:${Partition}:transform-custom:${Region}:${Account}:campaign/${Name}

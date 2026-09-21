@@ -3,12 +3,12 @@
 page_title: "securityhub_configuration_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an securityhub configuration-policy ARN
+  securityhub configuration-policy ARN
 ---
 
 # function: securityhub_configuration_policy
 
-Builds the ARN of an `securityhub` `configuration-policy`:
+Builds the ARN for `securityhub` `configuration-policy`:
 
 ```
 arn:${Partition}:securityhub:${Region}:${Account}:configuration-policy/${ConfigurationPolicyId}

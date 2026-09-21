@@ -3,12 +3,12 @@
 page_title: "connect_workspace function - arn"
 subcategory: ""
 description: |-
-  Builds an connect workspace ARN
+  connect workspace ARN
 ---
 
 # function: connect_workspace
 
-Builds the ARN of an `connect` `workspace`:
+Builds the ARN for `connect` `workspace`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/workspace/${WorkspaceId}

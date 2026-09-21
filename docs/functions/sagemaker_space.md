@@ -3,12 +3,12 @@
 page_title: "sagemaker_space function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker space ARN
+  sagemaker space ARN
 ---
 
 # function: sagemaker_space
 
-Builds the ARN of an `sagemaker` `space`:
+Builds the ARN for `sagemaker` `space`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:space/${DomainId}/${SpaceName}

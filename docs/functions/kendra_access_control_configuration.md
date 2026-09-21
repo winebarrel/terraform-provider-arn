@@ -3,12 +3,12 @@
 page_title: "kendra_access_control_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an kendra access-control-configuration ARN
+  kendra access-control-configuration ARN
 ---
 
 # function: kendra_access_control_configuration
 
-Builds the ARN of an `kendra` `access-control-configuration`:
+Builds the ARN for `kendra` `access-control-configuration`:
 
 ```
 arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/access-control-configuration/${AccessControlConfigurationId}

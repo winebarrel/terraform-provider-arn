@@ -3,12 +3,12 @@
 page_title: "connect_metric function - arn"
 subcategory: ""
 description: |-
-  Builds an connect metric ARN
+  connect metric ARN
 ---
 
 # function: connect_metric
 
-Builds the ARN of an `connect` `metric`:
+Builds the ARN for `connect` `metric`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/metric/${MetricId}

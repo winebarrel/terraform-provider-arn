@@ -3,12 +3,12 @@
 page_title: "cloudformation_stackset_target function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudformation stackset-target ARN
+  cloudformation stackset-target ARN
 ---
 
 # function: cloudformation_stackset_target
 
-Builds the ARN of an `cloudformation` `stackset-target`:
+Builds the ARN for `cloudformation` `stackset-target`:
 
 ```
 arn:${Partition}:cloudformation:${Region}:${Account}:stackset-target/${StackSetTarget}

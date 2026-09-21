@@ -3,12 +3,12 @@
 page_title: "comprehend_document_classifier_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend document-classifier-endpoint ARN
+  comprehend document-classifier-endpoint ARN
 ---
 
 # function: comprehend_document_classifier_endpoint
 
-Builds the ARN of an `comprehend` `document-classifier-endpoint`:
+Builds the ARN for `comprehend` `document-classifier-endpoint`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:document-classifier-endpoint/${DocumentClassifierEndpointName}

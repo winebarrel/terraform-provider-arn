@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_attribute function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting attribute ARN
+  mobiletargeting attribute ARN
 ---
 
 # function: mobiletargeting_attribute
 
-Builds the ARN of an `mobiletargeting` `attribute`:
+Builds the ARN for `mobiletargeting` `attribute`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/attributes/${AttributeType}

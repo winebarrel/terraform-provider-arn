@@ -3,12 +3,12 @@
 page_title: "airflow_rbac_role function - arn"
 subcategory: ""
 description: |-
-  Builds an airflow rbac-role ARN
+  airflow rbac-role ARN
 ---
 
 # function: airflow_rbac_role
 
-Builds the ARN of an `airflow` `rbac-role`:
+Builds the ARN for `airflow` `rbac-role`:
 
 ```
 arn:${Partition}:airflow:${Region}:${Account}:role/${EnvironmentName}/${RoleName}

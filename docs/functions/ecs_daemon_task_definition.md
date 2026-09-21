@@ -3,12 +3,12 @@
 page_title: "ecs_daemon_task_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs daemon-task-definition ARN
+  ecs daemon-task-definition ARN
 ---
 
 # function: ecs_daemon_task_definition
 
-Builds the ARN of an `ecs` `daemon-task-definition`:
+Builds the ARN for `ecs` `daemon-task-definition`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:daemon-task-definition/${DaemonTaskDefinitionFamilyName}:${DaemonTaskDefinitionRevisionNumber}

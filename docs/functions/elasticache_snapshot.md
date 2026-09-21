@@ -3,12 +3,12 @@
 page_title: "elasticache_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticache snapshot ARN
+  elasticache snapshot ARN
 ---
 
 # function: elasticache_snapshot
 
-Builds the ARN of an `elasticache` `snapshot`:
+Builds the ARN for `elasticache` `snapshot`:
 
 ```
 arn:${Partition}:elasticache:${Region}:${Account}:snapshot:${SnapshotName}

@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_user function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting user ARN
+  mobiletargeting user ARN
 ---
 
 # function: mobiletargeting_user
 
-Builds the ARN of an `mobiletargeting` `user`:
+Builds the ARN for `mobiletargeting` `user`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/users/${UserId}

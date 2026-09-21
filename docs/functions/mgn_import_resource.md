@@ -3,12 +3,12 @@
 page_title: "mgn_import_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgn ImportResource ARN
+  mgn ImportResource ARN
 ---
 
 # function: mgn_import_resource
 
-Builds the ARN of an `mgn` `ImportResource`:
+Builds the ARN for `mgn` `ImportResource`:
 
 ```
 arn:${Partition}:mgn:${Region}:${Account}:import/${ImportID}

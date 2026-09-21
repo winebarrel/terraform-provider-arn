@@ -3,12 +3,12 @@
 page_title: "route53profiles_profile_association function - arn"
 subcategory: ""
 description: |-
-  Builds an route53profiles profile-association ARN
+  route53profiles profile-association ARN
 ---
 
 # function: route53profiles_profile_association
 
-Builds the ARN of an `route53profiles` `profile-association`:
+Builds the ARN for `route53profiles` `profile-association`:
 
 ```
 arn:${Partition}:route53profiles:${Region}:${Account}:profile-association/${ResourceId}

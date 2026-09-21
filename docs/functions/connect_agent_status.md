@@ -3,12 +3,12 @@
 page_title: "connect_agent_status function - arn"
 subcategory: ""
 description: |-
-  Builds an connect agent-status ARN
+  connect agent-status ARN
 ---
 
 # function: connect_agent_status
 
-Builds the ARN of an `connect` `agent-status`:
+Builds the ARN for `connect` `agent-status`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/agent-state/${AgentStatusId}

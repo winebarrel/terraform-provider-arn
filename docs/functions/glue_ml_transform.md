@@ -3,12 +3,12 @@
 page_title: "glue_ml_transform function - arn"
 subcategory: ""
 description: |-
-  Builds an glue mlTransform ARN
+  glue mlTransform ARN
 ---
 
 # function: glue_ml_transform
 
-Builds the ARN of an `glue` `mlTransform`:
+Builds the ARN for `glue` `mlTransform`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:mlTransform/${TransformId}

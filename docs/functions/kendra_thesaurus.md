@@ -3,12 +3,12 @@
 page_title: "kendra_thesaurus function - arn"
 subcategory: ""
 description: |-
-  Builds an kendra thesaurus ARN
+  kendra thesaurus ARN
 ---
 
 # function: kendra_thesaurus
 
-Builds the ARN of an `kendra` `thesaurus`:
+Builds the ARN for `kendra` `thesaurus`:
 
 ```
 arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/thesaurus/${ThesaurusId}

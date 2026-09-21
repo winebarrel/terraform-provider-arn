@@ -3,12 +3,12 @@
 page_title: "glue_crawler function - arn"
 subcategory: ""
 description: |-
-  Builds an glue crawler ARN
+  glue crawler ARN
 ---
 
 # function: glue_crawler
 
-Builds the ARN of an `glue` `crawler`:
+Builds the ARN for `glue` `crawler`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:crawler/${CrawlerName}

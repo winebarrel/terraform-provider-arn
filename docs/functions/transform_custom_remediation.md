@@ -3,12 +3,12 @@
 page_title: "transform_custom_remediation function - arn"
 subcategory: ""
 description: |-
-  Builds an transform-custom remediation ARN
+  transform-custom remediation ARN
 ---
 
 # function: transform_custom_remediation
 
-Builds the ARN of an `transform-custom` `remediation`:
+Builds the ARN for `transform-custom` `remediation`:
 
 ```
 arn:${Partition}:transform-custom:${Region}:${Account}:remediation/${RemediationId}

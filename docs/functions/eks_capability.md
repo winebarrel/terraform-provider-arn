@@ -3,12 +3,12 @@
 page_title: "eks_capability function - arn"
 subcategory: ""
 description: |-
-  Builds an eks capability ARN
+  eks capability ARN
 ---
 
 # function: eks_capability
 
-Builds the ARN of an `eks` `capability`:
+Builds the ARN for `eks` `capability`:
 
 ```
 arn:${Partition}:eks:${Region}:${Account}:capability/${ClusterName}/${CapabilityType}/${CapabilityName}/${UUID}

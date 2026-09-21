@@ -3,12 +3,12 @@
 page_title: "config_conformance_pack function - arn"
 subcategory: ""
 description: |-
-  Builds an config ConformancePack ARN
+  config ConformancePack ARN
 ---
 
 # function: config_conformance_pack
 
-Builds the ARN of an `config` `ConformancePack`:
+Builds the ARN for `config` `ConformancePack`:
 
 ```
 arn:${Partition}:config:${Region}:${Account}:conformance-pack/${ConformancePackName}/${ConformancePackId}

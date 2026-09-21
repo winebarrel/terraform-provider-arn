@@ -3,12 +3,12 @@
 page_title: "rolesanywhere_trust_anchor function - arn"
 subcategory: ""
 description: |-
-  Builds an rolesanywhere trust-anchor ARN
+  rolesanywhere trust-anchor ARN
 ---
 
 # function: rolesanywhere_trust_anchor
 
-Builds the ARN of an `rolesanywhere` `trust-anchor`:
+Builds the ARN for `rolesanywhere` `trust-anchor`:
 
 ```
 arn:${Partition}:rolesanywhere:${Region}:${Account}:trust-anchor/${TrustAnchorId}

@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_browser_custom function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore browser-custom ARN
+  bedrock-agentcore browser-custom ARN
 ---
 
 # function: bedrock_agentcore_browser_custom
 
-Builds the ARN of an `bedrock-agentcore` `browser-custom`:
+Builds the ARN for `bedrock-agentcore` `browser-custom`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:browser-custom/${BrowserId}

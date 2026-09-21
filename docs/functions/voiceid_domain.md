@@ -3,12 +3,12 @@
 page_title: "voiceid_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an voiceid domain ARN
+  voiceid domain ARN
 ---
 
 # function: voiceid_domain
 
-Builds the ARN of an `voiceid` `domain`:
+Builds the ARN for `voiceid` `domain`:
 
 ```
 arn:${Partition}:voiceid:${Region}:${Account}:domain/${DomainId}

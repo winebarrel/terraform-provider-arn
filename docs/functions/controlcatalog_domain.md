@@ -3,12 +3,12 @@
 page_title: "controlcatalog_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an controlcatalog domain ARN
+  controlcatalog domain ARN
 ---
 
 # function: controlcatalog_domain
 
-Builds the ARN of an `controlcatalog` `domain`:
+Builds the ARN for `controlcatalog` `domain`:
 
 ```
 arn:${Partition}:controlcatalog:::domain/${DomainId}

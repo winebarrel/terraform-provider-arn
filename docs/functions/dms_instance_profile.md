@@ -3,12 +3,12 @@
 page_title: "dms_instance_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an dms InstanceProfile ARN
+  dms InstanceProfile ARN
 ---
 
 # function: dms_instance_profile
 
-Builds the ARN of an `dms` `InstanceProfile`:
+Builds the ARN for `dms` `InstanceProfile`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:instance-profile:*

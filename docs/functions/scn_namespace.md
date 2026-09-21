@@ -3,12 +3,12 @@
 page_title: "scn_namespace function - arn"
 subcategory: ""
 description: |-
-  Builds an scn namespace ARN
+  scn namespace ARN
 ---
 
 # function: scn_namespace
 
-Builds the ARN of an `scn` `namespace`:
+Builds the ARN for `scn` `namespace`:
 
 ```
 arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/namespaces/${Namespace}

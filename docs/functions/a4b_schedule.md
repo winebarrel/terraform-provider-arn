@@ -3,12 +3,12 @@
 page_title: "a4b_schedule function - arn"
 subcategory: ""
 description: |-
-  Builds an a4b schedule ARN
+  a4b schedule ARN
 ---
 
 # function: a4b_schedule
 
-Builds the ARN of an `a4b` `schedule`:
+Builds the ARN for `a4b` `schedule`:
 
 ```
 arn:${Partition}:a4b:${Region}:${Account}:schedule/${ResourceId}

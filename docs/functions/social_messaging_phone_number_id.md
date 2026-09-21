@@ -3,12 +3,12 @@
 page_title: "social_messaging_phone_number_id function - arn"
 subcategory: ""
 description: |-
-  Builds an social-messaging phone-number-id ARN
+  social-messaging phone-number-id ARN
 ---
 
 # function: social_messaging_phone_number_id
 
-Builds the ARN of an `social-messaging` `phone-number-id`:
+Builds the ARN for `social-messaging` `phone-number-id`:
 
 ```
 arn:${Partition}:social-messaging:${Region}:${Account}:phone-number-id/${OriginationPhoneNumberId}

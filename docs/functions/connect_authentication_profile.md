@@ -3,12 +3,12 @@
 page_title: "connect_authentication_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an connect authentication-profile ARN
+  connect authentication-profile ARN
 ---
 
 # function: connect_authentication_profile
 
-Builds the ARN of an `connect` `authentication-profile`:
+Builds the ARN for `connect` `authentication-profile`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/authentication-profile/${AuthenticationProfileId}

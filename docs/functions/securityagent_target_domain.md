@@ -3,12 +3,12 @@
 page_title: "securityagent_target_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an securityagent TargetDomain ARN
+  securityagent TargetDomain ARN
 ---
 
 # function: securityagent_target_domain
 
-Builds the ARN of an `securityagent` `TargetDomain`:
+Builds the ARN for `securityagent` `TargetDomain`:
 
 ```
 arn:${Partition}:securityagent:${Region}:${Account}:target-domain/${TargetDomainId}

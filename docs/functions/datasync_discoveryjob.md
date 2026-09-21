@@ -3,12 +3,12 @@
 page_title: "datasync_discoveryjob function - arn"
 subcategory: ""
 description: |-
-  Builds an datasync discoveryjob ARN
+  datasync discoveryjob ARN
 ---
 
 # function: datasync_discoveryjob
 
-Builds the ARN of an `datasync` `discoveryjob`:
+Builds the ARN for `datasync` `discoveryjob`:
 
 ```
 arn:${Partition}:datasync:${Region}:${AccountId}:system/${StorageSystemId}/job/${DiscoveryJobId}

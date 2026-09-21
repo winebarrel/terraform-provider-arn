@@ -3,12 +3,12 @@
 page_title: "execute_api_execute_api_general function - arn"
 subcategory: ""
 description: |-
-  Builds an execute-api execute-api-general ARN
+  execute-api execute-api-general ARN
 ---
 
 # function: execute_api_execute_api_general
 
-Builds the ARN of an `execute-api` `execute-api-general`:
+Builds the ARN for `execute-api` `execute-api-general`:
 
 ```
 arn:${Partition}:execute-api:${Region}:${Account}:${ApiId}/${Stage}/${Method}/${ApiSpecificResourcePath}

@@ -3,12 +3,12 @@
 page_title: "ec2_natgateway function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 natgateway ARN
+  ec2 natgateway ARN
 ---
 
 # function: ec2_natgateway
 
-Builds the ARN of an `ec2` `natgateway`:
+Builds the ARN for `ec2` `natgateway`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:natgateway/${NatGatewayId}

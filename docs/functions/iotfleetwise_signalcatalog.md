@@ -3,12 +3,12 @@
 page_title: "iotfleetwise_signalcatalog function - arn"
 subcategory: ""
 description: |-
-  Builds an iotfleetwise signalcatalog ARN
+  iotfleetwise signalcatalog ARN
 ---
 
 # function: iotfleetwise_signalcatalog
 
-Builds the ARN of an `iotfleetwise` `signalcatalog`:
+Builds the ARN for `iotfleetwise` `signalcatalog`:
 
 ```
 arn:${Partition}:iotfleetwise:${Region}:${Account}:signal-catalog/${Name}

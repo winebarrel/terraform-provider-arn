@@ -3,12 +3,12 @@
 page_title: "comprehend_entity_recognizer_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend entity-recognizer-endpoint ARN
+  comprehend entity-recognizer-endpoint ARN
 ---
 
 # function: comprehend_entity_recognizer_endpoint
 
-Builds the ARN of an `comprehend` `entity-recognizer-endpoint`:
+Builds the ARN for `comprehend` `entity-recognizer-endpoint`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:entity-recognizer-endpoint/${EntityRecognizerEndpointName}

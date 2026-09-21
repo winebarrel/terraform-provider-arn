@@ -3,12 +3,12 @@
 page_title: "tnb_function_package function - arn"
 subcategory: ""
 description: |-
-  Builds an tnb function-package ARN
+  tnb function-package ARN
 ---
 
 # function: tnb_function_package
 
-Builds the ARN of an `tnb` `function-package`:
+Builds the ARN for `tnb` `function-package`:
 
 ```
 arn:${Partition}:tnb:${Region}:${Account}:function-package/${FunctionPackageId}

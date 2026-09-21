@@ -3,12 +3,12 @@
 page_title: "ses_custom_verification_email_template function - arn"
 subcategory: ""
 description: |-
-  Builds an ses custom-verification-email-template ARN
+  ses custom-verification-email-template ARN
 ---
 
 # function: ses_custom_verification_email_template
 
-Builds the ARN of an `ses` `custom-verification-email-template`:
+Builds the ARN for `ses` `custom-verification-email-template`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:custom-verification-email-template/${TemplateName}

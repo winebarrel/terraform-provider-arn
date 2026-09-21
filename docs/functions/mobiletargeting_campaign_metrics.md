@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_campaign_metrics function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting campaign-metrics ARN
+  mobiletargeting campaign-metrics ARN
 ---
 
 # function: mobiletargeting_campaign_metrics
 
-Builds the ARN of an `mobiletargeting` `campaign-metrics`:
+Builds the ARN for `mobiletargeting` `campaign-metrics`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/campaigns/${CampaignId}/kpis/daterange/${KpiName}

@@ -3,12 +3,12 @@
 page_title: "migrationhub_orchestrator_workflow function - arn"
 subcategory: ""
 description: |-
-  Builds an migrationhub-orchestrator workflow ARN
+  migrationhub-orchestrator workflow ARN
 ---
 
 # function: migrationhub_orchestrator_workflow
 
-Builds the ARN of an `migrationhub-orchestrator` `workflow`:
+Builds the ARN for `migrationhub-orchestrator` `workflow`:
 
 ```
 arn:${Partition}:migrationhub-orchestrator:${Region}:${Account}:workflow/${ResourceId}

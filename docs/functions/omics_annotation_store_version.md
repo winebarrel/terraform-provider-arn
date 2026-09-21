@@ -3,12 +3,12 @@
 page_title: "omics_annotation_store_version function - arn"
 subcategory: ""
 description: |-
-  Builds an omics AnnotationStoreVersion ARN
+  omics AnnotationStoreVersion ARN
 ---
 
 # function: omics_annotation_store_version
 
-Builds the ARN of an `omics` `AnnotationStoreVersion`:
+Builds the ARN for `omics` `AnnotationStoreVersion`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:annotationStore/${AnnotationStoreName}/version/${AnnotationStoreVersionName}

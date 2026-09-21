@@ -3,12 +3,12 @@
 page_title: "comprehend_document_classification_job function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend document-classification-job ARN
+  comprehend document-classification-job ARN
 ---
 
 # function: comprehend_document_classification_job
 
-Builds the ARN of an `comprehend` `document-classification-job`:
+Builds the ARN for `comprehend` `document-classification-job`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:document-classification-job/${JobId}

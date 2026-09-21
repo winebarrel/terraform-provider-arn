@@ -3,12 +3,12 @@
 page_title: "storagegateway_volume function - arn"
 subcategory: ""
 description: |-
-  Builds an storagegateway volume ARN
+  storagegateway volume ARN
 ---
 
 # function: storagegateway_volume
 
-Builds the ARN of an `storagegateway` `volume`:
+Builds the ARN for `storagegateway` `volume`:
 
 ```
 arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}/volume/${VolumeId}

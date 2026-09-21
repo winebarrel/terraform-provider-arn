@@ -3,12 +3,12 @@
 page_title: "kendra_experience function - arn"
 subcategory: ""
 description: |-
-  Builds an kendra experience ARN
+  kendra experience ARN
 ---
 
 # function: kendra_experience
 
-Builds the ARN of an `kendra` `experience`:
+Builds the ARN for `kendra` `experience`:
 
 ```
 arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/experience/${ExperienceId}

@@ -3,12 +3,12 @@
 page_title: "timestream_database function - arn"
 subcategory: ""
 description: |-
-  Builds an timestream database ARN
+  timestream database ARN
 ---
 
 # function: timestream_database
 
-Builds the ARN of an `timestream` `database`:
+Builds the ARN for `timestream` `database`:
 
 ```
 arn:${Partition}:timestream:${Region}:${Account}:database/${DatabaseName}

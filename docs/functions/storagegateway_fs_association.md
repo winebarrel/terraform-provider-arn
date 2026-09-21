@@ -3,12 +3,12 @@
 page_title: "storagegateway_fs_association function - arn"
 subcategory: ""
 description: |-
-  Builds an storagegateway fs-association ARN
+  storagegateway fs-association ARN
 ---
 
 # function: storagegateway_fs_association
 
-Builds the ARN of an `storagegateway` `fs-association`:
+Builds the ARN for `storagegateway` `fs-association`:
 
 ```
 arn:${Partition}:storagegateway:${Region}:${Account}:fs-association/${FsaId}

@@ -3,12 +3,12 @@
 page_title: "drs_recovery_plan_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an drs RecoveryPlanResource ARN
+  drs RecoveryPlanResource ARN
 ---
 
 # function: drs_recovery_plan_resource
 
-Builds the ARN of an `drs` `RecoveryPlanResource`:
+Builds the ARN for `drs` `RecoveryPlanResource`:
 
 ```
 arn:${Partition}:drs:${Region}:${Account}:recovery-plan/${RecoveryPlanID}

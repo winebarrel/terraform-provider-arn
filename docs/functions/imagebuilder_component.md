@@ -3,12 +3,12 @@
 page_title: "imagebuilder_component function - arn"
 subcategory: ""
 description: |-
-  Builds an imagebuilder component ARN
+  imagebuilder component ARN
 ---
 
 # function: imagebuilder_component
 
-Builds the ARN of an `imagebuilder` `component`:
+Builds the ARN for `imagebuilder` `component`:
 
 ```
 arn:${Partition}:imagebuilder:${Region}:${Account}:component/${ComponentName}/${ComponentVersion}/${ComponentBuildVersion}

@@ -3,12 +3,12 @@
 page_title: "pca_connector_scep_connector function - arn"
 subcategory: ""
 description: |-
-  Builds an pca-connector-scep Connector ARN
+  pca-connector-scep Connector ARN
 ---
 
 # function: pca_connector_scep_connector
 
-Builds the ARN of an `pca-connector-scep` `Connector`:
+Builds the ARN for `pca-connector-scep` `Connector`:
 
 ```
 arn:${Partition}:pca-connector-scep:${Region}:${Account}:connector/${ConnectorId}

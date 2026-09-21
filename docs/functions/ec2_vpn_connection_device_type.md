@@ -3,12 +3,12 @@
 page_title: "ec2_vpn_connection_device_type function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 vpn-connection-device-type ARN
+  ec2 vpn-connection-device-type ARN
 ---
 
 # function: ec2_vpn_connection_device_type
 
-Builds the ARN of an `ec2` `vpn-connection-device-type`:
+Builds the ARN for `ec2` `vpn-connection-device-type`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:vpn-connection-device-type/${VpnConnectionDeviceTypeId}

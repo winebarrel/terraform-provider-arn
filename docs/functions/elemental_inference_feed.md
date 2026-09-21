@@ -3,12 +3,12 @@
 page_title: "elemental_inference_feed function - arn"
 subcategory: ""
 description: |-
-  Builds an elemental-inference feed ARN
+  elemental-inference feed ARN
 ---
 
 # function: elemental_inference_feed
 
-Builds the ARN of an `elemental-inference` `feed`:
+Builds the ARN for `elemental-inference` `feed`:
 
 ```
 arn:${Partition}:elemental-inference:${Region}:${Account}:feed/${Id}

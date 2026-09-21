@@ -3,12 +3,12 @@
 page_title: "elasticmapreduce_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticmapreduce cluster ARN
+  elasticmapreduce cluster ARN
 ---
 
 # function: elasticmapreduce_cluster
 
-Builds the ARN of an `elasticmapreduce` `cluster`:
+Builds the ARN for `elasticmapreduce` `cluster`:
 
 ```
 arn:${Partition}:elasticmapreduce:${Region}:${Account}:cluster/${ClusterId}

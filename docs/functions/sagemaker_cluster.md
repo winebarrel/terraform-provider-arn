@@ -3,12 +3,12 @@
 page_title: "sagemaker_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker cluster ARN
+  sagemaker cluster ARN
 ---
 
 # function: sagemaker_cluster
 
-Builds the ARN of an `sagemaker` `cluster`:
+Builds the ARN for `sagemaker` `cluster`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:cluster/${ClusterId}

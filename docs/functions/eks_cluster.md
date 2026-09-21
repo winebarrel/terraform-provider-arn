@@ -3,12 +3,12 @@
 page_title: "eks_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an eks cluster ARN
+  eks cluster ARN
 ---
 
 # function: eks_cluster
 
-Builds the ARN of an `eks` `cluster`:
+Builds the ARN for `eks` `cluster`:
 
 ```
 arn:${Partition}:eks:${Region}:${Account}:cluster/${ClusterName}

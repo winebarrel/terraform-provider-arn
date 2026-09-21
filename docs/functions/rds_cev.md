@@ -3,12 +3,12 @@
 page_title: "rds_cev function - arn"
 subcategory: ""
 description: |-
-  Builds an rds cev ARN
+  rds cev ARN
 ---
 
 # function: rds_cev
 
-Builds the ARN of an `rds` `cev`:
+Builds the ARN for `rds` `cev`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:cev:${Engine}/${EngineVersion}/${CustomDbEngineVersionId}

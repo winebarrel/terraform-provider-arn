@@ -3,12 +3,12 @@
 page_title: "ec2_network_interface function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 network-interface ARN
+  ec2 network-interface ARN
 ---
 
 # function: ec2_network_interface
 
-Builds the ARN of an `ec2` `network-interface`:
+Builds the ARN for `ec2` `network-interface`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:network-interface/${NetworkInterfaceId}

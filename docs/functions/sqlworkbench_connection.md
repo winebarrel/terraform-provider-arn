@@ -3,12 +3,12 @@
 page_title: "sqlworkbench_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an sqlworkbench connection ARN
+  sqlworkbench connection ARN
 ---
 
 # function: sqlworkbench_connection
 
-Builds the ARN of an `sqlworkbench` `connection`:
+Builds the ARN for `sqlworkbench` `connection`:
 
 ```
 arn:${Partition}:sqlworkbench:${Region}:${Account}:connection/${ResourceId}

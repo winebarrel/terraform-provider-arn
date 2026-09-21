@@ -3,12 +3,12 @@
 page_title: "mediaconnect_entitlement function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconnect Entitlement ARN
+  mediaconnect Entitlement ARN
 ---
 
 # function: mediaconnect_entitlement
 
-Builds the ARN of an `mediaconnect` `Entitlement`:
+Builds the ARN for `mediaconnect` `Entitlement`:
 
 ```
 arn:${Partition}:mediaconnect:${Region}:${Account}:entitlement:${FlowId}:${EntitlementName}

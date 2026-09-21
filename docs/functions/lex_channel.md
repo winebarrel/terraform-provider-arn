@@ -3,12 +3,12 @@
 page_title: "lex_channel function - arn"
 subcategory: ""
 description: |-
-  Builds an lex channel ARN
+  lex channel ARN
 ---
 
 # function: lex_channel
 
-Builds the ARN of an `lex` `channel`:
+Builds the ARN for `lex` `channel`:
 
 ```
 arn:${Partition}:lex:${Region}:${Account}:bot-channel:${BotName}:${BotAlias}:${ChannelName}

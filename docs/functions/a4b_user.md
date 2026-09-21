@@ -3,12 +3,12 @@
 page_title: "a4b_user function - arn"
 subcategory: ""
 description: |-
-  Builds an a4b user ARN
+  a4b user ARN
 ---
 
 # function: a4b_user
 
-Builds the ARN of an `a4b` `user`:
+Builds the ARN for `a4b` `user`:
 
 ```
 arn:${Partition}:a4b:${Region}:${Account}:user/${ResourceId}

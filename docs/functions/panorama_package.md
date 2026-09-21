@@ -3,12 +3,12 @@
 page_title: "panorama_package function - arn"
 subcategory: ""
 description: |-
-  Builds an panorama package ARN
+  panorama package ARN
 ---
 
 # function: panorama_package
 
-Builds the ARN of an `panorama` `package`:
+Builds the ARN for `panorama` `package`:
 
 ```
 arn:${Partition}:panorama:${Region}:${Account}:package/${PackageId}

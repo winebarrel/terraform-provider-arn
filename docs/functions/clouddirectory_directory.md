@@ -3,12 +3,12 @@
 page_title: "clouddirectory_directory function - arn"
 subcategory: ""
 description: |-
-  Builds an clouddirectory directory ARN
+  clouddirectory directory ARN
 ---
 
 # function: clouddirectory_directory
 
-Builds the ARN of an `clouddirectory` `directory`:
+Builds the ARN for `clouddirectory` `directory`:
 
 ```
 arn:${Partition}:clouddirectory:${Region}:${Account}:directory/${DirectoryId}

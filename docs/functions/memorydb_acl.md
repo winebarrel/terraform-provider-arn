@@ -3,12 +3,12 @@
 page_title: "memorydb_acl function - arn"
 subcategory: ""
 description: |-
-  Builds an memorydb acl ARN
+  memorydb acl ARN
 ---
 
 # function: memorydb_acl
 
-Builds the ARN of an `memorydb` `acl`:
+Builds the ARN for `memorydb` `acl`:
 
 ```
 arn:${Partition}:memorydb:${Region}:${Account}:acl/${AclName}

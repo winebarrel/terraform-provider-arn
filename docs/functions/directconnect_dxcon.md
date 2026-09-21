@@ -3,12 +3,12 @@
 page_title: "directconnect_dxcon function - arn"
 subcategory: ""
 description: |-
-  Builds an directconnect dxcon ARN
+  directconnect dxcon ARN
 ---
 
 # function: directconnect_dxcon
 
-Builds the ARN of an `directconnect` `dxcon`:
+Builds the ARN for `directconnect` `dxcon`:
 
 ```
 arn:${Partition}:directconnect:${Region}:${Account}:dxcon/${ConnectionId}

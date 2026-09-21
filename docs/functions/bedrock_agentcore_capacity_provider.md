@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_capacity_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore capacity-provider ARN
+  bedrock-agentcore capacity-provider ARN
 ---
 
 # function: bedrock_agentcore_capacity_provider
 
-Builds the ARN of an `bedrock-agentcore` `capacity-provider`:
+Builds the ARN for `bedrock-agentcore` `capacity-provider`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:capacity-provider/${CapacityProviderId}

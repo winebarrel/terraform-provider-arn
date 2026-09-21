@@ -3,12 +3,12 @@
 page_title: "appfabric_appauthorization function - arn"
 subcategory: ""
 description: |-
-  Builds an appfabric appauthorization ARN
+  appfabric appauthorization ARN
 ---
 
 # function: appfabric_appauthorization
 
-Builds the ARN of an `appfabric` `appauthorization`:
+Builds the ARN for `appfabric` `appauthorization`:
 
 ```
 arn:${Partition}:appfabric:${Region}:${Account}:appbundle/${AppbundleId}/appauthorization/${AppAuthorizationIdentifier}

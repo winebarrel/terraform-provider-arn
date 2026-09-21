@@ -3,12 +3,12 @@
 page_title: "redshift_usagelimit function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift usagelimit ARN
+  redshift usagelimit ARN
 ---
 
 # function: redshift_usagelimit
 
-Builds the ARN of an `redshift` `usagelimit`:
+Builds the ARN for `redshift` `usagelimit`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:usagelimit:${UsageLimitId}

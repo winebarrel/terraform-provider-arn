@@ -3,12 +3,12 @@
 page_title: "chime_app_instance_user function - arn"
 subcategory: ""
 description: |-
-  Builds an chime app-instance-user ARN
+  chime app-instance-user ARN
 ---
 
 # function: chime_app_instance_user
 
-Builds the ARN of an `chime` `app-instance-user`:
+Builds the ARN for `chime` `app-instance-user`:
 
 ```
 arn:${Partition}:chime:${Region}:${AccountId}:app-instance/${AppInstanceId}/user/${AppInstanceUserId}

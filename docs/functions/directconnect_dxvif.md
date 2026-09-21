@@ -3,12 +3,12 @@
 page_title: "directconnect_dxvif function - arn"
 subcategory: ""
 description: |-
-  Builds an directconnect dxvif ARN
+  directconnect dxvif ARN
 ---
 
 # function: directconnect_dxvif
 
-Builds the ARN of an `directconnect` `dxvif`:
+Builds the ARN for `directconnect` `dxvif`:
 
 ```
 arn:${Partition}:directconnect:${Region}:${Account}:dxvif/${VirtualInterfaceId}

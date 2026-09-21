@@ -3,12 +3,12 @@
 page_title: "inspector2_finding function - arn"
 subcategory: ""
 description: |-
-  Builds an inspector2 Finding ARN
+  inspector2 Finding ARN
 ---
 
 # function: inspector2_finding
 
-Builds the ARN of an `inspector2` `Finding`:
+Builds the ARN for `inspector2` `Finding`:
 
 ```
 arn:${Partition}:inspector2:${Region}:${Account}:finding/${FindingId}

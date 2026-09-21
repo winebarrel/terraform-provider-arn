@@ -3,12 +3,12 @@
 page_title: "codebuild_project function - arn"
 subcategory: ""
 description: |-
-  Builds an codebuild project ARN
+  codebuild project ARN
 ---
 
 # function: codebuild_project
 
-Builds the ARN of an `codebuild` `project`:
+Builds the ARN for `codebuild` `project`:
 
 ```
 arn:${Partition}:codebuild:${Region}:${Account}:project/${ProjectName}

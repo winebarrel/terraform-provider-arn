@@ -3,12 +3,12 @@
 page_title: "networkmanager_core_network function - arn"
 subcategory: ""
 description: |-
-  Builds an networkmanager core-network ARN
+  networkmanager core-network ARN
 ---
 
 # function: networkmanager_core_network
 
-Builds the ARN of an `networkmanager` `core-network`:
+Builds the ARN for `networkmanager` `core-network`:
 
 ```
 arn:${Partition}:networkmanager::${Account}:core-network/${ResourceId}

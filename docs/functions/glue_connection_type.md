@@ -3,12 +3,12 @@
 page_title: "glue_connection_type function - arn"
 subcategory: ""
 description: |-
-  Builds an glue connectionType ARN
+  glue connectionType ARN
 ---
 
 # function: glue_connection_type
 
-Builds the ARN of an `glue` `connectionType`:
+Builds the ARN for `glue` `connectionType`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:connectionType:${ConnectionTypeName}

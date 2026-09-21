@@ -3,12 +3,12 @@
 page_title: "ec2_launch_template function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 launch-template ARN
+  ec2 launch-template ARN
 ---
 
 # function: ec2_launch_template
 
-Builds the ARN of an `ec2` `launch-template`:
+Builds the ARN for `ec2` `launch-template`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:launch-template/${LaunchTemplateId}

@@ -3,12 +3,12 @@
 page_title: "iotdeviceadvisor_suitedefinition function - arn"
 subcategory: ""
 description: |-
-  Builds an iotdeviceadvisor Suitedefinition ARN
+  iotdeviceadvisor Suitedefinition ARN
 ---
 
 # function: iotdeviceadvisor_suitedefinition
 
-Builds the ARN of an `iotdeviceadvisor` `Suitedefinition`:
+Builds the ARN for `iotdeviceadvisor` `Suitedefinition`:
 
 ```
 arn:${Partition}:iotdeviceadvisor:${Region}:${Account}:suitedefinition/${SuiteDefinitionId}

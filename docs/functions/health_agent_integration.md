@@ -3,12 +3,12 @@
 page_title: "health_agent_integration function - arn"
 subcategory: ""
 description: |-
-  Builds an health-agent Integration ARN
+  health-agent Integration ARN
 ---
 
 # function: health_agent_integration
 
-Builds the ARN of an `health-agent` `Integration`:
+Builds the ARN for `health-agent` `Integration`:
 
 ```
 arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/integration/${IntegrationId}

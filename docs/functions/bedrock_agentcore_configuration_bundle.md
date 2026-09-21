@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_configuration_bundle function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore configuration-bundle ARN
+  bedrock-agentcore configuration-bundle ARN
 ---
 
 # function: bedrock_agentcore_configuration_bundle
 
-Builds the ARN of an `bedrock-agentcore` `configuration-bundle`:
+Builds the ARN for `bedrock-agentcore` `configuration-bundle`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:configuration-bundle/${ConfigurationBundleId}

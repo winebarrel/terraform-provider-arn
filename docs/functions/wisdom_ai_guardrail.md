@@ -3,12 +3,12 @@
 page_title: "wisdom_ai_guardrail function - arn"
 subcategory: ""
 description: |-
-  Builds an wisdom AIGuardrail ARN
+  wisdom AIGuardrail ARN
 ---
 
 # function: wisdom_ai_guardrail
 
-Builds the ARN of an `wisdom` `AIGuardrail`:
+Builds the ARN for `wisdom` `AIGuardrail`:
 
 ```
 arn:${Partition}:wisdom:${Region}:${Account}:ai-guardrail/${AssistantId}/${AIGuardrailId}

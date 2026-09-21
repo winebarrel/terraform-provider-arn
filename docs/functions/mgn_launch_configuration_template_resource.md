@@ -3,12 +3,12 @@
 page_title: "mgn_launch_configuration_template_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgn LaunchConfigurationTemplateResource ARN
+  mgn LaunchConfigurationTemplateResource ARN
 ---
 
 # function: mgn_launch_configuration_template_resource
 
-Builds the ARN of an `mgn` `LaunchConfigurationTemplateResource`:
+Builds the ARN for `mgn` `LaunchConfigurationTemplateResource`:
 
 ```
 arn:${Partition}:mgn:${Region}:${Account}:launch-configuration-template/${LaunchConfigurationTemplateID}

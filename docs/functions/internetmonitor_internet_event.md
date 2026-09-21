@@ -3,12 +3,12 @@
 page_title: "internetmonitor_internet_event function - arn"
 subcategory: ""
 description: |-
-  Builds an internetmonitor InternetEvent ARN
+  internetmonitor InternetEvent ARN
 ---
 
 # function: internetmonitor_internet_event
 
-Builds the ARN of an `internetmonitor` `InternetEvent`:
+Builds the ARN for `internetmonitor` `InternetEvent`:
 
 ```
 arn:${Partition}:internetmonitor::${Account}:internet-event/${InternetEventId}

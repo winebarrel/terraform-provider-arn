@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_registry function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore registry ARN
+  bedrock-agentcore registry ARN
 ---
 
 # function: bedrock_agentcore_registry
 
-Builds the ARN of an `bedrock-agentcore` `registry`:
+Builds the ARN for `bedrock-agentcore` `registry`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:registry/${RegistryId}

@@ -3,12 +3,12 @@
 page_title: "states_maprun function - arn"
 subcategory: ""
 description: |-
-  Builds an states maprun ARN
+  states maprun ARN
 ---
 
 # function: states_maprun
 
-Builds the ARN of an `states` `maprun`:
+Builds the ARN for `states` `maprun`:
 
 ```
 arn:${Partition}:states:${Region}:${Account}:mapRun:${StateMachineName}/${MapRunLabel}:${MapRunId}

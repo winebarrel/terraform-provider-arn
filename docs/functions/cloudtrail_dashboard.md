@@ -3,12 +3,12 @@
 page_title: "cloudtrail_dashboard function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudtrail dashboard ARN
+  cloudtrail dashboard ARN
 ---
 
 # function: cloudtrail_dashboard
 
-Builds the ARN of an `cloudtrail` `dashboard`:
+Builds the ARN for `cloudtrail` `dashboard`:
 
 ```
 arn:${Partition}:cloudtrail:${Region}:${Account}:dashboard/${DashboardName}

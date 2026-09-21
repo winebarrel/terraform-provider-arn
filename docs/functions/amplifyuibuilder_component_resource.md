@@ -3,12 +3,12 @@
 page_title: "amplifyuibuilder_component_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an amplifyuibuilder ComponentResource ARN
+  amplifyuibuilder ComponentResource ARN
 ---
 
 # function: amplifyuibuilder_component_resource
 
-Builds the ARN of an `amplifyuibuilder` `ComponentResource`:
+Builds the ARN for `amplifyuibuilder` `ComponentResource`:
 
 ```
 arn:${Partition}:amplifyuibuilder:${Region}:${Account}:app/${AppId}/environment/${EnvironmentName}/components/${Id}

@@ -3,12 +3,12 @@
 page_title: "sagemaker_context function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker context ARN
+  sagemaker context ARN
 ---
 
 # function: sagemaker_context
 
-Builds the ARN of an `sagemaker` `context`:
+Builds the ARN for `sagemaker` `context`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:context/${ContextName}

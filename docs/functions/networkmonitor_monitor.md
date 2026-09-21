@@ -3,12 +3,12 @@
 page_title: "networkmonitor_monitor function - arn"
 subcategory: ""
 description: |-
-  Builds an networkmonitor monitor ARN
+  networkmonitor monitor ARN
 ---
 
 # function: networkmonitor_monitor
 
-Builds the ARN of an `networkmonitor` `monitor`:
+Builds the ARN for `networkmonitor` `monitor`:
 
 ```
 arn:${Partition}:networkmonitor:${Region}:${Account}:monitor/${MonitorName}

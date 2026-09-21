@@ -3,12 +3,12 @@
 page_title: "license_manager_user_subscriptions_license_server_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an license-manager-user-subscriptions license-server-endpoint ARN
+  license-manager-user-subscriptions license-server-endpoint ARN
 ---
 
 # function: license_manager_user_subscriptions_license_server_endpoint
 
-Builds the ARN of an `license-manager-user-subscriptions` `license-server-endpoint`:
+Builds the ARN for `license-manager-user-subscriptions` `license-server-endpoint`:
 
 ```
 arn:${Partition}:license-manager-user-subscriptions:${Region}:${Account}:license-server-endpoint/${LicenseServerEndpointId}

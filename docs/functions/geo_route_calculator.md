@@ -3,12 +3,12 @@
 page_title: "geo_route_calculator function - arn"
 subcategory: ""
 description: |-
-  Builds an geo route-calculator ARN
+  geo route-calculator ARN
 ---
 
 # function: geo_route_calculator
 
-Builds the ARN of an `geo` `route-calculator`:
+Builds the ARN for `geo` `route-calculator`:
 
 ```
 arn:${Partition}:geo:${Region}:${Account}:route-calculator/${CalculatorName}

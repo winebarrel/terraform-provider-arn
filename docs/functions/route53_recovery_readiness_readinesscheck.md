@@ -3,12 +3,12 @@
 page_title: "route53_recovery_readiness_readinesscheck function - arn"
 subcategory: ""
 description: |-
-  Builds an route53-recovery-readiness readinesscheck ARN
+  route53-recovery-readiness readinesscheck ARN
 ---
 
 # function: route53_recovery_readiness_readinesscheck
 
-Builds the ARN of an `route53-recovery-readiness` `readinesscheck`:
+Builds the ARN for `route53-recovery-readiness` `readinesscheck`:
 
 ```
 arn:${Partition}:route53-recovery-readiness::${Account}:readiness-check/${ResourceId}

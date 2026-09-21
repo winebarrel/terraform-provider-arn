@@ -3,12 +3,12 @@
 page_title: "iot_otaupdate function - arn"
 subcategory: ""
 description: |-
-  Builds an iot otaupdate ARN
+  iot otaupdate ARN
 ---
 
 # function: iot_otaupdate
 
-Builds the ARN of an `iot` `otaupdate`:
+Builds the ARN for `iot` `otaupdate`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:otaupdate/${OtaUpdateId}

@@ -3,12 +3,12 @@
 page_title: "organizations_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an organizations policy ARN
+  organizations policy ARN
 ---
 
 # function: organizations_policy
 
-Builds the ARN of an `organizations` `policy`:
+Builds the ARN for `organizations` `policy`:
 
 ```
 arn:${Partition}:organizations::${Account}:policy/o-${OrganizationId}/${PolicyType}/p-${PolicyId}

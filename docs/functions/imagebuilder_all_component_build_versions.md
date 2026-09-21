@@ -3,12 +3,12 @@
 page_title: "imagebuilder_all_component_build_versions function - arn"
 subcategory: ""
 description: |-
-  Builds an imagebuilder allComponentBuildVersions ARN
+  imagebuilder allComponentBuildVersions ARN
 ---
 
 # function: imagebuilder_all_component_build_versions
 
-Builds the ARN of an `imagebuilder` `allComponentBuildVersions`:
+Builds the ARN for `imagebuilder` `allComponentBuildVersions`:
 
 ```
 arn:${Partition}:imagebuilder:${Region}:${Account}:component/${ComponentName}/${ComponentVersion}/*

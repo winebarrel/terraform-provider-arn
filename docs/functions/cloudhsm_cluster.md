@@ -3,12 +3,12 @@
 page_title: "cloudhsm_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudhsm cluster ARN
+  cloudhsm cluster ARN
 ---
 
 # function: cloudhsm_cluster
 
-Builds the ARN of an `cloudhsm` `cluster`:
+Builds the ARN for `cloudhsm` `cluster`:
 
 ```
 arn:${Partition}:cloudhsm:${Region}:${Account}:cluster/${CloudHsmClusterInstanceName}

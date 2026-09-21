@@ -3,12 +3,12 @@
 page_title: "identitystore_user function - arn"
 subcategory: ""
 description: |-
-  Builds an identitystore User ARN
+  identitystore User ARN
 ---
 
 # function: identitystore_user
 
-Builds the ARN of an `identitystore` `User`:
+Builds the ARN for `identitystore` `User`:
 
 ```
 arn:${Partition}:identitystore:::user/${UserId}

@@ -3,12 +3,12 @@
 page_title: "ecr_public_registry function - arn"
 subcategory: ""
 description: |-
-  Builds an ecr-public registry ARN
+  ecr-public registry ARN
 ---
 
 # function: ecr_public_registry
 
-Builds the ARN of an `ecr-public` `registry`:
+Builds the ARN for `ecr-public` `registry`:
 
 ```
 arn:${Partition}:ecr-public::${Account}:registry/${RegistryId}

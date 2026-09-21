@@ -3,12 +3,12 @@
 page_title: "medialive_cloudwatch_alarm_template function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive cloudwatch-alarm-template ARN
+  medialive cloudwatch-alarm-template ARN
 ---
 
 # function: medialive_cloudwatch_alarm_template
 
-Builds the ARN of an `medialive` `cloudwatch-alarm-template`:
+Builds the ARN for `medialive` `cloudwatch-alarm-template`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:cloudwatch-alarm-template:${CloudWatchAlarmTemplateId}

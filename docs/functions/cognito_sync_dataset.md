@@ -3,12 +3,12 @@
 page_title: "cognito_sync_dataset function - arn"
 subcategory: ""
 description: |-
-  Builds an cognito-sync dataset ARN
+  cognito-sync dataset ARN
 ---
 
 # function: cognito_sync_dataset
 
-Builds the ARN of an `cognito-sync` `dataset`:
+Builds the ARN for `cognito-sync` `dataset`:
 
 ```
 arn:${Partition}:cognito-sync:${Region}:${Account}:identitypool/${IdentityPoolId}/identity/${IdentityId}/dataset/${DatasetName}

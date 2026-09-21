@@ -3,12 +3,12 @@
 page_title: "sagemaker_code_repository function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker code-repository ARN
+  sagemaker code-repository ARN
 ---
 
 # function: sagemaker_code_repository
 
-Builds the ARN of an `sagemaker` `code-repository`:
+Builds the ARN for `sagemaker` `code-repository`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:code-repository/${CodeRepositoryName}

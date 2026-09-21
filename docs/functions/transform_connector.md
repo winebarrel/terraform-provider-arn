@@ -3,12 +3,12 @@
 page_title: "transform_connector function - arn"
 subcategory: ""
 description: |-
-  Builds an transform connector ARN
+  transform connector ARN
 ---
 
 # function: transform_connector
 
-Builds the ARN of an `transform` `connector`:
+Builds the ARN for `transform` `connector`:
 
 ```
 arn:${Partition}:transform:${Region}:${Account}:connector/${WorkspaceId}/${ConnectorId}

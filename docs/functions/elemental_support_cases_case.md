@@ -3,12 +3,12 @@
 page_title: "elemental_support_cases_case function - arn"
 subcategory: ""
 description: |-
-  Builds an elemental-support-cases case ARN
+  elemental-support-cases case ARN
 ---
 
 # function: elemental_support_cases_case
 
-Builds the ARN of an `elemental-support-cases` `case`:
+Builds the ARN for `elemental-support-cases` `case`:
 
 ```
 arn:${Partition}:elemental-support-cases::${Account}:case/${ResourceId}

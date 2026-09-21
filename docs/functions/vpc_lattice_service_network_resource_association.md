@@ -3,12 +3,12 @@
 page_title: "vpc_lattice_service_network_resource_association function - arn"
 subcategory: ""
 description: |-
-  Builds an vpc-lattice ServiceNetworkResourceAssociation ARN
+  vpc-lattice ServiceNetworkResourceAssociation ARN
 ---
 
 # function: vpc_lattice_service_network_resource_association
 
-Builds the ARN of an `vpc-lattice` `ServiceNetworkResourceAssociation`:
+Builds the ARN for `vpc-lattice` `ServiceNetworkResourceAssociation`:
 
 ```
 arn:${Partition}:vpc-lattice:${Region}:${Account}:servicenetworkresourceassociation/${ServiceNetworkResourceAssociationId}

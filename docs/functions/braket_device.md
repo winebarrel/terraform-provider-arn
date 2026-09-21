@@ -3,12 +3,12 @@
 page_title: "braket_device function - arn"
 subcategory: ""
 description: |-
-  Builds an braket device ARN
+  braket device ARN
 ---
 
 # function: braket_device
 
-Builds the ARN of an `braket` `device`:
+Builds the ARN for `braket` `device`:
 
 ```
 arn:${Partition}:braket:*:*:device/${DeviceType}/${Provider}/${DeviceId}

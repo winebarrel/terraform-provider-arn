@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_journey_metrics function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting journey-metrics ARN
+  mobiletargeting journey-metrics ARN
 ---
 
 # function: mobiletargeting_journey_metrics
 
-Builds the ARN of an `mobiletargeting` `journey-metrics`:
+Builds the ARN for `mobiletargeting` `journey-metrics`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys/${JourneyId}/kpis/daterange/${KpiName}

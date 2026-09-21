@@ -3,12 +3,12 @@
 page_title: "sagemaker_device function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker device ARN
+  sagemaker device ARN
 ---
 
 # function: sagemaker_device
 
-Builds the ARN of an `sagemaker` `device`:
+Builds the ARN for `sagemaker` `device`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:device-fleet/${DeviceFleetName}/device/${DeviceName}

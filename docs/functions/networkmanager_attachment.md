@@ -3,12 +3,12 @@
 page_title: "networkmanager_attachment function - arn"
 subcategory: ""
 description: |-
-  Builds an networkmanager attachment ARN
+  networkmanager attachment ARN
 ---
 
 # function: networkmanager_attachment
 
-Builds the ARN of an `networkmanager` `attachment`:
+Builds the ARN for `networkmanager` `attachment`:
 
 ```
 arn:${Partition}:networkmanager::${Account}:attachment/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "wisdom_quick_response function - arn"
 subcategory: ""
 description: |-
-  Builds an wisdom QuickResponse ARN
+  wisdom QuickResponse ARN
 ---
 
 # function: wisdom_quick_response
 
-Builds the ARN of an `wisdom` `QuickResponse`:
+Builds the ARN for `wisdom` `QuickResponse`:
 
 ```
 arn:${Partition}:wisdom:${Region}:${Account}:quick-response/${KnowledgeBaseId}/${QuickResponseId}

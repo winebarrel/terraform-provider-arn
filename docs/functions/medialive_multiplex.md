@@ -3,12 +3,12 @@
 page_title: "medialive_multiplex function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive multiplex ARN
+  medialive multiplex ARN
 ---
 
 # function: medialive_multiplex
 
-Builds the ARN of an `medialive` `multiplex`:
+Builds the ARN for `medialive` `multiplex`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:multiplex:${MultiplexId}

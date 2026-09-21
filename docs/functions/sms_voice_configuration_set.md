@@ -3,12 +3,12 @@
 page_title: "sms_voice_configuration_set function - arn"
 subcategory: ""
 description: |-
-  Builds an sms-voice ConfigurationSet ARN
+  sms-voice ConfigurationSet ARN
 ---
 
 # function: sms_voice_configuration_set
 
-Builds the ARN of an `sms-voice` `ConfigurationSet`:
+Builds the ARN for `sms-voice` `ConfigurationSet`:
 
 ```
 arn:${Partition}:sms-voice:${Region}:${Account}:configuration-set/${ConfigurationSetName}

@@ -3,12 +3,12 @@
 page_title: "personalize_data_deletion_job function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize dataDeletionJob ARN
+  personalize dataDeletionJob ARN
 ---
 
 # function: personalize_data_deletion_job
 
-Builds the ARN of an `personalize` `dataDeletionJob`:
+Builds the ARN for `personalize` `dataDeletionJob`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:data-deletion-job/${ResourceId}

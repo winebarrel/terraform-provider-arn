@@ -3,12 +3,12 @@
 page_title: "deadline_farm function - arn"
 subcategory: ""
 description: |-
-  Builds an deadline farm ARN
+  deadline farm ARN
 ---
 
 # function: deadline_farm
 
-Builds the ARN of an `deadline` `farm`:
+Builds the ARN for `deadline` `farm`:
 
 ```
 arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}

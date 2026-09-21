@@ -3,12 +3,12 @@
 page_title: "ivs_encoder_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an ivs Encoder-Configuration ARN
+  ivs Encoder-Configuration ARN
 ---
 
 # function: ivs_encoder_configuration
 
-Builds the ARN of an `ivs` `Encoder-Configuration`:
+Builds the ARN for `ivs` `Encoder-Configuration`:
 
 ```
 arn:${Partition}:ivs:${Region}:${Account}:encoder-configuration/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "route53resolver_firewall_rule_group_association function - arn"
 subcategory: ""
 description: |-
-  Builds an route53resolver firewall-rule-group-association ARN
+  route53resolver firewall-rule-group-association ARN
 ---
 
 # function: route53resolver_firewall_rule_group_association
 
-Builds the ARN of an `route53resolver` `firewall-rule-group-association`:
+Builds the ARN for `route53resolver` `firewall-rule-group-association`:
 
 ```
 arn:${Partition}:route53resolver:${Region}:${Account}:firewall-rule-group-association/${ResourceId}

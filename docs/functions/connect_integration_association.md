@@ -3,12 +3,12 @@
 page_title: "connect_integration_association function - arn"
 subcategory: ""
 description: |-
-  Builds an connect integration-association ARN
+  connect integration-association ARN
 ---
 
 # function: connect_integration_association
 
-Builds the ARN of an `connect` `integration-association`:
+Builds the ARN for `connect` `integration-association`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/integration-association/${IntegrationAssociationId}

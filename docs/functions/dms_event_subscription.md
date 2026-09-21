@@ -3,12 +3,12 @@
 page_title: "dms_event_subscription function - arn"
 subcategory: ""
 description: |-
-  Builds an dms EventSubscription ARN
+  dms EventSubscription ARN
 ---
 
 # function: dms_event_subscription
 
-Builds the ARN of an `dms` `EventSubscription`:
+Builds the ARN for `dms` `EventSubscription`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:es:*

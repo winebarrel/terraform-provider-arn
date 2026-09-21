@@ -3,12 +3,12 @@
 page_title: "codedeploy_application function - arn"
 subcategory: ""
 description: |-
-  Builds an codedeploy application ARN
+  codedeploy application ARN
 ---
 
 # function: codedeploy_application
 
-Builds the ARN of an `codedeploy` `application`:
+Builds the ARN for `codedeploy` `application`:
 
 ```
 arn:${Partition}:codedeploy:${Region}:${Account}:application:${ApplicationName}

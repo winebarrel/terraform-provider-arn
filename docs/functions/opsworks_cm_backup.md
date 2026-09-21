@@ -3,12 +3,12 @@
 page_title: "opsworks_cm_backup function - arn"
 subcategory: ""
 description: |-
-  Builds an opsworks-cm backup ARN
+  opsworks-cm backup ARN
 ---
 
 # function: opsworks_cm_backup
 
-Builds the ARN of an `opsworks-cm` `backup`:
+Builds the ARN for `opsworks-cm` `backup`:
 
 ```
 arn:${Partition}:opsworks-cm::${Account}:backup/${ServerName}-{Date-and-Time-Stamp-of-Backup}

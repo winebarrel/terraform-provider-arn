@@ -3,12 +3,12 @@
 page_title: "iq_listing function - arn"
 subcategory: ""
 description: |-
-  Builds an iq listing ARN
+  iq listing ARN
 ---
 
 # function: iq_listing
 
-Builds the ARN of an `iq` `listing`:
+Builds the ARN for `iq` `listing`:
 
 ```
 arn:${Partition}:iq:${Region}::listing/${ListingId}

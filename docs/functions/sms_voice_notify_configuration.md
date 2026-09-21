@@ -3,12 +3,12 @@
 page_title: "sms_voice_notify_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an sms-voice NotifyConfiguration ARN
+  sms-voice NotifyConfiguration ARN
 ---
 
 # function: sms_voice_notify_configuration
 
-Builds the ARN of an `sms-voice` `NotifyConfiguration`:
+Builds the ARN for `sms-voice` `NotifyConfiguration`:
 
 ```
 arn:${Partition}:sms-voice:${Region}:${Account}:notify-configuration/${NotifyConfigurationId}

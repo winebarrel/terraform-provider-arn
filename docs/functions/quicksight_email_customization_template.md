@@ -3,12 +3,12 @@
 page_title: "quicksight_email_customization_template function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight emailCustomizationTemplate ARN
+  quicksight emailCustomizationTemplate ARN
 ---
 
 # function: quicksight_email_customization_template
 
-Builds the ARN of an `quicksight` `emailCustomizationTemplate`:
+Builds the ARN for `quicksight` `emailCustomizationTemplate`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:email-customization-template/${ResourceId}

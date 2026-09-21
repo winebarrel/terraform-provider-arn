@@ -3,12 +3,12 @@
 page_title: "consoleapp_device_identity function - arn"
 subcategory: ""
 description: |-
-  Builds an consoleapp DeviceIdentity ARN
+  consoleapp DeviceIdentity ARN
 ---
 
 # function: consoleapp_device_identity
 
-Builds the ARN of an `consoleapp` `DeviceIdentity`:
+Builds the ARN for `consoleapp` `DeviceIdentity`:
 
 ```
 arn:${Partition}:consoleapp::${Account}:device/${DeviceId}/identity/${IdentityId}

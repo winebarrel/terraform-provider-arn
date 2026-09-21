@@ -3,12 +3,12 @@
 page_title: "cloudfront_key_value_store function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront key-value-store ARN
+  cloudfront key-value-store ARN
 ---
 
 # function: cloudfront_key_value_store
 
-Builds the ARN of an `cloudfront` `key-value-store`:
+Builds the ARN for `cloudfront` `key-value-store`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:key-value-store/${Name}

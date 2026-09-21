@@ -3,12 +3,12 @@
 page_title: "transfer_user function - arn"
 subcategory: ""
 description: |-
-  Builds an transfer user ARN
+  transfer user ARN
 ---
 
 # function: transfer_user
 
-Builds the ARN of an `transfer` `user`:
+Builds the ARN for `transfer` `user`:
 
 ```
 arn:${Partition}:transfer:${Region}:${Account}:user/${ServerId}/${UserName}

@@ -3,12 +3,12 @@
 page_title: "resiliencehub_service function - arn"
 subcategory: ""
 description: |-
-  Builds an resiliencehub service ARN
+  resiliencehub service ARN
 ---
 
 # function: resiliencehub_service
 
-Builds the ARN of an `resiliencehub` `service`:
+Builds the ARN for `resiliencehub` `service`:
 
 ```
 arn:${Partition}:resiliencehub:${Region}:${Account}:service/${ServiceId}

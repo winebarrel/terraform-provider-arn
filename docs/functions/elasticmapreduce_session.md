@@ -3,12 +3,12 @@
 page_title: "elasticmapreduce_session function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticmapreduce session ARN
+  elasticmapreduce session ARN
 ---
 
 # function: elasticmapreduce_session
 
-Builds the ARN of an `elasticmapreduce` `session`:
+Builds the ARN for `elasticmapreduce` `session`:
 
 ```
 arn:${Partition}:elasticmapreduce:${Region}:${Account}:cluster/${ClusterId}/session/${SessionId}

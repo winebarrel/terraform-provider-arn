@@ -3,12 +3,12 @@
 page_title: "partnercentral_partner function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral Partner ARN
+  partnercentral Partner ARN
 ---
 
 # function: partnercentral_partner
 
-Builds the ARN of an `partnercentral` `Partner`:
+Builds the ARN for `partnercentral` `Partner`:
 
 ```
 arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/partner/${Identifier}

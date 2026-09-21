@@ -3,12 +3,12 @@
 page_title: "healthlake_datastore function - arn"
 subcategory: ""
 description: |-
-  Builds an healthlake datastore ARN
+  healthlake datastore ARN
 ---
 
 # function: healthlake_datastore
 
-Builds the ARN of an `healthlake` `datastore`:
+Builds the ARN for `healthlake` `datastore`:
 
 ```
 arn:${Partition}:healthlake:${Region}:${Account}:datastore/fhir/${DatastoreId}

@@ -3,12 +3,12 @@
 page_title: "gamelift_location function - arn"
 subcategory: ""
 description: |-
-  Builds an gamelift location ARN
+  gamelift location ARN
 ---
 
 # function: gamelift_location
 
-Builds the ARN of an `gamelift` `location`:
+Builds the ARN for `gamelift` `location`:
 
 ```
 arn:${Partition}:gamelift:${Region}:${Account}:location/${LocationId}

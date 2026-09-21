@@ -3,12 +3,12 @@
 page_title: "ivs_playback_key_pair function - arn"
 subcategory: ""
 description: |-
-  Builds an ivs Playback-Key-Pair ARN
+  ivs Playback-Key-Pair ARN
 ---
 
 # function: ivs_playback_key_pair
 
-Builds the ARN of an `ivs` `Playback-Key-Pair`:
+Builds the ARN for `ivs` `Playback-Key-Pair`:
 
 ```
 arn:${Partition}:ivs:${Region}:${Account}:playback-key/${ResourceId}

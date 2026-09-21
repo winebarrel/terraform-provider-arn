@@ -3,12 +3,12 @@
 page_title: "sagemaker_hub function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker hub ARN
+  sagemaker hub ARN
 ---
 
 # function: sagemaker_hub
 
-Builds the ARN of an `sagemaker` `hub`:
+Builds the ARN for `sagemaker` `hub`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:hub/${HubName}

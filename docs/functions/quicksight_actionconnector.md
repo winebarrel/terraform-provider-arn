@@ -3,12 +3,12 @@
 page_title: "quicksight_actionconnector function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight actionconnector ARN
+  quicksight actionconnector ARN
 ---
 
 # function: quicksight_actionconnector
 
-Builds the ARN of an `quicksight` `actionconnector`:
+Builds the ARN for `quicksight` `actionconnector`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:action-connector/${ResourceId}

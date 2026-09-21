@@ -3,12 +3,12 @@
 page_title: "security_ir_membership function - arn"
 subcategory: ""
 description: |-
-  Builds an security-ir membership ARN
+  security-ir membership ARN
 ---
 
 # function: security_ir_membership
 
-Builds the ARN of an `security-ir` `membership`:
+Builds the ARN for `security-ir` `membership`:
 
 ```
 arn:${Partition}:security-ir:${Region}:${Account}:membership/${MembershipId}

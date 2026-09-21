@@ -3,12 +3,12 @@
 page_title: "s3_accesspoint function - arn"
 subcategory: ""
 description: |-
-  Builds an s3 accesspoint ARN
+  s3 accesspoint ARN
 ---
 
 # function: s3_accesspoint
 
-Builds the ARN of an `s3` `accesspoint`:
+Builds the ARN for `s3` `accesspoint`:
 
 ```
 arn:${Partition}:s3:${Region}:${Account}:accesspoint/${AccessPointName}

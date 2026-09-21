@@ -3,12 +3,12 @@
 page_title: "groundstation_agent function - arn"
 subcategory: ""
 description: |-
-  Builds an groundstation Agent ARN
+  groundstation Agent ARN
 ---
 
 # function: groundstation_agent
 
-Builds the ARN of an `groundstation` `Agent`:
+Builds the ARN for `groundstation` `Agent`:
 
 ```
 arn:${Partition}:groundstation:${Region}:${Account}:agent/${AgentId}

@@ -3,12 +3,12 @@
 page_title: "mpa_approval_team function - arn"
 subcategory: ""
 description: |-
-  Builds an mpa approval-team ARN
+  mpa approval-team ARN
 ---
 
 # function: mpa_approval_team
 
-Builds the ARN of an `mpa` `approval-team`:
+Builds the ARN for `mpa` `approval-team`:
 
 ```
 arn:${Partition}:mpa:${Region}:${Account}:approval-team/${ApprovalTeamId}

@@ -3,12 +3,12 @@
 page_title: "sagemaker_pipeline_execution function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker pipeline-execution ARN
+  sagemaker pipeline-execution ARN
 ---
 
 # function: sagemaker_pipeline_execution
 
-Builds the ARN of an `sagemaker` `pipeline-execution`:
+Builds the ARN for `sagemaker` `pipeline-execution`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:pipeline/${PipelineName}/execution/${RandomString}

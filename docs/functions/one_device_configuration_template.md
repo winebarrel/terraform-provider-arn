@@ -3,12 +3,12 @@
 page_title: "one_device_configuration_template function - arn"
 subcategory: ""
 description: |-
-  Builds an one device-configuration-template ARN
+  one device-configuration-template ARN
 ---
 
 # function: one_device_configuration_template
 
-Builds the ARN of an `one` `device-configuration-template`:
+Builds the ARN for `one` `device-configuration-template`:
 
 ```
 arn:${Partition}:one:${Region}:${Account}:device-configuration-template/${TemplateId}

@@ -3,12 +3,12 @@
 page_title: "mediapackage_channels function - arn"
 subcategory: ""
 description: |-
-  Builds an mediapackage channels ARN
+  mediapackage channels ARN
 ---
 
 # function: mediapackage_channels
 
-Builds the ARN of an `mediapackage` `channels`:
+Builds the ARN for `mediapackage` `channels`:
 
 ```
 arn:${Partition}:mediapackage:${Region}:${Account}:channels/${ChannelIdentifier}

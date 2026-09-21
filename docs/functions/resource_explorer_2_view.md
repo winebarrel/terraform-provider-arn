@@ -3,12 +3,12 @@
 page_title: "resource_explorer_2_view function - arn"
 subcategory: ""
 description: |-
-  Builds an resource-explorer-2 view ARN
+  resource-explorer-2 view ARN
 ---
 
 # function: resource_explorer_2_view
 
-Builds the ARN of an `resource-explorer-2` `view`:
+Builds the ARN for `resource-explorer-2` `view`:
 
 ```
 arn:${Partition}:resource-explorer-2:${Region}:${Account}:view/${ViewName}/${ViewUuid}

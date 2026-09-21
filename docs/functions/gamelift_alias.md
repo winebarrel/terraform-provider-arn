@@ -3,12 +3,12 @@
 page_title: "gamelift_alias function - arn"
 subcategory: ""
 description: |-
-  Builds an gamelift alias ARN
+  gamelift alias ARN
 ---
 
 # function: gamelift_alias
 
-Builds the ARN of an `gamelift` `alias`:
+Builds the ARN for `gamelift` `alias`:
 
 ```
 arn:${Partition}:gamelift:${Region}::alias/${AliasId}

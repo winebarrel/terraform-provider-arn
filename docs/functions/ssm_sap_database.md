@@ -3,12 +3,12 @@
 page_title: "ssm_sap_database function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm-sap database ARN
+  ssm-sap database ARN
 ---
 
 # function: ssm_sap_database
 
-Builds the ARN of an `ssm-sap` `database`:
+Builds the ARN for `ssm-sap` `database`:
 
 ```
 arn:${Partition}:ssm-sap:${Region}:${Account}:${ApplicationType}/${ApplicationId}/DB/${DatabaseId}

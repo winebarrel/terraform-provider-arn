@@ -3,12 +3,12 @@
 page_title: "lightsail_key_pair function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail KeyPair ARN
+  lightsail KeyPair ARN
 ---
 
 # function: lightsail_key_pair
 
-Builds the ARN of an `lightsail` `KeyPair`:
+Builds the ARN for `lightsail` `KeyPair`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:KeyPair/${Id}

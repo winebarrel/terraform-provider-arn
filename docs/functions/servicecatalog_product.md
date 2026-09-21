@@ -3,12 +3,12 @@
 page_title: "servicecatalog_product function - arn"
 subcategory: ""
 description: |-
-  Builds an servicecatalog Product ARN
+  servicecatalog Product ARN
 ---
 
 # function: servicecatalog_product
 
-Builds the ARN of an `servicecatalog` `Product`:
+Builds the ARN for `servicecatalog` `Product`:
 
 ```
 arn:${Partition}:catalog:${Region}:${Account}:product/${ProductId}

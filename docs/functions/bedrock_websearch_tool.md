@@ -3,12 +3,12 @@
 page_title: "bedrock_websearch_tool function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-websearch tool ARN
+  bedrock-websearch tool ARN
 ---
 
 # function: bedrock_websearch_tool
 
-Builds the ARN of an `bedrock-websearch` `tool`:
+Builds the ARN for `bedrock-websearch` `tool`:
 
 ```
 arn:${Partition}:bedrock-websearch:${Region}:aws:tool/${ToolName}

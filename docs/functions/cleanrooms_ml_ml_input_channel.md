@@ -3,12 +3,12 @@
 page_title: "cleanrooms_ml_ml_input_channel function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms-ml MLInputChannel ARN
+  cleanrooms-ml MLInputChannel ARN
 ---
 
 # function: cleanrooms_ml_ml_input_channel
 
-Builds the ARN of an `cleanrooms-ml` `MLInputChannel`:
+Builds the ARN for `cleanrooms-ml` `MLInputChannel`:
 
 ```
 arn:${Partition}:cleanrooms-ml:${Region}:${Account}:membership/${MembershipId}/ml-input-channel/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "elasticloadbalancing_listener_gwy function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticloadbalancing listener/gwy ARN
+  elasticloadbalancing listener/gwy ARN
 ---
 
 # function: elasticloadbalancing_listener_gwy
 
-Builds the ARN of an `elasticloadbalancing` `listener/gwy`:
+Builds the ARN for `elasticloadbalancing` `listener/gwy`:
 
 ```
 arn:${Partition}:elasticloadbalancing:${Region}:${Account}:listener/gwy/${LoadBalancerName}/${LoadBalancerId}/${ListenerId}

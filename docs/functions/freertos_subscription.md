@@ -3,12 +3,12 @@
 page_title: "freertos_subscription function - arn"
 subcategory: ""
 description: |-
-  Builds an freertos subscription ARN
+  freertos subscription ARN
 ---
 
 # function: freertos_subscription
 
-Builds the ARN of an `freertos` `subscription`:
+Builds the ARN for `freertos` `subscription`:
 
 ```
 arn:${Partition}:freertos:${Region}:${Account}:subscription/${SubscriptionID}

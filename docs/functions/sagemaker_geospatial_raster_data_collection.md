@@ -3,12 +3,12 @@
 page_title: "sagemaker_geospatial_raster_data_collection function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker-geospatial RasterDataCollection ARN
+  sagemaker-geospatial RasterDataCollection ARN
 ---
 
 # function: sagemaker_geospatial_raster_data_collection
 
-Builds the ARN of an `sagemaker-geospatial` `RasterDataCollection`:
+Builds the ARN for `sagemaker-geospatial` `RasterDataCollection`:
 
 ```
 arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:raster-data-collection/${CollectionID}

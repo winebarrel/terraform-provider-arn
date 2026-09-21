@@ -3,12 +3,12 @@
 page_title: "logs_anomaly_detector function - arn"
 subcategory: ""
 description: |-
-  Builds an logs anomaly-detector ARN
+  logs anomaly-detector ARN
 ---
 
 # function: logs_anomaly_detector
 
-Builds the ARN of an `logs` `anomaly-detector`:
+Builds the ARN for `logs` `anomaly-detector`:
 
 ```
 arn:${Partition}:logs:${Region}:${Account}:anomaly-detector:${DetectorId}

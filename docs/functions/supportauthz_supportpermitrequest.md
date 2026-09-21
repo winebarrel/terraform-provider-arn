@@ -3,12 +3,12 @@
 page_title: "supportauthz_supportpermitrequest function - arn"
 subcategory: ""
 description: |-
-  Builds an supportauthz supportpermitrequest ARN
+  supportauthz supportpermitrequest ARN
 ---
 
 # function: supportauthz_supportpermitrequest
 
-Builds the ARN of an `supportauthz` `supportpermitrequest`:
+Builds the ARN for `supportauthz` `supportpermitrequest`:
 
 ```
 arn:${Partition}:supportauthz:${Region}:${Account}:supportpermitrequest/${ResourceId}

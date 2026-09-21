@@ -3,12 +3,12 @@
 page_title: "iotanalytics_datastore function - arn"
 subcategory: ""
 description: |-
-  Builds an iotanalytics datastore ARN
+  iotanalytics datastore ARN
 ---
 
 # function: iotanalytics_datastore
 
-Builds the ARN of an `iotanalytics` `datastore`:
+Builds the ARN for `iotanalytics` `datastore`:
 
 ```
 arn:${Partition}:iotanalytics:${Region}:${Account}:datastore/${DatastoreName}

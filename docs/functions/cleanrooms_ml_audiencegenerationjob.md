@@ -3,12 +3,12 @@
 page_title: "cleanrooms_ml_audiencegenerationjob function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms-ml audiencegenerationjob ARN
+  cleanrooms-ml audiencegenerationjob ARN
 ---
 
 # function: cleanrooms_ml_audiencegenerationjob
 
-Builds the ARN of an `cleanrooms-ml` `audiencegenerationjob`:
+Builds the ARN for `cleanrooms-ml` `audiencegenerationjob`:
 
 ```
 arn:${Partition}:cleanrooms-ml:${Region}:${Account}:audience-generation-job/${ResourceId}

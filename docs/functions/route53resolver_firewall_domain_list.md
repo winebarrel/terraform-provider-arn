@@ -3,12 +3,12 @@
 page_title: "route53resolver_firewall_domain_list function - arn"
 subcategory: ""
 description: |-
-  Builds an route53resolver firewall-domain-list ARN
+  route53resolver firewall-domain-list ARN
 ---
 
 # function: route53resolver_firewall_domain_list
 
-Builds the ARN of an `route53resolver` `firewall-domain-list`:
+Builds the ARN for `route53resolver` `firewall-domain-list`:
 
 ```
 arn:${Partition}:route53resolver:${Region}:${Account}:firewall-domain-list/${ResourceId}

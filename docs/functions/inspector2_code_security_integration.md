@@ -3,12 +3,12 @@
 page_title: "inspector2_code_security_integration function - arn"
 subcategory: ""
 description: |-
-  Builds an inspector2 Code Security Integration ARN
+  inspector2 Code Security Integration ARN
 ---
 
 # function: inspector2_code_security_integration
 
-Builds the ARN of an `inspector2` `Code Security Integration`:
+Builds the ARN for `inspector2` `Code Security Integration`:
 
 ```
 arn:${Partition}:inspector2:${Region}:${Account}:codesecurity-integration/${CodeSecurityIntegrationId}

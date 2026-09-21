@@ -3,12 +3,12 @@
 page_title: "iotwireless_wireless_device function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless WirelessDevice ARN
+  iotwireless WirelessDevice ARN
 ---
 
 # function: iotwireless_wireless_device
 
-Builds the ARN of an `iotwireless` `WirelessDevice`:
+Builds the ARN for `iotwireless` `WirelessDevice`:
 
 ```
 arn:${Partition}:iotwireless:${Region}:${Account}:WirelessDevice/${WirelessDeviceId}

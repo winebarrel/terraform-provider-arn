@@ -3,12 +3,12 @@
 page_title: "glue_table function - arn"
 subcategory: ""
 description: |-
-  Builds an glue table ARN
+  glue table ARN
 ---
 
 # function: glue_table
 
-Builds the ARN of an `glue` `table`:
+Builds the ARN for `glue` `table`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:table/${DatabaseName}/${TableName}

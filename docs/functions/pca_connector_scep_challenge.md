@@ -3,12 +3,12 @@
 page_title: "pca_connector_scep_challenge function - arn"
 subcategory: ""
 description: |-
-  Builds an pca-connector-scep Challenge ARN
+  pca-connector-scep Challenge ARN
 ---
 
 # function: pca_connector_scep_challenge
 
-Builds the ARN of an `pca-connector-scep` `Challenge`:
+Builds the ARN for `pca-connector-scep` `Challenge`:
 
 ```
 arn:${Partition}:pca-connector-scep:${Region}:${Account}:connector/${ConnectorId}/challenge/${ChallengeId}

@@ -3,12 +3,12 @@
 page_title: "events_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an events endpoint ARN
+  events endpoint ARN
 ---
 
 # function: events_endpoint
 
-Builds the ARN of an `events` `endpoint`:
+Builds the ARN for `events` `endpoint`:
 
 ```
 arn:${Partition}:events:${Region}:${Account}:endpoint/${EndpointName}

@@ -3,12 +3,12 @@
 page_title: "workspaces_web_user_settings function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces-web userSettings ARN
+  workspaces-web userSettings ARN
 ---
 
 # function: workspaces_web_user_settings
 
-Builds the ARN of an `workspaces-web` `userSettings`:
+Builds the ARN for `workspaces-web` `userSettings`:
 
 ```
 arn:${Partition}:workspaces-web:${Region}:${Account}:userSettings/${UserSettingsId}

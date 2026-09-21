@@ -3,12 +3,12 @@
 page_title: "comprehend_events_detection_job function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend events-detection-job ARN
+  comprehend events-detection-job ARN
 ---
 
 # function: comprehend_events_detection_job
 
-Builds the ARN of an `comprehend` `events-detection-job`:
+Builds the ARN for `comprehend` `events-detection-job`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:events-detection-job/${JobId}

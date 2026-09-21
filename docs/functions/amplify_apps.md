@@ -3,12 +3,12 @@
 page_title: "amplify_apps function - arn"
 subcategory: ""
 description: |-
-  Builds an amplify apps ARN
+  amplify apps ARN
 ---
 
 # function: amplify_apps
 
-Builds the ARN of an `amplify` `apps`:
+Builds the ARN for `amplify` `apps`:
 
 ```
 arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}

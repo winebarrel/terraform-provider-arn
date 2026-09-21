@@ -3,12 +3,12 @@
 page_title: "ivs_ingest_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an ivs Ingest-Configuration ARN
+  ivs Ingest-Configuration ARN
 ---
 
 # function: ivs_ingest_configuration
 
-Builds the ARN of an `ivs` `Ingest-Configuration`:
+Builds the ARN for `ivs` `Ingest-Configuration`:
 
 ```
 arn:${Partition}:ivs:${Region}:${Account}:ingest-configuration/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "ec2_key_pair function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 key-pair ARN
+  ec2 key-pair ARN
 ---
 
 # function: ec2_key_pair
 
-Builds the ARN of an `ec2` `key-pair`:
+Builds the ARN for `ec2` `key-pair`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:key-pair/${KeyPairName}

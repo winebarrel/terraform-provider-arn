@@ -3,12 +3,12 @@
 page_title: "connect_contact_flow_module function - arn"
 subcategory: ""
 description: |-
-  Builds an connect contact-flow-module ARN
+  connect contact-flow-module ARN
 ---
 
 # function: connect_contact_flow_module
 
-Builds the ARN of an `connect` `contact-flow-module`:
+Builds the ARN for `connect` `contact-flow-module`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/flow-module/${ContactFlowModuleId}

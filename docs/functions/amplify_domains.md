@@ -3,12 +3,12 @@
 page_title: "amplify_domains function - arn"
 subcategory: ""
 description: |-
-  Builds an amplify domains ARN
+  amplify domains ARN
 ---
 
 # function: amplify_domains
 
-Builds the ARN of an `amplify` `domains`:
+Builds the ARN for `amplify` `domains`:
 
 ```
 arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}/domains/${DomainName}

@@ -3,12 +3,12 @@
 page_title: "pcs_computenodegroup function - arn"
 subcategory: ""
 description: |-
-  Builds an pcs computenodegroup ARN
+  pcs computenodegroup ARN
 ---
 
 # function: pcs_computenodegroup
 
-Builds the ARN of an `pcs` `computenodegroup`:
+Builds the ARN for `pcs` `computenodegroup`:
 
 ```
 arn:${Partition}:pcs:${Region}:${Account}:cluster/${ClusterIdentifier}/computenodegroup/${ComputeNodeGroupIdentifier}

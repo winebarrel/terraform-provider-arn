@@ -3,12 +3,12 @@
 page_title: "ssm_patchbaseline function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm patchbaseline ARN
+  ssm patchbaseline ARN
 ---
 
 # function: ssm_patchbaseline
 
-Builds the ARN of an `ssm` `patchbaseline`:
+Builds the ARN for `ssm` `patchbaseline`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:patchbaseline/${PatchBaselineIdResourceId}

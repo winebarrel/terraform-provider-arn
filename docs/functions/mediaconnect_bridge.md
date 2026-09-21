@@ -3,12 +3,12 @@
 page_title: "mediaconnect_bridge function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconnect Bridge ARN
+  mediaconnect Bridge ARN
 ---
 
 # function: mediaconnect_bridge
 
-Builds the ARN of an `mediaconnect` `Bridge`:
+Builds the ARN for `mediaconnect` `Bridge`:
 
 ```
 arn:${Partition}:mediaconnect:${Region}:${Account}:bridge:${BridgeId}:${BridgeName}

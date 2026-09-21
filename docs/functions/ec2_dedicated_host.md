@@ -3,12 +3,12 @@
 page_title: "ec2_dedicated_host function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 dedicated-host ARN
+  ec2 dedicated-host ARN
 ---
 
 # function: ec2_dedicated_host
 
-Builds the ARN of an `ec2` `dedicated-host`:
+Builds the ARN for `ec2` `dedicated-host`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:dedicated-host/${DedicatedHostId}

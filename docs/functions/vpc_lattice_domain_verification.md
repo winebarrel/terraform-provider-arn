@@ -3,12 +3,12 @@
 page_title: "vpc_lattice_domain_verification function - arn"
 subcategory: ""
 description: |-
-  Builds an vpc-lattice DomainVerification ARN
+  vpc-lattice DomainVerification ARN
 ---
 
 # function: vpc_lattice_domain_verification
 
-Builds the ARN of an `vpc-lattice` `DomainVerification`:
+Builds the ARN for `vpc-lattice` `DomainVerification`:
 
 ```
 arn:${Partition}:vpc-lattice:${Region}:${Account}:domainverification/${DomainVerificationId}

@@ -3,12 +3,12 @@
 page_title: "sagemaker_shared_model_event function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker shared-model-event ARN
+  sagemaker shared-model-event ARN
 ---
 
 # function: sagemaker_shared_model_event
 
-Builds the ARN of an `sagemaker` `shared-model-event`:
+Builds the ARN for `sagemaker` `shared-model-event`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:shared-model-event/${EventId}

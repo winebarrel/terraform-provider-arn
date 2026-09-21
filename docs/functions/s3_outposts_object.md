@@ -3,12 +3,12 @@
 page_title: "s3_outposts_object function - arn"
 subcategory: ""
 description: |-
-  Builds an s3-outposts object ARN
+  s3-outposts object ARN
 ---
 
 # function: s3_outposts_object
 
-Builds the ARN of an `s3-outposts` `object`:
+Builds the ARN for `s3-outposts` `object`:
 
 ```
 arn:${Partition}:s3-outposts:${Region}:${Account}:outpost/${OutpostId}/bucket/${BucketName}/object/${ObjectName}

@@ -3,12 +3,12 @@
 page_title: "forecast_algorithm function - arn"
 subcategory: ""
 description: |-
-  Builds an forecast algorithm ARN
+  forecast algorithm ARN
 ---
 
 # function: forecast_algorithm
 
-Builds the ARN of an `forecast` `algorithm`:
+Builds the ARN for `forecast` `algorithm`:
 
 ```
 arn:${Partition}:forecast:::algorithm/${ResourceId}

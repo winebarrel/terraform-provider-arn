@@ -3,12 +3,12 @@
 page_title: "dynamodb_table function - arn"
 subcategory: ""
 description: |-
-  Builds an dynamodb table ARN
+  dynamodb table ARN
 ---
 
 # function: dynamodb_table
 
-Builds the ARN of an `dynamodb` `table`:
+Builds the ARN for `dynamodb` `table`:
 
 ```
 arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}

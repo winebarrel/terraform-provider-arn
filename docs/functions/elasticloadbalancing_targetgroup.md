@@ -3,12 +3,12 @@
 page_title: "elasticloadbalancing_targetgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticloadbalancing targetgroup ARN
+  elasticloadbalancing targetgroup ARN
 ---
 
 # function: elasticloadbalancing_targetgroup
 
-Builds the ARN of an `elasticloadbalancing` `targetgroup`:
+Builds the ARN for `elasticloadbalancing` `targetgroup`:
 
 ```
 arn:${Partition}:elasticloadbalancing:${Region}:${Account}:targetgroup/${TargetGroupName}/${TargetGroupId}

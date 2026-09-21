@@ -3,12 +3,12 @@
 page_title: "es_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an es domain ARN
+  es domain ARN
 ---
 
 # function: es_domain
 
-Builds the ARN of an `es` `domain`:
+Builds the ARN for `es` `domain`:
 
 ```
 arn:${Partition}:es:${Region}:${Account}:domain/${DomainName}

@@ -3,12 +3,12 @@
 page_title: "appmesh_virtual_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an appmesh virtualGateway ARN
+  appmesh virtualGateway ARN
 ---
 
 # function: appmesh_virtual_gateway
 
-Builds the ARN of an `appmesh` `virtualGateway`:
+Builds the ARN for `appmesh` `virtualGateway`:
 
 ```
 arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualGateway/${VirtualGatewayName}

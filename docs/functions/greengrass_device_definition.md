@@ -3,12 +3,12 @@
 page_title: "greengrass_device_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass deviceDefinition ARN
+  greengrass deviceDefinition ARN
 ---
 
 # function: greengrass_device_definition
 
-Builds the ARN of an `greengrass` `deviceDefinition`:
+Builds the ARN for `greengrass` `deviceDefinition`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/devices/${DeviceDefinitionId}

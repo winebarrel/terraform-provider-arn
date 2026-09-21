@@ -3,12 +3,12 @@
 page_title: "backup_backup_access_point function - arn"
 subcategory: ""
 description: |-
-  Builds an backup backupAccessPoint ARN
+  backup backupAccessPoint ARN
 ---
 
 # function: backup_backup_access_point
 
-Builds the ARN of an `backup` `backupAccessPoint`:
+Builds the ARN for `backup` `backupAccessPoint`:
 
 ```
 arn:${Partition}:backup:${Region}:${Account}:accesspoint/${AccessPointName}

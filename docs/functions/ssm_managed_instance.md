@@ -3,12 +3,12 @@
 page_title: "ssm_managed_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm managed-instance ARN
+  ssm managed-instance ARN
 ---
 
 # function: ssm_managed_instance
 
-Builds the ARN of an `ssm` `managed-instance`:
+Builds the ARN for `ssm` `managed-instance`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:managed-instance/${InstanceId}

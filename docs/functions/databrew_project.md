@@ -3,12 +3,12 @@
 page_title: "databrew_project function - arn"
 subcategory: ""
 description: |-
-  Builds an databrew Project ARN
+  databrew Project ARN
 ---
 
 # function: databrew_project
 
-Builds the ARN of an `databrew` `Project`:
+Builds the ARN for `databrew` `Project`:
 
 ```
 arn:${Partition}:databrew:${Region}:${Account}:project/${ResourceId}

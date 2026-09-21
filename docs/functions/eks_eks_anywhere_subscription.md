@@ -3,12 +3,12 @@
 page_title: "eks_eks_anywhere_subscription function - arn"
 subcategory: ""
 description: |-
-  Builds an eks eks-anywhere-subscription ARN
+  eks eks-anywhere-subscription ARN
 ---
 
 # function: eks_eks_anywhere_subscription
 
-Builds the ARN of an `eks` `eks-anywhere-subscription`:
+Builds the ARN for `eks` `eks-anywhere-subscription`:
 
 ```
 arn:${Partition}:eks:${Region}:${Account}:eks-anywhere-subscription/${UUID}

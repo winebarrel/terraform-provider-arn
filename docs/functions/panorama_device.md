@@ -3,12 +3,12 @@
 page_title: "panorama_device function - arn"
 subcategory: ""
 description: |-
-  Builds an panorama device ARN
+  panorama device ARN
 ---
 
 # function: panorama_device
 
-Builds the ARN of an `panorama` `device`:
+Builds the ARN for `panorama` `device`:
 
 ```
 arn:${Partition}:panorama:${Region}:${Account}:device/${DeviceId}

@@ -3,12 +3,12 @@
 page_title: "medialive_node function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive node ARN
+  medialive node ARN
 ---
 
 # function: medialive_node
 
-Builds the ARN of an `medialive` `node`:
+Builds the ARN for `medialive` `node`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:node:${ClusterId}/${NodeId}

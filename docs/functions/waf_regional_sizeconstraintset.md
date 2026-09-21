@@ -3,12 +3,12 @@
 page_title: "waf_regional_sizeconstraintset function - arn"
 subcategory: ""
 description: |-
-  Builds an waf-regional sizeconstraintset ARN
+  waf-regional sizeconstraintset ARN
 ---
 
 # function: waf_regional_sizeconstraintset
 
-Builds the ARN of an `waf-regional` `sizeconstraintset`:
+Builds the ARN for `waf-regional` `sizeconstraintset`:
 
 ```
 arn:${Partition}:waf-regional:${Region}:${Account}:sizeconstraintset/${Id}

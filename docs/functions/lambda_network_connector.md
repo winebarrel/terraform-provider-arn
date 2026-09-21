@@ -3,12 +3,12 @@
 page_title: "lambda_network_connector function - arn"
 subcategory: ""
 description: |-
-  Builds an lambda networkConnector ARN
+  lambda networkConnector ARN
 ---
 
 # function: lambda_network_connector
 
-Builds the ARN of an `lambda` `networkConnector`:
+Builds the ARN for `lambda` `networkConnector`:
 
 ```
 arn:${Partition}:lambda:${Region}:${Account}:network-connector:${NetworkConnectorId}

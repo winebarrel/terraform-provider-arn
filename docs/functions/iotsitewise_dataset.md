@@ -3,12 +3,12 @@
 page_title: "iotsitewise_dataset function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise dataset ARN
+  iotsitewise dataset ARN
 ---
 
 # function: iotsitewise_dataset
 
-Builds the ARN of an `iotsitewise` `dataset`:
+Builds the ARN for `iotsitewise` `dataset`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:dataset/${DatasetId}

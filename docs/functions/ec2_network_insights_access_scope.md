@@ -3,12 +3,12 @@
 page_title: "ec2_network_insights_access_scope function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 network-insights-access-scope ARN
+  ec2 network-insights-access-scope ARN
 ---
 
 # function: ec2_network_insights_access_scope
 
-Builds the ARN of an `ec2` `network-insights-access-scope`:
+Builds the ARN for `ec2` `network-insights-access-scope`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:network-insights-access-scope/${NetworkInsightsAccessScopeId}

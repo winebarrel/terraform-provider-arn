@@ -3,12 +3,12 @@
 page_title: "lookoutmetrics_metric_set function - arn"
 subcategory: ""
 description: |-
-  Builds an lookoutmetrics MetricSet ARN
+  lookoutmetrics MetricSet ARN
 ---
 
 # function: lookoutmetrics_metric_set
 
-Builds the ARN of an `lookoutmetrics` `MetricSet`:
+Builds the ARN for `lookoutmetrics` `MetricSet`:
 
 ```
 arn:${Partition}:lookoutmetrics:${Region}:${Account}:MetricSet/${AnomalyDetectorName}/${MetricSetName}

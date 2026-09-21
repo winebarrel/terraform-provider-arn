@@ -3,12 +3,12 @@
 page_title: "route53_cidrcollection function - arn"
 subcategory: ""
 description: |-
-  Builds an route53 cidrcollection ARN
+  route53 cidrcollection ARN
 ---
 
 # function: route53_cidrcollection
 
-Builds the ARN of an `route53` `cidrcollection`:
+Builds the ARN for `route53` `cidrcollection`:
 
 ```
 arn:${Partition}:route53:::cidrcollection/${Id}

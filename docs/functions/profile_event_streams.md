@@ -3,12 +3,12 @@
 page_title: "profile_event_streams function - arn"
 subcategory: ""
 description: |-
-  Builds an profile event-streams ARN
+  profile event-streams ARN
 ---
 
 # function: profile_event_streams
 
-Builds the ARN of an `profile` `event-streams`:
+Builds the ARN for `profile` `event-streams`:
 
 ```
 arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/event-streams/${EventStreamName}

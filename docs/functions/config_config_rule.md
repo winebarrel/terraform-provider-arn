@@ -3,12 +3,12 @@
 page_title: "config_config_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an config ConfigRule ARN
+  config ConfigRule ARN
 ---
 
 # function: config_config_rule
 
-Builds the ARN of an `config` `ConfigRule`:
+Builds the ARN for `config` `ConfigRule`:
 
 ```
 arn:${Partition}:config:${Region}:${Account}:config-rule/${ConfigRuleId}

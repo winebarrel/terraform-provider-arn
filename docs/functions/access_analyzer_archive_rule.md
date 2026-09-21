@@ -3,12 +3,12 @@
 page_title: "access_analyzer_archive_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an access-analyzer ArchiveRule ARN
+  access-analyzer ArchiveRule ARN
 ---
 
 # function: access_analyzer_archive_rule
 
-Builds the ARN of an `access-analyzer` `ArchiveRule`:
+Builds the ARN for `access-analyzer` `ArchiveRule`:
 
 ```
 arn:${Partition}:access-analyzer:${Region}:${Account}:analyzer/${AnalyzerName}/archive-rule/${RuleName}

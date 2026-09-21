@@ -3,12 +3,12 @@
 page_title: "sagemaker_compute_quota function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker compute-quota ARN
+  sagemaker compute-quota ARN
 ---
 
 # function: sagemaker_compute_quota
 
-Builds the ARN of an `sagemaker` `compute-quota`:
+Builds the ARN for `sagemaker` `compute-quota`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:compute-quota/${ComputeQuotaId}

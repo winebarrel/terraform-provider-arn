@@ -3,12 +3,12 @@
 page_title: "mgh_connection_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgh ConnectionResource ARN
+  mgh ConnectionResource ARN
 ---
 
 # function: mgh_connection_resource
 
-Builds the ARN of an `mgh` `ConnectionResource`:
+Builds the ARN for `mgh` `ConnectionResource`:
 
 ```
 arn:${Partition}:mgh:${Region}:${Account}:${ConnectionArn}

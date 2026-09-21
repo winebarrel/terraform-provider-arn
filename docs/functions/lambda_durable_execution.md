@@ -3,12 +3,12 @@
 page_title: "lambda_durable_execution function - arn"
 subcategory: ""
 description: |-
-  Builds an lambda durable execution ARN
+  lambda durable execution ARN
 ---
 
 # function: lambda_durable_execution
 
-Builds the ARN of an `lambda` `durable execution`:
+Builds the ARN for `lambda` `durable execution`:
 
 ```
 arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}:${Version}/durable-execution/${ExecutionName}/${ExecutionId}

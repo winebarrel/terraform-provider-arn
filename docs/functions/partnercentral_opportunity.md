@@ -3,12 +3,12 @@
 page_title: "partnercentral_opportunity function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral Opportunity ARN
+  partnercentral Opportunity ARN
 ---
 
 # function: partnercentral_opportunity
 
-Builds the ARN of an `partnercentral` `Opportunity`:
+Builds the ARN for `partnercentral` `Opportunity`:
 
 ```
 arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/opportunity/${Identifier}

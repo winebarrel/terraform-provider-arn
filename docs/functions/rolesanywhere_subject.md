@@ -3,12 +3,12 @@
 page_title: "rolesanywhere_subject function - arn"
 subcategory: ""
 description: |-
-  Builds an rolesanywhere subject ARN
+  rolesanywhere subject ARN
 ---
 
 # function: rolesanywhere_subject
 
-Builds the ARN of an `rolesanywhere` `subject`:
+Builds the ARN for `rolesanywhere` `subject`:
 
 ```
 arn:${Partition}:rolesanywhere:${Region}:${Account}:subject/${SubjectId}

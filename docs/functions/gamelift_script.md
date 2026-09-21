@@ -3,12 +3,12 @@
 page_title: "gamelift_script function - arn"
 subcategory: ""
 description: |-
-  Builds an gamelift script ARN
+  gamelift script ARN
 ---
 
 # function: gamelift_script
 
-Builds the ARN of an `gamelift` `script`:
+Builds the ARN for `gamelift` `script`:
 
 ```
 arn:${Partition}:gamelift:${Region}:${Account}:script/${ScriptId}

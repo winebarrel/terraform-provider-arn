@@ -3,12 +3,12 @@
 page_title: "lex_bot_alias_2 function - arn"
 subcategory: ""
 description: |-
-  Builds an lex bot alias ARN
+  lex bot alias ARN
 ---
 
 # function: lex_bot_alias_2
 
-Builds the ARN of an `lex` `bot alias`:
+Builds the ARN for `lex` `bot alias`:
 
 ```
 arn:${Partition}:lex:${Region}:${Account}:bot:${BotName}:${BotAlias}

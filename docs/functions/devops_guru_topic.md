@@ -3,12 +3,12 @@
 page_title: "devops_guru_topic function - arn"
 subcategory: ""
 description: |-
-  Builds an devops-guru topic ARN
+  devops-guru topic ARN
 ---
 
 # function: devops_guru_topic
 
-Builds the ARN of an `devops-guru` `topic`:
+Builds the ARN for `devops-guru` `topic`:
 
 ```
 arn:${Partition}:sns:${Region}:${Account}:${TopicName}

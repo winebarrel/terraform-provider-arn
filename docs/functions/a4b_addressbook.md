@@ -3,12 +3,12 @@
 page_title: "a4b_addressbook function - arn"
 subcategory: ""
 description: |-
-  Builds an a4b addressbook ARN
+  a4b addressbook ARN
 ---
 
 # function: a4b_addressbook
 
-Builds the ARN of an `a4b` `addressbook`:
+Builds the ARN for `a4b` `addressbook`:
 
 ```
 arn:${Partition}:a4b:${Region}:${Account}:address-book/${ResourceId}

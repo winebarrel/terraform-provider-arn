@@ -3,12 +3,12 @@
 page_title: "rds_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an rds cluster ARN
+  rds cluster ARN
 ---
 
 # function: rds_cluster
 
-Builds the ARN of an `rds` `cluster`:
+Builds the ARN for `rds` `cluster`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:cluster:${DbClusterInstanceName}

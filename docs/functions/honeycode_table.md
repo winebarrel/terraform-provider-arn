@@ -3,12 +3,12 @@
 page_title: "honeycode_table function - arn"
 subcategory: ""
 description: |-
-  Builds an honeycode table ARN
+  honeycode table ARN
 ---
 
 # function: honeycode_table
 
-Builds the ARN of an `honeycode` `table`:
+Builds the ARN for `honeycode` `table`:
 
 ```
 arn:${Partition}:honeycode:${Region}:${Account}:table:workbook/${WorkbookId}/table/${TableId}

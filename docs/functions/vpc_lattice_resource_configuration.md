@@ -3,12 +3,12 @@
 page_title: "vpc_lattice_resource_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an vpc-lattice ResourceConfiguration ARN
+  vpc-lattice ResourceConfiguration ARN
 ---
 
 # function: vpc_lattice_resource_configuration
 
-Builds the ARN of an `vpc-lattice` `ResourceConfiguration`:
+Builds the ARN for `vpc-lattice` `ResourceConfiguration`:
 
 ```
 arn:${Partition}:vpc-lattice:${Region}:${Account}:resourceconfiguration/${ResourceConfigurationId}

@@ -3,12 +3,12 @@
 page_title: "apigateway_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Resource ARN
+  apigateway Resource ARN
 ---
 
 # function: apigateway_resource
 
-Builds the ARN of an `apigateway` `Resource`:
+Builds the ARN for `apigateway` `Resource`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}

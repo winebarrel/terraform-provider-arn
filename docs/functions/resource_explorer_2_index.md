@@ -3,12 +3,12 @@
 page_title: "resource_explorer_2_index function - arn"
 subcategory: ""
 description: |-
-  Builds an resource-explorer-2 index ARN
+  resource-explorer-2 index ARN
 ---
 
 # function: resource_explorer_2_index
 
-Builds the ARN of an `resource-explorer-2` `index`:
+Builds the ARN for `resource-explorer-2` `index`:
 
 ```
 arn:${Partition}:resource-explorer-2:${Region}:${Account}:index/${IndexUuid}

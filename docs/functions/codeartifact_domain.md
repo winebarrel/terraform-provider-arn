@@ -3,12 +3,12 @@
 page_title: "codeartifact_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an codeartifact domain ARN
+  codeartifact domain ARN
 ---
 
 # function: codeartifact_domain
 
-Builds the ARN of an `codeartifact` `domain`:
+Builds the ARN for `codeartifact` `domain`:
 
 ```
 arn:${Partition}:codeartifact:${Region}:${Account}:domain/${DomainName}

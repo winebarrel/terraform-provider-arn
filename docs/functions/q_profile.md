@@ -3,12 +3,12 @@
 page_title: "q_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an q profile ARN
+  q profile ARN
 ---
 
 # function: q_profile
 
-Builds the ARN of an `q` `profile`:
+Builds the ARN for `q` `profile`:
 
 ```
 arn:${Partition}:codewhisperer:${Region}:${Account}:profile/${Identifier}

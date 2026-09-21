@@ -3,12 +3,12 @@
 page_title: "frauddetector_entity_type function - arn"
 subcategory: ""
 description: |-
-  Builds an frauddetector entity-type ARN
+  frauddetector entity-type ARN
 ---
 
 # function: frauddetector_entity_type
 
-Builds the ARN of an `frauddetector` `entity-type`:
+Builds the ARN for `frauddetector` `entity-type`:
 
 ```
 arn:${Partition}:frauddetector:${Region}:${Account}:entity-type/${ResourcePath}

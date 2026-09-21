@@ -3,12 +3,12 @@
 page_title: "rekognition_collection function - arn"
 subcategory: ""
 description: |-
-  Builds an rekognition collection ARN
+  rekognition collection ARN
 ---
 
 # function: rekognition_collection
 
-Builds the ARN of an `rekognition` `collection`:
+Builds the ARN for `rekognition` `collection`:
 
 ```
 arn:${Partition}:rekognition:${Region}:${Account}:collection/${CollectionId}

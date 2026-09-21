@@ -3,12 +3,12 @@
 page_title: "fis_experiment_template function - arn"
 subcategory: ""
 description: |-
-  Builds an fis experiment-template ARN
+  fis experiment-template ARN
 ---
 
 # function: fis_experiment_template
 
-Builds the ARN of an `fis` `experiment-template`:
+Builds the ARN for `fis` `experiment-template`:
 
 ```
 arn:${Partition}:fis:${Region}:${Account}:experiment-template/${Id}

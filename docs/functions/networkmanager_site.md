@@ -3,12 +3,12 @@
 page_title: "networkmanager_site function - arn"
 subcategory: ""
 description: |-
-  Builds an networkmanager site ARN
+  networkmanager site ARN
 ---
 
 # function: networkmanager_site
 
-Builds the ARN of an `networkmanager` `site`:
+Builds the ARN for `networkmanager` `site`:
 
 ```
 arn:${Partition}:networkmanager::${Account}:site/${GlobalNetworkId}/${ResourceId}

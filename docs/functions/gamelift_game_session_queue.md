@@ -3,12 +3,12 @@
 page_title: "gamelift_game_session_queue function - arn"
 subcategory: ""
 description: |-
-  Builds an gamelift gameSessionQueue ARN
+  gamelift gameSessionQueue ARN
 ---
 
 # function: gamelift_game_session_queue
 
-Builds the ARN of an `gamelift` `gameSessionQueue`:
+Builds the ARN for `gamelift` `gameSessionQueue`:
 
 ```
 arn:${Partition}:gamelift:${Region}:${Account}:gamesessionqueue/${GameSessionQueueName}

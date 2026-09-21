@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_browser_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore browser-profile ARN
+  bedrock-agentcore browser-profile ARN
 ---
 
 # function: bedrock_agentcore_browser_profile
 
-Builds the ARN of an `bedrock-agentcore` `browser-profile`:
+Builds the ARN for `bedrock-agentcore` `browser-profile`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:browser-profile/${BrowserProfileId}

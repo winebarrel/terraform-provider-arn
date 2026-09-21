@@ -3,12 +3,12 @@
 page_title: "connect_extraction_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an connect extraction-definition ARN
+  connect extraction-definition ARN
 ---
 
 # function: connect_extraction_definition
 
-Builds the ARN of an `connect` `extraction-definition`:
+Builds the ARN for `connect` `extraction-definition`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/extraction-definition/${ExtractionDefinitionId}

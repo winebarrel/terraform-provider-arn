@@ -3,12 +3,12 @@
 page_title: "ssm_incidents_response_plan function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm-incidents response-plan ARN
+  ssm-incidents response-plan ARN
 ---
 
 # function: ssm_incidents_response_plan
 
-Builds the ARN of an `ssm-incidents` `response-plan`:
+Builds the ARN for `ssm-incidents` `response-plan`:
 
 ```
 arn:${Partition}:ssm-incidents::${Account}:response-plan/${ResponsePlan}

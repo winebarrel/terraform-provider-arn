@@ -3,12 +3,12 @@
 page_title: "private_networks_device_identifier function - arn"
 subcategory: ""
 description: |-
-  Builds an private-networks device-identifier ARN
+  private-networks device-identifier ARN
 ---
 
 # function: private_networks_device_identifier
 
-Builds the ARN of an `private-networks` `device-identifier`:
+Builds the ARN for `private-networks` `device-identifier`:
 
 ```
 arn:${Partition}:private-networks:${Region}:${Account}:device-identifier/${NetworkName}/${DeviceId}

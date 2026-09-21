@@ -3,12 +3,12 @@
 page_title: "cloudformation_changeset function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudformation changeset ARN
+  cloudformation changeset ARN
 ---
 
 # function: cloudformation_changeset
 
-Builds the ARN of an `cloudformation` `changeset`:
+Builds the ARN for `cloudformation` `changeset`:
 
 ```
 arn:${Partition}:cloudformation:${Region}:${Account}:changeSet/${ChangeSetName}/${Id}

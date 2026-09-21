@@ -3,12 +3,12 @@
 page_title: "elasticmapreduce_studio function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticmapreduce studio ARN
+  elasticmapreduce studio ARN
 ---
 
 # function: elasticmapreduce_studio
 
-Builds the ARN of an `elasticmapreduce` `studio`:
+Builds the ARN for `elasticmapreduce` `studio`:
 
 ```
 arn:${Partition}:elasticmapreduce:${Region}:${Account}:studio/${StudioId}

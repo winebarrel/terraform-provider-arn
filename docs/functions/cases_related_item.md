@@ -3,12 +3,12 @@
 page_title: "cases_related_item function - arn"
 subcategory: ""
 description: |-
-  Builds an cases RelatedItem ARN
+  cases RelatedItem ARN
 ---
 
 # function: cases_related_item
 
-Builds the ARN of an `cases` `RelatedItem`:
+Builds the ARN for `cases` `RelatedItem`:
 
 ```
 arn:${Partition}:cases:${Region}:${Account}:domain/${DomainId}/case/${CaseId}/related-item/${RelatedItemId}

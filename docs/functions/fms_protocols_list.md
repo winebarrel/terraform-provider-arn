@@ -3,12 +3,12 @@
 page_title: "fms_protocols_list function - arn"
 subcategory: ""
 description: |-
-  Builds an fms protocols-list ARN
+  fms protocols-list ARN
 ---
 
 # function: fms_protocols_list
 
-Builds the ARN of an `fms` `protocols-list`:
+Builds the ARN for `fms` `protocols-list`:
 
 ```
 arn:${Partition}:fms:${Region}:${Account}:protocols-list/${Id}

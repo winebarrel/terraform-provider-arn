@@ -3,12 +3,12 @@
 page_title: "sagemaker_workteam function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker workteam ARN
+  sagemaker workteam ARN
 ---
 
 # function: sagemaker_workteam
 
-Builds the ARN of an `sagemaker` `workteam`:
+Builds the ARN for `sagemaker` `workteam`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:workteam/${WorkteamName}

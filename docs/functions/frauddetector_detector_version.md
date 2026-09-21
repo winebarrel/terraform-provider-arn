@@ -3,12 +3,12 @@
 page_title: "frauddetector_detector_version function - arn"
 subcategory: ""
 description: |-
-  Builds an frauddetector detector-version ARN
+  frauddetector detector-version ARN
 ---
 
 # function: frauddetector_detector_version
 
-Builds the ARN of an `frauddetector` `detector-version`:
+Builds the ARN for `frauddetector` `detector-version`:
 
 ```
 arn:${Partition}:frauddetector:${Region}:${Account}:detector-version/${ResourcePath}

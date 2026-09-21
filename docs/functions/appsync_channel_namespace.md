@@ -3,12 +3,12 @@
 page_title: "appsync_channel_namespace function - arn"
 subcategory: ""
 description: |-
-  Builds an appsync channelNamespace ARN
+  appsync channelNamespace ARN
 ---
 
 # function: appsync_channel_namespace
 
-Builds the ARN of an `appsync` `channelNamespace`:
+Builds the ARN for `appsync` `channelNamespace`:
 
 ```
 arn:${Partition}:appsync:${Region}:${Account}:apis/${ApiId}/channelNamespace/${ChannelNamespaceName}

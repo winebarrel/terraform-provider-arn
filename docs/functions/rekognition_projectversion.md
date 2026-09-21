@@ -3,12 +3,12 @@
 page_title: "rekognition_projectversion function - arn"
 subcategory: ""
 description: |-
-  Builds an rekognition projectversion ARN
+  rekognition projectversion ARN
 ---
 
 # function: rekognition_projectversion
 
-Builds the ARN of an `rekognition` `projectversion`:
+Builds the ARN for `rekognition` `projectversion`:
 
 ```
 arn:${Partition}:rekognition:${Region}:${Account}:project/${ProjectName}/version/${VersionName}/${CreationTimestamp}

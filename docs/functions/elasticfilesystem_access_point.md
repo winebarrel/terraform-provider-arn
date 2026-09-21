@@ -3,12 +3,12 @@
 page_title: "elasticfilesystem_access_point function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticfilesystem access-point ARN
+  elasticfilesystem access-point ARN
 ---
 
 # function: elasticfilesystem_access_point
 
-Builds the ARN of an `elasticfilesystem` `access-point`:
+Builds the ARN for `elasticfilesystem` `access-point`:
 
 ```
 arn:${Partition}:elasticfilesystem:${Region}:${Account}:access-point/${AccessPointId}

@@ -3,12 +3,12 @@
 page_title: "docdb_elastic_cluster_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an docdb-elastic cluster-snapshot ARN
+  docdb-elastic cluster-snapshot ARN
 ---
 
 # function: docdb_elastic_cluster_snapshot
 
-Builds the ARN of an `docdb-elastic` `cluster-snapshot`:
+Builds the ARN for `docdb-elastic` `cluster-snapshot`:
 
 ```
 arn:${Partition}:docdb-elastic:${Region}:${Account}:cluster-snapshot/${ResourceId}

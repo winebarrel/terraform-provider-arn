@@ -3,12 +3,12 @@
 page_title: "apigateway_request_validator function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway RequestValidator ARN
+  apigateway RequestValidator ARN
 ---
 
 # function: apigateway_request_validator
 
-Builds the ARN of an `apigateway` `RequestValidator`:
+Builds the ARN for `apigateway` `RequestValidator`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/requestvalidators/${RequestValidatorId}

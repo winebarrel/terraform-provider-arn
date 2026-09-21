@@ -3,12 +3,12 @@
 page_title: "sagemaker_labeling_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker labeling-job ARN
+  sagemaker labeling-job ARN
 ---
 
 # function: sagemaker_labeling_job
 
-Builds the ARN of an `sagemaker` `labeling-job`:
+Builds the ARN for `sagemaker` `labeling-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:labeling-job/${LabelingJobName}

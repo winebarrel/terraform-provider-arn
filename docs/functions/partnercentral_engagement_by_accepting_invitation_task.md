@@ -3,12 +3,12 @@
 page_title: "partnercentral_engagement_by_accepting_invitation_task function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral engagement-by-accepting-invitation-task ARN
+  partnercentral engagement-by-accepting-invitation-task ARN
 ---
 
 # function: partnercentral_engagement_by_accepting_invitation_task
 
-Builds the ARN of an `partnercentral` `engagement-by-accepting-invitation-task`:
+Builds the ARN for `partnercentral` `engagement-by-accepting-invitation-task`:
 
 ```
 arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement-by-accepting-invitation-task/${TaskId}

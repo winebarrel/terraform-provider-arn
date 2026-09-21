@@ -3,12 +3,12 @@
 page_title: "iotjobsdata_thing function - arn"
 subcategory: ""
 description: |-
-  Builds an iotjobsdata thing ARN
+  iotjobsdata thing ARN
 ---
 
 # function: iotjobsdata_thing
 
-Builds the ARN of an `iotjobsdata` `thing`:
+Builds the ARN for `iotjobsdata` `thing`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:thing/${ThingName}

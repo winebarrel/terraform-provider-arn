@@ -3,12 +3,12 @@
 page_title: "mediaconvert_job_template function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconvert JobTemplate ARN
+  mediaconvert JobTemplate ARN
 ---
 
 # function: mediaconvert_job_template
 
-Builds the ARN of an `mediaconvert` `JobTemplate`:
+Builds the ARN for `mediaconvert` `JobTemplate`:
 
 ```
 arn:${Partition}:mediaconvert:${Region}:${Account}:jobTemplates/${JobTemplateName}

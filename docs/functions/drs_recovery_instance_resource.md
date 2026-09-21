@@ -3,12 +3,12 @@
 page_title: "drs_recovery_instance_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an drs RecoveryInstanceResource ARN
+  drs RecoveryInstanceResource ARN
 ---
 
 # function: drs_recovery_instance_resource
 
-Builds the ARN of an `drs` `RecoveryInstanceResource`:
+Builds the ARN for `drs` `RecoveryInstanceResource`:
 
 ```
 arn:${Partition}:drs:${Region}:${Account}:recovery-instance/${RecoveryInstanceID}

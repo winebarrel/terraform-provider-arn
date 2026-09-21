@@ -3,12 +3,12 @@
 page_title: "groundstation_ephemeris_item function - arn"
 subcategory: ""
 description: |-
-  Builds an groundstation EphemerisItem ARN
+  groundstation EphemerisItem ARN
 ---
 
 # function: groundstation_ephemeris_item
 
-Builds the ARN of an `groundstation` `EphemerisItem`:
+Builds the ARN for `groundstation` `EphemerisItem`:
 
 ```
 arn:${Partition}:groundstation:${Region}:${Account}:ephemeris/${EphemerisId}

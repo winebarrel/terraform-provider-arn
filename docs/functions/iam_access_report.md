@@ -3,12 +3,12 @@
 page_title: "iam_access_report function - arn"
 subcategory: ""
 description: |-
-  Builds an iam access-report ARN
+  iam access-report ARN
 ---
 
 # function: iam_access_report
 
-Builds the ARN of an `iam` `access-report`:
+Builds the ARN for `iam` `access-report`:
 
 ```
 arn:${Partition}:iam::${Account}:access-report/${EntityPath}

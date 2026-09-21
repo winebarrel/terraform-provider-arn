@@ -3,12 +3,12 @@
 page_title: "apigateway_private_domain_name function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway PrivateDomainName ARN
+  apigateway PrivateDomainName ARN
 ---
 
 # function: apigateway_private_domain_name
 
-Builds the ARN of an `apigateway` `PrivateDomainName`:
+Builds the ARN for `apigateway` `PrivateDomainName`:
 
 ```
 arn:${Partition}:apigateway:${Region}:${Account}:/domainnames/${DomainName}+${DomainIdentifier}

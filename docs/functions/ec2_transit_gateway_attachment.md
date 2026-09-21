@@ -3,12 +3,12 @@
 page_title: "ec2_transit_gateway_attachment function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 transit-gateway-attachment ARN
+  ec2 transit-gateway-attachment ARN
 ---
 
 # function: ec2_transit_gateway_attachment
 
-Builds the ARN of an `ec2` `transit-gateway-attachment`:
+Builds the ARN for `ec2` `transit-gateway-attachment`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:transit-gateway-attachment/${TransitGatewayAttachmentId}

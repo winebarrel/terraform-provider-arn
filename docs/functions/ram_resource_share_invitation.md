@@ -3,12 +3,12 @@
 page_title: "ram_resource_share_invitation function - arn"
 subcategory: ""
 description: |-
-  Builds an ram resource-share-invitation ARN
+  ram resource-share-invitation ARN
 ---
 
 # function: ram_resource_share_invitation
 
-Builds the ARN of an `ram` `resource-share-invitation`:
+Builds the ARN for `ram` `resource-share-invitation`:
 
 ```
 arn:${Partition}:ram:${Region}:${Account}:resource-share-invitation/${ResourcePath}

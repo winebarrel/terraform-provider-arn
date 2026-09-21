@@ -3,12 +3,12 @@
 page_title: "datasync_taskexecution function - arn"
 subcategory: ""
 description: |-
-  Builds an datasync taskexecution ARN
+  datasync taskexecution ARN
 ---
 
 # function: datasync_taskexecution
 
-Builds the ARN of an `datasync` `taskexecution`:
+Builds the ARN for `datasync` `taskexecution`:
 
 ```
 arn:${Partition}:datasync:${Region}:${AccountId}:task/${TaskId}/execution/${ExecutionId}

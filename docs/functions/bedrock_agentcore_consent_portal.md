@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_consent_portal function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore consent-portal ARN
+  bedrock-agentcore consent-portal ARN
 ---
 
 # function: bedrock_agentcore_consent_portal
 
-Builds the ARN of an `bedrock-agentcore` `consent-portal`:
+Builds the ARN for `bedrock-agentcore` `consent-portal`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:consent-portal/${ConsentPortalId}

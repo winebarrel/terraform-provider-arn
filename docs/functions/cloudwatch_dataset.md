@@ -3,12 +3,12 @@
 page_title: "cloudwatch_dataset function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudwatch dataset ARN
+  cloudwatch dataset ARN
 ---
 
 # function: cloudwatch_dataset
 
-Builds the ARN of an `cloudwatch` `dataset`:
+Builds the ARN for `cloudwatch` `dataset`:
 
 ```
 arn:${Partition}:cloudwatch:${Region}:${Account}:dataset/${DatasetId}

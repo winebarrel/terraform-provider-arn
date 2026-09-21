@@ -3,12 +3,12 @@
 page_title: "backup_gateway_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an backup-gateway gateway ARN
+  backup-gateway gateway ARN
 ---
 
 # function: backup_gateway_gateway
 
-Builds the ARN of an `backup-gateway` `gateway`:
+Builds the ARN for `backup-gateway` `gateway`:
 
 ```
 arn:${Partition}:backup-gateway:${Region}:${Account}:gateway/${GatewayId}

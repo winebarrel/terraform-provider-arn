@@ -3,12 +3,12 @@
 page_title: "transcribe_medicalvocabulary function - arn"
 subcategory: ""
 description: |-
-  Builds an transcribe medicalvocabulary ARN
+  transcribe medicalvocabulary ARN
 ---
 
 # function: transcribe_medicalvocabulary
 
-Builds the ARN of an `transcribe` `medicalvocabulary`:
+Builds the ARN for `transcribe` `medicalvocabulary`:
 
 ```
 arn:${Partition}:transcribe:${Region}:${Account}:medical-vocabulary/${VocabularyName}

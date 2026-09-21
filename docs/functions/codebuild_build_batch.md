@@ -3,12 +3,12 @@
 page_title: "codebuild_build_batch function - arn"
 subcategory: ""
 description: |-
-  Builds an codebuild build-batch ARN
+  codebuild build-batch ARN
 ---
 
 # function: codebuild_build_batch
 
-Builds the ARN of an `codebuild` `build-batch`:
+Builds the ARN for `codebuild` `build-batch`:
 
 ```
 arn:${Partition}:codebuild:${Region}:${Account}:build-batch/${BuildBatchId}

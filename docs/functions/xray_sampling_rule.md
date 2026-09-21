@@ -3,12 +3,12 @@
 page_title: "xray_sampling_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an xray sampling-rule ARN
+  xray sampling-rule ARN
 ---
 
 # function: xray_sampling_rule
 
-Builds the ARN of an `xray` `sampling-rule`:
+Builds the ARN for `xray` `sampling-rule`:
 
 ```
 arn:${Partition}:xray:${Region}:${Account}:sampling-rule/${SamplingRuleName}

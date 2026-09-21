@@ -3,12 +3,12 @@
 page_title: "elasticache_securitygroup function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticache securitygroup ARN
+  elasticache securitygroup ARN
 ---
 
 # function: elasticache_securitygroup
 
-Builds the ARN of an `elasticache` `securitygroup`:
+Builds the ARN for `elasticache` `securitygroup`:
 
 ```
 arn:${Partition}:elasticache:${Region}:${Account}:securitygroup:${CacheSecurityGroupName}

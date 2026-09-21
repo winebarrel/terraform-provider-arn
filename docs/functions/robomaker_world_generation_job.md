@@ -3,12 +3,12 @@
 page_title: "robomaker_world_generation_job function - arn"
 subcategory: ""
 description: |-
-  Builds an robomaker worldGenerationJob ARN
+  robomaker worldGenerationJob ARN
 ---
 
 # function: robomaker_world_generation_job
 
-Builds the ARN of an `robomaker` `worldGenerationJob`:
+Builds the ARN for `robomaker` `worldGenerationJob`:
 
 ```
 arn:${Partition}:robomaker:${Region}:${Account}:world-generation-job/${WorldGenerationJobId}

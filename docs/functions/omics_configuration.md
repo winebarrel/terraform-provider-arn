@@ -3,12 +3,12 @@
 page_title: "omics_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an omics configuration ARN
+  omics configuration ARN
 ---
 
 # function: omics_configuration
 
-Builds the ARN of an `omics` `configuration`:
+Builds the ARN for `omics` `configuration`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:configuration/${Name}

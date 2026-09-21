@@ -3,12 +3,12 @@
 page_title: "aoss_collection function - arn"
 subcategory: ""
 description: |-
-  Builds an aoss Collection ARN
+  aoss Collection ARN
 ---
 
 # function: aoss_collection
 
-Builds the ARN of an `aoss` `Collection`:
+Builds the ARN for `aoss` `Collection`:
 
 ```
 arn:${Partition}:aoss:${Region}:${Account}:collection/${CollectionId}

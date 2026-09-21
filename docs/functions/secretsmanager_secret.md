@@ -3,12 +3,12 @@
 page_title: "secretsmanager_secret function - arn"
 subcategory: ""
 description: |-
-  Builds an secretsmanager Secret ARN
+  secretsmanager Secret ARN
 ---
 
 # function: secretsmanager_secret
 
-Builds the ARN of an `secretsmanager` `Secret`:
+Builds the ARN for `secretsmanager` `Secret`:
 
 ```
 arn:${Partition}:secretsmanager:${Region}:${Account}:secret:${SecretId}

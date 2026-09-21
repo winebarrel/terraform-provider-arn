@@ -3,12 +3,12 @@
 page_title: "comprehend_topics_detection_job function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend topics-detection-job ARN
+  comprehend topics-detection-job ARN
 ---
 
 # function: comprehend_topics_detection_job
 
-Builds the ARN of an `comprehend` `topics-detection-job`:
+Builds the ARN for `comprehend` `topics-detection-job`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:topics-detection-job/${JobId}

@@ -3,12 +3,12 @@
 page_title: "m2_application function - arn"
 subcategory: ""
 description: |-
-  Builds an m2 Application ARN
+  m2 Application ARN
 ---
 
 # function: m2_application
 
-Builds the ARN of an `m2` `Application`:
+Builds the ARN for `m2` `Application`:
 
 ```
 arn:${Partition}:m2:${Region}:${Account}:app/${ApplicationId}

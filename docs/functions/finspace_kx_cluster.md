@@ -3,12 +3,12 @@
 page_title: "finspace_kx_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an finspace kxCluster ARN
+  finspace kxCluster ARN
 ---
 
 # function: finspace_kx_cluster
 
-Builds the ARN of an `finspace` `kxCluster`:
+Builds the ARN for `finspace` `kxCluster`:
 
 ```
 arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxCluster/${KxCluster}

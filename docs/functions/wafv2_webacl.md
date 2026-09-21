@@ -3,12 +3,12 @@
 page_title: "wafv2_webacl function - arn"
 subcategory: ""
 description: |-
-  Builds an wafv2 webacl ARN
+  wafv2 webacl ARN
 ---
 
 # function: wafv2_webacl
 
-Builds the ARN of an `wafv2` `webacl`:
+Builds the ARN for `wafv2` `webacl`:
 
 ```
 arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/webacl/${Name}/${Id}

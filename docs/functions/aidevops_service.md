@@ -3,12 +3,12 @@
 page_title: "aidevops_service function - arn"
 subcategory: ""
 description: |-
-  Builds an aidevops service ARN
+  aidevops service ARN
 ---
 
 # function: aidevops_service
 
-Builds the ARN of an `aidevops` `service`:
+Builds the ARN for `aidevops` `service`:
 
 ```
 arn:${Partition}:aidevops:${Region}:${Account}:service/${ServiceId}

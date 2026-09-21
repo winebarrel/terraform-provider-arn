@@ -3,12 +3,12 @@
 page_title: "vpc_lattice_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an vpc-lattice Rule ARN
+  vpc-lattice Rule ARN
 ---
 
 # function: vpc_lattice_rule
 
-Builds the ARN of an `vpc-lattice` `Rule`:
+Builds the ARN for `vpc-lattice` `Rule`:
 
 ```
 arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}/listener/${ListenerId}/rule/${RuleId}

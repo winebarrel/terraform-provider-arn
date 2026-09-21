@@ -3,12 +3,12 @@
 page_title: "refactor_spaces_application function - arn"
 subcategory: ""
 description: |-
-  Builds an refactor-spaces application ARN
+  refactor-spaces application ARN
 ---
 
 # function: refactor_spaces_application
 
-Builds the ARN of an `refactor-spaces` `application`:
+Builds the ARN for `refactor-spaces` `application`:
 
 ```
 arn:${Partition}:refactor-spaces:${Region}:${Account}:environment/${EnvironmentId}/application/${ApplicationId}

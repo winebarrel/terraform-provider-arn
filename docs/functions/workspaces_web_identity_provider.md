@@ -3,12 +3,12 @@
 page_title: "workspaces_web_identity_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces-web identityProvider ARN
+  workspaces-web identityProvider ARN
 ---
 
 # function: workspaces_web_identity_provider
 
-Builds the ARN of an `workspaces-web` `identityProvider`:
+Builds the ARN for `workspaces-web` `identityProvider`:
 
 ```
 arn:${Partition}:workspaces-web:${Region}:${Account}:identityProvider/${PortalId}/${IdentityProviderId}

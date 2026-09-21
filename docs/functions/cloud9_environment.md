@@ -3,12 +3,12 @@
 page_title: "cloud9_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an cloud9 environment ARN
+  cloud9 environment ARN
 ---
 
 # function: cloud9_environment
 
-Builds the ARN of an `cloud9` `environment`:
+Builds the ARN for `cloud9` `environment`:
 
 ```
 arn:${Partition}:cloud9:${Region}:${Account}:environment:${ResourceId}

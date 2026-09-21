@@ -3,12 +3,12 @@
 page_title: "redshift_serverless_recovery_point function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift-serverless recoveryPoint ARN
+  redshift-serverless recoveryPoint ARN
 ---
 
 # function: redshift_serverless_recovery_point
 
-Builds the ARN of an `redshift-serverless` `recoveryPoint`:
+Builds the ARN for `redshift-serverless` `recoveryPoint`:
 
 ```
 arn:${Partition}:redshift-serverless:${Region}:${Account}:recoverypoint/${RecoveryPointId}

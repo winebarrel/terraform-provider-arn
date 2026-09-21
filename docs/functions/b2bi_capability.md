@@ -3,12 +3,12 @@
 page_title: "b2bi_capability function - arn"
 subcategory: ""
 description: |-
-  Builds an b2bi capability ARN
+  b2bi capability ARN
 ---
 
 # function: b2bi_capability
 
-Builds the ARN of an `b2bi` `capability`:
+Builds the ARN for `b2bi` `capability`:
 
 ```
 arn:${Partition}:b2bi:${Region}:${Account}:capability/${ResourceId}

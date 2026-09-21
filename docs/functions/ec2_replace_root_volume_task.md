@@ -3,12 +3,12 @@
 page_title: "ec2_replace_root_volume_task function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 replace-root-volume-task ARN
+  ec2 replace-root-volume-task ARN
 ---
 
 # function: ec2_replace_root_volume_task
 
-Builds the ARN of an `ec2` `replace-root-volume-task`:
+Builds the ARN for `ec2` `replace-root-volume-task`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:replace-root-volume-task/${ReplaceRootVolumeTaskId}

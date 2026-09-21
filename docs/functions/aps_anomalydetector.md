@@ -3,12 +3,12 @@
 page_title: "aps_anomalydetector function - arn"
 subcategory: ""
 description: |-
-  Builds an aps anomalydetector ARN
+  aps anomalydetector ARN
 ---
 
 # function: aps_anomalydetector
 
-Builds the ARN of an `aps` `anomalydetector`:
+Builds the ARN for `aps` `anomalydetector`:
 
 ```
 arn:${Partition}:aps:${Region}:${Account}:anomalydetector/${WorkspaceId}/${AnomalyDetectorId}

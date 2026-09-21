@@ -3,12 +3,12 @@
 page_title: "glue_workflow function - arn"
 subcategory: ""
 description: |-
-  Builds an glue workflow ARN
+  glue workflow ARN
 ---
 
 # function: glue_workflow
 
-Builds the ARN of an `glue` `workflow`:
+Builds the ARN for `glue` `workflow`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:workflow/${WorkflowName}

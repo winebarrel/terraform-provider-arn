@@ -3,12 +3,12 @@
 page_title: "athena_workgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an athena workgroup ARN
+  athena workgroup ARN
 ---
 
 # function: athena_workgroup
 
-Builds the ARN of an `athena` `workgroup`:
+Builds the ARN for `athena` `workgroup`:
 
 ```
 arn:${Partition}:athena:${Region}:${Account}:workgroup/${WorkGroupName}

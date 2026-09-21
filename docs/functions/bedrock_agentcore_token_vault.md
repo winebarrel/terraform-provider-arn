@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_token_vault function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore token-vault ARN
+  bedrock-agentcore token-vault ARN
 ---
 
 # function: bedrock_agentcore_token_vault
 
-Builds the ARN of an `bedrock-agentcore` `token-vault`:
+Builds the ARN for `bedrock-agentcore` `token-vault`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:token-vault/${TokenVaultId}

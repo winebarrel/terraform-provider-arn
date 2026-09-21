@@ -3,12 +3,12 @@
 page_title: "iot_command function - arn"
 subcategory: ""
 description: |-
-  Builds an iot command ARN
+  iot command ARN
 ---
 
 # function: iot_command
 
-Builds the ARN of an `iot` `command`:
+Builds the ARN for `iot` `command`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:command/${CommandId}

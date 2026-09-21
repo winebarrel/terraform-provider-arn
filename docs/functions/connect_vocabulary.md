@@ -3,12 +3,12 @@
 page_title: "connect_vocabulary function - arn"
 subcategory: ""
 description: |-
-  Builds an connect vocabulary ARN
+  connect vocabulary ARN
 ---
 
 # function: connect_vocabulary
 
-Builds the ARN of an `connect` `vocabulary`:
+Builds the ARN for `connect` `vocabulary`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/vocabulary/${VocabularyId}

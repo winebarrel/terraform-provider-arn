@@ -3,12 +3,12 @@
 page_title: "quicksight_brand function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight brand ARN
+  quicksight brand ARN
 ---
 
 # function: quicksight_brand
 
-Builds the ARN of an `quicksight` `brand`:
+Builds the ARN for `quicksight` `brand`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:brand/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "events_event_bus function - arn"
 subcategory: ""
 description: |-
-  Builds an events event-bus ARN
+  events event-bus ARN
 ---
 
 # function: events_event_bus
 
-Builds the ARN of an `events` `event-bus`:
+Builds the ARN for `events` `event-bus`:
 
 ```
 arn:${Partition}:events:${Region}:${Account}:event-bus/${EventBusName}

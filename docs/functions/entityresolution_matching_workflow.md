@@ -3,12 +3,12 @@
 page_title: "entityresolution_matching_workflow function - arn"
 subcategory: ""
 description: |-
-  Builds an entityresolution MatchingWorkflow ARN
+  entityresolution MatchingWorkflow ARN
 ---
 
 # function: entityresolution_matching_workflow
 
-Builds the ARN of an `entityresolution` `MatchingWorkflow`:
+Builds the ARN for `entityresolution` `MatchingWorkflow`:
 
 ```
 arn:${Partition}:entityresolution:${Region}:${Account}:matchingworkflow/${WorkflowName}

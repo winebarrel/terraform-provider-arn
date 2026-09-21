@@ -3,12 +3,12 @@
 page_title: "fms_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an fms policy ARN
+  fms policy ARN
 ---
 
 # function: fms_policy
 
-Builds the ARN of an `fms` `policy`:
+Builds the ARN for `fms` `policy`:
 
 ```
 arn:${Partition}:fms:${Region}:${Account}:policy/${Id}

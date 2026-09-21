@@ -3,12 +3,12 @@
 page_title: "connect_campaigns_campaign function - arn"
 subcategory: ""
 description: |-
-  Builds an connect-campaigns campaign ARN
+  connect-campaigns campaign ARN
 ---
 
 # function: connect_campaigns_campaign
 
-Builds the ARN of an `connect-campaigns` `campaign`:
+Builds the ARN for `connect-campaigns` `campaign`:
 
 ```
 arn:${Partition}:connect-campaigns:${Region}:${Account}:campaign/${CampaignId}

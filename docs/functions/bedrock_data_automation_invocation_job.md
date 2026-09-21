@@ -3,12 +3,12 @@
 page_title: "bedrock_data_automation_invocation_job function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock data-automation-invocation-job ARN
+  bedrock data-automation-invocation-job ARN
 ---
 
 # function: bedrock_data_automation_invocation_job
 
-Builds the ARN of an `bedrock` `data-automation-invocation-job`:
+Builds the ARN for `bedrock` `data-automation-invocation-job`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:data-automation-invocation/${JobId}

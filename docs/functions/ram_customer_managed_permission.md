@@ -3,12 +3,12 @@
 page_title: "ram_customer_managed_permission function - arn"
 subcategory: ""
 description: |-
-  Builds an ram customer-managed-permission ARN
+  ram customer-managed-permission ARN
 ---
 
 # function: ram_customer_managed_permission
 
-Builds the ARN of an `ram` `customer-managed-permission`:
+Builds the ARN for `ram` `customer-managed-permission`:
 
 ```
 arn:${Partition}:ram:${Region}:${Account}:permission/${ResourcePath}

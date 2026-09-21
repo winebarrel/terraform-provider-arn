@@ -3,12 +3,12 @@
 page_title: "robomaker_simulation_application function - arn"
 subcategory: ""
 description: |-
-  Builds an robomaker simulationApplication ARN
+  robomaker simulationApplication ARN
 ---
 
 # function: robomaker_simulation_application
 
-Builds the ARN of an `robomaker` `simulationApplication`:
+Builds the ARN for `robomaker` `simulationApplication`:
 
 ```
 arn:${Partition}:robomaker:${Region}:${Account}:simulation-application/${ApplicationName}/${CreatedOnEpoch}

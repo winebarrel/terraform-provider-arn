@@ -3,12 +3,12 @@
 page_title: "eks_auth_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an eks-auth cluster ARN
+  eks-auth cluster ARN
 ---
 
 # function: eks_auth_cluster
 
-Builds the ARN of an `eks-auth` `cluster`:
+Builds the ARN for `eks-auth` `cluster`:
 
 ```
 arn:${Partition}:eks:${Region}:${Account}:cluster/${ClusterName}

@@ -3,12 +3,12 @@
 page_title: "appsync_api function - arn"
 subcategory: ""
 description: |-
-  Builds an appsync api ARN
+  appsync api ARN
 ---
 
 # function: appsync_api
 
-Builds the ARN of an `appsync` `api`:
+Builds the ARN for `appsync` `api`:
 
 ```
 arn:${Partition}:appsync:${Region}:${Account}:apis/${ApiId}

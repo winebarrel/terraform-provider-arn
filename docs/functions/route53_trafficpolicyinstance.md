@@ -3,12 +3,12 @@
 page_title: "route53_trafficpolicyinstance function - arn"
 subcategory: ""
 description: |-
-  Builds an route53 trafficpolicyinstance ARN
+  route53 trafficpolicyinstance ARN
 ---
 
 # function: route53_trafficpolicyinstance
 
-Builds the ARN of an `route53` `trafficpolicyinstance`:
+Builds the ARN for `route53` `trafficpolicyinstance`:
 
 ```
 arn:${Partition}:route53:::trafficpolicyinstance/${Id}

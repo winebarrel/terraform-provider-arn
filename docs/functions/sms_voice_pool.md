@@ -3,12 +3,12 @@
 page_title: "sms_voice_pool function - arn"
 subcategory: ""
 description: |-
-  Builds an sms-voice Pool ARN
+  sms-voice Pool ARN
 ---
 
 # function: sms_voice_pool
 
-Builds the ARN of an `sms-voice` `Pool`:
+Builds the ARN for `sms-voice` `Pool`:
 
 ```
 arn:${Partition}:sms-voice:${Region}:${Account}:pool/${PoolId}

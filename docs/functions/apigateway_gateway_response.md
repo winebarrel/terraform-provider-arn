@@ -3,12 +3,12 @@
 page_title: "apigateway_gateway_response function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway GatewayResponse ARN
+  apigateway GatewayResponse ARN
 ---
 
 # function: apigateway_gateway_response
 
-Builds the ARN of an `apigateway` `GatewayResponse`:
+Builds the ARN for `apigateway` `GatewayResponse`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/gatewayresponses/${ResponseType}

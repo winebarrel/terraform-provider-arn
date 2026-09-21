@@ -3,12 +3,12 @@
 page_title: "databrew_dataset function - arn"
 subcategory: ""
 description: |-
-  Builds an databrew Dataset ARN
+  databrew Dataset ARN
 ---
 
 # function: databrew_dataset
 
-Builds the ARN of an `databrew` `Dataset`:
+Builds the ARN for `databrew` `Dataset`:
 
 ```
 arn:${Partition}:databrew:${Region}:${Account}:dataset/${ResourceId}

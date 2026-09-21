@@ -3,12 +3,12 @@
 page_title: "appsync_graphqlapi function - arn"
 subcategory: ""
 description: |-
-  Builds an appsync graphqlapi ARN
+  appsync graphqlapi ARN
 ---
 
 # function: appsync_graphqlapi
 
-Builds the ARN of an `appsync` `graphqlapi`:
+Builds the ARN for `appsync` `graphqlapi`:
 
 ```
 arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}

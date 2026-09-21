@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_seller_dashboard function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace SellerDashboard ARN
+  aws-marketplace SellerDashboard ARN
 ---
 
 # function: aws_marketplace_seller_dashboard
 
-Builds the ARN of an `aws-marketplace` `SellerDashboard`:
+Builds the ARN for `aws-marketplace` `SellerDashboard`:
 
 ```
 arn:${Partition}:aws-marketplace::${Account}:${Catalog}/ReportingData/${FactTable}/Dashboard/${DashboardName}

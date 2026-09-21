@@ -3,12 +3,12 @@
 page_title: "route53resolver_resolver_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an route53resolver resolver-rule ARN
+  route53resolver resolver-rule ARN
 ---
 
 # function: route53resolver_resolver_rule
 
-Builds the ARN of an `route53resolver` `resolver-rule`:
+Builds the ARN for `route53resolver` `resolver-rule`:
 
 ```
 arn:${Partition}:route53resolver:${Region}:${Account}:resolver-rule/${ResourceId}

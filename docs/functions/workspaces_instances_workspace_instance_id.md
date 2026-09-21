@@ -3,12 +3,12 @@
 page_title: "workspaces_instances_workspace_instance_id function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces-instances WorkspaceInstanceId ARN
+  workspaces-instances WorkspaceInstanceId ARN
 ---
 
 # function: workspaces_instances_workspace_instance_id
 
-Builds the ARN of an `workspaces-instances` `WorkspaceInstanceId`:
+Builds the ARN for `workspaces-instances` `WorkspaceInstanceId`:
 
 ```
 arn:${Partition}:workspaces-instances:${Region}:${Account}:workspaceinstance/${WorkspaceInstanceId}

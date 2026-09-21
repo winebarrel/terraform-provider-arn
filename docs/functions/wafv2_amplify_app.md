@@ -3,12 +3,12 @@
 page_title: "wafv2_amplify_app function - arn"
 subcategory: ""
 description: |-
-  Builds an wafv2 amplify-app ARN
+  wafv2 amplify-app ARN
 ---
 
 # function: wafv2_amplify_app
 
-Builds the ARN of an `wafv2` `amplify-app`:
+Builds the ARN for `wafv2` `amplify-app`:
 
 ```
 arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}

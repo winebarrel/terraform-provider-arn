@@ -3,12 +3,12 @@
 page_title: "ec2_ipam_prefix_list_resolver function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 ipam-prefix-list-resolver ARN
+  ec2 ipam-prefix-list-resolver ARN
 ---
 
 # function: ec2_ipam_prefix_list_resolver
 
-Builds the ARN of an `ec2` `ipam-prefix-list-resolver`:
+Builds the ARN for `ec2` `ipam-prefix-list-resolver`:
 
 ```
 arn:${Partition}:ec2::${Account}:ipam-prefix-list-resolver/${IpamPrefixListResolverId}

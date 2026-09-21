@@ -3,12 +3,12 @@
 page_title: "appmesh_preview_gateway_route function - arn"
 subcategory: ""
 description: |-
-  Builds an appmesh-preview gatewayRoute ARN
+  appmesh-preview gatewayRoute ARN
 ---
 
 # function: appmesh_preview_gateway_route
 
-Builds the ARN of an `appmesh-preview` `gatewayRoute`:
+Builds the ARN for `appmesh-preview` `gatewayRoute`:
 
 ```
 arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}/virtualGateway/${VirtualGatewayName}/gatewayRoute/${GatewayRouteName}

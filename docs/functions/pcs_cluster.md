@@ -3,12 +3,12 @@
 page_title: "pcs_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an pcs cluster ARN
+  pcs cluster ARN
 ---
 
 # function: pcs_cluster
 
-Builds the ARN of an `pcs` `cluster`:
+Builds the ARN for `pcs` `cluster`:
 
 ```
 arn:${Partition}:pcs:${Region}:${Account}:cluster/${ClusterIdentifier}

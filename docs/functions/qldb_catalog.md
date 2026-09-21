@@ -3,12 +3,12 @@
 page_title: "qldb_catalog function - arn"
 subcategory: ""
 description: |-
-  Builds an qldb catalog ARN
+  qldb catalog ARN
 ---
 
 # function: qldb_catalog
 
-Builds the ARN of an `qldb` `catalog`:
+Builds the ARN for `qldb` `catalog`:
 
 ```
 arn:${Partition}:qldb:${Region}:${Account}:ledger/${LedgerName}/information_schema/user_tables

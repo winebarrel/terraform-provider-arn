@@ -3,12 +3,12 @@
 page_title: "memorydb_subnetgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an memorydb subnetgroup ARN
+  memorydb subnetgroup ARN
 ---
 
 # function: memorydb_subnetgroup
 
-Builds the ARN of an `memorydb` `subnetgroup`:
+Builds the ARN for `memorydb` `subnetgroup`:
 
 ```
 arn:${Partition}:memorydb:${Region}:${Account}:subnetgroup/${SubnetGroupName}

@@ -3,12 +3,12 @@
 page_title: "medical_imaging_imageset function - arn"
 subcategory: ""
 description: |-
-  Builds an medical-imaging imageset ARN
+  medical-imaging imageset ARN
 ---
 
 # function: medical_imaging_imageset
 
-Builds the ARN of an `medical-imaging` `imageset`:
+Builds the ARN for `medical-imaging` `imageset`:
 
 ```
 arn:${Partition}:medical-imaging:${Region}:${Account}:datastore/${DatastoreId}/imageset/${ImageSetId}

@@ -3,12 +3,12 @@
 page_title: "resiliencehub_app_assessment function - arn"
 subcategory: ""
 description: |-
-  Builds an resiliencehub app-assessment ARN
+  resiliencehub app-assessment ARN
 ---
 
 # function: resiliencehub_app_assessment
 
-Builds the ARN of an `resiliencehub` `app-assessment`:
+Builds the ARN for `resiliencehub` `app-assessment`:
 
 ```
 arn:${Partition}:resiliencehub:${Region}:${Account}:app-assessment/${AppAssessmentId}

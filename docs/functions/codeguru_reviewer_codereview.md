@@ -3,12 +3,12 @@
 page_title: "codeguru_reviewer_codereview function - arn"
 subcategory: ""
 description: |-
-  Builds an codeguru-reviewer codereview ARN
+  codeguru-reviewer codereview ARN
 ---
 
 # function: codeguru_reviewer_codereview
 
-Builds the ARN of an `codeguru-reviewer` `codereview`:
+Builds the ARN for `codeguru-reviewer` `codereview`:
 
 ```
 arn:${Partition}:codeguru-reviewer:${Region}:${Account}:association:${ResourceId}:codereview:${CodeReviewId}

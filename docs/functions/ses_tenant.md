@@ -3,12 +3,12 @@
 page_title: "ses_tenant function - arn"
 subcategory: ""
 description: |-
-  Builds an ses tenant ARN
+  ses tenant ARN
 ---
 
 # function: ses_tenant
 
-Builds the ARN of an `ses` `tenant`:
+Builds the ARN for `ses` `tenant`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:tenant/${TenantName}/${TenantId}

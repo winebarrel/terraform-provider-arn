@@ -3,12 +3,12 @@
 page_title: "chatbot_chatbot_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an chatbot ChatbotConfiguration ARN
+  chatbot ChatbotConfiguration ARN
 ---
 
 # function: chatbot_chatbot_configuration
 
-Builds the ARN of an `chatbot` `ChatbotConfiguration`:
+Builds the ARN for `chatbot` `ChatbotConfiguration`:
 
 ```
 arn:${Partition}:chatbot::${Account}:chat-configuration/${ConfigurationType}/${ChatbotConfigurationName}

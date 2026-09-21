@@ -3,12 +3,12 @@
 page_title: "iam_sms_mfa function - arn"
 subcategory: ""
 description: |-
-  Builds an iam sms-mfa ARN
+  iam sms-mfa ARN
 ---
 
 # function: iam_sms_mfa
 
-Builds the ARN of an `iam` `sms-mfa`:
+Builds the ARN for `iam` `sms-mfa`:
 
 ```
 arn:${Partition}:iam::${Account}:sms-mfa/${MfaTokenIdWithPath}

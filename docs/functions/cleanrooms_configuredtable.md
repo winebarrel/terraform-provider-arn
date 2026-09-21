@@ -3,12 +3,12 @@
 page_title: "cleanrooms_configuredtable function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms configuredtable ARN
+  cleanrooms configuredtable ARN
 ---
 
 # function: cleanrooms_configuredtable
 
-Builds the ARN of an `cleanrooms` `configuredtable`:
+Builds the ARN for `cleanrooms` `configuredtable`:
 
 ```
 arn:${Partition}:cleanrooms:${Region}:${Account}:configuredtable/${ConfiguredTableId}

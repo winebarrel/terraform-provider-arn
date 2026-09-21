@@ -3,12 +3,12 @@
 page_title: "forecast_what_if_analysis function - arn"
 subcategory: ""
 description: |-
-  Builds an forecast whatIfAnalysis ARN
+  forecast whatIfAnalysis ARN
 ---
 
 # function: forecast_what_if_analysis
 
-Builds the ARN of an `forecast` `whatIfAnalysis`:
+Builds the ARN for `forecast` `whatIfAnalysis`:
 
 ```
 arn:${Partition}:forecast:${Region}:${Account}:what-if-analysis/${ResourceId}

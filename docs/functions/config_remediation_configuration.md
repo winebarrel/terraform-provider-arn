@@ -3,12 +3,12 @@
 page_title: "config_remediation_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an config RemediationConfiguration ARN
+  config RemediationConfiguration ARN
 ---
 
 # function: config_remediation_configuration
 
-Builds the ARN of an `config` `RemediationConfiguration`:
+Builds the ARN for `config` `RemediationConfiguration`:
 
 ```
 arn:${Partition}:config:${Region}:${Account}:remediation-configuration/${RemediationConfigurationId}

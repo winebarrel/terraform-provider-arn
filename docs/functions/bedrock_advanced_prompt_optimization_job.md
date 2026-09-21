@@ -3,12 +3,12 @@
 page_title: "bedrock_advanced_prompt_optimization_job function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock advanced-prompt-optimization-job ARN
+  bedrock advanced-prompt-optimization-job ARN
 ---
 
 # function: bedrock_advanced_prompt_optimization_job
 
-Builds the ARN of an `bedrock` `advanced-prompt-optimization-job`:
+Builds the ARN for `bedrock` `advanced-prompt-optimization-job`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:advanced-prompt-optimization-job/${ResourceId}

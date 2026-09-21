@@ -3,12 +3,12 @@
 page_title: "lex_test_set function - arn"
 subcategory: ""
 description: |-
-  Builds an lex test set ARN
+  lex test set ARN
 ---
 
 # function: lex_test_set
 
-Builds the ARN of an `lex` `test set`:
+Builds the ARN for `lex` `test set`:
 
 ```
 arn:${Partition}:lex:${Region}:${Account}:test-set/${TestSetId}

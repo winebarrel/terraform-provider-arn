@@ -3,12 +3,12 @@
 page_title: "omics_workflow_version function - arn"
 subcategory: ""
 description: |-
-  Builds an omics WorkflowVersion ARN
+  omics WorkflowVersion ARN
 ---
 
 # function: omics_workflow_version
 
-Builds the ARN of an `omics` `WorkflowVersion`:
+Builds the ARN for `omics` `WorkflowVersion`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:workflow/${Id}/version/${VersionName}

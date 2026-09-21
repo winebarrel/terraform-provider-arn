@@ -3,12 +3,12 @@
 page_title: "ssm_quicksetup_configuration_manager function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm-quicksetup configuration-manager ARN
+  ssm-quicksetup configuration-manager ARN
 ---
 
 # function: ssm_quicksetup_configuration_manager
 
-Builds the ARN of an `ssm-quicksetup` `configuration-manager`:
+Builds the ARN for `ssm-quicksetup` `configuration-manager`:
 
 ```
 arn:${Partition}:ssm-quicksetup:${Region}:${Account}:configuration-manager/${ConfigurationManagerId}

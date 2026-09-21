@@ -3,12 +3,12 @@
 page_title: "qapps_application function - arn"
 subcategory: ""
 description: |-
-  Builds an qapps application ARN
+  qapps application ARN
 ---
 
 # function: qapps_application
 
-Builds the ARN of an `qapps` `application`:
+Builds the ARN for `qapps` `application`:
 
 ```
 arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}

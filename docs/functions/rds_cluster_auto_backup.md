@@ -3,12 +3,12 @@
 page_title: "rds_cluster_auto_backup function - arn"
 subcategory: ""
 description: |-
-  Builds an rds cluster-auto-backup ARN
+  rds cluster-auto-backup ARN
 ---
 
 # function: rds_cluster_auto_backup
 
-Builds the ARN of an `rds` `cluster-auto-backup`:
+Builds the ARN for `rds` `cluster-auto-backup`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:cluster-auto-backup:${DbClusterAutomatedBackupId}

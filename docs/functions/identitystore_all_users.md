@@ -3,12 +3,12 @@
 page_title: "identitystore_all_users function - arn"
 subcategory: ""
 description: |-
-  Builds an identitystore AllUsers ARN
+  identitystore AllUsers ARN
 ---
 
 # function: identitystore_all_users
 
-Builds the ARN of an `identitystore` `AllUsers`:
+Builds the ARN for `identitystore` `AllUsers`:
 
 ```
 arn:${Partition}:identitystore:::user/*

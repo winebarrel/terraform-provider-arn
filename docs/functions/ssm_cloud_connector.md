@@ -3,12 +3,12 @@
 page_title: "ssm_cloud_connector function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm cloud-connector ARN
+  ssm cloud-connector ARN
 ---
 
 # function: ssm_cloud_connector
 
-Builds the ARN of an `ssm` `cloud-connector`:
+Builds the ARN for `ssm` `cloud-connector`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:cloud-connector/${CloudConnectorId}

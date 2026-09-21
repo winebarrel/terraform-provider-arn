@@ -3,12 +3,12 @@
 page_title: "cloudhsm_backup function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudhsm backup ARN
+  cloudhsm backup ARN
 ---
 
 # function: cloudhsm_backup
 
-Builds the ARN of an `cloudhsm` `backup`:
+Builds the ARN for `cloudhsm` `backup`:
 
 ```
 arn:${Partition}:cloudhsm:${Region}:${Account}:backup/${CloudHsmBackupInstanceName}

@@ -3,12 +3,12 @@
 page_title: "iot_destination function - arn"
 subcategory: ""
 description: |-
-  Builds an iot destination ARN
+  iot destination ARN
 ---
 
 # function: iot_destination
 
-Builds the ARN of an `iot` `destination`:
+Builds the ARN for `iot` `destination`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:ruledestination/${DestinationType}/${Uuid}

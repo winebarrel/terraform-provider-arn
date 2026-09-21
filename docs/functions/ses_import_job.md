@@ -3,12 +3,12 @@
 page_title: "ses_import_job function - arn"
 subcategory: ""
 description: |-
-  Builds an ses import-job ARN
+  ses import-job ARN
 ---
 
 # function: ses_import_job
 
-Builds the ARN of an `ses` `import-job`:
+Builds the ARN for `ses` `import-job`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:import-job/${ImportJobId}

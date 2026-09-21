@@ -3,12 +3,12 @@
 page_title: "iotmanagedintegrations_account_association function - arn"
 subcategory: ""
 description: |-
-  Builds an iotmanagedintegrations account-association ARN
+  iotmanagedintegrations account-association ARN
 ---
 
 # function: iotmanagedintegrations_account_association
 
-Builds the ARN of an `iotmanagedintegrations` `account-association`:
+Builds the ARN for `iotmanagedintegrations` `account-association`:
 
 ```
 arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:account-association/${AccountAssociationId}

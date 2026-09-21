@@ -3,12 +3,12 @@
 page_title: "redshift_snapshotcopygrant function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift snapshotcopygrant ARN
+  redshift snapshotcopygrant ARN
 ---
 
 # function: redshift_snapshotcopygrant
 
-Builds the ARN of an `redshift` `snapshotcopygrant`:
+Builds the ARN for `redshift` `snapshotcopygrant`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:snapshotcopygrant:${SnapshotCopyGrantName}

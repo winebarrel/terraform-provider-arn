@@ -3,12 +3,12 @@
 page_title: "ts_tool function - arn"
 subcategory: ""
 description: |-
-  Builds an ts tool ARN
+  ts tool ARN
 ---
 
 # function: ts_tool
 
-Builds the ARN of an `ts` `tool`:
+Builds the ARN for `ts` `tool`:
 
 ```
 arn:${Partition}:ts::aws:tool/${ToolId}

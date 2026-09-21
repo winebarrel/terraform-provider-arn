@@ -3,12 +3,12 @@
 page_title: "logs_lookup_table function - arn"
 subcategory: ""
 description: |-
-  Builds an logs lookup-table ARN
+  logs lookup-table ARN
 ---
 
 # function: logs_lookup_table
 
-Builds the ARN of an `logs` `lookup-table`:
+Builds the ARN for `logs` `lookup-table`:
 
 ```
 arn:${Partition}:logs:${Region}:${Account}:lookup-table:${LookupTableName}

@@ -3,12 +3,12 @@
 page_title: "omics_run_group function - arn"
 subcategory: ""
 description: |-
-  Builds an omics runGroup ARN
+  omics runGroup ARN
 ---
 
 # function: omics_run_group
 
-Builds the ARN of an `omics` `runGroup`:
+Builds the ARN for `omics` `runGroup`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:runGroup/${Id}

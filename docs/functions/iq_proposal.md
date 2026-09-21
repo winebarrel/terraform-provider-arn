@@ -3,12 +3,12 @@
 page_title: "iq_proposal function - arn"
 subcategory: ""
 description: |-
-  Builds an iq proposal ARN
+  iq proposal ARN
 ---
 
 # function: iq_proposal
 
-Builds the ARN of an `iq` `proposal`:
+Builds the ARN for `iq` `proposal`:
 
 ```
 arn:${Partition}:iq:${Region}::proposal/${ConversationId}/${ProposalId}

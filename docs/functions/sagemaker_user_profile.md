@@ -3,12 +3,12 @@
 page_title: "sagemaker_user_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker user-profile ARN
+  sagemaker user-profile ARN
 ---
 
 # function: sagemaker_user_profile
 
-Builds the ARN of an `sagemaker` `user-profile`:
+Builds the ARN for `sagemaker` `user-profile`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:user-profile/${DomainId}/${UserProfileName}

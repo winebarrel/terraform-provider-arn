@@ -3,12 +3,12 @@
 page_title: "codestar_connections_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an codestar-connections Connection ARN
+  codestar-connections Connection ARN
 ---
 
 # function: codestar_connections_connection
 
-Builds the ARN of an `codestar-connections` `Connection`:
+Builds the ARN for `codestar-connections` `Connection`:
 
 ```
 arn:${Partition}:codestar-connections:${Region}:${Account}:connection/${ConnectionId}

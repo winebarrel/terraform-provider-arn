@@ -3,12 +3,12 @@
 page_title: "profile_layouts function - arn"
 subcategory: ""
 description: |-
-  Builds an profile layouts ARN
+  profile layouts ARN
 ---
 
 # function: profile_layouts
 
-Builds the ARN of an `profile` `layouts`:
+Builds the ARN for `profile` `layouts`:
 
 ```
 arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/layouts/${LayoutDefinitionName}

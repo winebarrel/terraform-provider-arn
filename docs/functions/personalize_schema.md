@@ -3,12 +3,12 @@
 page_title: "personalize_schema function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize schema ARN
+  personalize schema ARN
 ---
 
 # function: personalize_schema
 
-Builds the ARN of an `personalize` `schema`:
+Builds the ARN for `personalize` `schema`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:schema/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "iq_payment_request function - arn"
 subcategory: ""
 description: |-
-  Builds an iq paymentRequest ARN
+  iq paymentRequest ARN
 ---
 
 # function: iq_payment_request
 
-Builds the ARN of an `iq` `paymentRequest`:
+Builds the ARN for `iq` `paymentRequest`:
 
 ```
 arn:${Partition}:iq:${Region}::paymentRequest/${ConversationId}/${ProposalId}/${PaymentRequestId}

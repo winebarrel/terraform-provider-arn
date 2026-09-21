@@ -3,12 +3,12 @@
 page_title: "waf_regional_ipset function - arn"
 subcategory: ""
 description: |-
-  Builds an waf-regional ipset ARN
+  waf-regional ipset ARN
 ---
 
 # function: waf_regional_ipset
 
-Builds the ARN of an `waf-regional` `ipset`:
+Builds the ARN for `waf-regional` `ipset`:
 
 ```
 arn:${Partition}:waf-regional:${Region}:${Account}:ipset/${Id}

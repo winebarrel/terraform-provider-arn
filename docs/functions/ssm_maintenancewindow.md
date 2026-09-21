@@ -3,12 +3,12 @@
 page_title: "ssm_maintenancewindow function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm maintenancewindow ARN
+  ssm maintenancewindow ARN
 ---
 
 # function: ssm_maintenancewindow
 
-Builds the ARN of an `ssm` `maintenancewindow`:
+Builds the ARN for `ssm` `maintenancewindow`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:maintenancewindow/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "ecs_service_revision function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs service-revision ARN
+  ecs service-revision ARN
 ---
 
 # function: ecs_service_revision
 
-Builds the ARN of an `ecs` `service-revision`:
+Builds the ARN for `ecs` `service-revision`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:service-revision/${ClusterName}/${ServiceName}/${ServiceRevisionId}

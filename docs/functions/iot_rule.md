@@ -3,12 +3,12 @@
 page_title: "iot_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an iot rule ARN
+  iot rule ARN
 ---
 
 # function: iot_rule
 
-Builds the ARN of an `iot` `rule`:
+Builds the ARN for `iot` `rule`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:rule/${RuleName}

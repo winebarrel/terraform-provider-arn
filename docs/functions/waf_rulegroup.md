@@ -3,12 +3,12 @@
 page_title: "waf_rulegroup function - arn"
 subcategory: ""
 description: |-
-  Builds an waf rulegroup ARN
+  waf rulegroup ARN
 ---
 
 # function: waf_rulegroup
 
-Builds the ARN of an `waf` `rulegroup`:
+Builds the ARN for `waf` `rulegroup`:
 
 ```
 arn:${Partition}:waf::${Account}:rulegroup/${Id}

@@ -3,12 +3,12 @@
 page_title: "athena_capacity_reservation function - arn"
 subcategory: ""
 description: |-
-  Builds an athena capacity-reservation ARN
+  athena capacity-reservation ARN
 ---
 
 # function: athena_capacity_reservation
 
-Builds the ARN of an `athena` `capacity-reservation`:
+Builds the ARN for `athena` `capacity-reservation`:
 
 ```
 arn:${Partition}:athena:${Region}:${Account}:capacity-reservation/${CapacityReservationName}

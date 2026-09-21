@@ -3,12 +3,12 @@
 page_title: "storagegateway_cache_report function - arn"
 subcategory: ""
 description: |-
-  Builds an storagegateway cache-report ARN
+  storagegateway cache-report ARN
 ---
 
 # function: storagegateway_cache_report
 
-Builds the ARN of an `storagegateway` `cache-report`:
+Builds the ARN for `storagegateway` `cache-report`:
 
 ```
 arn:${Partition}:storagegateway:${Region}:${Account}:share/${ShareId}/cache-report/${CacheReportId}

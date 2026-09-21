@@ -3,12 +3,12 @@
 page_title: "organizations_root function - arn"
 subcategory: ""
 description: |-
-  Builds an organizations root ARN
+  organizations root ARN
 ---
 
 # function: organizations_root
 
-Builds the ARN of an `organizations` `root`:
+Builds the ARN for `organizations` `root`:
 
 ```
 arn:${Partition}:organizations::${Account}:root/o-${OrganizationId}/r-${RootId}

@@ -3,12 +3,12 @@
 page_title: "partnercentral_connection_preferences function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral ConnectionPreferences ARN
+  partnercentral ConnectionPreferences ARN
 ---
 
 # function: partnercentral_connection_preferences
 
-Builds the ARN of an `partnercentral` `ConnectionPreferences`:
+Builds the ARN for `partnercentral` `ConnectionPreferences`:
 
 ```
 arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/connection-preferences

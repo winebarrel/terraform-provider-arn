@@ -3,12 +3,12 @@
 page_title: "quicksight_analysis function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight analysis ARN
+  quicksight analysis ARN
 ---
 
 # function: quicksight_analysis
 
-Builds the ARN of an `quicksight` `analysis`:
+Builds the ARN for `quicksight` `analysis`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:analysis/${ResourceId}

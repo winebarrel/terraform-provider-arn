@@ -3,12 +3,12 @@
 page_title: "iotwireless_network_analyzer_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless NetworkAnalyzerConfiguration ARN
+  iotwireless NetworkAnalyzerConfiguration ARN
 ---
 
 # function: iotwireless_network_analyzer_configuration
 
-Builds the ARN of an `iotwireless` `NetworkAnalyzerConfiguration`:
+Builds the ARN for `iotwireless` `NetworkAnalyzerConfiguration`:
 
 ```
 arn:${Partition}:iotwireless:${Region}:${Account}:NetworkAnalyzerConfiguration/${NetworkAnalyzerConfigurationName}

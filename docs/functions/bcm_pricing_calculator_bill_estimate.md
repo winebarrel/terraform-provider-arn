@@ -3,12 +3,12 @@
 page_title: "bcm_pricing_calculator_bill_estimate function - arn"
 subcategory: ""
 description: |-
-  Builds an bcm-pricing-calculator bill-estimate ARN
+  bcm-pricing-calculator bill-estimate ARN
 ---
 
 # function: bcm_pricing_calculator_bill_estimate
 
-Builds the ARN of an `bcm-pricing-calculator` `bill-estimate`:
+Builds the ARN for `bcm-pricing-calculator` `bill-estimate`:
 
 ```
 arn:${Partition}:bcm-pricing-calculator::${Account}:bill-estimate/${BillEstimateId}

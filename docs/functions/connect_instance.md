@@ -3,12 +3,12 @@
 page_title: "connect_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an connect instance ARN
+  connect instance ARN
 ---
 
 # function: connect_instance
 
-Builds the ARN of an `connect` `instance`:
+Builds the ARN for `connect` `instance`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}

@@ -3,12 +3,12 @@
 page_title: "apptest_test_suite function - arn"
 subcategory: ""
 description: |-
-  Builds an apptest TestSuite ARN
+  apptest TestSuite ARN
 ---
 
 # function: apptest_test_suite
 
-Builds the ARN of an `apptest` `TestSuite`:
+Builds the ARN for `apptest` `TestSuite`:
 
 ```
 arn:${Partition}:apptest:${Region}:${Account}:testsuite/${TestSuiteId}

@@ -3,12 +3,12 @@
 page_title: "iotmanagedintegrations_credential_locker function - arn"
 subcategory: ""
 description: |-
-  Builds an iotmanagedintegrations credential-locker ARN
+  iotmanagedintegrations credential-locker ARN
 ---
 
 # function: iotmanagedintegrations_credential_locker
 
-Builds the ARN of an `iotmanagedintegrations` `credential-locker`:
+Builds the ARN for `iotmanagedintegrations` `credential-locker`:
 
 ```
 arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:credential-locker/${Identifier}

@@ -3,12 +3,12 @@
 page_title: "ses_mailmanager_ingress_point function - arn"
 subcategory: ""
 description: |-
-  Builds an ses mailmanager-ingress-point ARN
+  ses mailmanager-ingress-point ARN
 ---
 
 # function: ses_mailmanager_ingress_point
 
-Builds the ARN of an `ses` `mailmanager-ingress-point`:
+Builds the ARN for `ses` `mailmanager-ingress-point`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:mailmanager-ingress-point/${IngressPointId}

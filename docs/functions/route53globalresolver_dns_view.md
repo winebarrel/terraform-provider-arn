@@ -3,12 +3,12 @@
 page_title: "route53globalresolver_dns_view function - arn"
 subcategory: ""
 description: |-
-  Builds an route53globalresolver dns-view ARN
+  route53globalresolver dns-view ARN
 ---
 
 # function: route53globalresolver_dns_view
 
-Builds the ARN of an `route53globalresolver` `dns-view`:
+Builds the ARN for `route53globalresolver` `dns-view`:
 
 ```
 arn:${Partition}:route53globalresolver::${Account}:dns-view/${Id}

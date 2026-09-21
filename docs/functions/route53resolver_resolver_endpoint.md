@@ -3,12 +3,12 @@
 page_title: "route53resolver_resolver_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an route53resolver resolver-endpoint ARN
+  route53resolver resolver-endpoint ARN
 ---
 
 # function: route53resolver_resolver_endpoint
 
-Builds the ARN of an `route53resolver` `resolver-endpoint`:
+Builds the ARN for `route53resolver` `resolver-endpoint`:
 
 ```
 arn:${Partition}:route53resolver:${Region}:${Account}:resolver-endpoint/${ResourceId}

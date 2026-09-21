@@ -3,12 +3,12 @@
 page_title: "cloudfront_function function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront function ARN
+  cloudfront function ARN
 ---
 
 # function: cloudfront_function
 
-Builds the ARN of an `cloudfront` `function`:
+Builds the ARN for `cloudfront` `function`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:function/${Name}

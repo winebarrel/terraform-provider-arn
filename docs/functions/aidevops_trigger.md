@@ -3,12 +3,12 @@
 page_title: "aidevops_trigger function - arn"
 subcategory: ""
 description: |-
-  Builds an aidevops trigger ARN
+  aidevops trigger ARN
 ---
 
 # function: aidevops_trigger
 
-Builds the ARN of an `aidevops` `trigger`:
+Builds the ARN for `aidevops` `trigger`:
 
 ```
 arn:${Partition}:aidevops:${Region}:${Account}:agentspace/${AgentSpaceId}/trigger/${TriggerId}

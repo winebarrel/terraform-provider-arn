@@ -3,12 +3,12 @@
 page_title: "iam_user function - arn"
 subcategory: ""
 description: |-
-  Builds an iam user ARN
+  iam user ARN
 ---
 
 # function: iam_user
 
-Builds the ARN of an `iam` `user`:
+Builds the ARN for `iam` `user`:
 
 ```
 arn:${Partition}:iam::${Account}:user/${UserNameWithPath}

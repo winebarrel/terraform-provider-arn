@@ -3,12 +3,12 @@
 page_title: "medialive_channel_placement_group function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive channel-placement-group ARN
+  medialive channel-placement-group ARN
 ---
 
 # function: medialive_channel_placement_group
 
-Builds the ARN of an `medialive` `channel-placement-group`:
+Builds the ARN for `medialive` `channel-placement-group`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:channelPlacementGroup:${ClusterId}/${ChannelPlacementGroupId}

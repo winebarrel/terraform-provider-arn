@@ -3,12 +3,12 @@
 page_title: "devicefarm_test function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm test ARN
+  devicefarm test ARN
 ---
 
 # function: devicefarm_test
 
-Builds the ARN of an `devicefarm` `test`:
+Builds the ARN for `devicefarm` `test`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:test:${ResourceId}

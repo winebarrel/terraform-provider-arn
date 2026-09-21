@@ -3,12 +3,12 @@
 page_title: "snow_device_management_task function - arn"
 subcategory: ""
 description: |-
-  Builds an snow-device-management task ARN
+  snow-device-management task ARN
 ---
 
 # function: snow_device_management_task
 
-Builds the ARN of an `snow-device-management` `task`:
+Builds the ARN for `snow-device-management` `task`:
 
 ```
 arn:${Partition}:snow-device-management:${Region}:${Account}:task/${ResourceId}

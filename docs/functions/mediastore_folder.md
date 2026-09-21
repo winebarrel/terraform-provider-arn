@@ -3,12 +3,12 @@
 page_title: "mediastore_folder function - arn"
 subcategory: ""
 description: |-
-  Builds an mediastore folder ARN
+  mediastore folder ARN
 ---
 
 # function: mediastore_folder
 
-Builds the ARN of an `mediastore` `folder`:
+Builds the ARN for `mediastore` `folder`:
 
 ```
 arn:${Partition}:mediastore:${Region}:${Account}:container/${ContainerName}/${FolderPath}

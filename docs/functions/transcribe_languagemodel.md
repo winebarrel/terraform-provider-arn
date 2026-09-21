@@ -3,12 +3,12 @@
 page_title: "transcribe_languagemodel function - arn"
 subcategory: ""
 description: |-
-  Builds an transcribe languagemodel ARN
+  transcribe languagemodel ARN
 ---
 
 # function: transcribe_languagemodel
 
-Builds the ARN of an `transcribe` `languagemodel`:
+Builds the ARN for `transcribe` `languagemodel`:
 
 ```
 arn:${Partition}:transcribe:${Region}:${Account}:language-model/${ModelName}

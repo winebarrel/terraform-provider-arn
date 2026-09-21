@@ -3,12 +3,12 @@
 page_title: "dms_replication_task_individual_assessment function - arn"
 subcategory: ""
 description: |-
-  Builds an dms ReplicationTaskIndividualAssessment ARN
+  dms ReplicationTaskIndividualAssessment ARN
 ---
 
 # function: dms_replication_task_individual_assessment
 
-Builds the ARN of an `dms` `ReplicationTaskIndividualAssessment`:
+Builds the ARN for `dms` `ReplicationTaskIndividualAssessment`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:individual-assessment:*

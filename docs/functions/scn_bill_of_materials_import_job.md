@@ -3,12 +3,12 @@
 page_title: "scn_bill_of_materials_import_job function - arn"
 subcategory: ""
 description: |-
-  Builds an scn bill-of-materials-import-job ARN
+  scn bill-of-materials-import-job ARN
 ---
 
 # function: scn_bill_of_materials_import_job
 
-Builds the ARN of an `scn` `bill-of-materials-import-job`:
+Builds the ARN for `scn` `bill-of-materials-import-job`:
 
 ```
 arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/bill-of-materials-import-job/${JobId}

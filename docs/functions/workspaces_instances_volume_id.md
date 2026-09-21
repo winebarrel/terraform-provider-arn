@@ -3,12 +3,12 @@
 page_title: "workspaces_instances_volume_id function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces-instances VolumeId ARN
+  workspaces-instances VolumeId ARN
 ---
 
 # function: workspaces_instances_volume_id
 
-Builds the ARN of an `workspaces-instances` `VolumeId`:
+Builds the ARN for `workspaces-instances` `VolumeId`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:volume/${VolumeId}

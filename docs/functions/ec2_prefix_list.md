@@ -3,12 +3,12 @@
 page_title: "ec2_prefix_list function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 prefix-list ARN
+  ec2 prefix-list ARN
 ---
 
 # function: ec2_prefix_list
 
-Builds the ARN of an `ec2` `prefix-list`:
+Builds the ARN for `ec2` `prefix-list`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:prefix-list/${PrefixListId}

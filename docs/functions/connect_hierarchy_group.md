@@ -3,12 +3,12 @@
 page_title: "connect_hierarchy_group function - arn"
 subcategory: ""
 description: |-
-  Builds an connect hierarchy-group ARN
+  connect hierarchy-group ARN
 ---
 
 # function: connect_hierarchy_group
 
-Builds the ARN of an `connect` `hierarchy-group`:
+Builds the ARN for `connect` `hierarchy-group`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/agent-group/${HierarchyGroupId}

@@ -3,12 +3,12 @@
 page_title: "servicediscovery_namespace function - arn"
 subcategory: ""
 description: |-
-  Builds an servicediscovery namespace ARN
+  servicediscovery namespace ARN
 ---
 
 # function: servicediscovery_namespace
 
-Builds the ARN of an `servicediscovery` `namespace`:
+Builds the ARN for `servicediscovery` `namespace`:
 
 ```
 arn:${Partition}:servicediscovery:${Region}:${Account}:namespace/${NamespaceId}

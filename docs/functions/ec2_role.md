@@ -3,12 +3,12 @@
 page_title: "ec2_role function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 role ARN
+  ec2 role ARN
 ---
 
 # function: ec2_role
 
-Builds the ARN of an `ec2` `role`:
+Builds the ARN for `ec2` `role`:
 
 ```
 arn:${Partition}:iam::${Account}:role/${RoleNameWithPath}

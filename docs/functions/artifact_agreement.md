@@ -3,12 +3,12 @@
 page_title: "artifact_agreement function - arn"
 subcategory: ""
 description: |-
-  Builds an artifact agreement ARN
+  artifact agreement ARN
 ---
 
 # function: artifact_agreement
 
-Builds the ARN of an `artifact` `agreement`:
+Builds the ARN for `artifact` `agreement`:
 
 ```
 arn:${Partition}:artifact:::agreement/*

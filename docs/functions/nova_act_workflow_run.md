@@ -3,12 +3,12 @@
 page_title: "nova_act_workflow_run function - arn"
 subcategory: ""
 description: |-
-  Builds an nova-act workflow-run ARN
+  nova-act workflow-run ARN
 ---
 
 # function: nova_act_workflow_run
 
-Builds the ARN of an `nova-act` `workflow-run`:
+Builds the ARN for `nova-act` `workflow-run`:
 
 ```
 arn:${Partition}:nova-act:${Region}:${Account}:workflow-definition/${WorkflowDefinitionName}/workflow-run/${WorkflowRunId}

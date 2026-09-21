@@ -3,12 +3,12 @@
 page_title: "quicksight_account function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight account ARN
+  quicksight account ARN
 ---
 
 # function: quicksight_account
 
-Builds the ARN of an `quicksight` `account`:
+Builds the ARN for `quicksight` `account`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:account/${ResourceId}

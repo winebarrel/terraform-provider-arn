@@ -3,12 +3,12 @@
 page_title: "amplifybackend_config function - arn"
 subcategory: ""
 description: |-
-  Builds an amplifybackend config ARN
+  amplifybackend config ARN
 ---
 
 # function: amplifybackend_config
 
-Builds the ARN of an `amplifybackend` `config`:
+Builds the ARN for `amplifybackend` `config`:
 
 ```
 arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/config/*

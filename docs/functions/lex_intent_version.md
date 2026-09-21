@@ -3,12 +3,12 @@
 page_title: "lex_intent_version function - arn"
 subcategory: ""
 description: |-
-  Builds an lex intent version ARN
+  lex intent version ARN
 ---
 
 # function: lex_intent_version
 
-Builds the ARN of an `lex` `intent version`:
+Builds the ARN for `lex` `intent version`:
 
 ```
 arn:${Partition}:lex:${Region}:${Account}:intent:${IntentName}:${IntentVersion}

@@ -3,12 +3,12 @@
 page_title: "ec2_transit_gateway_route_table function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 transit-gateway-route-table ARN
+  ec2 transit-gateway-route-table ARN
 ---
 
 # function: ec2_transit_gateway_route_table
 
-Builds the ARN of an `ec2` `transit-gateway-route-table`:
+Builds the ARN for `ec2` `transit-gateway-route-table`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:transit-gateway-route-table/${TransitGatewayRouteTableId}

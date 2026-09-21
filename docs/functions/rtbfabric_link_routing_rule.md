@@ -3,12 +3,12 @@
 page_title: "rtbfabric_link_routing_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an rtbfabric LinkRoutingRule ARN
+  rtbfabric LinkRoutingRule ARN
 ---
 
 # function: rtbfabric_link_routing_rule
 
-Builds the ARN of an `rtbfabric` `LinkRoutingRule`:
+Builds the ARN for `rtbfabric` `LinkRoutingRule`:
 
 ```
 arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}/link/${LinkId}/routing-rule/${RuleId}

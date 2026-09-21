@@ -3,12 +3,12 @@
 page_title: "synthetics_canary function - arn"
 subcategory: ""
 description: |-
-  Builds an synthetics canary ARN
+  synthetics canary ARN
 ---
 
 # function: synthetics_canary
 
-Builds the ARN of an `synthetics` `canary`:
+Builds the ARN for `synthetics` `canary`:
 
 ```
 arn:${Partition}:synthetics:${Region}:${Account}:canary:${CanaryName}

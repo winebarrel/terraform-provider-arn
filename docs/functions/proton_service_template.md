@@ -3,12 +3,12 @@
 page_title: "proton_service_template function - arn"
 subcategory: ""
 description: |-
-  Builds an proton service-template ARN
+  proton service-template ARN
 ---
 
 # function: proton_service_template
 
-Builds the ARN of an `proton` `service-template`:
+Builds the ARN for `proton` `service-template`:
 
 ```
 arn:${Partition}:proton:${Region}:${Account}:service-template/${Name}

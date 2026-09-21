@@ -3,12 +3,12 @@
 page_title: "frauddetector_list function - arn"
 subcategory: ""
 description: |-
-  Builds an frauddetector list ARN
+  frauddetector list ARN
 ---
 
 # function: frauddetector_list
 
-Builds the ARN of an `frauddetector` `list`:
+Builds the ARN for `frauddetector` `list`:
 
 ```
 arn:${Partition}:frauddetector:${Region}:${Account}:list/${ResourcePath}

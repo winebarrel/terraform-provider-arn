@@ -3,12 +3,12 @@
 page_title: "robomaker_world_export_job function - arn"
 subcategory: ""
 description: |-
-  Builds an robomaker worldExportJob ARN
+  robomaker worldExportJob ARN
 ---
 
 # function: robomaker_world_export_job
 
-Builds the ARN of an `robomaker` `worldExportJob`:
+Builds the ARN for `robomaker` `worldExportJob`:
 
 ```
 arn:${Partition}:robomaker:${Region}:${Account}:world-export-job/${WorldExportJobId}

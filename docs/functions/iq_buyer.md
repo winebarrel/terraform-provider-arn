@@ -3,12 +3,12 @@
 page_title: "iq_buyer function - arn"
 subcategory: ""
 description: |-
-  Builds an iq buyer ARN
+  iq buyer ARN
 ---
 
 # function: iq_buyer
 
-Builds the ARN of an `iq` `buyer`:
+Builds the ARN for `iq` `buyer`:
 
 ```
 arn:${Partition}:iq:${Region}::buyer/${BuyerId}

@@ -3,12 +3,12 @@
 page_title: "cloudtrail_trail function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudtrail trail ARN
+  cloudtrail trail ARN
 ---
 
 # function: cloudtrail_trail
 
-Builds the ARN of an `cloudtrail` `trail`:
+Builds the ARN for `cloudtrail` `trail`:
 
 ```
 arn:${Partition}:cloudtrail:${Region}:${Account}:trail/${TrailName}

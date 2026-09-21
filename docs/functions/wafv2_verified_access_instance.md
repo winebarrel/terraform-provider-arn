@@ -3,12 +3,12 @@
 page_title: "wafv2_verified_access_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an wafv2 verified-access-instance ARN
+  wafv2 verified-access-instance ARN
 ---
 
 # function: wafv2_verified_access_instance
 
-Builds the ARN of an `wafv2` `verified-access-instance`:
+Builds the ARN for `wafv2` `verified-access-instance`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:verified-access-instance/${VerifiedAccessInstanceId}

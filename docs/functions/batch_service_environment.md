@@ -3,12 +3,12 @@
 page_title: "batch_service_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an batch service-environment ARN
+  batch service-environment ARN
 ---
 
 # function: batch_service_environment
 
-Builds the ARN of an `batch` `service-environment`:
+Builds the ARN for `batch` `service-environment`:
 
 ```
 arn:${Partition}:batch:${Region}:${Account}:service-environment/${ServiceEnvironmentName}

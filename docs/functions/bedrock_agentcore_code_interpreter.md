@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_code_interpreter function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore code-interpreter ARN
+  bedrock-agentcore code-interpreter ARN
 ---
 
 # function: bedrock_agentcore_code_interpreter
 
-Builds the ARN of an `bedrock-agentcore` `code-interpreter`:
+Builds the ARN for `bedrock-agentcore` `code-interpreter`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:aws:code-interpreter/${CodeInterpreterId}

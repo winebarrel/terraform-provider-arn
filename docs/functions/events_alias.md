@@ -3,12 +3,12 @@
 page_title: "events_alias function - arn"
 subcategory: ""
 description: |-
-  Builds an events alias ARN
+  events alias ARN
 ---
 
 # function: events_alias
 
-Builds the ARN of an `events` `alias`:
+Builds the ARN for `events` `alias`:
 
 ```
 arn:${Partition}:kms:${Region}:${Account}:alias/${Alias}

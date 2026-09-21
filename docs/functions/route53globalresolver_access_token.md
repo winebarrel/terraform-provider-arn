@@ -3,12 +3,12 @@
 page_title: "route53globalresolver_access_token function - arn"
 subcategory: ""
 description: |-
-  Builds an route53globalresolver access-token ARN
+  route53globalresolver access-token ARN
 ---
 
 # function: route53globalresolver_access_token
 
-Builds the ARN of an `route53globalresolver` `access-token`:
+Builds the ARN for `route53globalresolver` `access-token`:
 
 ```
 arn:${Partition}:route53globalresolver::${Account}:access-token/${Id}

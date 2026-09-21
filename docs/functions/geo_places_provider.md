@@ -3,12 +3,12 @@
 page_title: "geo_places_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an geo-places provider ARN
+  geo-places provider ARN
 ---
 
 # function: geo_places_provider
 
-Builds the ARN of an `geo-places` `provider`:
+Builds the ARN for `geo-places` `provider`:
 
 ```
 arn:${Partition}:geo-places:${Region}::provider/default

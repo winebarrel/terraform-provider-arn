@@ -3,12 +3,12 @@
 page_title: "sts_role function - arn"
 subcategory: ""
 description: |-
-  Builds an sts role ARN
+  sts role ARN
 ---
 
 # function: sts_role
 
-Builds the ARN of an `sts` `role`:
+Builds the ARN for `sts` `role`:
 
 ```
 arn:${Partition}:iam::${Account}:role/${RoleNameWithPath}

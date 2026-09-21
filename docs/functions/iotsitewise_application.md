@@ -3,12 +3,12 @@
 page_title: "iotsitewise_application function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise application ARN
+  iotsitewise application ARN
 ---
 
 # function: iotsitewise_application
 
-Builds the ARN of an `iotsitewise` `application`:
+Builds the ARN for `iotsitewise` `application`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:workspace/${WorkspaceName}/application/${ApplicationId}

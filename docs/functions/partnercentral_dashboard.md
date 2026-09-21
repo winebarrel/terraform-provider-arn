@@ -3,12 +3,12 @@
 page_title: "partnercentral_dashboard function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral Dashboard ARN
+  partnercentral Dashboard ARN
 ---
 
 # function: partnercentral_dashboard
 
-Builds the ARN of an `partnercentral` `Dashboard`:
+Builds the ARN for `partnercentral` `Dashboard`:
 
 ```
 arn:${Partition}:partnercentral::${Account}:catalog/${Catalog}/ReportingData/${TableId}/Dashboard/${DashboardId}

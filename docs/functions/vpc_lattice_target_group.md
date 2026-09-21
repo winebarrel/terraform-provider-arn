@@ -3,12 +3,12 @@
 page_title: "vpc_lattice_target_group function - arn"
 subcategory: ""
 description: |-
-  Builds an vpc-lattice TargetGroup ARN
+  vpc-lattice TargetGroup ARN
 ---
 
 # function: vpc_lattice_target_group
 
-Builds the ARN of an `vpc-lattice` `TargetGroup`:
+Builds the ARN for `vpc-lattice` `TargetGroup`:
 
 ```
 arn:${Partition}:vpc-lattice:${Region}:${Account}:targetgroup/${TargetGroupId}

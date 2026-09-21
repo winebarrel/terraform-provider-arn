@@ -3,12 +3,12 @@
 page_title: "inspector2_cis_scan_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an inspector2 CIS Scan Configuration ARN
+  inspector2 CIS Scan Configuration ARN
 ---
 
 # function: inspector2_cis_scan_configuration
 
-Builds the ARN of an `inspector2` `CIS Scan Configuration`:
+Builds the ARN for `inspector2` `CIS Scan Configuration`:
 
 ```
 arn:${Partition}:inspector2:${Region}:${Account}:owner/${OwnerId}/cis-configuration/${CISScanConfigurationId}

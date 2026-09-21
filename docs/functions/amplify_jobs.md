@@ -3,12 +3,12 @@
 page_title: "amplify_jobs function - arn"
 subcategory: ""
 description: |-
-  Builds an amplify jobs ARN
+  amplify jobs ARN
 ---
 
 # function: amplify_jobs
 
-Builds the ARN of an `amplify` `jobs`:
+Builds the ARN for `amplify` `jobs`:
 
 ```
 arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}/branches/${BranchName}/jobs/${JobId}

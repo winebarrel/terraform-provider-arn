@@ -3,12 +3,12 @@
 page_title: "backup_backup_vault function - arn"
 subcategory: ""
 description: |-
-  Builds an backup backupVault ARN
+  backup backupVault ARN
 ---
 
 # function: backup_backup_vault
 
-Builds the ARN of an `backup` `backupVault`:
+Builds the ARN for `backup` `backupVault`:
 
 ```
 arn:${Partition}:backup:${Region}:${Account}:backup-vault:${BackupVaultName}

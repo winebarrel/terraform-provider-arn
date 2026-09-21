@@ -3,12 +3,12 @@
 page_title: "waf_geomatchset function - arn"
 subcategory: ""
 description: |-
-  Builds an waf geomatchset ARN
+  waf geomatchset ARN
 ---
 
 # function: waf_geomatchset
 
-Builds the ARN of an `waf` `geomatchset`:
+Builds the ARN for `waf` `geomatchset`:
 
 ```
 arn:${Partition}:waf::${Account}:geomatchset/${Id}

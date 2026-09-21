@@ -3,12 +3,12 @@
 page_title: "b2bi_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an b2bi profile ARN
+  b2bi profile ARN
 ---
 
 # function: b2bi_profile
 
-Builds the ARN of an `b2bi` `profile`:
+Builds the ARN for `b2bi` `profile`:
 
 ```
 arn:${Partition}:b2bi:${Region}:${Account}:profile/${ResourceId}

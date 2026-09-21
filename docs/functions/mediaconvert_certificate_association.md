@@ -3,12 +3,12 @@
 page_title: "mediaconvert_certificate_association function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconvert CertificateAssociation ARN
+  mediaconvert CertificateAssociation ARN
 ---
 
 # function: mediaconvert_certificate_association
 
-Builds the ARN of an `mediaconvert` `CertificateAssociation`:
+Builds the ARN for `mediaconvert` `CertificateAssociation`:
 
 ```
 arn:${Partition}:mediaconvert:${Region}:${Account}:certificates/${CertificateArn}

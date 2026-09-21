@@ -3,12 +3,12 @@
 page_title: "route53_change function - arn"
 subcategory: ""
 description: |-
-  Builds an route53 change ARN
+  route53 change ARN
 ---
 
 # function: route53_change
 
-Builds the ARN of an `route53` `change`:
+Builds the ARN for `route53` `change`:
 
 ```
 arn:${Partition}:route53:::change/${Id}

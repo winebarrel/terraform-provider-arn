@@ -3,12 +3,12 @@
 page_title: "quicksight_refreshschedule function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight refreshschedule ARN
+  quicksight refreshschedule ARN
 ---
 
 # function: quicksight_refreshschedule
 
-Builds the ARN of an `quicksight` `refreshschedule`:
+Builds the ARN for `quicksight` `refreshschedule`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:dataset/${DatasetId}/refresh-schedule/${ResourceId}

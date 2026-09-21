@@ -3,12 +3,12 @@
 page_title: "ivs_ad_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an ivs Ad-Configuration ARN
+  ivs Ad-Configuration ARN
 ---
 
 # function: ivs_ad_configuration
 
-Builds the ARN of an `ivs` `Ad-Configuration`:
+Builds the ARN for `ivs` `Ad-Configuration`:
 
 ```
 arn:${Partition}:ivs:${Region}:${Account}:ad-configuration/${ResourceId}

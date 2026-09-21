@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_online_evaluation_config function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore online-evaluation-config ARN
+  bedrock-agentcore online-evaluation-config ARN
 ---
 
 # function: bedrock_agentcore_online_evaluation_config
 
-Builds the ARN of an `bedrock-agentcore` `online-evaluation-config`:
+Builds the ARN for `bedrock-agentcore` `online-evaluation-config`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:online-evaluation-config/${OnlineEvaluationConfigId}

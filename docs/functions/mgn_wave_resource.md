@@ -3,12 +3,12 @@
 page_title: "mgn_wave_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgn WaveResource ARN
+  mgn WaveResource ARN
 ---
 
 # function: mgn_wave_resource
 
-Builds the ARN of an `mgn` `WaveResource`:
+Builds the ARN for `mgn` `WaveResource`:
 
 ```
 arn:${Partition}:mgn:${Region}:${Account}:wave/${WaveID}

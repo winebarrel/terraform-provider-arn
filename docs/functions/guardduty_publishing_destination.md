@@ -3,12 +3,12 @@
 page_title: "guardduty_publishing_destination function - arn"
 subcategory: ""
 description: |-
-  Builds an guardduty publishingDestination ARN
+  guardduty publishingDestination ARN
 ---
 
 # function: guardduty_publishing_destination
 
-Builds the ARN of an `guardduty` `publishingDestination`:
+Builds the ARN for `guardduty` `publishingDestination`:
 
 ```
 arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/publishingdestination/${PublishingDestinationId}

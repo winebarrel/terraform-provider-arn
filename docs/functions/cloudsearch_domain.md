@@ -3,12 +3,12 @@
 page_title: "cloudsearch_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudsearch domain ARN
+  cloudsearch domain ARN
 ---
 
 # function: cloudsearch_domain
 
-Builds the ARN of an `cloudsearch` `domain`:
+Builds the ARN for `cloudsearch` `domain`:
 
 ```
 arn:${Partition}:cloudsearch:${Region}:${Account}:domain/${DomainName}

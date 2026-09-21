@@ -3,12 +3,12 @@
 page_title: "waf_regional_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an waf-regional rule ARN
+  waf-regional rule ARN
 ---
 
 # function: waf_regional_rule
 
-Builds the ARN of an `waf-regional` `rule`:
+Builds the ARN for `waf-regional` `rule`:
 
 ```
 arn:${Partition}:waf-regional:${Region}:${Account}:rule/${Id}

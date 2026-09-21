@@ -3,12 +3,12 @@
 page_title: "elastictranscoder_job function - arn"
 subcategory: ""
 description: |-
-  Builds an elastictranscoder job ARN
+  elastictranscoder job ARN
 ---
 
 # function: elastictranscoder_job
 
-Builds the ARN of an `elastictranscoder` `job`:
+Builds the ARN for `elastictranscoder` `job`:
 
 ```
 arn:${Partition}:elastictranscoder:${Region}:${Account}:job/${JobId}

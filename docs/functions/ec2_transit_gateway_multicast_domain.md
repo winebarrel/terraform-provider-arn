@@ -3,12 +3,12 @@
 page_title: "ec2_transit_gateway_multicast_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 transit-gateway-multicast-domain ARN
+  ec2 transit-gateway-multicast-domain ARN
 ---
 
 # function: ec2_transit_gateway_multicast_domain
 
-Builds the ARN of an `ec2` `transit-gateway-multicast-domain`:
+Builds the ARN for `ec2` `transit-gateway-multicast-domain`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:transit-gateway-multicast-domain/${TransitGatewayMulticastDomainId}

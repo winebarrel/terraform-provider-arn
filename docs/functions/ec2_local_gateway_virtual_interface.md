@@ -3,12 +3,12 @@
 page_title: "ec2_local_gateway_virtual_interface function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 local-gateway-virtual-interface ARN
+  ec2 local-gateway-virtual-interface ARN
 ---
 
 # function: ec2_local_gateway_virtual_interface
 
-Builds the ARN of an `ec2` `local-gateway-virtual-interface`:
+Builds the ARN for `ec2` `local-gateway-virtual-interface`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:local-gateway-virtual-interface/${LocalGatewayVirtualInterfaceId}

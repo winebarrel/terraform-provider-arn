@@ -3,12 +3,12 @@
 page_title: "gameliftstreams_stream_group function - arn"
 subcategory: ""
 description: |-
-  Builds an gameliftstreams stream group ARN
+  gameliftstreams stream group ARN
 ---
 
 # function: gameliftstreams_stream_group
 
-Builds the ARN of an `gameliftstreams` `stream group`:
+Builds the ARN for `gameliftstreams` `stream group`:
 
 ```
 arn:${Partition}:gameliftstreams:${Region}:${Account}:streamgroup/${StreamGroupId}

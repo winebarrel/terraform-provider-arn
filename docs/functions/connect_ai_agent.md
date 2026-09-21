@@ -3,12 +3,12 @@
 page_title: "connect_ai_agent function - arn"
 subcategory: ""
 description: |-
-  Builds an connect ai-agent ARN
+  connect ai-agent ARN
 ---
 
 # function: connect_ai_agent
 
-Builds the ARN of an `connect` `ai-agent`:
+Builds the ARN for `connect` `ai-agent`:
 
 ```
 arn:${Partition}:wisdom:${Region}:${Account}:ai-agent/${AssistantId}/${AIAgentId}:${Version}

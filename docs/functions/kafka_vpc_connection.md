@@ -3,12 +3,12 @@
 page_title: "kafka_vpc_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an kafka vpc-connection ARN
+  kafka vpc-connection ARN
 ---
 
 # function: kafka_vpc_connection
 
-Builds the ARN of an `kafka` `vpc-connection`:
+Builds the ARN for `kafka` `vpc-connection`:
 
 ```
 arn:${Partition}:kafka:${Region}:${VpcOwnerAccount}:vpc-connection/${ClusterOwnerAccount}/${ClusterName}/${Uuid}

@@ -3,12 +3,12 @@
 page_title: "mq_brokers function - arn"
 subcategory: ""
 description: |-
-  Builds an mq brokers ARN
+  mq brokers ARN
 ---
 
 # function: mq_brokers
 
-Builds the ARN of an `mq` `brokers`:
+Builds the ARN for `mq` `brokers`:
 
 ```
 arn:${Partition}:mq:${Region}:${Account}:broker:${BrokerName}:${BrokerId}

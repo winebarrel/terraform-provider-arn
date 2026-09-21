@@ -3,12 +3,12 @@
 page_title: "databrew_recipe function - arn"
 subcategory: ""
 description: |-
-  Builds an databrew Recipe ARN
+  databrew Recipe ARN
 ---
 
 # function: databrew_recipe
 
-Builds the ARN of an `databrew` `Recipe`:
+Builds the ARN for `databrew` `Recipe`:
 
 ```
 arn:${Partition}:databrew:${Region}:${Account}:recipe/${ResourceId}

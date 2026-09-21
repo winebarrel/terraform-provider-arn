@@ -3,12 +3,12 @@
 page_title: "sagemaker_model_package function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker model-package ARN
+  sagemaker model-package ARN
 ---
 
 # function: sagemaker_model_package
 
-Builds the ARN of an `sagemaker` `model-package`:
+Builds the ARN for `sagemaker` `model-package`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:model-package/${ModelPackageName}

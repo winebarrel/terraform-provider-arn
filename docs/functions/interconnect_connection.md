@@ -3,12 +3,12 @@
 page_title: "interconnect_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an interconnect connection ARN
+  interconnect connection ARN
 ---
 
 # function: interconnect_connection
 
-Builds the ARN of an `interconnect` `connection`:
+Builds the ARN for `interconnect` `connection`:
 
 ```
 arn:${Partition}:interconnect:${Region}:${Account}:connection/${Id}

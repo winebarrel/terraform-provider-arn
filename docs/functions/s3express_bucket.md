@@ -3,12 +3,12 @@
 page_title: "s3express_bucket function - arn"
 subcategory: ""
 description: |-
-  Builds an s3express bucket ARN
+  s3express bucket ARN
 ---
 
 # function: s3express_bucket
 
-Builds the ARN of an `s3express` `bucket`:
+Builds the ARN for `s3express` `bucket`:
 
 ```
 arn:${Partition}:s3express:${Region}:${Account}:bucket/${BucketName}

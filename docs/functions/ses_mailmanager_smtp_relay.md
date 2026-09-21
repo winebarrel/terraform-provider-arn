@@ -3,12 +3,12 @@
 page_title: "ses_mailmanager_smtp_relay function - arn"
 subcategory: ""
 description: |-
-  Builds an ses mailmanager-smtp-relay ARN
+  ses mailmanager-smtp-relay ARN
 ---
 
 # function: ses_mailmanager_smtp_relay
 
-Builds the ARN of an `ses` `mailmanager-smtp-relay`:
+Builds the ARN for `ses` `mailmanager-smtp-relay`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:mailmanager-smtp-relay/${RelayId}

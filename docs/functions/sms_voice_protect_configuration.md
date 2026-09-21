@@ -3,12 +3,12 @@
 page_title: "sms_voice_protect_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an sms-voice ProtectConfiguration ARN
+  sms-voice ProtectConfiguration ARN
 ---
 
 # function: sms_voice_protect_configuration
 
-Builds the ARN of an `sms-voice` `ProtectConfiguration`:
+Builds the ARN for `sms-voice` `ProtectConfiguration`:
 
 ```
 arn:${Partition}:sms-voice:${Region}:${Account}:protect-configuration/${ProtectConfigurationId}

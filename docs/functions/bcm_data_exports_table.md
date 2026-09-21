@@ -3,12 +3,12 @@
 page_title: "bcm_data_exports_table function - arn"
 subcategory: ""
 description: |-
-  Builds an bcm-data-exports table ARN
+  bcm-data-exports table ARN
 ---
 
 # function: bcm_data_exports_table
 
-Builds the ARN of an `bcm-data-exports` `table`:
+Builds the ARN for `bcm-data-exports` `table`:
 
 ```
 arn:${Partition}:bcm-data-exports:${Region}:${Account}:table/${Identifier}

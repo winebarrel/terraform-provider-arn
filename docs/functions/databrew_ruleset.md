@@ -3,12 +3,12 @@
 page_title: "databrew_ruleset function - arn"
 subcategory: ""
 description: |-
-  Builds an databrew Ruleset ARN
+  databrew Ruleset ARN
 ---
 
 # function: databrew_ruleset
 
-Builds the ARN of an `databrew` `Ruleset`:
+Builds the ARN for `databrew` `Ruleset`:
 
 ```
 arn:${Partition}:databrew:${Region}:${Account}:ruleset/${ResourceId}

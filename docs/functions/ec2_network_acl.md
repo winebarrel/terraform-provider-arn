@@ -3,12 +3,12 @@
 page_title: "ec2_network_acl function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 network-acl ARN
+  ec2 network-acl ARN
 ---
 
 # function: ec2_network_acl
 
-Builds the ARN of an `ec2` `network-acl`:
+Builds the ARN for `ec2` `network-acl`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:network-acl/${NaclId}

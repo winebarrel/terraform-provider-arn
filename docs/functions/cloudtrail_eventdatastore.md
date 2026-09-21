@@ -3,12 +3,12 @@
 page_title: "cloudtrail_eventdatastore function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudtrail eventdatastore ARN
+  cloudtrail eventdatastore ARN
 ---
 
 # function: cloudtrail_eventdatastore
 
-Builds the ARN of an `cloudtrail` `eventdatastore`:
+Builds the ARN for `cloudtrail` `eventdatastore`:
 
 ```
 arn:${Partition}:cloudtrail:${Region}:${Account}:eventdatastore/${EventDataStoreId}

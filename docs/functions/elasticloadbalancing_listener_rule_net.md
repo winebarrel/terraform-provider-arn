@@ -3,12 +3,12 @@
 page_title: "elasticloadbalancing_listener_rule_net function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticloadbalancing listener-rule/net ARN
+  elasticloadbalancing listener-rule/net ARN
 ---
 
 # function: elasticloadbalancing_listener_rule_net
 
-Builds the ARN of an `elasticloadbalancing` `listener-rule/net`:
+Builds the ARN for `elasticloadbalancing` `listener-rule/net`:
 
 ```
 arn:${Partition}:elasticloadbalancing:${Region}:${Account}:listener-rule/net/${LoadBalancerName}/${LoadBalancerId}/${ListenerId}/${ListenerRuleId}

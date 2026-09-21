@@ -3,12 +3,12 @@
 page_title: "personalize_data_insights_job function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize dataInsightsJob ARN
+  personalize dataInsightsJob ARN
 ---
 
 # function: personalize_data_insights_job
 
-Builds the ARN of an `personalize` `dataInsightsJob`:
+Builds the ARN for `personalize` `dataInsightsJob`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:data-insights-job/${ResourceId}

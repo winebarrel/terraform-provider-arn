@@ -3,12 +3,12 @@
 page_title: "es_datasource function - arn"
 subcategory: ""
 description: |-
-  Builds an es datasource ARN
+  es datasource ARN
 ---
 
 # function: es_datasource
 
-Builds the ARN of an `es` `datasource`:
+Builds the ARN for `es` `datasource`:
 
 ```
 arn:${Partition}:opensearch:${Region}:${Account}:datasource/${DataSourceName}

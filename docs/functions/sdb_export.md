@@ -3,12 +3,12 @@
 page_title: "sdb_export function - arn"
 subcategory: ""
 description: |-
-  Builds an sdb export ARN
+  sdb export ARN
 ---
 
 # function: sdb_export
 
-Builds the ARN of an `sdb` `export`:
+Builds the ARN for `sdb` `export`:
 
 ```
 arn:${Partition}:sdb:${Region}:${Account}:domain/${DomainName}/export/${ExportUUID}

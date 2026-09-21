@@ -3,12 +3,12 @@
 page_title: "wisdom_message_template function - arn"
 subcategory: ""
 description: |-
-  Builds an wisdom MessageTemplate ARN
+  wisdom MessageTemplate ARN
 ---
 
 # function: wisdom_message_template
 
-Builds the ARN of an `wisdom` `MessageTemplate`:
+Builds the ARN for `wisdom` `MessageTemplate`:
 
 ```
 arn:${Partition}:wisdom:${Region}:${Account}:message-template/${KnowledgeBaseId}/${MessageTemplateId}

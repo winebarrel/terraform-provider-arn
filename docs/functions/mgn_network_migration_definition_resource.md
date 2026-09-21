@@ -3,12 +3,12 @@
 page_title: "mgn_network_migration_definition_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgn NetworkMigrationDefinitionResource ARN
+  mgn NetworkMigrationDefinitionResource ARN
 ---
 
 # function: mgn_network_migration_definition_resource
 
-Builds the ARN of an `mgn` `NetworkMigrationDefinitionResource`:
+Builds the ARN for `mgn` `NetworkMigrationDefinitionResource`:
 
 ```
 arn:${Partition}:mgn:${Region}:${Account}:network-migration-definition/${NetworkMigrationDefinitionID}

@@ -3,12 +3,12 @@
 page_title: "batch_job_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an batch job-definition ARN
+  batch job-definition ARN
 ---
 
 # function: batch_job_definition
 
-Builds the ARN of an `batch` `job-definition`:
+Builds the ARN for `batch` `job-definition`:
 
 ```
 arn:${Partition}:batch:${Region}:${Account}:job-definition/${JobDefinitionName}

@@ -3,12 +3,12 @@
 page_title: "ssm_parameter function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm parameter ARN
+  ssm parameter ARN
 ---
 
 # function: ssm_parameter
 
-Builds the ARN of an `ssm` `parameter`:
+Builds the ARN for `ssm` `parameter`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:parameter/${ParameterNameWithoutLeadingSlash}

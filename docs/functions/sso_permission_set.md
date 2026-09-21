@@ -3,12 +3,12 @@
 page_title: "sso_permission_set function - arn"
 subcategory: ""
 description: |-
-  Builds an sso PermissionSet ARN
+  sso PermissionSet ARN
 ---
 
 # function: sso_permission_set
 
-Builds the ARN of an `sso` `PermissionSet`:
+Builds the ARN for `sso` `PermissionSet`:
 
 ```
 arn:${Partition}:sso:::permissionSet/${InstanceId}/${PermissionSetId}

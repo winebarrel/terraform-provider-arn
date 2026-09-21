@@ -3,12 +3,12 @@
 page_title: "rds_global_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an rds global-cluster ARN
+  rds global-cluster ARN
 ---
 
 # function: rds_global_cluster
 
-Builds the ARN of an `rds` `global-cluster`:
+Builds the ARN for `rds` `global-cluster`:
 
 ```
 arn:${Partition}:rds::${Account}:global-cluster:${GlobalCluster}

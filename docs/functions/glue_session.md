@@ -3,12 +3,12 @@
 page_title: "glue_session function - arn"
 subcategory: ""
 description: |-
-  Builds an glue session ARN
+  glue session ARN
 ---
 
 # function: glue_session
 
-Builds the ARN of an `glue` `session`:
+Builds the ARN for `glue` `session`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:session/${SessionId}

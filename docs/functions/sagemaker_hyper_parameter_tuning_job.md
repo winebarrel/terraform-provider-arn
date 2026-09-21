@@ -3,12 +3,12 @@
 page_title: "sagemaker_hyper_parameter_tuning_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker hyper-parameter-tuning-job ARN
+  sagemaker hyper-parameter-tuning-job ARN
 ---
 
 # function: sagemaker_hyper_parameter_tuning_job
 
-Builds the ARN of an `sagemaker` `hyper-parameter-tuning-job`:
+Builds the ARN for `sagemaker` `hyper-parameter-tuning-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:hyper-parameter-tuning-job/${HyperParameterTuningJobName}

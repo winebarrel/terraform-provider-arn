@@ -3,12 +3,12 @@
 page_title: "ssm_bucket function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm bucket ARN
+  ssm bucket ARN
 ---
 
 # function: ssm_bucket
 
-Builds the ARN of an `ssm` `bucket`:
+Builds the ARN for `ssm` `bucket`:
 
 ```
 arn:${Partition}:s3:::${BucketName}

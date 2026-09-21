@@ -3,12 +3,12 @@
 page_title: "rekognition_streamprocessor function - arn"
 subcategory: ""
 description: |-
-  Builds an rekognition streamprocessor ARN
+  rekognition streamprocessor ARN
 ---
 
 # function: rekognition_streamprocessor
 
-Builds the ARN of an `rekognition` `streamprocessor`:
+Builds the ARN for `rekognition` `streamprocessor`:
 
 ```
 arn:${Partition}:rekognition:${Region}:${Account}:streamprocessor/${StreamprocessorId}

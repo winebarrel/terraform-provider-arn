@@ -3,12 +3,12 @@
 page_title: "networkmanager_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an networkmanager connection ARN
+  networkmanager connection ARN
 ---
 
 # function: networkmanager_connection
 
-Builds the ARN of an `networkmanager` `connection`:
+Builds the ARN for `networkmanager` `connection`:
 
 ```
 arn:${Partition}:networkmanager::${Account}:connection/${GlobalNetworkId}/${ResourceId}

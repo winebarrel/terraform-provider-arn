@@ -3,12 +3,12 @@
 page_title: "securitylake_subscriber function - arn"
 subcategory: ""
 description: |-
-  Builds an securitylake subscriber ARN
+  securitylake subscriber ARN
 ---
 
 # function: securitylake_subscriber
 
-Builds the ARN of an `securitylake` `subscriber`:
+Builds the ARN for `securitylake` `subscriber`:
 
 ```
 arn:${Partition}:securitylake:${Region}:${Account}:subscriber/${SubscriberId}

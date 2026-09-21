@@ -3,12 +3,12 @@
 page_title: "health_event function - arn"
 subcategory: ""
 description: |-
-  Builds an health event ARN
+  health event ARN
 ---
 
 # function: health_event
 
-Builds the ARN of an `health` `event`:
+Builds the ARN for `health` `event`:
 
 ```
 arn:${Partition}:health:*::event/${Service}/${EventTypeCode}/*

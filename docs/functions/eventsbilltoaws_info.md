@@ -3,12 +3,12 @@
 page_title: "eventsbilltoaws_info function - arn"
 subcategory: ""
 description: |-
-  Builds an eventsbilltoaws info ARN
+  eventsbilltoaws info ARN
 ---
 
 # function: eventsbilltoaws_info
 
-Builds the ARN of an `eventsbilltoaws` `info`:
+Builds the ARN for `eventsbilltoaws` `info`:
 
 ```
 arn:${Partition}:eventsbilltoaws:${Region}:${Account}:${RelativeId}

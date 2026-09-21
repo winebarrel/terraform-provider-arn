@@ -3,12 +3,12 @@
 page_title: "greengrass_component function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass component ARN
+  greengrass component ARN
 ---
 
 # function: greengrass_component
 
-Builds the ARN of an `greengrass` `component`:
+Builds the ARN for `greengrass` `component`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:components:${ComponentName}

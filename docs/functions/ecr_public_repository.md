@@ -3,12 +3,12 @@
 page_title: "ecr_public_repository function - arn"
 subcategory: ""
 description: |-
-  Builds an ecr-public repository ARN
+  ecr-public repository ARN
 ---
 
 # function: ecr_public_repository
 
-Builds the ARN of an `ecr-public` `repository`:
+Builds the ARN for `ecr-public` `repository`:
 
 ```
 arn:${Partition}:ecr-public::${Account}:repository/${RepositoryName}

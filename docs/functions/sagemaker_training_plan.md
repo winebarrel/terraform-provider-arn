@@ -3,12 +3,12 @@
 page_title: "sagemaker_training_plan function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker training-plan ARN
+  sagemaker training-plan ARN
 ---
 
 # function: sagemaker_training_plan
 
-Builds the ARN of an `sagemaker` `training-plan`:
+Builds the ARN for `sagemaker` `training-plan`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:training-plan/${TrainingPlanName}

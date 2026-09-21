@@ -3,12 +3,12 @@
 page_title: "elasticache_serverlesscachesnapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticache serverlesscachesnapshot ARN
+  elasticache serverlesscachesnapshot ARN
 ---
 
 # function: elasticache_serverlesscachesnapshot
 
-Builds the ARN of an `elasticache` `serverlesscachesnapshot`:
+Builds the ARN for `elasticache` `serverlesscachesnapshot`:
 
 ```
 arn:${Partition}:elasticache:${Region}:${Account}:serverlesscachesnapshot:${ServerlessCacheSnapshotName}

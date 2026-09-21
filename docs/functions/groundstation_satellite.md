@@ -3,12 +3,12 @@
 page_title: "groundstation_satellite function - arn"
 subcategory: ""
 description: |-
-  Builds an groundstation Satellite ARN
+  groundstation Satellite ARN
 ---
 
 # function: groundstation_satellite
 
-Builds the ARN of an `groundstation` `Satellite`:
+Builds the ARN for `groundstation` `Satellite`:
 
 ```
 arn:${Partition}:groundstation:${Region}:${Account}:satellite/${SatelliteId}

@@ -3,12 +3,12 @@
 page_title: "one_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an one configuration ARN
+  one configuration ARN
 ---
 
 # function: one_configuration
 
-Builds the ARN of an `one` `configuration`:
+Builds the ARN for `one` `configuration`:
 
 ```
 arn:${Partition}:one:${Region}:${Account}:device-instance/${DeviceInstanceId}/configuration/${Version}

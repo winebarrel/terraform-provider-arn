@@ -3,12 +3,12 @@
 page_title: "apigateway_tags function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Tags ARN
+  apigateway Tags ARN
 ---
 
 # function: apigateway_tags
 
-Builds the ARN of an `apigateway` `Tags`:
+Builds the ARN for `apigateway` `Tags`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/tags/${UrlEncodedResourceARN}

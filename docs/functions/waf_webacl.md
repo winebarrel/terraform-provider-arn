@@ -3,12 +3,12 @@
 page_title: "waf_webacl function - arn"
 subcategory: ""
 description: |-
-  Builds an waf webacl ARN
+  waf webacl ARN
 ---
 
 # function: waf_webacl
 
-Builds the ARN of an `waf` `webacl`:
+Builds the ARN for `waf` `webacl`:
 
 ```
 arn:${Partition}:waf::${Account}:webacl/${Id}

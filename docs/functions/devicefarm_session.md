@@ -3,12 +3,12 @@
 page_title: "devicefarm_session function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm session ARN
+  devicefarm session ARN
 ---
 
 # function: devicefarm_session
 
-Builds the ARN of an `devicefarm` `session`:
+Builds the ARN for `devicefarm` `session`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:session:${ResourceId}

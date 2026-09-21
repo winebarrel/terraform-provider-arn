@@ -3,12 +3,12 @@
 page_title: "lightsail_disk function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail Disk ARN
+  lightsail Disk ARN
 ---
 
 # function: lightsail_disk
 
-Builds the ARN of an `lightsail` `Disk`:
+Builds the ARN for `lightsail` `Disk`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:Disk/${Id}

@@ -3,12 +3,12 @@
 page_title: "shield_attack function - arn"
 subcategory: ""
 description: |-
-  Builds an shield attack ARN
+  shield attack ARN
 ---
 
 # function: shield_attack
 
-Builds the ARN of an `shield` `attack`:
+Builds the ARN for `shield` `attack`:
 
 ```
 arn:${Partition}:shield::${Account}:attack/${Id}

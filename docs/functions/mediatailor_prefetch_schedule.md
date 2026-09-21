@@ -3,12 +3,12 @@
 page_title: "mediatailor_prefetch_schedule function - arn"
 subcategory: ""
 description: |-
-  Builds an mediatailor prefetchSchedule ARN
+  mediatailor prefetchSchedule ARN
 ---
 
 # function: mediatailor_prefetch_schedule
 
-Builds the ARN of an `mediatailor` `prefetchSchedule`:
+Builds the ARN for `mediatailor` `prefetchSchedule`:
 
 ```
 arn:${Partition}:mediatailor:${Region}:${Account}:prefetchSchedule/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "lightsail_instance_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail InstanceSnapshot ARN
+  lightsail InstanceSnapshot ARN
 ---
 
 # function: lightsail_instance_snapshot
 
-Builds the ARN of an `lightsail` `InstanceSnapshot`:
+Builds the ARN for `lightsail` `InstanceSnapshot`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:InstanceSnapshot/${Id}

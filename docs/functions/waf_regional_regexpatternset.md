@@ -3,12 +3,12 @@
 page_title: "waf_regional_regexpatternset function - arn"
 subcategory: ""
 description: |-
-  Builds an waf-regional regexpatternset ARN
+  waf-regional regexpatternset ARN
 ---
 
 # function: waf_regional_regexpatternset
 
-Builds the ARN of an `waf-regional` `regexpatternset`:
+Builds the ARN for `waf-regional` `regexpatternset`:
 
 ```
 arn:${Partition}:waf-regional:${Region}:${Account}:regexpatternset/${Id}

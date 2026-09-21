@@ -3,12 +3,12 @@
 page_title: "one_device_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an one device-instance ARN
+  one device-instance ARN
 ---
 
 # function: one_device_instance
 
-Builds the ARN of an `one` `device-instance`:
+Builds the ARN for `one` `device-instance`:
 
 ```
 arn:${Partition}:one:${Region}:${Account}:device-instance/${DeviceInstanceId}

@@ -3,12 +3,12 @@
 page_title: "sagemaker_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker domain ARN
+  sagemaker domain ARN
 ---
 
 # function: sagemaker_domain
 
-Builds the ARN of an `sagemaker` `domain`:
+Builds the ARN for `sagemaker` `domain`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:domain/${DomainId}

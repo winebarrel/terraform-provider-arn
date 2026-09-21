@@ -3,12 +3,12 @@
 page_title: "ssm_task function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm task ARN
+  ssm task ARN
 ---
 
 # function: ssm_task
 
-Builds the ARN of an `ssm` `task`:
+Builds the ARN for `ssm` `task`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:task/${TaskId}

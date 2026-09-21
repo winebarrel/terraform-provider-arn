@@ -3,12 +3,12 @@
 page_title: "personalize_dataset_export_job function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize datasetExportJob ARN
+  personalize datasetExportJob ARN
 ---
 
 # function: personalize_dataset_export_job
 
-Builds the ARN of an `personalize` `datasetExportJob`:
+Builds the ARN for `personalize` `datasetExportJob`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:dataset-export-job/${ResourceId}

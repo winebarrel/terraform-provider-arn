@@ -3,12 +3,12 @@
 page_title: "application_signals_mcp_mcp_server function - arn"
 subcategory: ""
 description: |-
-  Builds an application-signals-mcp mcp-server ARN
+  application-signals-mcp mcp-server ARN
 ---
 
 # function: application_signals_mcp_mcp_server
 
-Builds the ARN of an `application-signals-mcp` `mcp-server`:
+Builds the ARN for `application-signals-mcp` `mcp-server`:
 
 ```
 arn:${Partition}:application-signals-mcp:${Region}:${Account}:mcp-server/*

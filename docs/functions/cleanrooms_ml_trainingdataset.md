@@ -3,12 +3,12 @@
 page_title: "cleanrooms_ml_trainingdataset function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms-ml trainingdataset ARN
+  cleanrooms-ml trainingdataset ARN
 ---
 
 # function: cleanrooms_ml_trainingdataset
 
-Builds the ARN of an `cleanrooms-ml` `trainingdataset`:
+Builds the ARN for `cleanrooms-ml` `trainingdataset`:
 
 ```
 arn:${Partition}:cleanrooms-ml:${Region}:${Account}:training-dataset/${ResourceId}

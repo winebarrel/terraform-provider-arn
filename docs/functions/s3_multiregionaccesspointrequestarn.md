@@ -3,12 +3,12 @@
 page_title: "s3_multiregionaccesspointrequestarn function - arn"
 subcategory: ""
 description: |-
-  Builds an s3 multiregionaccesspointrequestarn ARN
+  s3 multiregionaccesspointrequestarn ARN
 ---
 
 # function: s3_multiregionaccesspointrequestarn
 
-Builds the ARN of an `s3` `multiregionaccesspointrequestarn`:
+Builds the ARN for `s3` `multiregionaccesspointrequestarn`:
 
 ```
 arn:${Partition}:s3:us-west-2:${Account}:async-request/mrap/${Operation}/${Token}

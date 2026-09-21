@@ -3,12 +3,12 @@
 page_title: "sagemaker_image_version function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker image-version ARN
+  sagemaker image-version ARN
 ---
 
 # function: sagemaker_image_version
 
-Builds the ARN of an `sagemaker` `image-version`:
+Builds the ARN for `sagemaker` `image-version`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:image-version/${ImageName}/${Version}

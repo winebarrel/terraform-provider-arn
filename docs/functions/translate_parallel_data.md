@@ -3,12 +3,12 @@
 page_title: "translate_parallel_data function - arn"
 subcategory: ""
 description: |-
-  Builds an translate parallel-data ARN
+  translate parallel-data ARN
 ---
 
 # function: translate_parallel_data
 
-Builds the ARN of an `translate` `parallel-data`:
+Builds the ARN for `translate` `parallel-data`:
 
 ```
 arn:${Partition}:translate:${Region}:${Account}:parallel-data/${ResourceName}

@@ -3,12 +3,12 @@
 page_title: "ssm_managed_instance_inventory function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm managed-instance-inventory ARN
+  ssm managed-instance-inventory ARN
 ---
 
 # function: ssm_managed_instance_inventory
 
-Builds the ARN of an `ssm` `managed-instance-inventory`:
+Builds the ARN for `ssm` `managed-instance-inventory`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:managed-instance-inventory/${InstanceId}

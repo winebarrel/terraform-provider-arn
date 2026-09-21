@@ -3,12 +3,12 @@
 page_title: "ssm_windowtask function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm windowtask ARN
+  ssm windowtask ARN
 ---
 
 # function: ssm_windowtask
 
-Builds the ARN of an `ssm` `windowtask`:
+Builds the ARN for `ssm` `windowtask`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:windowtask/${WindowTaskId}

@@ -3,12 +3,12 @@
 page_title: "sagemaker_algorithm function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker algorithm ARN
+  sagemaker algorithm ARN
 ---
 
 # function: sagemaker_algorithm
 
-Builds the ARN of an `sagemaker` `algorithm`:
+Builds the ARN for `sagemaker` `algorithm`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:algorithm/${AlgorithmName}

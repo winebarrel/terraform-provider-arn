@@ -3,12 +3,12 @@
 page_title: "osis_pipeline_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an osis pipeline-endpoint ARN
+  osis pipeline-endpoint ARN
 ---
 
 # function: osis_pipeline_endpoint
 
-Builds the ARN of an `osis` `pipeline-endpoint`:
+Builds the ARN for `osis` `pipeline-endpoint`:
 
 ```
 arn:${Partition}:osis:${Region}:${Account}:endpoint/${EndpointId}

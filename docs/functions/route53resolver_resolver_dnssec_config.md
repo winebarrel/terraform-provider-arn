@@ -3,12 +3,12 @@
 page_title: "route53resolver_resolver_dnssec_config function - arn"
 subcategory: ""
 description: |-
-  Builds an route53resolver resolver-dnssec-config ARN
+  route53resolver resolver-dnssec-config ARN
 ---
 
 # function: route53resolver_resolver_dnssec_config
 
-Builds the ARN of an `route53resolver` `resolver-dnssec-config`:
+Builds the ARN for `route53resolver` `resolver-dnssec-config`:
 
 ```
 arn:${Partition}:route53resolver:${Region}:${Account}:resolver-dnssec-config/${ResourceId}

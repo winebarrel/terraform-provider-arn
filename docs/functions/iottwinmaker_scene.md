@@ -3,12 +3,12 @@
 page_title: "iottwinmaker_scene function - arn"
 subcategory: ""
 description: |-
-  Builds an iottwinmaker scene ARN
+  iottwinmaker scene ARN
 ---
 
 # function: iottwinmaker_scene
 
-Builds the ARN of an `iottwinmaker` `scene`:
+Builds the ARN for `iottwinmaker` `scene`:
 
 ```
 arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}/scene/${SceneId}

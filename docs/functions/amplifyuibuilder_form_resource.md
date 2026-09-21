@@ -3,12 +3,12 @@
 page_title: "amplifyuibuilder_form_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an amplifyuibuilder FormResource ARN
+  amplifyuibuilder FormResource ARN
 ---
 
 # function: amplifyuibuilder_form_resource
 
-Builds the ARN of an `amplifyuibuilder` `FormResource`:
+Builds the ARN for `amplifyuibuilder` `FormResource`:
 
 ```
 arn:${Partition}:amplifyuibuilder:${Region}:${Account}:app/${AppId}/environment/${EnvironmentName}/forms/${Id}

@@ -3,12 +3,12 @@
 page_title: "networkmanager_peering function - arn"
 subcategory: ""
 description: |-
-  Builds an networkmanager peering ARN
+  networkmanager peering ARN
 ---
 
 # function: networkmanager_peering
 
-Builds the ARN of an `networkmanager` `peering`:
+Builds the ARN for `networkmanager` `peering`:
 
 ```
 arn:${Partition}:networkmanager::${Account}:peering/${ResourceId}

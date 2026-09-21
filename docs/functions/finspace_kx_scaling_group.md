@@ -3,12 +3,12 @@
 page_title: "finspace_kx_scaling_group function - arn"
 subcategory: ""
 description: |-
-  Builds an finspace kxScalingGroup ARN
+  finspace kxScalingGroup ARN
 ---
 
 # function: finspace_kx_scaling_group
 
-Builds the ARN of an `finspace` `kxScalingGroup`:
+Builds the ARN for `finspace` `kxScalingGroup`:
 
 ```
 arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxScalingGroup/${KxScalingGroup}

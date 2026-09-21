@@ -3,12 +3,12 @@
 page_title: "gamelift_fleet function - arn"
 subcategory: ""
 description: |-
-  Builds an gamelift fleet ARN
+  gamelift fleet ARN
 ---
 
 # function: gamelift_fleet
 
-Builds the ARN of an `gamelift` `fleet`:
+Builds the ARN for `gamelift` `fleet`:
 
 ```
 arn:${Partition}:gamelift:${Region}:${Account}:fleet/${FleetId}

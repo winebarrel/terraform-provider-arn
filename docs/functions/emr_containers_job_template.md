@@ -3,12 +3,12 @@
 page_title: "emr_containers_job_template function - arn"
 subcategory: ""
 description: |-
-  Builds an emr-containers jobTemplate ARN
+  emr-containers jobTemplate ARN
 ---
 
 # function: emr_containers_job_template
 
-Builds the ARN of an `emr-containers` `jobTemplate`:
+Builds the ARN for `emr-containers` `jobTemplate`:
 
 ```
 arn:${Partition}:emr-containers:${Region}:${Account}:/jobtemplates/${JobTemplateId}

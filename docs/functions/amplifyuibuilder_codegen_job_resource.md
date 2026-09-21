@@ -3,12 +3,12 @@
 page_title: "amplifyuibuilder_codegen_job_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an amplifyuibuilder CodegenJobResource ARN
+  amplifyuibuilder CodegenJobResource ARN
 ---
 
 # function: amplifyuibuilder_codegen_job_resource
 
-Builds the ARN of an `amplifyuibuilder` `CodegenJobResource`:
+Builds the ARN for `amplifyuibuilder` `CodegenJobResource`:
 
 ```
 arn:${Partition}:amplifyuibuilder:${Region}:${Account}:app/${AppId}/environment/${EnvironmentName}/codegen-jobs/${Id}

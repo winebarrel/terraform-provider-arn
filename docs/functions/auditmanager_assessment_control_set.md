@@ -3,12 +3,12 @@
 page_title: "auditmanager_assessment_control_set function - arn"
 subcategory: ""
 description: |-
-  Builds an auditmanager assessmentControlSet ARN
+  auditmanager assessmentControlSet ARN
 ---
 
 # function: auditmanager_assessment_control_set
 
-Builds the ARN of an `auditmanager` `assessmentControlSet`:
+Builds the ARN for `auditmanager` `assessmentControlSet`:
 
 ```
 arn:${Partition}:auditmanager:${Region}:${Account}:assessment/${AssessmentId}/controlSet/${ControlSetId}

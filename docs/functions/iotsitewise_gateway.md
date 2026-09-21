@@ -3,12 +3,12 @@
 page_title: "iotsitewise_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise gateway ARN
+  iotsitewise gateway ARN
 ---
 
 # function: iotsitewise_gateway
 
-Builds the ARN of an `iotsitewise` `gateway`:
+Builds the ARN for `iotsitewise` `gateway`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:gateway/${GatewayId}

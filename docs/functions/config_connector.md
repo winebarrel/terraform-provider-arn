@@ -3,12 +3,12 @@
 page_title: "config_connector function - arn"
 subcategory: ""
 description: |-
-  Builds an config Connector ARN
+  config Connector ARN
 ---
 
 # function: config_connector
 
-Builds the ARN of an `config` `Connector`:
+Builds the ARN for `config` `Connector`:
 
 ```
 arn:${Partition}:config:${Region}:${Account}:connector/${Provider}/${ProviderId}/${ConnectorId}

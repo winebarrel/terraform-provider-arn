@@ -3,12 +3,12 @@
 page_title: "apigateway_api_mappings function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway ApiMappings ARN
+  apigateway ApiMappings ARN
 ---
 
 # function: apigateway_api_mappings
 
-Builds the ARN of an `apigateway` `ApiMappings`:
+Builds the ARN for `apigateway` `ApiMappings`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}/apimappings

@@ -3,12 +3,12 @@
 page_title: "lambda_code_signing_config function - arn"
 subcategory: ""
 description: |-
-  Builds an lambda code signing config ARN
+  lambda code signing config ARN
 ---
 
 # function: lambda_code_signing_config
 
-Builds the ARN of an `lambda` `code signing config`:
+Builds the ARN for `lambda` `code signing config`:
 
 ```
 arn:${Partition}:lambda:${Region}:${Account}:code-signing-config:${CodeSigningConfigId}

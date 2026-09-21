@@ -3,12 +3,12 @@
 page_title: "events_api_destination function - arn"
 subcategory: ""
 description: |-
-  Builds an events api-destination ARN
+  events api-destination ARN
 ---
 
 # function: events_api_destination
 
-Builds the ARN of an `events` `api-destination`:
+Builds the ARN for `events` `api-destination`:
 
 ```
 arn:${Partition}:events:${Region}:${Account}:api-destination/${ApiDestinationName}

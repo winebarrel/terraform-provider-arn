@@ -3,12 +3,12 @@
 page_title: "ssm_opsitemgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm opsitemgroup ARN
+  ssm opsitemgroup ARN
 ---
 
 # function: ssm_opsitemgroup
 
-Builds the ARN of an `ssm` `opsitemgroup`:
+Builds the ARN for `ssm` `opsitemgroup`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:opsitemgroup/default

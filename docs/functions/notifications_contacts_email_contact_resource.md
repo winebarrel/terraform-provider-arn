@@ -3,12 +3,12 @@
 page_title: "notifications_contacts_email_contact_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an notifications-contacts EmailContactResource ARN
+  notifications-contacts EmailContactResource ARN
 ---
 
 # function: notifications_contacts_email_contact_resource
 
-Builds the ARN of an `notifications-contacts` `EmailContactResource`:
+Builds the ARN for `notifications-contacts` `EmailContactResource`:
 
 ```
 arn:${Partition}:notifications-contacts::${Account}:emailcontact/${EmailContactId}

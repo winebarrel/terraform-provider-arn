@@ -3,12 +3,12 @@
 page_title: "codeartifact_repository function - arn"
 subcategory: ""
 description: |-
-  Builds an codeartifact repository ARN
+  codeartifact repository ARN
 ---
 
 # function: codeartifact_repository
 
-Builds the ARN of an `codeartifact` `repository`:
+Builds the ARN for `codeartifact` `repository`:
 
 ```
 arn:${Partition}:codeartifact:${Region}:${Account}:repository/${DomainName}/${RepositoryName}

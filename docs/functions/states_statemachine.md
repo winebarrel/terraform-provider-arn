@@ -3,12 +3,12 @@
 page_title: "states_statemachine function - arn"
 subcategory: ""
 description: |-
-  Builds an states statemachine ARN
+  states statemachine ARN
 ---
 
 # function: states_statemachine
 
-Builds the ARN of an `states` `statemachine`:
+Builds the ARN for `states` `statemachine`:
 
 ```
 arn:${Partition}:states:${Region}:${Account}:stateMachine:${StateMachineName}

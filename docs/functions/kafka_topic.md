@@ -3,12 +3,12 @@
 page_title: "kafka_topic function - arn"
 subcategory: ""
 description: |-
-  Builds an kafka topic ARN
+  kafka topic ARN
 ---
 
 # function: kafka_topic
 
-Builds the ARN of an `kafka` `topic`:
+Builds the ARN for `kafka` `topic`:
 
 ```
 arn:${Partition}:kafka:${Region}:${Account}:topic/${ClusterName}/${ClusterUuid}/${TopicName}

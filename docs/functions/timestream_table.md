@@ -3,12 +3,12 @@
 page_title: "timestream_table function - arn"
 subcategory: ""
 description: |-
-  Builds an timestream table ARN
+  timestream table ARN
 ---
 
 # function: timestream_table
 
-Builds the ARN of an `timestream` `table`:
+Builds the ARN for `timestream` `table`:
 
 ```
 arn:${Partition}:timestream:${Region}:${Account}:database/${DatabaseName}/table/${TableName}

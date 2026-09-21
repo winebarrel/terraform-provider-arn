@@ -3,12 +3,12 @@
 page_title: "memorydb_multiregioncluster function - arn"
 subcategory: ""
 description: |-
-  Builds an memorydb multiregioncluster ARN
+  memorydb multiregioncluster ARN
 ---
 
 # function: memorydb_multiregioncluster
 
-Builds the ARN of an `memorydb` `multiregioncluster`:
+Builds the ARN for `memorydb` `multiregioncluster`:
 
 ```
 arn:${Partition}:memorydb::${Account}:multiregioncluster/${ClusterName}

@@ -3,12 +3,12 @@
 page_title: "lightsail_load_balancer_tls_certificate function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail LoadBalancerTlsCertificate ARN
+  lightsail LoadBalancerTlsCertificate ARN
 ---
 
 # function: lightsail_load_balancer_tls_certificate
 
-Builds the ARN of an `lightsail` `LoadBalancerTlsCertificate`:
+Builds the ARN for `lightsail` `LoadBalancerTlsCertificate`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:LoadBalancerTlsCertificate/${Id}

@@ -3,12 +3,12 @@
 page_title: "security_ir_case function - arn"
 subcategory: ""
 description: |-
-  Builds an security-ir case ARN
+  security-ir case ARN
 ---
 
 # function: security_ir_case
 
-Builds the ARN of an `security-ir` `case`:
+Builds the ARN for `security-ir` `case`:
 
 ```
 arn:${Partition}:security-ir:${Region}:${Account}:case/${CaseId}

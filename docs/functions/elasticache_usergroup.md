@@ -3,12 +3,12 @@
 page_title: "elasticache_usergroup function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticache usergroup ARN
+  elasticache usergroup ARN
 ---
 
 # function: elasticache_usergroup
 
-Builds the ARN of an `elasticache` `usergroup`:
+Builds the ARN for `elasticache` `usergroup`:
 
 ```
 arn:${Partition}:elasticache:${Region}:${Account}:usergroup:${UserGroupId}

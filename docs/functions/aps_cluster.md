@@ -3,12 +3,12 @@
 page_title: "aps_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an aps cluster ARN
+  aps cluster ARN
 ---
 
 # function: aps_cluster
 
-Builds the ARN of an `aps` `cluster`:
+Builds the ARN for `aps` `cluster`:
 
 ```
 arn:${Partition}:eks:${Region}:${Account}:cluster/${ClusterName}

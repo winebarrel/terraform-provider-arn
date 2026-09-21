@@ -3,12 +3,12 @@
 page_title: "batch_consumable_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an batch consumable-resource ARN
+  batch consumable-resource ARN
 ---
 
 # function: batch_consumable_resource
 
-Builds the ARN of an `batch` `consumable-resource`:
+Builds the ARN for `batch` `consumable-resource`:
 
 ```
 arn:${Partition}:batch:${Region}:${Account}:consumable-resource/${ConsumableResourceName}

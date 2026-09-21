@@ -3,12 +3,12 @@
 page_title: "ec2_ipam_pool_allocation function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 ipam-pool-allocation ARN
+  ec2 ipam-pool-allocation ARN
 ---
 
 # function: ec2_ipam_pool_allocation
 
-Builds the ARN of an `ec2` `ipam-pool-allocation`:
+Builds the ARN for `ec2` `ipam-pool-allocation`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:ipam-pool-allocation/${IpamPoolAllocationId}

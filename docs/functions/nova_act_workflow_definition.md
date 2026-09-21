@@ -3,12 +3,12 @@
 page_title: "nova_act_workflow_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an nova-act workflow-definition ARN
+  nova-act workflow-definition ARN
 ---
 
 # function: nova_act_workflow_definition
 
-Builds the ARN of an `nova-act` `workflow-definition`:
+Builds the ARN for `nova-act` `workflow-definition`:
 
 ```
 arn:${Partition}:nova-act:${Region}:${Account}:workflow-definition/${WorkflowDefinitionName}

@@ -3,12 +3,12 @@
 page_title: "entityresolution_schema_mapping function - arn"
 subcategory: ""
 description: |-
-  Builds an entityresolution SchemaMapping ARN
+  entityresolution SchemaMapping ARN
 ---
 
 # function: entityresolution_schema_mapping
 
-Builds the ARN of an `entityresolution` `SchemaMapping`:
+Builds the ARN for `entityresolution` `SchemaMapping`:
 
 ```
 arn:${Partition}:entityresolution:${Region}:${Account}:schemamapping/${SchemaName}

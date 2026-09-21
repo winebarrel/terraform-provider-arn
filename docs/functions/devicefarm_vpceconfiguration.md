@@ -3,12 +3,12 @@
 page_title: "devicefarm_vpceconfiguration function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm vpceconfiguration ARN
+  devicefarm vpceconfiguration ARN
 ---
 
 # function: devicefarm_vpceconfiguration
 
-Builds the ARN of an `devicefarm` `vpceconfiguration`:
+Builds the ARN for `devicefarm` `vpceconfiguration`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:vpceconfiguration:${ResourceId}

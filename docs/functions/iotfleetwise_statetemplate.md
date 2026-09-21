@@ -3,12 +3,12 @@
 page_title: "iotfleetwise_statetemplate function - arn"
 subcategory: ""
 description: |-
-  Builds an iotfleetwise statetemplate ARN
+  iotfleetwise statetemplate ARN
 ---
 
 # function: iotfleetwise_statetemplate
 
-Builds the ARN of an `iotfleetwise` `statetemplate`:
+Builds the ARN for `iotfleetwise` `statetemplate`:
 
 ```
 arn:${Partition}:iotfleetwise:${Region}:${Account}:state-template/${StateTemplateId}

@@ -3,12 +3,12 @@
 page_title: "groundstation_ground_station_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an groundstation GroundStationResource ARN
+  groundstation GroundStationResource ARN
 ---
 
 # function: groundstation_ground_station_resource
 
-Builds the ARN of an `groundstation` `GroundStationResource`:
+Builds the ARN for `groundstation` `GroundStationResource`:
 
 ```
 arn:${Partition}:groundstation:${Region}:${Account}:groundstation:${GroundStationId}

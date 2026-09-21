@@ -3,12 +3,12 @@
 page_title: "appstream_app_block_builder function - arn"
 subcategory: ""
 description: |-
-  Builds an appstream app-block-builder ARN
+  appstream app-block-builder ARN
 ---
 
 # function: appstream_app_block_builder
 
-Builds the ARN of an `appstream` `app-block-builder`:
+Builds the ARN for `appstream` `app-block-builder`:
 
 ```
 arn:${Partition}:appstream:${Region}:${Account}:app-block-builder/${AppBlockBuilderName}

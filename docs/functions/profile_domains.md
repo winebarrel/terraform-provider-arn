@@ -3,12 +3,12 @@
 page_title: "profile_domains function - arn"
 subcategory: ""
 description: |-
-  Builds an profile domains ARN
+  profile domains ARN
 ---
 
 # function: profile_domains
 
-Builds the ARN of an `profile` `domains`:
+Builds the ARN for `profile` `domains`:
 
 ```
 arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}

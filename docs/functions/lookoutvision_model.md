@@ -3,12 +3,12 @@
 page_title: "lookoutvision_model function - arn"
 subcategory: ""
 description: |-
-  Builds an lookoutvision model ARN
+  lookoutvision model ARN
 ---
 
 # function: lookoutvision_model
 
-Builds the ARN of an `lookoutvision` `model`:
+Builds the ARN for `lookoutvision` `model`:
 
 ```
 arn:${Partition}:lookoutvision:${Region}:${Account}:model/${ProjectName}/${ModelVersion}

@@ -3,12 +3,12 @@
 page_title: "waf_regional_bytematchset function - arn"
 subcategory: ""
 description: |-
-  Builds an waf-regional bytematchset ARN
+  waf-regional bytematchset ARN
 ---
 
 # function: waf_regional_bytematchset
 
-Builds the ARN of an `waf-regional` `bytematchset`:
+Builds the ARN for `waf-regional` `bytematchset`:
 
 ```
 arn:${Partition}:waf-regional:${Region}:${Account}:bytematchset/${Id}

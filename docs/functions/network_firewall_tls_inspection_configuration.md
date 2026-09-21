@@ -3,12 +3,12 @@
 page_title: "network_firewall_tls_inspection_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an network-firewall TLSInspectionConfiguration ARN
+  network-firewall TLSInspectionConfiguration ARN
 ---
 
 # function: network_firewall_tls_inspection_configuration
 
-Builds the ARN of an `network-firewall` `TLSInspectionConfiguration`:
+Builds the ARN for `network-firewall` `TLSInspectionConfiguration`:
 
 ```
 arn:${Partition}:network-firewall:${Region}:${Account}:tls-configuration/${Name}

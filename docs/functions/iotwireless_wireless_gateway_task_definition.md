@@ -3,12 +3,12 @@
 page_title: "iotwireless_wireless_gateway_task_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless WirelessGatewayTaskDefinition ARN
+  iotwireless WirelessGatewayTaskDefinition ARN
 ---
 
 # function: iotwireless_wireless_gateway_task_definition
 
-Builds the ARN of an `iotwireless` `WirelessGatewayTaskDefinition`:
+Builds the ARN for `iotwireless` `WirelessGatewayTaskDefinition`:
 
 ```
 arn:${Partition}:iotwireless:${Region}:${Account}:WirelessGatewayTaskDefinition/${WirelessGatewayTaskDefinitionId}

@@ -3,12 +3,12 @@
 page_title: "ecs_daemon function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs daemon ARN
+  ecs daemon ARN
 ---
 
 # function: ecs_daemon
 
-Builds the ARN of an `ecs` `daemon`:
+Builds the ARN for `ecs` `daemon`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:daemon/${ClusterName}/${DaemonName}

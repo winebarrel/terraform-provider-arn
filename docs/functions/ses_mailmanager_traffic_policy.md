@@ -3,12 +3,12 @@
 page_title: "ses_mailmanager_traffic_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an ses mailmanager-traffic-policy ARN
+  ses mailmanager-traffic-policy ARN
 ---
 
 # function: ses_mailmanager_traffic_policy
 
-Builds the ARN of an `ses` `mailmanager-traffic-policy`:
+Builds the ARN for `ses` `mailmanager-traffic-policy`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:mailmanager-traffic-policy/${TrafficPolicyId}

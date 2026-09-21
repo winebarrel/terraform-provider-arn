@@ -3,12 +3,12 @@
 page_title: "resiliencehub_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an resiliencehub policy ARN
+  resiliencehub policy ARN
 ---
 
 # function: resiliencehub_policy
 
-Builds the ARN of an `resiliencehub` `policy`:
+Builds the ARN for `resiliencehub` `policy`:
 
 ```
 arn:${Partition}:resiliencehub:${Region}:${Account}:policy/${PolicyId}

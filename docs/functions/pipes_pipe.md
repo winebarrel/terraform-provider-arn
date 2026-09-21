@@ -3,12 +3,12 @@
 page_title: "pipes_pipe function - arn"
 subcategory: ""
 description: |-
-  Builds an pipes pipe ARN
+  pipes pipe ARN
 ---
 
 # function: pipes_pipe
 
-Builds the ARN of an `pipes` `pipe`:
+Builds the ARN for `pipes` `pipe`:
 
 ```
 arn:${Partition}:pipes:${Region}:${Account}:pipe/${Name}

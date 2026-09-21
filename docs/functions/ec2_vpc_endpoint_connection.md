@@ -3,12 +3,12 @@
 page_title: "ec2_vpc_endpoint_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 vpc-endpoint-connection ARN
+  ec2 vpc-endpoint-connection ARN
 ---
 
 # function: ec2_vpc_endpoint_connection
 
-Builds the ARN of an `ec2` `vpc-endpoint-connection`:
+Builds the ARN for `ec2` `vpc-endpoint-connection`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:vpc-endpoint-connection/${VpcEndpointConnectionId}

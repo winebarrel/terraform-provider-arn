@@ -3,12 +3,12 @@
 page_title: "cloudwatch_alarm_mute_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudwatch alarm-mute-rule ARN
+  cloudwatch alarm-mute-rule ARN
 ---
 
 # function: cloudwatch_alarm_mute_rule
 
-Builds the ARN of an `cloudwatch` `alarm-mute-rule`:
+Builds the ARN for `cloudwatch` `alarm-mute-rule`:
 
 ```
 arn:${Partition}:cloudwatch:${Region}:${Account}:alarm-mute-rule:${AlarmMuteRuleName}

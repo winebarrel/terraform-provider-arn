@@ -3,12 +3,12 @@
 page_title: "iq_company function - arn"
 subcategory: ""
 description: |-
-  Builds an iq company ARN
+  iq company ARN
 ---
 
 # function: iq_company
 
-Builds the ARN of an `iq` `company`:
+Builds the ARN for `iq` `company`:
 
 ```
 arn:${Partition}:iq:${Region}::company/${CompanyId}

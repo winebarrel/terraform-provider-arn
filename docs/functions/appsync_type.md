@@ -3,12 +3,12 @@
 page_title: "appsync_type function - arn"
 subcategory: ""
 description: |-
-  Builds an appsync type ARN
+  appsync type ARN
 ---
 
 # function: appsync_type
 
-Builds the ARN of an `appsync` `type`:
+Builds the ARN for `appsync` `type`:
 
 ```
 arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/types/${TypeName}

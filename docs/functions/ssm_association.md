@@ -3,12 +3,12 @@
 page_title: "ssm_association function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm association ARN
+  ssm association ARN
 ---
 
 # function: ssm_association
 
-Builds the ARN of an `ssm` `association`:
+Builds the ARN for `ssm` `association`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:association/${AssociationId}

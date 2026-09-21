@@ -3,12 +3,12 @@
 page_title: "connect_user function - arn"
 subcategory: ""
 description: |-
-  Builds an connect user ARN
+  connect user ARN
 ---
 
 # function: connect_user
 
-Builds the ARN of an `connect` `user`:
+Builds the ARN for `connect` `user`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/agent/${UserId}

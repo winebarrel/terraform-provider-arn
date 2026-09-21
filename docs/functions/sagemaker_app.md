@@ -3,12 +3,12 @@
 page_title: "sagemaker_app function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker app ARN
+  sagemaker app ARN
 ---
 
 # function: sagemaker_app
 
-Builds the ARN of an `sagemaker` `app`:
+Builds the ARN for `sagemaker` `app`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:app/${DomainId}/${UserProfileName}/${AppType}/${AppName}

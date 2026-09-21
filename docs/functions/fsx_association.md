@@ -3,12 +3,12 @@
 page_title: "fsx_association function - arn"
 subcategory: ""
 description: |-
-  Builds an fsx association ARN
+  fsx association ARN
 ---
 
 # function: fsx_association
 
-Builds the ARN of an `fsx` `association`:
+Builds the ARN for `fsx` `association`:
 
 ```
 arn:${Partition}:fsx:${Region}:${Account}:association/${FileSystemIdOrFileCacheId}/${DataRepositoryAssociationId}

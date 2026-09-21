@@ -3,12 +3,12 @@
 page_title: "networkmanager_link function - arn"
 subcategory: ""
 description: |-
-  Builds an networkmanager link ARN
+  networkmanager link ARN
 ---
 
 # function: networkmanager_link
 
-Builds the ARN of an `networkmanager` `link`:
+Builds the ARN for `networkmanager` `link`:
 
 ```
 arn:${Partition}:networkmanager::${Account}:link/${GlobalNetworkId}/${ResourceId}

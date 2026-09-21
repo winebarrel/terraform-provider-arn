@@ -3,12 +3,12 @@
 page_title: "nimble_streaming_image function - arn"
 subcategory: ""
 description: |-
-  Builds an nimble streaming-image ARN
+  nimble streaming-image ARN
 ---
 
 # function: nimble_streaming_image
 
-Builds the ARN of an `nimble` `streaming-image`:
+Builds the ARN for `nimble` `streaming-image`:
 
 ```
 arn:${Partition}:nimble:${Region}:${Account}:streaming-image/${StreamingImageId}

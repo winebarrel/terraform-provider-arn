@@ -3,12 +3,12 @@
 page_title: "lookoutequipment_inference_scheduler function - arn"
 subcategory: ""
 description: |-
-  Builds an lookoutequipment inference-scheduler ARN
+  lookoutequipment inference-scheduler ARN
 ---
 
 # function: lookoutequipment_inference_scheduler
 
-Builds the ARN of an `lookoutequipment` `inference-scheduler`:
+Builds the ARN for `lookoutequipment` `inference-scheduler`:
 
 ```
 arn:${Partition}:lookoutequipment:${Region}:${Account}:inference-scheduler/${InferenceSchedulerName}/${InferenceSchedulerId}

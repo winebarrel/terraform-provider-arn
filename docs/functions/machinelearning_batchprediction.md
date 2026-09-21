@@ -3,12 +3,12 @@
 page_title: "machinelearning_batchprediction function - arn"
 subcategory: ""
 description: |-
-  Builds an machinelearning batchprediction ARN
+  machinelearning batchprediction ARN
 ---
 
 # function: machinelearning_batchprediction
 
-Builds the ARN of an `machinelearning` `batchprediction`:
+Builds the ARN for `machinelearning` `batchprediction`:
 
 ```
 arn:${Partition}:machinelearning:${Region}:${Account}:batchprediction/${BatchPredictionId}

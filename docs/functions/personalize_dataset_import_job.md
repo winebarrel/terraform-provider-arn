@@ -3,12 +3,12 @@
 page_title: "personalize_dataset_import_job function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize datasetImportJob ARN
+  personalize datasetImportJob ARN
 ---
 
 # function: personalize_dataset_import_job
 
-Builds the ARN of an `personalize` `datasetImportJob`:
+Builds the ARN for `personalize` `datasetImportJob`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:dataset-import-job/${ResourceId}

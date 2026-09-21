@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_campaign function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting campaign ARN
+  mobiletargeting campaign ARN
 ---
 
 # function: mobiletargeting_campaign
 
-Builds the ARN of an `mobiletargeting` `campaign`:
+Builds the ARN for `mobiletargeting` `campaign`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/campaigns/${CampaignId}

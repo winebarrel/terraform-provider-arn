@@ -3,12 +3,12 @@
 page_title: "bedrock_application_inference_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock application-inference-profile ARN
+  bedrock application-inference-profile ARN
 ---
 
 # function: bedrock_application_inference_profile
 
-Builds the ARN of an `bedrock` `application-inference-profile`:
+Builds the ARN for `bedrock` `application-inference-profile`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:application-inference-profile/${ResourceId}

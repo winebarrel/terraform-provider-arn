@@ -3,12 +3,12 @@
 page_title: "ec2_vpc_flow_log function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 vpc-flow-log ARN
+  ec2 vpc-flow-log ARN
 ---
 
 # function: ec2_vpc_flow_log
 
-Builds the ARN of an `ec2` `vpc-flow-log`:
+Builds the ARN for `ec2` `vpc-flow-log`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:vpc-flow-log/${VpcFlowLogId}

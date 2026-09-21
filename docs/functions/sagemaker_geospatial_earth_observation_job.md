@@ -3,12 +3,12 @@
 page_title: "sagemaker_geospatial_earth_observation_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker-geospatial EarthObservationJob ARN
+  sagemaker-geospatial EarthObservationJob ARN
 ---
 
 # function: sagemaker_geospatial_earth_observation_job
 
-Builds the ARN of an `sagemaker-geospatial` `EarthObservationJob`:
+Builds the ARN for `sagemaker-geospatial` `EarthObservationJob`:
 
 ```
 arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:earth-observation-job/${JobID}

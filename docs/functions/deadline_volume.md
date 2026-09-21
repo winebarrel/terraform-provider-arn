@@ -3,12 +3,12 @@
 page_title: "deadline_volume function - arn"
 subcategory: ""
 description: |-
-  Builds an deadline volume ARN
+  deadline volume ARN
 ---
 
 # function: deadline_volume
 
-Builds the ARN of an `deadline` `volume`:
+Builds the ARN for `deadline` `volume`:
 
 ```
 arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/fleet/${FleetId}/volume/${VolumeId}

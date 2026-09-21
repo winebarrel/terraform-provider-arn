@@ -3,12 +3,12 @@
 page_title: "storagegateway_tape function - arn"
 subcategory: ""
 description: |-
-  Builds an storagegateway tape ARN
+  storagegateway tape ARN
 ---
 
 # function: storagegateway_tape
 
-Builds the ARN of an `storagegateway` `tape`:
+Builds the ARN for `storagegateway` `tape`:
 
 ```
 arn:${Partition}:storagegateway:${Region}:${Account}:tape/${TapeBarcode}

@@ -3,12 +3,12 @@
 page_title: "iot_client function - arn"
 subcategory: ""
 description: |-
-  Builds an iot client ARN
+  iot client ARN
 ---
 
 # function: iot_client
 
-Builds the ARN of an `iot` `client`:
+Builds the ARN for `iot` `client`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:client/${ClientId}

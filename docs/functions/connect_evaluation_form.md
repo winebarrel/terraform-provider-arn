@@ -3,12 +3,12 @@
 page_title: "connect_evaluation_form function - arn"
 subcategory: ""
 description: |-
-  Builds an connect evaluation-form ARN
+  connect evaluation-form ARN
 ---
 
 # function: connect_evaluation_form
 
-Builds the ARN of an `connect` `evaluation-form`:
+Builds the ARN for `connect` `evaluation-form`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/evaluation-form/${FormId}

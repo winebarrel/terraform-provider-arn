@@ -3,12 +3,12 @@
 page_title: "eks_identityproviderconfig function - arn"
 subcategory: ""
 description: |-
-  Builds an eks identityproviderconfig ARN
+  eks identityproviderconfig ARN
 ---
 
 # function: eks_identityproviderconfig
 
-Builds the ARN of an `eks` `identityproviderconfig`:
+Builds the ARN for `eks` `identityproviderconfig`:
 
 ```
 arn:${Partition}:eks:${Region}:${Account}:identityproviderconfig/${ClusterName}/${IdentityProviderType}/${IdentityProviderConfigName}/${UUID}

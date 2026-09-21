@@ -3,12 +3,12 @@
 page_title: "bedrock_provisioned_model function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock provisioned-model ARN
+  bedrock provisioned-model ARN
 ---
 
 # function: bedrock_provisioned_model
 
-Builds the ARN of an `bedrock` `provisioned-model`:
+Builds the ARN for `bedrock` `provisioned-model`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:provisioned-model/${ResourceId}

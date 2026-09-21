@@ -3,12 +3,12 @@
 page_title: "codeartifact_package function - arn"
 subcategory: ""
 description: |-
-  Builds an codeartifact package ARN
+  codeartifact package ARN
 ---
 
 # function: codeartifact_package
 
-Builds the ARN of an `codeartifact` `package`:
+Builds the ARN for `codeartifact` `package`:
 
 ```
 arn:${Partition}:codeartifact:${Region}:${Account}:package/${DomainName}/${RepositoryName}/${PackageFormat}/${PackageNamespace}/${PackageName}

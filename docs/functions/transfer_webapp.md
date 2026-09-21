@@ -3,12 +3,12 @@
 page_title: "transfer_webapp function - arn"
 subcategory: ""
 description: |-
-  Builds an transfer webapp ARN
+  transfer webapp ARN
 ---
 
 # function: transfer_webapp
 
-Builds the ARN of an `transfer` `webapp`:
+Builds the ARN for `transfer` `webapp`:
 
 ```
 arn:${Partition}:transfer:${Region}:${Account}:webapp/${WebAppId}

@@ -3,12 +3,12 @@
 page_title: "fms_applications_list function - arn"
 subcategory: ""
 description: |-
-  Builds an fms applications-list ARN
+  fms applications-list ARN
 ---
 
 # function: fms_applications_list
 
-Builds the ARN of an `fms` `applications-list`:
+Builds the ARN for `fms` `applications-list`:
 
 ```
 arn:${Partition}:fms:${Region}:${Account}:applications-list/${Id}

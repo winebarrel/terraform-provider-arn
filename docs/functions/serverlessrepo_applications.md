@@ -3,12 +3,12 @@
 page_title: "serverlessrepo_applications function - arn"
 subcategory: ""
 description: |-
-  Builds an serverlessrepo applications ARN
+  serverlessrepo applications ARN
 ---
 
 # function: serverlessrepo_applications
 
-Builds the ARN of an `serverlessrepo` `applications`:
+Builds the ARN for `serverlessrepo` `applications`:
 
 ```
 arn:${Partition}:serverlessrepo:${Region}:${Account}:applications/${ResourceId}

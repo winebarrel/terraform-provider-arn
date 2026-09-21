@@ -3,12 +3,12 @@
 page_title: "aidevops_asset function - arn"
 subcategory: ""
 description: |-
-  Builds an aidevops asset ARN
+  aidevops asset ARN
 ---
 
 # function: aidevops_asset
 
-Builds the ARN of an `aidevops` `asset`:
+Builds the ARN for `aidevops` `asset`:
 
 ```
 arn:${Partition}:aidevops:${Region}:${Account}:agentspace/${AgentSpaceId}/asset/${AssetId}

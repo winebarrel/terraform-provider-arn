@@ -3,12 +3,12 @@
 page_title: "ec2_local_gateway_route_table_vpc_association function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 local-gateway-route-table-vpc-association ARN
+  ec2 local-gateway-route-table-vpc-association ARN
 ---
 
 # function: ec2_local_gateway_route_table_vpc_association
 
-Builds the ARN of an `ec2` `local-gateway-route-table-vpc-association`:
+Builds the ARN for `ec2` `local-gateway-route-table-vpc-association`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:local-gateway-route-table-vpc-association/${LocalGatewayRouteTableVpcAssociationId}

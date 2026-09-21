@@ -3,12 +3,12 @@
 page_title: "resiliencehub_application function - arn"
 subcategory: ""
 description: |-
-  Builds an resiliencehub application ARN
+  resiliencehub application ARN
 ---
 
 # function: resiliencehub_application
 
-Builds the ARN of an `resiliencehub` `application`:
+Builds the ARN for `resiliencehub` `application`:
 
 ```
 arn:${Partition}:resiliencehub:${Region}:${Account}:app/${AppId}

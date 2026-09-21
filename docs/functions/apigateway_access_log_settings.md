@@ -3,12 +3,12 @@
 page_title: "apigateway_access_log_settings function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway AccessLogSettings ARN
+  apigateway AccessLogSettings ARN
 ---
 
 # function: apigateway_access_log_settings
 
-Builds the ARN of an `apigateway` `AccessLogSettings`:
+Builds the ARN for `apigateway` `AccessLogSettings`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/stages/${StageName}/accesslogsettings

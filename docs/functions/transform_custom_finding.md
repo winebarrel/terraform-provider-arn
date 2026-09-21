@@ -3,12 +3,12 @@
 page_title: "transform_custom_finding function - arn"
 subcategory: ""
 description: |-
-  Builds an transform-custom finding ARN
+  transform-custom finding ARN
 ---
 
 # function: transform_custom_finding
 
-Builds the ARN of an `transform-custom` `finding`:
+Builds the ARN for `transform-custom` `finding`:
 
 ```
 arn:${Partition}:transform-custom:${Region}:${Account}:finding/${FindingId}

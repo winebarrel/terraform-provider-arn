@@ -3,12 +3,12 @@
 page_title: "datapipeline_pipeline function - arn"
 subcategory: ""
 description: |-
-  Builds an datapipeline pipeline ARN
+  datapipeline pipeline ARN
 ---
 
 # function: datapipeline_pipeline
 
-Builds the ARN of an `datapipeline` `pipeline`:
+Builds the ARN for `datapipeline` `pipeline`:
 
 ```
 arn:${Partition}:datapipeline:${Region}:${Account}:pipeline/${PipelineId}

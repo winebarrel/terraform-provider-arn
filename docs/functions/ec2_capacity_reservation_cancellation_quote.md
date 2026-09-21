@@ -3,12 +3,12 @@
 page_title: "ec2_capacity_reservation_cancellation_quote function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 capacity-reservation-cancellation-quote ARN
+  ec2 capacity-reservation-cancellation-quote ARN
 ---
 
 # function: ec2_capacity_reservation_cancellation_quote
 
-Builds the ARN of an `ec2` `capacity-reservation-cancellation-quote`:
+Builds the ARN for `ec2` `capacity-reservation-cancellation-quote`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:capacity-reservation-cancellation-quote/${CapacityReservationCancellationQuoteId}

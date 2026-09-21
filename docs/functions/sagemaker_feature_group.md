@@ -3,12 +3,12 @@
 page_title: "sagemaker_feature_group function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker feature-group ARN
+  sagemaker feature-group ARN
 ---
 
 # function: sagemaker_feature_group
 
-Builds the ARN of an `sagemaker` `feature-group`:
+Builds the ARN for `sagemaker` `feature-group`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:feature-group/${FeatureGroupName}

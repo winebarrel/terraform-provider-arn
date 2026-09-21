@@ -3,12 +3,12 @@
 page_title: "finspace_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an finspace environment ARN
+  finspace environment ARN
 ---
 
 # function: finspace_environment
 
-Builds the ARN of an `finspace` `environment`:
+Builds the ARN for `finspace` `environment`:
 
 ```
 arn:${Partition}:finspace:${Region}:${Account}:environment/${EnvironmentId}

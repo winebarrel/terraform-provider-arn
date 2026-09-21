@@ -3,12 +3,12 @@
 page_title: "sso_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an sso Instance ARN
+  sso Instance ARN
 ---
 
 # function: sso_instance
 
-Builds the ARN of an `sso` `Instance`:
+Builds the ARN for `sso` `Instance`:
 
 ```
 arn:${Partition}:sso:::instance/${InstanceId}

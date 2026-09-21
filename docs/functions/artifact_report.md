@@ -3,12 +3,12 @@
 page_title: "artifact_report function - arn"
 subcategory: ""
 description: |-
-  Builds an artifact report ARN
+  artifact report ARN
 ---
 
 # function: artifact_report
 
-Builds the ARN of an `artifact` `report`:
+Builds the ARN for `artifact` `report`:
 
 ```
 arn:${Partition}:artifact:${Region}::report/${ReportId}:${Version}

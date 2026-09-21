@@ -3,12 +3,12 @@
 page_title: "servicequotas_quota function - arn"
 subcategory: ""
 description: |-
-  Builds an servicequotas quota ARN
+  servicequotas quota ARN
 ---
 
 # function: servicequotas_quota
 
-Builds the ARN of an `servicequotas` `quota`:
+Builds the ARN for `servicequotas` `quota`:
 
 ```
 arn:${Partition}:servicequotas:${Region}:${Account}:${ServiceCode}/${QuotaCode}

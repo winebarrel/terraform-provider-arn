@@ -3,12 +3,12 @@
 page_title: "workspaces_web_ip_access_settings function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces-web ipAccessSettings ARN
+  workspaces-web ipAccessSettings ARN
 ---
 
 # function: workspaces_web_ip_access_settings
 
-Builds the ARN of an `workspaces-web` `ipAccessSettings`:
+Builds the ARN for `workspaces-web` `ipAccessSettings`:
 
 ```
 arn:${Partition}:workspaces-web:${Region}:${Account}:ipAccessSettings/${IpAccessSettingsId}

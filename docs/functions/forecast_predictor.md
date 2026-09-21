@@ -3,12 +3,12 @@
 page_title: "forecast_predictor function - arn"
 subcategory: ""
 description: |-
-  Builds an forecast predictor ARN
+  forecast predictor ARN
 ---
 
 # function: forecast_predictor
 
-Builds the ARN of an `forecast` `predictor`:
+Builds the ARN for `forecast` `predictor`:
 
 ```
 arn:${Partition}:forecast:${Region}:${Account}:predictor/${ResourceId}

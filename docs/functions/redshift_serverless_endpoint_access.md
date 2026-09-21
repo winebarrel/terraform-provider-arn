@@ -3,12 +3,12 @@
 page_title: "redshift_serverless_endpoint_access function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift-serverless endpointAccess ARN
+  redshift-serverless endpointAccess ARN
 ---
 
 # function: redshift_serverless_endpoint_access
 
-Builds the ARN of an `redshift-serverless` `endpointAccess`:
+Builds the ARN for `redshift-serverless` `endpointAccess`:
 
 ```
 arn:${Partition}:redshift-serverless:${Region}:${Account}:managedvpcendpoint/${EndpointAccessId}

@@ -3,12 +3,12 @@
 page_title: "partnercentral_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral Connection ARN
+  partnercentral Connection ARN
 ---
 
 # function: partnercentral_connection
 
-Builds the ARN of an `partnercentral` `Connection`:
+Builds the ARN for `partnercentral` `Connection`:
 
 ```
 arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/connection/${Identifier}

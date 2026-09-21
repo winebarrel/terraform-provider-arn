@@ -3,12 +3,12 @@
 page_title: "wafv2_rulegroup function - arn"
 subcategory: ""
 description: |-
-  Builds an wafv2 rulegroup ARN
+  wafv2 rulegroup ARN
 ---
 
 # function: wafv2_rulegroup
 
-Builds the ARN of an `wafv2` `rulegroup`:
+Builds the ARN for `wafv2` `rulegroup`:
 
 ```
 arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/rulegroup/${Name}/${Id}

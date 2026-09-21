@@ -3,12 +3,12 @@
 page_title: "glue_rootcatalog function - arn"
 subcategory: ""
 description: |-
-  Builds an glue rootcatalog ARN
+  glue rootcatalog ARN
 ---
 
 # function: glue_rootcatalog
 
-Builds the ARN of an `glue` `rootcatalog`:
+Builds the ARN for `glue` `rootcatalog`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:catalog

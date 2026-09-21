@@ -3,12 +3,12 @@
 page_title: "cases_template function - arn"
 subcategory: ""
 description: |-
-  Builds an cases Template ARN
+  cases Template ARN
 ---
 
 # function: cases_template
 
-Builds the ARN of an `cases` `Template`:
+Builds the ARN for `cases` `Template`:
 
 ```
 arn:${Partition}:cases:${Region}:${Account}:domain/${DomainId}/template/${TemplateId}

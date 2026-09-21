@@ -3,12 +3,12 @@
 page_title: "partnercentral_channel_handshake function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral ChannelHandshake ARN
+  partnercentral ChannelHandshake ARN
 ---
 
 # function: partnercentral_channel_handshake
 
-Builds the ARN of an `partnercentral` `ChannelHandshake`:
+Builds the ARN for `partnercentral` `ChannelHandshake`:
 
 ```
 arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/channel-handshake/${Identifier}

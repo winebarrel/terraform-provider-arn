@@ -3,12 +3,12 @@
 page_title: "devicefarm_networkprofile function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm networkprofile ARN
+  devicefarm networkprofile ARN
 ---
 
 # function: devicefarm_networkprofile
 
-Builds the ARN of an `devicefarm` `networkprofile`:
+Builds the ARN for `devicefarm` `networkprofile`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:networkprofile:${ResourceId}

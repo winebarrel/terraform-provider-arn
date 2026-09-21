@@ -3,12 +3,12 @@
 page_title: "ses_mailmanager_address_list function - arn"
 subcategory: ""
 description: |-
-  Builds an ses mailmanager-address-list ARN
+  ses mailmanager-address-list ARN
 ---
 
 # function: ses_mailmanager_address_list
 
-Builds the ARN of an `ses` `mailmanager-address-list`:
+Builds the ARN for `ses` `mailmanager-address-list`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:mailmanager-address-list/${AddressListId}

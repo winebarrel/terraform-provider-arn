@@ -3,12 +3,12 @@
 page_title: "greengrass_connectivity_info function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass connectivityInfo ARN
+  greengrass connectivityInfo ARN
 ---
 
 # function: greengrass_connectivity_info
 
-Builds the ARN of an `greengrass` `connectivityInfo`:
+Builds the ARN for `greengrass` `connectivityInfo`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/things/${ThingName}/connectivityInfo

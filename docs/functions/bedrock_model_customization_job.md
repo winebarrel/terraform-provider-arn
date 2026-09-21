@@ -3,12 +3,12 @@
 page_title: "bedrock_model_customization_job function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock model-customization-job ARN
+  bedrock model-customization-job ARN
 ---
 
 # function: bedrock_model_customization_job
 
-Builds the ARN of an `bedrock` `model-customization-job`:
+Builds the ARN for `bedrock` `model-customization-job`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:model-customization-job/${ResourceId}

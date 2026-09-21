@@ -3,12 +3,12 @@
 page_title: "amplifybackend_job function - arn"
 subcategory: ""
 description: |-
-  Builds an amplifybackend job ARN
+  amplifybackend job ARN
 ---
 
 # function: amplifybackend_job
 
-Builds the ARN of an `amplifybackend` `job`:
+Builds the ARN for `amplifybackend` `job`:
 
 ```
 arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/job/*

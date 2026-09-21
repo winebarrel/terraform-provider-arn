@@ -3,12 +3,12 @@
 page_title: "quicksight_group function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight group ARN
+  quicksight group ARN
 ---
 
 # function: quicksight_group
 
-Builds the ARN of an `quicksight` `group`:
+Builds the ARN for `quicksight` `group`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:group/${ResourceId}

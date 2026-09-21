@@ -3,12 +3,12 @@
 page_title: "events_key function - arn"
 subcategory: ""
 description: |-
-  Builds an events key ARN
+  events key ARN
 ---
 
 # function: events_key
 
-Builds the ARN of an `events` `key`:
+Builds the ARN for `events` `key`:
 
 ```
 arn:${Partition}:kms:${Region}:${Account}:key/${KeyId}

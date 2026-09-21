@@ -3,12 +3,12 @@
 page_title: "mediatailor_vod_source function - arn"
 subcategory: ""
 description: |-
-  Builds an mediatailor vodSource ARN
+  mediatailor vodSource ARN
 ---
 
 # function: mediatailor_vod_source
 
-Builds the ARN of an `mediatailor` `vodSource`:
+Builds the ARN for `mediatailor` `vodSource`:
 
 ```
 arn:${Partition}:mediatailor:${Region}:${Account}:vodSource/${SourceLocationName}/${VodSourceName}

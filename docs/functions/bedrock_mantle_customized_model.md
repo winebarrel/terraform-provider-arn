@@ -3,12 +3,12 @@
 page_title: "bedrock_mantle_customized_model function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-mantle customized-model ARN
+  bedrock-mantle customized-model ARN
 ---
 
 # function: bedrock_mantle_customized_model
 
-Builds the ARN of an `bedrock-mantle` `customized-model`:
+Builds the ARN for `bedrock-mantle` `customized-model`:
 
 ```
 arn:${Partition}:bedrock-mantle:${Region}:${Account}:customized-model/${ResourceId}

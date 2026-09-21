@@ -3,12 +3,12 @@
 page_title: "sagemaker_automl_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker automl-job ARN
+  sagemaker automl-job ARN
 ---
 
 # function: sagemaker_automl_job
 
-Builds the ARN of an `sagemaker` `automl-job`:
+Builds the ARN for `sagemaker` `automl-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:automl-job/${AutoMLJobJobName}

@@ -3,12 +3,12 @@
 page_title: "profile_domain_object_types function - arn"
 subcategory: ""
 description: |-
-  Builds an profile domain-object-types ARN
+  profile domain-object-types ARN
 ---
 
 # function: profile_domain_object_types
 
-Builds the ARN of an `profile` `domain-object-types`:
+Builds the ARN for `profile` `domain-object-types`:
 
 ```
 arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/domain-object-types/${ObjectTypeName}

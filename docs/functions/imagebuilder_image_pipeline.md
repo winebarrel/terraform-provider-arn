@@ -3,12 +3,12 @@
 page_title: "imagebuilder_image_pipeline function - arn"
 subcategory: ""
 description: |-
-  Builds an imagebuilder imagePipeline ARN
+  imagebuilder imagePipeline ARN
 ---
 
 # function: imagebuilder_image_pipeline
 
-Builds the ARN of an `imagebuilder` `imagePipeline`:
+Builds the ARN for `imagebuilder` `imagePipeline`:
 
 ```
 arn:${Partition}:imagebuilder:${Region}:${Account}:image-pipeline/${ImagePipelineName}

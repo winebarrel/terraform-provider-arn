@@ -3,12 +3,12 @@
 page_title: "sagemaker_project function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker project ARN
+  sagemaker project ARN
 ---
 
 # function: sagemaker_project
 
-Builds the ARN of an `sagemaker` `project`:
+Builds the ARN for `sagemaker` `project`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:project/${ProjectName}

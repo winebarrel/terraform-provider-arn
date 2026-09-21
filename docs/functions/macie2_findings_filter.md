@@ -3,12 +3,12 @@
 page_title: "macie2_findings_filter function - arn"
 subcategory: ""
 description: |-
-  Builds an macie2 FindingsFilter ARN
+  macie2 FindingsFilter ARN
 ---
 
 # function: macie2_findings_filter
 
-Builds the ARN of an `macie2` `FindingsFilter`:
+Builds the ARN for `macie2` `FindingsFilter`:
 
 ```
 arn:${Partition}:macie2:${Region}:${Account}:findings-filter/${ResourceId}

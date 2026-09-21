@@ -3,12 +3,12 @@
 page_title: "ec2_placement_group function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 placement-group ARN
+  ec2 placement-group ARN
 ---
 
 # function: ec2_placement_group
 
-Builds the ARN of an `ec2` `placement-group`:
+Builds the ARN for `ec2` `placement-group`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:placement-group/${PlacementGroupName}

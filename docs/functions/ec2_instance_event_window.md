@@ -3,12 +3,12 @@
 page_title: "ec2_instance_event_window function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 instance-event-window ARN
+  ec2 instance-event-window ARN
 ---
 
 # function: ec2_instance_event_window
 
-Builds the ARN of an `ec2` `instance-event-window`:
+Builds the ARN for `ec2` `instance-event-window`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:instance-event-window/${InstanceEventWindowId}

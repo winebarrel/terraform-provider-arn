@@ -3,12 +3,12 @@
 page_title: "controltower_enabled_control function - arn"
 subcategory: ""
 description: |-
-  Builds an controltower EnabledControl ARN
+  controltower EnabledControl ARN
 ---
 
 # function: controltower_enabled_control
 
-Builds the ARN of an `controltower` `EnabledControl`:
+Builds the ARN for `controltower` `EnabledControl`:
 
 ```
 arn:${Partition}:controltower:${Region}:${Account}:enabledcontrol/${EnabledControlId}

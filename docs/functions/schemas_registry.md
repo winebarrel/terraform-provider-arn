@@ -3,12 +3,12 @@
 page_title: "schemas_registry function - arn"
 subcategory: ""
 description: |-
-  Builds an schemas registry ARN
+  schemas registry ARN
 ---
 
 # function: schemas_registry
 
-Builds the ARN of an `schemas` `registry`:
+Builds the ARN for `schemas` `registry`:
 
 ```
 arn:${Partition}:schemas:${Region}:${Account}:registry/${RegistryName}

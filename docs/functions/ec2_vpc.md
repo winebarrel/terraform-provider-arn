@@ -3,12 +3,12 @@
 page_title: "ec2_vpc function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 vpc ARN
+  ec2 vpc ARN
 ---
 
 # function: ec2_vpc
 
-Builds the ARN of an `ec2` `vpc`:
+Builds the ARN for `ec2` `vpc`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:vpc/${VpcId}

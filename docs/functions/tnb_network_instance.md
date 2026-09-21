@@ -3,12 +3,12 @@
 page_title: "tnb_network_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an tnb network-instance ARN
+  tnb network-instance ARN
 ---
 
 # function: tnb_network_instance
 
-Builds the ARN of an `tnb` `network-instance`:
+Builds the ARN for `tnb` `network-instance`:
 
 ```
 arn:${Partition}:tnb:${Region}:${Account}:network-instance/${NetworkInstanceId}

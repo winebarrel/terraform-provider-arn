@@ -3,12 +3,12 @@
 page_title: "glue_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an glue connection ARN
+  glue connection ARN
 ---
 
 # function: glue_connection
 
-Builds the ARN of an `glue` `connection`:
+Builds the ARN for `glue` `connection`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:connection/${ConnectionName}

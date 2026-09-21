@@ -3,12 +3,12 @@
 page_title: "signer_signing_job function - arn"
 subcategory: ""
 description: |-
-  Builds an signer signing-job ARN
+  signer signing-job ARN
 ---
 
 # function: signer_signing_job
 
-Builds the ARN of an `signer` `signing-job`:
+Builds the ARN for `signer` `signing-job`:
 
 ```
 arn:${Partition}:signer:${Region}:${Account}:/signing-jobs/${JobId}

@@ -3,12 +3,12 @@
 page_title: "route53_delegationset function - arn"
 subcategory: ""
 description: |-
-  Builds an route53 delegationset ARN
+  route53 delegationset ARN
 ---
 
 # function: route53_delegationset
 
-Builds the ARN of an `route53` `delegationset`:
+Builds the ARN for `route53` `delegationset`:
 
 ```
 arn:${Partition}:route53:::delegationset/${Id}

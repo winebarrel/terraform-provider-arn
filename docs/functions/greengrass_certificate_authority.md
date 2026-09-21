@@ -3,12 +3,12 @@
 page_title: "greengrass_certificate_authority function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass certificateAuthority ARN
+  greengrass certificateAuthority ARN
 ---
 
 # function: greengrass_certificate_authority
 
-Builds the ARN of an `greengrass` `certificateAuthority`:
+Builds the ARN for `greengrass` `certificateAuthority`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/groups/${GroupId}/certificateauthorities/${CertificateAuthorityId}

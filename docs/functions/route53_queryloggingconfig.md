@@ -3,12 +3,12 @@
 page_title: "route53_queryloggingconfig function - arn"
 subcategory: ""
 description: |-
-  Builds an route53 queryloggingconfig ARN
+  route53 queryloggingconfig ARN
 ---
 
 # function: route53_queryloggingconfig
 
-Builds the ARN of an `route53` `queryloggingconfig`:
+Builds the ARN for `route53` `queryloggingconfig`:
 
 ```
 arn:${Partition}:route53:::queryloggingconfig/${Id}

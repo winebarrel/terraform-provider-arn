@@ -3,12 +3,12 @@
 page_title: "acm_acme_domain_validation function - arn"
 subcategory: ""
 description: |-
-  Builds an acm acme-domain-validation ARN
+  acm acme-domain-validation ARN
 ---
 
 # function: acm_acme_domain_validation
 
-Builds the ARN of an `acm` `acme-domain-validation`:
+Builds the ARN for `acm` `acme-domain-validation`:
 
 ```
 arn:${Partition}:acm:${Region}:${Account}:acme-endpoint/${AcmeEndpointId}/acme-domain-validation/${AcmeDomainValidationId}

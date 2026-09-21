@@ -3,12 +3,12 @@
 page_title: "sagemaker_reserved_capacity function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker reserved-capacity ARN
+  sagemaker reserved-capacity ARN
 ---
 
 # function: sagemaker_reserved_capacity
 
-Builds the ARN of an `sagemaker` `reserved-capacity`:
+Builds the ARN for `sagemaker` `reserved-capacity`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:reserved-capacity/${RandomString}

@@ -3,12 +3,12 @@
 page_title: "appstream_image_builder function - arn"
 subcategory: ""
 description: |-
-  Builds an appstream image-builder ARN
+  appstream image-builder ARN
 ---
 
 # function: appstream_image_builder
 
-Builds the ARN of an `appstream` `image-builder`:
+Builds the ARN for `appstream` `image-builder`:
 
 ```
 arn:${Partition}:appstream:${Region}:${Account}:image-builder/${ImageBuilderName}

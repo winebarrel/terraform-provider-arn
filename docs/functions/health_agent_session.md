@@ -3,12 +3,12 @@
 page_title: "health_agent_session function - arn"
 subcategory: ""
 description: |-
-  Builds an health-agent Session ARN
+  health-agent Session ARN
 ---
 
 # function: health_agent_session
 
-Builds the ARN of an `health-agent` `Session`:
+Builds the ARN for `health-agent` `Session`:
 
 ```
 arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/session/${SessionId}

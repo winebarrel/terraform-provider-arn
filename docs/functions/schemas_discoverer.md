@@ -3,12 +3,12 @@
 page_title: "schemas_discoverer function - arn"
 subcategory: ""
 description: |-
-  Builds an schemas discoverer ARN
+  schemas discoverer ARN
 ---
 
 # function: schemas_discoverer
 
-Builds the ARN of an `schemas` `discoverer`:
+Builds the ARN for `schemas` `discoverer`:
 
 ```
 arn:${Partition}:schemas:${Region}:${Account}:discoverer/${DiscovererId}

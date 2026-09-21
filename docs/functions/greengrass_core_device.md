@@ -3,12 +3,12 @@
 page_title: "greengrass_core_device function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass coreDevice ARN
+  greengrass coreDevice ARN
 ---
 
 # function: greengrass_core_device
 
-Builds the ARN of an `greengrass` `coreDevice`:
+Builds the ARN for `greengrass` `coreDevice`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:coreDevices:${CoreDeviceThingName}

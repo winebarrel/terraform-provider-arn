@@ -3,12 +3,12 @@
 page_title: "fsx_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an fsx snapshot ARN
+  fsx snapshot ARN
 ---
 
 # function: fsx_snapshot
 
-Builds the ARN of an `fsx` `snapshot`:
+Builds the ARN for `fsx` `snapshot`:
 
 ```
 arn:${Partition}:fsx:${Region}:${Account}:snapshot/${VolumeId}/${SnapshotId}

@@ -3,12 +3,12 @@
 page_title: "rds_cluster_pg function - arn"
 subcategory: ""
 description: |-
-  Builds an rds cluster-pg ARN
+  rds cluster-pg ARN
 ---
 
 # function: rds_cluster_pg
 
-Builds the ARN of an `rds` `cluster-pg`:
+Builds the ARN for `rds` `cluster-pg`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:cluster-pg:${ClusterParameterGroupName}

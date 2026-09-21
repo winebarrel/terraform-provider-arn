@@ -3,12 +3,12 @@
 page_title: "iottwinmaker_sync_job function - arn"
 subcategory: ""
 description: |-
-  Builds an iottwinmaker syncJob ARN
+  iottwinmaker syncJob ARN
 ---
 
 # function: iottwinmaker_sync_job
 
-Builds the ARN of an `iottwinmaker` `syncJob`:
+Builds the ARN for `iottwinmaker` `syncJob`:
 
 ```
 arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}/sync-job/${SyncJobId}

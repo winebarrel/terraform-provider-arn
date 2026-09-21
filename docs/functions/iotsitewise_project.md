@@ -3,12 +3,12 @@
 page_title: "iotsitewise_project function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise project ARN
+  iotsitewise project ARN
 ---
 
 # function: iotsitewise_project
 
-Builds the ARN of an `iotsitewise` `project`:
+Builds the ARN for `iotsitewise` `project`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:project/${ProjectId}

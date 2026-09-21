@@ -3,12 +3,12 @@
 page_title: "macie2_classification_job function - arn"
 subcategory: ""
 description: |-
-  Builds an macie2 ClassificationJob ARN
+  macie2 ClassificationJob ARN
 ---
 
 # function: macie2_classification_job
 
-Builds the ARN of an `macie2` `ClassificationJob`:
+Builds the ARN for `macie2` `ClassificationJob`:
 
 ```
 arn:${Partition}:macie2:${Region}:${Account}:classification-job/${ResourceId}

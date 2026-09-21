@@ -3,12 +3,12 @@
 page_title: "arc_zonal_shift_nlb function - arn"
 subcategory: ""
 description: |-
-  Builds an arc-zonal-shift NLB ARN
+  arc-zonal-shift NLB ARN
 ---
 
 # function: arc_zonal_shift_nlb
 
-Builds the ARN of an `arc-zonal-shift` `NLB`:
+Builds the ARN for `arc-zonal-shift` `NLB`:
 
 ```
 arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/net/${LoadBalancerName}/${LoadBalancerId}

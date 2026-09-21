@@ -3,12 +3,12 @@
 page_title: "signer_signing_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an signer signing-profile ARN
+  signer signing-profile ARN
 ---
 
 # function: signer_signing_profile
 
-Builds the ARN of an `signer` `signing-profile`:
+Builds the ARN for `signer` `signing-profile`:
 
 ```
 arn:${Partition}:signer:${Region}:${Account}:/signing-profiles/${ProfileName}

@@ -3,12 +3,12 @@
 page_title: "iotfleethub_application function - arn"
 subcategory: ""
 description: |-
-  Builds an iotfleethub application ARN
+  iotfleethub application ARN
 ---
 
 # function: iotfleethub_application
 
-Builds the ARN of an `iotfleethub` `application`:
+Builds the ARN for `iotfleethub` `application`:
 
 ```
 arn:${Partition}:iotfleethub:${Region}:${Account}:application/${ApplicationId}

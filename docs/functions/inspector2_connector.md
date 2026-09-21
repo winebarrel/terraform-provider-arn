@@ -3,12 +3,12 @@
 page_title: "inspector2_connector function - arn"
 subcategory: ""
 description: |-
-  Builds an inspector2 Connector ARN
+  inspector2 Connector ARN
 ---
 
 # function: inspector2_connector
 
-Builds the ARN of an `inspector2` `Connector`:
+Builds the ARN for `inspector2` `Connector`:
 
 ```
 arn:${Partition}:inspector2:${Region}:${Account}:connector/${ConnectorId}

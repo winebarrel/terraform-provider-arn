@@ -3,12 +3,12 @@
 page_title: "lookoutvision_project function - arn"
 subcategory: ""
 description: |-
-  Builds an lookoutvision project ARN
+  lookoutvision project ARN
 ---
 
 # function: lookoutvision_project
 
-Builds the ARN of an `lookoutvision` `project`:
+Builds the ARN for `lookoutvision` `project`:
 
 ```
 arn:${Partition}:lookoutvision:${Region}:${Account}:project/${ProjectName}

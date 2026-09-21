@@ -3,12 +3,12 @@
 page_title: "route53resolver_resolver_query_log_config function - arn"
 subcategory: ""
 description: |-
-  Builds an route53resolver resolver-query-log-config ARN
+  route53resolver resolver-query-log-config ARN
 ---
 
 # function: route53resolver_resolver_query_log_config
 
-Builds the ARN of an `route53resolver` `resolver-query-log-config`:
+Builds the ARN for `route53resolver` `resolver-query-log-config`:
 
 ```
 arn:${Partition}:route53resolver:${Region}:${Account}:resolver-query-log-config/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "rtbfabric_responder_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an rtbfabric ResponderGateway ARN
+  rtbfabric ResponderGateway ARN
 ---
 
 # function: rtbfabric_responder_gateway
 
-Builds the ARN of an `rtbfabric` `ResponderGateway`:
+Builds the ARN for `rtbfabric` `ResponderGateway`:
 
 ```
 arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}

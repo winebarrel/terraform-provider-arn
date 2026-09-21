@@ -3,12 +3,12 @@
 page_title: "iam_instance_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an iam instance-profile ARN
+  iam instance-profile ARN
 ---
 
 # function: iam_instance_profile
 
-Builds the ARN of an `iam` `instance-profile`:
+Builds the ARN for `iam` `instance-profile`:
 
 ```
 arn:${Partition}:iam::${Account}:instance-profile/${InstanceProfileNameWithPath}

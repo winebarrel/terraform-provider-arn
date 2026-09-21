@@ -3,12 +3,12 @@
 page_title: "ec2_ipv6pool_ec2 function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 ipv6pool-ec2 ARN
+  ec2 ipv6pool-ec2 ARN
 ---
 
 # function: ec2_ipv6pool_ec2
 
-Builds the ARN of an `ec2` `ipv6pool-ec2`:
+Builds the ARN for `ec2` `ipv6pool-ec2`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:ipv6pool-ec2/${Ipv6PoolEc2Id}

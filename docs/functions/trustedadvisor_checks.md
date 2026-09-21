@@ -3,12 +3,12 @@
 page_title: "trustedadvisor_checks function - arn"
 subcategory: ""
 description: |-
-  Builds an trustedadvisor checks ARN
+  trustedadvisor checks ARN
 ---
 
 # function: trustedadvisor_checks
 
-Builds the ARN of an `trustedadvisor` `checks`:
+Builds the ARN for `trustedadvisor` `checks`:
 
 ```
 arn:${Partition}:trustedadvisor:${Region}:${Account}:checks/${CategoryCode}/${CheckId}

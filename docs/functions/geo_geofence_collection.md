@@ -3,12 +3,12 @@
 page_title: "geo_geofence_collection function - arn"
 subcategory: ""
 description: |-
-  Builds an geo geofence-collection ARN
+  geo geofence-collection ARN
 ---
 
 # function: geo_geofence_collection
 
-Builds the ARN of an `geo` `geofence-collection`:
+Builds the ARN for `geo` `geofence-collection`:
 
 ```
 arn:${Partition}:geo:${Region}:${Account}:geofence-collection/${GeofenceCollectionName}

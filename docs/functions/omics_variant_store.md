@@ -3,12 +3,12 @@
 page_title: "omics_variant_store function - arn"
 subcategory: ""
 description: |-
-  Builds an omics VariantStore ARN
+  omics VariantStore ARN
 ---
 
 # function: omics_variant_store
 
-Builds the ARN of an `omics` `VariantStore`:
+Builds the ARN for `omics` `VariantStore`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:variantStore/${VariantStoreName}

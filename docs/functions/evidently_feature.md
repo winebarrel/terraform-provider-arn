@@ -3,12 +3,12 @@
 page_title: "evidently_feature function - arn"
 subcategory: ""
 description: |-
-  Builds an evidently Feature ARN
+  evidently Feature ARN
 ---
 
 # function: evidently_feature
 
-Builds the ARN of an `evidently` `Feature`:
+Builds the ARN for `evidently` `Feature`:
 
 ```
 arn:${Partition}:evidently:${Region}:${Account}:project/${ProjectName}/feature/${FeatureName}

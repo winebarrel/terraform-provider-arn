@@ -3,12 +3,12 @@
 page_title: "qbusiness_chat_response_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an qbusiness chat-response-configuration ARN
+  qbusiness chat-response-configuration ARN
 ---
 
 # function: qbusiness_chat_response_configuration
 
-Builds the ARN of an `qbusiness` `chat-response-configuration`:
+Builds the ARN for `qbusiness` `chat-response-configuration`:
 
 ```
 arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/chat-response-configuration/${ChatResponseConfigurationId}

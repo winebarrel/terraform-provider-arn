@@ -3,12 +3,12 @@
 page_title: "dms_replication_config function - arn"
 subcategory: ""
 description: |-
-  Builds an dms ReplicationConfig ARN
+  dms ReplicationConfig ARN
 ---
 
 # function: dms_replication_config
 
-Builds the ARN of an `dms` `ReplicationConfig`:
+Builds the ARN for `dms` `ReplicationConfig`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:replication-config:*

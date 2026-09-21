@@ -3,12 +3,12 @@
 page_title: "ec2_secondary_network function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 secondary-network ARN
+  ec2 secondary-network ARN
 ---
 
 # function: ec2_secondary_network
 
-Builds the ARN of an `ec2` `secondary-network`:
+Builds the ARN for `ec2` `secondary-network`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:secondary-network/${SecondaryNetworkId}

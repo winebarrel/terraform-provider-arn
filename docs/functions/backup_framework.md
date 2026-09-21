@@ -3,12 +3,12 @@
 page_title: "backup_framework function - arn"
 subcategory: ""
 description: |-
-  Builds an backup framework ARN
+  backup framework ARN
 ---
 
 # function: backup_framework
 
-Builds the ARN of an `backup` `framework`:
+Builds the ARN for `backup` `framework`:
 
 ```
 arn:${Partition}:backup:${Region}:${Account}:framework:${FrameworkName}-${FrameworkId}

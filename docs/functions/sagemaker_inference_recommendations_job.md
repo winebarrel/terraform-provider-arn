@@ -3,12 +3,12 @@
 page_title: "sagemaker_inference_recommendations_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker inference-recommendations-job ARN
+  sagemaker inference-recommendations-job ARN
 ---
 
 # function: sagemaker_inference_recommendations_job
 
-Builds the ARN of an `sagemaker` `inference-recommendations-job`:
+Builds the ARN for `sagemaker` `inference-recommendations-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:inference-recommendations-job/${InferenceRecommendationsJobName}

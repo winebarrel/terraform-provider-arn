@@ -3,12 +3,12 @@
 page_title: "sagemaker_image function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker image ARN
+  sagemaker image ARN
 ---
 
 # function: sagemaker_image
 
-Builds the ARN of an `sagemaker` `image`:
+Builds the ARN for `sagemaker` `image`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:image/${ImageName}

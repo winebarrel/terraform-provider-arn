@@ -3,12 +3,12 @@
 page_title: "mgn_connector_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgn ConnectorResource ARN
+  mgn ConnectorResource ARN
 ---
 
 # function: mgn_connector_resource
 
-Builds the ARN of an `mgn` `ConnectorResource`:
+Builds the ARN for `mgn` `ConnectorResource`:
 
 ```
 arn:${Partition}:mgn:${Region}:${Account}:connector/${ConnectorID}

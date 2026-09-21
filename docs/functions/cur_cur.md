@@ -3,12 +3,12 @@
 page_title: "cur_cur function - arn"
 subcategory: ""
 description: |-
-  Builds an cur cur ARN
+  cur cur ARN
 ---
 
 # function: cur_cur
 
-Builds the ARN of an `cur` `cur`:
+Builds the ARN for `cur` `cur`:
 
 ```
 arn:${Partition}:cur:${Region}:${Account}:definition/${ReportName}

@@ -3,12 +3,12 @@
 page_title: "fis_action function - arn"
 subcategory: ""
 description: |-
-  Builds an fis action ARN
+  fis action ARN
 ---
 
 # function: fis_action
 
-Builds the ARN of an `fis` `action`:
+Builds the ARN for `fis` `action`:
 
 ```
 arn:${Partition}:fis:${Region}:${Account}:action/${Id}

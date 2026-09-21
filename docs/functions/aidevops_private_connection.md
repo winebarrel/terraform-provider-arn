@@ -3,12 +3,12 @@
 page_title: "aidevops_private_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an aidevops private-connection ARN
+  aidevops private-connection ARN
 ---
 
 # function: aidevops_private_connection
 
-Builds the ARN of an `aidevops` `private-connection`:
+Builds the ARN for `aidevops` `private-connection`:
 
 ```
 arn:${Partition}:aidevops:${Region}:${Account}:private-connection/${Name}

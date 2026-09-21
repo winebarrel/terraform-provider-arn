@@ -3,12 +3,12 @@
 page_title: "appstream_fleet function - arn"
 subcategory: ""
 description: |-
-  Builds an appstream fleet ARN
+  appstream fleet ARN
 ---
 
 # function: appstream_fleet
 
-Builds the ARN of an `appstream` `fleet`:
+Builds the ARN for `appstream` `fleet`:
 
 ```
 arn:${Partition}:appstream:${Region}:${Account}:fleet/${FleetName}

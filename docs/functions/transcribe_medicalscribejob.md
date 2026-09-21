@@ -3,12 +3,12 @@
 page_title: "transcribe_medicalscribejob function - arn"
 subcategory: ""
 description: |-
-  Builds an transcribe medicalscribejob ARN
+  transcribe medicalscribejob ARN
 ---
 
 # function: transcribe_medicalscribejob
 
-Builds the ARN of an `transcribe` `medicalscribejob`:
+Builds the ARN for `transcribe` `medicalscribejob`:
 
 ```
 arn:${Partition}:transcribe:${Region}:${Account}:medical-scribe-job/${JobName}

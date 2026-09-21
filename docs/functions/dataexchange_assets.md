@@ -3,12 +3,12 @@
 page_title: "dataexchange_assets function - arn"
 subcategory: ""
 description: |-
-  Builds an dataexchange assets ARN
+  dataexchange assets ARN
 ---
 
 # function: dataexchange_assets
 
-Builds the ARN of an `dataexchange` `assets`:
+Builds the ARN for `dataexchange` `assets`:
 
 ```
 arn:${Partition}:dataexchange:${Region}:${Account}:data-sets/${DataSetId}/revisions/${RevisionId}/assets/${AssetId}

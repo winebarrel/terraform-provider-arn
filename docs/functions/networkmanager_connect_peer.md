@@ -3,12 +3,12 @@
 page_title: "networkmanager_connect_peer function - arn"
 subcategory: ""
 description: |-
-  Builds an networkmanager connect-peer ARN
+  networkmanager connect-peer ARN
 ---
 
 # function: networkmanager_connect_peer
 
-Builds the ARN of an `networkmanager` `connect-peer`:
+Builds the ARN for `networkmanager` `connect-peer`:
 
 ```
 arn:${Partition}:networkmanager::${Account}:connect-peer/${ResourceId}

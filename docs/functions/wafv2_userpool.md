@@ -3,12 +3,12 @@
 page_title: "wafv2_userpool function - arn"
 subcategory: ""
 description: |-
-  Builds an wafv2 userpool ARN
+  wafv2 userpool ARN
 ---
 
 # function: wafv2_userpool
 
-Builds the ARN of an `wafv2` `userpool`:
+Builds the ARN for `wafv2` `userpool`:
 
 ```
 arn:${Partition}:cognito-idp:${Region}:${Account}:userpool/${UserPoolId}

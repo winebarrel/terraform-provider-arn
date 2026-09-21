@@ -3,12 +3,12 @@
 page_title: "datasync_agent function - arn"
 subcategory: ""
 description: |-
-  Builds an datasync agent ARN
+  datasync agent ARN
 ---
 
 # function: datasync_agent
 
-Builds the ARN of an `datasync` `agent`:
+Builds the ARN for `datasync` `agent`:
 
 ```
 arn:${Partition}:datasync:${Region}:${AccountId}:agent/${AgentId}

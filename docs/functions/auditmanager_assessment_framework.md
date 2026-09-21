@@ -3,12 +3,12 @@
 page_title: "auditmanager_assessment_framework function - arn"
 subcategory: ""
 description: |-
-  Builds an auditmanager assessmentFramework ARN
+  auditmanager assessmentFramework ARN
 ---
 
 # function: auditmanager_assessment_framework
 
-Builds the ARN of an `auditmanager` `assessmentFramework`:
+Builds the ARN for `auditmanager` `assessmentFramework`:
 
 ```
 arn:${Partition}:auditmanager:${Region}:${Account}:assessmentFramework/${AssessmentFrameworkId}

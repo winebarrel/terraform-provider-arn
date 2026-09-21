@@ -3,12 +3,12 @@
 page_title: "rds_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an rds snapshot ARN
+  rds snapshot ARN
 ---
 
 # function: rds_snapshot
 
-Builds the ARN of an `rds` `snapshot`:
+Builds the ARN for `rds` `snapshot`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:snapshot:${SnapshotName}

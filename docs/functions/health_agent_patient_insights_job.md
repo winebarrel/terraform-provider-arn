@@ -3,12 +3,12 @@
 page_title: "health_agent_patient_insights_job function - arn"
 subcategory: ""
 description: |-
-  Builds an health-agent PatientInsightsJob ARN
+  health-agent PatientInsightsJob ARN
 ---
 
 # function: health_agent_patient_insights_job
 
-Builds the ARN of an `health-agent` `PatientInsightsJob`:
+Builds the ARN for `health-agent` `PatientInsightsJob`:
 
 ```
 arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/patient-insights-job/${JobId}

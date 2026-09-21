@@ -3,12 +3,12 @@
 page_title: "dynamodb_import function - arn"
 subcategory: ""
 description: |-
-  Builds an dynamodb import ARN
+  dynamodb import ARN
 ---
 
 # function: dynamodb_import
 
-Builds the ARN of an `dynamodb` `import`:
+Builds the ARN for `dynamodb` `import`:
 
 ```
 arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/import/${ImportName}

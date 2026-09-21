@@ -3,12 +3,12 @@
 page_title: "iotfleetwise_modelmanifest function - arn"
 subcategory: ""
 description: |-
-  Builds an iotfleetwise modelmanifest ARN
+  iotfleetwise modelmanifest ARN
 ---
 
 # function: iotfleetwise_modelmanifest
 
-Builds the ARN of an `iotfleetwise` `modelmanifest`:
+Builds the ARN for `iotfleetwise` `modelmanifest`:
 
 ```
 arn:${Partition}:iotfleetwise:${Region}:${Account}:model-manifest/${Name}

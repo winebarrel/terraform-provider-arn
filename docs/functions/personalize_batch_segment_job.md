@@ -3,12 +3,12 @@
 page_title: "personalize_batch_segment_job function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize batchSegmentJob ARN
+  personalize batchSegmentJob ARN
 ---
 
 # function: personalize_batch_segment_job
 
-Builds the ARN of an `personalize` `batchSegmentJob`:
+Builds the ARN for `personalize` `batchSegmentJob`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:batch-segment-job/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "memorydb_user function - arn"
 subcategory: ""
 description: |-
-  Builds an memorydb user ARN
+  memorydb user ARN
 ---
 
 # function: memorydb_user
 
-Builds the ARN of an `memorydb` `user`:
+Builds the ARN for `memorydb` `user`:
 
 ```
 arn:${Partition}:memorydb:${Region}:${Account}:user/${UserName}

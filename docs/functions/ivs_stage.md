@@ -3,12 +3,12 @@
 page_title: "ivs_stage function - arn"
 subcategory: ""
 description: |-
-  Builds an ivs Stage ARN
+  ivs Stage ARN
 ---
 
 # function: ivs_stage
 
-Builds the ARN of an `ivs` `Stage`:
+Builds the ARN for `ivs` `Stage`:
 
 ```
 arn:${Partition}:ivs:${Region}:${Account}:stage/${ResourceId}

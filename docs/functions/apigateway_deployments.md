@@ -3,12 +3,12 @@
 page_title: "apigateway_deployments function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Deployments ARN
+  apigateway Deployments ARN
 ---
 
 # function: apigateway_deployments
 
-Builds the ARN of an `apigateway` `Deployments`:
+Builds the ARN for `apigateway` `Deployments`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/deployments

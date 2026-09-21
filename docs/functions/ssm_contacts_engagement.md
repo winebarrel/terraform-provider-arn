@@ -3,12 +3,12 @@
 page_title: "ssm_contacts_engagement function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm-contacts engagement ARN
+  ssm-contacts engagement ARN
 ---
 
 # function: ssm_contacts_engagement
 
-Builds the ARN of an `ssm-contacts` `engagement`:
+Builds the ARN for `ssm-contacts` `engagement`:
 
 ```
 arn:${Partition}:ssm-contacts:${Region}:${Account}:engagement/${ContactAlias}/${EngagementId}

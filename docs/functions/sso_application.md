@@ -3,12 +3,12 @@
 page_title: "sso_application function - arn"
 subcategory: ""
 description: |-
-  Builds an sso Application ARN
+  sso Application ARN
 ---
 
 # function: sso_application
 
-Builds the ARN of an `sso` `Application`:
+Builds the ARN for `sso` `Application`:
 
 ```
 arn:${Partition}:sso::${AccountId}:application/${InstanceId}/${ApplicationId}

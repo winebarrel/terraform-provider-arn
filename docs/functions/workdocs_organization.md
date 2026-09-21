@@ -3,12 +3,12 @@
 page_title: "workdocs_organization function - arn"
 subcategory: ""
 description: |-
-  Builds an workdocs organization ARN
+  workdocs organization ARN
 ---
 
 # function: workdocs_organization
 
-Builds the ARN of an `workdocs` `organization`:
+Builds the ARN for `workdocs` `organization`:
 
 ```
 arn:${Partition}:workdocs:${Region}:${Account}:organization/${ResourceId}

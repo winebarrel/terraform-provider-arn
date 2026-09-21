@@ -3,12 +3,12 @@
 page_title: "devicefarm_devicepool function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm devicepool ARN
+  devicefarm devicepool ARN
 ---
 
 # function: devicefarm_devicepool
 
-Builds the ARN of an `devicefarm` `devicepool`:
+Builds the ARN for `devicefarm` `devicepool`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:devicepool:${ResourceId}

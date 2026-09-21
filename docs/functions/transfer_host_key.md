@@ -3,12 +3,12 @@
 page_title: "transfer_host_key function - arn"
 subcategory: ""
 description: |-
-  Builds an transfer host-key ARN
+  transfer host-key ARN
 ---
 
 # function: transfer_host_key
 
-Builds the ARN of an `transfer` `host-key`:
+Builds the ARN for `transfer` `host-key`:
 
 ```
 arn:${Partition}:transfer:${Region}:${Account}:host-key/${ServerId}/${HostKeyId}

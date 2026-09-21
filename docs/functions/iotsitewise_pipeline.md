@@ -3,12 +3,12 @@
 page_title: "iotsitewise_pipeline function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise pipeline ARN
+  iotsitewise pipeline ARN
 ---
 
 # function: iotsitewise_pipeline
 
-Builds the ARN of an `iotsitewise` `pipeline`:
+Builds the ARN for `iotsitewise` `pipeline`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:workspace/${WorkspaceName}/pipeline/${PipelineName}

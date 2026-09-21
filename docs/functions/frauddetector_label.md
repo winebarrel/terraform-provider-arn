@@ -3,12 +3,12 @@
 page_title: "frauddetector_label function - arn"
 subcategory: ""
 description: |-
-  Builds an frauddetector label ARN
+  frauddetector label ARN
 ---
 
 # function: frauddetector_label
 
-Builds the ARN of an `frauddetector` `label`:
+Builds the ARN for `frauddetector` `label`:
 
 ```
 arn:${Partition}:frauddetector:${Region}:${Account}:label/${ResourcePath}

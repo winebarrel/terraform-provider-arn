@@ -3,12 +3,12 @@
 page_title: "sms_voice_rcs_agent function - arn"
 subcategory: ""
 description: |-
-  Builds an sms-voice RcsAgent ARN
+  sms-voice RcsAgent ARN
 ---
 
 # function: sms_voice_rcs_agent
 
-Builds the ARN of an `sms-voice` `RcsAgent`:
+Builds the ARN for `sms-voice` `RcsAgent`:
 
 ```
 arn:${Partition}:sms-voice:${Region}:${Account}:rcs-agent/${RcsAgentId}

@@ -3,12 +3,12 @@
 page_title: "bedrock_session function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock session ARN
+  bedrock session ARN
 ---
 
 # function: bedrock_session
 
-Builds the ARN of an `bedrock` `session`:
+Builds the ARN for `bedrock` `session`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:session/${SessionId}

@@ -3,12 +3,12 @@
 page_title: "greengrass_bulk_deployment function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass bulkDeployment ARN
+  greengrass bulkDeployment ARN
 ---
 
 # function: greengrass_bulk_deployment
 
-Builds the ARN of an `greengrass` `bulkDeployment`:
+Builds the ARN for `greengrass` `bulkDeployment`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/bulk/deployments/${BulkDeploymentId}

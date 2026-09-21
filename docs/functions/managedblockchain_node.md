@@ -3,12 +3,12 @@
 page_title: "managedblockchain_node function - arn"
 subcategory: ""
 description: |-
-  Builds an managedblockchain node ARN
+  managedblockchain node ARN
 ---
 
 # function: managedblockchain_node
 
-Builds the ARN of an `managedblockchain` `node`:
+Builds the ARN for `managedblockchain` `node`:
 
 ```
 arn:${Partition}:managedblockchain:${Region}:${Account}:nodes/${NodeId}

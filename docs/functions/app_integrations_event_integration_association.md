@@ -3,12 +3,12 @@
 page_title: "app_integrations_event_integration_association function - arn"
 subcategory: ""
 description: |-
-  Builds an app-integrations event-integration-association ARN
+  app-integrations event-integration-association ARN
 ---
 
 # function: app_integrations_event_integration_association
 
-Builds the ARN of an `app-integrations` `event-integration-association`:
+Builds the ARN for `app-integrations` `event-integration-association`:
 
 ```
 arn:${Partition}:app-integrations:${Region}:${Account}:event-integration-association/${EventIntegrationName}/${ResourceId}

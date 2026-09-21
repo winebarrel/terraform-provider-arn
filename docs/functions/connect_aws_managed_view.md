@@ -3,12 +3,12 @@
 page_title: "connect_aws_managed_view function - arn"
 subcategory: ""
 description: |-
-  Builds an connect aws-managed-view ARN
+  connect aws-managed-view ARN
 ---
 
 # function: connect_aws_managed_view
 
-Builds the ARN of an `connect` `aws-managed-view`:
+Builds the ARN for `connect` `aws-managed-view`:
 
 ```
 arn:${Partition}:connect:${Region}:aws:view/${ViewId}

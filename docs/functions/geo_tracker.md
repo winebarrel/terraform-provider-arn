@@ -3,12 +3,12 @@
 page_title: "geo_tracker function - arn"
 subcategory: ""
 description: |-
-  Builds an geo tracker ARN
+  geo tracker ARN
 ---
 
 # function: geo_tracker
 
-Builds the ARN of an `geo` `tracker`:
+Builds the ARN for `geo` `tracker`:
 
 ```
 arn:${Partition}:geo:${Region}:${Account}:tracker/${TrackerName}

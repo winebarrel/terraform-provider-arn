@@ -3,12 +3,12 @@
 page_title: "frauddetector_event_type function - arn"
 subcategory: ""
 description: |-
-  Builds an frauddetector event-type ARN
+  frauddetector event-type ARN
 ---
 
 # function: frauddetector_event_type
 
-Builds the ARN of an `frauddetector` `event-type`:
+Builds the ARN for `frauddetector` `event-type`:
 
 ```
 arn:${Partition}:frauddetector:${Region}:${Account}:event-type/${ResourcePath}

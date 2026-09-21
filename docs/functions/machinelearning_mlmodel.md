@@ -3,12 +3,12 @@
 page_title: "machinelearning_mlmodel function - arn"
 subcategory: ""
 description: |-
-  Builds an machinelearning mlmodel ARN
+  machinelearning mlmodel ARN
 ---
 
 # function: machinelearning_mlmodel
 
-Builds the ARN of an `machinelearning` `mlmodel`:
+Builds the ARN for `machinelearning` `mlmodel`:
 
 ```
 arn:${Partition}:machinelearning:${Region}:${Account}:mlmodel/${MlModelId}

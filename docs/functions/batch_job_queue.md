@@ -3,12 +3,12 @@
 page_title: "batch_job_queue function - arn"
 subcategory: ""
 description: |-
-  Builds an batch job-queue ARN
+  batch job-queue ARN
 ---
 
 # function: batch_job_queue
 
-Builds the ARN of an `batch` `job-queue`:
+Builds the ARN for `batch` `job-queue`:
 
 ```
 arn:${Partition}:batch:${Region}:${Account}:job-queue/${JobQueueName}

@@ -3,12 +3,12 @@
 page_title: "rekognition_dataset function - arn"
 subcategory: ""
 description: |-
-  Builds an rekognition dataset ARN
+  rekognition dataset ARN
 ---
 
 # function: rekognition_dataset
 
-Builds the ARN of an `rekognition` `dataset`:
+Builds the ARN for `rekognition` `dataset`:
 
 ```
 arn:${Partition}:rekognition:${Region}:${Account}:project/${ProjectName}/dataset/${DatasetType}/${CreationTimestamp}

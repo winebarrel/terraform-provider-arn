@@ -3,12 +3,12 @@
 page_title: "fsx_storage_virtual_machine function - arn"
 subcategory: ""
 description: |-
-  Builds an fsx storage-virtual-machine ARN
+  fsx storage-virtual-machine ARN
 ---
 
 # function: fsx_storage_virtual_machine
 
-Builds the ARN of an `fsx` `storage-virtual-machine`:
+Builds the ARN for `fsx` `storage-virtual-machine`:
 
 ```
 arn:${Partition}:fsx:${Region}:${Account}:storage-virtual-machine/${FileSystemId}/${StorageVirtualMachineId}

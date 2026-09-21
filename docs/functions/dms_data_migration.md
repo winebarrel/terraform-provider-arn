@@ -3,12 +3,12 @@
 page_title: "dms_data_migration function - arn"
 subcategory: ""
 description: |-
-  Builds an dms DataMigration ARN
+  dms DataMigration ARN
 ---
 
 # function: dms_data_migration
 
-Builds the ARN of an `dms` `DataMigration`:
+Builds the ARN for `dms` `DataMigration`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:data-migration:*

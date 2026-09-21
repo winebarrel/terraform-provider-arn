@@ -3,12 +3,12 @@
 page_title: "deadline_license_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an deadline license-endpoint ARN
+  deadline license-endpoint ARN
 ---
 
 # function: deadline_license_endpoint
 
-Builds the ARN of an `deadline` `license-endpoint`:
+Builds the ARN for `deadline` `license-endpoint`:
 
 ```
 arn:${Partition}:deadline:${Region}:${Account}:license-endpoint/${LicenseEndpointId}

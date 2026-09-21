@@ -3,12 +3,12 @@
 page_title: "sqlworkbench_chart function - arn"
 subcategory: ""
 description: |-
-  Builds an sqlworkbench chart ARN
+  sqlworkbench chart ARN
 ---
 
 # function: sqlworkbench_chart
 
-Builds the ARN of an `sqlworkbench` `chart`:
+Builds the ARN for `sqlworkbench` `chart`:
 
 ```
 arn:${Partition}:sqlworkbench:${Region}:${Account}:chart/${ResourceId}

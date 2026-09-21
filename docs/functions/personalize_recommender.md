@@ -3,12 +3,12 @@
 page_title: "personalize_recommender function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize recommender ARN
+  personalize recommender ARN
 ---
 
 # function: personalize_recommender
 
-Builds the ARN of an `personalize` `recommender`:
+Builds the ARN for `personalize` `recommender`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:recommender/${ResourceId}

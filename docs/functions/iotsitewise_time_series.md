@@ -3,12 +3,12 @@
 page_title: "iotsitewise_time_series function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise time-series ARN
+  iotsitewise time-series ARN
 ---
 
 # function: iotsitewise_time_series
 
-Builds the ARN of an `iotsitewise` `time-series`:
+Builds the ARN for `iotsitewise` `time-series`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:time-series/${TimeSeriesId}

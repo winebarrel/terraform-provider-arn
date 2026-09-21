@@ -3,12 +3,12 @@
 page_title: "wellarchitected_lens function - arn"
 subcategory: ""
 description: |-
-  Builds an wellarchitected lens ARN
+  wellarchitected lens ARN
 ---
 
 # function: wellarchitected_lens
 
-Builds the ARN of an `wellarchitected` `lens`:
+Builds the ARN for `wellarchitected` `lens`:
 
 ```
 arn:${Partition}:wellarchitected:${Region}:${Account}:lens/${ResourceId}

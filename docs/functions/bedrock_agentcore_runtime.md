@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_runtime function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore runtime ARN
+  bedrock-agentcore runtime ARN
 ---
 
 # function: bedrock_agentcore_runtime
 
-Builds the ARN of an `bedrock-agentcore` `runtime`:
+Builds the ARN for `bedrock-agentcore` `runtime`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:runtime/${RuntimeId}

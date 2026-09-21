@@ -3,12 +3,12 @@
 page_title: "codebuild_fleet function - arn"
 subcategory: ""
 description: |-
-  Builds an codebuild fleet ARN
+  codebuild fleet ARN
 ---
 
 # function: codebuild_fleet
 
-Builds the ARN of an `codebuild` `fleet`:
+Builds the ARN for `codebuild` `fleet`:
 
 ```
 arn:${Partition}:codebuild:${Region}:${Account}:fleet/${FleetName}:${FleetId}

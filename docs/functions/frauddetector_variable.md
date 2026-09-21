@@ -3,12 +3,12 @@
 page_title: "frauddetector_variable function - arn"
 subcategory: ""
 description: |-
-  Builds an frauddetector variable ARN
+  frauddetector variable ARN
 ---
 
 # function: frauddetector_variable
 
-Builds the ARN of an `frauddetector` `variable`:
+Builds the ARN for `frauddetector` `variable`:
 
 ```
 arn:${Partition}:frauddetector:${Region}:${Account}:variable/${ResourcePath}

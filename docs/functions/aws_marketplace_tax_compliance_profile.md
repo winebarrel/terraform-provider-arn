@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_tax_compliance_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace TaxComplianceProfile ARN
+  aws-marketplace TaxComplianceProfile ARN
 ---
 
 # function: aws_marketplace_tax_compliance_profile
 
-Builds the ARN of an `aws-marketplace` `TaxComplianceProfile`:
+Builds the ARN for `aws-marketplace` `TaxComplianceProfile`:
 
 ```
 arn:${Partition}:aws-marketplace:${Region}:${Account}:tax-compliance-profile/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "artifact_compliance_inquiry function - arn"
 subcategory: ""
 description: |-
-  Builds an artifact compliance-inquiry ARN
+  artifact compliance-inquiry ARN
 ---
 
 # function: artifact_compliance_inquiry
 
-Builds the ARN of an `artifact` `compliance-inquiry`:
+Builds the ARN for `artifact` `compliance-inquiry`:
 
 ```
 arn:${Partition}:artifact:${Region}:${Account}:compliance-inquiry/*

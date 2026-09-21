@@ -3,12 +3,12 @@
 page_title: "sms_voice_verified_destination_number function - arn"
 subcategory: ""
 description: |-
-  Builds an sms-voice VerifiedDestinationNumber ARN
+  sms-voice VerifiedDestinationNumber ARN
 ---
 
 # function: sms_voice_verified_destination_number
 
-Builds the ARN of an `sms-voice` `VerifiedDestinationNumber`:
+Builds the ARN for `sms-voice` `VerifiedDestinationNumber`:
 
 ```
 arn:${Partition}:sms-voice:${Region}:${Account}:verified-destination-number/${VerifiedDestinationNumberId}

@@ -3,12 +3,12 @@
 page_title: "one_site function - arn"
 subcategory: ""
 description: |-
-  Builds an one site ARN
+  one site ARN
 ---
 
 # function: one_site
 
-Builds the ARN of an `one` `site`:
+Builds the ARN for `one` `site`:
 
 ```
 arn:${Partition}:one:${Region}:${Account}:site/${SiteId}
