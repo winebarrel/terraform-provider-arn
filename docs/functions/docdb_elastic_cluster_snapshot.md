@@ -14,7 +14,7 @@ Builds the ARN for `docdb-elastic` `cluster-snapshot`:
 arn:${Partition}:docdb-elastic:${Region}:${Account}:cluster-snapshot/${ResourceId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

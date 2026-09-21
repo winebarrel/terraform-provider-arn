@@ -14,7 +14,7 @@ Builds the ARN for `ec2` `verified-access-group`:
 arn:${Partition}:ec2:${Region}:${Account}:verified-access-group/${VerifiedAccessGroupId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

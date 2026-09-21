@@ -148,12 +148,6 @@ func TestGeneratedSpecsAllBuild(t *testing.T) {
 	for _, s := range arnspec.All() {
 		args := make([]string, len(s.Args))
 		for i := range args {
-			// An argument that lands in the account field is checked like
-			// any other account id, so it needs a plausible one.
-			if s.ArgIsAccountID(i) {
-				args[i] = "222222222222"
-				continue
-			}
 			args[i] = "x"
 		}
 		got, err := s.Build(v, args)
@@ -218,18 +212,17 @@ func TestGeneratedMultiFormatFunctions(t *testing.T) {
 }
 
 // A colon in one of the five structural fields shifts every field after it.
+// backup_recovery_point parameterises the service field.
 func TestBuildRejectsColonInAStructuralArgument(t *testing.T) {
-	// chime spells the account field ${AccountId}, so it arrives as an
-	// argument rather than from the configuration.
-	s := parse(t, "arn:${Partition}:chime:${Region}:${AccountId}:meeting/${MeetingId}")
+	s := parse(t, "arn:${Partition}:${Vendor}:${Region}:*:${ResourceType}:${RecoveryPointId}")
 	v := arnspec.Values{Partition: "aws", Region: "us-east-1"}
 
-	_, err := s.Build(v, []string{"111111111111:evil", "m1"})
+	_, err := s.Build(v, []string{"backup:evil", "rt", "rp"})
 	require.ErrorContains(t, err, "is an ARN field and cannot contain a colon")
 
-	got, err := s.Build(v, []string{"111111111111", "m1"})
+	got, err := s.Build(v, []string{"backup", "rt", "rp"})
 	require.NoError(t, err)
-	assert.Equal(t, "arn:aws:chime:us-east-1:111111111111:meeting/m1", got)
+	assert.Equal(t, "arn:aws:backup:us-east-1:*:rt:rp", got)
 }
 
 // Inside the resource part a colon is just a character, and what it means is
@@ -248,7 +241,8 @@ func TestBuildAllowsColonInTheResourcePart(t *testing.T) {
 	assert.Equal(t, "arn:aws:lambda:us-east-1:111111111111:function:my-func:PROD", got)
 }
 
-// The classification is derived from the template, so pin both sides of it.
+// Only one template still puts an argument in a structural field, so pin it
+// along with the ordinary case.
 func TestGeneratedStructuralArguments(t *testing.T) {
 	structural := map[string][]string{}
 	for _, s := range arnspec.All() {
@@ -259,72 +253,53 @@ func TestGeneratedStructuralArguments(t *testing.T) {
 		}
 	}
 
-	// Every template that parameterises one of the first five fields.
+	// backup_recovery_point parameterises the service field. Every other
+	// structural field is filled from the configuration.
 	assert.Equal(t, map[string][]string{
-		"account_account_in_organization":                {"management_account_id"},
-		"backup_recovery_point":                          {"vendor"},
-		"chime_app_instance":                             {"account_id"},
-		"chime_app_instance_bot":                         {"account_id"},
-		"chime_app_instance_user":                        {"account_id"},
-		"chime_channel":                                  {"account_id"},
-		"chime_channel_flow":                             {"account_id"},
-		"chime_media_insights_pipeline_configuration":    {"account_id"},
-		"chime_media_pipeline":                           {"account_id"},
-		"chime_media_pipeline_kinesis_video_stream_pool": {"account_id"},
-		"chime_meeting":                                  {"account_id"},
-		"chime_sip_media_application":                    {"account_id"},
-		"chime_voice_connector":                          {"account_id"},
-		"chime_voice_profile":                            {"account_id"},
-		"chime_voice_profile_domain":                     {"account_id"},
-		"datasync_agent":                                 {"account_id"},
-		"datasync_discoveryjob":                          {"account_id"},
-		"datasync_location":                              {"account_id"},
-		"datasync_storagesystem":                         {"account_id"},
-		"datasync_task":                                  {"account_id"},
-		"datasync_taskexecution":                         {"account_id"},
-		"kafka_vpc_connection":                           {"vpc_owner_account"},
-		"sso_application":                                {"account_id"},
-		"sso_oauth_application":                          {"account_id"},
-		"sso_trusted_token_issuer":                       {"account_id"},
+		"backup_recovery_point": {"vendor"},
 	}, structural)
 
-	// The common case is the other way round.
 	s, ok := arnspec.Lookup("iam_role")
 	require.True(t, ok)
 	assert.False(t, s.ArgIsStructural(0))
-	assert.False(t, s.ArgIsAccountID(0))
-
-	// Every structural argument but one is the account field. The exception
-	// is backup_recovery_point, which parameterises the service field.
-	for name, args := range structural {
-		s, ok := arnspec.Lookup(name)
-		require.True(t, ok, name)
-		for i := range args {
-			want := name != "backup_recovery_point"
-			assert.Equal(t, want, s.ArgIsAccountID(i), "%s arg %d", name, i)
-		}
-	}
 }
 
-// An argument that lands in the account field gets the same check as one that
-// came from the configuration file.
-func TestBuildValidatesAnAccountFieldArgument(t *testing.T) {
-	s := parse(t, "arn:${Partition}:chime:${Region}:${AccountId}:meeting/${MeetingId}")
-	v := arnspec.Values{Partition: "aws", Region: "us-east-1"}
-
-	_, err := s.Build(v, []string{"abc", "m1"})
-	require.ErrorContains(t, err, `invalid account id "abc"`)
-
-	for _, id := range []string{"111111111111", "aws", "*"} {
-		_, err := s.Build(v, []string{id, "m1"})
-		require.NoError(t, err, id)
+// The account field is identified by position, so a template that spells it
+// ${AccountId} takes the account from the configuration like any other.
+func TestParseReadsTheAccountFieldByPosition(t *testing.T) {
+	for _, tt := range []struct{ name, tmpl string }{
+		{"chime_meeting", "arn:${Partition}:chime:${Region}:${AccountId}:meeting/${MeetingId}"},
+		{"kafka_vpc_connection", "arn:${Partition}:kafka:${Region}:${VpcOwnerAccount}:vpc-connection/${ClusterOwnerAccount}/${ClusterName}/${Uuid}"},
+		{"account_account_in_organization", "arn:${Partition}:account::${ManagementAccountId}:account/o-${OrganizationId}/${MemberAccountId}"},
+	} {
+		s, ok := arnspec.Lookup(tt.name)
+		require.True(t, ok, tt.name)
+		require.Equal(t, tt.tmpl, s.Template, tt.name)
+		assert.True(t, s.NeedsAccount, tt.name)
+		assert.NotContains(t, s.Args, "account_id", tt.name)
 	}
 
-	// The service field is not an account id, so it keeps only the colon rule.
-	s = parse(t, "arn:${Partition}:${Vendor}:${Region}:*:${ResourceType}:${RecoveryPointId}")
-	got, err := s.Build(v, []string{"backup", "rt", "rp"})
+	s, ok := arnspec.Lookup("chime_meeting")
+	require.True(t, ok)
+	assert.Equal(t, []string{"meeting_id"}, s.Args)
+
+	got, err := s.Build(arnspec.Values{Partition: "aws", Region: "us-east-1", AccountID: "111111111111"}, []string{"m1"})
 	require.NoError(t, err)
-	assert.Equal(t, "arn:aws:backup:us-east-1:*:rt:rp", got)
+	assert.Equal(t, "arn:aws:chime:us-east-1:111111111111:meeting/m1", got)
+}
+
+// ${AccountId} in the resource part stays an argument, which is what keeps
+// the two apart in organizations, where one template carries both.
+func TestParseKeepsResourcePartAccountIDAsAnArgument(t *testing.T) {
+	s, ok := arnspec.Lookup("organizations_account")
+	require.True(t, ok)
+	assert.Equal(t, "arn:${Partition}:organizations::${Account}:account/o-${OrganizationId}/${AccountId}", s.Template)
+	assert.True(t, s.NeedsAccount)
+	assert.Equal(t, []string{"organization_id", "account_id"}, s.Args)
+
+	got, err := s.Build(arnspec.Values{Partition: "aws", AccountID: "111111111111"}, []string{"o-abc", "222222222222"})
+	require.NoError(t, err)
+	assert.Equal(t, "arn:aws:organizations::111111111111:account/o-o-abc/222222222222", got)
 }
 
 // A slash is not a field separator, and is part of plenty of legitimate
@@ -334,4 +309,62 @@ func TestBuildAllowsSlashInArgument(t *testing.T) {
 	got, err := s.Build(arnspec.Values{Partition: "aws", AccountID: "111111111111"}, []string{"path/to/my-role"})
 	require.NoError(t, err)
 	assert.Equal(t, "arn:aws:iam::111111111111:role/path/to/my-role", got)
+}
+
+// The whole classification rests on the correspondence between an ARN field
+// and the names AWS puts in it, so pin it across every template rather than
+// for a few named functions. A new spelling at the account field would
+// otherwise set NeedsAccount, silently drop an argument, and pass every other
+// test here.
+func TestGeneratedPlaceholderPositions(t *testing.T) {
+	// Field index counted in colons: 1 partition, 2 service, 3 region,
+	// 4 account, 5 and beyond the resource part. Field 0 is the text before
+	// the first colon, which is the literal "arn" in every template. It is
+	// carried through with an empty set so that a placeholder landing there
+	// fails the assertions below instead of panicking on a nil map.
+	want := map[int]map[string]bool{
+		0: {},
+		1: {"Partition": true},
+		2: {"Vendor": true},
+		3: {"Region": true},
+		4: {
+			"Account":             true,
+			"AccountId":           true,
+			"ManagementAccountId": true,
+			"VpcOwnerAccount":     true,
+		},
+	}
+
+	counts := map[int]map[string]int{0: {}, 1: {}, 2: {}, 3: {}, 4: {}}
+
+	for _, s := range arnspec.All() {
+		rest, field := s.Template, 0
+		for {
+			i := strings.Index(rest, "${")
+			if i < 0 {
+				break
+			}
+			j := strings.Index(rest[i:], "}")
+			require.GreaterOrEqual(t, j, 0, s.Name)
+
+			name := rest[i+2 : i+j]
+			field += strings.Count(rest[:i], ":")
+			if field < 5 {
+				assert.True(t, want[field][name],
+					"%s: unexpected placeholder ${%s} in ARN field %d: %s", s.Name, name, field, s.Template)
+				counts[field][name]++
+			}
+			rest = rest[i+j+1:]
+		}
+	}
+
+	// The counts themselves, so a template moving between fields shows up
+	// even when the name is already known.
+	assert.Equal(t, map[int]map[string]int{
+		0: {},
+		1: {"Partition": 2321},
+		2: {"Vendor": 1},
+		3: {"Region": 2095},
+		4: {"Account": 2120, "AccountId": 22, "ManagementAccountId": 1, "VpcOwnerAccount": 1},
+	}, counts)
 }

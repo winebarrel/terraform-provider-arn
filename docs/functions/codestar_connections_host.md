@@ -14,7 +14,7 @@ Builds the ARN for `codestar-connections` `Host`:
 arn:${Partition}:codestar-connections:${Region}:${Account}:host/${HostId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

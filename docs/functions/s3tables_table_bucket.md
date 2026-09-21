@@ -14,7 +14,7 @@ Builds the ARN for `s3tables` `TableBucket`:
 arn:${Partition}:s3tables:${Region}:${Account}:bucket/${TableBucketName}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

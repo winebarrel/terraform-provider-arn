@@ -14,7 +14,7 @@ Builds the ARN for `ses` `mailmanager-rule-set`:
 arn:${Partition}:ses:${Region}:${Account}:mailmanager-rule-set/${RuleSetId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

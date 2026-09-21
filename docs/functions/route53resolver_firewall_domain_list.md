@@ -14,7 +14,7 @@ Builds the ARN for `route53resolver` `firewall-domain-list`:
 arn:${Partition}:route53resolver:${Region}:${Account}:firewall-domain-list/${ResourceId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

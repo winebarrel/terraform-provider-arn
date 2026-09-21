@@ -14,7 +14,7 @@ Builds the ARN for `pcs` `cluster`:
 arn:${Partition}:pcs:${Region}:${Account}:cluster/${ClusterIdentifier}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

@@ -14,7 +14,7 @@ Builds the ARN for `redshift-data` `workgroup`:
 arn:${Partition}:redshift-serverless:${Region}:${Account}:workgroup/${WorkgroupId}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

@@ -14,7 +14,7 @@ Builds the ARN for `mediatailor` `program`:
 arn:${Partition}:mediatailor:${Region}:${Account}:program/${ChannelName}/${ProgramName}
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
 
 

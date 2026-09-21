@@ -133,13 +133,23 @@ provider::arn::s3_object("my-bucket", "*", { partition = "*" })
 # arn:*:s3:::my-bucket/*
 ```
 
-Most templates take the account from the configuration. A few spell it as a
-placeholder, so it arrives as an argument instead: chime and datasync write
-`${AccountId}` rather than `${Account}`. Those arguments get the same check.
+A field is identified by its position, not by what AWS named the placeholder.
+The account field is `${Account}` in most templates, `${AccountId}` in chime,
+datasync and sso, `${ManagementAccountId}` in account and `${VpcOwnerAccount}`
+in kafka. All of them come from the configuration:
 
 ```hcl
-provider::arn::chime_meeting("abc", "m1")
-# invalid account id "abc"
+provider::arn::chime_meeting("m1")
+# arn:aws:chime:ap-northeast-1:111111111111:meeting/m1
+```
+
+The same name in the resource part stays an argument. `organizations_account`
+carries both in one template:
+
+```hcl
+# arn:${Partition}:organizations::${Account}:account/o-${OrganizationId}/${AccountId}
+provider::arn::organizations_account("abc", "222222222222")
+# arn:aws:organizations::111111111111:account/o-abc/222222222222
 ```
 
 An argument in one of the five structural fields cannot contain a `:`. Inside
@@ -165,8 +175,8 @@ The configuration file is checked too, not only the call site.
 
 ## Arguments
 
-The arguments are the ARN template's placeholders, in order, excluding
-`${Partition}`, `${Region}` and `${Account}`. Most resource types need one:
+The arguments are the ARN template's placeholders, in order, less the
+partition, region and account fields. Most resource types need one:
 
 ```hcl
 # arn:${Partition}:iam::${Account}:role/${RoleNameWithPath}

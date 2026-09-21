@@ -14,7 +14,7 @@ Builds the ARN for `dms` `InstanceProfile`:
 arn:${Partition}:dms:${Region}:${Account}:instance-profile:*
 ```
 
-`${Partition}`, `${Region}` and `${Account}` come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
+The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
 
 
