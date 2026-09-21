@@ -4,12 +4,14 @@ import (
 	"os"
 	"path/filepath"
 	"regexp"
+	"strings"
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov6"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/tfversion"
+	"github.com/stretchr/testify/assert"
 	"github.com/winebarrel/terraform-provider-arn/internal/arnconf"
 	"github.com/winebarrel/terraform-provider-arn/internal/provider"
 )
@@ -59,15 +61,38 @@ func okStep(t *testing.T, config, expected string) {
 	})
 }
 
-func errStep(t *testing.T, config, errPattern string) {
+// errStep expects the step to fail with a diagnostic containing every phrase,
+// in order.
+//
+// The phrases are plain text, not patterns. Terraform hard-wraps a diagnostic
+// to the terminal width, and the wrap falls in a different place depending on
+// how long the temporary directory in the message happens to be, so a phrase
+// that reads as one line locally can arrive split across two in CI. Writing
+// the patterns by hand meant every one of them had to guess where that break
+// would land.
+func errStep(t *testing.T, config string, phrases ...string) {
 	t.Helper()
 	resource.UnitTest(t, resource.TestCase{
 		TerraformVersionChecks:   []tfversion.TerraformVersionCheck{tfversion.SkipBelow(tfversion.Version1_8_0)},
 		ProtoV6ProviderFactories: testAccProtoV6ProviderFactories,
 		Steps: []resource.TestStep{
-			{Config: config, ExpectError: regexp.MustCompile(errPattern)},
+			{Config: config, ExpectError: WrapTolerant(phrases)},
 		},
 	})
+}
+
+// wrapTolerant turns plain phrases into one pattern: every run of spaces
+// matches any whitespace, and the phrases may be separated by anything.
+func WrapTolerant(phrases []string) *regexp.Regexp {
+	parts := make([]string, 0, len(phrases))
+	for _, p := range phrases {
+		words := strings.Fields(p)
+		for i, w := range words {
+			words[i] = regexp.QuoteMeta(w)
+		}
+		parts = append(parts, strings.Join(words, `\s+`))
+	}
+	return regexp.MustCompile(`(?s)` + strings.Join(parts, ".*"))
 }
 
 func out(expr string) string {
@@ -130,73 +155,73 @@ func TestFunction_SecondARNFormat(t *testing.T) {
 
 func TestFunction_UnknownAccount(t *testing.T) {
 	useConfig(t, testConfigFile)
-	errStep(t, out(`provider::arn::iam_role("r", { account = "nope" })`), `(?s)unknown account "nope".*prod,\s+us`)
+	errStep(t, out(`provider::arn::iam_role("r", { account = "nope" })`), `unknown account "nope"`, `prod, us`)
 }
 
 func TestFunction_UnknownOption(t *testing.T) {
 	useConfig(t, testConfigFile)
-	errStep(t, out(`provider::arn::iam_role("r", { acccount = "prod" })`), `unknown option\(s\) acccount`)
+	errStep(t, out(`provider::arn::iam_role("r", { acccount = "prod" })`), `unknown option(s) acccount`)
 }
 
 func TestFunction_AccountAndAccountIDAreExclusive(t *testing.T) {
 	useConfig(t, testConfigFile)
-	errStep(t, out(`provider::arn::iam_role("r", { account = "prod", account_id = "9" })`), `(?s)mutually\s+exclusive`)
+	errStep(t, out(`provider::arn::iam_role("r", { account = "prod", account_id = "9" })`), `mutually exclusive`)
 }
 
 func TestFunction_AtMostOneOptionsMap(t *testing.T) {
 	useConfig(t, testConfigFile)
-	errStep(t, out(`provider::arn::iam_role("r", {}, {})`), `(?s)at most one options\s+map, got 2`)
+	errStep(t, out(`provider::arn::iam_role("r", {}, {})`), `at most one options map, got 2`)
 }
 
 func TestFunction_EmptyArgument(t *testing.T) {
 	useConfig(t, testConfigFile)
-	errStep(t, out(`provider::arn::iam_role("")`), `role_name_with_path \(RoleNameWithPath\) is empty`)
+	errStep(t, out(`provider::arn::iam_role("")`), `role_name_with_path (RoleNameWithPath) is empty`)
 }
 
 func TestFunction_MissingAccountID(t *testing.T) {
 	useConfig(t, `region = "ap-northeast-1"`)
-	errStep(t, out(`provider::arn::iam_role("r")`), `(?s)needs an account\s+id`)
+	errStep(t, out(`provider::arn::iam_role("r")`), `needs an account id`)
 }
 
 func TestFunction_MissingRegion(t *testing.T) {
 	useConfig(t, `account_id = "111111111111"`)
-	errStep(t, out(`provider::arn::sqs_queue("q")`), `(?s)needs a\s+region`)
+	errStep(t, out(`provider::arn::sqs_queue("q")`), `needs a region`)
 }
 
 // The configuration file is required, even for an ARN that would need
 // nothing from it.
 func TestFunction_NoConfigFile(t *testing.T) {
 	t.Setenv(arnconf.EnvConfig, filepath.Join(t.TempDir(), "absent.hcl"))
-	errStep(t, out(`provider::arn::s3_bucket("b")`), `(?s)absent\.hcl\s+not\s+found`)
-	errStep(t, out(`provider::arn::iam_role("r")`), `(?s)absent\.hcl\s+not\s+found`)
+	errStep(t, out(`provider::arn::s3_bucket("b")`), `absent.hcl not found`)
+	errStep(t, out(`provider::arn::iam_role("r")`), `absent.hcl not found`)
 }
 
 // The file has to exist, but it does not have to say anything.
 func TestFunction_EmptyConfigFile(t *testing.T) {
 	useConfig(t, "")
 	okStep(t, out(`provider::arn::s3_bucket("b")`), "arn:aws:s3:::b")
-	errStep(t, out(`provider::arn::iam_role("r")`), `(?s)needs an account\s+id`)
+	errStep(t, out(`provider::arn::iam_role("r")`), `needs an account id`)
 }
 
 func TestFunction_MalformedConfigFile(t *testing.T) {
 	useConfig(t, `account_id = `)
-	errStep(t, out(`provider::arn::iam_role("r")`), `(?s)Missing expression`)
+	errStep(t, out(`provider::arn::iam_role("r")`), `Missing expression`)
 }
 
 func TestFunction_RejectsMalformedValues(t *testing.T) {
 	useConfig(t, testConfigFile)
 
-	errStep(t, out(`provider::arn::iam_role("r", { account_id = "abc" })`), `(?s)invalid account id\s+"abc"`)
-	errStep(t, out(`provider::arn::iam_role("r", { account_id = "12345" })`), `(?s)invalid account\s+id`)
-	errStep(t, out(`provider::arn::sqs_queue("q", { region = "not-a-region" })`), `(?s)invalid region\s+"not-a-region"`)
-	errStep(t, out(`provider::arn::s3_bucket("b", { partition = "nonsense" })`), `(?s)invalid partition\s+"nonsense"`)
-	errStep(t, out(`provider::arn::iam_role("r", { account_id = "111111111111:evil" })`), `(?s)invalid account id`)
+	errStep(t, out(`provider::arn::iam_role("r", { account_id = "abc" })`), `invalid account id "abc"`)
+	errStep(t, out(`provider::arn::iam_role("r", { account_id = "12345" })`), `invalid account id`)
+	errStep(t, out(`provider::arn::sqs_queue("q", { region = "not-a-region" })`), `invalid region "not-a-region"`)
+	errStep(t, out(`provider::arn::s3_bucket("b", { partition = "nonsense" })`), `invalid partition "nonsense"`)
+	errStep(t, out(`provider::arn::iam_role("r", { account_id = "111111111111:evil" })`), `invalid account id`)
 }
 
 // A colon in an argument would add an ARN field rather than land inside one.
 func TestFunction_RejectsColonInArgument(t *testing.T) {
 	useConfig(t, testConfigFile)
-	errStep(t, out(`provider::arn::lambda_function("fn:PROD")`), `(?s)contains a\s+colon`)
+	errStep(t, out(`provider::arn::lambda_function("fn:PROD")`), `contains a colon`)
 	okStep(t, out(`provider::arn::lambda_function_alias("fn", "PROD")`),
 		"arn:aws:lambda:ap-northeast-1:111111111111:function:fn:PROD")
 }
@@ -214,5 +239,25 @@ func TestFunction_RejectsMalformedConfigValues(t *testing.T) {
 account_id = "111111111111"
 region     = "nihon"
 `)
-	errStep(t, out(`provider::arn::sqs_queue("q")`), `(?s)invalid region\s+"nihon"`)
+	errStep(t, out(`provider::arn::sqs_queue("q")`), `invalid region "nihon"`)
+}
+
+// The text below is the diagnostic that failed in CI while passing locally:
+// the temp directory path pushed "Missing expression" across a line break.
+func TestWrapTolerant(t *testing.T) {
+	const ciOutput = `Call to function "provider::arn::iam_role" failed:
+/tmp/TestFunction_MalformedConfigFile2303570173/001/.arn.hcl:1,14-14: Missing
+expression; Expected the start of an expression, but found the end of the
+file..`
+
+	// What the hand-written pattern did, and why it only failed in CI.
+	assert.NotRegexp(t, `(?s)Missing expression`, ciOutput)
+	assert.Regexp(t, WrapTolerant([]string{"Missing expression"}), ciOutput)
+	assert.Regexp(t, WrapTolerant([]string{"found the end of the file"}), ciOutput)
+
+	// Phrases must match in order, and metacharacters are literal.
+	const wrapped = "unknown account \"nope\": declared\naccounts are prod, us."
+	assert.Regexp(t, WrapTolerant([]string{`unknown account "nope"`, "prod, us"}), wrapped)
+	assert.NotRegexp(t, WrapTolerant([]string{"prod, us", `unknown account "nope"`}), wrapped)
+	assert.NotRegexp(t, WrapTolerant([]string{"unknown account .nope."}), wrapped)
 }
