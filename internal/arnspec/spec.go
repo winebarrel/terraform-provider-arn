@@ -77,9 +77,10 @@ func Parse(s *Spec) error {
 	// arn:partition:service:region:account:resource, so everything from the
 	// fifth colon on is the resource part.
 	colons := 0
+	s.holeField = make([]int, len(holes))
 	for i, h := range holes {
 		colons += strings.Count(parts[i], ":")
-		s.holeField = append(s.holeField, colons)
+		s.holeField[i] = colons
 		switch colons {
 		case partitionFieldIndex:
 			// Always available: it defaults to "aws".
