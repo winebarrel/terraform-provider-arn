@@ -236,3 +236,181 @@ region     = "nihon"
 	_, err = c.Resolve(arnconf.Opts{})
 	require.ErrorContains(t, err, `invalid region "nihon"`)
 }
+
+// writeIn puts a file at a named path under dir, creating parent directories.
+func writeIn(t *testing.T, dir, name, body string) string {
+	t.Helper()
+	p := filepath.Join(dir, name)
+	require.NoError(t, os.MkdirAll(filepath.Dir(p), 0o755))
+	require.NoError(t, os.WriteFile(p, []byte(body), 0o600))
+	return p
+}
+
+func TestImport(t *testing.T) {
+	dir := t.TempDir()
+	writeIn(t, dir, "common.hcl", `
+account_id = "111111111111"
+region     = "ap-northeast-1"
+
+account "prod" {
+  account_id = "222222222222"
+}
+`)
+	root := writeIn(t, dir, ".arn.hcl", `
+import = "common.hcl"
+`)
+
+	c, err := arnconf.Load(root)
+	require.NoError(t, err)
+
+	v, err := c.Resolve(arnconf.Opts{})
+	require.NoError(t, err)
+	assert.Equal(t, "111111111111", v.AccountID)
+	assert.Equal(t, "ap-northeast-1", v.Region)
+
+	prod, err := c.Resolve(arnconf.Opts{Account: "prod"})
+	require.NoError(t, err)
+	assert.Equal(t, "222222222222", prod.AccountID)
+	assert.Equal(t, "ap-northeast-1", prod.Region, "an imported account still inherits the default region")
+}
+
+// The importing file is applied last, so what you are reading wins.
+func TestImportIsOverriddenByTheImportingFile(t *testing.T) {
+	dir := t.TempDir()
+	writeIn(t, dir, "common.hcl", `
+account_id = "111111111111"
+region     = "ap-northeast-1"
+partition  = "aws"
+`)
+	root := writeIn(t, dir, ".arn.hcl", `
+import = "common.hcl"
+region = "us-east-1"
+`)
+
+	c, err := arnconf.Load(root)
+	require.NoError(t, err)
+
+	v, err := c.Resolve(arnconf.Opts{})
+	require.NoError(t, err)
+	assert.Equal(t, "111111111111", v.AccountID, "not overridden, so the imported value stands")
+	assert.Equal(t, "us-east-1", v.Region)
+}
+
+func TestImportAccountBlockIsReplaced(t *testing.T) {
+	dir := t.TempDir()
+	writeIn(t, dir, "common.hcl", `
+account_id = "111111111111"
+region     = "ap-northeast-1"
+
+account "prod" {
+  account_id = "222222222222"
+  region     = "us-east-1"
+}
+`)
+	root := writeIn(t, dir, ".arn.hcl", `
+import = "common.hcl"
+
+account "prod" {
+  account_id = "999999999999"
+}
+`)
+
+	c, err := arnconf.Load(root)
+	require.NoError(t, err)
+
+	v, err := c.Resolve(arnconf.Opts{Account: "prod"})
+	require.NoError(t, err)
+	assert.Equal(t, "999999999999", v.AccountID)
+	assert.Equal(t, "ap-northeast-1", v.Region,
+		"the block replaces rather than merges, so the imported region goes with it")
+}
+
+// Within one file there is nothing to override, so a repeated name is a typo.
+func TestImportDuplicateWithinOneFileIsStillAnError(t *testing.T) {
+	dir := t.TempDir()
+	writeIn(t, dir, "common.hcl", `
+account "prod" {
+  account_id = "222222222222"
+}
+
+account "prod" {
+  account_id = "333333333333"
+}
+`)
+	root := writeIn(t, dir, ".arn.hcl", `import = "common.hcl"`)
+
+	_, err := arnconf.Load(root)
+	require.ErrorContains(t, err, "duplicate account block")
+}
+
+// can be moved together.
+func TestImportIsRelativeToTheImportingFile(t *testing.T) {
+	dir := t.TempDir()
+	writeIn(t, dir, "conf/common.hcl", `account_id = "111111111111"`)
+	root := writeIn(t, dir, "conf/.arn.hcl", `import = "common.hcl"`)
+
+	// Loading by a path that is not the working directory still finds it.
+	c, err := arnconf.Load(root)
+	require.NoError(t, err)
+	v, err := c.Resolve(arnconf.Opts{})
+	require.NoError(t, err)
+	assert.Equal(t, "111111111111", v.AccountID)
+}
+
+func TestImportAbsolutePath(t *testing.T) {
+	dir := t.TempDir()
+	other := writeIn(t, t.TempDir(), "elsewhere.hcl", `account_id = "111111111111"`)
+	root := writeIn(t, dir, ".arn.hcl", `import = "`+other+`"`)
+
+	c, err := arnconf.Load(root)
+	require.NoError(t, err)
+	v, err := c.Resolve(arnconf.Opts{})
+	require.NoError(t, err)
+	assert.Equal(t, "111111111111", v.AccountID)
+}
+
+func TestImportNotFound(t *testing.T) {
+	dir := t.TempDir()
+	root := writeIn(t, dir, ".arn.hcl", `import = "missing.hcl"`)
+
+	_, err := arnconf.Load(root)
+	require.ErrorContains(t, err, `import "missing.hcl" not found`)
+	assert.NotContains(t, err.Error(), arnconf.EnvConfig,
+		"ARN_CONFIG points at the root file, not at what it imports")
+}
+
+// An import is one path, so a name with a wildcard in it is looked for as
+// written rather than expanded.
+func TestImportDoesNotGlob(t *testing.T) {
+	dir := t.TempDir()
+	writeIn(t, dir, "accounts/prod.hcl", `account_id = "111111111111"`)
+	root := writeIn(t, dir, ".arn.hcl", `import = "accounts/*.hcl"`)
+
+	_, err := arnconf.Load(root)
+	require.ErrorContains(t, err, `import "accounts/*.hcl" not found`)
+}
+
+// An imported file that imports is rejected rather than ignored: its contents
+// would otherwise be quietly left out.
+func TestNestedImportIsAnError(t *testing.T) {
+	dir := t.TempDir()
+	writeIn(t, dir, "deep.hcl", `account_id = "333333333333"`)
+	writeIn(t, dir, "common.hcl", `
+import     = "deep.hcl"
+account_id = "111111111111"
+`)
+	root := writeIn(t, dir, ".arn.hcl", `import = "common.hcl"`)
+
+	_, err := arnconf.Load(root)
+	require.ErrorContains(t, err, "imported files cannot import")
+	require.ErrorContains(t, err, "common.hcl", "the message names the file to fix")
+}
+
+func TestImportMalformedFile(t *testing.T) {
+	dir := t.TempDir()
+	writeIn(t, dir, "common.hcl", `account_id = `)
+	root := writeIn(t, dir, ".arn.hcl", `import = "common.hcl"`)
+
+	_, err := arnconf.Load(root)
+	require.ErrorContains(t, err, "common.hcl")
+}

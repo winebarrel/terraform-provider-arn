@@ -106,6 +106,45 @@ provider::arn::sqs_queue("my-queue", { account = "us" })
 An `account` block inherits every field it does not set, so `prod` above keeps
 the top-level `ap-northeast-1`.
 
+## Splitting the configuration
+
+`import` reads one other file first. The path is relative to the file that
+names it, or absolute:
+
+```hcl
+# .arn.hcl
+import = "common.hcl"
+
+region = "us-east-1"
+```
+
+```hcl
+# common.hcl
+account_id = "111111111111"
+region     = "ap-northeast-1"
+
+account "prod" {
+  account_id = "222222222222"
+}
+```
+
+The imported file is applied first and the importing file second, so a value
+set closer to where you are reading wins. Above, `region` is `us-east-1`, and
+`account_id` is the imported `111111111111` because nothing overrode it.
+
+Where the `import` line sits in the file makes no difference. HCL decodes a
+file as a whole, so this is one file overriding another, not one line
+overriding the lines above it.
+
+Only values that are actually set take part, so a file naming an account id
+and nothing else leaves the region it inherited alone. An `account` block of
+the same name replaces the imported one rather than merging with it, and so
+starts again from the top-level defaults.
+
+The path is one file. There is no wildcard, and an imported file cannot
+itself import; saying so is an error rather than being ignored, since
+otherwise its contents would be quietly unused with nothing to say why.
+
 ## Options
 
 Every function takes an optional trailing map.

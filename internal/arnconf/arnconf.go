@@ -10,6 +10,7 @@ package arnconf
 import (
 	"fmt"
 	"os"
+	"path/filepath"
 	"sort"
 	"strings"
 	"sync"
@@ -35,6 +36,10 @@ const (
 
 // File is the decoded shape of .arn.hcl.
 type File struct {
+	// Import names one other file to read before this one, as a path relative
+	// to the directory of the file that names it, or an absolute path.
+	Import *string `hcl:"import"`
+
 	AccountID *string   `hcl:"account_id"`
 	Region    *string   `hcl:"region"`
 	Partition *string   `hcl:"partition"`
@@ -59,11 +64,20 @@ type Values struct {
 	Partition string
 }
 
-// Config is the loaded file plus the resolution rules. The zero value is not
-// usable; call Load.
+// Config is the loaded configuration: the defaults every ARN starts from, and
+// the named accounts. The zero value is not usable; call Load.
+//
+// The defaults are kept as their own fields rather than as a File, because a
+// File is one file as written and these are the result of merging several.
+// Reusing the type would leave Import and Accounts sitting here meaning
+// nothing.
 type Config struct {
-	path     string
-	file     File
+	path string
+
+	accountID *string
+	region    *string
+	partition *string
+
 	accounts map[string]Account
 }
 
@@ -86,15 +100,19 @@ func (e *ErrUnknownAccount) Error() string {
 // not the file existed.
 func (c *Config) Path() string { return c.path }
 
-// Load reads the configuration file. The file is required: a few ARN shapes
-// need nothing from it (an S3 bucket ARN carries neither account nor region),
-// but letting those work without it would mean the provider behaves
-// differently depending on which function a configuration happens to call
-// first. Reporting the absence once, at load time, is easier to act on.
+// Load reads the configuration file and the file it imports, if any. The file
+// is required: a few ARN shapes need nothing from it (an S3 bucket ARN
+// carries neither account nor region), but letting those work without it
+// would mean the provider behaves differently depending on which function a
+// configuration happens to call first. Reporting the absence once, at load
+// time, is easier to act on.
+//
+// The imported file is applied first and the importing file second, so a
+// value set closer to where you are reading wins. Only values that are
+// actually set take part: a file that names an account id and nothing else
+// leaves the region it inherited alone.
 func Load(path string) (*Config, error) {
-	c := &Config{path: path, accounts: map[string]Account{}}
-
-	src, err := os.ReadFile(path)
+	root, err := parseFile(path)
 	if err != nil {
 		if os.IsNotExist(err) {
 			return nil, fmt.Errorf("%s not found: create it, or point %s at another path", path, EnvConfig)
@@ -102,22 +120,84 @@ func Load(path string) (*Config, error) {
 		return nil, err
 	}
 
-	parser := hclparse.NewParser()
-	f, diags := parser.ParseHCL(src, path)
-	if diags.HasErrors() {
-		return nil, diags
-	}
-	if diags := gohcl.DecodeBody(f.Body, nil, &c.file); diags.HasErrors() {
-		return nil, diags
+	c := &Config{path: path, accounts: map[string]Account{}}
+
+	if root.Import != nil {
+		p := resolveImport(path, *root.Import)
+		f, err := parseFile(p)
+		if err != nil {
+			if os.IsNotExist(err) {
+				return nil, fmt.Errorf("%s: import %q not found", path, *root.Import)
+			}
+			return nil, err
+		}
+		// An import that imports is rejected rather than ignored. Ignoring it
+		// would leave a file whose contents are quietly not being used, with
+		// nothing to tell you why the account you declared is missing.
+		if f.Import != nil {
+			return nil, fmt.Errorf("%s: imported files cannot import, but %s does", path, p)
+		}
+		c.merge(f)
 	}
 
-	for _, a := range c.file.Accounts {
-		if _, dup := c.accounts[a.Name]; dup {
-			return nil, fmt.Errorf("%s: duplicate account block %q", path, a.Name)
+	c.merge(root)
+	return c, nil
+}
+
+// resolveImport turns an import path into a filesystem path. A relative path
+// resolves against the directory of the file that named it, not the working
+// directory, so a pair of files can be moved together.
+func resolveImport(from, path string) string {
+	if filepath.IsAbs(path) {
+		return path
+	}
+	return filepath.Join(filepath.Dir(from), path)
+}
+
+// parseFile reads and decodes one file. Duplicate account blocks are an error
+// here, unlike across files: within a single file there is nothing to
+// override, so a repeated name is a typo.
+func parseFile(path string) (File, error) {
+	var f File
+
+	src, err := os.ReadFile(path)
+	if err != nil {
+		// The caller says what a missing file means: the two cases want
+		// different advice, and only one of them is about ARN_CONFIG.
+		return f, err
+	}
+
+	parser := hclparse.NewParser()
+	parsed, diags := parser.ParseHCL(src, path)
+	if diags.HasErrors() {
+		return f, diags
+	}
+	if diags := gohcl.DecodeBody(parsed.Body, nil, &f); diags.HasErrors() {
+		return f, diags
+	}
+
+	seen := make(map[string]struct{}, len(f.Accounts))
+	for _, a := range f.Accounts {
+		if _, dup := seen[a.Name]; dup {
+			return f, fmt.Errorf("%s: duplicate account block %q", path, a.Name)
 		}
+		seen[a.Name] = struct{}{}
+	}
+	return f, nil
+}
+
+// merge applies one file over what is already loaded. Set values win over
+// unset ones, and an account block replaces one of the same name that the
+// imported file declared, which is the point of importing a file and then
+// adjusting it.
+func (c *Config) merge(f File) {
+	overridePtr(&c.accountID, f.AccountID)
+	overridePtr(&c.region, f.Region)
+	overridePtr(&c.partition, f.Partition)
+
+	for _, a := range f.Accounts {
 		c.accounts[a.Name] = a
 	}
-	return c, nil
 }
 
 // DefaultPath returns the configuration path: ARN_CONFIG when set, otherwise
@@ -144,9 +224,9 @@ type Opts struct {
 // top-level region.
 func (c *Config) Resolve(o Opts) (Values, error) {
 	v := Values{
-		AccountID: deref(c.file.AccountID),
-		Region:    deref(c.file.Region),
-		Partition: deref(c.file.Partition),
+		AccountID: deref(c.accountID),
+		Region:    deref(c.region),
+		Partition: deref(c.partition),
 	}
 
 	if o.Account != "" {
@@ -212,9 +292,19 @@ func deref(p *string) string {
 	return *p
 }
 
+// override sets dst from src when src says anything. The two shapes are
+// separate because the two layers differ: merging files keeps "unset" as a
+// nil pointer so a later file can still fill it in, while resolving has
+// already collapsed unset to the empty string.
 func override(dst *string, src *string) {
 	if src != nil {
 		*dst = *src
+	}
+}
+
+func overridePtr(dst **string, src *string) {
+	if src != nil {
+		*dst = src
 	}
 }
 

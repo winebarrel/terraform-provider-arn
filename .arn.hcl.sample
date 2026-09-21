@@ -9,3 +9,8 @@ account "us" {
   account_id = "333333333333"
   region     = "us-east-1"
 }
+
+# One other file can be read first. The path is relative to this file, and
+# this file is applied second, so anything set here wins.
+#
+# import = "common.hcl"
