@@ -42,7 +42,8 @@ output "role" {
 }
 ```
 
-`.arn.hcl`, in the directory Terraform runs in:
+`.arn.hcl`, in the directory Terraform runs in. The file is required, though
+an empty one is enough for ARNs that need nothing from it.
 
 ```hcl
 account_id = "111111111111"
@@ -225,27 +226,6 @@ provider::arn::iam_role("path/to/my-role")
 ```
 
 The configuration file is checked too, not only the call site.
-
-## Why a file instead of a provider block
-
-Provider-defined functions cannot read provider configuration, so values in a
-`provider "arn"` block would never reach the functions.
-
-The file is required, including for an ARN that needs nothing from it:
-
-```console
-> provider::arn::s3_bucket("my-bucket")
-Call to function "provider::arn::s3_bucket" failed: .arn.hcl not found:
-create it, or point ARN_CONFIG at another path.
-```
-
-The contents are not. An empty file works until something asks for a value:
-
-```console
-> provider::arn::iam_role("my-role")
-Call to function "provider::arn::iam_role" failed: iam_role needs an account
-id: set account_id in the configuration file, or pass { account = ... }.
-```
 
 ## Development
 
