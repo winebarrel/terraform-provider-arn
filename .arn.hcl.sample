@@ -1,0 +1,11 @@
+account_id = "111111111111"
+region     = "ap-northeast-1"
+
+account "prod" {
+  account_id = "222222222222"
+}
+
+account "us" {
+  account_id = "333333333333"
+  region     = "us-east-1"
+}

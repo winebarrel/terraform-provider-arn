@@ -1,0 +1,27 @@
+terraform {
+  required_providers {
+    arn = {
+      source = "winebarrel/arn"
+    }
+  }
+}
+
+output "role" {
+  value = provider::arn::iam_role("my-role")
+}
+
+output "queue" {
+  value = provider::arn::sqs_queue("my-queue")
+}
+
+output "role_in_prod" {
+  value = provider::arn::iam_role("my-role", { account = "prod" })
+}
+
+output "queue_in_us" {
+  value = provider::arn::sqs_queue("my-queue", { account = "us" })
+}
+
+output "archive_rule" {
+  value = provider::arn::access_analyzer_archive_rule("my-analyzer", "my-rule")
+}
