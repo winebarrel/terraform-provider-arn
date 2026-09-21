@@ -113,14 +113,18 @@ asked about. What the checks catch is the value that could never be right,
 which would otherwise be interpolated into a syntactically valid ARN and fail
 much later, at apply time, somewhere unhelpful.
 
-An ARN is `arn:partition:service:region:account:resource`.
+An ARN is `arn:partition:service:region:account:resource`. Each field is
+checked wherever its value came from:
 
-| Field | Rule |
-|---|---|
-| `partition` | `aws`, `aws-` plus one or more words, or `*` |
-| `region` | A name like `ap-northeast-1`, including `us-gov-west-1` and `us-iso-east-1`, or `*` |
-| `account` | Twelve digits, `aws`, or `*` |
-| Arguments | Not empty, and no `:` in a structural field |
+| ARN field | Set by | Rule |
+|---|---|---|
+| partition | `partition` | `aws`, `aws-` plus one or more words, or `*` |
+| region | `region` | A name like `ap-northeast-1`, including `us-gov-west-1` and `us-iso-east-1`, or `*` |
+| account | `account_id`, or the `account_id` of the block named by `account` | Twelve digits, `aws`, or `*` |
+| resource | the function's arguments | Not empty |
+
+`account` itself is not one of these: it names an `account` block, and a name
+that is not declared is its own error rather than a malformed value.
 
 `aws` is the account AWS-managed policies carry, and `*` is how an ARN written
 for an IAM policy wildcards a field. IAM Access Analyzer reports the supported
