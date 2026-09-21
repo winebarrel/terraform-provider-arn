@@ -297,3 +297,61 @@ file..`
 	assert.NotRegexp(t, wrapTolerant([]string{"prod, us", `unknown account "nope"`}), wrapped)
 	assert.NotRegexp(t, wrapTolerant([]string{"unknown account .nope."}), wrapped)
 }
+
+// useConfigTree writes several files and points ARN_CONFIG at the first.
+func useConfigTree(t *testing.T, root string, files map[string]string) {
+	t.Helper()
+	dir := t.TempDir()
+	for name, body := range files {
+		p := filepath.Join(dir, name)
+		if err := os.MkdirAll(filepath.Dir(p), 0o755); err != nil {
+			t.Fatal(err)
+		}
+		if err := os.WriteFile(p, []byte(body), 0o600); err != nil {
+			t.Fatal(err)
+		}
+	}
+	t.Setenv(arnconf.EnvConfig, filepath.Join(dir, root))
+}
+
+func TestFunction_Import(t *testing.T) {
+	useConfigTree(t, ".arn.hcl", map[string]string{
+		"common.hcl": `
+account_id = "111111111111"
+region     = "ap-northeast-1"
+
+account "prod" {
+  account_id = "222222222222"
+}
+`,
+		".arn.hcl": `
+import = "common.hcl"
+`,
+	})
+
+	okStep(t, out(`provider::arn::iam_role("r")`), "arn:aws:iam::111111111111:role/r")
+	okStep(t, out(`provider::arn::iam_role("r", { account = "prod" })`), "arn:aws:iam::222222222222:role/r")
+	okStep(t, out(`provider::arn::sqs_queue("q", { account = "prod" })`), "arn:aws:sqs:ap-northeast-1:222222222222:q")
+}
+
+func TestFunction_ImportIsOverriddenByTheImportingFile(t *testing.T) {
+	useConfigTree(t, ".arn.hcl", map[string]string{
+		"common.hcl": `
+account_id = "111111111111"
+region     = "ap-northeast-1"
+`,
+		".arn.hcl": `
+import = "common.hcl"
+region = "us-east-1"
+`,
+	})
+
+	okStep(t, out(`provider::arn::sqs_queue("q")`), "arn:aws:sqs:us-east-1:111111111111:q")
+}
+
+func TestFunction_ImportNotFound(t *testing.T) {
+	useConfigTree(t, ".arn.hcl", map[string]string{
+		".arn.hcl": `import = "missing.hcl"`,
+	})
+	errStep(t, out(`provider::arn::iam_role("r")`), `import "missing.hcl" not found`)
+}
