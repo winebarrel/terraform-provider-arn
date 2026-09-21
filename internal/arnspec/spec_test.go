@@ -310,3 +310,56 @@ func TestBuildAllowsSlashInArgument(t *testing.T) {
 	require.NoError(t, err)
 	assert.Equal(t, "arn:aws:iam::111111111111:role/path/to/my-role", got)
 }
+
+// The whole classification rests on the correspondence between an ARN field
+// and the names AWS puts in it, so pin it across every template rather than
+// for a few named functions. A new spelling at the account field would
+// otherwise set NeedsAccount, silently drop an argument, and pass every other
+// test here.
+func TestGeneratedPlaceholderPositions(t *testing.T) {
+	// Field index counted in colons: 1 partition, 2 service, 3 region,
+	// 4 account, 5 and beyond the resource part.
+	want := map[int]map[string]bool{
+		1: {"Partition": true},
+		2: {"Vendor": true},
+		3: {"Region": true},
+		4: {
+			"Account":             true,
+			"AccountId":           true,
+			"ManagementAccountId": true,
+			"VpcOwnerAccount":     true,
+		},
+	}
+
+	counts := map[int]map[string]int{1: {}, 2: {}, 3: {}, 4: {}}
+
+	for _, s := range arnspec.All() {
+		rest, field := s.Template, 0
+		for {
+			i := strings.Index(rest, "${")
+			if i < 0 {
+				break
+			}
+			j := strings.Index(rest[i:], "}")
+			require.GreaterOrEqual(t, j, 0, s.Name)
+
+			name := rest[i+2 : i+j]
+			field += strings.Count(rest[:i], ":")
+			if field < 5 {
+				assert.True(t, want[field][name],
+					"%s: unexpected placeholder ${%s} in ARN field %d: %s", s.Name, name, field, s.Template)
+				counts[field][name]++
+			}
+			rest = rest[i+j+1:]
+		}
+	}
+
+	// The counts themselves, so a template moving between fields shows up
+	// even when the name is already known.
+	assert.Equal(t, map[int]map[string]int{
+		1: {"Partition": 2321},
+		2: {"Vendor": 1},
+		3: {"Region": 2095},
+		4: {"Account": 2120, "AccountId": 22, "ManagementAccountId": 1, "VpcOwnerAccount": 1},
+	}, counts)
+}
