@@ -95,8 +95,17 @@ account "bar" {
 	assert.Contains(t, err.Error(), "bar, foo")
 }
 
-func TestMissingFileIsNotAnError(t *testing.T) {
-	c, err := arnconf.Load(filepath.Join(t.TempDir(), "nope.hcl"))
+func TestMissingFileIsAnError(t *testing.T) {
+	_, err := arnconf.Load(filepath.Join(t.TempDir(), "nope.hcl"))
+	require.Error(t, err)
+	assert.Contains(t, err.Error(), "nope.hcl not found")
+	assert.Contains(t, err.Error(), arnconf.EnvConfig)
+}
+
+// An empty file is enough for ARNs that need nothing from it. The file is
+// required, but its contents are not.
+func TestEmptyFileIsUsable(t *testing.T) {
+	c, err := arnconf.Load(write(t, ""))
 	require.NoError(t, err)
 
 	v, err := c.Resolve(arnconf.Opts{})

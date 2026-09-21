@@ -21,7 +21,8 @@ named `<service>_<resource>`.
 ## Configuration file
 
 The account, region and partition come from `.arn.hcl` in the directory
-Terraform runs in. Set `ARN_CONFIG` to read a different path.
+Terraform runs in. Set `ARN_CONFIG` to read a different path. The file is
+required, though an empty one is enough for ARNs that need nothing from it.
 
 ```hcl
 account_id = "111111111111"

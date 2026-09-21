@@ -163,10 +163,17 @@ func TestFunction_MissingRegion(t *testing.T) {
 	errStep(t, out(`provider::arn::sqs_queue("q")`), `(?s)needs a\s+region`)
 }
 
-// A missing configuration file is only a problem for ARNs that need
-// something from it.
+// The configuration file is required, even for an ARN that would need
+// nothing from it.
 func TestFunction_NoConfigFile(t *testing.T) {
 	t.Setenv(arnconf.EnvConfig, filepath.Join(t.TempDir(), "absent.hcl"))
+	errStep(t, out(`provider::arn::s3_bucket("b")`), `(?s)absent\.hcl\s+not\s+found`)
+	errStep(t, out(`provider::arn::iam_role("r")`), `(?s)absent\.hcl\s+not\s+found`)
+}
+
+// The file has to exist, but it does not have to say anything.
+func TestFunction_EmptyConfigFile(t *testing.T) {
+	useConfig(t, "")
 	okStep(t, out(`provider::arn::s3_bucket("b")`), "arn:aws:s3:::b")
 	errStep(t, out(`provider::arn::iam_role("r")`), `(?s)needs an account\s+id`)
 }

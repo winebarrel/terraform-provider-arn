@@ -134,13 +134,21 @@ Provider-defined functions cannot read provider configuration, so values in a
 visible and diffable, which an environment variable or an STS call made behind
 your back would not.
 
-A missing configuration file is not an error on its own. It only surfaces when
-an ARN actually needs something from it:
+The file is required. A few ARN shapes need nothing from it, an S3 bucket ARN
+carrying neither account nor region, but letting those work without it would
+mean the provider behaves differently depending on which function you happen
+to call first:
 
 ```console
 > provider::arn::s3_bucket("my-bucket")
-"arn:aws:s3:::my-bucket"
+Call to function "provider::arn::s3_bucket" failed: .arn.hcl not found:
+create it, or point ARN_CONFIG at another path.
+```
 
+The contents are another matter. An empty file is enough for an ARN that needs
+nothing, and a value only has to be set once something asks for it:
+
+```console
 > provider::arn::iam_role("my-role")
 Call to function "provider::arn::iam_role" failed: iam_role needs an account
 id: set account_id in the configuration file, or pass { account = ... }.

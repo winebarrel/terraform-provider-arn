@@ -85,18 +85,18 @@ func (e *ErrUnknownAccount) Error() string {
 // not the file existed.
 func (c *Config) Path() string { return c.path }
 
-// Load reads the configuration file. A missing file is not an error: a
-// configuration may only use ARNs that need no account or region, and
-// reporting the absence at load time would break those. The absence surfaces
-// later, from Resolve, as a missing value for the specific field an ARN
-// needed.
+// Load reads the configuration file. The file is required: a few ARN shapes
+// need nothing from it (an S3 bucket ARN carries neither account nor region),
+// but letting those work without it would mean the provider behaves
+// differently depending on which function a configuration happens to call
+// first. Reporting the absence once, at load time, is easier to act on.
 func Load(path string) (*Config, error) {
 	c := &Config{path: path, accounts: map[string]Account{}}
 
 	src, err := os.ReadFile(path)
 	if err != nil {
 		if os.IsNotExist(err) {
-			return c, nil
+			return nil, fmt.Errorf("%s not found: create it, or point %s at another path", path, EnvConfig)
 		}
 		return nil, err
 	}

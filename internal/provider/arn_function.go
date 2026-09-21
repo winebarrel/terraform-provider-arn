@@ -114,10 +114,12 @@ func (f ARNFunction) Run(ctx context.Context, req function.RunRequest, resp *fun
 		}
 	}
 
+	// Both failure modes name the file themselves: the not-found error spells
+	// out the path, and HCL diagnostics carry the filename and position. A
+	// wrapper here would only repeat it.
 	cfg, err := f.cache.Get(arnconf.DefaultPath())
 	if err != nil {
-		resp.Error = function.ConcatFuncErrors(resp.Error, function.NewFuncError(
-			fmt.Sprintf("read %s: %v", arnconf.DefaultPath(), err)))
+		resp.Error = function.ConcatFuncErrors(resp.Error, function.NewFuncError(err.Error()))
 		return
 	}
 
