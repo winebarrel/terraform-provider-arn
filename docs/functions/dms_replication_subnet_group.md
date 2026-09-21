@@ -3,12 +3,12 @@
 page_title: "dms_replication_subnet_group function - arn"
 subcategory: ""
 description: |-
-  Builds an dms ReplicationSubnetGroup ARN
+  dms ReplicationSubnetGroup ARN
 ---
 
 # function: dms_replication_subnet_group
 
-Builds the ARN of an `dms` `ReplicationSubnetGroup`:
+Builds the ARN for `dms` `ReplicationSubnetGroup`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:subgrp:*

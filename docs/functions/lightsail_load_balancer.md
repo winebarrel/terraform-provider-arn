@@ -3,12 +3,12 @@
 page_title: "lightsail_load_balancer function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail LoadBalancer ARN
+  lightsail LoadBalancer ARN
 ---
 
 # function: lightsail_load_balancer
 
-Builds the ARN of an `lightsail` `LoadBalancer`:
+Builds the ARN for `lightsail` `LoadBalancer`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:LoadBalancer/${Id}

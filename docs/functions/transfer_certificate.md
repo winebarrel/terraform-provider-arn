@@ -3,12 +3,12 @@
 page_title: "transfer_certificate function - arn"
 subcategory: ""
 description: |-
-  Builds an transfer certificate ARN
+  transfer certificate ARN
 ---
 
 # function: transfer_certificate
 
-Builds the ARN of an `transfer` `certificate`:
+Builds the ARN for `transfer` `certificate`:
 
 ```
 arn:${Partition}:transfer:${Region}:${Account}:certificate/${CertificateId}

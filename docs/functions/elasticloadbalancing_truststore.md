@@ -3,12 +3,12 @@
 page_title: "elasticloadbalancing_truststore function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticloadbalancing truststore ARN
+  elasticloadbalancing truststore ARN
 ---
 
 # function: elasticloadbalancing_truststore
 
-Builds the ARN of an `elasticloadbalancing` `truststore`:
+Builds the ARN for `elasticloadbalancing` `truststore`:
 
 ```
 arn:${Partition}:elasticloadbalancing:${Region}:${Account}:truststore/${TrustStoreName}/${TrustStoreId}

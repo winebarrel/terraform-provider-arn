@@ -3,12 +3,12 @@
 page_title: "organizations_awspolicy function - arn"
 subcategory: ""
 description: |-
-  Builds an organizations awspolicy ARN
+  organizations awspolicy ARN
 ---
 
 # function: organizations_awspolicy
 
-Builds the ARN of an `organizations` `awspolicy`:
+Builds the ARN for `organizations` `awspolicy`:
 
 ```
 arn:${Partition}:organizations::aws:policy/${PolicyType}/p-${PolicyId}

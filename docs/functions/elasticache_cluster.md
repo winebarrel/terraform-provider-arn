@@ -3,12 +3,12 @@
 page_title: "elasticache_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticache cluster ARN
+  elasticache cluster ARN
 ---
 
 # function: elasticache_cluster
 
-Builds the ARN of an `elasticache` `cluster`:
+Builds the ARN for `elasticache` `cluster`:
 
 ```
 arn:${Partition}:elasticache:${Region}:${Account}:cluster:${CacheClusterId}

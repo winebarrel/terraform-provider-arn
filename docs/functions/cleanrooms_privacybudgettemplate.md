@@ -3,12 +3,12 @@
 page_title: "cleanrooms_privacybudgettemplate function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms privacybudgettemplate ARN
+  cleanrooms privacybudgettemplate ARN
 ---
 
 # function: cleanrooms_privacybudgettemplate
 
-Builds the ARN of an `cleanrooms` `privacybudgettemplate`:
+Builds the ARN for `cleanrooms` `privacybudgettemplate`:
 
 ```
 arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/privacybudgettemplate/${PrivacyBudgetTemplateId}

@@ -3,12 +3,12 @@
 page_title: "iot_thinggroup function - arn"
 subcategory: ""
 description: |-
-  Builds an iot thinggroup ARN
+  iot thinggroup ARN
 ---
 
 # function: iot_thinggroup
 
-Builds the ARN of an `iot` `thinggroup`:
+Builds the ARN for `iot` `thinggroup`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:thinggroup/${ThingGroupName}

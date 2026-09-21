@@ -3,12 +3,12 @@
 page_title: "sso_trusted_token_issuer function - arn"
 subcategory: ""
 description: |-
-  Builds an sso TrustedTokenIssuer ARN
+  sso TrustedTokenIssuer ARN
 ---
 
 # function: sso_trusted_token_issuer
 
-Builds the ARN of an `sso` `TrustedTokenIssuer`:
+Builds the ARN for `sso` `TrustedTokenIssuer`:
 
 ```
 arn:${Partition}:sso::${AccountId}:trustedTokenIssuer/${InstanceId}/${TrustedTokenIssuerId}

@@ -3,12 +3,12 @@
 page_title: "cleanrooms_ml_trained_model function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms-ml TrainedModel ARN
+  cleanrooms-ml TrainedModel ARN
 ---
 
 # function: cleanrooms_ml_trained_model
 
-Builds the ARN of an `cleanrooms-ml` `TrainedModel`:
+Builds the ARN for `cleanrooms-ml` `TrainedModel`:
 
 ```
 arn:${Partition}:cleanrooms-ml:${Region}:${Account}:membership/${MembershipId}/trained-model/${ResourceId}

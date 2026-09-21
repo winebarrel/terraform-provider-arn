@@ -3,12 +3,12 @@
 page_title: "memorydb_parametergroup function - arn"
 subcategory: ""
 description: |-
-  Builds an memorydb parametergroup ARN
+  memorydb parametergroup ARN
 ---
 
 # function: memorydb_parametergroup
 
-Builds the ARN of an `memorydb` `parametergroup`:
+Builds the ARN for `memorydb` `parametergroup`:
 
 ```
 arn:${Partition}:memorydb:${Region}:${Account}:parametergroup/${ParameterGroupName}

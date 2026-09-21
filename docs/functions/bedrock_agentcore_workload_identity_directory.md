@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_workload_identity_directory function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore workload-identity-directory ARN
+  bedrock-agentcore workload-identity-directory ARN
 ---
 
 # function: bedrock_agentcore_workload_identity_directory
 
-Builds the ARN of an `bedrock-agentcore` `workload-identity-directory`:
+Builds the ARN for `bedrock-agentcore` `workload-identity-directory`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:workload-identity-directory/${DirectoryId}

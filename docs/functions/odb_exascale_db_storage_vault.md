@@ -3,12 +3,12 @@
 page_title: "odb_exascale_db_storage_vault function - arn"
 subcategory: ""
 description: |-
-  Builds an odb exascale-db-storage-vault ARN
+  odb exascale-db-storage-vault ARN
 ---
 
 # function: odb_exascale_db_storage_vault
 
-Builds the ARN of an `odb` `exascale-db-storage-vault`:
+Builds the ARN for `odb` `exascale-db-storage-vault`:
 
 ```
 arn:${Partition}:odb:${Region}:${Account}:exascale-db-storage-vault/${ExascaleDbStorageVaultId}

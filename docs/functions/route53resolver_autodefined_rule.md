@@ -3,12 +3,12 @@
 page_title: "route53resolver_autodefined_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an route53resolver autodefined-rule ARN
+  route53resolver autodefined-rule ARN
 ---
 
 # function: route53resolver_autodefined_rule
 
-Builds the ARN of an `route53resolver` `autodefined-rule`:
+Builds the ARN for `route53resolver` `autodefined-rule`:
 
 ```
 arn:${Partition}:route53resolver:${Region}:${Account}:autodefined-rule/${ResourceId}

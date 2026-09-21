@@ -3,12 +3,12 @@
 page_title: "thinclient_softwareset function - arn"
 subcategory: ""
 description: |-
-  Builds an thinclient softwareset ARN
+  thinclient softwareset ARN
 ---
 
 # function: thinclient_softwareset
 
-Builds the ARN of an `thinclient` `softwareset`:
+Builds the ARN for `thinclient` `softwareset`:
 
 ```
 arn:${Partition}:thinclient:${Region}:${Account}:softwareset/${SoftwareSetId}

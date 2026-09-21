@@ -3,12 +3,12 @@
 page_title: "ec2_ipam_external_resource_verification_token function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 ipam-external-resource-verification-token ARN
+  ec2 ipam-external-resource-verification-token ARN
 ---
 
 # function: ec2_ipam_external_resource_verification_token
 
-Builds the ARN of an `ec2` `ipam-external-resource-verification-token`:
+Builds the ARN for `ec2` `ipam-external-resource-verification-token`:
 
 ```
 arn:${Partition}:ec2::${Account}:ipam-external-resource-verification-token/${IpamExternalResourceVerificationTokenId}

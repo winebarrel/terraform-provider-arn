@@ -3,12 +3,12 @@
 page_title: "logs_log_stream function - arn"
 subcategory: ""
 description: |-
-  Builds an logs log-stream ARN
+  logs log-stream ARN
 ---
 
 # function: logs_log_stream
 
-Builds the ARN of an `logs` `log-stream`:
+Builds the ARN for `logs` `log-stream`:
 
 ```
 arn:${Partition}:logs:${Region}:${Account}:log-group:${LogGroupName}:log-stream:${LogStreamName}

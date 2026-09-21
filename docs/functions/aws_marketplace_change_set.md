@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_change_set function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace ChangeSet ARN
+  aws-marketplace ChangeSet ARN
 ---
 
 # function: aws_marketplace_change_set
 
-Builds the ARN of an `aws-marketplace` `ChangeSet`:
+Builds the ARN for `aws-marketplace` `ChangeSet`:
 
 ```
 arn:${Partition}:aws-marketplace:${Region}:${Account}:${Catalog}/ChangeSet/${ResourceId}

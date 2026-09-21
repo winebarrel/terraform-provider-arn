@@ -3,12 +3,12 @@
 page_title: "ssm_contacts_rotation function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm-contacts rotation ARN
+  ssm-contacts rotation ARN
 ---
 
 # function: ssm_contacts_rotation
 
-Builds the ARN of an `ssm-contacts` `rotation`:
+Builds the ARN for `ssm-contacts` `rotation`:
 
 ```
 arn:${Partition}:ssm-contacts:${Region}:${Account}:rotation/${RotationId}

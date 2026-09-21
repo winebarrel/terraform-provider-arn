@@ -3,12 +3,12 @@
 page_title: "sagemaker_geospatial_vector_enrichment_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker-geospatial VectorEnrichmentJob ARN
+  sagemaker-geospatial VectorEnrichmentJob ARN
 ---
 
 # function: sagemaker_geospatial_vector_enrichment_job
 
-Builds the ARN of an `sagemaker-geospatial` `VectorEnrichmentJob`:
+Builds the ARN for `sagemaker-geospatial` `VectorEnrichmentJob`:
 
 ```
 arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:vector-enrichment-job/${JobID}

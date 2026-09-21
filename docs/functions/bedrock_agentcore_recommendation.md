@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_recommendation function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore recommendation ARN
+  bedrock-agentcore recommendation ARN
 ---
 
 # function: bedrock_agentcore_recommendation
 
-Builds the ARN of an `bedrock-agentcore` `recommendation`:
+Builds the ARN for `bedrock-agentcore` `recommendation`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:recommendation/${RecommendationId}

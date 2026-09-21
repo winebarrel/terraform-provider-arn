@@ -3,12 +3,12 @@
 page_title: "license_manager_report_generator function - arn"
 subcategory: ""
 description: |-
-  Builds an license-manager report-generator ARN
+  license-manager report-generator ARN
 ---
 
 # function: license_manager_report_generator
 
-Builds the ARN of an `license-manager` `report-generator`:
+Builds the ARN for `license-manager` `report-generator`:
 
 ```
 arn:${Partition}:license-manager:${Region}:${Account}:report-generator:${ReportGeneratorId}

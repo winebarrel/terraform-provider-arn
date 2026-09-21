@@ -3,12 +3,12 @@
 page_title: "cleanrooms_membership function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms membership ARN
+  cleanrooms membership ARN
 ---
 
 # function: cleanrooms_membership
 
-Builds the ARN of an `cleanrooms` `membership`:
+Builds the ARN for `cleanrooms` `membership`:
 
 ```
 arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}

@@ -3,12 +3,12 @@
 page_title: "kinesisvideo_stream function - arn"
 subcategory: ""
 description: |-
-  Builds an kinesisvideo stream ARN
+  kinesisvideo stream ARN
 ---
 
 # function: kinesisvideo_stream
 
-Builds the ARN of an `kinesisvideo` `stream`:
+Builds the ARN for `kinesisvideo` `stream`:
 
 ```
 arn:${Partition}:kinesisvideo:${Region}:${Account}:stream/${StreamName}/${CreationTime}

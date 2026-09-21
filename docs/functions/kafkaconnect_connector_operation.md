@@ -3,12 +3,12 @@
 page_title: "kafkaconnect_connector_operation function - arn"
 subcategory: ""
 description: |-
-  Builds an kafkaconnect connector operation ARN
+  kafkaconnect connector operation ARN
 ---
 
 # function: kafkaconnect_connector_operation
 
-Builds the ARN of an `kafkaconnect` `connector operation`:
+Builds the ARN for `kafkaconnect` `connector operation`:
 
 ```
 arn:${Partition}:kafkaconnect:${Region}:${Account}:connector-operation/${ConnectorName}/${ConnectorUUID}/${UUID}

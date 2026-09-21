@@ -3,12 +3,12 @@
 page_title: "elasticache_parametergroup function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticache parametergroup ARN
+  elasticache parametergroup ARN
 ---
 
 # function: elasticache_parametergroup
 
-Builds the ARN of an `elasticache` `parametergroup`:
+Builds the ARN for `elasticache` `parametergroup`:
 
 ```
 arn:${Partition}:elasticache:${Region}:${Account}:parametergroup:${CacheParameterGroupName}

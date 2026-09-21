@@ -3,12 +3,12 @@
 page_title: "license_manager_license_asset_ruleset function - arn"
 subcategory: ""
 description: |-
-  Builds an license-manager license-asset-ruleset ARN
+  license-manager license-asset-ruleset ARN
 ---
 
 # function: license_manager_license_asset_ruleset
 
-Builds the ARN of an `license-manager` `license-asset-ruleset`:
+Builds the ARN for `license-manager` `license-asset-ruleset`:
 
 ```
 arn:${Partition}:license-manager:${Region}:${Account}:license-asset-ruleset:${LicenseAssetRulesetId}

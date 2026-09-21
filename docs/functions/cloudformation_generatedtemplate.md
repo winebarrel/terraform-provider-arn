@@ -3,12 +3,12 @@
 page_title: "cloudformation_generatedtemplate function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudformation generatedtemplate ARN
+  cloudformation generatedtemplate ARN
 ---
 
 # function: cloudformation_generatedtemplate
 
-Builds the ARN of an `cloudformation` `generatedtemplate`:
+Builds the ARN for `cloudformation` `generatedtemplate`:
 
 ```
 arn:${Partition}:cloudformation:${Region}:${Account}:generatedTemplate/${Id}

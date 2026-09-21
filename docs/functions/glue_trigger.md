@@ -3,12 +3,12 @@
 page_title: "glue_trigger function - arn"
 subcategory: ""
 description: |-
-  Builds an glue trigger ARN
+  glue trigger ARN
 ---
 
 # function: glue_trigger
 
-Builds the ARN of an `glue` `trigger`:
+Builds the ARN for `glue` `trigger`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:trigger/${TriggerName}

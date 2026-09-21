@@ -3,12 +3,12 @@
 page_title: "apigateway_vpc_links function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway VpcLinks ARN
+  apigateway VpcLinks ARN
 ---
 
 # function: apigateway_vpc_links
 
-Builds the ARN of an `apigateway` `VpcLinks`:
+Builds the ARN for `apigateway` `VpcLinks`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/vpclinks

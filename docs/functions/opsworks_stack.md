@@ -3,12 +3,12 @@
 page_title: "opsworks_stack function - arn"
 subcategory: ""
 description: |-
-  Builds an opsworks stack ARN
+  opsworks stack ARN
 ---
 
 # function: opsworks_stack
 
-Builds the ARN of an `opsworks` `stack`:
+Builds the ARN for `opsworks` `stack`:
 
 ```
 arn:${Partition}:opsworks:${Region}:${Account}:stack/${StackId}/

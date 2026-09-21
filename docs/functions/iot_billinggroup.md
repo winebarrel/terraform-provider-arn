@@ -3,12 +3,12 @@
 page_title: "iot_billinggroup function - arn"
 subcategory: ""
 description: |-
-  Builds an iot billinggroup ARN
+  iot billinggroup ARN
 ---
 
 # function: iot_billinggroup
 
-Builds the ARN of an `iot` `billinggroup`:
+Builds the ARN for `iot` `billinggroup`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:billinggroup/${BillingGroupName}

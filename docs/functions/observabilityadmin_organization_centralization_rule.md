@@ -3,12 +3,12 @@
 page_title: "observabilityadmin_organization_centralization_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an observabilityadmin organization-centralization-rule ARN
+  observabilityadmin organization-centralization-rule ARN
 ---
 
 # function: observabilityadmin_organization_centralization_rule
 
-Builds the ARN of an `observabilityadmin` `organization-centralization-rule`:
+Builds the ARN for `observabilityadmin` `organization-centralization-rule`:
 
 ```
 arn:${Partition}:observabilityadmin:${Region}:${Account}:organization-centralization-rule/${CentralizationRuleName}

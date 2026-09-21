@@ -3,12 +3,12 @@
 page_title: "translate_terminology function - arn"
 subcategory: ""
 description: |-
-  Builds an translate terminology ARN
+  translate terminology ARN
 ---
 
 # function: translate_terminology
 
-Builds the ARN of an `translate` `terminology`:
+Builds the ARN for `translate` `terminology`:
 
 ```
 arn:${Partition}:translate:${Region}:${Account}:terminology/${ResourceName}

@@ -3,12 +3,12 @@
 page_title: "waf_xssmatchset function - arn"
 subcategory: ""
 description: |-
-  Builds an waf xssmatchset ARN
+  waf xssmatchset ARN
 ---
 
 # function: waf_xssmatchset
 
-Builds the ARN of an `waf` `xssmatchset`:
+Builds the ARN for `waf` `xssmatchset`:
 
 ```
 arn:${Partition}:waf::${Account}:xssmatchset/${Id}

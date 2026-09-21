@@ -3,12 +3,12 @@
 page_title: "mgh_automation_run_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgh AutomationRunResource ARN
+  mgh AutomationRunResource ARN
 ---
 
 # function: mgh_automation_run_resource
 
-Builds the ARN of an `mgh` `AutomationRunResource`:
+Builds the ARN for `mgh` `AutomationRunResource`:
 
 ```
 arn:${Partition}:mgh:${Region}:${Account}:automation-run/${RunID}

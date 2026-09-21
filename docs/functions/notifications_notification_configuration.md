@@ -3,12 +3,12 @@
 page_title: "notifications_notification_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an notifications NotificationConfiguration ARN
+  notifications NotificationConfiguration ARN
 ---
 
 # function: notifications_notification_configuration
 
-Builds the ARN of an `notifications` `NotificationConfiguration`:
+Builds the ARN for `notifications` `NotificationConfiguration`:
 
 ```
 arn:${Partition}:notifications::${Account}:configuration/${NotificationConfigurationId}

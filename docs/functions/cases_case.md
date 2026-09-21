@@ -3,12 +3,12 @@
 page_title: "cases_case function - arn"
 subcategory: ""
 description: |-
-  Builds an cases Case ARN
+  cases Case ARN
 ---
 
 # function: cases_case
 
-Builds the ARN of an `cases` `Case`:
+Builds the ARN for `cases` `Case`:
 
 ```
 arn:${Partition}:cases:${Region}:${Account}:domain/${DomainId}/case/${CaseId}

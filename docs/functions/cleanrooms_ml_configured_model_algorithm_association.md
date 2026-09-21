@@ -3,12 +3,12 @@
 page_title: "cleanrooms_ml_configured_model_algorithm_association function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms-ml ConfiguredModelAlgorithmAssociation ARN
+  cleanrooms-ml ConfiguredModelAlgorithmAssociation ARN
 ---
 
 # function: cleanrooms_ml_configured_model_algorithm_association
 
-Builds the ARN of an `cleanrooms-ml` `ConfiguredModelAlgorithmAssociation`:
+Builds the ARN for `cleanrooms-ml` `ConfiguredModelAlgorithmAssociation`:
 
 ```
 arn:${Partition}:cleanrooms-ml:${Region}:${Account}:membership/${MembershipId}/configured-model-algorithm-association/${ResourceId}

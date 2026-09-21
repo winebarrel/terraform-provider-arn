@@ -3,12 +3,12 @@
 page_title: "workspaces_directoryid function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces directoryid ARN
+  workspaces directoryid ARN
 ---
 
 # function: workspaces_directoryid
 
-Builds the ARN of an `workspaces` `directoryid`:
+Builds the ARN for `workspaces` `directoryid`:
 
 ```
 arn:${Partition}:workspaces:${Region}:${Account}:directory/${DirectoryId}

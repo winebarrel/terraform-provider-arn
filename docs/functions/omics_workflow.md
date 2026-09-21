@@ -3,12 +3,12 @@
 page_title: "omics_workflow function - arn"
 subcategory: ""
 description: |-
-  Builds an omics workflow ARN
+  omics workflow ARN
 ---
 
 # function: omics_workflow
 
-Builds the ARN of an `omics` `workflow`:
+Builds the ARN for `omics` `workflow`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:workflow/${Id}

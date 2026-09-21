@@ -3,12 +3,12 @@
 page_title: "groundstation_contact function - arn"
 subcategory: ""
 description: |-
-  Builds an groundstation Contact ARN
+  groundstation Contact ARN
 ---
 
 # function: groundstation_contact
 
-Builds the ARN of an `groundstation` `Contact`:
+Builds the ARN for `groundstation` `Contact`:
 
 ```
 arn:${Partition}:groundstation:${Region}:${Account}:contact/${ContactId}

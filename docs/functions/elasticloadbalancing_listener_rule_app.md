@@ -3,12 +3,12 @@
 page_title: "elasticloadbalancing_listener_rule_app function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticloadbalancing listener-rule/app ARN
+  elasticloadbalancing listener-rule/app ARN
 ---
 
 # function: elasticloadbalancing_listener_rule_app
 
-Builds the ARN of an `elasticloadbalancing` `listener-rule/app`:
+Builds the ARN for `elasticloadbalancing` `listener-rule/app`:
 
 ```
 arn:${Partition}:elasticloadbalancing:${Region}:${Account}:listener-rule/app/${LoadBalancerName}/${LoadBalancerId}/${ListenerId}/${ListenerRuleId}

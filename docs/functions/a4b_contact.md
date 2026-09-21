@@ -3,12 +3,12 @@
 page_title: "a4b_contact function - arn"
 subcategory: ""
 description: |-
-  Builds an a4b contact ARN
+  a4b contact ARN
 ---
 
 # function: a4b_contact
 
-Builds the ARN of an `a4b` `contact`:
+Builds the ARN for `a4b` `contact`:
 
 ```
 arn:${Partition}:a4b:${Region}:${Account}:contact/${ResourceId}

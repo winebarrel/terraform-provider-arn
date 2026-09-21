@@ -3,12 +3,12 @@
 page_title: "connect_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an connect rule ARN
+  connect rule ARN
 ---
 
 # function: connect_rule
 
-Builds the ARN of an `connect` `rule`:
+Builds the ARN for `connect` `rule`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/rule/${RuleId}

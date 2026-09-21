@@ -3,12 +3,12 @@
 page_title: "odb_odb_peering_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an odb odb-peering-connection ARN
+  odb odb-peering-connection ARN
 ---
 
 # function: odb_odb_peering_connection
 
-Builds the ARN of an `odb` `odb-peering-connection`:
+Builds the ARN for `odb` `odb-peering-connection`:
 
 ```
 arn:${Partition}:odb:${Region}:${Account}:odb-peering-connection/${OdbPeeringConnectionId}

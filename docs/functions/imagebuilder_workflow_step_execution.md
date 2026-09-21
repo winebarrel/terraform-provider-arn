@@ -3,12 +3,12 @@
 page_title: "imagebuilder_workflow_step_execution function - arn"
 subcategory: ""
 description: |-
-  Builds an imagebuilder workflowStepExecution ARN
+  imagebuilder workflowStepExecution ARN
 ---
 
 # function: imagebuilder_workflow_step_execution
 
-Builds the ARN of an `imagebuilder` `workflowStepExecution`:
+Builds the ARN for `imagebuilder` `workflowStepExecution`:
 
 ```
 arn:${Partition}:imagebuilder:${Region}:${Account}:workflow-step-execution/${WorkflowStepExecutionId}

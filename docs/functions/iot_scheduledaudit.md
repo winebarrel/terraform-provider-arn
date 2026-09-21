@@ -3,12 +3,12 @@
 page_title: "iot_scheduledaudit function - arn"
 subcategory: ""
 description: |-
-  Builds an iot scheduledaudit ARN
+  iot scheduledaudit ARN
 ---
 
 # function: iot_scheduledaudit
 
-Builds the ARN of an `iot` `scheduledaudit`:
+Builds the ARN for `iot` `scheduledaudit`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:scheduledaudit/${ScheduleName}

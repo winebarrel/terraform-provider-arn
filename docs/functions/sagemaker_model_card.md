@@ -3,12 +3,12 @@
 page_title: "sagemaker_model_card function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker model-card ARN
+  sagemaker model-card ARN
 ---
 
 # function: sagemaker_model_card
 
-Builds the ARN of an `sagemaker` `model-card`:
+Builds the ARN for `sagemaker` `model-card`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:model-card/${ModelCardName}

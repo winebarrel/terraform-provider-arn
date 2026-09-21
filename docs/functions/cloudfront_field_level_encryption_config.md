@@ -3,12 +3,12 @@
 page_title: "cloudfront_field_level_encryption_config function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront field-level-encryption-config ARN
+  cloudfront field-level-encryption-config ARN
 ---
 
 # function: cloudfront_field_level_encryption_config
 
-Builds the ARN of an `cloudfront` `field-level-encryption-config`:
+Builds the ARN for `cloudfront` `field-level-encryption-config`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:field-level-encryption-config/${Id}

@@ -3,12 +3,12 @@
 page_title: "servicecatalog_application function - arn"
 subcategory: ""
 description: |-
-  Builds an servicecatalog Application ARN
+  servicecatalog Application ARN
 ---
 
 # function: servicecatalog_application
 
-Builds the ARN of an `servicecatalog` `Application`:
+Builds the ARN for `servicecatalog` `Application`:
 
 ```
 arn:${Partition}:servicecatalog:${Region}:${Account}:/applications/${ApplicationId}

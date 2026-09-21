@@ -3,12 +3,12 @@
 page_title: "iq_token function - arn"
 subcategory: ""
 description: |-
-  Builds an iq token ARN
+  iq token ARN
 ---
 
 # function: iq_token
 
-Builds the ARN of an `iq` `token`:
+Builds the ARN for `iq` `token`:
 
 ```
 arn:${Partition}:iq:${Region}::token/${TokenId}

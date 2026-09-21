@@ -3,12 +3,12 @@
 page_title: "apigateway_method_response function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway MethodResponse ARN
+  apigateway MethodResponse ARN
 ---
 
 # function: apigateway_method_response
 
-Builds the ARN of an `apigateway` `MethodResponse`:
+Builds the ARN for `apigateway` `MethodResponse`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${ResourceId}/methods/${HttpMethodType}/responses/${StatusCode}

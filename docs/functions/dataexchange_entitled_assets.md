@@ -3,12 +3,12 @@
 page_title: "dataexchange_entitled_assets function - arn"
 subcategory: ""
 description: |-
-  Builds an dataexchange entitled-assets ARN
+  dataexchange entitled-assets ARN
 ---
 
 # function: dataexchange_entitled_assets
 
-Builds the ARN of an `dataexchange` `entitled-assets`:
+Builds the ARN for `dataexchange` `entitled-assets`:
 
 ```
 arn:${Partition}:dataexchange:${Region}::data-sets/${DataSetId}/revisions/${RevisionId}/assets/${AssetId}

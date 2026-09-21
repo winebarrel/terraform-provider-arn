@@ -3,12 +3,12 @@
 page_title: "kafka_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an kafka configuration ARN
+  kafka configuration ARN
 ---
 
 # function: kafka_configuration
 
-Builds the ARN of an `kafka` `configuration`:
+Builds the ARN for `kafka` `configuration`:
 
 ```
 arn:${Partition}:kafka:${Region}:${Account}:configuration/${ConfigurationName}/${Uuid}

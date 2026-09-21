@@ -3,12 +3,12 @@
 page_title: "dynamodb_stream function - arn"
 subcategory: ""
 description: |-
-  Builds an dynamodb stream ARN
+  dynamodb stream ARN
 ---
 
 # function: dynamodb_stream
 
-Builds the ARN of an `dynamodb` `stream`:
+Builds the ARN for `dynamodb` `stream`:
 
 ```
 arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/stream/${StreamLabel}

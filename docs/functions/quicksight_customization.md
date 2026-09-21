@@ -3,12 +3,12 @@
 page_title: "quicksight_customization function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight customization ARN
+  quicksight customization ARN
 ---
 
 # function: quicksight_customization
 
-Builds the ARN of an `quicksight` `customization`:
+Builds the ARN for `quicksight` `customization`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:customization/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "iot_rolealias function - arn"
 subcategory: ""
 description: |-
-  Builds an iot rolealias ARN
+  iot rolealias ARN
 ---
 
 # function: iot_rolealias
 
-Builds the ARN of an `iot` `rolealias`:
+Builds the ARN for `iot` `rolealias`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:rolealias/${RoleAlias}

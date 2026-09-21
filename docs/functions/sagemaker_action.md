@@ -3,12 +3,12 @@
 page_title: "sagemaker_action function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker action ARN
+  sagemaker action ARN
 ---
 
 # function: sagemaker_action
 
-Builds the ARN of an `sagemaker` `action`:
+Builds the ARN for `sagemaker` `action`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:action/${ActionName}

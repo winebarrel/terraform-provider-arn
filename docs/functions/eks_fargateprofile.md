@@ -3,12 +3,12 @@
 page_title: "eks_fargateprofile function - arn"
 subcategory: ""
 description: |-
-  Builds an eks fargateprofile ARN
+  eks fargateprofile ARN
 ---
 
 # function: eks_fargateprofile
 
-Builds the ARN of an `eks` `fargateprofile`:
+Builds the ARN for `eks` `fargateprofile`:
 
 ```
 arn:${Partition}:eks:${Region}:${Account}:fargateprofile/${ClusterName}/${FargateProfileName}/${UUID}

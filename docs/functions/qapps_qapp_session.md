@@ -3,12 +3,12 @@
 page_title: "qapps_qapp_session function - arn"
 subcategory: ""
 description: |-
-  Builds an qapps qapp-session ARN
+  qapps qapp-session ARN
 ---
 
 # function: qapps_qapp_session
 
-Builds the ARN of an `qapps` `qapp-session`:
+Builds the ARN for `qapps` `qapp-session`:
 
 ```
 arn:${Partition}:qapps:${Region}:${Account}:application/${ApplicationId}/qapp/${AppId}/session/${SessionId}

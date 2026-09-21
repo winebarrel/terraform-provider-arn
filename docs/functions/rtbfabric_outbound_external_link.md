@@ -3,12 +3,12 @@
 page_title: "rtbfabric_outbound_external_link function - arn"
 subcategory: ""
 description: |-
-  Builds an rtbfabric OutboundExternalLink ARN
+  rtbfabric OutboundExternalLink ARN
 ---
 
 # function: rtbfabric_outbound_external_link
 
-Builds the ARN of an `rtbfabric` `OutboundExternalLink`:
+Builds the ARN for `rtbfabric` `OutboundExternalLink`:
 
 ```
 arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}/link/${LinkId}

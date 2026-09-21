@@ -3,12 +3,12 @@
 page_title: "transform_custom_source function - arn"
 subcategory: ""
 description: |-
-  Builds an transform-custom source ARN
+  transform-custom source ARN
 ---
 
 # function: transform_custom_source
 
-Builds the ARN of an `transform-custom` `source`:
+Builds the ARN for `transform-custom` `source`:
 
 ```
 arn:${Partition}:transform-custom:${Region}:${Account}:source/${Name}

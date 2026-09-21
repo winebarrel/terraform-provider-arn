@@ -3,12 +3,12 @@
 page_title: "autoscaling_auto_scaling_group function - arn"
 subcategory: ""
 description: |-
-  Builds an autoscaling autoScalingGroup ARN
+  autoscaling autoScalingGroup ARN
 ---
 
 # function: autoscaling_auto_scaling_group
 
-Builds the ARN of an `autoscaling` `autoScalingGroup`:
+Builds the ARN for `autoscaling` `autoScalingGroup`:
 
 ```
 arn:${Partition}:autoscaling:${Region}:${Account}:autoScalingGroup:${GroupId}:autoScalingGroupName/${GroupFriendlyName}

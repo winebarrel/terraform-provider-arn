@@ -3,12 +3,12 @@
 page_title: "lightsail_relational_database function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail RelationalDatabase ARN
+  lightsail RelationalDatabase ARN
 ---
 
 # function: lightsail_relational_database
 
-Builds the ARN of an `lightsail` `RelationalDatabase`:
+Builds the ARN for `lightsail` `RelationalDatabase`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:RelationalDatabase/${Id}

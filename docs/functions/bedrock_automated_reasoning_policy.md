@@ -3,12 +3,12 @@
 page_title: "bedrock_automated_reasoning_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock automated-reasoning-policy ARN
+  bedrock automated-reasoning-policy ARN
 ---
 
 # function: bedrock_automated_reasoning_policy
 
-Builds the ARN of an `bedrock` `automated-reasoning-policy`:
+Builds the ARN for `bedrock` `automated-reasoning-policy`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:automated-reasoning-policy/${AutomatedReasoningPolicyId}

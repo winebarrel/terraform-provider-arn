@@ -3,12 +3,12 @@
 page_title: "apigateway_api function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Api ARN
+  apigateway Api ARN
 ---
 
 # function: apigateway_api
 
-Builds the ARN of an `apigateway` `Api`:
+Builds the ARN for `apigateway` `Api`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}

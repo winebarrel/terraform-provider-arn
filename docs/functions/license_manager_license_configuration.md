@@ -3,12 +3,12 @@
 page_title: "license_manager_license_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an license-manager license-configuration ARN
+  license-manager license-configuration ARN
 ---
 
 # function: license_manager_license_configuration
 
-Builds the ARN of an `license-manager` `license-configuration`:
+Builds the ARN for `license-manager` `license-configuration`:
 
 ```
 arn:${Partition}:license-manager:${Region}:${Account}:license-configuration:${LicenseConfigurationId}

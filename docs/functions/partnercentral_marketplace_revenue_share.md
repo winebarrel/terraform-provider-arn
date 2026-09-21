@@ -3,12 +3,12 @@
 page_title: "partnercentral_marketplace_revenue_share function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral MarketplaceRevenueShare ARN
+  partnercentral MarketplaceRevenueShare ARN
 ---
 
 # function: partnercentral_marketplace_revenue_share
 
-Builds the ARN of an `partnercentral` `MarketplaceRevenueShare`:
+Builds the ARN for `partnercentral` `MarketplaceRevenueShare`:
 
 ```
 arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/marketplace-revenue-share/${MarketplaceProductId}

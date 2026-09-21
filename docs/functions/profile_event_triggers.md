@@ -3,12 +3,12 @@
 page_title: "profile_event_triggers function - arn"
 subcategory: ""
 description: |-
-  Builds an profile event-triggers ARN
+  profile event-triggers ARN
 ---
 
 # function: profile_event_triggers
 
-Builds the ARN of an `profile` `event-triggers`:
+Builds the ARN for `profile` `event-triggers`:
 
 ```
 arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/event-triggers/${EventTriggerName}

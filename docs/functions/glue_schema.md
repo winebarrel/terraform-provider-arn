@@ -3,12 +3,12 @@
 page_title: "glue_schema function - arn"
 subcategory: ""
 description: |-
-  Builds an glue schema ARN
+  glue schema ARN
 ---
 
 # function: glue_schema
 
-Builds the ARN of an `glue` `schema`:
+Builds the ARN for `glue` `schema`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:schema/${SchemaName}

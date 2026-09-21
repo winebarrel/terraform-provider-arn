@@ -3,12 +3,12 @@
 page_title: "nimble_studio_component function - arn"
 subcategory: ""
 description: |-
-  Builds an nimble studio-component ARN
+  nimble studio-component ARN
 ---
 
 # function: nimble_studio_component
 
-Builds the ARN of an `nimble` `studio-component`:
+Builds the ARN for `nimble` `studio-component`:
 
 ```
 arn:${Partition}:nimble:${Region}:${Account}:studio-component/${StudioComponentId}

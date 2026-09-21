@@ -3,12 +3,12 @@
 page_title: "globalaccelerator_listener function - arn"
 subcategory: ""
 description: |-
-  Builds an globalaccelerator listener ARN
+  globalaccelerator listener ARN
 ---
 
 # function: globalaccelerator_listener
 
-Builds the ARN of an `globalaccelerator` `listener`:
+Builds the ARN for `globalaccelerator` `listener`:
 
 ```
 arn:${Partition}:globalaccelerator::${Account}:accelerator/${ResourceId}/listener/${ListenerId}

@@ -3,12 +3,12 @@
 page_title: "greengrass_deployment_2 function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass deployment ARN
+  greengrass deployment ARN
 ---
 
 # function: greengrass_deployment_2
 
-Builds the ARN of an `greengrass` `deployment`:
+Builds the ARN for `greengrass` `deployment`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:deployments:${DeploymentId}

@@ -3,12 +3,12 @@
 page_title: "networkflowmonitor_scope function - arn"
 subcategory: ""
 description: |-
-  Builds an networkflowmonitor scope ARN
+  networkflowmonitor scope ARN
 ---
 
 # function: networkflowmonitor_scope
 
-Builds the ARN of an `networkflowmonitor` `scope`:
+Builds the ARN for `networkflowmonitor` `scope`:
 
 ```
 arn:${Partition}:networkflowmonitor:${Region}:${Account}:scope/${ScopeId}

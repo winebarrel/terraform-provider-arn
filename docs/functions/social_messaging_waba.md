@@ -3,12 +3,12 @@
 page_title: "social_messaging_waba function - arn"
 subcategory: ""
 description: |-
-  Builds an social-messaging waba ARN
+  social-messaging waba ARN
 ---
 
 # function: social_messaging_waba
 
-Builds the ARN of an `social-messaging` `waba`:
+Builds the ARN for `social-messaging` `waba`:
 
 ```
 arn:${Partition}:social-messaging:${Region}:${Account}:waba/${WabaId}

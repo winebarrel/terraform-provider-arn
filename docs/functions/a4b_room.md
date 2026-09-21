@@ -3,12 +3,12 @@
 page_title: "a4b_room function - arn"
 subcategory: ""
 description: |-
-  Builds an a4b room ARN
+  a4b room ARN
 ---
 
 # function: a4b_room
 
-Builds the ARN of an `a4b` `room`:
+Builds the ARN for `a4b` `room`:
 
 ```
 arn:${Partition}:a4b:${Region}:${Account}:room/${ResourceId}

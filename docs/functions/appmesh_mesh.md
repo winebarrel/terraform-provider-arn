@@ -3,12 +3,12 @@
 page_title: "appmesh_mesh function - arn"
 subcategory: ""
 description: |-
-  Builds an appmesh mesh ARN
+  appmesh mesh ARN
 ---
 
 # function: appmesh_mesh
 
-Builds the ARN of an `appmesh` `mesh`:
+Builds the ARN for `appmesh` `mesh`:
 
 ```
 arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}

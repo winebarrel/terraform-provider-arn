@@ -3,12 +3,12 @@
 page_title: "codepipeline_pipeline function - arn"
 subcategory: ""
 description: |-
-  Builds an codepipeline pipeline ARN
+  codepipeline pipeline ARN
 ---
 
 # function: codepipeline_pipeline
 
-Builds the ARN of an `codepipeline` `pipeline`:
+Builds the ARN for `codepipeline` `pipeline`:
 
 ```
 arn:${Partition}:codepipeline:${Region}:${Account}:${PipelineName}

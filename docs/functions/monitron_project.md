@@ -3,12 +3,12 @@
 page_title: "monitron_project function - arn"
 subcategory: ""
 description: |-
-  Builds an monitron project ARN
+  monitron project ARN
 ---
 
 # function: monitron_project
 
-Builds the ARN of an `monitron` `project`:
+Builds the ARN for `monitron` `project`:
 
 ```
 arn:${Partition}:monitron:${Region}:${Account}:project/${ResourceId}

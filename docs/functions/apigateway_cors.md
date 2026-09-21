@@ -3,12 +3,12 @@
 page_title: "apigateway_cors function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Cors ARN
+  apigateway Cors ARN
 ---
 
 # function: apigateway_cors
 
-Builds the ARN of an `apigateway` `Cors`:
+Builds the ARN for `apigateway` `Cors`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/cors

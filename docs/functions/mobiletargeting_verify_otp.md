@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_verify_otp function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting verify-otp ARN
+  mobiletargeting verify-otp ARN
 ---
 
 # function: mobiletargeting_verify_otp
 
-Builds the ARN of an `mobiletargeting` `verify-otp`:
+Builds the ARN for `mobiletargeting` `verify-otp`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/verify-otp

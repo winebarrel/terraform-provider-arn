@@ -3,12 +3,12 @@
 page_title: "connect_qualified_metric function - arn"
 subcategory: ""
 description: |-
-  Builds an connect qualified-metric ARN
+  connect qualified-metric ARN
 ---
 
 # function: connect_qualified_metric
 
-Builds the ARN of an `connect` `qualified-metric`:
+Builds the ARN for `connect` `qualified-metric`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/metric/${MetricId}:${MetricQualifier}

@@ -3,12 +3,12 @@
 page_title: "sqlworkbench_notebook function - arn"
 subcategory: ""
 description: |-
-  Builds an sqlworkbench notebook ARN
+  sqlworkbench notebook ARN
 ---
 
 # function: sqlworkbench_notebook
 
-Builds the ARN of an `sqlworkbench` `notebook`:
+Builds the ARN for `sqlworkbench` `notebook`:
 
 ```
 arn:${Partition}:sqlworkbench:${Region}:${Account}:notebook/${ResourceId}

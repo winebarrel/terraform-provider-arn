@@ -3,12 +3,12 @@
 page_title: "iotevents_input function - arn"
 subcategory: ""
 description: |-
-  Builds an iotevents input ARN
+  iotevents input ARN
 ---
 
 # function: iotevents_input
 
-Builds the ARN of an `iotevents` `input`:
+Builds the ARN for `iotevents` `input`:
 
 ```
 arn:${Partition}:iotevents:${Region}:${Account}:input/${InputName}

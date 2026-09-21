@@ -3,12 +3,12 @@
 page_title: "chime_voice_profile_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an chime voice-profile-domain ARN
+  chime voice-profile-domain ARN
 ---
 
 # function: chime_voice_profile_domain
 
-Builds the ARN of an `chime` `voice-profile-domain`:
+Builds the ARN for `chime` `voice-profile-domain`:
 
 ```
 arn:${Partition}:chime:${Region}:${AccountId}:voice-profile-domain/${VoiceProfileDomainId}

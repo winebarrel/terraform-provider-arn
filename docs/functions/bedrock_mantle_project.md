@@ -3,12 +3,12 @@
 page_title: "bedrock_mantle_project function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-mantle project ARN
+  bedrock-mantle project ARN
 ---
 
 # function: bedrock_mantle_project
 
-Builds the ARN of an `bedrock-mantle` `project`:
+Builds the ARN for `bedrock-mantle` `project`:
 
 ```
 arn:${Partition}:bedrock-mantle:${Region}:${Account}:project/${ResourceId}

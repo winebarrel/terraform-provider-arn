@@ -3,12 +3,12 @@
 page_title: "personalize_solution function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize solution ARN
+  personalize solution ARN
 ---
 
 # function: personalize_solution
 
-Builds the ARN of an `personalize` `solution`:
+Builds the ARN for `personalize` `solution`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:solution/${ResourceId}

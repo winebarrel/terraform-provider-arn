@@ -3,12 +3,12 @@
 page_title: "ses_addon_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an ses addon-instance ARN
+  ses addon-instance ARN
 ---
 
 # function: ses_addon_instance
 
-Builds the ARN of an `ses` `addon-instance`:
+Builds the ARN for `ses` `addon-instance`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:addon-instance/${AddonInstanceId}

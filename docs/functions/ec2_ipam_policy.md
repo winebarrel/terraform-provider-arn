@@ -3,12 +3,12 @@
 page_title: "ec2_ipam_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 ipam-policy ARN
+  ec2 ipam-policy ARN
 ---
 
 # function: ec2_ipam_policy
 
-Builds the ARN of an `ec2` `ipam-policy`:
+Builds the ARN for `ec2` `ipam-policy`:
 
 ```
 arn:${Partition}:ec2::${Account}:ipam-policy/${IpamPolicyId}

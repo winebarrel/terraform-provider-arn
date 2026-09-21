@@ -3,12 +3,12 @@
 page_title: "sso_account function - arn"
 subcategory: ""
 description: |-
-  Builds an sso Account ARN
+  sso Account ARN
 ---
 
 # function: sso_account
 
-Builds the ARN of an `sso` `Account`:
+Builds the ARN for `sso` `Account`:
 
 ```
 arn:${Partition}:sso:::account/${AccountId}

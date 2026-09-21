@@ -3,12 +3,12 @@
 page_title: "sagemaker_flow_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker flow-definition ARN
+  sagemaker flow-definition ARN
 ---
 
 # function: sagemaker_flow_definition
 
-Builds the ARN of an `sagemaker` `flow-definition`:
+Builds the ARN for `sagemaker` `flow-definition`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:flow-definition/${FlowDefinitionName}

@@ -3,12 +3,12 @@
 page_title: "iot_topic function - arn"
 subcategory: ""
 description: |-
-  Builds an iot topic ARN
+  iot topic ARN
 ---
 
 # function: iot_topic
 
-Builds the ARN of an `iot` `topic`:
+Builds the ARN for `iot` `topic`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:topic/${TopicName}

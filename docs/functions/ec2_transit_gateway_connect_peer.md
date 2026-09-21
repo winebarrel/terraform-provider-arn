@@ -3,12 +3,12 @@
 page_title: "ec2_transit_gateway_connect_peer function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 transit-gateway-connect-peer ARN
+  ec2 transit-gateway-connect-peer ARN
 ---
 
 # function: ec2_transit_gateway_connect_peer
 
-Builds the ARN of an `ec2` `transit-gateway-connect-peer`:
+Builds the ARN for `ec2` `transit-gateway-connect-peer`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:transit-gateway-connect-peer/${TransitGatewayConnectPeerId}

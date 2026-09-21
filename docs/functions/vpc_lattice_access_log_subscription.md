@@ -3,12 +3,12 @@
 page_title: "vpc_lattice_access_log_subscription function - arn"
 subcategory: ""
 description: |-
-  Builds an vpc-lattice AccessLogSubscription ARN
+  vpc-lattice AccessLogSubscription ARN
 ---
 
 # function: vpc_lattice_access_log_subscription
 
-Builds the ARN of an `vpc-lattice` `AccessLogSubscription`:
+Builds the ARN for `vpc-lattice` `AccessLogSubscription`:
 
 ```
 arn:${Partition}:vpc-lattice:${Region}:${Account}:accesslogsubscription/${AccessLogSubscriptionId}

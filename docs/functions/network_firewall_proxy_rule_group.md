@@ -3,12 +3,12 @@
 page_title: "network_firewall_proxy_rule_group function - arn"
 subcategory: ""
 description: |-
-  Builds an network-firewall ProxyRuleGroup ARN
+  network-firewall ProxyRuleGroup ARN
 ---
 
 # function: network_firewall_proxy_rule_group
 
-Builds the ARN of an `network-firewall` `ProxyRuleGroup`:
+Builds the ARN for `network-firewall` `ProxyRuleGroup`:
 
 ```
 arn:${Partition}:network-firewall:${Region}:${Account}:proxy-rule-group/${Name}

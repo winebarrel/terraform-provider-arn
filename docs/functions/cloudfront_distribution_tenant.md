@@ -3,12 +3,12 @@
 page_title: "cloudfront_distribution_tenant function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront distribution-tenant ARN
+  cloudfront distribution-tenant ARN
 ---
 
 # function: cloudfront_distribution_tenant
 
-Builds the ARN of an `cloudfront` `distribution-tenant`:
+Builds the ARN for `cloudfront` `distribution-tenant`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:distribution-tenant/${Id}

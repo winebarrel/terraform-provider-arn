@@ -3,12 +3,12 @@
 page_title: "rolesanywhere_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an rolesanywhere profile ARN
+  rolesanywhere profile ARN
 ---
 
 # function: rolesanywhere_profile
 
-Builds the ARN of an `rolesanywhere` `profile`:
+Builds the ARN for `rolesanywhere` `profile`:
 
 ```
 arn:${Partition}:rolesanywhere:${Region}:${Account}:profile/${ProfileId}

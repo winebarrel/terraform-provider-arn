@@ -3,12 +3,12 @@
 page_title: "chime_meeting function - arn"
 subcategory: ""
 description: |-
-  Builds an chime meeting ARN
+  chime meeting ARN
 ---
 
 # function: chime_meeting
 
-Builds the ARN of an `chime` `meeting`:
+Builds the ARN for `chime` `meeting`:
 
 ```
 arn:${Partition}:chime:${Region}:${AccountId}:meeting/${MeetingId}

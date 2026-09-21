@@ -3,12 +3,12 @@
 page_title: "signin_oauth2_public_client_registration function - arn"
 subcategory: ""
 description: |-
-  Builds an signin oauth2-public-client-registration ARN
+  signin oauth2-public-client-registration ARN
 ---
 
 # function: signin_oauth2_public_client_registration
 
-Builds the ARN of an `signin` `oauth2-public-client-registration`:
+Builds the ARN for `signin` `oauth2-public-client-registration`:
 
 ```
 arn:${Partition}:signin:${Region}::external-client/dcr/*

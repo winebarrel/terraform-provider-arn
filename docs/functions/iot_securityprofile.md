@@ -3,12 +3,12 @@
 page_title: "iot_securityprofile function - arn"
 subcategory: ""
 description: |-
-  Builds an iot securityprofile ARN
+  iot securityprofile ARN
 ---
 
 # function: iot_securityprofile
 
-Builds the ARN of an `iot` `securityprofile`:
+Builds the ARN for `iot` `securityprofile`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:securityprofile/${SecurityProfileName}

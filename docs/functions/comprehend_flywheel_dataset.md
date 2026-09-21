@@ -3,12 +3,12 @@
 page_title: "comprehend_flywheel_dataset function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend flywheel-dataset ARN
+  comprehend flywheel-dataset ARN
 ---
 
 # function: comprehend_flywheel_dataset
 
-Builds the ARN of an `comprehend` `flywheel-dataset`:
+Builds the ARN for `comprehend` `flywheel-dataset`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:flywheel/${FlywheelName}/dataset/${DatasetName}

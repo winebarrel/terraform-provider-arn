@@ -3,12 +3,12 @@
 page_title: "connect_use_case function - arn"
 subcategory: ""
 description: |-
-  Builds an connect use-case ARN
+  connect use-case ARN
 ---
 
 # function: connect_use_case
 
-Builds the ARN of an `connect` `use-case`:
+Builds the ARN for `connect` `use-case`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/use-case/${UseCaseId}

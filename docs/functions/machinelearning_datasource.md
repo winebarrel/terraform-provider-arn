@@ -3,12 +3,12 @@
 page_title: "machinelearning_datasource function - arn"
 subcategory: ""
 description: |-
-  Builds an machinelearning datasource ARN
+  machinelearning datasource ARN
 ---
 
 # function: machinelearning_datasource
 
-Builds the ARN of an `machinelearning` `datasource`:
+Builds the ARN for `machinelearning` `datasource`:
 
 ```
 arn:${Partition}:machinelearning:${Region}:${Account}:datasource/${DatasourceId}

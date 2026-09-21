@@ -3,12 +3,12 @@
 page_title: "appstream_application function - arn"
 subcategory: ""
 description: |-
-  Builds an appstream application ARN
+  appstream application ARN
 ---
 
 # function: appstream_application
 
-Builds the ARN of an `appstream` `application`:
+Builds the ARN for `appstream` `application`:
 
 ```
 arn:${Partition}:appstream:${Region}:${Account}:application/${ApplicationName}

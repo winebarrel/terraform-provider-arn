@@ -3,12 +3,12 @@
 page_title: "greengrass_core_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass coreDefinition ARN
+  greengrass coreDefinition ARN
 ---
 
 # function: greengrass_core_definition
 
-Builds the ARN of an `greengrass` `coreDefinition`:
+Builds the ARN for `greengrass` `coreDefinition`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/cores/${CoreDefinitionId}

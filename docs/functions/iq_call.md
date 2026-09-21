@@ -3,12 +3,12 @@
 page_title: "iq_call function - arn"
 subcategory: ""
 description: |-
-  Builds an iq call ARN
+  iq call ARN
 ---
 
 # function: iq_call
 
-Builds the ARN of an `iq` `call`:
+Builds the ARN for `iq` `call`:
 
 ```
 arn:${Partition}:iq:${Region}::call/${CallId}

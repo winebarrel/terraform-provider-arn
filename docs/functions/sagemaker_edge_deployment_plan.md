@@ -3,12 +3,12 @@
 page_title: "sagemaker_edge_deployment_plan function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker edge-deployment-plan ARN
+  sagemaker edge-deployment-plan ARN
 ---
 
 # function: sagemaker_edge_deployment_plan
 
-Builds the ARN of an `sagemaker` `edge-deployment-plan`:
+Builds the ARN for `sagemaker` `edge-deployment-plan`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:edge-deployment/${EdgeDeploymentPlanName}

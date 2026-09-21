@@ -3,12 +3,12 @@
 page_title: "iam_oidc_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an iam oidc-provider ARN
+  iam oidc-provider ARN
 ---
 
 # function: iam_oidc_provider
 
-Builds the ARN of an `iam` `oidc-provider`:
+Builds the ARN for `iam` `oidc-provider`:
 
 ```
 arn:${Partition}:iam::${Account}:oidc-provider/${OidcProviderName}

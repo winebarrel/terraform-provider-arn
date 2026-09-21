@@ -3,12 +3,12 @@
 page_title: "aps_rulegroupsnamespace function - arn"
 subcategory: ""
 description: |-
-  Builds an aps rulegroupsnamespace ARN
+  aps rulegroupsnamespace ARN
 ---
 
 # function: aps_rulegroupsnamespace
 
-Builds the ARN of an `aps` `rulegroupsnamespace`:
+Builds the ARN for `aps` `rulegroupsnamespace`:
 
 ```
 arn:${Partition}:aps:${Region}:${Account}:rulegroupsnamespace/${WorkspaceId}/${Namespace}

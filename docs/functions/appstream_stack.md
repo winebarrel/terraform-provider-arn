@@ -3,12 +3,12 @@
 page_title: "appstream_stack function - arn"
 subcategory: ""
 description: |-
-  Builds an appstream stack ARN
+  appstream stack ARN
 ---
 
 # function: appstream_stack
 
-Builds the ARN of an `appstream` `stack`:
+Builds the ARN for `appstream` `stack`:
 
 ```
 arn:${Partition}:appstream:${Region}:${Account}:stack/${StackName}

@@ -3,12 +3,12 @@
 page_title: "omics_read_set function - arn"
 subcategory: ""
 description: |-
-  Builds an omics readSet ARN
+  omics readSet ARN
 ---
 
 # function: omics_read_set
 
-Builds the ARN of an `omics` `readSet`:
+Builds the ARN for `omics` `readSet`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:sequenceStore/${SequenceStoreId}/readSet/${ReadSetId}

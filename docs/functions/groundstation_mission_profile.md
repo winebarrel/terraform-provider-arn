@@ -3,12 +3,12 @@
 page_title: "groundstation_mission_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an groundstation MissionProfile ARN
+  groundstation MissionProfile ARN
 ---
 
 # function: groundstation_mission_profile
 
-Builds the ARN of an `groundstation` `MissionProfile`:
+Builds the ARN for `groundstation` `MissionProfile`:
 
 ```
 arn:${Partition}:groundstation:${Region}:${Account}:mission-profile/${MissionProfileId}

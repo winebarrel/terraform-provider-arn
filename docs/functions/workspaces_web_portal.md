@@ -3,12 +3,12 @@
 page_title: "workspaces_web_portal function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces-web portal ARN
+  workspaces-web portal ARN
 ---
 
 # function: workspaces_web_portal
 
-Builds the ARN of an `workspaces-web` `portal`:
+Builds the ARN for `workspaces-web` `portal`:
 
 ```
 arn:${Partition}:workspaces-web:${Region}:${Account}:portal/${PortalId}

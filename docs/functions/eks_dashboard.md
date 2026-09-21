@@ -3,12 +3,12 @@
 page_title: "eks_dashboard function - arn"
 subcategory: ""
 description: |-
-  Builds an eks dashboard ARN
+  eks dashboard ARN
 ---
 
 # function: eks_dashboard
 
-Builds the ARN of an `eks` `dashboard`:
+Builds the ARN for `eks` `dashboard`:
 
 ```
 arn:${Partition}:eks:${Region}:${Account}:dashboard/${DashboardName}

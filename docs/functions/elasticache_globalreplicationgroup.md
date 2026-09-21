@@ -3,12 +3,12 @@
 page_title: "elasticache_globalreplicationgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticache globalreplicationgroup ARN
+  elasticache globalreplicationgroup ARN
 ---
 
 # function: elasticache_globalreplicationgroup
 
-Builds the ARN of an `elasticache` `globalreplicationgroup`:
+Builds the ARN for `elasticache` `globalreplicationgroup`:
 
 ```
 arn:${Partition}:elasticache::${Account}:globalreplicationgroup:${GlobalReplicationGroupId}

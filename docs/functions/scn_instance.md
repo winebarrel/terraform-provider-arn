@@ -3,12 +3,12 @@
 page_title: "scn_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an scn instance ARN
+  scn instance ARN
 ---
 
 # function: scn_instance
 
-Builds the ARN of an `scn` `instance`:
+Builds the ARN for `scn` `instance`:
 
 ```
 arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}

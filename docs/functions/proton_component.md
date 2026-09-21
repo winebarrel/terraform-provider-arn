@@ -3,12 +3,12 @@
 page_title: "proton_component function - arn"
 subcategory: ""
 description: |-
-  Builds an proton component ARN
+  proton component ARN
 ---
 
 # function: proton_component
 
-Builds the ARN of an `proton` `component`:
+Builds the ARN for `proton` `component`:
 
 ```
 arn:${Partition}:proton:${Region}:${Account}:component/${Id}

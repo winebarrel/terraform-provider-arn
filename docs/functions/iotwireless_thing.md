@@ -3,12 +3,12 @@
 page_title: "iotwireless_thing function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless thing ARN
+  iotwireless thing ARN
 ---
 
 # function: iotwireless_thing
 
-Builds the ARN of an `iotwireless` `thing`:
+Builds the ARN for `iotwireless` `thing`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:thing/${ThingName}

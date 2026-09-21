@@ -3,12 +3,12 @@
 page_title: "lookoutequipment_model_version function - arn"
 subcategory: ""
 description: |-
-  Builds an lookoutequipment model-version ARN
+  lookoutequipment model-version ARN
 ---
 
 # function: lookoutequipment_model_version
 
-Builds the ARN of an `lookoutequipment` `model-version`:
+Builds the ARN for `lookoutequipment` `model-version`:
 
 ```
 arn:${Partition}:lookoutequipment:${Region}:${Account}:model/${ModelName}/${ModelId}/model-version/${ModelVersionNumber}

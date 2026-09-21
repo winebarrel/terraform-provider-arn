@@ -3,12 +3,12 @@
 page_title: "mediapackage_vod_packaging_configurations function - arn"
 subcategory: ""
 description: |-
-  Builds an mediapackage-vod packaging-configurations ARN
+  mediapackage-vod packaging-configurations ARN
 ---
 
 # function: mediapackage_vod_packaging_configurations
 
-Builds the ARN of an `mediapackage-vod` `packaging-configurations`:
+Builds the ARN for `mediapackage-vod` `packaging-configurations`:
 
 ```
 arn:${Partition}:mediapackage-vod:${Region}:${Account}:packaging-configurations/${PackagingConfigurationIdentifier}

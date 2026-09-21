@@ -3,12 +3,12 @@
 page_title: "elasticbeanstalk_application function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticbeanstalk application ARN
+  elasticbeanstalk application ARN
 ---
 
 # function: elasticbeanstalk_application
 
-Builds the ARN of an `elasticbeanstalk` `application`:
+Builds the ARN for `elasticbeanstalk` `application`:
 
 ```
 arn:${Partition}:elasticbeanstalk:${Region}:${Account}:application/${ApplicationName}

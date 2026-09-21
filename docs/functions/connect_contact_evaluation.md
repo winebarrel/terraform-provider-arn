@@ -3,12 +3,12 @@
 page_title: "connect_contact_evaluation function - arn"
 subcategory: ""
 description: |-
-  Builds an connect contact-evaluation ARN
+  connect contact-evaluation ARN
 ---
 
 # function: connect_contact_evaluation
 
-Builds the ARN of an `connect` `contact-evaluation`:
+Builds the ARN for `connect` `contact-evaluation`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/contact-evaluation/${EvaluationId}

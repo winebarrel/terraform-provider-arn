@@ -3,12 +3,12 @@
 page_title: "ec2_certificate function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 certificate ARN
+  ec2 certificate ARN
 ---
 
 # function: ec2_certificate
 
-Builds the ARN of an `ec2` `certificate`:
+Builds the ARN for `ec2` `certificate`:
 
 ```
 arn:${Partition}:acm:${Region}:${Account}:certificate/${CertificateId}

@@ -3,12 +3,12 @@
 page_title: "invoicing_procurement_portal_preference function - arn"
 subcategory: ""
 description: |-
-  Builds an invoicing procurement-portal-preference ARN
+  invoicing procurement-portal-preference ARN
 ---
 
 # function: invoicing_procurement_portal_preference
 
-Builds the ARN of an `invoicing` `procurement-portal-preference`:
+Builds the ARN for `invoicing` `procurement-portal-preference`:
 
 ```
 arn:${Partition}:invoicing::${Account}:procurement-portal-preference/${Identifier}

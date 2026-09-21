@@ -3,12 +3,12 @@
 page_title: "redshift_securitygroup function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift securitygroup ARN
+  redshift securitygroup ARN
 ---
 
 # function: redshift_securitygroup
 
-Builds the ARN of an `redshift` `securitygroup`:
+Builds the ARN for `redshift` `securitygroup`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:securitygroup:${SecurityGroupName}/ec2securitygroup/${Owner}/${Ec2SecurityGroupId}

@@ -3,12 +3,12 @@
 page_title: "bcm_dashboards_dashboard function - arn"
 subcategory: ""
 description: |-
-  Builds an bcm-dashboards dashboard ARN
+  bcm-dashboards dashboard ARN
 ---
 
 # function: bcm_dashboards_dashboard
 
-Builds the ARN of an `bcm-dashboards` `dashboard`:
+Builds the ARN for `bcm-dashboards` `dashboard`:
 
 ```
 arn:${Partition}:bcm-dashboards::${Account}:dashboard/${DashboardName}

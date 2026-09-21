@@ -3,12 +3,12 @@
 page_title: "auditmanager_control function - arn"
 subcategory: ""
 description: |-
-  Builds an auditmanager control ARN
+  auditmanager control ARN
 ---
 
 # function: auditmanager_control
 
-Builds the ARN of an `auditmanager` `control`:
+Builds the ARN for `auditmanager` `control`:
 
 ```
 arn:${Partition}:auditmanager:${Region}:${Account}:control/${ControlId}

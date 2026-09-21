@@ -3,12 +3,12 @@
 page_title: "cloudfront_origin_access_identity function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront origin-access-identity ARN
+  cloudfront origin-access-identity ARN
 ---
 
 # function: cloudfront_origin_access_identity
 
-Builds the ARN of an `cloudfront` `origin-access-identity`:
+Builds the ARN for `cloudfront` `origin-access-identity`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:origin-access-identity/${Id}

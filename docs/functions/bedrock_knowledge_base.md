@@ -3,12 +3,12 @@
 page_title: "bedrock_knowledge_base function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock knowledge-base ARN
+  bedrock knowledge-base ARN
 ---
 
 # function: bedrock_knowledge_base
 
-Builds the ARN of an `bedrock` `knowledge-base`:
+Builds the ARN for `bedrock` `knowledge-base`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:knowledge-base/${KnowledgeBaseId}

@@ -3,12 +3,12 @@
 page_title: "mediatailor_channel function - arn"
 subcategory: ""
 description: |-
-  Builds an mediatailor channel ARN
+  mediatailor channel ARN
 ---
 
 # function: mediatailor_channel
 
-Builds the ARN of an `mediatailor` `channel`:
+Builds the ARN for `mediatailor` `channel`:
 
 ```
 arn:${Partition}:mediatailor:${Region}:${Account}:channel/${ChannelName}

@@ -3,12 +3,12 @@
 page_title: "sagemaker_inference_component function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker inference-component ARN
+  sagemaker inference-component ARN
 ---
 
 # function: sagemaker_inference_component
 
-Builds the ARN of an `sagemaker` `inference-component`:
+Builds the ARN for `sagemaker` `inference-component`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:inference-component/${InferenceComponentName}

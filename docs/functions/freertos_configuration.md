@@ -3,12 +3,12 @@
 page_title: "freertos_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an freertos configuration ARN
+  freertos configuration ARN
 ---
 
 # function: freertos_configuration
 
-Builds the ARN of an `freertos` `configuration`:
+Builds the ARN for `freertos` `configuration`:
 
 ```
 arn:${Partition}:freertos:${Region}:${Account}:configuration/${ConfigurationName}

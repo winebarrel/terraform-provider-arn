@@ -3,12 +3,12 @@
 page_title: "s3_object_lambda_objectlambdaaccesspoint function - arn"
 subcategory: ""
 description: |-
-  Builds an s3-object-lambda objectlambdaaccesspoint ARN
+  s3-object-lambda objectlambdaaccesspoint ARN
 ---
 
 # function: s3_object_lambda_objectlambdaaccesspoint
 
-Builds the ARN of an `s3-object-lambda` `objectlambdaaccesspoint`:
+Builds the ARN for `s3-object-lambda` `objectlambdaaccesspoint`:
 
 ```
 arn:${Partition}:s3-object-lambda:${Region}:${Account}:accesspoint/${AccessPointName}

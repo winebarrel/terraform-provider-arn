@@ -3,12 +3,12 @@
 page_title: "glue_userdefinedfunction function - arn"
 subcategory: ""
 description: |-
-  Builds an glue userdefinedfunction ARN
+  glue userdefinedfunction ARN
 ---
 
 # function: glue_userdefinedfunction
 
-Builds the ARN of an `glue` `userdefinedfunction`:
+Builds the ARN for `glue` `userdefinedfunction`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:userDefinedFunction/${DatabaseName}/${UserDefinedFunctionName}

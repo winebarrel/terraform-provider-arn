@@ -3,12 +3,12 @@
 page_title: "iq_request function - arn"
 subcategory: ""
 description: |-
-  Builds an iq request ARN
+  iq request ARN
 ---
 
 # function: iq_request
 
-Builds the ARN of an `iq` `request`:
+Builds the ARN for `iq` `request`:
 
 ```
 arn:${Partition}:iq:${Region}::request/${RequestId}

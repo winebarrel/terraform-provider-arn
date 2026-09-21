@@ -3,12 +3,12 @@
 page_title: "billingconductor_customlineitem function - arn"
 subcategory: ""
 description: |-
-  Builds an billingconductor customlineitem ARN
+  billingconductor customlineitem ARN
 ---
 
 # function: billingconductor_customlineitem
 
-Builds the ARN of an `billingconductor` `customlineitem`:
+Builds the ARN for `billingconductor` `customlineitem`:
 
 ```
 arn:${Partition}:billingconductor::${Account}:customlineitem/${CustomLineItemId}

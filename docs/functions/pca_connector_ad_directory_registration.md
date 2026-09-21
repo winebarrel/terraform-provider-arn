@@ -3,12 +3,12 @@
 page_title: "pca_connector_ad_directory_registration function - arn"
 subcategory: ""
 description: |-
-  Builds an pca-connector-ad DirectoryRegistration ARN
+  pca-connector-ad DirectoryRegistration ARN
 ---
 
 # function: pca_connector_ad_directory_registration
 
-Builds the ARN of an `pca-connector-ad` `DirectoryRegistration`:
+Builds the ARN for `pca-connector-ad` `DirectoryRegistration`:
 
 ```
 arn:${Partition}:pca-connector-ad:${Region}:${Account}:directory-registration/${DirectoryId}

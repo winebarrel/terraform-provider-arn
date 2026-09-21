@@ -3,12 +3,12 @@
 page_title: "connect_phone_number function - arn"
 subcategory: ""
 description: |-
-  Builds an connect phone-number ARN
+  connect phone-number ARN
 ---
 
 # function: connect_phone_number
 
-Builds the ARN of an `connect` `phone-number`:
+Builds the ARN for `connect` `phone-number`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:phone-number/${PhoneNumberId}

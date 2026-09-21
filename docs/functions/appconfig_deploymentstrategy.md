@@ -3,12 +3,12 @@
 page_title: "appconfig_deploymentstrategy function - arn"
 subcategory: ""
 description: |-
-  Builds an appconfig deploymentstrategy ARN
+  appconfig deploymentstrategy ARN
 ---
 
 # function: appconfig_deploymentstrategy
 
-Builds the ARN of an `appconfig` `deploymentstrategy`:
+Builds the ARN for `appconfig` `deploymentstrategy`:
 
 ```
 arn:${Partition}:appconfig:${Region}:${Account}:deploymentstrategy/${DeploymentStrategyId}

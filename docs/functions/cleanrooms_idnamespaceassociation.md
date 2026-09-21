@@ -3,12 +3,12 @@
 page_title: "cleanrooms_idnamespaceassociation function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms idnamespaceassociation ARN
+  cleanrooms idnamespaceassociation ARN
 ---
 
 # function: cleanrooms_idnamespaceassociation
 
-Builds the ARN of an `cleanrooms` `idnamespaceassociation`:
+Builds the ARN for `cleanrooms` `idnamespaceassociation`:
 
 ```
 arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/idnamespaceassociation/${IdNamespaceAssociationId}

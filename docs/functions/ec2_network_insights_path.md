@@ -3,12 +3,12 @@
 page_title: "ec2_network_insights_path function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 network-insights-path ARN
+  ec2 network-insights-path ARN
 ---
 
 # function: ec2_network_insights_path
 
-Builds the ARN of an `ec2` `network-insights-path`:
+Builds the ARN for `ec2` `network-insights-path`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:network-insights-path/${NetworkInsightsPathId}

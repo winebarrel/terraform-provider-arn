@@ -3,12 +3,12 @@
 page_title: "ses_multi_region_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an ses multi-region-endpoint ARN
+  ses multi-region-endpoint ARN
 ---
 
 # function: ses_multi_region_endpoint
 
-Builds the ARN of an `ses` `multi-region-endpoint`:
+Builds the ARN for `ses` `multi-region-endpoint`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:multi-region-endpoint/${EndpointName}

@@ -3,12 +3,12 @@
 page_title: "budgets_budget function - arn"
 subcategory: ""
 description: |-
-  Builds an budgets budget ARN
+  budgets budget ARN
 ---
 
 # function: budgets_budget
 
-Builds the ARN of an `budgets` `budget`:
+Builds the ARN for `budgets` `budget`:
 
 ```
 arn:${Partition}:budgets::${Account}:budget/${BudgetName}

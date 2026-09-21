@@ -3,12 +3,12 @@
 page_title: "states_activity function - arn"
 subcategory: ""
 description: |-
-  Builds an states activity ARN
+  states activity ARN
 ---
 
 # function: states_activity
 
-Builds the ARN of an `states` `activity`:
+Builds the ARN for `states` `activity`:
 
 ```
 arn:${Partition}:states:${Region}:${Account}:activity:${ActivityName}

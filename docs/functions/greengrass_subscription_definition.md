@@ -3,12 +3,12 @@
 page_title: "greengrass_subscription_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass subscriptionDefinition ARN
+  greengrass subscriptionDefinition ARN
 ---
 
 # function: greengrass_subscription_definition
 
-Builds the ARN of an `greengrass` `subscriptionDefinition`:
+Builds the ARN for `greengrass` `subscriptionDefinition`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/subscriptions/${SubscriptionDefinitionId}

@@ -3,12 +3,12 @@
 page_title: "groundstation_dataflow_endpoint_group function - arn"
 subcategory: ""
 description: |-
-  Builds an groundstation DataflowEndpointGroup ARN
+  groundstation DataflowEndpointGroup ARN
 ---
 
 # function: groundstation_dataflow_endpoint_group
 
-Builds the ARN of an `groundstation` `DataflowEndpointGroup`:
+Builds the ARN for `groundstation` `DataflowEndpointGroup`:
 
 ```
 arn:${Partition}:groundstation:${Region}:${Account}:dataflow-endpoint-group/${DataflowEndpointGroupId}

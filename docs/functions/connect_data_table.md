@@ -3,12 +3,12 @@
 page_title: "connect_data_table function - arn"
 subcategory: ""
 description: |-
-  Builds an connect data-table ARN
+  connect data-table ARN
 ---
 
 # function: connect_data_table
 
-Builds the ARN of an `connect` `data-table`:
+Builds the ARN for `connect` `data-table`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/data-table/${DataTableId}

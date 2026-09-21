@@ -3,12 +3,12 @@
 page_title: "connect_qualified_customer_managed_view function - arn"
 subcategory: ""
 description: |-
-  Builds an connect qualified-customer-managed-view ARN
+  connect qualified-customer-managed-view ARN
 ---
 
 # function: connect_qualified_customer_managed_view
 
-Builds the ARN of an `connect` `qualified-customer-managed-view`:
+Builds the ARN for `connect` `qualified-customer-managed-view`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/view/${ViewId}:${ViewQualifier}

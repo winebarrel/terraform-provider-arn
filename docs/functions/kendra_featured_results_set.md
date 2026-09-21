@@ -3,12 +3,12 @@
 page_title: "kendra_featured_results_set function - arn"
 subcategory: ""
 description: |-
-  Builds an kendra featured-results-set ARN
+  kendra featured-results-set ARN
 ---
 
 # function: kendra_featured_results_set
 
-Builds the ARN of an `kendra` `featured-results-set`:
+Builds the ARN for `kendra` `featured-results-set`:
 
 ```
 arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/featured-results-set/${FeaturedResultsSetId}

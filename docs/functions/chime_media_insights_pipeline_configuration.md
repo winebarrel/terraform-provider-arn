@@ -3,12 +3,12 @@
 page_title: "chime_media_insights_pipeline_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an chime media-insights-pipeline-configuration ARN
+  chime media-insights-pipeline-configuration ARN
 ---
 
 # function: chime_media_insights_pipeline_configuration
 
-Builds the ARN of an `chime` `media-insights-pipeline-configuration`:
+Builds the ARN for `chime` `media-insights-pipeline-configuration`:
 
 ```
 arn:${Partition}:chime:${Region}:${AccountId}:media-insights-pipeline-configuration/${ConfigurationName}

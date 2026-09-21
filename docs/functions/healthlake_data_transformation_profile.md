@@ -3,12 +3,12 @@
 page_title: "healthlake_data_transformation_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an healthlake dataTransformationProfile ARN
+  healthlake dataTransformationProfile ARN
 ---
 
 # function: healthlake_data_transformation_profile
 
-Builds the ARN of an `healthlake` `dataTransformationProfile`:
+Builds the ARN for `healthlake` `dataTransformationProfile`:
 
 ```
 arn:${Partition}:healthlake:${Region}:${Account}:dataTransformationProfile/${ProfileId}

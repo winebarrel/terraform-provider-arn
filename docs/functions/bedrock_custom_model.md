@@ -3,12 +3,12 @@
 page_title: "bedrock_custom_model function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock custom-model ARN
+  bedrock custom-model ARN
 ---
 
 # function: bedrock_custom_model
 
-Builds the ARN of an `bedrock` `custom-model`:
+Builds the ARN for `bedrock` `custom-model`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:custom-model/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "ec2_vpc_endpoint_service_permission function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 vpc-endpoint-service-permission ARN
+  ec2 vpc-endpoint-service-permission ARN
 ---
 
 # function: ec2_vpc_endpoint_service_permission
 
-Builds the ARN of an `ec2` `vpc-endpoint-service-permission`:
+Builds the ARN for `ec2` `vpc-endpoint-service-permission`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:vpc-endpoint-service-permission/${VpcEndpointServicePermissionId}

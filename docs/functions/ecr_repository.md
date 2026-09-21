@@ -3,12 +3,12 @@
 page_title: "ecr_repository function - arn"
 subcategory: ""
 description: |-
-  Builds an ecr repository ARN
+  ecr repository ARN
 ---
 
 # function: ecr_repository
 
-Builds the ARN of an `ecr` `repository`:
+Builds the ARN for `ecr` `repository`:
 
 ```
 arn:${Partition}:ecr:${Region}:${Account}:repository/${RepositoryName}

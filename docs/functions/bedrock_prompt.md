@@ -3,12 +3,12 @@
 page_title: "bedrock_prompt function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock prompt ARN
+  bedrock prompt ARN
 ---
 
 # function: bedrock_prompt
 
-Builds the ARN of an `bedrock` `prompt`:
+Builds the ARN for `bedrock` `prompt`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:prompt/${PromptId}

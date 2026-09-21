@@ -3,12 +3,12 @@
 page_title: "mediapackagev2_origin_endpoint_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an mediapackagev2 OriginEndpointPolicy ARN
+  mediapackagev2 OriginEndpointPolicy ARN
 ---
 
 # function: mediapackagev2_origin_endpoint_policy
 
-Builds the ARN of an `mediapackagev2` `OriginEndpointPolicy`:
+Builds the ARN for `mediapackagev2` `OriginEndpointPolicy`:
 
 ```
 arn:${Partition}:mediapackagev2:${Region}:${Account}:channelGroup/${ChannelGroupName}/channel/${ChannelName}/originEndpoint/${OriginEndpointName}

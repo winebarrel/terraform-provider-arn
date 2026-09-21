@@ -3,12 +3,12 @@
 page_title: "rds_integration function - arn"
 subcategory: ""
 description: |-
-  Builds an rds integration ARN
+  rds integration ARN
 ---
 
 # function: rds_integration
 
-Builds the ARN of an `rds` `integration`:
+Builds the ARN for `rds` `integration`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:integration:${IntegrationIdentifier}

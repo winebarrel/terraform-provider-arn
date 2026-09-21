@@ -3,12 +3,12 @@
 page_title: "quicksight_limits_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight limitsProfile ARN
+  quicksight limitsProfile ARN
 ---
 
 # function: quicksight_limits_profile
 
-Builds the ARN of an `quicksight` `limitsProfile`:
+Builds the ARN for `quicksight` `limitsProfile`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:limits-profile/${ResourceId}

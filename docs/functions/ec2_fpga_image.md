@@ -3,12 +3,12 @@
 page_title: "ec2_fpga_image function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 fpga-image ARN
+  ec2 fpga-image ARN
 ---
 
 # function: ec2_fpga_image
 
-Builds the ARN of an `ec2` `fpga-image`:
+Builds the ARN for `ec2` `fpga-image`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:fpga-image/${FpgaImageId}

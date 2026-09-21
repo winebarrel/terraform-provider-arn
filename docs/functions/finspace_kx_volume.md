@@ -3,12 +3,12 @@
 page_title: "finspace_kx_volume function - arn"
 subcategory: ""
 description: |-
-  Builds an finspace kxVolume ARN
+  finspace kxVolume ARN
 ---
 
 # function: finspace_kx_volume
 
-Builds the ARN of an `finspace` `kxVolume`:
+Builds the ARN for `finspace` `kxVolume`:
 
 ```
 arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxVolume/${KxVolume}

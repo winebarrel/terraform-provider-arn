@@ -3,12 +3,12 @@
 page_title: "apprunner_webacl function - arn"
 subcategory: ""
 description: |-
-  Builds an apprunner webacl ARN
+  apprunner webacl ARN
 ---
 
 # function: apprunner_webacl
 
-Builds the ARN of an `apprunner` `webacl`:
+Builds the ARN for `apprunner` `webacl`:
 
 ```
 arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/webacl/${Name}/${Id}

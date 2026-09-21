@@ -3,12 +3,12 @@
 page_title: "mediaconnect_output function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconnect Output ARN
+  mediaconnect Output ARN
 ---
 
 # function: mediaconnect_output
 
-Builds the ARN of an `mediaconnect` `Output`:
+Builds the ARN for `mediaconnect` `Output`:
 
 ```
 arn:${Partition}:mediaconnect:${Region}:${Account}:output:${OutputId}:${OutputName}

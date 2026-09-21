@@ -3,12 +3,12 @@
 page_title: "lambda_function function - arn"
 subcategory: ""
 description: |-
-  Builds an lambda function ARN
+  lambda function ARN
 ---
 
 # function: lambda_function
 
-Builds the ARN of an `lambda` `function`:
+Builds the ARN for `lambda` `function`:
 
 ```
 arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}

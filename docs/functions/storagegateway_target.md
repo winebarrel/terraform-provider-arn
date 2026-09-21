@@ -3,12 +3,12 @@
 page_title: "storagegateway_target function - arn"
 subcategory: ""
 description: |-
-  Builds an storagegateway target ARN
+  storagegateway target ARN
 ---
 
 # function: storagegateway_target
 
-Builds the ARN of an `storagegateway` `target`:
+Builds the ARN for `storagegateway` `target`:
 
 ```
 arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}/target/${IscsiTarget}

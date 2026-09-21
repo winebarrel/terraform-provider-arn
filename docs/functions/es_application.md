@@ -3,12 +3,12 @@
 page_title: "es_application function - arn"
 subcategory: ""
 description: |-
-  Builds an es application ARN
+  es application ARN
 ---
 
 # function: es_application
 
-Builds the ARN of an `es` `application`:
+Builds the ARN for `es` `application`:
 
 ```
 arn:${Partition}:opensearch:${Region}:${Account}:application/${AppId}

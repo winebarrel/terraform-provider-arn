@@ -3,12 +3,12 @@
 page_title: "cloudfront_continuous_deployment_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront continuous-deployment-policy ARN
+  cloudfront continuous-deployment-policy ARN
 ---
 
 # function: cloudfront_continuous_deployment_policy
 
-Builds the ARN of an `cloudfront` `continuous-deployment-policy`:
+Builds the ARN for `cloudfront` `continuous-deployment-policy`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:continuous-deployment-policy/${Id}

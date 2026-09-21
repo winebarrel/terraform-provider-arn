@@ -3,12 +3,12 @@
 page_title: "oam_link function - arn"
 subcategory: ""
 description: |-
-  Builds an oam Link ARN
+  oam Link ARN
 ---
 
 # function: oam_link
 
-Builds the ARN of an `oam` `Link`:
+Builds the ARN for `oam` `Link`:
 
 ```
 arn:${Partition}:oam:${Region}:${Account}:link/${ResourceId}

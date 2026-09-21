@@ -3,12 +3,12 @@
 page_title: "sms_voice_message function - arn"
 subcategory: ""
 description: |-
-  Builds an sms-voice Message ARN
+  sms-voice Message ARN
 ---
 
 # function: sms_voice_message
 
-Builds the ARN of an `sms-voice` `Message`:
+Builds the ARN for `sms-voice` `Message`:
 
 ```
 arn:${Partition}:sms-voice:${Region}:${Account}:message/${MessageId}

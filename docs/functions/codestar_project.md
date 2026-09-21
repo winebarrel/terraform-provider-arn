@@ -3,12 +3,12 @@
 page_title: "codestar_project function - arn"
 subcategory: ""
 description: |-
-  Builds an codestar project ARN
+  codestar project ARN
 ---
 
 # function: codestar_project
 
-Builds the ARN of an `codestar` `project`:
+Builds the ARN for `codestar` `project`:
 
 ```
 arn:${Partition}:codestar:${Region}:${Account}:project/${ProjectId}

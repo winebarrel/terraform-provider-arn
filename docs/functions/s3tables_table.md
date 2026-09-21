@@ -3,12 +3,12 @@
 page_title: "s3tables_table function - arn"
 subcategory: ""
 description: |-
-  Builds an s3tables Table ARN
+  s3tables Table ARN
 ---
 
 # function: s3tables_table
 
-Builds the ARN of an `s3tables` `Table`:
+Builds the ARN for `s3tables` `Table`:
 
 ```
 arn:${Partition}:s3tables:${Region}:${Account}:bucket/${TableBucketName}/table/${TableID}

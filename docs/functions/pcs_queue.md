@@ -3,12 +3,12 @@
 page_title: "pcs_queue function - arn"
 subcategory: ""
 description: |-
-  Builds an pcs queue ARN
+  pcs queue ARN
 ---
 
 # function: pcs_queue
 
-Builds the ARN of an `pcs` `queue`:
+Builds the ARN for `pcs` `queue`:
 
 ```
 arn:${Partition}:pcs:${Region}:${Account}:cluster/${ClusterIdentifier}/queue/${QueueIdentifier}

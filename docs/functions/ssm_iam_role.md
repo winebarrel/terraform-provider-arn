@@ -3,12 +3,12 @@
 page_title: "ssm_iam_role function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm iam-role ARN
+  ssm iam-role ARN
 ---
 
 # function: ssm_iam_role
 
-Builds the ARN of an `ssm` `iam-role`:
+Builds the ARN for `ssm` `iam-role`:
 
 ```
 arn:${Partition}:iam::${Account}:role/${RoleName}

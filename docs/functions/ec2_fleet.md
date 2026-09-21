@@ -3,12 +3,12 @@
 page_title: "ec2_fleet function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 fleet ARN
+  ec2 fleet ARN
 ---
 
 # function: ec2_fleet
 
-Builds the ARN of an `ec2` `fleet`:
+Builds the ARN for `ec2` `fleet`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:fleet/${FleetId}

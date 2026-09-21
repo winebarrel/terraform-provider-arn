@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_ab_test function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore ab-test ARN
+  bedrock-agentcore ab-test ARN
 ---
 
 # function: bedrock_agentcore_ab_test
 
-Builds the ARN of an `bedrock-agentcore` `ab-test`:
+Builds the ARN for `bedrock-agentcore` `ab-test`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:ab-test/${ABTestId}

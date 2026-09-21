@@ -3,12 +3,12 @@
 page_title: "appconfig_extensionassociation function - arn"
 subcategory: ""
 description: |-
-  Builds an appconfig extensionassociation ARN
+  appconfig extensionassociation ARN
 ---
 
 # function: appconfig_extensionassociation
 
-Builds the ARN of an `appconfig` `extensionassociation`:
+Builds the ARN for `appconfig` `extensionassociation`:
 
 ```
 arn:${Partition}:appconfig:${Region}:${Account}:extensionassociation/${ExtensionAssociationId}

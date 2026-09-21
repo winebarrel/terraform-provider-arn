@@ -3,12 +3,12 @@
 page_title: "forecast_forecast_export function - arn"
 subcategory: ""
 description: |-
-  Builds an forecast forecastExport ARN
+  forecast forecastExport ARN
 ---
 
 # function: forecast_forecast_export
 
-Builds the ARN of an `forecast` `forecastExport`:
+Builds the ARN for `forecast` `forecastExport`:
 
 ```
 arn:${Partition}:forecast:${Region}:${Account}:forecast-export-job/${ResourceId}

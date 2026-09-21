@@ -3,12 +3,12 @@
 page_title: "bedrock_flow_execution function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock flow-execution ARN
+  bedrock flow-execution ARN
 ---
 
 # function: bedrock_flow_execution
 
-Builds the ARN of an `bedrock` `flow-execution`:
+Builds the ARN for `bedrock` `flow-execution`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:flow/${FlowId}/alias/${FlowAliasId}/execution/${FlowExecutionId}

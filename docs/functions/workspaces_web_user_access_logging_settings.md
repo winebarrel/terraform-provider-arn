@@ -3,12 +3,12 @@
 page_title: "workspaces_web_user_access_logging_settings function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces-web userAccessLoggingSettings ARN
+  workspaces-web userAccessLoggingSettings ARN
 ---
 
 # function: workspaces_web_user_access_logging_settings
 
-Builds the ARN of an `workspaces-web` `userAccessLoggingSettings`:
+Builds the ARN for `workspaces-web` `userAccessLoggingSettings`:
 
 ```
 arn:${Partition}:workspaces-web:${Region}:${Account}:userAccessLoggingSettings/${UserAccessLoggingSettingsId}

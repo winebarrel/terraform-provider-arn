@@ -3,12 +3,12 @@
 page_title: "amplifybackend_auth function - arn"
 subcategory: ""
 description: |-
-  Builds an amplifybackend auth ARN
+  amplifybackend auth ARN
 ---
 
 # function: amplifybackend_auth
 
-Builds the ARN of an `amplifybackend` `auth`:
+Builds the ARN for `amplifybackend` `auth`:
 
 ```
 arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/auth/*

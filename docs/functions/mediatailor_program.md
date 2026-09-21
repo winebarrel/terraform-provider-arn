@@ -3,12 +3,12 @@
 page_title: "mediatailor_program function - arn"
 subcategory: ""
 description: |-
-  Builds an mediatailor program ARN
+  mediatailor program ARN
 ---
 
 # function: mediatailor_program
 
-Builds the ARN of an `mediatailor` `program`:
+Builds the ARN for `mediatailor` `program`:
 
 ```
 arn:${Partition}:mediatailor:${Region}:${Account}:program/${ChannelName}/${ProgramName}

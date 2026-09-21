@@ -3,12 +3,12 @@
 page_title: "ses_export_job function - arn"
 subcategory: ""
 description: |-
-  Builds an ses export-job ARN
+  ses export-job ARN
 ---
 
 # function: ses_export_job
 
-Builds the ARN of an `ses` `export-job`:
+Builds the ARN for `ses` `export-job`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:export-job/${ExportJobId}

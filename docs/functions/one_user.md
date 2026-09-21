@@ -3,12 +3,12 @@
 page_title: "one_user function - arn"
 subcategory: ""
 description: |-
-  Builds an one user ARN
+  one user ARN
 ---
 
 # function: one_user
 
-Builds the ARN of an `one` `user`:
+Builds the ARN for `one` `user`:
 
 ```
 arn:${Partition}:one:${Region}:${Account}:user/${UserId}

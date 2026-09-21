@@ -3,12 +3,12 @@
 page_title: "ecs_daemon_deployment function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs daemon-deployment ARN
+  ecs daemon-deployment ARN
 ---
 
 # function: ecs_daemon_deployment
 
-Builds the ARN of an `ecs` `daemon-deployment`:
+Builds the ARN for `ecs` `daemon-deployment`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:daemon-deployment/${ClusterName}/${DaemonName}/${DaemonDeploymentId}

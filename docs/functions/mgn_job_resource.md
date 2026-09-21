@@ -3,12 +3,12 @@
 page_title: "mgn_job_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgn JobResource ARN
+  mgn JobResource ARN
 ---
 
 # function: mgn_job_resource
 
-Builds the ARN of an `mgn` `JobResource`:
+Builds the ARN for `mgn` `JobResource`:
 
 ```
 arn:${Partition}:mgn:${Region}:${Account}:job/${JobID}

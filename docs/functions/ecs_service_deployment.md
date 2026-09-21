@@ -3,12 +3,12 @@
 page_title: "ecs_service_deployment function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs service-deployment ARN
+  ecs service-deployment ARN
 ---
 
 # function: ecs_service_deployment
 
-Builds the ARN of an `ecs` `service-deployment`:
+Builds the ARN for `ecs` `service-deployment`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:service-deployment/${ClusterName}/${ServiceName}/${ServiceDeploymentId}

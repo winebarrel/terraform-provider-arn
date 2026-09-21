@@ -3,12 +3,12 @@
 page_title: "iot_certificateprovider function - arn"
 subcategory: ""
 description: |-
-  Builds an iot certificateprovider ARN
+  iot certificateprovider ARN
 ---
 
 # function: iot_certificateprovider
 
-Builds the ARN of an `iot` `certificateprovider`:
+Builds the ARN for `iot` `certificateprovider`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:certificateprovider/${CertificateProviderName}

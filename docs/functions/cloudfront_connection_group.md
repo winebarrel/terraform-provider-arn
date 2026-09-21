@@ -3,12 +3,12 @@
 page_title: "cloudfront_connection_group function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront connection-group ARN
+  cloudfront connection-group ARN
 ---
 
 # function: cloudfront_connection_group
 
-Builds the ARN of an `cloudfront` `connection-group`:
+Builds the ARN for `cloudfront` `connection-group`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:connection-group/${Id}

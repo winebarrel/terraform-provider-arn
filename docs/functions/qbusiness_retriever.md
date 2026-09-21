@@ -3,12 +3,12 @@
 page_title: "qbusiness_retriever function - arn"
 subcategory: ""
 description: |-
-  Builds an qbusiness retriever ARN
+  qbusiness retriever ARN
 ---
 
 # function: qbusiness_retriever
 
-Builds the ARN of an `qbusiness` `retriever`:
+Builds the ARN for `qbusiness` `retriever`:
 
 ```
 arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/retriever/${RetrieverId}

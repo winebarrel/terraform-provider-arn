@@ -3,12 +3,12 @@
 page_title: "timestream_influxdb_db_parameter_group function - arn"
 subcategory: ""
 description: |-
-  Builds an timestream-influxdb db-parameter-group ARN
+  timestream-influxdb db-parameter-group ARN
 ---
 
 # function: timestream_influxdb_db_parameter_group
 
-Builds the ARN of an `timestream-influxdb` `db-parameter-group`:
+Builds the ARN for `timestream-influxdb` `db-parameter-group`:
 
 ```
 arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-parameter-group/${DbParameterGroupIdentifier}

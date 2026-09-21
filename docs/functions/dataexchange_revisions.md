@@ -3,12 +3,12 @@
 page_title: "dataexchange_revisions function - arn"
 subcategory: ""
 description: |-
-  Builds an dataexchange revisions ARN
+  dataexchange revisions ARN
 ---
 
 # function: dataexchange_revisions
 
-Builds the ARN of an `dataexchange` `revisions`:
+Builds the ARN for `dataexchange` `revisions`:
 
 ```
 arn:${Partition}:dataexchange:${Region}:${Account}:data-sets/${DataSetId}/revisions/${RevisionId}

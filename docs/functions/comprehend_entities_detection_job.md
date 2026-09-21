@@ -3,12 +3,12 @@
 page_title: "comprehend_entities_detection_job function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend entities-detection-job ARN
+  comprehend entities-detection-job ARN
 ---
 
 # function: comprehend_entities_detection_job
 
-Builds the ARN of an `comprehend` `entities-detection-job`:
+Builds the ARN for `comprehend` `entities-detection-job`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:entities-detection-job/${JobId}

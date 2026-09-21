@@ -3,12 +3,12 @@
 page_title: "ec2_vpc_encryption_control function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 vpc-encryption-control ARN
+  ec2 vpc-encryption-control ARN
 ---
 
 # function: ec2_vpc_encryption_control
 
-Builds the ARN of an `ec2` `vpc-encryption-control`:
+Builds the ARN for `ec2` `vpc-encryption-control`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:vpc-encryption-control/${VpcEncryptionControlId}

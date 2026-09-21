@@ -3,12 +3,12 @@
 page_title: "redshift_qev2idcapplication function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift qev2idcapplication ARN
+  redshift qev2idcapplication ARN
 ---
 
 # function: redshift_qev2idcapplication
 
-Builds the ARN of an `redshift` `qev2idcapplication`:
+Builds the ARN for `redshift` `qev2idcapplication`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:qev2idcapplication:${Qev2IdcApplicationId}

@@ -3,12 +3,12 @@
 page_title: "workspaces_workspacebundle function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces workspacebundle ARN
+  workspaces workspacebundle ARN
 ---
 
 # function: workspaces_workspacebundle
 
-Builds the ARN of an `workspaces` `workspacebundle`:
+Builds the ARN for `workspaces` `workspacebundle`:
 
 ```
 arn:${Partition}:workspaces:${Region}:${Account}:workspacebundle/${BundleId}

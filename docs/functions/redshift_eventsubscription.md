@@ -3,12 +3,12 @@
 page_title: "redshift_eventsubscription function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift eventsubscription ARN
+  redshift eventsubscription ARN
 ---
 
 # function: redshift_eventsubscription
 
-Builds the ARN of an `redshift` `eventsubscription`:
+Builds the ARN for `redshift` `eventsubscription`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:eventsubscription:${EventSubscriptionName}

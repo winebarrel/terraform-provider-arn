@@ -3,12 +3,12 @@
 page_title: "pi_perf_reports_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an pi perf-reports-resource ARN
+  pi perf-reports-resource ARN
 ---
 
 # function: pi_perf_reports_resource
 
-Builds the ARN of an `pi` `perf-reports-resource`:
+Builds the ARN for `pi` `perf-reports-resource`:
 
 ```
 arn:${Partition}:pi:${Region}:${Account}:perf-reports/${ServiceType}/${Identifier}/${ReportId}

@@ -3,12 +3,12 @@
 page_title: "a4b_device function - arn"
 subcategory: ""
 description: |-
-  Builds an a4b device ARN
+  a4b device ARN
 ---
 
 # function: a4b_device
 
-Builds the ARN of an `a4b` `device`:
+Builds the ARN for `a4b` `device`:
 
 ```
 arn:${Partition}:a4b:${Region}:${Account}:device/${ResourceId}

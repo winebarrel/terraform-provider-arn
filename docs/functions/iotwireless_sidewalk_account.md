@@ -3,12 +3,12 @@
 page_title: "iotwireless_sidewalk_account function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless SidewalkAccount ARN
+  iotwireless SidewalkAccount ARN
 ---
 
 # function: iotwireless_sidewalk_account
 
-Builds the ARN of an `iotwireless` `SidewalkAccount`:
+Builds the ARN for `iotwireless` `SidewalkAccount`:
 
 ```
 arn:${Partition}:iotwireless:${Region}:${Account}:SidewalkAccount/${SidewalkAccountId}

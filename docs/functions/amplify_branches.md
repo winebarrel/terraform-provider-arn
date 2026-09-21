@@ -3,12 +3,12 @@
 page_title: "amplify_branches function - arn"
 subcategory: ""
 description: |-
-  Builds an amplify branches ARN
+  amplify branches ARN
 ---
 
 # function: amplify_branches
 
-Builds the ARN of an `amplify` `branches`:
+Builds the ARN for `amplify` `branches`:
 
 ```
 arn:${Partition}:amplify:${Region}:${Account}:apps/${AppId}/branches/${BranchName}

@@ -3,12 +3,12 @@
 page_title: "access_analyzer_analyzer function - arn"
 subcategory: ""
 description: |-
-  Builds an access-analyzer Analyzer ARN
+  access-analyzer Analyzer ARN
 ---
 
 # function: access_analyzer_analyzer
 
-Builds the ARN of an `access-analyzer` `Analyzer`:
+Builds the ARN for `access-analyzer` `Analyzer`:
 
 ```
 arn:${Partition}:access-analyzer:${Region}:${Account}:analyzer/${AnalyzerName}

@@ -3,12 +3,12 @@
 page_title: "globalaccelerator_accelerator function - arn"
 subcategory: ""
 description: |-
-  Builds an globalaccelerator accelerator ARN
+  globalaccelerator accelerator ARN
 ---
 
 # function: globalaccelerator_accelerator
 
-Builds the ARN of an `globalaccelerator` `accelerator`:
+Builds the ARN for `globalaccelerator` `accelerator`:
 
 ```
 arn:${Partition}:globalaccelerator::${Account}:accelerator/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "ssm_automation_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm automation-definition ARN
+  ssm automation-definition ARN
 ---
 
 # function: ssm_automation_definition
 
-Builds the ARN of an `ssm` `automation-definition`:
+Builds the ARN for `ssm` `automation-definition`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:automation-definition/${AutomationDefinitionName}:${VersionId}

@@ -3,12 +3,12 @@
 page_title: "finspace_kx_dataview function - arn"
 subcategory: ""
 description: |-
-  Builds an finspace kxDataview ARN
+  finspace kxDataview ARN
 ---
 
 # function: finspace_kx_dataview
 
-Builds the ARN of an `finspace` `kxDataview`:
+Builds the ARN for `finspace` `kxDataview`:
 
 ```
 arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxDatabase/${KxDatabase}/kxDataview/${KxDataview}

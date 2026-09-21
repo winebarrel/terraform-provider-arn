@@ -3,12 +3,12 @@
 page_title: "transfer_server function - arn"
 subcategory: ""
 description: |-
-  Builds an transfer server ARN
+  transfer server ARN
 ---
 
 # function: transfer_server
 
-Builds the ARN of an `transfer` `server`:
+Builds the ARN for `transfer` `server`:
 
 ```
 arn:${Partition}:transfer:${Region}:${Account}:server/${ServerId}

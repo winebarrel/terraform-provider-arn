@@ -3,12 +3,12 @@
 page_title: "cloudfront_distribution function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront distribution ARN
+  cloudfront distribution ARN
 ---
 
 # function: cloudfront_distribution
 
-Builds the ARN of an `cloudfront` `distribution`:
+Builds the ARN for `cloudfront` `distribution`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:distribution/${DistributionId}

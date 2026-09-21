@@ -3,12 +3,12 @@
 page_title: "codestar_notifications_notificationrule function - arn"
 subcategory: ""
 description: |-
-  Builds an codestar-notifications notificationrule ARN
+  codestar-notifications notificationrule ARN
 ---
 
 # function: codestar_notifications_notificationrule
 
-Builds the ARN of an `codestar-notifications` `notificationrule`:
+Builds the ARN for `codestar-notifications` `notificationrule`:
 
 ```
 arn:${Partition}:codestar-notifications:${Region}:${Account}:notificationrule/${NotificationRuleId}

@@ -3,12 +3,12 @@
 page_title: "iot_thingtype function - arn"
 subcategory: ""
 description: |-
-  Builds an iot thingtype ARN
+  iot thingtype ARN
 ---
 
 # function: iot_thingtype
 
-Builds the ARN of an `iot` `thingtype`:
+Builds the ARN for `iot` `thingtype`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:thingtype/${ThingTypeName}

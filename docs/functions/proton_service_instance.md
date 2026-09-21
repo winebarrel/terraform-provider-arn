@@ -3,12 +3,12 @@
 page_title: "proton_service_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an proton service-instance ARN
+  proton service-instance ARN
 ---
 
 # function: proton_service_instance
 
-Builds the ARN of an `proton` `service-instance`:
+Builds the ARN for `proton` `service-instance`:
 
 ```
 arn:${Partition}:proton:${Region}:${Account}:service/${ServiceName}/service-instance/${Name}

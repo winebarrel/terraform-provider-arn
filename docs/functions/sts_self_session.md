@@ -3,12 +3,12 @@
 page_title: "sts_self_session function - arn"
 subcategory: ""
 description: |-
-  Builds an sts self-session ARN
+  sts self-session ARN
 ---
 
 # function: sts_self_session
 
-Builds the ARN of an `sts` `self-session`:
+Builds the ARN for `sts` `self-session`:
 
 ```
 arn:${Partition}:sts::${Account}:self

@@ -3,12 +3,12 @@
 page_title: "glue_usage_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an glue usageProfile ARN
+  glue usageProfile ARN
 ---
 
 # function: glue_usage_profile
 
-Builds the ARN of an `glue` `usageProfile`:
+Builds the ARN for `glue` `usageProfile`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:usageProfile/${UsageProfileId}

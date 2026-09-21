@@ -3,12 +3,12 @@
 page_title: "ivs_stream_key function - arn"
 subcategory: ""
 description: |-
-  Builds an ivs Stream-Key ARN
+  ivs Stream-Key ARN
 ---
 
 # function: ivs_stream_key
 
-Builds the ARN of an `ivs` `Stream-Key`:
+Builds the ARN for `ivs` `Stream-Key`:
 
 ```
 arn:${Partition}:ivs:${Region}:${Account}:stream-key/${ResourceId}

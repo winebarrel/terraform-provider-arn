@@ -3,12 +3,12 @@
 page_title: "config_stored_query function - arn"
 subcategory: ""
 description: |-
-  Builds an config StoredQuery ARN
+  config StoredQuery ARN
 ---
 
 # function: config_stored_query
 
-Builds the ARN of an `config` `StoredQuery`:
+Builds the ARN for `config` `StoredQuery`:
 
 ```
 arn:${Partition}:config:${Region}:${Account}:stored-query/${StoredQueryName}/${StoredQueryId}

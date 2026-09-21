@@ -3,12 +3,12 @@
 page_title: "apigateway_client_certificate function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway ClientCertificate ARN
+  apigateway ClientCertificate ARN
 ---
 
 # function: apigateway_client_certificate
 
-Builds the ARN of an `apigateway` `ClientCertificate`:
+Builds the ARN for `apigateway` `ClientCertificate`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/clientcertificates/${ClientCertificateId}

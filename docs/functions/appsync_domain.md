@@ -3,12 +3,12 @@
 page_title: "appsync_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an appsync domain ARN
+  appsync domain ARN
 ---
 
 # function: appsync_domain
 
-Builds the ARN of an `appsync` `domain`:
+Builds the ARN for `appsync` `domain`:
 
 ```
 arn:${Partition}:appsync:${Region}:${Account}:domainnames/${DomainName}

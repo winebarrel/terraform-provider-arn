@@ -3,12 +3,12 @@
 page_title: "codecatalyst_identity_center_applications function - arn"
 subcategory: ""
 description: |-
-  Builds an codecatalyst identity-center-applications ARN
+  codecatalyst identity-center-applications ARN
 ---
 
 # function: codecatalyst_identity_center_applications
 
-Builds the ARN of an `codecatalyst` `identity-center-applications`:
+Builds the ARN for `codecatalyst` `identity-center-applications`:
 
 ```
 arn:${Partition}:codecatalyst:${Region}:${Account}:/identity-center-applications/${IdentityCenterApplicationId}

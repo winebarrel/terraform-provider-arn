@@ -3,12 +3,12 @@
 page_title: "controlcatalog_objective function - arn"
 subcategory: ""
 description: |-
-  Builds an controlcatalog objective ARN
+  controlcatalog objective ARN
 ---
 
 # function: controlcatalog_objective
 
-Builds the ARN of an `controlcatalog` `objective`:
+Builds the ARN for `controlcatalog` `objective`:
 
 ```
 arn:${Partition}:controlcatalog:::objective/${ObjectiveId}

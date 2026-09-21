@@ -3,12 +3,12 @@
 page_title: "appflow_flow function - arn"
 subcategory: ""
 description: |-
-  Builds an appflow flow ARN
+  appflow flow ARN
 ---
 
 # function: appflow_flow
 
-Builds the ARN of an `appflow` `flow`:
+Builds the ARN for `appflow` `flow`:
 
 ```
 arn:${Partition}:appflow:${Region}:${Account}:flow/${FlowName}

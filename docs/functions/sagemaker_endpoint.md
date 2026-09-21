@@ -3,12 +3,12 @@
 page_title: "sagemaker_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker endpoint ARN
+  sagemaker endpoint ARN
 ---
 
 # function: sagemaker_endpoint
 
-Builds the ARN of an `sagemaker` `endpoint`:
+Builds the ARN for `sagemaker` `endpoint`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:endpoint/${EndpointName}

@@ -3,12 +3,12 @@
 page_title: "emr_containers_virtual_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an emr-containers virtualCluster ARN
+  emr-containers virtualCluster ARN
 ---
 
 # function: emr_containers_virtual_cluster
 
-Builds the ARN of an `emr-containers` `virtualCluster`:
+Builds the ARN for `emr-containers` `virtualCluster`:
 
 ```
 arn:${Partition}:emr-containers:${Region}:${Account}:/virtualclusters/${VirtualClusterId}

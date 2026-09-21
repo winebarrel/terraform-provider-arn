@@ -3,12 +3,12 @@
 page_title: "vendor_insights_data_source function - arn"
 subcategory: ""
 description: |-
-  Builds an vendor-insights DataSource ARN
+  vendor-insights DataSource ARN
 ---
 
 # function: vendor_insights_data_source
 
-Builds the ARN of an `vendor-insights` `DataSource`:
+Builds the ARN for `vendor-insights` `DataSource`:
 
 ```
 arn:${Partition}:vendor-insights:::data-source:${ResourceId}

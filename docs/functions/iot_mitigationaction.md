@@ -3,12 +3,12 @@
 page_title: "iot_mitigationaction function - arn"
 subcategory: ""
 description: |-
-  Builds an iot mitigationaction ARN
+  iot mitigationaction ARN
 ---
 
 # function: iot_mitigationaction
 
-Builds the ARN of an `iot` `mitigationaction`:
+Builds the ARN for `iot` `mitigationaction`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:mitigationaction/${MitigationActionName}

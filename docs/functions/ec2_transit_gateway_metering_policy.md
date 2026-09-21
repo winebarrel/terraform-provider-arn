@@ -3,12 +3,12 @@
 page_title: "ec2_transit_gateway_metering_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 transit-gateway-metering-policy ARN
+  ec2 transit-gateway-metering-policy ARN
 ---
 
 # function: ec2_transit_gateway_metering_policy
 
-Builds the ARN of an `ec2` `transit-gateway-metering-policy`:
+Builds the ARN for `ec2` `transit-gateway-metering-policy`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:transit-gateway-metering-policy/${TransitGatewayMeteringPolicyId}

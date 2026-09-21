@@ -3,12 +3,12 @@
 page_title: "medialive_channel function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive channel ARN
+  medialive channel ARN
 ---
 
 # function: medialive_channel
 
-Builds the ARN of an `medialive` `channel`:
+Builds the ARN for `medialive` `channel`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:channel:${ChannelId}

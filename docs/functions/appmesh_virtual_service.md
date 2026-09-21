@@ -3,12 +3,12 @@
 page_title: "appmesh_virtual_service function - arn"
 subcategory: ""
 description: |-
-  Builds an appmesh virtualService ARN
+  appmesh virtualService ARN
 ---
 
 # function: appmesh_virtual_service
 
-Builds the ARN of an `appmesh` `virtualService`:
+Builds the ARN for `appmesh` `virtualService`:
 
 ```
 arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualService/${VirtualServiceName}

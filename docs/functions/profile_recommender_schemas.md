@@ -3,12 +3,12 @@
 page_title: "profile_recommender_schemas function - arn"
 subcategory: ""
 description: |-
-  Builds an profile recommender-schemas ARN
+  profile recommender-schemas ARN
 ---
 
 # function: profile_recommender_schemas
 
-Builds the ARN of an `profile` `recommender-schemas`:
+Builds the ARN for `profile` `recommender-schemas`:
 
 ```
 arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/recommender-schemas/${RecommenderSchemaName}

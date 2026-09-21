@@ -3,12 +3,12 @@
 page_title: "medialive_sdi_source function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive sdi-source ARN
+  medialive sdi-source ARN
 ---
 
 # function: medialive_sdi_source
 
-Builds the ARN of an `medialive` `sdi-source`:
+Builds the ARN for `medialive` `sdi-source`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:sdiSource:${SdiSourceId}

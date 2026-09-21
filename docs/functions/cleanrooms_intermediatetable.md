@@ -3,12 +3,12 @@
 page_title: "cleanrooms_intermediatetable function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms intermediatetable ARN
+  cleanrooms intermediatetable ARN
 ---
 
 # function: cleanrooms_intermediatetable
 
-Builds the ARN of an `cleanrooms` `intermediatetable`:
+Builds the ARN for `cleanrooms` `intermediatetable`:
 
 ```
 arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/intermediatetable/${IntermediateTableId}

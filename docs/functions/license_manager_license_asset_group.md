@@ -3,12 +3,12 @@
 page_title: "license_manager_license_asset_group function - arn"
 subcategory: ""
 description: |-
-  Builds an license-manager license-asset-group ARN
+  license-manager license-asset-group ARN
 ---
 
 # function: license_manager_license_asset_group
 
-Builds the ARN of an `license-manager` `license-asset-group`:
+Builds the ARN for `license-manager` `license-asset-group`:
 
 ```
 arn:${Partition}:license-manager:${Region}:${Account}:license-asset-group:${LicenseAssetGroupId}

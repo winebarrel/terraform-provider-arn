@@ -3,12 +3,12 @@
 page_title: "thinclient_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an thinclient environment ARN
+  thinclient environment ARN
 ---
 
 # function: thinclient_environment
 
-Builds the ARN of an `thinclient` `environment`:
+Builds the ARN for `thinclient` `environment`:
 
 ```
 arn:${Partition}:thinclient:${Region}:${Account}:environment/${EnvironmentId}

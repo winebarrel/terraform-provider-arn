@@ -3,12 +3,12 @@
 page_title: "fis_experiment function - arn"
 subcategory: ""
 description: |-
-  Builds an fis experiment ARN
+  fis experiment ARN
 ---
 
 # function: fis_experiment
 
-Builds the ARN of an `fis` `experiment`:
+Builds the ARN for `fis` `experiment`:
 
 ```
 arn:${Partition}:fis:${Region}:${Account}:experiment/${Id}

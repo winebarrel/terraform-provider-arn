@@ -3,12 +3,12 @@
 page_title: "iot_dynamicthinggroup function - arn"
 subcategory: ""
 description: |-
-  Builds an iot dynamicthinggroup ARN
+  iot dynamicthinggroup ARN
 ---
 
 # function: iot_dynamicthinggroup
 
-Builds the ARN of an `iot` `dynamicthinggroup`:
+Builds the ARN for `iot` `dynamicthinggroup`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:thinggroup/${ThingGroupName}

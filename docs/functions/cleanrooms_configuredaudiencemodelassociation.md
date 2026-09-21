@@ -3,12 +3,12 @@
 page_title: "cleanrooms_configuredaudiencemodelassociation function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms configuredaudiencemodelassociation ARN
+  cleanrooms configuredaudiencemodelassociation ARN
 ---
 
 # function: cleanrooms_configuredaudiencemodelassociation
 
-Builds the ARN of an `cleanrooms` `configuredaudiencemodelassociation`:
+Builds the ARN for `cleanrooms` `configuredaudiencemodelassociation`:
 
 ```
 arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/configuredaudiencemodelassociation/${ConfiguredAudienceModelAssociationId}

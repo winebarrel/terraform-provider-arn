@@ -3,12 +3,12 @@
 page_title: "resiliencehub_system function - arn"
 subcategory: ""
 description: |-
-  Builds an resiliencehub system ARN
+  resiliencehub system ARN
 ---
 
 # function: resiliencehub_system
 
-Builds the ARN of an `resiliencehub` `system`:
+Builds the ARN for `resiliencehub` `system`:
 
 ```
 arn:${Partition}:resiliencehub:${Region}:${Account}:system/${SystemId}

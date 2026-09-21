@@ -3,12 +3,12 @@
 page_title: "sts_root_user function - arn"
 subcategory: ""
 description: |-
-  Builds an sts root-user ARN
+  sts root-user ARN
 ---
 
 # function: sts_root_user
 
-Builds the ARN of an `sts` `root-user`:
+Builds the ARN for `sts` `root-user`:
 
 ```
 arn:${Partition}:iam::${Account}:root

@@ -3,12 +3,12 @@
 page_title: "networkmonitor_probe function - arn"
 subcategory: ""
 description: |-
-  Builds an networkmonitor probe ARN
+  networkmonitor probe ARN
 ---
 
 # function: networkmonitor_probe
 
-Builds the ARN of an `networkmonitor` `probe`:
+Builds the ARN for `networkmonitor` `probe`:
 
 ```
 arn:${Partition}:networkmonitor:${Region}:${Account}:probe/${ProbeId}

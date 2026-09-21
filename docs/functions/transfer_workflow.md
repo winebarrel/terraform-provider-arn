@@ -3,12 +3,12 @@
 page_title: "transfer_workflow function - arn"
 subcategory: ""
 description: |-
-  Builds an transfer workflow ARN
+  transfer workflow ARN
 ---
 
 # function: transfer_workflow
 
-Builds the ARN of an `transfer` `workflow`:
+Builds the ARN for `transfer` `workflow`:
 
 ```
 arn:${Partition}:transfer:${Region}:${Account}:workflow/${WorkflowId}

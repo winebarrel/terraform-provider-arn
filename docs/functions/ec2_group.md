@@ -3,12 +3,12 @@
 page_title: "ec2_group function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 group ARN
+  ec2 group ARN
 ---
 
 # function: ec2_group
 
-Builds the ARN of an `ec2` `group`:
+Builds the ARN for `ec2` `group`:
 
 ```
 arn:${Partition}:resource-groups:${Region}:${Account}:group/${GroupName}

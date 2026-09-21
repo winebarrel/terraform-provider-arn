@@ -3,12 +3,12 @@
 page_title: "dynamodb_global_table function - arn"
 subcategory: ""
 description: |-
-  Builds an dynamodb global-table ARN
+  dynamodb global-table ARN
 ---
 
 # function: dynamodb_global_table
 
-Builds the ARN of an `dynamodb` `global-table`:
+Builds the ARN for `dynamodb` `global-table`:
 
 ```
 arn:${Partition}:dynamodb::${Account}:global-table/${GlobalTableName}

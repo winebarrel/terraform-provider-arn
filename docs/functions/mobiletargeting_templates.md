@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_templates function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting templates ARN
+  mobiletargeting templates ARN
 ---
 
 # function: mobiletargeting_templates
 
-Builds the ARN of an `mobiletargeting` `templates`:
+Builds the ARN for `mobiletargeting` `templates`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:templates

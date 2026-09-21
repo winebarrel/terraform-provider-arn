@@ -3,12 +3,12 @@
 page_title: "wafv2_apprunner function - arn"
 subcategory: ""
 description: |-
-  Builds an wafv2 apprunner ARN
+  wafv2 apprunner ARN
 ---
 
 # function: wafv2_apprunner
 
-Builds the ARN of an `wafv2` `apprunner`:
+Builds the ARN for `wafv2` `apprunner`:
 
 ```
 arn:${Partition}:apprunner:${Region}:${Account}:service/${ServiceName}/${ServiceId}

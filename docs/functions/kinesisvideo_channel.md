@@ -3,12 +3,12 @@
 page_title: "kinesisvideo_channel function - arn"
 subcategory: ""
 description: |-
-  Builds an kinesisvideo channel ARN
+  kinesisvideo channel ARN
 ---
 
 # function: kinesisvideo_channel
 
-Builds the ARN of an `kinesisvideo` `channel`:
+Builds the ARN for `kinesisvideo` `channel`:
 
 ```
 arn:${Partition}:kinesisvideo:${Region}:${Account}:channel/${ChannelName}/${CreationTime}

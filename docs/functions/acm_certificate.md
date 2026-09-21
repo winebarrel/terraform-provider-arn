@@ -3,12 +3,12 @@
 page_title: "acm_certificate function - arn"
 subcategory: ""
 description: |-
-  Builds an acm certificate ARN
+  acm certificate ARN
 ---
 
 # function: acm_certificate
 
-Builds the ARN of an `acm` `certificate`:
+Builds the ARN for `acm` `certificate`:
 
 ```
 arn:${Partition}:acm:${Region}:${Account}:certificate/${CertificateId}

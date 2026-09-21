@@ -3,12 +3,12 @@
 page_title: "appsync_source_api_association function - arn"
 subcategory: ""
 description: |-
-  Builds an appsync sourceApiAssociation ARN
+  appsync sourceApiAssociation ARN
 ---
 
 # function: appsync_source_api_association
 
-Builds the ARN of an `appsync` `sourceApiAssociation`:
+Builds the ARN for `appsync` `sourceApiAssociation`:
 
 ```
 arn:${Partition}:appsync:${Region}:${Account}:apis/${MergedGraphQLAPIId}/sourceApiAssociations/${Associationid}

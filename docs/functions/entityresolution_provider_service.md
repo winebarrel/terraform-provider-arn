@@ -3,12 +3,12 @@
 page_title: "entityresolution_provider_service function - arn"
 subcategory: ""
 description: |-
-  Builds an entityresolution ProviderService ARN
+  entityresolution ProviderService ARN
 ---
 
 # function: entityresolution_provider_service
 
-Builds the ARN of an `entityresolution` `ProviderService`:
+Builds the ARN for `entityresolution` `ProviderService`:
 
 ```
 arn:${Partition}:entityresolution:${Region}:${Account}:providerservice/${ProviderName}/${ProviderServiceName}

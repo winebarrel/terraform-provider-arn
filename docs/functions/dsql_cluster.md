@@ -3,12 +3,12 @@
 page_title: "dsql_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an dsql Cluster ARN
+  dsql Cluster ARN
 ---
 
 # function: dsql_cluster
 
-Builds the ARN of an `dsql` `Cluster`:
+Builds the ARN for `dsql` `Cluster`:
 
 ```
 arn:${Partition}:dsql:${Region}:${Account}:cluster/${Identifier}

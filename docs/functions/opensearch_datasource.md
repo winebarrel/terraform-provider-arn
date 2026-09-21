@@ -3,12 +3,12 @@
 page_title: "opensearch_datasource function - arn"
 subcategory: ""
 description: |-
-  Builds an opensearch datasource ARN
+  opensearch datasource ARN
 ---
 
 # function: opensearch_datasource
 
-Builds the ARN of an `opensearch` `datasource`:
+Builds the ARN for `opensearch` `datasource`:
 
 ```
 arn:${Partition}:opensearch:${Region}:${Account}:datasource/${DataSourceName}

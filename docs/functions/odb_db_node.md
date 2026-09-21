@@ -3,12 +3,12 @@
 page_title: "odb_db_node function - arn"
 subcategory: ""
 description: |-
-  Builds an odb db-node ARN
+  odb db-node ARN
 ---
 
 # function: odb_db_node
 
-Builds the ARN of an `odb` `db-node`:
+Builds the ARN for `odb` `db-node`:
 
 ```
 arn:${Partition}:odb:${Region}:${Account}:db-node/${DbNodeId}

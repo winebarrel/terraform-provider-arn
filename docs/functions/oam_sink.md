@@ -3,12 +3,12 @@
 page_title: "oam_sink function - arn"
 subcategory: ""
 description: |-
-  Builds an oam Sink ARN
+  oam Sink ARN
 ---
 
 # function: oam_sink
 
-Builds the ARN of an `oam` `Sink`:
+Builds the ARN for `oam` `Sink`:
 
 ```
 arn:${Partition}:oam:${Region}:${Account}:sink/${ResourceId}

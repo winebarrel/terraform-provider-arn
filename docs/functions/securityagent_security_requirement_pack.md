@@ -3,12 +3,12 @@
 page_title: "securityagent_security_requirement_pack function - arn"
 subcategory: ""
 description: |-
-  Builds an securityagent SecurityRequirementPack ARN
+  securityagent SecurityRequirementPack ARN
 ---
 
 # function: securityagent_security_requirement_pack
 
-Builds the ARN of an `securityagent` `SecurityRequirementPack`:
+Builds the ARN for `securityagent` `SecurityRequirementPack`:
 
 ```
 arn:${Partition}:securityagent:${Region}:${Account}:security-requirement-pack/${SecurityRequirementPackId}

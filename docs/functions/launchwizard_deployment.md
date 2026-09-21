@@ -3,12 +3,12 @@
 page_title: "launchwizard_deployment function - arn"
 subcategory: ""
 description: |-
-  Builds an launchwizard deployment ARN
+  launchwizard deployment ARN
 ---
 
 # function: launchwizard_deployment
 
-Builds the ARN of an `launchwizard` `deployment`:
+Builds the ARN for `launchwizard` `deployment`:
 
 ```
 arn:${Partition}:launchwizard:${Region}:${Account}:deployment/${DeploymentId}

@@ -3,12 +3,12 @@
 page_title: "iot_fleetmetric function - arn"
 subcategory: ""
 description: |-
-  Builds an iot fleetmetric ARN
+  iot fleetmetric ARN
 ---
 
 # function: iot_fleetmetric
 
-Builds the ARN of an `iot` `fleetmetric`:
+Builds the ARN for `iot` `fleetmetric`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:fleetmetric/${FleetMetricName}

@@ -3,12 +3,12 @@
 page_title: "entityresolution_id_namespace function - arn"
 subcategory: ""
 description: |-
-  Builds an entityresolution IdNamespace ARN
+  entityresolution IdNamespace ARN
 ---
 
 # function: entityresolution_id_namespace
 
-Builds the ARN of an `entityresolution` `IdNamespace`:
+Builds the ARN for `entityresolution` `IdNamespace`:
 
 ```
 arn:${Partition}:entityresolution:${Region}:${Account}:idnamespace/${IdNamespaceName}

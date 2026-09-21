@@ -3,12 +3,12 @@
 page_title: "elasticache_replicationgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticache replicationgroup ARN
+  elasticache replicationgroup ARN
 ---
 
 # function: elasticache_replicationgroup
 
-Builds the ARN of an `elasticache` `replicationgroup`:
+Builds the ARN for `elasticache` `replicationgroup`:
 
 ```
 arn:${Partition}:elasticache:${Region}:${Account}:replicationgroup:${ReplicationGroupId}

@@ -3,12 +3,12 @@
 page_title: "payment_cryptography_approval_team function - arn"
 subcategory: ""
 description: |-
-  Builds an payment-cryptography approval-team ARN
+  payment-cryptography approval-team ARN
 ---
 
 # function: payment_cryptography_approval_team
 
-Builds the ARN of an `payment-cryptography` `approval-team`:
+Builds the ARN for `payment-cryptography` `approval-team`:
 
 ```
 arn:${Partition}:mpa:${Region}:${Account}:approval-team/${ApprovalTeamId}

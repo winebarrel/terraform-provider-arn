@@ -3,12 +3,12 @@
 page_title: "apigateway_account function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Account ARN
+  apigateway Account ARN
 ---
 
 # function: apigateway_account
 
-Builds the ARN of an `apigateway` `Account`:
+Builds the ARN for `apigateway` `Account`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/account

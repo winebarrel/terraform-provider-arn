@@ -3,12 +3,12 @@
 page_title: "rds_proxy_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an rds proxy-endpoint ARN
+  rds proxy-endpoint ARN
 ---
 
 # function: rds_proxy_endpoint
 
-Builds the ARN of an `rds` `proxy-endpoint`:
+Builds the ARN for `rds` `proxy-endpoint`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:db-proxy-endpoint:${DbProxyEndpointId}

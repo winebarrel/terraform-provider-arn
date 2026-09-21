@@ -3,12 +3,12 @@
 page_title: "clouddirectory_published_schema function - arn"
 subcategory: ""
 description: |-
-  Builds an clouddirectory publishedSchema ARN
+  clouddirectory publishedSchema ARN
 ---
 
 # function: clouddirectory_published_schema
 
-Builds the ARN of an `clouddirectory` `publishedSchema`:
+Builds the ARN for `clouddirectory` `publishedSchema`:
 
 ```
 arn:${Partition}:clouddirectory:${Region}:${Account}:schema/published/${SchemaName}/${Version}

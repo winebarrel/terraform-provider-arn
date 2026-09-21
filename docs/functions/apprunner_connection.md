@@ -3,12 +3,12 @@
 page_title: "apprunner_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an apprunner connection ARN
+  apprunner connection ARN
 ---
 
 # function: apprunner_connection
 
-Builds the ARN of an `apprunner` `connection`:
+Builds the ARN for `apprunner` `connection`:
 
 ```
 arn:${Partition}:apprunner:${Region}:${Account}:connection/${ConnectionName}/${ConnectionId}

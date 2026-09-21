@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_recommender function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting recommender ARN
+  mobiletargeting recommender ARN
 ---
 
 # function: mobiletargeting_recommender
 
-Builds the ARN of an `mobiletargeting` `recommender`:
+Builds the ARN for `mobiletargeting` `recommender`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:recommenders/${RecommenderId}

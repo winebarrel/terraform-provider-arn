@@ -3,12 +3,12 @@
 page_title: "s3files_access_point function - arn"
 subcategory: ""
 description: |-
-  Builds an s3files access-point ARN
+  s3files access-point ARN
 ---
 
 # function: s3files_access_point
 
-Builds the ARN of an `s3files` `access-point`:
+Builds the ARN for `s3files` `access-point`:
 
 ```
 arn:${Partition}:s3files:${Region}:${Account}:file-system/${FileSystemId}/access-point/${AccessPointId}

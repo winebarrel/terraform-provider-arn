@@ -3,12 +3,12 @@
 page_title: "partnercentral_revenue_attribution function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral RevenueAttribution ARN
+  partnercentral RevenueAttribution ARN
 ---
 
 # function: partnercentral_revenue_attribution
 
-Builds the ARN of an `partnercentral` `RevenueAttribution`:
+Builds the ARN for `partnercentral` `RevenueAttribution`:
 
 ```
 arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/revenue-attribution/${RevenueAttributionId}

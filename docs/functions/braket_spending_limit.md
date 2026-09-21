@@ -3,12 +3,12 @@
 page_title: "braket_spending_limit function - arn"
 subcategory: ""
 description: |-
-  Builds an braket spending-limit ARN
+  braket spending-limit ARN
 ---
 
 # function: braket_spending_limit
 
-Builds the ARN of an `braket` `spending-limit`:
+Builds the ARN for `braket` `spending-limit`:
 
 ```
 arn:${Partition}:braket:${Region}:${Account}:spending-limit/${RandomId}

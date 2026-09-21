@@ -3,12 +3,12 @@
 page_title: "qbusiness_application function - arn"
 subcategory: ""
 description: |-
-  Builds an qbusiness application ARN
+  qbusiness application ARN
 ---
 
 # function: qbusiness_application
 
-Builds the ARN of an `qbusiness` `application`:
+Builds the ARN for `qbusiness` `application`:
 
 ```
 arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}

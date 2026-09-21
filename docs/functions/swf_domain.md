@@ -3,12 +3,12 @@
 page_title: "swf_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an swf domain ARN
+  swf domain ARN
 ---
 
 # function: swf_domain
 
-Builds the ARN of an `swf` `domain`:
+Builds the ARN for `swf` `domain`:
 
 ```
 arn:${Partition}:swf::${Account}:/domain/${DomainName}

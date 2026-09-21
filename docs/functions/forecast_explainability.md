@@ -3,12 +3,12 @@
 page_title: "forecast_explainability function - arn"
 subcategory: ""
 description: |-
-  Builds an forecast explainability ARN
+  forecast explainability ARN
 ---
 
 # function: forecast_explainability
 
-Builds the ARN of an `forecast` `explainability`:
+Builds the ARN for `forecast` `explainability`:
 
 ```
 arn:${Partition}:forecast:${Region}:${Account}:explainability/${ResourceId}

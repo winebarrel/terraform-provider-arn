@@ -3,12 +3,12 @@
 page_title: "dms_replication_task_assessment_run function - arn"
 subcategory: ""
 description: |-
-  Builds an dms ReplicationTaskAssessmentRun ARN
+  dms ReplicationTaskAssessmentRun ARN
 ---
 
 # function: dms_replication_task_assessment_run
 
-Builds the ARN of an `dms` `ReplicationTaskAssessmentRun`:
+Builds the ARN for `dms` `ReplicationTaskAssessmentRun`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:assessment-run:*

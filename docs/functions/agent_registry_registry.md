@@ -3,12 +3,12 @@
 page_title: "agent_registry_registry function - arn"
 subcategory: ""
 description: |-
-  Builds an agent-registry registry ARN
+  agent-registry registry ARN
 ---
 
 # function: agent_registry_registry
 
-Builds the ARN of an `agent-registry` `registry`:
+Builds the ARN for `agent-registry` `registry`:
 
 ```
 arn:${Partition}:agent-registry:${Region}:${Account}:registry/${RegistryId}

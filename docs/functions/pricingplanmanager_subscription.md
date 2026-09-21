@@ -3,12 +3,12 @@
 page_title: "pricingplanmanager_subscription function - arn"
 subcategory: ""
 description: |-
-  Builds an pricingplanmanager subscription ARN
+  pricingplanmanager subscription ARN
 ---
 
 # function: pricingplanmanager_subscription
 
-Builds the ARN of an `pricingplanmanager` `subscription`:
+Builds the ARN for `pricingplanmanager` `subscription`:
 
 ```
 arn:${Partition}:pricingplanmanager::${Account}:subscription/${SubscriptionId}

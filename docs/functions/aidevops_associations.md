@@ -3,12 +3,12 @@
 page_title: "aidevops_associations function - arn"
 subcategory: ""
 description: |-
-  Builds an aidevops associations ARN
+  aidevops associations ARN
 ---
 
 # function: aidevops_associations
 
-Builds the ARN of an `aidevops` `associations`:
+Builds the ARN for `aidevops` `associations`:
 
 ```
 arn:${Partition}:aidevops:${Region}:${Account}:agentspace/${AgentSpaceId}/association/${AssociationId}

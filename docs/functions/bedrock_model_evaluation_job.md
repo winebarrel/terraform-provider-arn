@@ -3,12 +3,12 @@
 page_title: "bedrock_model_evaluation_job function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock model-evaluation-job ARN
+  bedrock model-evaluation-job ARN
 ---
 
 # function: bedrock_model_evaluation_job
 
-Builds the ARN of an `bedrock` `model-evaluation-job`:
+Builds the ARN for `bedrock` `model-evaluation-job`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:model-evaluation-job/${ResourceId}

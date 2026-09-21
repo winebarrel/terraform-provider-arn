@@ -3,12 +3,12 @@
 page_title: "ec2_instance_connect_instance_connect_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2-instance-connect instance-connect-endpoint ARN
+  ec2-instance-connect instance-connect-endpoint ARN
 ---
 
 # function: ec2_instance_connect_instance_connect_endpoint
 
-Builds the ARN of an `ec2-instance-connect` `instance-connect-endpoint`:
+Builds the ARN for `ec2-instance-connect` `instance-connect-endpoint`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:instance-connect-endpoint/${InstanceConnectEndpointId}

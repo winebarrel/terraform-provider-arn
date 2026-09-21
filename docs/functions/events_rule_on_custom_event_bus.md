@@ -3,12 +3,12 @@
 page_title: "events_rule_on_custom_event_bus function - arn"
 subcategory: ""
 description: |-
-  Builds an events rule-on-custom-event-bus ARN
+  events rule-on-custom-event-bus ARN
 ---
 
 # function: events_rule_on_custom_event_bus
 
-Builds the ARN of an `events` `rule-on-custom-event-bus`:
+Builds the ARN for `events` `rule-on-custom-event-bus`:
 
 ```
 arn:${Partition}:events:${Region}:${Account}:rule/${EventBusName}/${RuleName}

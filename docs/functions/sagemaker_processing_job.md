@@ -3,12 +3,12 @@
 page_title: "sagemaker_processing_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker processing-job ARN
+  sagemaker processing-job ARN
 ---
 
 # function: sagemaker_processing_job
 
-Builds the ARN of an `sagemaker` `processing-job`:
+Builds the ARN for `sagemaker` `processing-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:processing-job/${ProcessingJobName}

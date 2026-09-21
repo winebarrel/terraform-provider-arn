@@ -3,12 +3,12 @@
 page_title: "managedblockchain_accessor function - arn"
 subcategory: ""
 description: |-
-  Builds an managedblockchain accessor ARN
+  managedblockchain accessor ARN
 ---
 
 # function: managedblockchain_accessor
 
-Builds the ARN of an `managedblockchain` `accessor`:
+Builds the ARN for `managedblockchain` `accessor`:
 
 ```
 arn:${Partition}:managedblockchain:${Region}:${Account}:accessors/${AccessorId}

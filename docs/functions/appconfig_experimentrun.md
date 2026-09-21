@@ -3,12 +3,12 @@
 page_title: "appconfig_experimentrun function - arn"
 subcategory: ""
 description: |-
-  Builds an appconfig experimentrun ARN
+  appconfig experimentrun ARN
 ---
 
 # function: appconfig_experimentrun
 
-Builds the ARN of an `appconfig` `experimentrun`:
+Builds the ARN for `appconfig` `experimentrun`:
 
 ```
 arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}/experimentdefinition/${ExperimentDefinitionId}/experimentrun/${ExperimentRunNumber}

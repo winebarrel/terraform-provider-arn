@@ -3,12 +3,12 @@
 page_title: "b2bi_transformer function - arn"
 subcategory: ""
 description: |-
-  Builds an b2bi transformer ARN
+  b2bi transformer ARN
 ---
 
 # function: b2bi_transformer
 
-Builds the ARN of an `b2bi` `transformer`:
+Builds the ARN for `b2bi` `transformer`:
 
 ```
 arn:${Partition}:b2bi:${Region}:${Account}:transformer/${ResourceId}

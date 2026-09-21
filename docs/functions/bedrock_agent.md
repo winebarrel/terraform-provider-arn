@@ -3,12 +3,12 @@
 page_title: "bedrock_agent function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock agent ARN
+  bedrock agent ARN
 ---
 
 # function: bedrock_agent
 
-Builds the ARN of an `bedrock` `agent`:
+Builds the ARN for `bedrock` `agent`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:agent/${AgentId}

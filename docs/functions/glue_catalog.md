@@ -3,12 +3,12 @@
 page_title: "glue_catalog function - arn"
 subcategory: ""
 description: |-
-  Builds an glue catalog ARN
+  glue catalog ARN
 ---
 
 # function: glue_catalog
 
-Builds the ARN of an `glue` `catalog`:
+Builds the ARN for `glue` `catalog`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:catalog/${CatalogName}

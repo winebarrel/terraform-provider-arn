@@ -3,12 +3,12 @@
 page_title: "iot_index function - arn"
 subcategory: ""
 description: |-
-  Builds an iot index ARN
+  iot index ARN
 ---
 
 # function: iot_index
 
-Builds the ARN of an `iot` `index`:
+Builds the ARN for `iot` `index`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:index/${IndexName}

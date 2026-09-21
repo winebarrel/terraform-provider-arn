@@ -3,12 +3,12 @@
 page_title: "ses_mailmanager_archive function - arn"
 subcategory: ""
 description: |-
-  Builds an ses mailmanager-archive ARN
+  ses mailmanager-archive ARN
 ---
 
 # function: ses_mailmanager_archive
 
-Builds the ARN of an `ses` `mailmanager-archive`:
+Builds the ARN for `ses` `mailmanager-archive`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:mailmanager-archive/${ArchiveId}

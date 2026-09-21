@@ -3,12 +3,12 @@
 page_title: "license_manager_linux_subscriptions_subscription_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an license-manager-linux-subscriptions subscription-provider ARN
+  license-manager-linux-subscriptions subscription-provider ARN
 ---
 
 # function: license_manager_linux_subscriptions_subscription_provider
 
-Builds the ARN of an `license-manager-linux-subscriptions` `subscription-provider`:
+Builds the ARN for `license-manager-linux-subscriptions` `subscription-provider`:
 
 ```
 arn:${Partition}:license-manager-linux-subscriptions:${Region}:${Account}:subscription-provider/${SubscriptionProviderId}

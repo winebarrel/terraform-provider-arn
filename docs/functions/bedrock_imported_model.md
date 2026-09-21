@@ -3,12 +3,12 @@
 page_title: "bedrock_imported_model function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock imported-model ARN
+  bedrock imported-model ARN
 ---
 
 # function: bedrock_imported_model
 
-Builds the ARN of an `bedrock` `imported-model`:
+Builds the ARN for `bedrock` `imported-model`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:imported-model/${ResourceId}

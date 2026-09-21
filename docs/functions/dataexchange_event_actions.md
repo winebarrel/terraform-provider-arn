@@ -3,12 +3,12 @@
 page_title: "dataexchange_event_actions function - arn"
 subcategory: ""
 description: |-
-  Builds an dataexchange event-actions ARN
+  dataexchange event-actions ARN
 ---
 
 # function: dataexchange_event_actions
 
-Builds the ARN of an `dataexchange` `event-actions`:
+Builds the ARN for `dataexchange` `event-actions`:
 
 ```
 arn:${Partition}:dataexchange:${Region}:${Account}:event-actions/${EventActionId}

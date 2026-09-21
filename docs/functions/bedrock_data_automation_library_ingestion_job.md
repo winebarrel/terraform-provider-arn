@@ -3,12 +3,12 @@
 page_title: "bedrock_data_automation_library_ingestion_job function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock data-automation-library-ingestion-job ARN
+  bedrock data-automation-library-ingestion-job ARN
 ---
 
 # function: bedrock_data_automation_library_ingestion_job
 
-Builds the ARN of an `bedrock` `data-automation-library-ingestion-job`:
+Builds the ARN for `bedrock` `data-automation-library-ingestion-job`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:data-automation-library-ingestion-job/${IngestionJobId}

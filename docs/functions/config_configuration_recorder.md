@@ -3,12 +3,12 @@
 page_title: "config_configuration_recorder function - arn"
 subcategory: ""
 description: |-
-  Builds an config ConfigurationRecorder ARN
+  config ConfigurationRecorder ARN
 ---
 
 # function: config_configuration_recorder
 
-Builds the ARN of an `config` `ConfigurationRecorder`:
+Builds the ARN for `config` `ConfigurationRecorder`:
 
 ```
 arn:${Partition}:config:${Region}:${Account}:configuration-recorder/${RecorderName}/${RecorderId}

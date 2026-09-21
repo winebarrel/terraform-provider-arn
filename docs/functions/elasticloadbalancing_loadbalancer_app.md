@@ -3,12 +3,12 @@
 page_title: "elasticloadbalancing_loadbalancer_app function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticloadbalancing loadbalancer/app/ ARN
+  elasticloadbalancing loadbalancer/app/ ARN
 ---
 
 # function: elasticloadbalancing_loadbalancer_app
 
-Builds the ARN of an `elasticloadbalancing` `loadbalancer/app/`:
+Builds the ARN for `elasticloadbalancing` `loadbalancer/app/`:
 
 ```
 arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/app/${LoadBalancerName}/${LoadBalancerId}

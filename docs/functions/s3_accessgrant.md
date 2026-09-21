@@ -3,12 +3,12 @@
 page_title: "s3_accessgrant function - arn"
 subcategory: ""
 description: |-
-  Builds an s3 accessgrant ARN
+  s3 accessgrant ARN
 ---
 
 # function: s3_accessgrant
 
-Builds the ARN of an `s3` `accessgrant`:
+Builds the ARN for `s3` `accessgrant`:
 
 ```
 arn:${Partition}:s3:${Region}:${Account}:access-grants/default/grant/${Token}

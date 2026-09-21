@@ -3,12 +3,12 @@
 page_title: "robomaker_world function - arn"
 subcategory: ""
 description: |-
-  Builds an robomaker world ARN
+  robomaker world ARN
 ---
 
 # function: robomaker_world
 
-Builds the ARN of an `robomaker` `world`:
+Builds the ARN for `robomaker` `world`:
 
 ```
 arn:${Partition}:robomaker:${Region}:${Account}:world/${WorldId}

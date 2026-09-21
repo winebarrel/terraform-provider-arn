@@ -3,12 +3,12 @@
 page_title: "sagemaker_mlflow_app function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker mlflow-app ARN
+  sagemaker mlflow-app ARN
 ---
 
 # function: sagemaker_mlflow_app
 
-Builds the ARN of an `sagemaker` `mlflow-app`:
+Builds the ARN for `sagemaker` `mlflow-app`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:mlflow-app/${MLflowAppId}

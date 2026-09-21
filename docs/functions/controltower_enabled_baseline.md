@@ -3,12 +3,12 @@
 page_title: "controltower_enabled_baseline function - arn"
 subcategory: ""
 description: |-
-  Builds an controltower EnabledBaseline ARN
+  controltower EnabledBaseline ARN
 ---
 
 # function: controltower_enabled_baseline
 
-Builds the ARN of an `controltower` `EnabledBaseline`:
+Builds the ARN for `controltower` `EnabledBaseline`:
 
 ```
 arn:${Partition}:controltower:${Region}:${Account}:enabledbaseline/${EnabledBaselineId}

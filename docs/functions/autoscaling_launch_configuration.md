@@ -3,12 +3,12 @@
 page_title: "autoscaling_launch_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an autoscaling launchConfiguration ARN
+  autoscaling launchConfiguration ARN
 ---
 
 # function: autoscaling_launch_configuration
 
-Builds the ARN of an `autoscaling` `launchConfiguration`:
+Builds the ARN for `autoscaling` `launchConfiguration`:
 
 ```
 arn:${Partition}:autoscaling:${Region}:${Account}:launchConfiguration:${Id}:launchConfigurationName/${LaunchConfigurationName}

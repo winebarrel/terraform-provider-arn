@@ -3,12 +3,12 @@
 page_title: "mgn_vcenter_client_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgn VcenterClientResource ARN
+  mgn VcenterClientResource ARN
 ---
 
 # function: mgn_vcenter_client_resource
 
-Builds the ARN of an `mgn` `VcenterClientResource`:
+Builds the ARN for `mgn` `VcenterClientResource`:
 
 ```
 arn:${Partition}:mgn:${Region}:${Account}:vcenter-client/${VcenterClientID}

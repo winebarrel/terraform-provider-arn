@@ -3,12 +3,12 @@
 page_title: "bcm_pricing_calculator_bill_scenario function - arn"
 subcategory: ""
 description: |-
-  Builds an bcm-pricing-calculator bill-scenario ARN
+  bcm-pricing-calculator bill-scenario ARN
 ---
 
 # function: bcm_pricing_calculator_bill_scenario
 
-Builds the ARN of an `bcm-pricing-calculator` `bill-scenario`:
+Builds the ARN for `bcm-pricing-calculator` `bill-scenario`:
 
 ```
 arn:${Partition}:bcm-pricing-calculator::${Account}:bill-scenario/${BillScenarioId}

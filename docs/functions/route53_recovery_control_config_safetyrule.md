@@ -3,12 +3,12 @@
 page_title: "route53_recovery_control_config_safetyrule function - arn"
 subcategory: ""
 description: |-
-  Builds an route53-recovery-control-config safetyrule ARN
+  route53-recovery-control-config safetyrule ARN
 ---
 
 # function: route53_recovery_control_config_safetyrule
 
-Builds the ARN of an `route53-recovery-control-config` `safetyrule`:
+Builds the ARN for `route53-recovery-control-config` `safetyrule`:
 
 ```
 arn:${Partition}:route53-recovery-control::${Account}:controlpanel/${ControlPanelId}/safetyrule/${SafetyRuleId}

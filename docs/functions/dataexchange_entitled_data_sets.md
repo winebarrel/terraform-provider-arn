@@ -3,12 +3,12 @@
 page_title: "dataexchange_entitled_data_sets function - arn"
 subcategory: ""
 description: |-
-  Builds an dataexchange entitled-data-sets ARN
+  dataexchange entitled-data-sets ARN
 ---
 
 # function: dataexchange_entitled_data_sets
 
-Builds the ARN of an `dataexchange` `entitled-data-sets`:
+Builds the ARN for `dataexchange` `entitled-data-sets`:
 
 ```
 arn:${Partition}:dataexchange:${Region}::data-sets/${DataSetId}

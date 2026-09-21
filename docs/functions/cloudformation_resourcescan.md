@@ -3,12 +3,12 @@
 page_title: "cloudformation_resourcescan function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudformation resourcescan ARN
+  cloudformation resourcescan ARN
 ---
 
 # function: cloudformation_resourcescan
 
-Builds the ARN of an `cloudformation` `resourcescan`:
+Builds the ARN for `cloudformation` `resourcescan`:
 
 ```
 arn:${Partition}:cloudformation:${Region}:${Account}:resourceScan/${Id}

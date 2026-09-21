@@ -3,12 +3,12 @@
 page_title: "xray_group function - arn"
 subcategory: ""
 description: |-
-  Builds an xray group ARN
+  xray group ARN
 ---
 
 # function: xray_group
 
-Builds the ARN of an `xray` `group`:
+Builds the ARN for `xray` `group`:
 
 ```
 arn:${Partition}:xray:${Region}:${Account}:group/${GroupName}/${Id}

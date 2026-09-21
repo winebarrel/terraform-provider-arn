@@ -3,12 +3,12 @@
 page_title: "cassandra_stream function - arn"
 subcategory: ""
 description: |-
-  Builds an cassandra stream ARN
+  cassandra stream ARN
 ---
 
 # function: cassandra_stream
 
-Builds the ARN of an `cassandra` `stream`:
+Builds the ARN for `cassandra` `stream`:
 
 ```
 arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/table/${TableName}/stream/${StreamLabel}

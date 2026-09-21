@@ -3,12 +3,12 @@
 page_title: "finspace_api_credential function - arn"
 subcategory: ""
 description: |-
-  Builds an finspace-api credential ARN
+  finspace-api credential ARN
 ---
 
 # function: finspace_api_credential
 
-Builds the ARN of an `finspace-api` `credential`:
+Builds the ARN for `finspace-api` `credential`:
 
 ```
 arn:${Partition}:finspace-api:${Region}:${Account}:/credentials/programmatic

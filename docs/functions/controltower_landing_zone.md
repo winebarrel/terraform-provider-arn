@@ -3,12 +3,12 @@
 page_title: "controltower_landing_zone function - arn"
 subcategory: ""
 description: |-
-  Builds an controltower LandingZone ARN
+  controltower LandingZone ARN
 ---
 
 # function: controltower_landing_zone
 
-Builds the ARN of an `controltower` `LandingZone`:
+Builds the ARN for `controltower` `LandingZone`:
 
 ```
 arn:${Partition}:controltower:${Region}:${Account}:landingzone/${LandingZoneId}

@@ -3,12 +3,12 @@
 page_title: "greengrass_connector_definition_version function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass connectorDefinitionVersion ARN
+  greengrass connectorDefinitionVersion ARN
 ---
 
 # function: greengrass_connector_definition_version
 
-Builds the ARN of an `greengrass` `connectorDefinitionVersion`:
+Builds the ARN for `greengrass` `connectorDefinitionVersion`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/connectors/${ConnectorDefinitionId}/versions/${VersionId}

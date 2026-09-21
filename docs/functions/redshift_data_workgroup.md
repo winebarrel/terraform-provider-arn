@@ -3,12 +3,12 @@
 page_title: "redshift_data_workgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift-data workgroup ARN
+  redshift-data workgroup ARN
 ---
 
 # function: redshift_data_workgroup
 
-Builds the ARN of an `redshift-data` `workgroup`:
+Builds the ARN for `redshift-data` `workgroup`:
 
 ```
 arn:${Partition}:redshift-serverless:${Region}:${Account}:workgroup/${WorkgroupId}

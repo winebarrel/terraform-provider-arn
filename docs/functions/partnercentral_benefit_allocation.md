@@ -3,12 +3,12 @@
 page_title: "partnercentral_benefit_allocation function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral BenefitAllocation ARN
+  partnercentral BenefitAllocation ARN
 ---
 
 # function: partnercentral_benefit_allocation
 
-Builds the ARN of an `partnercentral` `BenefitAllocation`:
+Builds the ARN for `partnercentral` `BenefitAllocation`:
 
 ```
 arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/benefit-allocation/${Identifier}

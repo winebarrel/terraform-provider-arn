@@ -3,12 +3,12 @@
 page_title: "iotsitewise_asset_model function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise asset-model ARN
+  iotsitewise asset-model ARN
 ---
 
 # function: iotsitewise_asset_model
 
-Builds the ARN of an `iotsitewise` `asset-model`:
+Builds the ARN for `iotsitewise` `asset-model`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:asset-model/${AssetModelId}

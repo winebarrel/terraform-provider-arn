@@ -3,12 +3,12 @@
 page_title: "sms_voice_opt_out_list function - arn"
 subcategory: ""
 description: |-
-  Builds an sms-voice OptOutList ARN
+  sms-voice OptOutList ARN
 ---
 
 # function: sms_voice_opt_out_list
 
-Builds the ARN of an `sms-voice` `OptOutList`:
+Builds the ARN for `sms-voice` `OptOutList`:
 
 ```
 arn:${Partition}:sms-voice:${Region}:${Account}:opt-out-list/${OptOutListName}

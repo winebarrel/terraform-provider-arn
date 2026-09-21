@@ -3,12 +3,12 @@
 page_title: "lambda_layer function - arn"
 subcategory: ""
 description: |-
-  Builds an lambda layer ARN
+  lambda layer ARN
 ---
 
 # function: lambda_layer
 
-Builds the ARN of an `lambda` `layer`:
+Builds the ARN for `lambda` `layer`:
 
 ```
 arn:${Partition}:lambda:${Region}:${Account}:layer:${LayerName}

@@ -3,12 +3,12 @@
 page_title: "braket_quantum_task function - arn"
 subcategory: ""
 description: |-
-  Builds an braket quantum-task ARN
+  braket quantum-task ARN
 ---
 
 # function: braket_quantum_task
 
-Builds the ARN of an `braket` `quantum-task`:
+Builds the ARN for `braket` `quantum-task`:
 
 ```
 arn:${Partition}:braket:${Region}:${Account}:quantum-task/${RandomId}

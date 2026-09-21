@@ -3,12 +3,12 @@
 page_title: "emr_containers_job_run function - arn"
 subcategory: ""
 description: |-
-  Builds an emr-containers jobRun ARN
+  emr-containers jobRun ARN
 ---
 
 # function: emr_containers_job_run
 
-Builds the ARN of an `emr-containers` `jobRun`:
+Builds the ARN for `emr-containers` `jobRun`:
 
 ```
 arn:${Partition}:emr-containers:${Region}:${Account}:/virtualclusters/${VirtualClusterId}/jobruns/${JobRunId}

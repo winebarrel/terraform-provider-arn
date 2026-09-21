@@ -3,12 +3,12 @@
 page_title: "apigateway_domain_names function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway DomainNames ARN
+  apigateway DomainNames ARN
 ---
 
 # function: apigateway_domain_names
 
-Builds the ARN of an `apigateway` `DomainNames`:
+Builds the ARN for `apigateway` `DomainNames`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/domainnames

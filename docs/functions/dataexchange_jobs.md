@@ -3,12 +3,12 @@
 page_title: "dataexchange_jobs function - arn"
 subcategory: ""
 description: |-
-  Builds an dataexchange jobs ARN
+  dataexchange jobs ARN
 ---
 
 # function: dataexchange_jobs
 
-Builds the ARN of an `dataexchange` `jobs`:
+Builds the ARN for `dataexchange` `jobs`:
 
 ```
 arn:${Partition}:dataexchange:${Region}:${Account}:jobs/${JobId}

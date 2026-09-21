@@ -3,12 +3,12 @@
 page_title: "omics_reference_store function - arn"
 subcategory: ""
 description: |-
-  Builds an omics referenceStore ARN
+  omics referenceStore ARN
 ---
 
 # function: omics_reference_store
 
-Builds the ARN of an `omics` `referenceStore`:
+Builds the ARN for `omics` `referenceStore`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:referenceStore/${ReferenceStoreId}

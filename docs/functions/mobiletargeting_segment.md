@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_segment function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting segment ARN
+  mobiletargeting segment ARN
 ---
 
 # function: mobiletargeting_segment
 
-Builds the ARN of an `mobiletargeting` `segment`:
+Builds the ARN for `mobiletargeting` `segment`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/segments/${SegmentId}

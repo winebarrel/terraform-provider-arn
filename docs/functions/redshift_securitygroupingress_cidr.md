@@ -3,12 +3,12 @@
 page_title: "redshift_securitygroupingress_cidr function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift securitygroupingress-cidr ARN
+  redshift securitygroupingress-cidr ARN
 ---
 
 # function: redshift_securitygroupingress_cidr
 
-Builds the ARN of an `redshift` `securitygroupingress-cidr`:
+Builds the ARN for `redshift` `securitygroupingress-cidr`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:securitygroupingress:${SecurityGroupName}/cidrip/${IpRange}

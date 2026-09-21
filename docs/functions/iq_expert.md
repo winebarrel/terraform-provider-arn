@@ -3,12 +3,12 @@
 page_title: "iq_expert function - arn"
 subcategory: ""
 description: |-
-  Builds an iq expert ARN
+  iq expert ARN
 ---
 
 # function: iq_expert
 
-Builds the ARN of an `iq` `expert`:
+Builds the ARN for `iq` `expert`:
 
 ```
 arn:${Partition}:iq:${Region}::expert/${ExpertId}

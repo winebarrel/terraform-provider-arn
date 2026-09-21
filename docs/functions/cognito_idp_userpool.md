@@ -3,12 +3,12 @@
 page_title: "cognito_idp_userpool function - arn"
 subcategory: ""
 description: |-
-  Builds an cognito-idp userpool ARN
+  cognito-idp userpool ARN
 ---
 
 # function: cognito_idp_userpool
 
-Builds the ARN of an `cognito-idp` `userpool`:
+Builds the ARN for `cognito-idp` `userpool`:
 
 ```
 arn:${Partition}:cognito-idp:${Region}:${Account}:userpool/${UserPoolId}

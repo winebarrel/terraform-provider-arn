@@ -3,12 +3,12 @@
 page_title: "kinesisanalytics_application function - arn"
 subcategory: ""
 description: |-
-  Builds an kinesisanalytics application ARN
+  kinesisanalytics application ARN
 ---
 
 # function: kinesisanalytics_application
 
-Builds the ARN of an `kinesisanalytics` `application`:
+Builds the ARN for `kinesisanalytics` `application`:
 
 ```
 arn:${Partition}:kinesisanalytics:${Region}:${Account}:application/${ApplicationName}

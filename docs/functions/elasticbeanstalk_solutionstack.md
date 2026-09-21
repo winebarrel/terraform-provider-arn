@@ -3,12 +3,12 @@
 page_title: "elasticbeanstalk_solutionstack function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticbeanstalk solutionstack ARN
+  elasticbeanstalk solutionstack ARN
 ---
 
 # function: elasticbeanstalk_solutionstack
 
-Builds the ARN of an `elasticbeanstalk` `solutionstack`:
+Builds the ARN for `elasticbeanstalk` `solutionstack`:
 
 ```
 arn:${Partition}:elasticbeanstalk:${Region}::solutionstack/${SolutionStackName}

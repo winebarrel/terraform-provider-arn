@@ -3,12 +3,12 @@
 page_title: "ec2_security_group function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 security-group ARN
+  ec2 security-group ARN
 ---
 
 # function: ec2_security_group
 
-Builds the ARN of an `ec2` `security-group`:
+Builds the ARN for `ec2` `security-group`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:security-group/${SecurityGroupId}

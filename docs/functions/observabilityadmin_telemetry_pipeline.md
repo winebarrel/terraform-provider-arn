@@ -3,12 +3,12 @@
 page_title: "observabilityadmin_telemetry_pipeline function - arn"
 subcategory: ""
 description: |-
-  Builds an observabilityadmin telemetry-pipeline ARN
+  observabilityadmin telemetry-pipeline ARN
 ---
 
 # function: observabilityadmin_telemetry_pipeline
 
-Builds the ARN of an `observabilityadmin` `telemetry-pipeline`:
+Builds the ARN for `observabilityadmin` `telemetry-pipeline`:
 
 ```
 arn:${Partition}:observabilityadmin:${Region}:${Account}:telemetry-pipeline/${TelemetryPipelineIdentifier}

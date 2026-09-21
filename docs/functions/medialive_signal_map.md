@@ -3,12 +3,12 @@
 page_title: "medialive_signal_map function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive signal-map ARN
+  medialive signal-map ARN
 ---
 
 # function: medialive_signal_map
 
-Builds the ARN of an `medialive` `signal-map`:
+Builds the ARN for `medialive` `signal-map`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:signal-map:${SignalMapId}

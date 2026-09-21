@@ -3,12 +3,12 @@
 page_title: "vpce_vpc_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an vpce vpc-endpoint ARN
+  vpce vpc-endpoint ARN
 ---
 
 # function: vpce_vpc_endpoint
 
-Builds the ARN of an `vpce` `vpc-endpoint`:
+Builds the ARN for `vpce` `vpc-endpoint`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:vpc-endpoint/${VpcEndpointId}

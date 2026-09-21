@@ -3,12 +3,12 @@
 page_title: "controlcatalog_control function - arn"
 subcategory: ""
 description: |-
-  Builds an controlcatalog control ARN
+  controlcatalog control ARN
 ---
 
 # function: controlcatalog_control
 
-Builds the ARN of an `controlcatalog` `control`:
+Builds the ARN for `controlcatalog` `control`:
 
 ```
 arn:${Partition}:controlcatalog:::control/${ControlId}

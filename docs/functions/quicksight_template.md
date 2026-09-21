@@ -3,12 +3,12 @@
 page_title: "quicksight_template function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight template ARN
+  quicksight template ARN
 ---
 
 # function: quicksight_template
 
-Builds the ARN of an `quicksight` `template`:
+Builds the ARN for `quicksight` `template`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:template/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "cloudfront_origin_access_control function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront origin-access-control ARN
+  cloudfront origin-access-control ARN
 ---
 
 # function: cloudfront_origin_access_control
 
-Builds the ARN of an `cloudfront` `origin-access-control`:
+Builds the ARN for `cloudfront` `origin-access-control`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:origin-access-control/${Id}

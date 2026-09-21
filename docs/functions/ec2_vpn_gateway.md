@@ -3,12 +3,12 @@
 page_title: "ec2_vpn_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 vpn-gateway ARN
+  ec2 vpn-gateway ARN
 ---
 
 # function: ec2_vpn_gateway
 
-Builds the ARN of an `ec2` `vpn-gateway`:
+Builds the ARN for `ec2` `vpn-gateway`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:vpn-gateway/${VpnGatewayId}

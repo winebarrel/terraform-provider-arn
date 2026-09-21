@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_entity function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace Entity ARN
+  aws-marketplace Entity ARN
 ---
 
 # function: aws_marketplace_entity
 
-Builds the ARN of an `aws-marketplace` `Entity`:
+Builds the ARN for `aws-marketplace` `Entity`:
 
 ```
 arn:${Partition}:aws-marketplace:${Region}:${Account}:${Catalog}/${EntityType}/${ResourceId}

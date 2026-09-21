@@ -3,12 +3,12 @@
 page_title: "deadline_monitor function - arn"
 subcategory: ""
 description: |-
-  Builds an deadline monitor ARN
+  deadline monitor ARN
 ---
 
 # function: deadline_monitor
 
-Builds the ARN of an `deadline` `monitor`:
+Builds the ARN for `deadline` `monitor`:
 
 ```
 arn:${Partition}:deadline:${Region}:${Account}:monitor/${MonitorId}

@@ -3,12 +3,12 @@
 page_title: "frauddetector_model function - arn"
 subcategory: ""
 description: |-
-  Builds an frauddetector model ARN
+  frauddetector model ARN
 ---
 
 # function: frauddetector_model
 
-Builds the ARN of an `frauddetector` `model`:
+Builds the ARN for `frauddetector` `model`:
 
 ```
 arn:${Partition}:frauddetector:${Region}:${Account}:model/${ResourcePath}

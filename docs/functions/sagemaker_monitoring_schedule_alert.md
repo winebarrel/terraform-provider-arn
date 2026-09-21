@@ -3,12 +3,12 @@
 page_title: "sagemaker_monitoring_schedule_alert function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker monitoring-schedule-alert ARN
+  sagemaker monitoring-schedule-alert ARN
 ---
 
 # function: sagemaker_monitoring_schedule_alert
 
-Builds the ARN of an `sagemaker` `monitoring-schedule-alert`:
+Builds the ARN for `sagemaker` `monitoring-schedule-alert`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:monitoring-schedule/${MonitoringScheduleName}/alert/${MonitoringScheduleAlertName}

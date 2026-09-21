@@ -3,12 +3,12 @@
 page_title: "neptune_graph_export_task function - arn"
 subcategory: ""
 description: |-
-  Builds an neptune-graph export-task ARN
+  neptune-graph export-task ARN
 ---
 
 # function: neptune_graph_export_task
 
-Builds the ARN of an `neptune-graph` `export-task`:
+Builds the ARN for `neptune-graph` `export-task`:
 
 ```
 arn:${Partition}:neptune-graph:${Region}:${Account}:export-task/${ResourceId}

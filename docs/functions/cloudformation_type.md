@@ -3,12 +3,12 @@
 page_title: "cloudformation_type function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudformation type ARN
+  cloudformation type ARN
 ---
 
 # function: cloudformation_type
 
-Builds the ARN of an `cloudformation` `type`:
+Builds the ARN for `cloudformation` `type`:
 
 ```
 arn:${Partition}:cloudformation:${Region}:${Account}:type/resource/${Type}

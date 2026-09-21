@@ -3,12 +3,12 @@
 page_title: "kafkaconnect_worker_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an kafkaconnect worker configuration ARN
+  kafkaconnect worker configuration ARN
 ---
 
 # function: kafkaconnect_worker_configuration
 
-Builds the ARN of an `kafkaconnect` `worker configuration`:
+Builds the ARN for `kafkaconnect` `worker configuration`:
 
 ```
 arn:${Partition}:kafkaconnect:${Region}:${Account}:worker-configuration/${WorkerConfigurationName}/${UUID}

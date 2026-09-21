@@ -3,12 +3,12 @@
 page_title: "lightsail_contact_method function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail ContactMethod ARN
+  lightsail ContactMethod ARN
 ---
 
 # function: lightsail_contact_method
 
-Builds the ARN of an `lightsail` `ContactMethod`:
+Builds the ARN for `lightsail` `ContactMethod`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:ContactMethod/${Id}

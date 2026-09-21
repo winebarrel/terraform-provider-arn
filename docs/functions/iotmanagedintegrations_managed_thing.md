@@ -3,12 +3,12 @@
 page_title: "iotmanagedintegrations_managed_thing function - arn"
 subcategory: ""
 description: |-
-  Builds an iotmanagedintegrations managed-thing ARN
+  iotmanagedintegrations managed-thing ARN
 ---
 
 # function: iotmanagedintegrations_managed_thing
 
-Builds the ARN of an `iotmanagedintegrations` `managed-thing`:
+Builds the ARN for `iotmanagedintegrations` `managed-thing`:
 
 ```
 arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:managed-thing/${Identifier}

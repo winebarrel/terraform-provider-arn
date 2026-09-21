@@ -3,12 +3,12 @@
 page_title: "states_express function - arn"
 subcategory: ""
 description: |-
-  Builds an states express ARN
+  states express ARN
 ---
 
 # function: states_express
 
-Builds the ARN of an `states` `express`:
+Builds the ARN for `states` `express`:
 
 ```
 arn:${Partition}:states:${Region}:${Account}:express:${StateMachineName}:${ExecutionId}:${ExpressId}

@@ -3,12 +3,12 @@
 page_title: "bedrock_data_automation_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock data-automation-profile ARN
+  bedrock data-automation-profile ARN
 ---
 
 # function: bedrock_data_automation_profile
 
-Builds the ARN of an `bedrock` `data-automation-profile`:
+Builds the ARN for `bedrock` `data-automation-profile`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:data-automation-profile/${ProfileId}

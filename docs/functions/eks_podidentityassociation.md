@@ -3,12 +3,12 @@
 page_title: "eks_podidentityassociation function - arn"
 subcategory: ""
 description: |-
-  Builds an eks podidentityassociation ARN
+  eks podidentityassociation ARN
 ---
 
 # function: eks_podidentityassociation
 
-Builds the ARN of an `eks` `podidentityassociation`:
+Builds the ARN for `eks` `podidentityassociation`:
 
 ```
 arn:${Partition}:eks:${Region}:${Account}:podidentityassociation/${ClusterName}/${UUID}

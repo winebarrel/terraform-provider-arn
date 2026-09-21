@@ -3,12 +3,12 @@
 page_title: "odb_cloud_autonomous_vm_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an odb cloud-autonomous-vm-cluster ARN
+  odb cloud-autonomous-vm-cluster ARN
 ---
 
 # function: odb_cloud_autonomous_vm_cluster
 
-Builds the ARN of an `odb` `cloud-autonomous-vm-cluster`:
+Builds the ARN for `odb` `cloud-autonomous-vm-cluster`:
 
 ```
 arn:${Partition}:odb:${Region}:${Account}:cloud-autonomous-vm-cluster/${CloudAutonomousVmClusterId}

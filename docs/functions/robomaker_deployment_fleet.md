@@ -3,12 +3,12 @@
 page_title: "robomaker_deployment_fleet function - arn"
 subcategory: ""
 description: |-
-  Builds an robomaker deploymentFleet ARN
+  robomaker deploymentFleet ARN
 ---
 
 # function: robomaker_deployment_fleet
 
-Builds the ARN of an `robomaker` `deploymentFleet`:
+Builds the ARN for `robomaker` `deploymentFleet`:
 
 ```
 arn:${Partition}:robomaker:${Region}:${Account}:deployment-fleet/${FleetName}/${CreatedOnEpoch}

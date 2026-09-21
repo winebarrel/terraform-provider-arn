@@ -3,12 +3,12 @@
 page_title: "glue_completion function - arn"
 subcategory: ""
 description: |-
-  Builds an glue completion ARN
+  glue completion ARN
 ---
 
 # function: glue_completion
 
-Builds the ARN of an `glue` `completion`:
+Builds the ARN for `glue` `completion`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:completion/${CompletionId}

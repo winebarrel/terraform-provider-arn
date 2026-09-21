@@ -3,12 +3,12 @@
 page_title: "greengrass_group function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass group ARN
+  greengrass group ARN
 ---
 
 # function: greengrass_group
 
-Builds the ARN of an `greengrass` `group`:
+Builds the ARN for `greengrass` `group`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/groups/${GroupId}

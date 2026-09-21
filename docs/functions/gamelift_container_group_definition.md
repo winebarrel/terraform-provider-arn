@@ -3,12 +3,12 @@
 page_title: "gamelift_container_group_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an gamelift containerGroupDefinition ARN
+  gamelift containerGroupDefinition ARN
 ---
 
 # function: gamelift_container_group_definition
 
-Builds the ARN of an `gamelift` `containerGroupDefinition`:
+Builds the ARN for `gamelift` `containerGroupDefinition`:
 
 ```
 arn:${Partition}:gamelift:${Region}:${Account}:containergroupdefinition/${Name}

@@ -3,12 +3,12 @@
 page_title: "qbusiness_integration function - arn"
 subcategory: ""
 description: |-
-  Builds an qbusiness integration ARN
+  qbusiness integration ARN
 ---
 
 # function: qbusiness_integration
 
-Builds the ARN of an `qbusiness` `integration`:
+Builds the ARN for `qbusiness` `integration`:
 
 ```
 arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/integration/${IntegrationId}

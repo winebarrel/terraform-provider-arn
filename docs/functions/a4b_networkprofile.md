@@ -3,12 +3,12 @@
 page_title: "a4b_networkprofile function - arn"
 subcategory: ""
 description: |-
-  Builds an a4b networkprofile ARN
+  a4b networkprofile ARN
 ---
 
 # function: a4b_networkprofile
 
-Builds the ARN of an `a4b` `networkprofile`:
+Builds the ARN for `a4b` `networkprofile`:
 
 ```
 arn:${Partition}:a4b:${Region}:${Account}:network-profile/${ResourceId}

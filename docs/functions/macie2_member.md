@@ -3,12 +3,12 @@
 page_title: "macie2_member function - arn"
 subcategory: ""
 description: |-
-  Builds an macie2 Member ARN
+  macie2 Member ARN
 ---
 
 # function: macie2_member
 
-Builds the ARN of an `macie2` `Member`:
+Builds the ARN for `macie2` `Member`:
 
 ```
 arn:${Partition}:macie2:${Region}:${Account}:member/${ResourceId}

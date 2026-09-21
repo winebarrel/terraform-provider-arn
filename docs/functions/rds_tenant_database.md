@@ -3,12 +3,12 @@
 page_title: "rds_tenant_database function - arn"
 subcategory: ""
 description: |-
-  Builds an rds tenant-database ARN
+  rds tenant-database ARN
 ---
 
 # function: rds_tenant_database
 
-Builds the ARN of an `rds` `tenant-database`:
+Builds the ARN for `rds` `tenant-database`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:tenant-database:${TenantResourceId}

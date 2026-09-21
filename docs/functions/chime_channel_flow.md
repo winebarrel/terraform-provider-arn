@@ -3,12 +3,12 @@
 page_title: "chime_channel_flow function - arn"
 subcategory: ""
 description: |-
-  Builds an chime channel-flow ARN
+  chime channel-flow ARN
 ---
 
 # function: chime_channel_flow
 
-Builds the ARN of an `chime` `channel-flow`:
+Builds the ARN for `chime` `channel-flow`:
 
 ```
 arn:${Partition}:chime:${Region}:${AccountId}:app-instance/${AppInstanceId}/channel-flow/${ChannelFlowId}

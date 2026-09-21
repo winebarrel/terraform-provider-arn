@@ -3,12 +3,12 @@
 page_title: "medialive_input_security_group function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive input-security-group ARN
+  medialive input-security-group ARN
 ---
 
 # function: medialive_input_security_group
 
-Builds the ARN of an `medialive` `input-security-group`:
+Builds the ARN for `medialive` `input-security-group`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:inputSecurityGroup:${InputSecurityGroupId}

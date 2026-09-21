@@ -3,12 +3,12 @@
 page_title: "cloudwatch_dashboard function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudwatch dashboard ARN
+  cloudwatch dashboard ARN
 ---
 
 # function: cloudwatch_dashboard
 
-Builds the ARN of an `cloudwatch` `dashboard`:
+Builds the ARN for `cloudwatch` `dashboard`:
 
 ```
 arn:${Partition}:cloudwatch::${Account}:dashboard/${DashboardName}

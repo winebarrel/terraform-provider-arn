@@ -3,12 +3,12 @@
 page_title: "storagegateway_share function - arn"
 subcategory: ""
 description: |-
-  Builds an storagegateway share ARN
+  storagegateway share ARN
 ---
 
 # function: storagegateway_share
 
-Builds the ARN of an `storagegateway` `share`:
+Builds the ARN for `storagegateway` `share`:
 
 ```
 arn:${Partition}:storagegateway:${Region}:${Account}:share/${ShareId}

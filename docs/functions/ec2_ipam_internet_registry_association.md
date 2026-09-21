@@ -3,12 +3,12 @@
 page_title: "ec2_ipam_internet_registry_association function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 ipam-internet-registry-association ARN
+  ec2 ipam-internet-registry-association ARN
 ---
 
 # function: ec2_ipam_internet_registry_association
 
-Builds the ARN of an `ec2` `ipam-internet-registry-association`:
+Builds the ARN for `ec2` `ipam-internet-registry-association`:
 
 ```
 arn:${Partition}:ec2::${Account}:ipam-internet-registry-association/${IpamInternetRegistryAssociationId}

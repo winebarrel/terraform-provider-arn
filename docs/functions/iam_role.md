@@ -3,12 +3,12 @@
 page_title: "iam_role function - arn"
 subcategory: ""
 description: |-
-  Builds an iam role ARN
+  iam role ARN
 ---
 
 # function: iam_role
 
-Builds the ARN of an `iam` `role`:
+Builds the ARN for `iam` `role`:
 
 ```
 arn:${Partition}:iam::${Account}:role/${RoleNameWithPath}

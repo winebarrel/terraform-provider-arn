@@ -3,12 +3,12 @@
 page_title: "memorydb_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an memorydb snapshot ARN
+  memorydb snapshot ARN
 ---
 
 # function: memorydb_snapshot
 
-Builds the ARN of an `memorydb` `snapshot`:
+Builds the ARN for `memorydb` `snapshot`:
 
 ```
 arn:${Partition}:memorydb:${Region}:${Account}:snapshot/${SnapshotName}

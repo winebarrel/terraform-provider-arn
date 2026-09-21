@@ -3,12 +3,12 @@
 page_title: "savingsplans_savingsplan function - arn"
 subcategory: ""
 description: |-
-  Builds an savingsplans savingsplan ARN
+  savingsplans savingsplan ARN
 ---
 
 # function: savingsplans_savingsplan
 
-Builds the ARN of an `savingsplans` `savingsplan`:
+Builds the ARN for `savingsplans` `savingsplan`:
 
 ```
 arn:${Partition}:savingsplans::${Account}:savingsplan/${ResourceId}

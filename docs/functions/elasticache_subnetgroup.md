@@ -3,12 +3,12 @@
 page_title: "elasticache_subnetgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticache subnetgroup ARN
+  elasticache subnetgroup ARN
 ---
 
 # function: elasticache_subnetgroup
 
-Builds the ARN of an `elasticache` `subnetgroup`:
+Builds the ARN for `elasticache` `subnetgroup`:
 
 ```
 arn:${Partition}:elasticache:${Region}:${Account}:subnetgroup:${CacheSubnetGroupName}

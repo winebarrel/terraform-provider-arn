@@ -3,12 +3,12 @@
 page_title: "iotanalytics_channel function - arn"
 subcategory: ""
 description: |-
-  Builds an iotanalytics channel ARN
+  iotanalytics channel ARN
 ---
 
 # function: iotanalytics_channel
 
-Builds the ARN of an `iotanalytics` `channel`:
+Builds the ARN for `iotanalytics` `channel`:
 
 ```
 arn:${Partition}:iotanalytics:${Region}:${Account}:channel/${ChannelName}

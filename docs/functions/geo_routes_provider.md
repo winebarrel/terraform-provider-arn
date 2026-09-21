@@ -3,12 +3,12 @@
 page_title: "geo_routes_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an geo-routes provider ARN
+  geo-routes provider ARN
 ---
 
 # function: geo_routes_provider
 
-Builds the ARN of an `geo-routes` `provider`:
+Builds the ARN for `geo-routes` `provider`:
 
 ```
 arn:${Partition}:geo-routes:${Region}::provider/default

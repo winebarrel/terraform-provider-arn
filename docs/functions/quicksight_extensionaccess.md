@@ -3,12 +3,12 @@
 page_title: "quicksight_extensionaccess function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight extensionaccess ARN
+  quicksight extensionaccess ARN
 ---
 
 # function: quicksight_extensionaccess
 
-Builds the ARN of an `quicksight` `extensionaccess`:
+Builds the ARN for `quicksight` `extensionaccess`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:extension-access/${ResourceId}

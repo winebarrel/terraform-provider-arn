@@ -3,12 +3,12 @@
 page_title: "apigateway_rest_apis function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway RestApis ARN
+  apigateway RestApis ARN
 ---
 
 # function: apigateway_rest_apis
 
-Builds the ARN of an `apigateway` `RestApis`:
+Builds the ARN for `apigateway` `RestApis`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis

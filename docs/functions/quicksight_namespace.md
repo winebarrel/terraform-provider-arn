@@ -3,12 +3,12 @@
 page_title: "quicksight_namespace function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight namespace ARN
+  quicksight namespace ARN
 ---
 
 # function: quicksight_namespace
 
-Builds the ARN of an `quicksight` `namespace`:
+Builds the ARN for `quicksight` `namespace`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:namespace/${ResourceId}

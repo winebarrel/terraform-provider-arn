@@ -3,12 +3,12 @@
 page_title: "network_firewall_stateful_rule_group function - arn"
 subcategory: ""
 description: |-
-  Builds an network-firewall StatefulRuleGroup ARN
+  network-firewall StatefulRuleGroup ARN
 ---
 
 # function: network_firewall_stateful_rule_group
 
-Builds the ARN of an `network-firewall` `StatefulRuleGroup`:
+Builds the ARN for `network-firewall` `StatefulRuleGroup`:
 
 ```
 arn:${Partition}:network-firewall:${Region}:${Account}:stateful-rulegroup/${Name}

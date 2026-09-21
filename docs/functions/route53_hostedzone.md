@@ -3,12 +3,12 @@
 page_title: "route53_hostedzone function - arn"
 subcategory: ""
 description: |-
-  Builds an route53 hostedzone ARN
+  route53 hostedzone ARN
 ---
 
 # function: route53_hostedzone
 
-Builds the ARN of an `route53` `hostedzone`:
+Builds the ARN for `route53` `hostedzone`:
 
 ```
 arn:${Partition}:route53:::hostedzone/${Id}

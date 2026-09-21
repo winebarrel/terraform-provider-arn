@@ -3,12 +3,12 @@
 page_title: "finspace_kx_database function - arn"
 subcategory: ""
 description: |-
-  Builds an finspace kxDatabase ARN
+  finspace kxDatabase ARN
 ---
 
 # function: finspace_kx_database
 
-Builds the ARN of an `finspace` `kxDatabase`:
+Builds the ARN for `finspace` `kxDatabase`:
 
 ```
 arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kxDatabase/${KxDatabase}

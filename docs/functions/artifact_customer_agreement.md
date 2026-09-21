@@ -3,12 +3,12 @@
 page_title: "artifact_customer_agreement function - arn"
 subcategory: ""
 description: |-
-  Builds an artifact customer-agreement ARN
+  artifact customer-agreement ARN
 ---
 
 # function: artifact_customer_agreement
 
-Builds the ARN of an `artifact` `customer-agreement`:
+Builds the ARN for `artifact` `customer-agreement`:
 
 ```
 arn:${Partition}:artifact::${Account}:customer-agreement/*

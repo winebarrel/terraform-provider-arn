@@ -3,12 +3,12 @@
 page_title: "app_integrations_application function - arn"
 subcategory: ""
 description: |-
-  Builds an app-integrations application ARN
+  app-integrations application ARN
 ---
 
 # function: app_integrations_application
 
-Builds the ARN of an `app-integrations` `application`:
+Builds the ARN for `app-integrations` `application`:
 
 ```
 arn:${Partition}:app-integrations:${Region}:${Account}:application/${ApplicationId}

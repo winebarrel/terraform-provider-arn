@@ -3,12 +3,12 @@
 page_title: "elasticmapreduce_editor function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticmapreduce editor ARN
+  elasticmapreduce editor ARN
 ---
 
 # function: elasticmapreduce_editor
 
-Builds the ARN of an `elasticmapreduce` `editor`:
+Builds the ARN for `elasticmapreduce` `editor`:
 
 ```
 arn:${Partition}:elasticmapreduce:${Region}:${Account}:editor/${EditorId}

@@ -3,12 +3,12 @@
 page_title: "ssm_incidents_replication_set function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm-incidents replication-set ARN
+  ssm-incidents replication-set ARN
 ---
 
 # function: ssm_incidents_replication_set
 
-Builds the ARN of an `ssm-incidents` `replication-set`:
+Builds the ARN for `ssm-incidents` `replication-set`:
 
 ```
 arn:${Partition}:ssm-incidents::${Account}:replication-set/${ReplicationSet}

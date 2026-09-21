@@ -3,12 +3,12 @@
 page_title: "scn_dataset function - arn"
 subcategory: ""
 description: |-
-  Builds an scn dataset ARN
+  scn dataset ARN
 ---
 
 # function: scn_dataset
 
-Builds the ARN of an `scn` `dataset`:
+Builds the ARN for `scn` `dataset`:
 
 ```
 arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/namespaces/${Namespace}/datasets/${DatasetName}

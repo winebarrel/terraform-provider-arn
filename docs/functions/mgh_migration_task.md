@@ -3,12 +3,12 @@
 page_title: "mgh_migration_task function - arn"
 subcategory: ""
 description: |-
-  Builds an mgh migrationTask ARN
+  mgh migrationTask ARN
 ---
 
 # function: mgh_migration_task
 
-Builds the ARN of an `mgh` `migrationTask`:
+Builds the ARN for `mgh` `migrationTask`:
 
 ```
 arn:${Partition}:mgh:${Region}:${Account}:progressUpdateStream/${Stream}/migrationTask/${Task}

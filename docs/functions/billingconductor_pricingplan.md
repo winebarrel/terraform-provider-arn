@@ -3,12 +3,12 @@
 page_title: "billingconductor_pricingplan function - arn"
 subcategory: ""
 description: |-
-  Builds an billingconductor pricingplan ARN
+  billingconductor pricingplan ARN
 ---
 
 # function: billingconductor_pricingplan
 
-Builds the ARN of an `billingconductor` `pricingplan`:
+Builds the ARN for `billingconductor` `pricingplan`:
 
 ```
 arn:${Partition}:billingconductor::${Account}:pricingplan/${PricingPlanId}

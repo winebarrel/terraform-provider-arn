@@ -3,12 +3,12 @@
 page_title: "s3_job function - arn"
 subcategory: ""
 description: |-
-  Builds an s3 job ARN
+  s3 job ARN
 ---
 
 # function: s3_job
 
-Builds the ARN of an `s3` `job`:
+Builds the ARN for `s3` `job`:
 
 ```
 arn:${Partition}:s3:${Region}:${Account}:job/${JobId}

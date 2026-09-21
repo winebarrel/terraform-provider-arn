@@ -3,12 +3,12 @@
 page_title: "network_firewall_firewall function - arn"
 subcategory: ""
 description: |-
-  Builds an network-firewall Firewall ARN
+  network-firewall Firewall ARN
 ---
 
 # function: network_firewall_firewall
 
-Builds the ARN of an `network-firewall` `Firewall`:
+Builds the ARN for `network-firewall` `Firewall`:
 
 ```
 arn:${Partition}:network-firewall:${Region}:${Account}:firewall/${Name}

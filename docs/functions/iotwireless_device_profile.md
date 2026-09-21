@@ -3,12 +3,12 @@
 page_title: "iotwireless_device_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless DeviceProfile ARN
+  iotwireless DeviceProfile ARN
 ---
 
 # function: iotwireless_device_profile
 
-Builds the ARN of an `iotwireless` `DeviceProfile`:
+Builds the ARN for `iotwireless` `DeviceProfile`:
 
 ```
 arn:${Partition}:iotwireless:${Region}:${Account}:DeviceProfile/${DeviceProfileId}

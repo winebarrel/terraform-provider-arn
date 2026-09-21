@@ -3,12 +3,12 @@
 page_title: "quicksight_assignment function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight assignment ARN
+  quicksight assignment ARN
 ---
 
 # function: quicksight_assignment
 
-Builds the ARN of an `quicksight` `assignment`:
+Builds the ARN for `quicksight` `assignment`:
 
 ```
 arn:${Partition}:quicksight::${Account}:assignment/${ResourceId}

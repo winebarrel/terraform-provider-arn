@@ -3,12 +3,12 @@
 page_title: "events_event_source function - arn"
 subcategory: ""
 description: |-
-  Builds an events event-source ARN
+  events event-source ARN
 ---
 
 # function: events_event_source
 
-Builds the ARN of an `events` `event-source`:
+Builds the ARN for `events` `event-source`:
 
 ```
 arn:${Partition}:events:${Region}::event-source/${EventSourceName}

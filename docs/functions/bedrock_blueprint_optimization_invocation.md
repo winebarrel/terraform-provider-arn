@@ -3,12 +3,12 @@
 page_title: "bedrock_blueprint_optimization_invocation function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock blueprint-optimization-invocation ARN
+  bedrock blueprint-optimization-invocation ARN
 ---
 
 # function: bedrock_blueprint_optimization_invocation
 
-Builds the ARN of an `bedrock` `blueprint-optimization-invocation`:
+Builds the ARN for `bedrock` `blueprint-optimization-invocation`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:blueprint-optimization-invocation/${ResourceId}

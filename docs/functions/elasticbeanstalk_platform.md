@@ -3,12 +3,12 @@
 page_title: "elasticbeanstalk_platform function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticbeanstalk platform ARN
+  elasticbeanstalk platform ARN
 ---
 
 # function: elasticbeanstalk_platform
 
-Builds the ARN of an `elasticbeanstalk` `platform`:
+Builds the ARN for `elasticbeanstalk` `platform`:
 
 ```
 arn:${Partition}:elasticbeanstalk:${Region}::platform/${PlatformNameWithVersion}

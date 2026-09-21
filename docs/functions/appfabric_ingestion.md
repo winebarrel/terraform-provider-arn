@@ -3,12 +3,12 @@
 page_title: "appfabric_ingestion function - arn"
 subcategory: ""
 description: |-
-  Builds an appfabric ingestion ARN
+  appfabric ingestion ARN
 ---
 
 # function: appfabric_ingestion
 
-Builds the ARN of an `appfabric` `ingestion`:
+Builds the ARN for `appfabric` `ingestion`:
 
 ```
 arn:${Partition}:appfabric:${Region}:${Account}:appbundle/${AppbundleId}/ingestion/${IngestionIdentifier}

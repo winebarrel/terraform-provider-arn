@@ -3,12 +3,12 @@
 page_title: "wellarchitected_agent_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an wellarchitected agent-profile ARN
+  wellarchitected agent-profile ARN
 ---
 
 # function: wellarchitected_agent_profile
 
-Builds the ARN of an `wellarchitected` `agent-profile`:
+Builds the ARN for `wellarchitected` `agent-profile`:
 
 ```
 arn:${Partition}:wellarchitected:${Region}:${Account}:agent-profile/${ProfileName}

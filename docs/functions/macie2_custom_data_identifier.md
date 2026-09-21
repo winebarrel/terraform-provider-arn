@@ -3,12 +3,12 @@
 page_title: "macie2_custom_data_identifier function - arn"
 subcategory: ""
 description: |-
-  Builds an macie2 CustomDataIdentifier ARN
+  macie2 CustomDataIdentifier ARN
 ---
 
 # function: macie2_custom_data_identifier
 
-Builds the ARN of an `macie2` `CustomDataIdentifier`:
+Builds the ARN for `macie2` `CustomDataIdentifier`:
 
 ```
 arn:${Partition}:macie2:${Region}:${Account}:custom-data-identifier/${ResourceId}

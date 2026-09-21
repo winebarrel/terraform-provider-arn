@@ -3,12 +3,12 @@
 page_title: "kafka_cluster_group function - arn"
 subcategory: ""
 description: |-
-  Builds an kafka-cluster group ARN
+  kafka-cluster group ARN
 ---
 
 # function: kafka_cluster_group
 
-Builds the ARN of an `kafka-cluster` `group`:
+Builds the ARN for `kafka-cluster` `group`:
 
 ```
 arn:${Partition}:kafka:${Region}:${Account}:group/${ClusterName}/${ClusterUuid}/${GroupName}

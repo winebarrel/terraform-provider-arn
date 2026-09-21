@@ -3,12 +3,12 @@
 page_title: "sagemaker_model_explainability_job_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker model-explainability-job-definition ARN
+  sagemaker model-explainability-job-definition ARN
 ---
 
 # function: sagemaker_model_explainability_job_definition
 
-Builds the ARN of an `sagemaker` `model-explainability-job-definition`:
+Builds the ARN for `sagemaker` `model-explainability-job-definition`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:model-explainability-job-definition/${ModelExplainabilityJobDefinitionName}

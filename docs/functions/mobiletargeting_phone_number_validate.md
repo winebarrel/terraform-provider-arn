@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_phone_number_validate function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting phone-number-validate ARN
+  mobiletargeting phone-number-validate ARN
 ---
 
 # function: mobiletargeting_phone_number_validate
 
-Builds the ARN of an `mobiletargeting` `phone-number-validate`:
+Builds the ARN for `mobiletargeting` `phone-number-validate`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:phone/number/validate

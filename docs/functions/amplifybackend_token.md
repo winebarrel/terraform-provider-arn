@@ -3,12 +3,12 @@
 page_title: "amplifybackend_token function - arn"
 subcategory: ""
 description: |-
-  Builds an amplifybackend token ARN
+  amplifybackend token ARN
 ---
 
 # function: amplifybackend_token
 
-Builds the ARN of an `amplifybackend` `token`:
+Builds the ARN for `amplifybackend` `token`:
 
 ```
 arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/challenge/*

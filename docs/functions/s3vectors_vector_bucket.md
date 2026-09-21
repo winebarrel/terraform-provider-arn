@@ -3,12 +3,12 @@
 page_title: "s3vectors_vector_bucket function - arn"
 subcategory: ""
 description: |-
-  Builds an s3vectors VectorBucket ARN
+  s3vectors VectorBucket ARN
 ---
 
 # function: s3vectors_vector_bucket
 
-Builds the ARN of an `s3vectors` `VectorBucket`:
+Builds the ARN for `s3vectors` `VectorBucket`:
 
 ```
 arn:${Partition}:s3vectors:${Region}:${Account}:bucket/${BucketName}

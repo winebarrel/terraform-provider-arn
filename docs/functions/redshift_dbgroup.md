@@ -3,12 +3,12 @@
 page_title: "redshift_dbgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift dbgroup ARN
+  redshift dbgroup ARN
 ---
 
 # function: redshift_dbgroup
 
-Builds the ARN of an `redshift` `dbgroup`:
+Builds the ARN for `redshift` `dbgroup`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:dbgroup:${ClusterName}/${DbGroup}

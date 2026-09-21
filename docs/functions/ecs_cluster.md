@@ -3,12 +3,12 @@
 page_title: "ecs_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs cluster ARN
+  ecs cluster ARN
 ---
 
 # function: ecs_cluster
 
-Builds the ARN of an `ecs` `cluster`:
+Builds the ARN for `ecs` `cluster`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:cluster/${ClusterName}

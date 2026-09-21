@@ -3,12 +3,12 @@
 page_title: "profile_recommenders function - arn"
 subcategory: ""
 description: |-
-  Builds an profile recommenders ARN
+  profile recommenders ARN
 ---
 
 # function: profile_recommenders
 
-Builds the ARN of an `profile` `recommenders`:
+Builds the ARN for `profile` `recommenders`:
 
 ```
 arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/recommenders/${RecommenderTypeName}

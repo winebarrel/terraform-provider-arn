@@ -3,12 +3,12 @@
 page_title: "iotmanagedintegrations_provisioning_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an iotmanagedintegrations provisioning-profile ARN
+  iotmanagedintegrations provisioning-profile ARN
 ---
 
 # function: iotmanagedintegrations_provisioning_profile
 
-Builds the ARN of an `iotmanagedintegrations` `provisioning-profile`:
+Builds the ARN for `iotmanagedintegrations` `provisioning-profile`:
 
 ```
 arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:provisioning-profile/${Identifier}

@@ -3,12 +3,12 @@
 page_title: "workspaces_web_session_logger function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces-web sessionLogger ARN
+  workspaces-web sessionLogger ARN
 ---
 
 # function: workspaces_web_session_logger
 
-Builds the ARN of an `workspaces-web` `sessionLogger`:
+Builds the ARN for `workspaces-web` `sessionLogger`:
 
 ```
 arn:${Partition}:workspaces-web:${Region}:${Account}:sessionLogger/${SessionLoggerId}

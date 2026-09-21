@@ -3,12 +3,12 @@
 page_title: "kafka_channel function - arn"
 subcategory: ""
 description: |-
-  Builds an kafka channel ARN
+  kafka channel ARN
 ---
 
 # function: kafka_channel
 
-Builds the ARN of an `kafka` `channel`:
+Builds the ARN for `kafka` `channel`:
 
 ```
 arn:${Partition}:kafka:${Region}:${Account}:channel/${ClusterName}/${ClusterUuid}/${ChannelName}/${Uuid}

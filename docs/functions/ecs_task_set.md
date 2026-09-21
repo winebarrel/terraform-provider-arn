@@ -3,12 +3,12 @@
 page_title: "ecs_task_set function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs task-set ARN
+  ecs task-set ARN
 ---
 
 # function: ecs_task_set
 
-Builds the ARN of an `ecs` `task-set`:
+Builds the ARN for `ecs` `task-set`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:task-set/${ClusterName}/${ServiceName}/${TaskSetId}

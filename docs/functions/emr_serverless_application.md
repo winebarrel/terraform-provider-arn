@@ -3,12 +3,12 @@
 page_title: "emr_serverless_application function - arn"
 subcategory: ""
 description: |-
-  Builds an emr-serverless application ARN
+  emr-serverless application ARN
 ---
 
 # function: emr_serverless_application
 
-Builds the ARN of an `emr-serverless` `application`:
+Builds the ARN for `emr-serverless` `application`:
 
 ```
 arn:${Partition}:emr-serverless:${Region}:${Account}:/applications/${ApplicationId}

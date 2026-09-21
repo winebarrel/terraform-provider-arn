@@ -3,12 +3,12 @@
 page_title: "partnercentral_engagement_from_opportunity_task function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral engagement-from-opportunity-task ARN
+  partnercentral engagement-from-opportunity-task ARN
 ---
 
 # function: partnercentral_engagement_from_opportunity_task
 
-Builds the ARN of an `partnercentral` `engagement-from-opportunity-task`:
+Builds the ARN for `partnercentral` `engagement-from-opportunity-task`:
 
 ```
 arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/engagement-from-opportunity-task/${TaskId}

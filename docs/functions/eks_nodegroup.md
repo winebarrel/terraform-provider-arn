@@ -3,12 +3,12 @@
 page_title: "eks_nodegroup function - arn"
 subcategory: ""
 description: |-
-  Builds an eks nodegroup ARN
+  eks nodegroup ARN
 ---
 
 # function: eks_nodegroup
 
-Builds the ARN of an `eks` `nodegroup`:
+Builds the ARN for `eks` `nodegroup`:
 
 ```
 arn:${Partition}:eks:${Region}:${Account}:nodegroup/${ClusterName}/${NodegroupName}/${UUID}

@@ -3,12 +3,12 @@
 page_title: "elasticloadbalancing_loadbalancer_gwy function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticloadbalancing loadbalancer/gwy/ ARN
+  elasticloadbalancing loadbalancer/gwy/ ARN
 ---
 
 # function: elasticloadbalancing_loadbalancer_gwy
 
-Builds the ARN of an `elasticloadbalancing` `loadbalancer/gwy/`:
+Builds the ARN for `elasticloadbalancing` `loadbalancer/gwy/`:
 
 ```
 arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/gwy/${LoadBalancerName}/${LoadBalancerId}

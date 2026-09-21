@@ -3,12 +3,12 @@
 page_title: "pi_metric_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an pi metric-resource ARN
+  pi metric-resource ARN
 ---
 
 # function: pi_metric_resource
 
-Builds the ARN of an `pi` `metric-resource`:
+Builds the ARN for `pi` `metric-resource`:
 
 ```
 arn:${Partition}:pi:${Region}:${Account}:metrics/${ServiceType}/${Identifier}

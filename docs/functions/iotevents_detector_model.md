@@ -3,12 +3,12 @@
 page_title: "iotevents_detector_model function - arn"
 subcategory: ""
 description: |-
-  Builds an iotevents detectorModel ARN
+  iotevents detectorModel ARN
 ---
 
 # function: iotevents_detector_model
 
-Builds the ARN of an `iotevents` `detectorModel`:
+Builds the ARN for `iotevents` `detectorModel`:
 
 ```
 arn:${Partition}:iotevents:${Region}:${Account}:detectorModel/${DetectorModelName}

@@ -3,12 +3,12 @@
 page_title: "codepipeline_stage function - arn"
 subcategory: ""
 description: |-
-  Builds an codepipeline stage ARN
+  codepipeline stage ARN
 ---
 
 # function: codepipeline_stage
 
-Builds the ARN of an `codepipeline` `stage`:
+Builds the ARN for `codepipeline` `stage`:
 
 ```
 arn:${Partition}:codepipeline:${Region}:${Account}:${PipelineName}/${StageName}

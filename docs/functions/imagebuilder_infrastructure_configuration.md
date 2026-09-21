@@ -3,12 +3,12 @@
 page_title: "imagebuilder_infrastructure_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an imagebuilder infrastructureConfiguration ARN
+  imagebuilder infrastructureConfiguration ARN
 ---
 
 # function: imagebuilder_infrastructure_configuration
 
-Builds the ARN of an `imagebuilder` `infrastructureConfiguration`:
+Builds the ARN for `imagebuilder` `infrastructureConfiguration`:
 
 ```
 arn:${Partition}:imagebuilder:${Region}:${Account}:infrastructure-configuration/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "ec2_verified_access_endpoint_target function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 verified-access-endpoint-target ARN
+  ec2 verified-access-endpoint-target ARN
 ---
 
 # function: ec2_verified_access_endpoint_target
 
-Builds the ARN of an `ec2` `verified-access-endpoint-target`:
+Builds the ARN for `ec2` `verified-access-endpoint-target`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:verified-access-endpoint-target/${VerifiedAccessEndpointTargetId}

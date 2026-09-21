@@ -3,12 +3,12 @@
 page_title: "mediapackage_harvest_jobs function - arn"
 subcategory: ""
 description: |-
-  Builds an mediapackage harvest_jobs ARN
+  mediapackage harvest_jobs ARN
 ---
 
 # function: mediapackage_harvest_jobs
 
-Builds the ARN of an `mediapackage` `harvest_jobs`:
+Builds the ARN for `mediapackage` `harvest_jobs`:
 
 ```
 arn:${Partition}:mediapackage:${Region}:${Account}:harvest_jobs/${HarvestJobIdentifier}

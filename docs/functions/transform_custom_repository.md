@@ -3,12 +3,12 @@
 page_title: "transform_custom_repository function - arn"
 subcategory: ""
 description: |-
-  Builds an transform-custom repository ARN
+  transform-custom repository ARN
 ---
 
 # function: transform_custom_repository
 
-Builds the ARN of an `transform-custom` `repository`:
+Builds the ARN for `transform-custom` `repository`:
 
 ```
 arn:${Partition}:transform-custom:${Region}:${Account}:repository/${RepositoryId}

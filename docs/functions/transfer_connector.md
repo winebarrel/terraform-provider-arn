@@ -3,12 +3,12 @@
 page_title: "transfer_connector function - arn"
 subcategory: ""
 description: |-
-  Builds an transfer connector ARN
+  transfer connector ARN
 ---
 
 # function: transfer_connector
 
-Builds the ARN of an `transfer` `connector`:
+Builds the ARN for `transfer` `connector`:
 
 ```
 arn:${Partition}:transfer:${Region}:${Account}:connector/${ConnectorId}

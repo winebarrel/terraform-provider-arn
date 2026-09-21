@@ -3,12 +3,12 @@
 page_title: "ses_dedicated_ip_pool function - arn"
 subcategory: ""
 description: |-
-  Builds an ses dedicated-ip-pool ARN
+  ses dedicated-ip-pool ARN
 ---
 
 # function: ses_dedicated_ip_pool
 
-Builds the ARN of an `ses` `dedicated-ip-pool`:
+Builds the ARN for `ses` `dedicated-ip-pool`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:dedicated-ip-pool/${DedicatedIPPool}

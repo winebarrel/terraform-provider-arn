@@ -3,12 +3,12 @@
 page_title: "connect_attached_file function - arn"
 subcategory: ""
 description: |-
-  Builds an connect attached-file ARN
+  connect attached-file ARN
 ---
 
 # function: connect_attached_file
 
-Builds the ARN of an `connect` `attached-file`:
+Builds the ARN for `connect` `attached-file`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/file/${FileId}

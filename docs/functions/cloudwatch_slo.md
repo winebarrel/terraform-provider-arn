@@ -3,12 +3,12 @@
 page_title: "cloudwatch_slo function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudwatch slo ARN
+  cloudwatch slo ARN
 ---
 
 # function: cloudwatch_slo
 
-Builds the ARN of an `cloudwatch` `slo`:
+Builds the ARN for `cloudwatch` `slo`:
 
 ```
 arn:${Partition}:cloudwatch:${Region}:${Account}:slo/${SloName}

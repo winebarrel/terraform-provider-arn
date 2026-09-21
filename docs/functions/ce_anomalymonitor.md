@@ -3,12 +3,12 @@
 page_title: "ce_anomalymonitor function - arn"
 subcategory: ""
 description: |-
-  Builds an ce anomalymonitor ARN
+  ce anomalymonitor ARN
 ---
 
 # function: ce_anomalymonitor
 
-Builds the ARN of an `ce` `anomalymonitor`:
+Builds the ARN for `ce` `anomalymonitor`:
 
 ```
 arn:${Partition}:ce::${Account}:anomalymonitor/${Identifier}

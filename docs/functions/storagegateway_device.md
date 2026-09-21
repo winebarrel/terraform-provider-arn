@@ -3,12 +3,12 @@
 page_title: "storagegateway_device function - arn"
 subcategory: ""
 description: |-
-  Builds an storagegateway device ARN
+  storagegateway device ARN
 ---
 
 # function: storagegateway_device
 
-Builds the ARN of an `storagegateway` `device`:
+Builds the ARN for `storagegateway` `device`:
 
 ```
 arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}/device/${Vtldevice}

@@ -3,12 +3,12 @@
 page_title: "connect_wildcard_phone_number function - arn"
 subcategory: ""
 description: |-
-  Builds an connect wildcard-phone-number ARN
+  connect wildcard-phone-number ARN
 ---
 
 # function: connect_wildcard_phone_number
 
-Builds the ARN of an `connect` `wildcard-phone-number`:
+Builds the ARN for `connect` `wildcard-phone-number`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:phone-number/*

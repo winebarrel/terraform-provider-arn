@@ -3,12 +3,12 @@
 page_title: "lambda_microvm_image function - arn"
 subcategory: ""
 description: |-
-  Builds an lambda microvmImage ARN
+  lambda microvmImage ARN
 ---
 
 # function: lambda_microvm_image
 
-Builds the ARN of an `lambda` `microvmImage`:
+Builds the ARN for `lambda` `microvmImage`:
 
 ```
 arn:${Partition}:lambda:${Region}:${Account}:microvm-image:${MicrovmImageName}

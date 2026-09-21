@@ -3,12 +3,12 @@
 page_title: "devicefarm_job function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm job ARN
+  devicefarm job ARN
 ---
 
 # function: devicefarm_job
 
-Builds the ARN of an `devicefarm` `job`:
+Builds the ARN for `devicefarm` `job`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:job:${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "codewhisperer_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an codewhisperer profile ARN
+  codewhisperer profile ARN
 ---
 
 # function: codewhisperer_profile
 
-Builds the ARN of an `codewhisperer` `profile`:
+Builds the ARN for `codewhisperer` `profile`:
 
 ```
 arn:${Partition}:codewhisperer:${Region}:${Account}:profile/${Identifier}

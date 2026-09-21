@@ -3,12 +3,12 @@
 page_title: "ivschat_room function - arn"
 subcategory: ""
 description: |-
-  Builds an ivschat Room ARN
+  ivschat Room ARN
 ---
 
 # function: ivschat_room
 
-Builds the ARN of an `ivschat` `Room`:
+Builds the ARN for `ivschat` `Room`:
 
 ```
 arn:${Partition}:ivschat:${Region}:${Account}:room/${ResourceId}

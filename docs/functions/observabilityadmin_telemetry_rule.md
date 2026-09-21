@@ -3,12 +3,12 @@
 page_title: "observabilityadmin_telemetry_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an observabilityadmin telemetry-rule ARN
+  observabilityadmin telemetry-rule ARN
 ---
 
 # function: observabilityadmin_telemetry_rule
 
-Builds the ARN of an `observabilityadmin` `telemetry-rule`:
+Builds the ARN for `observabilityadmin` `telemetry-rule`:
 
 ```
 arn:${Partition}:observabilityadmin:${Region}:${Account}:telemetry-rule/${TelemetryRuleName}

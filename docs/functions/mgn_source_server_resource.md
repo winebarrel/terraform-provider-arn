@@ -3,12 +3,12 @@
 page_title: "mgn_source_server_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgn SourceServerResource ARN
+  mgn SourceServerResource ARN
 ---
 
 # function: mgn_source_server_resource
 
-Builds the ARN of an `mgn` `SourceServerResource`:
+Builds the ARN for `mgn` `SourceServerResource`:
 
 ```
 arn:${Partition}:mgn:${Region}:${Account}:source-server/${SourceServerID}

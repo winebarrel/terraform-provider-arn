@@ -3,12 +3,12 @@
 page_title: "mediastore_object function - arn"
 subcategory: ""
 description: |-
-  Builds an mediastore object ARN
+  mediastore object ARN
 ---
 
 # function: mediastore_object
 
-Builds the ARN of an `mediastore` `object`:
+Builds the ARN for `mediastore` `object`:
 
 ```
 arn:${Partition}:mediastore:${Region}:${Account}:container/${ContainerName}/${ObjectPath}

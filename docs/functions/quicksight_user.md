@@ -3,12 +3,12 @@
 page_title: "quicksight_user function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight user ARN
+  quicksight user ARN
 ---
 
 # function: quicksight_user
 
-Builds the ARN of an `quicksight` `user`:
+Builds the ARN for `quicksight` `user`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:user/${ResourceId}

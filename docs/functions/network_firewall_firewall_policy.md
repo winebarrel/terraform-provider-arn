@@ -3,12 +3,12 @@
 page_title: "network_firewall_firewall_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an network-firewall FirewallPolicy ARN
+  network-firewall FirewallPolicy ARN
 ---
 
 # function: network_firewall_firewall_policy
 
-Builds the ARN of an `network-firewall` `FirewallPolicy`:
+Builds the ARN for `network-firewall` `FirewallPolicy`:
 
 ```
 arn:${Partition}:network-firewall:${Region}:${Account}:firewall-policy/${Name}

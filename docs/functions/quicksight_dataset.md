@@ -3,12 +3,12 @@
 page_title: "quicksight_dataset function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight dataset ARN
+  quicksight dataset ARN
 ---
 
 # function: quicksight_dataset
 
-Builds the ARN of an `quicksight` `dataset`:
+Builds the ARN for `quicksight` `dataset`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:dataset/${ResourceId}

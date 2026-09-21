@@ -3,12 +3,12 @@
 page_title: "ec2_vpn_concentrator function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 vpn-concentrator ARN
+  ec2 vpn-concentrator ARN
 ---
 
 # function: ec2_vpn_concentrator
 
-Builds the ARN of an `ec2` `vpn-concentrator`:
+Builds the ARN for `ec2` `vpn-concentrator`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:vpn-concentrator/${VpnConcentratorId}

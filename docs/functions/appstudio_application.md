@@ -3,12 +3,12 @@
 page_title: "appstudio_application function - arn"
 subcategory: ""
 description: |-
-  Builds an appstudio application ARN
+  appstudio application ARN
 ---
 
 # function: appstudio_application
 
-Builds the ARN of an `appstudio` `application`:
+Builds the ARN for `appstudio` `application`:
 
 ```
 arn:${Partition}:appstudio:${Region}:${Account}:application/${ApplicationId}

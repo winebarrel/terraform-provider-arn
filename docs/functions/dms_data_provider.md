@@ -3,12 +3,12 @@
 page_title: "dms_data_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an dms DataProvider ARN
+  dms DataProvider ARN
 ---
 
 # function: dms_data_provider
 
-Builds the ARN of an `dms` `DataProvider`:
+Builds the ARN for `dms` `DataProvider`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:data-provider:*

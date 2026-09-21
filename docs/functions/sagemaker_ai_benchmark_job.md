@@ -3,12 +3,12 @@
 page_title: "sagemaker_ai_benchmark_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker ai-benchmark-job ARN
+  sagemaker ai-benchmark-job ARN
 ---
 
 # function: sagemaker_ai_benchmark_job
 
-Builds the ARN of an `sagemaker` `ai-benchmark-job`:
+Builds the ARN for `sagemaker` `ai-benchmark-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:ai-benchmark-job/${AIBenchmarkJobName}

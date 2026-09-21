@@ -3,12 +3,12 @@
 page_title: "ec2_vpn_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 vpn-connection ARN
+  ec2 vpn-connection ARN
 ---
 
 # function: ec2_vpn_connection
 
-Builds the ARN of an `ec2` `vpn-connection`:
+Builds the ARN for `ec2` `vpn-connection`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:vpn-connection/${VpnConnectionId}

@@ -3,12 +3,12 @@
 page_title: "ecs_task function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs task ARN
+  ecs task ARN
 ---
 
 # function: ecs_task
 
-Builds the ARN of an `ecs` `task`:
+Builds the ARN for `ecs` `task`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:task/${ClusterName}/${TaskId}

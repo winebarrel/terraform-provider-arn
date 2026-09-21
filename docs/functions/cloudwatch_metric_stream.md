@@ -3,12 +3,12 @@
 page_title: "cloudwatch_metric_stream function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudwatch metric-stream ARN
+  cloudwatch metric-stream ARN
 ---
 
 # function: cloudwatch_metric_stream
 
-Builds the ARN of an `cloudwatch` `metric-stream`:
+Builds the ARN for `cloudwatch` `metric-stream`:
 
 ```
 arn:${Partition}:cloudwatch:${Region}:${Account}:metric-stream/${MetricStreamName}

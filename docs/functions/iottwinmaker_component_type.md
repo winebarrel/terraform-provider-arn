@@ -3,12 +3,12 @@
 page_title: "iottwinmaker_component_type function - arn"
 subcategory: ""
 description: |-
-  Builds an iottwinmaker componentType ARN
+  iottwinmaker componentType ARN
 ---
 
 # function: iottwinmaker_component_type
 
-Builds the ARN of an `iottwinmaker` `componentType`:
+Builds the ARN for `iottwinmaker` `componentType`:
 
 ```
 arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}/component-type/${ComponentTypeId}

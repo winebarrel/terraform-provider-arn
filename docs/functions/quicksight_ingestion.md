@@ -3,12 +3,12 @@
 page_title: "quicksight_ingestion function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight ingestion ARN
+  quicksight ingestion ARN
 ---
 
 # function: quicksight_ingestion
 
-Builds the ARN of an `quicksight` `ingestion`:
+Builds the ARN for `quicksight` `ingestion`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:dataset/${DatasetId}/ingestion/${ResourceId}

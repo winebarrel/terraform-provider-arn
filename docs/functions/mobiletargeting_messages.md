@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_messages function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting messages ARN
+  mobiletargeting messages ARN
 ---
 
 # function: mobiletargeting_messages
 
-Builds the ARN of an `mobiletargeting` `messages`:
+Builds the ARN for `mobiletargeting` `messages`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/messages

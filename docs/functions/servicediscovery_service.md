@@ -3,12 +3,12 @@
 page_title: "servicediscovery_service function - arn"
 subcategory: ""
 description: |-
-  Builds an servicediscovery service ARN
+  servicediscovery service ARN
 ---
 
 # function: servicediscovery_service
 
-Builds the ARN of an `servicediscovery` `service`:
+Builds the ARN for `servicediscovery` `service`:
 
 ```
 arn:${Partition}:servicediscovery:${Region}:${Account}:service/${ServiceId}

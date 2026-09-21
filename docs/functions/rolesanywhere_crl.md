@@ -3,12 +3,12 @@
 page_title: "rolesanywhere_crl function - arn"
 subcategory: ""
 description: |-
-  Builds an rolesanywhere crl ARN
+  rolesanywhere crl ARN
 ---
 
 # function: rolesanywhere_crl
 
-Builds the ARN of an `rolesanywhere` `crl`:
+Builds the ARN for `rolesanywhere` `crl`:
 
 ```
 arn:${Partition}:rolesanywhere:${Region}:${Account}:crl/${CrlId}

@@ -3,12 +3,12 @@
 page_title: "lambda_function_alias function - arn"
 subcategory: ""
 description: |-
-  Builds an lambda function alias ARN
+  lambda function alias ARN
 ---
 
 # function: lambda_function_alias
 
-Builds the ARN of an `lambda` `function alias`:
+Builds the ARN for `lambda` `function alias`:
 
 ```
 arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}:${Alias}

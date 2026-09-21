@@ -3,12 +3,12 @@
 page_title: "signin_console function - arn"
 subcategory: ""
 description: |-
-  Builds an signin console ARN
+  signin console ARN
 ---
 
 # function: signin_console
 
-Builds the ARN of an `signin` `console`:
+Builds the ARN for `signin` `console`:
 
 ```
 arn:${Partition}:signin:::console/${ConsoleName}

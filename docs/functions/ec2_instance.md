@@ -3,12 +3,12 @@
 page_title: "ec2_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 instance ARN
+  ec2 instance ARN
 ---
 
 # function: ec2_instance
 
-Builds the ARN of an `ec2` `instance`:
+Builds the ARN for `ec2` `instance`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:instance/${InstanceId}

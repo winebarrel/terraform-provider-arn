@@ -3,12 +3,12 @@
 page_title: "ssm_contacts_contact function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm-contacts contact ARN
+  ssm-contacts contact ARN
 ---
 
 # function: ssm_contacts_contact
 
-Builds the ARN of an `ssm-contacts` `contact`:
+Builds the ARN for `ssm-contacts` `contact`:
 
 ```
 arn:${Partition}:ssm-contacts:${Region}:${Account}:contact/${ContactAlias}

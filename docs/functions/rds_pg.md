@@ -3,12 +3,12 @@
 page_title: "rds_pg function - arn"
 subcategory: ""
 description: |-
-  Builds an rds pg ARN
+  rds pg ARN
 ---
 
 # function: rds_pg
 
-Builds the ARN of an `rds` `pg`:
+Builds the ARN for `rds` `pg`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:pg:${ParameterGroupName}

@@ -3,12 +3,12 @@
 page_title: "personalize_filter function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize filter ARN
+  personalize filter ARN
 ---
 
 # function: personalize_filter
 
-Builds the ARN of an `personalize` `filter`:
+Builds the ARN for `personalize` `filter`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:filter/${ResourceId}

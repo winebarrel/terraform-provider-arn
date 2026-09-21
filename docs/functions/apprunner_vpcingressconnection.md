@@ -3,12 +3,12 @@
 page_title: "apprunner_vpcingressconnection function - arn"
 subcategory: ""
 description: |-
-  Builds an apprunner vpcingressconnection ARN
+  apprunner vpcingressconnection ARN
 ---
 
 # function: apprunner_vpcingressconnection
 
-Builds the ARN of an `apprunner` `vpcingressconnection`:
+Builds the ARN for `apprunner` `vpcingressconnection`:
 
 ```
 arn:${Partition}:apprunner:${Region}:${Account}:vpcingressconnection/${VpcIngressConnectionName}/${VpcIngressConnectionId}

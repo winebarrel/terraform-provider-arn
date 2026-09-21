@@ -3,12 +3,12 @@
 page_title: "medialive_reservation function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive reservation ARN
+  medialive reservation ARN
 ---
 
 # function: medialive_reservation
 
-Builds the ARN of an `medialive` `reservation`:
+Builds the ARN for `medialive` `reservation`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:reservation:${ReservationId}

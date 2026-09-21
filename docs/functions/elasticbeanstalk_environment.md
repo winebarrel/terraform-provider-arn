@@ -3,12 +3,12 @@
 page_title: "elasticbeanstalk_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticbeanstalk environment ARN
+  elasticbeanstalk environment ARN
 ---
 
 # function: elasticbeanstalk_environment
 
-Builds the ARN of an `elasticbeanstalk` `environment`:
+Builds the ARN for `elasticbeanstalk` `environment`:
 
 ```
 arn:${Partition}:elasticbeanstalk:${Region}:${Account}:environment/${ApplicationName}/${EnvironmentName}

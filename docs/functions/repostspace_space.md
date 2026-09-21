@@ -3,12 +3,12 @@
 page_title: "repostspace_space function - arn"
 subcategory: ""
 description: |-
-  Builds an repostspace space ARN
+  repostspace space ARN
 ---
 
 # function: repostspace_space
 
-Builds the ARN of an `repostspace` `space`:
+Builds the ARN for `repostspace` `space`:
 
 ```
 arn:${Partition}:repostspace:${Region}:${Account}:space/${ResourceId}

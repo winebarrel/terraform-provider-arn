@@ -3,12 +3,12 @@
 page_title: "rds_shardgrp function - arn"
 subcategory: ""
 description: |-
-  Builds an rds shardgrp ARN
+  rds shardgrp ARN
 ---
 
 # function: rds_shardgrp
 
-Builds the ARN of an `rds` `shardgrp`:
+Builds the ARN for `rds` `shardgrp`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:shard-group:${DbShardGroupResourceId}

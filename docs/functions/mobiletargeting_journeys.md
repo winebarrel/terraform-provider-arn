@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_journeys function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting journeys ARN
+  mobiletargeting journeys ARN
 ---
 
 # function: mobiletargeting_journeys
 
-Builds the ARN of an `mobiletargeting` `journeys`:
+Builds the ARN for `mobiletargeting` `journeys`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys

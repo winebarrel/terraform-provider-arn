@@ -3,12 +3,12 @@
 page_title: "cleanrooms_ml_configuredaudiencemodel function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms-ml configuredaudiencemodel ARN
+  cleanrooms-ml configuredaudiencemodel ARN
 ---
 
 # function: cleanrooms_ml_configuredaudiencemodel
 
-Builds the ARN of an `cleanrooms-ml` `configuredaudiencemodel`:
+Builds the ARN for `cleanrooms-ml` `configuredaudiencemodel`:
 
 ```
 arn:${Partition}:cleanrooms-ml:${Region}:${Account}:configured-audience-model/${ResourceId}

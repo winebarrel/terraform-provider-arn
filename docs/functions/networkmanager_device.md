@@ -3,12 +3,12 @@
 page_title: "networkmanager_device function - arn"
 subcategory: ""
 description: |-
-  Builds an networkmanager device ARN
+  networkmanager device ARN
 ---
 
 # function: networkmanager_device
 
-Builds the ARN of an `networkmanager` `device`:
+Builds the ARN for `networkmanager` `device`:
 
 ```
 arn:${Partition}:networkmanager::${Account}:device/${GlobalNetworkId}/${ResourceId}

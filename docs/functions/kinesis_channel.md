@@ -3,12 +3,12 @@
 page_title: "kinesis_channel function - arn"
 subcategory: ""
 description: |-
-  Builds an kinesis channel ARN
+  kinesis channel ARN
 ---
 
 # function: kinesis_channel
 
-Builds the ARN of an `kinesis` `channel`:
+Builds the ARN for `kinesis` `channel`:
 
 ```
 arn:${Partition}:kinesis:${Region}:${Account}:channel/${ChannelId}

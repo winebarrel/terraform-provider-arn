@@ -3,12 +3,12 @@
 page_title: "cloudfront_vpcorigin function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront vpcorigin ARN
+  cloudfront vpcorigin ARN
 ---
 
 # function: cloudfront_vpcorigin
 
-Builds the ARN of an `cloudfront` `vpcorigin`:
+Builds the ARN for `cloudfront` `vpcorigin`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:vpcorigin/${Id}

@@ -3,12 +3,12 @@
 page_title: "a4b_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an a4b profile ARN
+  a4b profile ARN
 ---
 
 # function: a4b_profile
 
-Builds the ARN of an `a4b` `profile`:
+Builds the ARN for `a4b` `profile`:
 
 ```
 arn:${Partition}:a4b:${Region}:${Account}:profile/${ResourceId}

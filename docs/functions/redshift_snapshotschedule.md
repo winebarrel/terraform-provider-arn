@@ -3,12 +3,12 @@
 page_title: "redshift_snapshotschedule function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift snapshotschedule ARN
+  redshift snapshotschedule ARN
 ---
 
 # function: redshift_snapshotschedule
 
-Builds the ARN of an `redshift` `snapshotschedule`:
+Builds the ARN for `redshift` `snapshotschedule`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:snapshotschedule:${ScheduleIdentifier}

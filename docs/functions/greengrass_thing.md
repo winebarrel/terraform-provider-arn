@@ -3,12 +3,12 @@
 page_title: "greengrass_thing function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass thing ARN
+  greengrass thing ARN
 ---
 
 # function: greengrass_thing
 
-Builds the ARN of an `greengrass` `thing`:
+Builds the ARN for `greengrass` `thing`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:thing/${ThingName}

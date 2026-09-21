@@ -3,12 +3,12 @@
 page_title: "sagemaker_ai_recommendation_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker ai-recommendation-job ARN
+  sagemaker ai-recommendation-job ARN
 ---
 
 # function: sagemaker_ai_recommendation_job
 
-Builds the ARN of an `sagemaker` `ai-recommendation-job`:
+Builds the ARN for `sagemaker` `ai-recommendation-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:ai-recommendation-job/${AIRecommendationJobName}

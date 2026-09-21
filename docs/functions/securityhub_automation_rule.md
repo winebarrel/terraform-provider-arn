@@ -3,12 +3,12 @@
 page_title: "securityhub_automation_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an securityhub automation-rule ARN
+  securityhub automation-rule ARN
 ---
 
 # function: securityhub_automation_rule
 
-Builds the ARN of an `securityhub` `automation-rule`:
+Builds the ARN for `securityhub` `automation-rule`:
 
 ```
 arn:${Partition}:securityhub:${Region}:${Account}:automation-rule/${AutomationRuleId}

@@ -3,12 +3,12 @@
 page_title: "codeconnections_repository_link function - arn"
 subcategory: ""
 description: |-
-  Builds an codeconnections RepositoryLink ARN
+  codeconnections RepositoryLink ARN
 ---
 
 # function: codeconnections_repository_link
 
-Builds the ARN of an `codeconnections` `RepositoryLink`:
+Builds the ARN for `codeconnections` `RepositoryLink`:
 
 ```
 arn:${Partition}:codeconnections:${Region}:${Account}:repository-link/${RepositoryLinkId}

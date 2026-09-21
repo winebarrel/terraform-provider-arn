@@ -3,12 +3,12 @@
 page_title: "codeconnections_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an codeconnections Connection ARN
+  codeconnections Connection ARN
 ---
 
 # function: codeconnections_connection
 
-Builds the ARN of an `codeconnections` `Connection`:
+Builds the ARN for `codeconnections` `Connection`:
 
 ```
 arn:${Partition}:codeconnections:${Region}:${Account}:connection/${ConnectionId}

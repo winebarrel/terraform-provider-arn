@@ -3,12 +3,12 @@
 page_title: "rbin_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an rbin rule ARN
+  rbin rule ARN
 ---
 
 # function: rbin_rule
 
-Builds the ARN of an `rbin` `rule`:
+Builds the ARN for `rbin` `rule`:
 
 ```
 arn:${Partition}:rbin:${Region}:${Account}:rule/${ResourceName}

@@ -3,12 +3,12 @@
 page_title: "batch_quota_share function - arn"
 subcategory: ""
 description: |-
-  Builds an batch quota-share ARN
+  batch quota-share ARN
 ---
 
 # function: batch_quota_share
 
-Builds the ARN of an `batch` `quota-share`:
+Builds the ARN for `batch` `quota-share`:
 
 ```
 arn:${Partition}:batch:${Region}:${Account}:job-queue/${JobQueueName}/quota-share/${QuotaShareName}

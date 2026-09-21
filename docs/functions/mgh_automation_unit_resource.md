@@ -3,12 +3,12 @@
 page_title: "mgh_automation_unit_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgh AutomationUnitResource ARN
+  mgh AutomationUnitResource ARN
 ---
 
 # function: mgh_automation_unit_resource
 
-Builds the ARN of an `mgh` `AutomationUnitResource`:
+Builds the ARN for `mgh` `AutomationUnitResource`:
 
 ```
 arn:${Partition}:mgh:${Region}:${Account}:automation-unit/${AutomationUnitId}

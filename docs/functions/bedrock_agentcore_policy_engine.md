@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_policy_engine function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore policy-engine ARN
+  bedrock-agentcore policy-engine ARN
 ---
 
 # function: bedrock_agentcore_policy_engine
 
-Builds the ARN of an `bedrock-agentcore` `policy-engine`:
+Builds the ARN for `bedrock-agentcore` `policy-engine`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:policy-engine/${PolicyEngineId}

@@ -3,12 +3,12 @@
 page_title: "apigateway_product_rest_endpoint_page function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway ProductRestEndpointPage ARN
+  apigateway ProductRestEndpointPage ARN
 ---
 
 # function: apigateway_product_rest_endpoint_page
 
-Builds the ARN of an `apigateway` `ProductRestEndpointPage`:
+Builds the ARN for `apigateway` `ProductRestEndpointPage`:
 
 ```
 arn:${Partition}:apigateway:${Region}:${Account}:/portalproducts/${PortalProductId}/productrestendpointpages/${ProductRestEndpointPageId}

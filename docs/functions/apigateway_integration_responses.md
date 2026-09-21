@@ -3,12 +3,12 @@
 page_title: "apigateway_integration_responses function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway IntegrationResponses ARN
+  apigateway IntegrationResponses ARN
 ---
 
 # function: apigateway_integration_responses
 
-Builds the ARN of an `apigateway` `IntegrationResponses`:
+Builds the ARN for `apigateway` `IntegrationResponses`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/integrations/${IntegrationId}/integrationresponses

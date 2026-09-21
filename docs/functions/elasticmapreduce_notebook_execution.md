@@ -3,12 +3,12 @@
 page_title: "elasticmapreduce_notebook_execution function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticmapreduce notebook-execution ARN
+  elasticmapreduce notebook-execution ARN
 ---
 
 # function: elasticmapreduce_notebook_execution
 
-Builds the ARN of an `elasticmapreduce` `notebook-execution`:
+Builds the ARN for `elasticmapreduce` `notebook-execution`:
 
 ```
 arn:${Partition}:elasticmapreduce:${Region}:${Account}:notebook-execution/${NotebookExecutionId}

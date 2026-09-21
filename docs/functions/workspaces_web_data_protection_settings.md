@@ -3,12 +3,12 @@
 page_title: "workspaces_web_data_protection_settings function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces-web dataProtectionSettings ARN
+  workspaces-web dataProtectionSettings ARN
 ---
 
 # function: workspaces_web_data_protection_settings
 
-Builds the ARN of an `workspaces-web` `dataProtectionSettings`:
+Builds the ARN for `workspaces-web` `dataProtectionSettings`:
 
 ```
 arn:${Partition}:workspaces-web:${Region}:${Account}:dataProtectionSettings/${DataProtectionSettingsId}

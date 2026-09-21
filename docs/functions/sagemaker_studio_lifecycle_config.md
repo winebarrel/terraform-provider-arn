@@ -3,12 +3,12 @@
 page_title: "sagemaker_studio_lifecycle_config function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker studio-lifecycle-config ARN
+  sagemaker studio-lifecycle-config ARN
 ---
 
 # function: sagemaker_studio_lifecycle_config
 
-Builds the ARN of an `sagemaker` `studio-lifecycle-config`:
+Builds the ARN for `sagemaker` `studio-lifecycle-config`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:studio-lifecycle-config/${StudioLifecycleConfigName}

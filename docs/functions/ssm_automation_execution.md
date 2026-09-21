@@ -3,12 +3,12 @@
 page_title: "ssm_automation_execution function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm automation-execution ARN
+  ssm automation-execution ARN
 ---
 
 # function: ssm_automation_execution
 
-Builds the ARN of an `ssm` `automation-execution`:
+Builds the ARN for `ssm` `automation-execution`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:automation-execution/${AutomationExecutionId}

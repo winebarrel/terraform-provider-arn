@@ -3,12 +3,12 @@
 page_title: "kendra_faq function - arn"
 subcategory: ""
 description: |-
-  Builds an kendra faq ARN
+  kendra faq ARN
 ---
 
 # function: kendra_faq
 
-Builds the ARN of an `kendra` `faq`:
+Builds the ARN for `kendra` `faq`:
 
 ```
 arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/faq/${FaqId}

@@ -3,12 +3,12 @@
 page_title: "timestream_influxdb_db_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an timestream-influxdb db-instance ARN
+  timestream-influxdb db-instance ARN
 ---
 
 # function: timestream_influxdb_db_instance
 
-Builds the ARN of an `timestream-influxdb` `db-instance`:
+Builds the ARN for `timestream-influxdb` `db-instance`:
 
 ```
 arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-instance/${DbInstanceIdentifier}

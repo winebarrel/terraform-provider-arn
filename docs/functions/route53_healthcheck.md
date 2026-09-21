@@ -3,12 +3,12 @@
 page_title: "route53_healthcheck function - arn"
 subcategory: ""
 description: |-
-  Builds an route53 healthcheck ARN
+  route53 healthcheck ARN
 ---
 
 # function: route53_healthcheck
 
-Builds the ARN of an `route53` `healthcheck`:
+Builds the ARN for `route53` `healthcheck`:
 
 ```
 arn:${Partition}:route53:::healthcheck/${Id}

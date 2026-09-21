@@ -3,12 +3,12 @@
 page_title: "route53_recovery_readiness_cell function - arn"
 subcategory: ""
 description: |-
-  Builds an route53-recovery-readiness cell ARN
+  route53-recovery-readiness cell ARN
 ---
 
 # function: route53_recovery_readiness_cell
 
-Builds the ARN of an `route53-recovery-readiness` `cell`:
+Builds the ARN for `route53-recovery-readiness` `cell`:
 
 ```
 arn:${Partition}:route53-recovery-readiness::${Account}:cell/${ResourceId}

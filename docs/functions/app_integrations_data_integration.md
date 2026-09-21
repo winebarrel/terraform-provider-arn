@@ -3,12 +3,12 @@
 page_title: "app_integrations_data_integration function - arn"
 subcategory: ""
 description: |-
-  Builds an app-integrations data-integration ARN
+  app-integrations data-integration ARN
 ---
 
 # function: app_integrations_data_integration
 
-Builds the ARN of an `app-integrations` `data-integration`:
+Builds the ARN for `app-integrations` `data-integration`:
 
 ```
 arn:${Partition}:app-integrations:${Region}:${Account}:data-integration/${DataIntegrationId}

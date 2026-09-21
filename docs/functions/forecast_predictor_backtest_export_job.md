@@ -3,12 +3,12 @@
 page_title: "forecast_predictor_backtest_export_job function - arn"
 subcategory: ""
 description: |-
-  Builds an forecast predictorBacktestExportJob ARN
+  forecast predictorBacktestExportJob ARN
 ---
 
 # function: forecast_predictor_backtest_export_job
 
-Builds the ARN of an `forecast` `predictorBacktestExportJob`:
+Builds the ARN for `forecast` `predictorBacktestExportJob`:
 
 ```
 arn:${Partition}:forecast:${Region}:${Account}:predictor-backtest-export-job/${ResourceId}

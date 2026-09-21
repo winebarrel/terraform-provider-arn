@@ -3,12 +3,12 @@
 page_title: "workmail_organization function - arn"
 subcategory: ""
 description: |-
-  Builds an workmail organization ARN
+  workmail organization ARN
 ---
 
 # function: workmail_organization
 
-Builds the ARN of an `workmail` `organization`:
+Builds the ARN for `workmail` `organization`:
 
 ```
 arn:${Partition}:workmail:${Region}:${Account}:organization/${ResourceId}

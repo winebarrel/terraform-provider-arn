@@ -3,12 +3,12 @@
 page_title: "s3_accessgrantsinstance function - arn"
 subcategory: ""
 description: |-
-  Builds an s3 accessgrantsinstance ARN
+  s3 accessgrantsinstance ARN
 ---
 
 # function: s3_accessgrantsinstance
 
-Builds the ARN of an `s3` `accessgrantsinstance`:
+Builds the ARN for `s3` `accessgrantsinstance`:
 
 ```
 arn:${Partition}:s3:${Region}:${Account}:access-grants/default

@@ -3,12 +3,12 @@
 page_title: "codewhisperer_customization function - arn"
 subcategory: ""
 description: |-
-  Builds an codewhisperer customization ARN
+  codewhisperer customization ARN
 ---
 
 # function: codewhisperer_customization
 
-Builds the ARN of an `codewhisperer` `customization`:
+Builds the ARN for `codewhisperer` `customization`:
 
 ```
 arn:${Partition}:codewhisperer:${Region}:${Account}:customization/${Identifier}

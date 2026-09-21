@@ -3,12 +3,12 @@
 page_title: "aiops_investigation_group function - arn"
 subcategory: ""
 description: |-
-  Builds an aiops investigation-group ARN
+  aiops investigation-group ARN
 ---
 
 # function: aiops_investigation_group
 
-Builds the ARN of an `aiops` `investigation-group`:
+Builds the ARN for `aiops` `investigation-group`:
 
 ```
 arn:${Partition}:aiops:${Region}:${Account}:investigation-group/${InvestigationGroupId}

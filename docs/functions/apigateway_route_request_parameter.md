@@ -3,12 +3,12 @@
 page_title: "apigateway_route_request_parameter function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway RouteRequestParameter ARN
+  apigateway RouteRequestParameter ARN
 ---
 
 # function: apigateway_route_request_parameter
 
-Builds the ARN of an `apigateway` `RouteRequestParameter`:
+Builds the ARN for `apigateway` `RouteRequestParameter`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/routes/${RouteId}/requestparameters/${RequestParameterKey}

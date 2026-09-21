@@ -3,12 +3,12 @@
 page_title: "transcribe_vocabulary function - arn"
 subcategory: ""
 description: |-
-  Builds an transcribe vocabulary ARN
+  transcribe vocabulary ARN
 ---
 
 # function: transcribe_vocabulary
 
-Builds the ARN of an `transcribe` `vocabulary`:
+Builds the ARN for `transcribe` `vocabulary`:
 
 ```
 arn:${Partition}:transcribe:${Region}:${Account}:vocabulary/${VocabularyName}

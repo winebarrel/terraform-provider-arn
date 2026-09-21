@@ -3,12 +3,12 @@
 page_title: "network_firewall_vpc_endpoint_association function - arn"
 subcategory: ""
 description: |-
-  Builds an network-firewall VpcEndpointAssociation ARN
+  network-firewall VpcEndpointAssociation ARN
 ---
 
 # function: network_firewall_vpc_endpoint_association
 
-Builds the ARN of an `network-firewall` `VpcEndpointAssociation`:
+Builds the ARN for `network-firewall` `VpcEndpointAssociation`:
 
 ```
 arn:${Partition}:network-firewall:${Region}:${Account}:vpc-endpoint-association/${Name}

@@ -3,12 +3,12 @@
 page_title: "lookoutmetrics_alert function - arn"
 subcategory: ""
 description: |-
-  Builds an lookoutmetrics Alert ARN
+  lookoutmetrics Alert ARN
 ---
 
 # function: lookoutmetrics_alert
 
-Builds the ARN of an `lookoutmetrics` `Alert`:
+Builds the ARN for `lookoutmetrics` `Alert`:
 
 ```
 arn:${Partition}:lookoutmetrics:${Region}:${Account}:Alert:${AlertName}

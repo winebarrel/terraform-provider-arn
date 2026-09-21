@@ -3,12 +3,12 @@
 page_title: "apigateway_base_path_mappings function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway BasePathMappings ARN
+  apigateway BasePathMappings ARN
 ---
 
 # function: apigateway_base_path_mappings
 
-Builds the ARN of an `apigateway` `BasePathMappings`:
+Builds the ARN for `apigateway` `BasePathMappings`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}/basepathmappings

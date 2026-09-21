@@ -3,12 +3,12 @@
 page_title: "iotmanagedintegrations_ota_task function - arn"
 subcategory: ""
 description: |-
-  Builds an iotmanagedintegrations ota-task ARN
+  iotmanagedintegrations ota-task ARN
 ---
 
 # function: iotmanagedintegrations_ota_task
 
-Builds the ARN of an `iotmanagedintegrations` `ota-task`:
+Builds the ARN for `iotmanagedintegrations` `ota-task`:
 
 ```
 arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:ota-task/${Identifier}

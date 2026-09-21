@@ -3,12 +3,12 @@
 page_title: "scn_data_integration_flow function - arn"
 subcategory: ""
 description: |-
-  Builds an scn data-integration-flow ARN
+  scn data-integration-flow ARN
 ---
 
 # function: scn_data_integration_flow
 
-Builds the ARN of an `scn` `data-integration-flow`:
+Builds the ARN for `scn` `data-integration-flow`:
 
 ```
 arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/data-integration-flows/${FlowName}

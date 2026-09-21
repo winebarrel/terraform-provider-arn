@@ -3,12 +3,12 @@
 page_title: "qldb_table function - arn"
 subcategory: ""
 description: |-
-  Builds an qldb table ARN
+  qldb table ARN
 ---
 
 # function: qldb_table
 
-Builds the ARN of an `qldb` `table`:
+Builds the ARN for `qldb` `table`:
 
 ```
 arn:${Partition}:qldb:${Region}:${Account}:ledger/${LedgerName}/table/${TableId}

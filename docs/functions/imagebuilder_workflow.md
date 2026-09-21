@@ -3,12 +3,12 @@
 page_title: "imagebuilder_workflow function - arn"
 subcategory: ""
 description: |-
-  Builds an imagebuilder workflow ARN
+  imagebuilder workflow ARN
 ---
 
 # function: imagebuilder_workflow
 
-Builds the ARN of an `imagebuilder` `workflow`:
+Builds the ARN for `imagebuilder` `workflow`:
 
 ```
 arn:${Partition}:imagebuilder:${Region}:${Account}:workflow/${WorkflowType}/${WorkflowName}/${WorkflowVersion}/${WorkflowBuildVersion}

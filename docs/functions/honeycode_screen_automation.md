@@ -3,12 +3,12 @@
 page_title: "honeycode_screen_automation function - arn"
 subcategory: ""
 description: |-
-  Builds an honeycode screen-automation ARN
+  honeycode screen-automation ARN
 ---
 
 # function: honeycode_screen_automation
 
-Builds the ARN of an `honeycode` `screen-automation`:
+Builds the ARN for `honeycode` `screen-automation`:
 
 ```
 arn:${Partition}:honeycode:${Region}:${Account}:screen-automation:workbook/${WorkbookId}/app/${AppId}/screen/${ScreenId}/automation/${AutomationId}

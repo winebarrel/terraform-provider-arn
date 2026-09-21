@@ -3,12 +3,12 @@
 page_title: "forecast_dataset_import_job function - arn"
 subcategory: ""
 description: |-
-  Builds an forecast datasetImportJob ARN
+  forecast datasetImportJob ARN
 ---
 
 # function: forecast_dataset_import_job
 
-Builds the ARN of an `forecast` `datasetImportJob`:
+Builds the ARN for `forecast` `datasetImportJob`:
 
 ```
 arn:${Partition}:forecast:${Region}:${Account}:dataset-import-job/${ResourceId}

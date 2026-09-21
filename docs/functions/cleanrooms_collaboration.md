@@ -3,12 +3,12 @@
 page_title: "cleanrooms_collaboration function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms collaboration ARN
+  cleanrooms collaboration ARN
 ---
 
 # function: cleanrooms_collaboration
 
-Builds the ARN of an `cleanrooms` `collaboration`:
+Builds the ARN for `cleanrooms` `collaboration`:
 
 ```
 arn:${Partition}:cleanrooms:${Region}:${Account}:collaboration/${CollaborationId}

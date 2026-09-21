@@ -3,12 +3,12 @@
 page_title: "appconfig_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an appconfig environment ARN
+  appconfig environment ARN
 ---
 
 # function: appconfig_environment
 
-Builds the ARN of an `appconfig` `environment`:
+Builds the ARN for `appconfig` `environment`:
 
 ```
 arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}/environment/${EnvironmentId}

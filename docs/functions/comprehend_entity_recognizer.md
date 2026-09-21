@@ -3,12 +3,12 @@
 page_title: "comprehend_entity_recognizer function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend entity-recognizer ARN
+  comprehend entity-recognizer ARN
 ---
 
 # function: comprehend_entity_recognizer
 
-Builds the ARN of an `comprehend` `entity-recognizer`:
+Builds the ARN for `comprehend` `entity-recognizer`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:entity-recognizer/${EntityRecognizerName}

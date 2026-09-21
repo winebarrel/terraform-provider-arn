@@ -3,12 +3,12 @@
 page_title: "ec2_capacity_reservation function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 capacity-reservation ARN
+  ec2 capacity-reservation ARN
 ---
 
 # function: ec2_capacity_reservation
 
-Builds the ARN of an `ec2` `capacity-reservation`:
+Builds the ARN for `ec2` `capacity-reservation`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:capacity-reservation/${CapacityReservationId}

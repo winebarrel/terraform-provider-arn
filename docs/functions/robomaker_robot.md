@@ -3,12 +3,12 @@
 page_title: "robomaker_robot function - arn"
 subcategory: ""
 description: |-
-  Builds an robomaker robot ARN
+  robomaker robot ARN
 ---
 
 # function: robomaker_robot
 
-Builds the ARN of an `robomaker` `robot`:
+Builds the ARN for `robomaker` `robot`:
 
 ```
 arn:${Partition}:robomaker:${Region}:${Account}:robot/${RobotName}/${CreatedOnEpoch}

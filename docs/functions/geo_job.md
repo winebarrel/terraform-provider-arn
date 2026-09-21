@@ -3,12 +3,12 @@
 page_title: "geo_job function - arn"
 subcategory: ""
 description: |-
-  Builds an geo job ARN
+  geo job ARN
 ---
 
 # function: geo_job
 
-Builds the ARN of an `geo` `job`:
+Builds the ARN for `geo` `job`:
 
 ```
 arn:${Partition}:geo:${Region}:${Account}:job/${JobId}

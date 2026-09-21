@@ -3,12 +3,12 @@
 page_title: "iq_payment_schedule function - arn"
 subcategory: ""
 description: |-
-  Builds an iq paymentSchedule ARN
+  iq paymentSchedule ARN
 ---
 
 # function: iq_payment_schedule
 
-Builds the ARN of an `iq` `paymentSchedule`:
+Builds the ARN for `iq` `paymentSchedule`:
 
 ```
 arn:${Partition}:iq:${Region}::paymentSchedule/${ConversationId}/${ProposalId}/${VersionId}

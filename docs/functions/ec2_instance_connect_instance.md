@@ -3,12 +3,12 @@
 page_title: "ec2_instance_connect_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2-instance-connect instance ARN
+  ec2-instance-connect instance ARN
 ---
 
 # function: ec2_instance_connect_instance
 
-Builds the ARN of an `ec2-instance-connect` `instance`:
+Builds the ARN for `ec2-instance-connect` `instance`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:instance/${InstanceId}

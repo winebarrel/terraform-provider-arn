@@ -3,12 +3,12 @@
 page_title: "devicefarm_run function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm run ARN
+  devicefarm run ARN
 ---
 
 # function: devicefarm_run
 
-Builds the ARN of an `devicefarm` `run`:
+Builds the ARN for `devicefarm` `run`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:run:${ResourceId}

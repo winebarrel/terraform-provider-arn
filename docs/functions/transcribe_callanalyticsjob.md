@@ -3,12 +3,12 @@
 page_title: "transcribe_callanalyticsjob function - arn"
 subcategory: ""
 description: |-
-  Builds an transcribe callanalyticsjob ARN
+  transcribe callanalyticsjob ARN
 ---
 
 # function: transcribe_callanalyticsjob
 
-Builds the ARN of an `transcribe` `callanalyticsjob`:
+Builds the ARN for `transcribe` `callanalyticsjob`:
 
 ```
 arn:${Partition}:transcribe:${Region}:${Account}:analytics/${JobName}

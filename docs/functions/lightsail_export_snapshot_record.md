@@ -3,12 +3,12 @@
 page_title: "lightsail_export_snapshot_record function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail ExportSnapshotRecord ARN
+  lightsail ExportSnapshotRecord ARN
 ---
 
 # function: lightsail_export_snapshot_record
 
-Builds the ARN of an `lightsail` `ExportSnapshotRecord`:
+Builds the ARN for `lightsail` `ExportSnapshotRecord`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:ExportSnapshotRecord/${Id}

@@ -3,12 +3,12 @@
 page_title: "vpc_lattice_resource_endpoint_association function - arn"
 subcategory: ""
 description: |-
-  Builds an vpc-lattice ResourceEndpointAssociation ARN
+  vpc-lattice ResourceEndpointAssociation ARN
 ---
 
 # function: vpc_lattice_resource_endpoint_association
 
-Builds the ARN of an `vpc-lattice` `ResourceEndpointAssociation`:
+Builds the ARN for `vpc-lattice` `ResourceEndpointAssociation`:
 
 ```
 arn:${Partition}:vpc-lattice:${Region}:${Account}:resourceendpointassociation/${ResourceEndpointAssociationId}

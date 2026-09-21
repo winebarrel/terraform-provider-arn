@@ -3,12 +3,12 @@
 page_title: "comprehend_dominant_language_detection_job function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend dominant-language-detection-job ARN
+  comprehend dominant-language-detection-job ARN
 ---
 
 # function: comprehend_dominant_language_detection_job
 
-Builds the ARN of an `comprehend` `dominant-language-detection-job`:
+Builds the ARN for `comprehend` `dominant-language-detection-job`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:dominant-language-detection-job/${JobId}

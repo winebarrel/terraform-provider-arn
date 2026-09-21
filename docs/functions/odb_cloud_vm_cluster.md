@@ -3,12 +3,12 @@
 page_title: "odb_cloud_vm_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an odb cloud-vm-cluster ARN
+  odb cloud-vm-cluster ARN
 ---
 
 # function: odb_cloud_vm_cluster
 
-Builds the ARN of an `odb` `cloud-vm-cluster`:
+Builds the ARN for `odb` `cloud-vm-cluster`:
 
 ```
 arn:${Partition}:odb:${Region}:${Account}:cloud-vm-cluster/${CloudVmClusterId}

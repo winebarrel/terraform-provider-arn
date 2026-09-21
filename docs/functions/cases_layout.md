@@ -3,12 +3,12 @@
 page_title: "cases_layout function - arn"
 subcategory: ""
 description: |-
-  Builds an cases Layout ARN
+  cases Layout ARN
 ---
 
 # function: cases_layout
 
-Builds the ARN of an `cases` `Layout`:
+Builds the ARN for `cases` `Layout`:
 
 ```
 arn:${Partition}:cases:${Region}:${Account}:domain/${DomainId}/layout/${LayoutId}

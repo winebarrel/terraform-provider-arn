@@ -3,12 +3,12 @@
 page_title: "lightsail_static_ip function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail StaticIp ARN
+  lightsail StaticIp ARN
 ---
 
 # function: lightsail_static_ip
 
-Builds the ARN of an `lightsail` `StaticIp`:
+Builds the ARN for `lightsail` `StaticIp`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:StaticIp/${Id}

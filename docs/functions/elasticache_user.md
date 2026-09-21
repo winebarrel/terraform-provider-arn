@@ -3,12 +3,12 @@
 page_title: "elasticache_user function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticache user ARN
+  elasticache user ARN
 ---
 
 # function: elasticache_user
 
-Builds the ARN of an `elasticache` `user`:
+Builds the ARN for `elasticache` `user`:
 
 ```
 arn:${Partition}:elasticache:${Region}:${Account}:user:${UserId}

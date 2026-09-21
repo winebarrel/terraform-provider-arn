@@ -3,12 +3,12 @@
 page_title: "connect_queue function - arn"
 subcategory: ""
 description: |-
-  Builds an connect queue ARN
+  connect queue ARN
 ---
 
 # function: connect_queue
 
-Builds the ARN of an `connect` `queue`:
+Builds the ARN for `connect` `queue`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/queue/${QueueId}

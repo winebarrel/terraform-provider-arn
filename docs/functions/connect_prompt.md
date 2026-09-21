@@ -3,12 +3,12 @@
 page_title: "connect_prompt function - arn"
 subcategory: ""
 description: |-
-  Builds an connect prompt ARN
+  connect prompt ARN
 ---
 
 # function: connect_prompt
 
-Builds the ARN of an `connect` `prompt`:
+Builds the ARN for `connect` `prompt`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/prompt/${PromptId}

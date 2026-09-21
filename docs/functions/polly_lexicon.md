@@ -3,12 +3,12 @@
 page_title: "polly_lexicon function - arn"
 subcategory: ""
 description: |-
-  Builds an polly lexicon ARN
+  polly lexicon ARN
 ---
 
 # function: polly_lexicon
 
-Builds the ARN of an `polly` `lexicon`:
+Builds the ARN for `polly` `lexicon`:
 
 ```
 arn:${Partition}:polly:${Region}:${Account}:lexicon/${LexiconName}

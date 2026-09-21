@@ -3,12 +3,12 @@
 page_title: "kms_alias function - arn"
 subcategory: ""
 description: |-
-  Builds an kms alias ARN
+  kms alias ARN
 ---
 
 # function: kms_alias
 
-Builds the ARN of an `kms` `alias`:
+Builds the ARN for `kms` `alias`:
 
 ```
 arn:${Partition}:kms:${Region}:${Account}:alias/${Alias}

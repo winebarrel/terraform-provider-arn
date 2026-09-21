@@ -3,12 +3,12 @@
 page_title: "ce_billingview function - arn"
 subcategory: ""
 description: |-
-  Builds an ce billingview ARN
+  ce billingview ARN
 ---
 
 # function: ce_billingview
 
-Builds the ARN of an `ce` `billingview`:
+Builds the ARN for `ce` `billingview`:
 
 ```
 arn:${Partition}:billing::${Account}:billingview/${ResourceId}

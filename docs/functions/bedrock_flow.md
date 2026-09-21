@@ -3,12 +3,12 @@
 page_title: "bedrock_flow function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock flow ARN
+  bedrock flow ARN
 ---
 
 # function: bedrock_flow
 
-Builds the ARN of an `bedrock` `flow`:
+Builds the ARN for `bedrock` `flow`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:flow/${FlowId}

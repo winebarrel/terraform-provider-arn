@@ -3,12 +3,12 @@
 page_title: "resiliencehub_recommendation_template function - arn"
 subcategory: ""
 description: |-
-  Builds an resiliencehub recommendation-template ARN
+  resiliencehub recommendation-template ARN
 ---
 
 # function: resiliencehub_recommendation_template
 
-Builds the ARN of an `resiliencehub` `recommendation-template`:
+Builds the ARN for `resiliencehub` `recommendation-template`:
 
 ```
 arn:${Partition}:resiliencehub:${Region}:${Account}:recommendation-template/${RecommendationTemplateId}

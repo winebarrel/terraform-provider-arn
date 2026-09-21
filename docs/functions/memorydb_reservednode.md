@@ -3,12 +3,12 @@
 page_title: "memorydb_reservednode function - arn"
 subcategory: ""
 description: |-
-  Builds an memorydb reservednode ARN
+  memorydb reservednode ARN
 ---
 
 # function: memorydb_reservednode
 
-Builds the ARN of an `memorydb` `reservednode`:
+Builds the ARN for `memorydb` `reservednode`:
 
 ```
 arn:${Partition}:memorydb:${Region}:${Account}:reservednode/${ReservationID}

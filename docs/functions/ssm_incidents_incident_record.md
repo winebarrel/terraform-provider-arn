@@ -3,12 +3,12 @@
 page_title: "ssm_incidents_incident_record function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm-incidents incident-record ARN
+  ssm-incidents incident-record ARN
 ---
 
 # function: ssm_incidents_incident_record
 
-Builds the ARN of an `ssm-incidents` `incident-record`:
+Builds the ARN for `ssm-incidents` `incident-record`:
 
 ```
 arn:${Partition}:ssm-incidents::${Account}:incident-record/${ResponsePlan}/${IncidentRecord}

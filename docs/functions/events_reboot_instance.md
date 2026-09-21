@@ -3,12 +3,12 @@
 page_title: "events_reboot_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an events reboot-instance ARN
+  events reboot-instance ARN
 ---
 
 # function: events_reboot_instance
 
-Builds the ARN of an `events` `reboot-instance`:
+Builds the ARN for `events` `reboot-instance`:
 
 ```
 arn:${Partition}:events:${Region}:${Account}:target/reboot-instance

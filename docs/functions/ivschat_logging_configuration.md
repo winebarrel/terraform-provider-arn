@@ -3,12 +3,12 @@
 page_title: "ivschat_logging_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an ivschat Logging-Configuration ARN
+  ivschat Logging-Configuration ARN
 ---
 
 # function: ivschat_logging_configuration
 
-Builds the ARN of an `ivschat` `Logging-Configuration`:
+Builds the ARN for `ivschat` `Logging-Configuration`:
 
 ```
 arn:${Partition}:ivschat:${Region}:${Account}:logging-configuration/${ResourceId}

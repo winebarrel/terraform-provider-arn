@@ -3,12 +3,12 @@
 page_title: "cloudwatch_alarm function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudwatch alarm ARN
+  cloudwatch alarm ARN
 ---
 
 # function: cloudwatch_alarm
 
-Builds the ARN of an `cloudwatch` `alarm`:
+Builds the ARN for `cloudwatch` `alarm`:
 
 ```
 arn:${Partition}:cloudwatch:${Region}:${Account}:alarm:${AlarmName}

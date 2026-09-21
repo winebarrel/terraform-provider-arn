@@ -3,12 +3,12 @@
 page_title: "neptune_graph_import_task function - arn"
 subcategory: ""
 description: |-
-  Builds an neptune-graph import-task ARN
+  neptune-graph import-task ARN
 ---
 
 # function: neptune_graph_import_task
 
-Builds the ARN of an `neptune-graph` `import-task`:
+Builds the ARN for `neptune-graph` `import-task`:
 
 ```
 arn:${Partition}:neptune-graph:${Region}:${Account}:import-task/${ResourceId}

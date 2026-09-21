@@ -3,12 +3,12 @@
 page_title: "bedrock_foundation_model function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock foundation-model ARN
+  bedrock foundation-model ARN
 ---
 
 # function: bedrock_foundation_model
 
-Builds the ARN of an `bedrock` `foundation-model`:
+Builds the ARN for `bedrock` `foundation-model`:
 
 ```
 arn:${Partition}:bedrock:${Region}::foundation-model/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "lightsail_bucket function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail Bucket ARN
+  lightsail Bucket ARN
 ---
 
 # function: lightsail_bucket
 
-Builds the ARN of an `lightsail` `Bucket`:
+Builds the ARN for `lightsail` `Bucket`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:Bucket/${Id}

@@ -3,12 +3,12 @@
 page_title: "securityagent_integration function - arn"
 subcategory: ""
 description: |-
-  Builds an securityagent Integration ARN
+  securityagent Integration ARN
 ---
 
 # function: securityagent_integration
 
-Builds the ARN of an `securityagent` `Integration`:
+Builds the ARN for `securityagent` `Integration`:
 
 ```
 arn:${Partition}:securityagent:${Region}:${Account}:integration/${IntegrationId}

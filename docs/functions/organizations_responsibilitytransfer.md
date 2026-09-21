@@ -3,12 +3,12 @@
 page_title: "organizations_responsibilitytransfer function - arn"
 subcategory: ""
 description: |-
-  Builds an organizations responsibilitytransfer ARN
+  organizations responsibilitytransfer ARN
 ---
 
 # function: organizations_responsibilitytransfer
 
-Builds the ARN of an `organizations` `responsibilitytransfer`:
+Builds the ARN for `organizations` `responsibilitytransfer`:
 
 ```
 arn:${Partition}:organizations::${Account}:transfer/o-${OrganizationId}/${TransferType}/${TransferDirection}/rt-${ResponsibilityTransferId}

@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_channels function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting channels ARN
+  mobiletargeting channels ARN
 ---
 
 # function: mobiletargeting_channels
 
-Builds the ARN of an `mobiletargeting` `channels`:
+Builds the ARN for `mobiletargeting` `channels`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/channels

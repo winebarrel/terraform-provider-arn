@@ -3,12 +3,12 @@
 page_title: "vpc_lattice_listener function - arn"
 subcategory: ""
 description: |-
-  Builds an vpc-lattice Listener ARN
+  vpc-lattice Listener ARN
 ---
 
 # function: vpc_lattice_listener
 
-Builds the ARN of an `vpc-lattice` `Listener`:
+Builds the ARN for `vpc-lattice` `Listener`:
 
 ```
 arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}/listener/${ListenerId}

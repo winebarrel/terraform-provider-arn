@@ -3,12 +3,12 @@
 page_title: "datasync_storagesystem function - arn"
 subcategory: ""
 description: |-
-  Builds an datasync storagesystem ARN
+  datasync storagesystem ARN
 ---
 
 # function: datasync_storagesystem
 
-Builds the ARN of an `datasync` `storagesystem`:
+Builds the ARN for `datasync` `storagesystem`:
 
 ```
 arn:${Partition}:datasync:${Region}:${AccountId}:system/${StorageSystemId}

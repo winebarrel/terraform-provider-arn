@@ -3,12 +3,12 @@
 page_title: "memorydb_multiregionparametergroup function - arn"
 subcategory: ""
 description: |-
-  Builds an memorydb multiregionparametergroup ARN
+  memorydb multiregionparametergroup ARN
 ---
 
 # function: memorydb_multiregionparametergroup
 
-Builds the ARN of an `memorydb` `multiregionparametergroup`:
+Builds the ARN for `memorydb` `multiregionparametergroup`:
 
 ```
 arn:${Partition}:memorydb::${Account}:multiregionparametergroup/${MultiRegionParameterGroupName}

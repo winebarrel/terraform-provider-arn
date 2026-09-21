@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_otp function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting otp ARN
+  mobiletargeting otp ARN
 ---
 
 # function: mobiletargeting_otp
 
-Builds the ARN of an `mobiletargeting` `otp`:
+Builds the ARN for `mobiletargeting` `otp`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/otp

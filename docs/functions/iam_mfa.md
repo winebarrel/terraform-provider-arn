@@ -3,12 +3,12 @@
 page_title: "iam_mfa function - arn"
 subcategory: ""
 description: |-
-  Builds an iam mfa ARN
+  iam mfa ARN
 ---
 
 # function: iam_mfa
 
-Builds the ARN of an `iam` `mfa`:
+Builds the ARN for `iam` `mfa`:
 
 ```
 arn:${Partition}:iam::${Account}:mfa/${MfaTokenIdWithPath}

@@ -3,12 +3,12 @@
 page_title: "connect_task_template function - arn"
 subcategory: ""
 description: |-
-  Builds an connect task-template ARN
+  connect task-template ARN
 ---
 
 # function: connect_task_template
 
-Builds the ARN of an `connect` `task-template`:
+Builds the ARN for `connect` `task-template`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/task-template/${TaskTemplateId}

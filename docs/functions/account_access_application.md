@@ -3,12 +3,12 @@
 page_title: "account_access_application function - arn"
 subcategory: ""
 description: |-
-  Builds an account-access application ARN
+  account-access application ARN
 ---
 
 # function: account_access_application
 
-Builds the ARN of an `account-access` `application`:
+Builds the ARN for `account-access` `application`:
 
 ```
 arn:${Partition}:account-access:${Region}:${Account}:application/${ResourceId}

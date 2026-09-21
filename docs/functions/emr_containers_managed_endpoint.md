@@ -3,12 +3,12 @@
 page_title: "emr_containers_managed_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an emr-containers managedEndpoint ARN
+  emr-containers managedEndpoint ARN
 ---
 
 # function: emr_containers_managed_endpoint
 
-Builds the ARN of an `emr-containers` `managedEndpoint`:
+Builds the ARN for `emr-containers` `managedEndpoint`:
 
 ```
 arn:${Partition}:emr-containers:${Region}:${Account}:/virtualclusters/${VirtualClusterId}/endpoints/${EndpointId}

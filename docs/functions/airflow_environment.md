@@ -3,12 +3,12 @@
 page_title: "airflow_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an airflow environment ARN
+  airflow environment ARN
 ---
 
 # function: airflow_environment
 
-Builds the ARN of an `airflow` `environment`:
+Builds the ARN for `airflow` `environment`:
 
 ```
 arn:${Partition}:airflow:${Region}:${Account}:environment/${EnvironmentName}

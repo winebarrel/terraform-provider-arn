@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore gateway ARN
+  bedrock-agentcore gateway ARN
 ---
 
 # function: bedrock_agentcore_gateway
 
-Builds the ARN of an `bedrock-agentcore` `gateway`:
+Builds the ARN for `bedrock-agentcore` `gateway`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:gateway/${GatewayId}

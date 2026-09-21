@@ -3,12 +3,12 @@
 page_title: "sqlworkbench_query function - arn"
 subcategory: ""
 description: |-
-  Builds an sqlworkbench query ARN
+  sqlworkbench query ARN
 ---
 
 # function: sqlworkbench_query
 
-Builds the ARN of an `sqlworkbench` `query`:
+Builds the ARN for `sqlworkbench` `query`:
 
 ```
 arn:${Partition}:sqlworkbench:${Region}:${Account}:query/${ResourceId}

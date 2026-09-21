@@ -3,12 +3,12 @@
 page_title: "nimble_launch_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an nimble launch-profile ARN
+  nimble launch-profile ARN
 ---
 
 # function: nimble_launch_profile
 
-Builds the ARN of an `nimble` `launch-profile`:
+Builds the ARN for `nimble` `launch-profile`:
 
 ```
 arn:${Partition}:nimble:${Region}:${Account}:launch-profile/${LaunchProfileId}

@@ -3,12 +3,12 @@
 page_title: "iotfleetwise_campaign function - arn"
 subcategory: ""
 description: |-
-  Builds an iotfleetwise campaign ARN
+  iotfleetwise campaign ARN
 ---
 
 # function: iotfleetwise_campaign
 
-Builds the ARN of an `iotfleetwise` `campaign`:
+Builds the ARN for `iotfleetwise` `campaign`:
 
 ```
 arn:${Partition}:iotfleetwise:${Region}:${Account}:campaign/${CampaignName}

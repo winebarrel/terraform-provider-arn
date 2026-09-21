@@ -3,12 +3,12 @@
 page_title: "events_create_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an events create-snapshot ARN
+  events create-snapshot ARN
 ---
 
 # function: events_create_snapshot
 
-Builds the ARN of an `events` `create-snapshot`:
+Builds the ARN for `events` `create-snapshot`:
 
 ```
 arn:${Partition}:events:${Region}:${Account}:target/create-snapshot

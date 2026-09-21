@@ -3,12 +3,12 @@
 page_title: "mediaconnect_reservation function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconnect Reservation ARN
+  mediaconnect Reservation ARN
 ---
 
 # function: mediaconnect_reservation
 
-Builds the ARN of an `mediaconnect` `Reservation`:
+Builds the ARN for `mediaconnect` `Reservation`:
 
 ```
 arn:${Partition}:mediaconnect:${Region}:${Account}:reservation:${ReservationId}:${ReservationName}

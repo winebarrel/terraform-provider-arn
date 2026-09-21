@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting endpoint ARN
+  mobiletargeting endpoint ARN
 ---
 
 # function: mobiletargeting_endpoint
 
-Builds the ARN of an `mobiletargeting` `endpoint`:
+Builds the ARN for `mobiletargeting` `endpoint`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/endpoints/${EndpointId}

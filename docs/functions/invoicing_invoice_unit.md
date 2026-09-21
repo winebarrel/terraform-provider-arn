@@ -3,12 +3,12 @@
 page_title: "invoicing_invoice_unit function - arn"
 subcategory: ""
 description: |-
-  Builds an invoicing invoice-unit ARN
+  invoicing invoice-unit ARN
 ---
 
 # function: invoicing_invoice_unit
 
-Builds the ARN of an `invoicing` `invoice-unit`:
+Builds the ARN for `invoicing` `invoice-unit`:
 
 ```
 arn:${Partition}:invoicing::${Account}:invoice-unit/${Identifier}

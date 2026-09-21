@@ -3,12 +3,12 @@
 page_title: "private_networks_network_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an private-networks network-resource ARN
+  private-networks network-resource ARN
 ---
 
 # function: private_networks_network_resource
 
-Builds the ARN of an `private-networks` `network-resource`:
+Builds the ARN for `private-networks` `network-resource`:
 
 ```
 arn:${Partition}:private-networks:${Region}:${Account}:network-resource/${NetworkName}/${ResourceId}

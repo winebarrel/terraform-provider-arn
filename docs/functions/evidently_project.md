@@ -3,12 +3,12 @@
 page_title: "evidently_project function - arn"
 subcategory: ""
 description: |-
-  Builds an evidently Project ARN
+  evidently Project ARN
 ---
 
 # function: evidently_project
 
-Builds the ARN of an `evidently` `Project`:
+Builds the ARN for `evidently` `Project`:
 
 ```
 arn:${Partition}:evidently:${Region}:${Account}:project/${ProjectName}

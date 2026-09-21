@@ -3,12 +3,12 @@
 page_title: "kendra_query_suggestions_block_list function - arn"
 subcategory: ""
 description: |-
-  Builds an kendra query-suggestions-block-list ARN
+  kendra query-suggestions-block-list ARN
 ---
 
 # function: kendra_query_suggestions_block_list
 
-Builds the ARN of an `kendra` `query-suggestions-block-list`:
+Builds the ARN for `kendra` `query-suggestions-block-list`:
 
 ```
 arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/query-suggestions-block-list/${QuerySuggestionsBlockListId}

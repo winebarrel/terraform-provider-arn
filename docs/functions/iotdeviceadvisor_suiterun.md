@@ -3,12 +3,12 @@
 page_title: "iotdeviceadvisor_suiterun function - arn"
 subcategory: ""
 description: |-
-  Builds an iotdeviceadvisor Suiterun ARN
+  iotdeviceadvisor Suiterun ARN
 ---
 
 # function: iotdeviceadvisor_suiterun
 
-Builds the ARN of an `iotdeviceadvisor` `Suiterun`:
+Builds the ARN for `iotdeviceadvisor` `Suiterun`:
 
 ```
 arn:${Partition}:iotdeviceadvisor:${Region}:${Account}:suiterun/${SuiteDefinitionId}/${SuiteRunId}

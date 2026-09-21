@@ -3,12 +3,12 @@
 page_title: "ecs_service function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs service ARN
+  ecs service ARN
 ---
 
 # function: ecs_service
 
-Builds the ARN of an `ecs` `service`:
+Builds the ARN for `ecs` `service`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:service/${ClusterName}/${ServiceName}

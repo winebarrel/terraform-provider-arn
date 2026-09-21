@@ -3,12 +3,12 @@
 page_title: "iottwinmaker_metadata_transfer_job function - arn"
 subcategory: ""
 description: |-
-  Builds an iottwinmaker metadataTransferJob ARN
+  iottwinmaker metadataTransferJob ARN
 ---
 
 # function: iottwinmaker_metadata_transfer_job
 
-Builds the ARN of an `iottwinmaker` `metadataTransferJob`:
+Builds the ARN for `iottwinmaker` `metadataTransferJob`:
 
 ```
 arn:${Partition}:iottwinmaker:${Region}:${Account}:metadata-transfer-job/${MetadataTransferJobId}

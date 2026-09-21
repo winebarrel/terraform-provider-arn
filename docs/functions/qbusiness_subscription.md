@@ -3,12 +3,12 @@
 page_title: "qbusiness_subscription function - arn"
 subcategory: ""
 description: |-
-  Builds an qbusiness subscription ARN
+  qbusiness subscription ARN
 ---
 
 # function: qbusiness_subscription
 
-Builds the ARN of an `qbusiness` `subscription`:
+Builds the ARN for `qbusiness` `subscription`:
 
 ```
 arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/subscription/${SubscriptionId}

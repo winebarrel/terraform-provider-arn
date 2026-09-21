@@ -3,12 +3,12 @@
 page_title: "logs_destination function - arn"
 subcategory: ""
 description: |-
-  Builds an logs destination ARN
+  logs destination ARN
 ---
 
 # function: logs_destination
 
-Builds the ARN of an `logs` `destination`:
+Builds the ARN for `logs` `destination`:
 
 ```
 arn:${Partition}:logs:${Region}:${Account}:destination:${DestinationName}

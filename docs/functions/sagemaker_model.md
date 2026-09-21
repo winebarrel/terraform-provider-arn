@@ -3,12 +3,12 @@
 page_title: "sagemaker_model function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker model ARN
+  sagemaker model ARN
 ---
 
 # function: sagemaker_model
 
-Builds the ARN of an `sagemaker` `model`:
+Builds the ARN for `sagemaker` `model`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:model/${ModelName}

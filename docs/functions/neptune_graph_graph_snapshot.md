@@ -3,12 +3,12 @@
 page_title: "neptune_graph_graph_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an neptune-graph graph-snapshot ARN
+  neptune-graph graph-snapshot ARN
 ---
 
 # function: neptune_graph_graph_snapshot
 
-Builds the ARN of an `neptune-graph` `graph-snapshot`:
+Builds the ARN for `neptune-graph` `graph-snapshot`:
 
 ```
 arn:${Partition}:neptune-graph:${Region}:${Account}:graph-snapshot/${ResourceId}

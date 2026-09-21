@@ -3,12 +3,12 @@
 page_title: "medialive_input function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive input ARN
+  medialive input ARN
 ---
 
 # function: medialive_input
 
-Builds the ARN of an `medialive` `input`:
+Builds the ARN for `medialive` `input`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:input:${InputId}

@@ -3,12 +3,12 @@
 page_title: "docdb_elastic_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an docdb-elastic cluster ARN
+  docdb-elastic cluster ARN
 ---
 
 # function: docdb_elastic_cluster
 
-Builds the ARN of an `docdb-elastic` `cluster`:
+Builds the ARN for `docdb-elastic` `cluster`:
 
 ```
 arn:${Partition}:docdb-elastic:${Region}:${Account}:cluster/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "redshift_hsmclientcertificate function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift hsmclientcertificate ARN
+  redshift hsmclientcertificate ARN
 ---
 
 # function: redshift_hsmclientcertificate
 
-Builds the ARN of an `redshift` `hsmclientcertificate`:
+Builds the ARN for `redshift` `hsmclientcertificate`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:hsmclientcertificate:${HSMClientCertificateId}

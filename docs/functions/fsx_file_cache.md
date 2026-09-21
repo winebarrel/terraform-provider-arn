@@ -3,12 +3,12 @@
 page_title: "fsx_file_cache function - arn"
 subcategory: ""
 description: |-
-  Builds an fsx file-cache ARN
+  fsx file-cache ARN
 ---
 
 # function: fsx_file_cache
 
-Builds the ARN of an `fsx` `file-cache`:
+Builds the ARN for `fsx` `file-cache`:
 
 ```
 arn:${Partition}:fsx:${Region}:${Account}:file-cache/${FileCacheId}

@@ -3,12 +3,12 @@
 page_title: "ce_costcategory function - arn"
 subcategory: ""
 description: |-
-  Builds an ce costcategory ARN
+  ce costcategory ARN
 ---
 
 # function: ce_costcategory
 
-Builds the ARN of an `ce` `costcategory`:
+Builds the ARN for `ce` `costcategory`:
 
 ```
 arn:${Partition}:ce::${Account}:costcategory/${Identifier}

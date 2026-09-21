@@ -3,12 +3,12 @@
 page_title: "apigateway_authorizers_cache function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway AuthorizersCache ARN
+  apigateway AuthorizersCache ARN
 ---
 
 # function: apigateway_authorizers_cache
 
-Builds the ARN of an `apigateway` `AuthorizersCache`:
+Builds the ARN for `apigateway` `AuthorizersCache`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/stages/${StageName}/cache/authorizers

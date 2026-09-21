@@ -3,12 +3,12 @@
 page_title: "lightsail_container_service function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail ContainerService ARN
+  lightsail ContainerService ARN
 ---
 
 # function: lightsail_container_service
 
-Builds the ARN of an `lightsail` `ContainerService`:
+Builds the ARN for `lightsail` `ContainerService`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:ContainerService/${Id}

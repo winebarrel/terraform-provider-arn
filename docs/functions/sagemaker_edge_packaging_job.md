@@ -3,12 +3,12 @@
 page_title: "sagemaker_edge_packaging_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker edge-packaging-job ARN
+  sagemaker edge-packaging-job ARN
 ---
 
 # function: sagemaker_edge_packaging_job
 
-Builds the ARN of an `sagemaker` `edge-packaging-job`:
+Builds the ARN for `sagemaker` `edge-packaging-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:edge-packaging-job/${EdgePackagingJobName}

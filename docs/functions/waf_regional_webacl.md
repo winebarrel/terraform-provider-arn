@@ -3,12 +3,12 @@
 page_title: "waf_regional_webacl function - arn"
 subcategory: ""
 description: |-
-  Builds an waf-regional webacl ARN
+  waf-regional webacl ARN
 ---
 
 # function: waf_regional_webacl
 
-Builds the ARN of an `waf-regional` `webacl`:
+Builds the ARN for `waf-regional` `webacl`:
 
 ```
 arn:${Partition}:waf-regional:${Region}:${Account}:webacl/${Id}

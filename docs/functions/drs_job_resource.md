@@ -3,12 +3,12 @@
 page_title: "drs_job_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an drs JobResource ARN
+  drs JobResource ARN
 ---
 
 # function: drs_job_resource
 
-Builds the ARN of an `drs` `JobResource`:
+Builds the ARN for `drs` `JobResource`:
 
 ```
 arn:${Partition}:drs:${Region}:${Account}:job/${JobID}

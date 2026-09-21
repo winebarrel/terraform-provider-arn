@@ -3,12 +3,12 @@
 page_title: "iot_jobtemplate function - arn"
 subcategory: ""
 description: |-
-  Builds an iot jobtemplate ARN
+  iot jobtemplate ARN
 ---
 
 # function: iot_jobtemplate
 
-Builds the ARN of an `iot` `jobtemplate`:
+Builds the ARN for `iot` `jobtemplate`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:jobtemplate/${JobTemplateId}

@@ -3,12 +3,12 @@
 page_title: "organizations_handshake function - arn"
 subcategory: ""
 description: |-
-  Builds an organizations handshake ARN
+  organizations handshake ARN
 ---
 
 # function: organizations_handshake
 
-Builds the ARN of an `organizations` `handshake`:
+Builds the ARN for `organizations` `handshake`:
 
 ```
 arn:${Partition}:organizations::${Account}:handshake/o-${OrganizationId}/${HandshakeType}/h-${HandshakeId}

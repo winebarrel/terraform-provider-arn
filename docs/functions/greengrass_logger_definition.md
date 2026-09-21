@@ -3,12 +3,12 @@
 page_title: "greengrass_logger_definition function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass loggerDefinition ARN
+  greengrass loggerDefinition ARN
 ---
 
 # function: greengrass_logger_definition
 
-Builds the ARN of an `greengrass` `loggerDefinition`:
+Builds the ARN for `greengrass` `loggerDefinition`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/loggers/${LoggerDefinitionId}

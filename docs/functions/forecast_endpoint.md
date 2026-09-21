@@ -3,12 +3,12 @@
 page_title: "forecast_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an forecast endpoint ARN
+  forecast endpoint ARN
 ---
 
 # function: forecast_endpoint
 
-Builds the ARN of an `forecast` `endpoint`:
+Builds the ARN for `forecast` `endpoint`:
 
 ```
 arn:${Partition}:forecast:${Region}:${Account}:forecast-endpoint/${ResourceId}

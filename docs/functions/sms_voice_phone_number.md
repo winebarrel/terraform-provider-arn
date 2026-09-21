@@ -3,12 +3,12 @@
 page_title: "sms_voice_phone_number function - arn"
 subcategory: ""
 description: |-
-  Builds an sms-voice PhoneNumber ARN
+  sms-voice PhoneNumber ARN
 ---
 
 # function: sms_voice_phone_number
 
-Builds the ARN of an `sms-voice` `PhoneNumber`:
+Builds the ARN for `sms-voice` `PhoneNumber`:
 
 ```
 arn:${Partition}:sms-voice:${Region}:${Account}:phone-number/${PhoneNumberId}

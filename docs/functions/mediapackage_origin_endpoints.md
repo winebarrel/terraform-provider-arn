@@ -3,12 +3,12 @@
 page_title: "mediapackage_origin_endpoints function - arn"
 subcategory: ""
 description: |-
-  Builds an mediapackage origin_endpoints ARN
+  mediapackage origin_endpoints ARN
 ---
 
 # function: mediapackage_origin_endpoints
 
-Builds the ARN of an `mediapackage` `origin_endpoints`:
+Builds the ARN for `mediapackage` `origin_endpoints`:
 
 ```
 arn:${Partition}:mediapackage:${Region}:${Account}:origin_endpoints/${OriginEndpointIdentifier}

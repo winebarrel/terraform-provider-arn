@@ -3,12 +3,12 @@
 page_title: "forecast_monitor function - arn"
 subcategory: ""
 description: |-
-  Builds an forecast monitor ARN
+  forecast monitor ARN
 ---
 
 # function: forecast_monitor
 
-Builds the ARN of an `forecast` `monitor`:
+Builds the ARN for `forecast` `monitor`:
 
 ```
 arn:${Partition}:forecast:${Region}:${Account}:monitor/${ResourceId}

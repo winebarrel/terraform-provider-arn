@@ -3,12 +3,12 @@
 page_title: "waf_regional_sqlinjectionmatchset function - arn"
 subcategory: ""
 description: |-
-  Builds an waf-regional sqlinjectionmatchset ARN
+  waf-regional sqlinjectionmatchset ARN
 ---
 
 # function: waf_regional_sqlinjectionmatchset
 
-Builds the ARN of an `waf-regional` `sqlinjectionmatchset`:
+Builds the ARN for `waf-regional` `sqlinjectionmatchset`:
 
 ```
 arn:${Partition}:waf-regional:${Region}:${Account}:sqlinjectionset/${Id}

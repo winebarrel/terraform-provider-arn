@@ -3,12 +3,12 @@
 page_title: "apigateway_template function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Template ARN
+  apigateway Template ARN
 ---
 
 # function: apigateway_template
 
-Builds the ARN of an `apigateway` `Template`:
+Builds the ARN for `apigateway` `Template`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/models/${ModelName}/template

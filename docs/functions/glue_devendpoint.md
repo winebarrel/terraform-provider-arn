@@ -3,12 +3,12 @@
 page_title: "glue_devendpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an glue devendpoint ARN
+  glue devendpoint ARN
 ---
 
 # function: glue_devendpoint
 
-Builds the ARN of an `glue` `devendpoint`:
+Builds the ARN for `glue` `devendpoint`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:devEndpoint/${DevEndpointName}

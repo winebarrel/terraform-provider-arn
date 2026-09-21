@@ -3,12 +3,12 @@
 page_title: "comprehend_document_classifier function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend document-classifier ARN
+  comprehend document-classifier ARN
 ---
 
 # function: comprehend_document_classifier
 
-Builds the ARN of an `comprehend` `document-classifier`:
+Builds the ARN for `comprehend` `document-classifier`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:document-classifier/${DocumentClassifierName}

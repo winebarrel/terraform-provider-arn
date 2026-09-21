@@ -3,12 +3,12 @@
 page_title: "sms_voice_sender_id function - arn"
 subcategory: ""
 description: |-
-  Builds an sms-voice SenderId ARN
+  sms-voice SenderId ARN
 ---
 
 # function: sms_voice_sender_id
 
-Builds the ARN of an `sms-voice` `SenderId`:
+Builds the ARN for `sms-voice` `SenderId`:
 
 ```
 arn:${Partition}:sms-voice:${Region}:${Account}:sender-id/${SenderId}/${IsoCountryCode}

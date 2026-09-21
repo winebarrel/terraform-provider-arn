@@ -3,12 +3,12 @@
 page_title: "bedrock_system_tool function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock system-tool ARN
+  bedrock system-tool ARN
 ---
 
 # function: bedrock_system_tool
 
-Builds the ARN of an `bedrock` `system-tool`:
+Builds the ARN for `bedrock` `system-tool`:
 
 ```
 arn:${Partition}:bedrock::${Account}:system-tool/${ResourceId}

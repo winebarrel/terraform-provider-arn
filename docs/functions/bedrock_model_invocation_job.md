@@ -3,12 +3,12 @@
 page_title: "bedrock_model_invocation_job function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock model-invocation-job ARN
+  bedrock model-invocation-job ARN
 ---
 
 # function: bedrock_model_invocation_job
 
-Builds the ARN of an `bedrock` `model-invocation-job`:
+Builds the ARN for `bedrock` `model-invocation-job`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:model-invocation-job/${JobIdentifier}

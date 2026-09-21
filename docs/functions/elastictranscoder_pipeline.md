@@ -3,12 +3,12 @@
 page_title: "elastictranscoder_pipeline function - arn"
 subcategory: ""
 description: |-
-  Builds an elastictranscoder pipeline ARN
+  elastictranscoder pipeline ARN
 ---
 
 # function: elastictranscoder_pipeline
 
-Builds the ARN of an `elastictranscoder` `pipeline`:
+Builds the ARN for `elastictranscoder` `pipeline`:
 
 ```
 arn:${Partition}:elastictranscoder:${Region}:${Account}:pipeline/${PipelineId}

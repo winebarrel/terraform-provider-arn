@@ -3,12 +3,12 @@
 page_title: "apigateway_route_response function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway RouteResponse ARN
+  apigateway RouteResponse ARN
 ---
 
 # function: apigateway_route_response
 
-Builds the ARN of an `apigateway` `RouteResponse`:
+Builds the ARN for `apigateway` `RouteResponse`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/routes/${RouteId}/routeresponses/${RouteResponseId}

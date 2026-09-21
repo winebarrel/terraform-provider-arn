@@ -3,12 +3,12 @@
 page_title: "qbusiness_web_experience function - arn"
 subcategory: ""
 description: |-
-  Builds an qbusiness web-experience ARN
+  qbusiness web-experience ARN
 ---
 
 # function: qbusiness_web_experience
 
-Builds the ARN of an `qbusiness` `web-experience`:
+Builds the ARN for `qbusiness` `web-experience`:
 
 ```
 arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/web-experience/${WebExperienceId}

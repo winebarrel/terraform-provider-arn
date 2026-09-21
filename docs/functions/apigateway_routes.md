@@ -3,12 +3,12 @@
 page_title: "apigateway_routes function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Routes ARN
+  apigateway Routes ARN
 ---
 
 # function: apigateway_routes
 
-Builds the ARN of an `apigateway` `Routes`:
+Builds the ARN for `apigateway` `Routes`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/routes

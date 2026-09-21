@@ -3,12 +3,12 @@
 page_title: "fis_safety_lever function - arn"
 subcategory: ""
 description: |-
-  Builds an fis safety-lever ARN
+  fis safety-lever ARN
 ---
 
 # function: fis_safety_lever
 
-Builds the ARN of an `fis` `safety-lever`:
+Builds the ARN for `fis` `safety-lever`:
 
 ```
 arn:${Partition}:fis:${Region}:${Account}:safety-lever/${Id}

@@ -3,12 +3,12 @@
 page_title: "codepipeline_webhook function - arn"
 subcategory: ""
 description: |-
-  Builds an codepipeline webhook ARN
+  codepipeline webhook ARN
 ---
 
 # function: codepipeline_webhook
 
-Builds the ARN of an `codepipeline` `webhook`:
+Builds the ARN for `codepipeline` `webhook`:
 
 ```
 arn:${Partition}:codepipeline:${Region}:${Account}:webhook:${WebhookName}

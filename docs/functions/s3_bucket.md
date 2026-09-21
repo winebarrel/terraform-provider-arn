@@ -3,12 +3,12 @@
 page_title: "s3_bucket function - arn"
 subcategory: ""
 description: |-
-  Builds an s3 bucket ARN
+  s3 bucket ARN
 ---
 
 # function: s3_bucket
 
-Builds the ARN of an `s3` `bucket`:
+Builds the ARN for `s3` `bucket`:
 
 ```
 arn:${Partition}:s3:::${BucketName}
@@ -20,9 +20,6 @@ arn:${Partition}:s3:::${BucketName}
 
 ```terraform
 # arn:aws:s3:::my-bucket
-#
-# An S3 bucket ARN carries neither an account nor a region, so an empty
-# .arn.hcl is enough for this one. The file still has to exist.
 output "bucket" {
   value = provider::arn::s3_bucket("my-bucket")
 }

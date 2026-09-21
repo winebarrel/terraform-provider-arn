@@ -3,12 +3,12 @@
 page_title: "odb_exadb_vm_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an odb exadb-vm-cluster ARN
+  odb exadb-vm-cluster ARN
 ---
 
 # function: odb_exadb_vm_cluster
 
-Builds the ARN of an `odb` `exadb-vm-cluster`:
+Builds the ARN for `odb` `exadb-vm-cluster`:
 
 ```
 arn:${Partition}:odb:${Region}:${Account}:exadb-vm-cluster/${ExadbVmClusterId}

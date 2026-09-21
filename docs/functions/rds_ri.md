@@ -3,12 +3,12 @@
 page_title: "rds_ri function - arn"
 subcategory: ""
 description: |-
-  Builds an rds ri ARN
+  rds ri ARN
 ---
 
 # function: rds_ri
 
-Builds the ARN of an `rds` `ri`:
+Builds the ARN for `rds` `ri`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:ri:${ReservedDbInstanceName}

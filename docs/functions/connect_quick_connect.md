@@ -3,12 +3,12 @@
 page_title: "connect_quick_connect function - arn"
 subcategory: ""
 description: |-
-  Builds an connect quick-connect ARN
+  connect quick-connect ARN
 ---
 
 # function: connect_quick_connect
 
-Builds the ARN of an `connect` `quick-connect`:
+Builds the ARN for `connect` `quick-connect`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/transfer-destination/${QuickConnectId}

@@ -3,12 +3,12 @@
 page_title: "managedblockchain_proposal function - arn"
 subcategory: ""
 description: |-
-  Builds an managedblockchain proposal ARN
+  managedblockchain proposal ARN
 ---
 
 # function: managedblockchain_proposal
 
-Builds the ARN of an `managedblockchain` `proposal`:
+Builds the ARN for `managedblockchain` `proposal`:
 
 ```
 arn:${Partition}:managedblockchain:${Region}::proposals/${ProposalId}

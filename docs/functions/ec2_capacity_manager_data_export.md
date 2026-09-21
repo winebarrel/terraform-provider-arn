@@ -3,12 +3,12 @@
 page_title: "ec2_capacity_manager_data_export function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 capacity-manager-data-export ARN
+  ec2 capacity-manager-data-export ARN
 ---
 
 # function: ec2_capacity_manager_data_export
 
-Builds the ARN of an `ec2` `capacity-manager-data-export`:
+Builds the ARN for `ec2` `capacity-manager-data-export`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:capacity-manager-data-export/${CapacityManagerDataExportId}

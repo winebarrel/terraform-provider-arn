@@ -3,12 +3,12 @@
 page_title: "cognito_idp_webacl function - arn"
 subcategory: ""
 description: |-
-  Builds an cognito-idp webacl ARN
+  cognito-idp webacl ARN
 ---
 
 # function: cognito_idp_webacl
 
-Builds the ARN of an `cognito-idp` `webacl`:
+Builds the ARN for `cognito-idp` `webacl`:
 
 ```
 arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/webacl/${Name}/${Id}

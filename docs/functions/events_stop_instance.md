@@ -3,12 +3,12 @@
 page_title: "events_stop_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an events stop-instance ARN
+  events stop-instance ARN
 ---
 
 # function: events_stop_instance
 
-Builds the ARN of an `events` `stop-instance`:
+Builds the ARN for `events` `stop-instance`:
 
 ```
 arn:${Partition}:events:${Region}:${Account}:target/stop-instance

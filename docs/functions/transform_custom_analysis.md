@@ -3,12 +3,12 @@
 page_title: "transform_custom_analysis function - arn"
 subcategory: ""
 description: |-
-  Builds an transform-custom analysis ARN
+  transform-custom analysis ARN
 ---
 
 # function: transform_custom_analysis
 
-Builds the ARN of an `transform-custom` `analysis`:
+Builds the ARN for `transform-custom` `analysis`:
 
 ```
 arn:${Partition}:transform-custom:${Region}:${Account}:analysis/${AnalysisId}

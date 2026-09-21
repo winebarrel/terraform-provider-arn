@@ -3,12 +3,12 @@
 page_title: "iot_custommetric function - arn"
 subcategory: ""
 description: |-
-  Builds an iot custommetric ARN
+  iot custommetric ARN
 ---
 
 # function: iot_custommetric
 
-Builds the ARN of an `iot` `custommetric`:
+Builds the ARN for `iot` `custommetric`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:custommetric/${MetricName}

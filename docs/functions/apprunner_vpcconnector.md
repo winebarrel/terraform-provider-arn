@@ -3,12 +3,12 @@
 page_title: "apprunner_vpcconnector function - arn"
 subcategory: ""
 description: |-
-  Builds an apprunner vpcconnector ARN
+  apprunner vpcconnector ARN
 ---
 
 # function: apprunner_vpcconnector
 
-Builds the ARN of an `apprunner` `vpcconnector`:
+Builds the ARN for `apprunner` `vpcconnector`:
 
 ```
 arn:${Partition}:apprunner:${Region}:${Account}:vpcconnector/${VpcConnectorName}/${VpcConnectorVersion}/${VpcConnectorId}

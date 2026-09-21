@@ -3,12 +3,12 @@
 page_title: "rds_subgrp function - arn"
 subcategory: ""
 description: |-
-  Builds an rds subgrp ARN
+  rds subgrp ARN
 ---
 
 # function: rds_subgrp
 
-Builds the ARN of an `rds` `subgrp`:
+Builds the ARN for `rds` `subgrp`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:subgrp:${SubnetGroupName}

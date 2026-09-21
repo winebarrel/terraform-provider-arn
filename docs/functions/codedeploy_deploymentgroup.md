@@ -3,12 +3,12 @@
 page_title: "codedeploy_deploymentgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an codedeploy deploymentgroup ARN
+  codedeploy deploymentgroup ARN
 ---
 
 # function: codedeploy_deploymentgroup
 
-Builds the ARN of an `codedeploy` `deploymentgroup`:
+Builds the ARN for `codedeploy` `deploymentgroup`:
 
 ```
 arn:${Partition}:codedeploy:${Region}:${Account}:deploymentgroup:${ApplicationName}/${DeploymentGroupName}

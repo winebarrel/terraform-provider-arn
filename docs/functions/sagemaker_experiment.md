@@ -3,12 +3,12 @@
 page_title: "sagemaker_experiment function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker experiment ARN
+  sagemaker experiment ARN
 ---
 
 # function: sagemaker_experiment
 
-Builds the ARN of an `sagemaker` `experiment`:
+Builds the ARN for `sagemaker` `experiment`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:experiment/${ExperimentName}

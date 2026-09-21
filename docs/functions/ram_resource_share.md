@@ -3,12 +3,12 @@
 page_title: "ram_resource_share function - arn"
 subcategory: ""
 description: |-
-  Builds an ram resource-share ARN
+  ram resource-share ARN
 ---
 
 # function: ram_resource_share
 
-Builds the ARN of an `ram` `resource-share`:
+Builds the ARN for `ram` `resource-share`:
 
 ```
 arn:${Partition}:ram:${Region}:${Account}:resource-share/${ResourcePath}

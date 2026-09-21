@@ -3,12 +3,12 @@
 page_title: "cloudfront_origin_request_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront origin-request-policy ARN
+  cloudfront origin-request-policy ARN
 ---
 
 # function: cloudfront_origin_request_policy
 
-Builds the ARN of an `cloudfront` `origin-request-policy`:
+Builds the ARN for `cloudfront` `origin-request-policy`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:origin-request-policy/${Id}

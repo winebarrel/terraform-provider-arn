@@ -3,12 +3,12 @@
 page_title: "redshift_integration function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift integration ARN
+  redshift integration ARN
 ---
 
 # function: redshift_integration
 
-Builds the ARN of an `redshift` `integration`:
+Builds the ARN for `redshift` `integration`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:integration:${IntegrationIdentifier}

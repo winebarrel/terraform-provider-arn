@@ -3,12 +3,12 @@
 page_title: "machinelearning_evaluation function - arn"
 subcategory: ""
 description: |-
-  Builds an machinelearning evaluation ARN
+  machinelearning evaluation ARN
 ---
 
 # function: machinelearning_evaluation
 
-Builds the ARN of an `machinelearning` `evaluation`:
+Builds the ARN for `machinelearning` `evaluation`:
 
 ```
 arn:${Partition}:machinelearning:${Region}:${Account}:evaluation/${EvaluationId}

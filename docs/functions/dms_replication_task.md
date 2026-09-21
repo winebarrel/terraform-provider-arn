@@ -3,12 +3,12 @@
 page_title: "dms_replication_task function - arn"
 subcategory: ""
 description: |-
-  Builds an dms ReplicationTask ARN
+  dms ReplicationTask ARN
 ---
 
 # function: dms_replication_task
 
-Builds the ARN of an `dms` `ReplicationTask`:
+Builds the ARN for `dms` `ReplicationTask`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:task:*

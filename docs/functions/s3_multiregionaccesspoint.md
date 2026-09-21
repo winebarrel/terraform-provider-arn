@@ -3,12 +3,12 @@
 page_title: "s3_multiregionaccesspoint function - arn"
 subcategory: ""
 description: |-
-  Builds an s3 multiregionaccesspoint ARN
+  s3 multiregionaccesspoint ARN
 ---
 
 # function: s3_multiregionaccesspoint
 
-Builds the ARN of an `s3` `multiregionaccesspoint`:
+Builds the ARN for `s3` `multiregionaccesspoint`:
 
 ```
 arn:${Partition}:s3::${Account}:accesspoint/${AccessPointAlias}

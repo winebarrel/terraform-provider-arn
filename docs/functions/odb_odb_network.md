@@ -3,12 +3,12 @@
 page_title: "odb_odb_network function - arn"
 subcategory: ""
 description: |-
-  Builds an odb odb-network ARN
+  odb odb-network ARN
 ---
 
 # function: odb_odb_network
 
-Builds the ARN of an `odb` `odb-network`:
+Builds the ARN for `odb` `odb-network`:
 
 ```
 arn:${Partition}:odb:${Region}:${Account}:odb-network/${OdbNetworkId}

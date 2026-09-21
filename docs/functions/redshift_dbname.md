@@ -3,12 +3,12 @@
 page_title: "redshift_dbname function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift dbname ARN
+  redshift dbname ARN
 ---
 
 # function: redshift_dbname
 
-Builds the ARN of an `redshift` `dbname`:
+Builds the ARN for `redshift` `dbname`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:dbname:${ClusterName}/${DbName}

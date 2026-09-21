@@ -3,12 +3,12 @@
 page_title: "sagemaker_lineage_group function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker lineage-group ARN
+  sagemaker lineage-group ARN
 ---
 
 # function: sagemaker_lineage_group
 
-Builds the ARN of an `sagemaker` `lineage-group`:
+Builds the ARN for `sagemaker` `lineage-group`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:lineage-group/${LineageGroupName}

@@ -3,12 +3,12 @@
 page_title: "robomaker_deployment_job function - arn"
 subcategory: ""
 description: |-
-  Builds an robomaker deploymentJob ARN
+  robomaker deploymentJob ARN
 ---
 
 # function: robomaker_deployment_job
 
-Builds the ARN of an `robomaker` `deploymentJob`:
+Builds the ARN for `robomaker` `deploymentJob`:
 
 ```
 arn:${Partition}:robomaker:${Region}:${Account}:deployment-job/${DeploymentJobId}

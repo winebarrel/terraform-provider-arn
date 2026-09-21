@@ -3,12 +3,12 @@
 page_title: "health_agent_subscription function - arn"
 subcategory: ""
 description: |-
-  Builds an health-agent Subscription ARN
+  health-agent Subscription ARN
 ---
 
 # function: health_agent_subscription
 
-Builds the ARN of an `health-agent` `Subscription`:
+Builds the ARN for `health-agent` `Subscription`:
 
 ```
 arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}/subscription/${SubscriptionId}

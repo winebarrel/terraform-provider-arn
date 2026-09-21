@@ -3,12 +3,12 @@
 page_title: "personalize_metric_attribution function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize metricAttribution ARN
+  personalize metricAttribution ARN
 ---
 
 # function: personalize_metric_attribution
 
-Builds the ARN of an `personalize` `metricAttribution`:
+Builds the ARN for `personalize` `metricAttribution`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:metric-attribution/${ResourceId}

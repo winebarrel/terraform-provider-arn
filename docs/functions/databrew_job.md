@@ -3,12 +3,12 @@
 page_title: "databrew_job function - arn"
 subcategory: ""
 description: |-
-  Builds an databrew Job ARN
+  databrew Job ARN
 ---
 
 # function: databrew_job
 
-Builds the ARN of an `databrew` `Job`:
+Builds the ARN for `databrew` `Job`:
 
 ```
 arn:${Partition}:databrew:${Region}:${Account}:job/${ResourceId}

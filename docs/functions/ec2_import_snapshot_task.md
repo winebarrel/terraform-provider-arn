@@ -3,12 +3,12 @@
 page_title: "ec2_import_snapshot_task function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 import-snapshot-task ARN
+  ec2 import-snapshot-task ARN
 ---
 
 # function: ec2_import_snapshot_task
 
-Builds the ARN of an `ec2` `import-snapshot-task`:
+Builds the ARN for `ec2` `import-snapshot-task`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:import-snapshot-task/${ImportSnapshotTaskId}

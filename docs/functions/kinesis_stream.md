@@ -3,12 +3,12 @@
 page_title: "kinesis_stream function - arn"
 subcategory: ""
 description: |-
-  Builds an kinesis stream ARN
+  kinesis stream ARN
 ---
 
 # function: kinesis_stream
 
-Builds the ARN of an `kinesis` `stream`:
+Builds the ARN for `kinesis` `stream`:
 
 ```
 arn:${Partition}:kinesis:${Region}:${Account}:stream/${StreamName}

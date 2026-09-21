@@ -3,12 +3,12 @@
 page_title: "dms_certificate function - arn"
 subcategory: ""
 description: |-
-  Builds an dms Certificate ARN
+  dms Certificate ARN
 ---
 
 # function: dms_certificate
 
-Builds the ARN of an `dms` `Certificate`:
+Builds the ARN for `dms` `Certificate`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:cert:*

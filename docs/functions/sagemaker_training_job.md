@@ -3,12 +3,12 @@
 page_title: "sagemaker_training_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker training-job ARN
+  sagemaker training-job ARN
 ---
 
 # function: sagemaker_training_job
 
-Builds the ARN of an `sagemaker` `training-job`:
+Builds the ARN for `sagemaker` `training-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:training-job/${TrainingJobName}

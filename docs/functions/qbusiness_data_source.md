@@ -3,12 +3,12 @@
 page_title: "qbusiness_data_source function - arn"
 subcategory: ""
 description: |-
-  Builds an qbusiness data-source ARN
+  qbusiness data-source ARN
 ---
 
 # function: qbusiness_data_source
 
-Builds the ARN of an `qbusiness` `data-source`:
+Builds the ARN for `qbusiness` `data-source`:
 
 ```
 arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/index/${IndexId}/data-source/${DataSourceId}

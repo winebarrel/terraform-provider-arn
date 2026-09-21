@@ -3,12 +3,12 @@
 page_title: "quicksight_knowledge_base function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight knowledgeBase ARN
+  quicksight knowledgeBase ARN
 ---
 
 # function: quicksight_knowledge_base
 
-Builds the ARN of an `quicksight` `knowledgeBase`:
+Builds the ARN for `quicksight` `knowledgeBase`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:knowledge-base/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "neptune_db_database function - arn"
 subcategory: ""
 description: |-
-  Builds an neptune-db database ARN
+  neptune-db database ARN
 ---
 
 # function: neptune_db_database
 
-Builds the ARN of an `neptune-db` `database`:
+Builds the ARN for `neptune-db` `database`:
 
 ```
 arn:${Partition}:neptune-db:${Region}:${Account}:${ClusterResourceId}/*

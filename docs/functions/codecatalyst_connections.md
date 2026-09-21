@@ -3,12 +3,12 @@
 page_title: "codecatalyst_connections function - arn"
 subcategory: ""
 description: |-
-  Builds an codecatalyst connections ARN
+  codecatalyst connections ARN
 ---
 
 # function: codecatalyst_connections
 
-Builds the ARN of an `codecatalyst` `connections`:
+Builds the ARN for `codecatalyst` `connections`:
 
 ```
 arn:${Partition}:codecatalyst:${Region}:${Account}:/connections/${ConnectionId}

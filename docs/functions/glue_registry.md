@@ -3,12 +3,12 @@
 page_title: "glue_registry function - arn"
 subcategory: ""
 description: |-
-  Builds an glue registry ARN
+  glue registry ARN
 ---
 
 # function: glue_registry
 
-Builds the ARN of an `glue` `registry`:
+Builds the ARN for `glue` `registry`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:registry/${RegistryName}

@@ -3,12 +3,12 @@
 page_title: "quicksight_custompermissions function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight custompermissions ARN
+  quicksight custompermissions ARN
 ---
 
 # function: quicksight_custompermissions
 
-Builds the ARN of an `quicksight` `custompermissions`:
+Builds the ARN for `quicksight` `custompermissions`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:custompermissions/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "iotevents_alarm_model function - arn"
 subcategory: ""
 description: |-
-  Builds an iotevents alarmModel ARN
+  iotevents alarmModel ARN
 ---
 
 # function: iotevents_alarm_model
 
-Builds the ARN of an `iotevents` `alarmModel`:
+Builds the ARN for `iotevents` `alarmModel`:
 
 ```
 arn:${Partition}:iotevents:${Region}:${Account}:alarmModel/${AlarmModelName}

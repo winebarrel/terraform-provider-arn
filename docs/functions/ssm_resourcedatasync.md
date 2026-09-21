@@ -3,12 +3,12 @@
 page_title: "ssm_resourcedatasync function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm resourcedatasync ARN
+  ssm resourcedatasync ARN
 ---
 
 # function: ssm_resourcedatasync
 
-Builds the ARN of an `ssm` `resourcedatasync`:
+Builds the ARN for `ssm` `resourcedatasync`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:resource-data-sync/${SyncName}

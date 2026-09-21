@@ -3,12 +3,12 @@
 page_title: "quicksight_space function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight space ARN
+  quicksight space ARN
 ---
 
 # function: quicksight_space
 
-Builds the ARN of an `quicksight` `space`:
+Builds the ARN for `quicksight` `space`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:space/${ResourceId}

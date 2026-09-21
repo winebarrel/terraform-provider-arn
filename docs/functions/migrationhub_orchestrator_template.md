@@ -3,12 +3,12 @@
 page_title: "migrationhub_orchestrator_template function - arn"
 subcategory: ""
 description: |-
-  Builds an migrationhub-orchestrator template ARN
+  migrationhub-orchestrator template ARN
 ---
 
 # function: migrationhub_orchestrator_template
 
-Builds the ARN of an `migrationhub-orchestrator` `template`:
+Builds the ARN for `migrationhub-orchestrator` `template`:
 
 ```
 arn:${Partition}:migrationhub-orchestrator:${Region}:${Account}:template/${ResourceId}

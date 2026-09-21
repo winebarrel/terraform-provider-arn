@@ -3,12 +3,12 @@
 page_title: "personalize_algorithm function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize algorithm ARN
+  personalize algorithm ARN
 ---
 
 # function: personalize_algorithm
 
-Builds the ARN of an `personalize` `algorithm`:
+Builds the ARN for `personalize` `algorithm`:
 
 ```
 arn:${Partition}:personalize:::algorithm/${ResourceId}

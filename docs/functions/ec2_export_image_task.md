@@ -3,12 +3,12 @@
 page_title: "ec2_export_image_task function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 export-image-task ARN
+  ec2 export-image-task ARN
 ---
 
 # function: ec2_export_image_task
 
-Builds the ARN of an `ec2` `export-image-task`:
+Builds the ARN for `ec2` `export-image-task`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:export-image-task/${ExportImageTaskId}

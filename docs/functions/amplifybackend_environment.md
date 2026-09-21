@@ -3,12 +3,12 @@
 page_title: "amplifybackend_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an amplifybackend environment ARN
+  amplifybackend environment ARN
 ---
 
 # function: amplifybackend_environment
 
-Builds the ARN of an `amplifybackend` `environment`:
+Builds the ARN for `amplifybackend` `environment`:
 
 ```
 arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/environments/*

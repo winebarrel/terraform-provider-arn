@@ -3,12 +3,12 @@
 page_title: "bedrock_model_import_job function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock model-import-job ARN
+  bedrock model-import-job ARN
 ---
 
 # function: bedrock_model_import_job
 
-Builds the ARN of an `bedrock` `model-import-job`:
+Builds the ARN for `bedrock` `model-import-job`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:model-import-job/${ResourceId}

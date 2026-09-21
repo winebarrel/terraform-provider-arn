@@ -3,12 +3,12 @@
 page_title: "glue_data_quality_ruleset function - arn"
 subcategory: ""
 description: |-
-  Builds an glue dataQualityRuleset ARN
+  glue dataQualityRuleset ARN
 ---
 
 # function: glue_data_quality_ruleset
 
-Builds the ARN of an `glue` `dataQualityRuleset`:
+Builds the ARN for `glue` `dataQualityRuleset`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:dataQualityRuleset/${RulesetName}

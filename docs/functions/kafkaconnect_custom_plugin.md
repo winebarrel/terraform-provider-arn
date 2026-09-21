@@ -3,12 +3,12 @@
 page_title: "kafkaconnect_custom_plugin function - arn"
 subcategory: ""
 description: |-
-  Builds an kafkaconnect custom plugin ARN
+  kafkaconnect custom plugin ARN
 ---
 
 # function: kafkaconnect_custom_plugin
 
-Builds the ARN of an `kafkaconnect` `custom plugin`:
+Builds the ARN for `kafkaconnect` `custom plugin`:
 
 ```
 arn:${Partition}:kafkaconnect:${Region}:${Account}:custom-plugin/${CustomPluginName}/${UUID}

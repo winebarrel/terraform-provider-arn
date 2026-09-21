@@ -3,12 +3,12 @@
 page_title: "cloudshell_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudshell Environment ARN
+  cloudshell Environment ARN
 ---
 
 # function: cloudshell_environment
 
-Builds the ARN of an `cloudshell` `Environment`:
+Builds the ARN for `cloudshell` `Environment`:
 
 ```
 arn:${Partition}:cloudshell:${Region}:${Account}:environment/${EnvironmentId}

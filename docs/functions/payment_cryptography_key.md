@@ -3,12 +3,12 @@
 page_title: "payment_cryptography_key function - arn"
 subcategory: ""
 description: |-
-  Builds an payment-cryptography key ARN
+  payment-cryptography key ARN
 ---
 
 # function: payment_cryptography_key
 
-Builds the ARN of an `payment-cryptography` `key`:
+Builds the ARN for `payment-cryptography` `key`:
 
 ```
 arn:${Partition}:payment-cryptography:${Region}:${Account}:key/${KeyId}

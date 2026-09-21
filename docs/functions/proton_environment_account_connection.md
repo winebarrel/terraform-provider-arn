@@ -3,12 +3,12 @@
 page_title: "proton_environment_account_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an proton environment-account-connection ARN
+  proton environment-account-connection ARN
 ---
 
 # function: proton_environment_account_connection
 
-Builds the ARN of an `proton` `environment-account-connection`:
+Builds the ARN for `proton` `environment-account-connection`:
 
 ```
 arn:${Partition}:proton:${Region}:${Account}:environment-account-connection/${Id}

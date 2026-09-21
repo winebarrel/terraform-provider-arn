@@ -3,12 +3,12 @@
 page_title: "amplifybackend_storage function - arn"
 subcategory: ""
 description: |-
-  Builds an amplifybackend storage ARN
+  amplifybackend storage ARN
 ---
 
 # function: amplifybackend_storage
 
-Builds the ARN of an `amplifybackend` `storage`:
+Builds the ARN for `amplifybackend` `storage`:
 
 ```
 arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/storage/*

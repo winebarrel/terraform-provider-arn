@@ -3,12 +3,12 @@
 page_title: "ec2_transit_gateway_route_table_announcement function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 transit-gateway-route-table-announcement ARN
+  ec2 transit-gateway-route-table-announcement ARN
 ---
 
 # function: ec2_transit_gateway_route_table_announcement
 
-Builds the ARN of an `ec2` `transit-gateway-route-table-announcement`:
+Builds the ARN for `ec2` `transit-gateway-route-table-announcement`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:transit-gateway-route-table-announcement/${TransitGatewayRouteTableAnnouncementId}

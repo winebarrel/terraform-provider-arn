@@ -3,12 +3,12 @@
 page_title: "apigateway_route_settings function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway RouteSettings ARN
+  apigateway RouteSettings ARN
 ---
 
 # function: apigateway_route_settings
 
-Builds the ARN of an `apigateway` `RouteSettings`:
+Builds the ARN for `apigateway` `RouteSettings`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/stages/${StageName}/routesettings/${RouteKey}

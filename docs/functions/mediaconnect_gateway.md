@@ -3,12 +3,12 @@
 page_title: "mediaconnect_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconnect Gateway ARN
+  mediaconnect Gateway ARN
 ---
 
 # function: mediaconnect_gateway
 
-Builds the ARN of an `mediaconnect` `Gateway`:
+Builds the ARN for `mediaconnect` `Gateway`:
 
 ```
 arn:${Partition}:mediaconnect:${Region}:${Account}:gateway:${GatewayId}:${GatewayName}

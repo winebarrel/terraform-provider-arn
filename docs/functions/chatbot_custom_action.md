@@ -3,12 +3,12 @@
 page_title: "chatbot_custom_action function - arn"
 subcategory: ""
 description: |-
-  Builds an chatbot custom-action ARN
+  chatbot custom-action ARN
 ---
 
 # function: chatbot_custom_action
 
-Builds the ARN of an `chatbot` `custom-action`:
+Builds the ARN for `chatbot` `custom-action`:
 
 ```
 arn:${Partition}:chatbot::${Account}:custom-action/${ActionName}

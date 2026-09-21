@@ -3,12 +3,12 @@
 page_title: "elasticache_serverlesscache function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticache serverlesscache ARN
+  elasticache serverlesscache ARN
 ---
 
 # function: elasticache_serverlesscache
 
-Builds the ARN of an `elasticache` `serverlesscache`:
+Builds the ARN for `elasticache` `serverlesscache`:
 
 ```
 arn:${Partition}:elasticache:${Region}:${Account}:serverlesscache:${ServerlessCacheName}

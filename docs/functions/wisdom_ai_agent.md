@@ -3,12 +3,12 @@
 page_title: "wisdom_ai_agent function - arn"
 subcategory: ""
 description: |-
-  Builds an wisdom AIAgent ARN
+  wisdom AIAgent ARN
 ---
 
 # function: wisdom_ai_agent
 
-Builds the ARN of an `wisdom` `AIAgent`:
+Builds the ARN for `wisdom` `AIAgent`:
 
 ```
 arn:${Partition}:wisdom:${Region}:${Account}:ai-agent/${AssistantId}/${AIAgentId}

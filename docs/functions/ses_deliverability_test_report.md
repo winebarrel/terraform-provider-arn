@@ -3,12 +3,12 @@
 page_title: "ses_deliverability_test_report function - arn"
 subcategory: ""
 description: |-
-  Builds an ses deliverability-test-report ARN
+  ses deliverability-test-report ARN
 ---
 
 # function: ses_deliverability_test_report
 
-Builds the ARN of an `ses` `deliverability-test-report`:
+Builds the ARN for `ses` `deliverability-test-report`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:deliverability-test-report/${ReportId}

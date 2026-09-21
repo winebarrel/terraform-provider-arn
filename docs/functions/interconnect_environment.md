@@ -3,12 +3,12 @@
 page_title: "interconnect_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an interconnect environment ARN
+  interconnect environment ARN
 ---
 
 # function: interconnect_environment
 
-Builds the ARN of an `interconnect` `environment`:
+Builds the ARN for `interconnect` `environment`:
 
 ```
 arn:${Partition}:interconnect:${Region}:${Account}:environment/${Id}

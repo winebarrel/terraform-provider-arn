@@ -3,12 +3,12 @@
 page_title: "sagemaker_ai_workload_config function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker ai-workload-config ARN
+  sagemaker ai-workload-config ARN
 ---
 
 # function: sagemaker_ai_workload_config
 
-Builds the ARN of an `sagemaker` `ai-workload-config`:
+Builds the ARN for `sagemaker` `ai-workload-config`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:ai-workload-config/${AIWorkloadConfigName}

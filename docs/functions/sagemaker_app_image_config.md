@@ -3,12 +3,12 @@
 page_title: "sagemaker_app_image_config function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker app-image-config ARN
+  sagemaker app-image-config ARN
 ---
 
 # function: sagemaker_app_image_config
 
-Builds the ARN of an `sagemaker` `app-image-config`:
+Builds the ARN for `sagemaker` `app-image-config`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:app-image-config/${AppImageConfigName}

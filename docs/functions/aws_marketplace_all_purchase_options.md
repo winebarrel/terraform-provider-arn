@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_all_purchase_options function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace AllPurchaseOptions ARN
+  aws-marketplace AllPurchaseOptions ARN
 ---
 
 # function: aws_marketplace_all_purchase_options
 
-Builds the ARN of an `aws-marketplace` `AllPurchaseOptions`:
+Builds the ARN for `aws-marketplace` `AllPurchaseOptions`:
 
 ```
 arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/purchaseOption/*

@@ -3,12 +3,12 @@
 page_title: "bedrock_blueprint function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock blueprint ARN
+  bedrock blueprint ARN
 ---
 
 # function: bedrock_blueprint
 
-Builds the ARN of an `bedrock` `blueprint`:
+Builds the ARN for `bedrock` `blueprint`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:blueprint/${BlueprintId}

@@ -3,12 +3,12 @@
 page_title: "iotwireless_wireless_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless WirelessGateway ARN
+  iotwireless WirelessGateway ARN
 ---
 
 # function: iotwireless_wireless_gateway
 
-Builds the ARN of an `iotwireless` `WirelessGateway`:
+Builds the ARN for `iotwireless` `WirelessGateway`:
 
 ```
 arn:${Partition}:iotwireless:${Region}:${Account}:WirelessGateway/${WirelessGatewayId}

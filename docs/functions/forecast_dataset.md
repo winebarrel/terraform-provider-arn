@@ -3,12 +3,12 @@
 page_title: "forecast_dataset function - arn"
 subcategory: ""
 description: |-
-  Builds an forecast dataset ARN
+  forecast dataset ARN
 ---
 
 # function: forecast_dataset
 
-Builds the ARN of an `forecast` `dataset`:
+Builds the ARN for `forecast` `dataset`:
 
 ```
 arn:${Partition}:forecast:${Region}:${Account}:dataset/${ResourceId}

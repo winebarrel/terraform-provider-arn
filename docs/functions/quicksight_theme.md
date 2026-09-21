@@ -3,12 +3,12 @@
 page_title: "quicksight_theme function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight theme ARN
+  quicksight theme ARN
 ---
 
 # function: quicksight_theme
 
-Builds the ARN of an `quicksight` `theme`:
+Builds the ARN for `quicksight` `theme`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:theme/${ResourceId}

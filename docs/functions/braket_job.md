@@ -3,12 +3,12 @@
 page_title: "braket_job function - arn"
 subcategory: ""
 description: |-
-  Builds an braket job ARN
+  braket job ARN
 ---
 
 # function: braket_job
 
-Builds the ARN of an `braket` `job`:
+Builds the ARN for `braket` `job`:
 
 ```
 arn:${Partition}:braket:${Region}:${Account}:job/${RandomId}

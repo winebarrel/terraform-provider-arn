@@ -3,12 +3,12 @@
 page_title: "quicksight_folder function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight folder ARN
+  quicksight folder ARN
 ---
 
 # function: quicksight_folder
 
-Builds the ARN of an `quicksight` `folder`:
+Builds the ARN for `quicksight` `folder`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:folder/${ResourceId}

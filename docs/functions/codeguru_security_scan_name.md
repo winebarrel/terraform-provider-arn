@@ -3,12 +3,12 @@
 page_title: "codeguru_security_scan_name function - arn"
 subcategory: ""
 description: |-
-  Builds an codeguru-security ScanName ARN
+  codeguru-security ScanName ARN
 ---
 
 # function: codeguru_security_scan_name
 
-Builds the ARN of an `codeguru-security` `ScanName`:
+Builds the ARN for `codeguru-security` `ScanName`:
 
 ```
 arn:${Partition}:codeguru-security:${Region}:${Account}:scans/${ScanName}

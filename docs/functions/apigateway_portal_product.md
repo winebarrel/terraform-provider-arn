@@ -3,12 +3,12 @@
 page_title: "apigateway_portal_product function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway PortalProduct ARN
+  apigateway PortalProduct ARN
 ---
 
 # function: apigateway_portal_product
 
-Builds the ARN of an `apigateway` `PortalProduct`:
+Builds the ARN for `apigateway` `PortalProduct`:
 
 ```
 arn:${Partition}:apigateway:${Region}:${Account}:/portalproducts/${PortalProductId}

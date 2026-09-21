@@ -3,12 +3,12 @@
 page_title: "ec2_security_group_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 security-group-rule ARN
+  ec2 security-group-rule ARN
 ---
 
 # function: ec2_security_group_rule
 
-Builds the ARN of an `ec2` `security-group-rule`:
+Builds the ARN for `ec2` `security-group-rule`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:security-group-rule/${SecurityGroupRuleId}

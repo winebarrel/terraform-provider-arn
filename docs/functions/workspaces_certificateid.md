@@ -3,12 +3,12 @@
 page_title: "workspaces_certificateid function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces certificateid ARN
+  workspaces certificateid ARN
 ---
 
 # function: workspaces_certificateid
 
-Builds the ARN of an `workspaces` `certificateid`:
+Builds the ARN for `workspaces` `certificateid`:
 
 ```
 arn:${Partition}:workspaces:${Region}:${Account}:workspacecertificate/${CertificateId}

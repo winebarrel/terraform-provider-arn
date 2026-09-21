@@ -3,12 +3,12 @@
 page_title: "iotfleetwise_vehicle function - arn"
 subcategory: ""
 description: |-
-  Builds an iotfleetwise vehicle ARN
+  iotfleetwise vehicle ARN
 ---
 
 # function: iotfleetwise_vehicle
 
-Builds the ARN of an `iotfleetwise` `vehicle`:
+Builds the ARN for `iotfleetwise` `vehicle`:
 
 ```
 arn:${Partition}:iotfleetwise:${Region}:${Account}:vehicle/${VehicleId}

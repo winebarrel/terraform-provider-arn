@@ -3,12 +3,12 @@
 page_title: "application_signals_slo function - arn"
 subcategory: ""
 description: |-
-  Builds an application-signals slo ARN
+  application-signals slo ARN
 ---
 
 # function: application_signals_slo
 
-Builds the ARN of an `application-signals` `slo`:
+Builds the ARN for `application-signals` `slo`:
 
 ```
 arn:${Partition}:application-signals:${Region}:${Account}:slo/${SloName}

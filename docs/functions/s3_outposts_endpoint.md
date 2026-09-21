@@ -3,12 +3,12 @@
 page_title: "s3_outposts_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an s3-outposts endpoint ARN
+  s3-outposts endpoint ARN
 ---
 
 # function: s3_outposts_endpoint
 
-Builds the ARN of an `s3-outposts` `endpoint`:
+Builds the ARN for `s3-outposts` `endpoint`:
 
 ```
 arn:${Partition}:s3-outposts:${Region}:${Account}:outpost/${OutpostId}/endpoint/${EndpointId}

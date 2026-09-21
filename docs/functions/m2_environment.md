@@ -3,12 +3,12 @@
 page_title: "m2_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an m2 Environment ARN
+  m2 Environment ARN
 ---
 
 # function: m2_environment
 
-Builds the ARN of an `m2` `Environment`:
+Builds the ARN for `m2` `Environment`:
 
 ```
 arn:${Partition}:m2:${Region}:${Account}:env/${EnvironmentId}

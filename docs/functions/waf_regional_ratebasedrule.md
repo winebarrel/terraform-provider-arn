@@ -3,12 +3,12 @@
 page_title: "waf_regional_ratebasedrule function - arn"
 subcategory: ""
 description: |-
-  Builds an waf-regional ratebasedrule ARN
+  waf-regional ratebasedrule ARN
 ---
 
 # function: waf_regional_ratebasedrule
 
-Builds the ARN of an `waf-regional` `ratebasedrule`:
+Builds the ARN for `waf-regional` `ratebasedrule`:
 
 ```
 arn:${Partition}:waf-regional:${Region}:${Account}:ratebasedrule/${Id}

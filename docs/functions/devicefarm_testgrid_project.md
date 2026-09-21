@@ -3,12 +3,12 @@
 page_title: "devicefarm_testgrid_project function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm testgrid-project ARN
+  devicefarm testgrid-project ARN
 ---
 
 # function: devicefarm_testgrid_project
 
-Builds the ARN of an `devicefarm` `testgrid-project`:
+Builds the ARN for `devicefarm` `testgrid-project`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:testgrid-project:${ResourceId}

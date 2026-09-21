@@ -3,12 +3,12 @@
 page_title: "lightsail_disk_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail DiskSnapshot ARN
+  lightsail DiskSnapshot ARN
 ---
 
 # function: lightsail_disk_snapshot
 
-Builds the ARN of an `lightsail` `DiskSnapshot`:
+Builds the ARN for `lightsail` `DiskSnapshot`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:DiskSnapshot/${Id}

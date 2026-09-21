@@ -3,12 +3,12 @@
 page_title: "ec2_coip_pool function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 coip-pool ARN
+  ec2 coip-pool ARN
 ---
 
 # function: ec2_coip_pool
 
-Builds the ARN of an `ec2` `coip-pool`:
+Builds the ARN for `ec2` `coip-pool`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:coip-pool/${Ipv4PoolCoipId}

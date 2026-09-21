@@ -3,12 +3,12 @@
 page_title: "bedrock_model_copy_job function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock model-copy-job ARN
+  bedrock model-copy-job ARN
 ---
 
 # function: bedrock_model_copy_job
 
-Builds the ARN of an `bedrock` `model-copy-job`:
+Builds the ARN for `bedrock` `model-copy-job`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:model-copy-job/${ResourceId}

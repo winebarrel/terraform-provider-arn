@@ -3,12 +3,12 @@
 page_title: "securityagent_agent_space function - arn"
 subcategory: ""
 description: |-
-  Builds an securityagent AgentSpace ARN
+  securityagent AgentSpace ARN
 ---
 
 # function: securityagent_agent_space
 
-Builds the ARN of an `securityagent` `AgentSpace`:
+Builds the ARN for `securityagent` `AgentSpace`:
 
 ```
 arn:${Partition}:securityagent:${Region}:${Account}:agent-space/${AgentId}

@@ -3,12 +3,12 @@
 page_title: "networkmanager_global_network function - arn"
 subcategory: ""
 description: |-
-  Builds an networkmanager global-network ARN
+  networkmanager global-network ARN
 ---
 
 # function: networkmanager_global_network
 
-Builds the ARN of an `networkmanager` `global-network`:
+Builds the ARN for `networkmanager` `global-network`:
 
 ```
 arn:${Partition}:networkmanager::${Account}:global-network/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "ec2_outpost_lag function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 outpost-lag ARN
+  ec2 outpost-lag ARN
 ---
 
 # function: ec2_outpost_lag
 
-Builds the ARN of an `ec2` `outpost-lag`:
+Builds the ARN for `ec2` `outpost-lag`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:outpost-lag/${OutpostLagId}

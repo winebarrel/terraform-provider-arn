@@ -3,12 +3,12 @@
 page_title: "elemental_inference_dictionary function - arn"
 subcategory: ""
 description: |-
-  Builds an elemental-inference dictionary ARN
+  elemental-inference dictionary ARN
 ---
 
 # function: elemental_inference_dictionary
 
-Builds the ARN of an `elemental-inference` `dictionary`:
+Builds the ARN for `elemental-inference` `dictionary`:
 
 ```
 arn:${Partition}:elemental-inference:${Region}:${Account}:dictionary/${Id}

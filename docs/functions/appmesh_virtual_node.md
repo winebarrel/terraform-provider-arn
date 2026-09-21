@@ -3,12 +3,12 @@
 page_title: "appmesh_virtual_node function - arn"
 subcategory: ""
 description: |-
-  Builds an appmesh virtualNode ARN
+  appmesh virtualNode ARN
 ---
 
 # function: appmesh_virtual_node
 
-Builds the ARN of an `appmesh` `virtualNode`:
+Builds the ARN for `appmesh` `virtualNode`:
 
 ```
 arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualNode/${VirtualNodeName}

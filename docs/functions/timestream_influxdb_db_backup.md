@@ -3,12 +3,12 @@
 page_title: "timestream_influxdb_db_backup function - arn"
 subcategory: ""
 description: |-
-  Builds an timestream-influxdb db-backup ARN
+  timestream-influxdb db-backup ARN
 ---
 
 # function: timestream_influxdb_db_backup
 
-Builds the ARN of an `timestream-influxdb` `db-backup`:
+Builds the ARN for `timestream-influxdb` `db-backup`:
 
 ```
 arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-backup/${DbBackupId}

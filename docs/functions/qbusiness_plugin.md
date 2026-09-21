@@ -3,12 +3,12 @@
 page_title: "qbusiness_plugin function - arn"
 subcategory: ""
 description: |-
-  Builds an qbusiness plugin ARN
+  qbusiness plugin ARN
 ---
 
 # function: qbusiness_plugin
 
-Builds the ARN of an `qbusiness` `plugin`:
+Builds the ARN for `qbusiness` `plugin`:
 
 ```
 arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/plugin/${PluginId}

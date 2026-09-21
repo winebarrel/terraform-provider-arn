@@ -3,12 +3,12 @@
 page_title: "private_networks_order function - arn"
 subcategory: ""
 description: |-
-  Builds an private-networks order ARN
+  private-networks order ARN
 ---
 
 # function: private_networks_order
 
-Builds the ARN of an `private-networks` `order`:
+Builds the ARN for `private-networks` `order`:
 
 ```
 arn:${Partition}:private-networks:${Region}:${Account}:order/${NetworkName}/${OrderId}

@@ -3,12 +3,12 @@
 page_title: "rds_target_group function - arn"
 subcategory: ""
 description: |-
-  Builds an rds target-group ARN
+  rds target-group ARN
 ---
 
 # function: rds_target_group
 
-Builds the ARN of an `rds` `target-group`:
+Builds the ARN for `rds` `target-group`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:target-group:${TargetGroupId}

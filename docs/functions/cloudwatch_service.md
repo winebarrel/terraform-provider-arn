@@ -3,12 +3,12 @@
 page_title: "cloudwatch_service function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudwatch service ARN
+  cloudwatch service ARN
 ---
 
 # function: cloudwatch_service
 
-Builds the ARN of an `cloudwatch` `service`:
+Builds the ARN for `cloudwatch` `service`:
 
 ```
 arn:${Partition}:cloudwatch:${Region}:${Account}:service/${ServiceName}-${UniqueAttributesHex}

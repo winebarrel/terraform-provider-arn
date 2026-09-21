@@ -3,12 +3,12 @@
 page_title: "verifiedpermissions_policy_store_alias function - arn"
 subcategory: ""
 description: |-
-  Builds an verifiedpermissions policy-store-alias ARN
+  verifiedpermissions policy-store-alias ARN
 ---
 
 # function: verifiedpermissions_policy_store_alias
 
-Builds the ARN of an `verifiedpermissions` `policy-store-alias`:
+Builds the ARN for `verifiedpermissions` `policy-store-alias`:
 
 ```
 arn:${Partition}:verifiedpermissions:${Region}:${Account}:policy-store-alias/${AliasName}

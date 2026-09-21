@@ -3,12 +3,12 @@
 page_title: "entityresolution_id_mapping_workflow function - arn"
 subcategory: ""
 description: |-
-  Builds an entityresolution IdMappingWorkflow ARN
+  entityresolution IdMappingWorkflow ARN
 ---
 
 # function: entityresolution_id_mapping_workflow
 
-Builds the ARN of an `entityresolution` `IdMappingWorkflow`:
+Builds the ARN for `entityresolution` `IdMappingWorkflow`:
 
 ```
 arn:${Partition}:entityresolution:${Region}:${Account}:idmappingworkflow/${WorkflowName}

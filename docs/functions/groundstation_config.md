@@ -3,12 +3,12 @@
 page_title: "groundstation_config function - arn"
 subcategory: ""
 description: |-
-  Builds an groundstation Config ARN
+  groundstation Config ARN
 ---
 
 # function: groundstation_config
 
-Builds the ARN of an `groundstation` `Config`:
+Builds the ARN for `groundstation` `Config`:
 
 ```
 arn:${Partition}:groundstation:${Region}:${Account}:config/${ConfigType}/${ConfigId}

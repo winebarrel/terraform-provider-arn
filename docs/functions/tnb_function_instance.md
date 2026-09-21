@@ -3,12 +3,12 @@
 page_title: "tnb_function_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an tnb function-instance ARN
+  tnb function-instance ARN
 ---
 
 # function: tnb_function_instance
 
-Builds the ARN of an `tnb` `function-instance`:
+Builds the ARN for `tnb` `function-instance`:
 
 ```
 arn:${Partition}:tnb:${Region}:${Account}:function-instance/${FunctionInstanceId}

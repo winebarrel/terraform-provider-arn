@@ -3,12 +3,12 @@
 page_title: "synthetics_group function - arn"
 subcategory: ""
 description: |-
-  Builds an synthetics group ARN
+  synthetics group ARN
 ---
 
 # function: synthetics_group
 
-Builds the ARN of an `synthetics` `group`:
+Builds the ARN for `synthetics` `group`:
 
 ```
 arn:${Partition}:synthetics:${Region}:${Account}:group:${GroupId}

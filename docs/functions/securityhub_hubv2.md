@@ -3,12 +3,12 @@
 page_title: "securityhub_hubv2 function - arn"
 subcategory: ""
 description: |-
-  Builds an securityhub hubv2 ARN
+  securityhub hubv2 ARN
 ---
 
 # function: securityhub_hubv2
 
-Builds the ARN of an `securityhub` `hubv2`:
+Builds the ARN for `securityhub` `hubv2`:
 
 ```
 arn:${Partition}:securityhub:${Region}:${Account}:hubv2/${HubV2Id}

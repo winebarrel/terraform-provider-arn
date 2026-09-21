@@ -3,12 +3,12 @@
 page_title: "connect_legacy_phone_number function - arn"
 subcategory: ""
 description: |-
-  Builds an connect legacy-phone-number ARN
+  connect legacy-phone-number ARN
 ---
 
 # function: connect_legacy_phone_number
 
-Builds the ARN of an `connect` `legacy-phone-number`:
+Builds the ARN for `connect` `legacy-phone-number`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/phone-number/${PhoneNumberId}

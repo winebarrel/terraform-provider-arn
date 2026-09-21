@@ -3,12 +3,12 @@
 page_title: "lambda_function_version function - arn"
 subcategory: ""
 description: |-
-  Builds an lambda function version ARN
+  lambda function version ARN
 ---
 
 # function: lambda_function_version
 
-Builds the ARN of an `lambda` `function version`:
+Builds the ARN for `lambda` `function version`:
 
 ```
 arn:${Partition}:lambda:${Region}:${Account}:function:${FunctionName}:${Version}

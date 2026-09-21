@@ -3,12 +3,12 @@
 page_title: "evidently_segment function - arn"
 subcategory: ""
 description: |-
-  Builds an evidently Segment ARN
+  evidently Segment ARN
 ---
 
 # function: evidently_segment
 
-Builds the ARN of an `evidently` `Segment`:
+Builds the ARN for `evidently` `Segment`:
 
 ```
 arn:${Partition}:evidently:${Region}:${Account}:segment/${SegmentName}

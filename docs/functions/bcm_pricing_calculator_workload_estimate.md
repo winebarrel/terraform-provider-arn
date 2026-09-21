@@ -3,12 +3,12 @@
 page_title: "bcm_pricing_calculator_workload_estimate function - arn"
 subcategory: ""
 description: |-
-  Builds an bcm-pricing-calculator workload-estimate ARN
+  bcm-pricing-calculator workload-estimate ARN
 ---
 
 # function: bcm_pricing_calculator_workload_estimate
 
-Builds the ARN of an `bcm-pricing-calculator` `workload-estimate`:
+Builds the ARN for `bcm-pricing-calculator` `workload-estimate`:
 
 ```
 arn:${Partition}:bcm-pricing-calculator::${Account}:workload-estimate/${WorkloadEstimateId}

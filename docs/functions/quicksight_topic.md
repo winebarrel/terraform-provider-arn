@@ -3,12 +3,12 @@
 page_title: "quicksight_topic function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight topic ARN
+  quicksight topic ARN
 ---
 
 # function: quicksight_topic
 
-Builds the ARN of an `quicksight` `topic`:
+Builds the ARN for `quicksight` `topic`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:topic/${ResourceId}

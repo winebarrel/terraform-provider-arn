@@ -3,12 +3,12 @@
 page_title: "proton_repository function - arn"
 subcategory: ""
 description: |-
-  Builds an proton repository ARN
+  proton repository ARN
 ---
 
 # function: proton_repository
 
-Builds the ARN of an `proton` `repository`:
+Builds the ARN for `proton` `repository`:
 
 ```
 arn:${Partition}:proton:${Region}:${Account}:repository/${Provider}:${Name}

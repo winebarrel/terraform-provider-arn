@@ -3,12 +3,12 @@
 page_title: "emr_serverless_session function - arn"
 subcategory: ""
 description: |-
-  Builds an emr-serverless session ARN
+  emr-serverless session ARN
 ---
 
 # function: emr_serverless_session
 
-Builds the ARN of an `emr-serverless` `session`:
+Builds the ARN for `emr-serverless` `session`:
 
 ```
 arn:${Partition}:emr-serverless:${Region}:${Account}:/applications/${ApplicationId}/sessions/${SessionId}

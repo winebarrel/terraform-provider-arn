@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_code_interpreter_custom function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore code-interpreter-custom ARN
+  bedrock-agentcore code-interpreter-custom ARN
 ---
 
 # function: bedrock_agentcore_code_interpreter_custom
 
-Builds the ARN of an `bedrock-agentcore` `code-interpreter-custom`:
+Builds the ARN for `bedrock-agentcore` `code-interpreter-custom`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:code-interpreter-custom/${CodeInterpreterId}

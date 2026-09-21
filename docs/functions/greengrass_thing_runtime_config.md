@@ -3,12 +3,12 @@
 page_title: "greengrass_thing_runtime_config function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass thingRuntimeConfig ARN
+  greengrass thingRuntimeConfig ARN
 ---
 
 # function: greengrass_thing_runtime_config
 
-Builds the ARN of an `greengrass` `thingRuntimeConfig`:
+Builds the ARN for `greengrass` `thingRuntimeConfig`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/things/${ThingName}/runtimeconfig

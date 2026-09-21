@@ -3,12 +3,12 @@
 page_title: "ses_addon_subscription function - arn"
 subcategory: ""
 description: |-
-  Builds an ses addon-subscription ARN
+  ses addon-subscription ARN
 ---
 
 # function: ses_addon_subscription
 
-Builds the ARN of an `ses` `addon-subscription`:
+Builds the ARN for `ses` `addon-subscription`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:addon-subscription/${AddonSubscriptionId}

@@ -3,12 +3,12 @@
 page_title: "amplifyuibuilder_theme_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an amplifyuibuilder ThemeResource ARN
+  amplifyuibuilder ThemeResource ARN
 ---
 
 # function: amplifyuibuilder_theme_resource
 
-Builds the ARN of an `amplifyuibuilder` `ThemeResource`:
+Builds the ARN for `amplifyuibuilder` `ThemeResource`:
 
 ```
 arn:${Partition}:amplifyuibuilder:${Region}:${Account}:app/${AppId}/environment/${EnvironmentName}/themes/${Id}

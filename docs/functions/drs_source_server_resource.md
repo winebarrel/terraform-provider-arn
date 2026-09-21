@@ -3,12 +3,12 @@
 page_title: "drs_source_server_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an drs SourceServerResource ARN
+  drs SourceServerResource ARN
 ---
 
 # function: drs_source_server_resource
 
-Builds the ARN of an `drs` `SourceServerResource`:
+Builds the ARN for `drs` `SourceServerResource`:
 
 ```
 arn:${Partition}:drs:${Region}:${Account}:source-server/${SourceServerID}

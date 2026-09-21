@@ -3,12 +3,12 @@
 page_title: "proton_service_template_minor_version function - arn"
 subcategory: ""
 description: |-
-  Builds an proton service-template-minor-version ARN
+  proton service-template-minor-version ARN
 ---
 
 # function: proton_service_template_minor_version
 
-Builds the ARN of an `proton` `service-template-minor-version`:
+Builds the ARN for `proton` `service-template-minor-version`:
 
 ```
 arn:${Partition}:proton:${Region}:${Account}:service-template/${TemplateName}:${MajorVersionId}.${MinorVersionId}

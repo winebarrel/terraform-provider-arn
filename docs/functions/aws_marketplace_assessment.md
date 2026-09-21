@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_assessment function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace Assessment ARN
+  aws-marketplace Assessment ARN
 ---
 
 # function: aws_marketplace_assessment
 
-Builds the ARN of an `aws-marketplace` `Assessment`:
+Builds the ARN for `aws-marketplace` `Assessment`:
 
 ```
 arn:${Partition}:aws-marketplace:${Region}::${Catalog}/Assessment/${ResourceId}

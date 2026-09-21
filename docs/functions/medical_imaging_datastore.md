@@ -3,12 +3,12 @@
 page_title: "medical_imaging_datastore function - arn"
 subcategory: ""
 description: |-
-  Builds an medical-imaging datastore ARN
+  medical-imaging datastore ARN
 ---
 
 # function: medical_imaging_datastore
 
-Builds the ARN of an `medical-imaging` `datastore`:
+Builds the ARN for `medical-imaging` `datastore`:
 
 ```
 arn:${Partition}:medical-imaging:${Region}:${Account}:datastore/${DatastoreId}

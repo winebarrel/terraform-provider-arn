@@ -3,12 +3,12 @@
 page_title: "ivs_recording_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an ivs Recording-Configuration ARN
+  ivs Recording-Configuration ARN
 ---
 
 # function: ivs_recording_configuration
 
-Builds the ARN of an `ivs` `Recording-Configuration`:
+Builds the ARN for `ivs` `Recording-Configuration`:
 
 ```
 arn:${Partition}:ivs:${Region}:${Account}:recording-configuration/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "iam_delegation_request function - arn"
 subcategory: ""
 description: |-
-  Builds an iam delegation-request ARN
+  iam delegation-request ARN
 ---
 
 # function: iam_delegation_request
 
-Builds the ARN of an `iam` `delegation-request`:
+Builds the ARN for `iam` `delegation-request`:
 
 ```
 arn:${Partition}:iam::${Account}:delegation-request/${DelegationRequestId}

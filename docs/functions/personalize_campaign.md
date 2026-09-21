@@ -3,12 +3,12 @@
 page_title: "personalize_campaign function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize campaign ARN
+  personalize campaign ARN
 ---
 
 # function: personalize_campaign
 
-Builds the ARN of an `personalize` `campaign`:
+Builds the ARN for `personalize` `campaign`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:campaign/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "forecast_explainability_export function - arn"
 subcategory: ""
 description: |-
-  Builds an forecast explainabilityExport ARN
+  forecast explainabilityExport ARN
 ---
 
 # function: forecast_explainability_export
 
-Builds the ARN of an `forecast` `explainabilityExport`:
+Builds the ARN for `forecast` `explainabilityExport`:
 
 ```
 arn:${Partition}:forecast:${Region}:${Account}:explainability-export/${ResourceId}

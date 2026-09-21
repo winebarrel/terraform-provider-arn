@@ -3,12 +3,12 @@
 page_title: "ec2_subnet_cidr_reservation function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 subnet-cidr-reservation ARN
+  ec2 subnet-cidr-reservation ARN
 ---
 
 # function: ec2_subnet_cidr_reservation
 
-Builds the ARN of an `ec2` `subnet-cidr-reservation`:
+Builds the ARN for `ec2` `subnet-cidr-reservation`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:subnet-cidr-reservation/${SubnetCidrReservationId}

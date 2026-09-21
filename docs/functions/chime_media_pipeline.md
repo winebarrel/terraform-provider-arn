@@ -3,12 +3,12 @@
 page_title: "chime_media_pipeline function - arn"
 subcategory: ""
 description: |-
-  Builds an chime media-pipeline ARN
+  chime media-pipeline ARN
 ---
 
 # function: chime_media_pipeline
 
-Builds the ARN of an `chime` `media-pipeline`:
+Builds the ARN for `chime` `media-pipeline`:
 
 ```
 arn:${Partition}:chime:${Region}:${AccountId}:media-pipeline/${MediaPipelineId}

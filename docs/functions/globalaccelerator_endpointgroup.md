@@ -3,12 +3,12 @@
 page_title: "globalaccelerator_endpointgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an globalaccelerator endpointgroup ARN
+  globalaccelerator endpointgroup ARN
 ---
 
 # function: globalaccelerator_endpointgroup
 
-Builds the ARN of an `globalaccelerator` `endpointgroup`:
+Builds the ARN for `globalaccelerator` `endpointgroup`:
 
 ```
 arn:${Partition}:globalaccelerator::${Account}:accelerator/${ResourceId}/listener/${ListenerId}/endpoint-group/${EndpointGroupId}

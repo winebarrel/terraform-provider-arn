@@ -3,12 +3,12 @@
 page_title: "sagemaker_notebook_instance_lifecycle_config function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker notebook-instance-lifecycle-config ARN
+  sagemaker notebook-instance-lifecycle-config ARN
 ---
 
 # function: sagemaker_notebook_instance_lifecycle_config
 
-Builds the ARN of an `sagemaker` `notebook-instance-lifecycle-config`:
+Builds the ARN for `sagemaker` `notebook-instance-lifecycle-config`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:notebook-instance-lifecycle-config/${NotebookInstanceLifecycleConfigName}

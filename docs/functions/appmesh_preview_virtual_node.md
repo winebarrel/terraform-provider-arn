@@ -3,12 +3,12 @@
 page_title: "appmesh_preview_virtual_node function - arn"
 subcategory: ""
 description: |-
-  Builds an appmesh-preview virtualNode ARN
+  appmesh-preview virtualNode ARN
 ---
 
 # function: appmesh_preview_virtual_node
 
-Builds the ARN of an `appmesh-preview` `virtualNode`:
+Builds the ARN for `appmesh-preview` `virtualNode`:
 
 ```
 arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}/virtualNode/${VirtualNodeName}

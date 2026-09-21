@@ -3,12 +3,12 @@
 page_title: "evs_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an evs environment ARN
+  evs environment ARN
 ---
 
 # function: evs_environment
 
-Builds the ARN of an `evs` `environment`:
+Builds the ARN for `evs` `environment`:
 
 ```
 arn:${Partition}:evs:${Region}:${Account}:environment/${EnvironmentIdentifier}

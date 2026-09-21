@@ -3,12 +3,12 @@
 page_title: "clouddirectory_applied_schema function - arn"
 subcategory: ""
 description: |-
-  Builds an clouddirectory appliedSchema ARN
+  clouddirectory appliedSchema ARN
 ---
 
 # function: clouddirectory_applied_schema
 
-Builds the ARN of an `clouddirectory` `appliedSchema`:
+Builds the ARN for `clouddirectory` `appliedSchema`:
 
 ```
 arn:${Partition}:clouddirectory:${Region}:${Account}:directory/${DirectoryId}/schema/${SchemaName}/${Version}

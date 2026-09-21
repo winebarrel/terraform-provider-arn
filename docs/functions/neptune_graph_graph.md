@@ -3,12 +3,12 @@
 page_title: "neptune_graph_graph function - arn"
 subcategory: ""
 description: |-
-  Builds an neptune-graph graph ARN
+  neptune-graph graph ARN
 ---
 
 # function: neptune_graph_graph
 
-Builds the ARN of an `neptune-graph` `graph`:
+Builds the ARN for `neptune-graph` `graph`:
 
 ```
 arn:${Partition}:neptune-graph:${Region}:${Account}:graph/${ResourceId}

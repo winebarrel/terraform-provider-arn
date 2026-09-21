@@ -3,12 +3,12 @@
 page_title: "dms_migration_project function - arn"
 subcategory: ""
 description: |-
-  Builds an dms MigrationProject ARN
+  dms MigrationProject ARN
 ---
 
 # function: dms_migration_project
 
-Builds the ARN of an `dms` `MigrationProject`:
+Builds the ARN for `dms` `MigrationProject`:
 
 ```
 arn:${Partition}:dms:${Region}:${Account}:migration-project:*

@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_dataset function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore dataset ARN
+  bedrock-agentcore dataset ARN
 ---
 
 # function: bedrock_agentcore_dataset
 
-Builds the ARN of an `bedrock-agentcore` `dataset`:
+Builds the ARN for `bedrock-agentcore` `dataset`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:dataset/${DatasetId}

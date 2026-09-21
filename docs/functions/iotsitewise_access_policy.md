@@ -3,12 +3,12 @@
 page_title: "iotsitewise_access_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise access-policy ARN
+  iotsitewise access-policy ARN
 ---
 
 # function: iotsitewise_access_policy
 
-Builds the ARN of an `iotsitewise` `access-policy`:
+Builds the ARN for `iotsitewise` `access-policy`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:access-policy/${AccessPolicyId}

@@ -3,12 +3,12 @@
 page_title: "forecast_what_if_forecast_export function - arn"
 subcategory: ""
 description: |-
-  Builds an forecast whatIfForecastExport ARN
+  forecast whatIfForecastExport ARN
 ---
 
 # function: forecast_what_if_forecast_export
 
-Builds the ARN of an `forecast` `whatIfForecastExport`:
+Builds the ARN for `forecast` `whatIfForecastExport`:
 
 ```
 arn:${Partition}:forecast:${Region}:${Account}:what-if-forecast-export/${ResourceId}

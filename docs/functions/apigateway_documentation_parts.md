@@ -3,12 +3,12 @@
 page_title: "apigateway_documentation_parts function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway DocumentationParts ARN
+  apigateway DocumentationParts ARN
 ---
 
 # function: apigateway_documentation_parts
 
-Builds the ARN of an `apigateway` `DocumentationParts`:
+Builds the ARN for `apigateway` `DocumentationParts`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/documentation/parts

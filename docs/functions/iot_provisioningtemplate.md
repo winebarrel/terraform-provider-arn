@@ -3,12 +3,12 @@
 page_title: "iot_provisioningtemplate function - arn"
 subcategory: ""
 description: |-
-  Builds an iot provisioningtemplate ARN
+  iot provisioningtemplate ARN
 ---
 
 # function: iot_provisioningtemplate
 
-Builds the ARN of an `iot` `provisioningtemplate`:
+Builds the ARN for `iot` `provisioningtemplate`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:provisioningtemplate/${ProvisioningTemplate}

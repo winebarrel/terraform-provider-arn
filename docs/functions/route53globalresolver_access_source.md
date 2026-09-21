@@ -3,12 +3,12 @@
 page_title: "route53globalresolver_access_source function - arn"
 subcategory: ""
 description: |-
-  Builds an route53globalresolver access-source ARN
+  route53globalresolver access-source ARN
 ---
 
 # function: route53globalresolver_access_source
 
-Builds the ARN of an `route53globalresolver` `access-source`:
+Builds the ARN for `route53globalresolver` `access-source`:
 
 ```
 arn:${Partition}:route53globalresolver::${Account}:access-source/${Id}

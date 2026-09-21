@@ -3,12 +3,12 @@
 page_title: "iam_saml_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an iam saml-provider ARN
+  iam saml-provider ARN
 ---
 
 # function: iam_saml_provider
 
-Builds the ARN of an `iam` `saml-provider`:
+Builds the ARN for `iam` `saml-provider`:
 
 ```
 arn:${Partition}:iam::${Account}:saml-provider/${SamlProviderName}

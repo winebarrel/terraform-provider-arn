@@ -3,12 +3,12 @@
 page_title: "kinesis_kms_key function - arn"
 subcategory: ""
 description: |-
-  Builds an kinesis kmsKey ARN
+  kinesis kmsKey ARN
 ---
 
 # function: kinesis_kms_key
 
-Builds the ARN of an `kinesis` `kmsKey`:
+Builds the ARN for `kinesis` `kmsKey`:
 
 ```
 arn:${Partition}:kms:${Region}:${Account}:key/${KeyId}

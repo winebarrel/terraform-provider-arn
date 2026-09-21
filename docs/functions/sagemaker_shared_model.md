@@ -3,12 +3,12 @@
 page_title: "sagemaker_shared_model function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker shared-model ARN
+  sagemaker shared-model ARN
 ---
 
 # function: sagemaker_shared_model
 
-Builds the ARN of an `sagemaker` `shared-model`:
+Builds the ARN for `sagemaker` `shared-model`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:shared-model/${SharedModelId}

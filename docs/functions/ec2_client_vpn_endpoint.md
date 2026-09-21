@@ -3,12 +3,12 @@
 page_title: "ec2_client_vpn_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 client-vpn-endpoint ARN
+  ec2 client-vpn-endpoint ARN
 ---
 
 # function: ec2_client_vpn_endpoint
 
-Builds the ARN of an `ec2` `client-vpn-endpoint`:
+Builds the ARN for `ec2` `client-vpn-endpoint`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:client-vpn-endpoint/${ClientVpnEndpointId}

@@ -3,12 +3,12 @@
 page_title: "ecs_daemon_revision function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs daemon-revision ARN
+  ecs daemon-revision ARN
 ---
 
 # function: ecs_daemon_revision
 
-Builds the ARN of an `ecs` `daemon-revision`:
+Builds the ARN for `ecs` `daemon-revision`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:daemon-revision/${ClusterName}/${DaemonName}/${DaemonRevisionId}

@@ -3,12 +3,12 @@
 page_title: "cloudfront_anycast_ip_list function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront anycast-ip-list ARN
+  cloudfront anycast-ip-list ARN
 ---
 
 # function: cloudfront_anycast_ip_list
 
-Builds the ARN of an `cloudfront` `anycast-ip-list`:
+Builds the ARN for `cloudfront` `anycast-ip-list`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:anycast-ip-list/${Id}

@@ -3,12 +3,12 @@
 page_title: "servicecatalog_portfolio function - arn"
 subcategory: ""
 description: |-
-  Builds an servicecatalog Portfolio ARN
+  servicecatalog Portfolio ARN
 ---
 
 # function: servicecatalog_portfolio
 
-Builds the ARN of an `servicecatalog` `Portfolio`:
+Builds the ARN for `servicecatalog` `Portfolio`:
 
 ```
 arn:${Partition}:catalog:${Region}:${Account}:portfolio/${PortfolioId}

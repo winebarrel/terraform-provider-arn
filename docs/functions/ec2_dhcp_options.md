@@ -3,12 +3,12 @@
 page_title: "ec2_dhcp_options function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 dhcp-options ARN
+  ec2 dhcp-options ARN
 ---
 
 # function: ec2_dhcp_options
 
-Builds the ARN of an `ec2` `dhcp-options`:
+Builds the ARN for `ec2` `dhcp-options`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:dhcp-options/${DhcpOptionsId}

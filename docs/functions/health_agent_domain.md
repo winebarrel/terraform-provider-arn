@@ -3,12 +3,12 @@
 page_title: "health_agent_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an health-agent Domain ARN
+  health-agent Domain ARN
 ---
 
 # function: health_agent_domain
 
-Builds the ARN of an `health-agent` `Domain`:
+Builds the ARN for `health-agent` `Domain`:
 
 ```
 arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}

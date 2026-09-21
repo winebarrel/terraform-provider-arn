@@ -3,12 +3,12 @@
 page_title: "geo_map function - arn"
 subcategory: ""
 description: |-
-  Builds an geo map ARN
+  geo map ARN
 ---
 
 # function: geo_map
 
-Builds the ARN of an `geo` `map`:
+Builds the ARN for `geo` `map`:
 
 ```
 arn:${Partition}:geo:${Region}:${Account}:map/${MapName}

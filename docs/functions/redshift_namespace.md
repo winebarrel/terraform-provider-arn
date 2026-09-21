@@ -3,12 +3,12 @@
 page_title: "redshift_namespace function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift namespace ARN
+  redshift namespace ARN
 ---
 
 # function: redshift_namespace
 
-Builds the ARN of an `redshift` `namespace`:
+Builds the ARN for `redshift` `namespace`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:namespace:${ClusterNamespace}

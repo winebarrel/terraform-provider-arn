@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_paymentcredentialprovider function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore paymentcredentialprovider ARN
+  bedrock-agentcore paymentcredentialprovider ARN
 ---
 
 # function: bedrock_agentcore_paymentcredentialprovider
 
-Builds the ARN of an `bedrock-agentcore` `paymentcredentialprovider`:
+Builds the ARN for `bedrock-agentcore` `paymentcredentialprovider`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:token-vault/${TokenVaultId}/paymentcredentialprovider/${Name}

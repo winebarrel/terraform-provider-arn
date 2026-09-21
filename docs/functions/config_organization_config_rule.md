@@ -3,12 +3,12 @@
 page_title: "config_organization_config_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an config OrganizationConfigRule ARN
+  config OrganizationConfigRule ARN
 ---
 
 # function: config_organization_config_rule
 
-Builds the ARN of an `config` `OrganizationConfigRule`:
+Builds the ARN for `config` `OrganizationConfigRule`:
 
 ```
 arn:${Partition}:config:${Region}:${Account}:organization-config-rule/${OrganizationConfigRuleId}

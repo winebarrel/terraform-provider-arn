@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_tax_compliance_profile_change_task function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace TaxComplianceProfileChangeTask ARN
+  aws-marketplace TaxComplianceProfileChangeTask ARN
 ---
 
 # function: aws_marketplace_tax_compliance_profile_change_task
 
-Builds the ARN of an `aws-marketplace` `TaxComplianceProfileChangeTask`:
+Builds the ARN for `aws-marketplace` `TaxComplianceProfileChangeTask`:
 
 ```
 arn:${Partition}:aws-marketplace:${Region}:${Account}:tax-compliance-profile-change-task/${ResourceId}

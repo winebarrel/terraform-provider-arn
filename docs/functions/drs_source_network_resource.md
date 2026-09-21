@@ -3,12 +3,12 @@
 page_title: "drs_source_network_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an drs SourceNetworkResource ARN
+  drs SourceNetworkResource ARN
 ---
 
 # function: drs_source_network_resource
 
-Builds the ARN of an `drs` `SourceNetworkResource`:
+Builds the ARN for `drs` `SourceNetworkResource`:
 
 ```
 arn:${Partition}:drs:${Region}:${Account}:source-network/${SourceNetworkID}

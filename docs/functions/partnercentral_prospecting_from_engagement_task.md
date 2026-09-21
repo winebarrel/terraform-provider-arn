@@ -3,12 +3,12 @@
 page_title: "partnercentral_prospecting_from_engagement_task function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral ProspectingFromEngagementTask ARN
+  partnercentral ProspectingFromEngagementTask ARN
 ---
 
 # function: partnercentral_prospecting_from_engagement_task
 
-Builds the ARN of an `partnercentral` `ProspectingFromEngagementTask`:
+Builds the ARN for `partnercentral` `ProspectingFromEngagementTask`:
 
 ```
 arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/prospecting-from-engagement-task/${TaskIdentifier}

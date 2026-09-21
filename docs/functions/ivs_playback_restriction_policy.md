@@ -3,12 +3,12 @@
 page_title: "ivs_playback_restriction_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an ivs Playback-Restriction-Policy ARN
+  ivs Playback-Restriction-Policy ARN
 ---
 
 # function: ivs_playback_restriction_policy
 
-Builds the ARN of an `ivs` `Playback-Restriction-Policy`:
+Builds the ARN for `ivs` `Playback-Restriction-Policy`:
 
 ```
 arn:${Partition}:ivs:${Region}:${Account}:playback-restriction-policy/${ResourceId}

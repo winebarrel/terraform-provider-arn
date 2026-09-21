@@ -3,12 +3,12 @@
 page_title: "scheduler_schedule function - arn"
 subcategory: ""
 description: |-
-  Builds an scheduler schedule ARN
+  scheduler schedule ARN
 ---
 
 # function: scheduler_schedule
 
-Builds the ARN of an `scheduler` `schedule`:
+Builds the ARN for `scheduler` `schedule`:
 
 ```
 arn:${Partition}:scheduler:${Region}:${Account}:schedule/${GroupName}/${ScheduleName}

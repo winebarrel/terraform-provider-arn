@@ -3,12 +3,12 @@
 page_title: "iotwireless_service_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless ServiceProfile ARN
+  iotwireless ServiceProfile ARN
 ---
 
 # function: iotwireless_service_profile
 
-Builds the ARN of an `iotwireless` `ServiceProfile`:
+Builds the ARN for `iotwireless` `ServiceProfile`:
 
 ```
 arn:${Partition}:iotwireless:${Region}:${Account}:ServiceProfile/${ServiceProfileId}

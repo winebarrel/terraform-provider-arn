@@ -3,12 +3,12 @@
 page_title: "emr_containers_security_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an emr-containers securityConfiguration ARN
+  emr-containers securityConfiguration ARN
 ---
 
 # function: emr_containers_security_configuration
 
-Builds the ARN of an `emr-containers` `securityConfiguration`:
+Builds the ARN for `emr-containers` `securityConfiguration`:
 
 ```
 arn:${Partition}:emr-containers:${Region}:${Account}:/securityconfigurations/${SecurityConfigurationId}

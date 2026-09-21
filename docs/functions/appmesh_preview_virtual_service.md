@@ -3,12 +3,12 @@
 page_title: "appmesh_preview_virtual_service function - arn"
 subcategory: ""
 description: |-
-  Builds an appmesh-preview virtualService ARN
+  appmesh-preview virtualService ARN
 ---
 
 # function: appmesh_preview_virtual_service
 
-Builds the ARN of an `appmesh-preview` `virtualService`:
+Builds the ARN for `appmesh-preview` `virtualService`:
 
 ```
 arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}/virtualService/${VirtualServiceName}

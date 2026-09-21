@@ -3,12 +3,12 @@
 page_title: "frauddetector_batch_prediction function - arn"
 subcategory: ""
 description: |-
-  Builds an frauddetector batch-prediction ARN
+  frauddetector batch-prediction ARN
 ---
 
 # function: frauddetector_batch_prediction
 
-Builds the ARN of an `frauddetector` `batch-prediction`:
+Builds the ARN for `frauddetector` `batch-prediction`:
 
 ```
 arn:${Partition}:frauddetector:${Region}:${Account}:batch-prediction/${ResourcePath}

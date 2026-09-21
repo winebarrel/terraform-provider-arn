@@ -3,12 +3,12 @@
 page_title: "wafv2_apigateway function - arn"
 subcategory: ""
 description: |-
-  Builds an wafv2 apigateway ARN
+  wafv2 apigateway ARN
 ---
 
 # function: wafv2_apigateway
 
-Builds the ARN of an `wafv2` `apigateway`:
+Builds the ARN for `wafv2` `apigateway`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/${ApiId}/stages/${StageName}

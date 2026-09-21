@@ -3,12 +3,12 @@
 page_title: "appconfig_hostedconfigurationversion function - arn"
 subcategory: ""
 description: |-
-  Builds an appconfig hostedconfigurationversion ARN
+  appconfig hostedconfigurationversion ARN
 ---
 
 # function: appconfig_hostedconfigurationversion
 
-Builds the ARN of an `appconfig` `hostedconfigurationversion`:
+Builds the ARN for `appconfig` `hostedconfigurationversion`:
 
 ```
 arn:${Partition}:appconfig:${Region}:${Account}:application/${ApplicationId}/configurationprofile/${ConfigurationProfileId}

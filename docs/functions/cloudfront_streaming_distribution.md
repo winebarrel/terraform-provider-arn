@@ -3,12 +3,12 @@
 page_title: "cloudfront_streaming_distribution function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront streaming-distribution ARN
+  cloudfront streaming-distribution ARN
 ---
 
 # function: cloudfront_streaming_distribution
 
-Builds the ARN of an `cloudfront` `streaming-distribution`:
+Builds the ARN for `cloudfront` `streaming-distribution`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:streaming-distribution/${DistributionId}

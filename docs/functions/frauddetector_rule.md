@@ -3,12 +3,12 @@
 page_title: "frauddetector_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an frauddetector rule ARN
+  frauddetector rule ARN
 ---
 
 # function: frauddetector_rule
 
-Builds the ARN of an `frauddetector` `rule`:
+Builds the ARN for `frauddetector` `rule`:
 
 ```
 arn:${Partition}:frauddetector:${Region}:${Account}:rule/${ResourcePath}

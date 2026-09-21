@@ -3,12 +3,12 @@
 page_title: "nimble_eula_acceptance function - arn"
 subcategory: ""
 description: |-
-  Builds an nimble eula-acceptance ARN
+  nimble eula-acceptance ARN
 ---
 
 # function: nimble_eula_acceptance
 
-Builds the ARN of an `nimble` `eula-acceptance`:
+Builds the ARN for `nimble` `eula-acceptance`:
 
 ```
 arn:${Partition}:nimble:${Region}:${Account}:eula-acceptance/${EulaAcceptanceId}

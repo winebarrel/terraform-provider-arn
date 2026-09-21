@@ -3,12 +3,12 @@
 page_title: "devicefarm_testgrid_session function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm testgrid-session ARN
+  devicefarm testgrid-session ARN
 ---
 
 # function: devicefarm_testgrid_session
 
-Builds the ARN of an `devicefarm` `testgrid-session`:
+Builds the ARN for `devicefarm` `testgrid-session`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:testgrid-session:${ResourceId}

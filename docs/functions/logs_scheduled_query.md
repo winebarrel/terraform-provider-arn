@@ -3,12 +3,12 @@
 page_title: "logs_scheduled_query function - arn"
 subcategory: ""
 description: |-
-  Builds an logs scheduled-query ARN
+  logs scheduled-query ARN
 ---
 
 # function: logs_scheduled_query
 
-Builds the ARN of an `logs` `scheduled-query`:
+Builds the ARN for `logs` `scheduled-query`:
 
 ```
 arn:${Partition}:logs:${Region}:${Account}:scheduled-query:${ScheduledQueryId}

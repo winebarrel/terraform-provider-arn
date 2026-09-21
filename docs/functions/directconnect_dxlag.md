@@ -3,12 +3,12 @@
 page_title: "directconnect_dxlag function - arn"
 subcategory: ""
 description: |-
-  Builds an directconnect dxlag ARN
+  directconnect dxlag ARN
 ---
 
 # function: directconnect_dxlag
 
-Builds the ARN of an `directconnect` `dxlag`:
+Builds the ARN for `directconnect` `dxlag`:
 
 ```
 arn:${Partition}:directconnect:${Region}:${Account}:dxlag/${LagId}

@@ -3,12 +3,12 @@
 page_title: "sagemaker_cluster_scheduler_config function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker cluster-scheduler-config ARN
+  sagemaker cluster-scheduler-config ARN
 ---
 
 # function: sagemaker_cluster_scheduler_config
 
-Builds the ARN of an `sagemaker` `cluster-scheduler-config`:
+Builds the ARN for `sagemaker` `cluster-scheduler-config`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:cluster-scheduler-config/${ClusterSchedulerConfigId}

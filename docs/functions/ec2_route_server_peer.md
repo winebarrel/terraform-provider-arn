@@ -3,12 +3,12 @@
 page_title: "ec2_route_server_peer function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 route-server-peer ARN
+  ec2 route-server-peer ARN
 ---
 
 # function: ec2_route_server_peer
 
-Builds the ARN of an `ec2` `route-server-peer`:
+Builds the ARN for `ec2` `route-server-peer`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:route-server-peer/${RouteServerPeerId}

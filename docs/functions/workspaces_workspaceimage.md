@@ -3,12 +3,12 @@
 page_title: "workspaces_workspaceimage function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces workspaceimage ARN
+  workspaces workspaceimage ARN
 ---
 
 # function: workspaces_workspaceimage
 
-Builds the ARN of an `workspaces` `workspaceimage`:
+Builds the ARN for `workspaces` `workspaceimage`:
 
 ```
 arn:${Partition}:workspaces:${Region}:${Account}:workspaceimage/${ImageId}

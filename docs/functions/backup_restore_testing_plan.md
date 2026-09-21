@@ -3,12 +3,12 @@
 page_title: "backup_restore_testing_plan function - arn"
 subcategory: ""
 description: |-
-  Builds an backup restoreTestingPlan ARN
+  backup restoreTestingPlan ARN
 ---
 
 # function: backup_restore_testing_plan
 
-Builds the ARN of an `backup` `restoreTestingPlan`:
+Builds the ARN for `backup` `restoreTestingPlan`:
 
 ```
 arn:${Partition}:backup:${Region}:${Account}:restore-testing-plan:${RestoreTestingPlanName}-${RestoreTestingPlanId}

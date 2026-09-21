@@ -3,12 +3,12 @@
 page_title: "s3files_file_system function - arn"
 subcategory: ""
 description: |-
-  Builds an s3files file-system ARN
+  s3files file-system ARN
 ---
 
 # function: s3files_file_system
 
-Builds the ARN of an `s3files` `file-system`:
+Builds the ARN for `s3files` `file-system`:
 
 ```
 arn:${Partition}:s3files:${Region}:${Account}:file-system/${FileSystemId}

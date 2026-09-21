@@ -3,12 +3,12 @@
 page_title: "rds_cluster_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an rds cluster-endpoint ARN
+  rds cluster-endpoint ARN
 ---
 
 # function: rds_cluster_endpoint
 
-Builds the ARN of an `rds` `cluster-endpoint`:
+Builds the ARN for `rds` `cluster-endpoint`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:cluster-endpoint:${DbClusterEndpoint}

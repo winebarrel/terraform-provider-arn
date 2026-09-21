@@ -3,12 +3,12 @@
 page_title: "aps_workspace function - arn"
 subcategory: ""
 description: |-
-  Builds an aps workspace ARN
+  aps workspace ARN
 ---
 
 # function: aps_workspace
 
-Builds the ARN of an `aps` `workspace`:
+Builds the ARN for `aps` `workspace`:
 
 ```
 arn:${Partition}:aps:${Region}:${Account}:workspace/${WorkspaceId}

@@ -3,12 +3,12 @@
 page_title: "managedblockchain_network function - arn"
 subcategory: ""
 description: |-
-  Builds an managedblockchain network ARN
+  managedblockchain network ARN
 ---
 
 # function: managedblockchain_network
 
-Builds the ARN of an `managedblockchain` `network`:
+Builds the ARN for `managedblockchain` `network`:
 
 ```
 arn:${Partition}:managedblockchain:${Region}::networks/${NetworkId}

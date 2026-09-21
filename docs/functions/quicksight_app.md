@@ -3,12 +3,12 @@
 page_title: "quicksight_app function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight app ARN
+  quicksight app ARN
 ---
 
 # function: quicksight_app
 
-Builds the ARN of an `quicksight` `app`:
+Builds the ARN for `quicksight` `app`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:app/${ResourceId}

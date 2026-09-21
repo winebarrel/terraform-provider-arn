@@ -3,12 +3,12 @@
 page_title: "rtbfabric_link function - arn"
 subcategory: ""
 description: |-
-  Builds an rtbfabric Link ARN
+  rtbfabric Link ARN
 ---
 
 # function: rtbfabric_link
 
-Builds the ARN of an `rtbfabric` `Link`:
+Builds the ARN for `rtbfabric` `Link`:
 
 ```
 arn:${Partition}:rtbfabric:${Region}:${Account}:gateway/${GatewayId}/link/${LinkId}

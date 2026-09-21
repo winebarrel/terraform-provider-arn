@@ -3,12 +3,12 @@
 page_title: "a4b_conferenceprovider function - arn"
 subcategory: ""
 description: |-
-  Builds an a4b conferenceprovider ARN
+  a4b conferenceprovider ARN
 ---
 
 # function: a4b_conferenceprovider
 
-Builds the ARN of an `a4b` `conferenceprovider`:
+Builds the ARN for `a4b` `conferenceprovider`:
 
 ```
 arn:${Partition}:a4b:${Region}:${Account}:conference-provider/${ResourceId}

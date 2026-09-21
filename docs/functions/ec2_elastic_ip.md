@@ -3,12 +3,12 @@
 page_title: "ec2_elastic_ip function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 elastic-ip ARN
+  ec2 elastic-ip ARN
 ---
 
 # function: ec2_elastic_ip
 
-Builds the ARN of an `ec2` `elastic-ip`:
+Builds the ARN for `ec2` `elastic-ip`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:elastic-ip/${AllocationId}

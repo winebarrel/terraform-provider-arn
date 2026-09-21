@@ -3,12 +3,12 @@
 page_title: "timestream_scheduled_query function - arn"
 subcategory: ""
 description: |-
-  Builds an timestream scheduled-query ARN
+  timestream scheduled-query ARN
 ---
 
 # function: timestream_scheduled_query
 
-Builds the ARN of an `timestream` `scheduled-query`:
+Builds the ARN for `timestream` `scheduled-query`:
 
 ```
 arn:${Partition}:timestream:${Region}:${Account}:scheduled-query/${ScheduledQueryName}

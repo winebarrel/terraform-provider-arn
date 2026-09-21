@@ -3,12 +3,12 @@
 page_title: "batch_compute_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an batch compute-environment ARN
+  batch compute-environment ARN
 ---
 
 # function: batch_compute_environment
 
-Builds the ARN of an `batch` `compute-environment`:
+Builds the ARN for `batch` `compute-environment`:
 
 ```
 arn:${Partition}:batch:${Region}:${Account}:compute-environment/${ComputeEnvironmentName}

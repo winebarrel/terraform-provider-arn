@@ -3,12 +3,12 @@
 page_title: "quicksight_oauth_client_application function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight oauthClientApplication ARN
+  quicksight oauthClientApplication ARN
 ---
 
 # function: quicksight_oauth_client_application
 
-Builds the ARN of an `quicksight` `oauthClientApplication`:
+Builds the ARN for `quicksight` `oauthClientApplication`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:oauthClientApplication/${ResourceId}

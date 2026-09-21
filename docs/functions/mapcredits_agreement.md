@@ -3,12 +3,12 @@
 page_title: "mapcredits_agreement function - arn"
 subcategory: ""
 description: |-
-  Builds an mapcredits agreement ARN
+  mapcredits agreement ARN
 ---
 
 # function: mapcredits_agreement
 
-Builds the ARN of an `mapcredits` `agreement`:
+Builds the ARN for `mapcredits` `agreement`:
 
 ```
 arn:${Partition}:mapcredits:::${Agreement}/${AgreementId}

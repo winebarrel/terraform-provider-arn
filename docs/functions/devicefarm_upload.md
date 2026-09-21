@@ -3,12 +3,12 @@
 page_title: "devicefarm_upload function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm upload ARN
+  devicefarm upload ARN
 ---
 
 # function: devicefarm_upload
 
-Builds the ARN of an `devicefarm` `upload`:
+Builds the ARN for `devicefarm` `upload`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:upload:${ResourceId}

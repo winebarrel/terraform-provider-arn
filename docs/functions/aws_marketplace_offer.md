@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_offer function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace Offer ARN
+  aws-marketplace Offer ARN
 ---
 
 # function: aws_marketplace_offer
 
-Builds the ARN of an `aws-marketplace` `Offer`:
+Builds the ARN for `aws-marketplace` `Offer`:
 
 ```
 arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/offer/${OfferId}

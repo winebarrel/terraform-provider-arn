@@ -3,12 +3,12 @@
 page_title: "ssm_opsmetadata function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm opsmetadata ARN
+  ssm opsmetadata ARN
 ---
 
 # function: ssm_opsmetadata
 
-Builds the ARN of an `ssm` `opsmetadata`:
+Builds the ARN for `ssm` `opsmetadata`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:opsmetadata/${ResourceId}

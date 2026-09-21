@@ -3,12 +3,12 @@
 page_title: "iam_role_template function - arn"
 subcategory: ""
 description: |-
-  Builds an iam role-template ARN
+  iam role-template ARN
 ---
 
 # function: iam_role_template
 
-Builds the ARN of an `iam` `role-template`:
+Builds the ARN for `iam` `role-template`:
 
 ```
 arn:${Partition}:iam::aws:role-template/${AWSServicePrincipal}/${RoleTemplateName}:${RoleTemplateMajorVersion}

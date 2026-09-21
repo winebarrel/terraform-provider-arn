@@ -3,12 +3,12 @@
 page_title: "odb_autonomous_database function - arn"
 subcategory: ""
 description: |-
-  Builds an odb autonomous-database ARN
+  odb autonomous-database ARN
 ---
 
 # function: odb_autonomous_database
 
-Builds the ARN of an `odb` `autonomous-database`:
+Builds the ARN for `odb` `autonomous-database`:
 
 ```
 arn:${Partition}:odb:${Region}:${Account}:autonomous-database/${AutonomousDatabaseId}

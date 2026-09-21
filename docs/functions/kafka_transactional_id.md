@@ -3,12 +3,12 @@
 page_title: "kafka_transactional_id function - arn"
 subcategory: ""
 description: |-
-  Builds an kafka transactional-id ARN
+  kafka transactional-id ARN
 ---
 
 # function: kafka_transactional_id
 
-Builds the ARN of an `kafka` `transactional-id`:
+Builds the ARN for `kafka` `transactional-id`:
 
 ```
 arn:${Partition}:kafka:${Region}:${Account}:transactional-id/${ClusterName}/${ClusterUuid}/${TransactionalId}

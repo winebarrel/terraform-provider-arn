@@ -3,12 +3,12 @@
 page_title: "datazone_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an datazone domain ARN
+  datazone domain ARN
 ---
 
 # function: datazone_domain
 
-Builds the ARN of an `datazone` `domain`:
+Builds the ARN for `datazone` `domain`:
 
 ```
 arn:${Partition}:datazone:${Region}:${Account}:domain/${DomainId}

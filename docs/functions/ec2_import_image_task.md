@@ -3,12 +3,12 @@
 page_title: "ec2_import_image_task function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 import-image-task ARN
+  ec2 import-image-task ARN
 ---
 
 # function: ec2_import_image_task
 
-Builds the ARN of an `ec2` `import-image-task`:
+Builds the ARN for `ec2` `import-image-task`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:import-image-task/${ImportImageTaskId}

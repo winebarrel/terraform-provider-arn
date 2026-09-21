@@ -3,12 +3,12 @@
 page_title: "bedrock_project function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock project ARN
+  bedrock project ARN
 ---
 
 # function: bedrock_project
 
-Builds the ARN of an `bedrock` `project`:
+Builds the ARN for `bedrock` `project`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:project/${ResourceId}

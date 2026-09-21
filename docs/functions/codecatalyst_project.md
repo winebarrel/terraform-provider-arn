@@ -3,12 +3,12 @@
 page_title: "codecatalyst_project function - arn"
 subcategory: ""
 description: |-
-  Builds an codecatalyst project ARN
+  codecatalyst project ARN
 ---
 
 # function: codecatalyst_project
 
-Builds the ARN of an `codecatalyst` `project`:
+Builds the ARN for `codecatalyst` `project`:
 
 ```
 arn:${Partition}:codecatalyst:::space/${SpaceId}/project/${ProjectId}

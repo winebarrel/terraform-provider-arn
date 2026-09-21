@@ -3,12 +3,12 @@
 page_title: "controlcatalog_common_control function - arn"
 subcategory: ""
 description: |-
-  Builds an controlcatalog common-control ARN
+  controlcatalog common-control ARN
 ---
 
 # function: controlcatalog_common_control
 
-Builds the ARN of an `controlcatalog` `common-control`:
+Builds the ARN for `controlcatalog` `common-control`:
 
 ```
 arn:${Partition}:controlcatalog:::common-control/${CommonControlId}

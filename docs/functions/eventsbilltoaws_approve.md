@@ -3,12 +3,12 @@
 page_title: "eventsbilltoaws_approve function - arn"
 subcategory: ""
 description: |-
-  Builds an eventsbilltoaws approve ARN
+  eventsbilltoaws approve ARN
 ---
 
 # function: eventsbilltoaws_approve
 
-Builds the ARN of an `eventsbilltoaws` `approve`:
+Builds the ARN for `eventsbilltoaws` `approve`:
 
 ```
 arn:${Partition}:eventsbilltoaws:${Region}:${Account}:${RelativeId}

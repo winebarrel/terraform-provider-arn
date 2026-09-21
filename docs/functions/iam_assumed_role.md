@@ -3,12 +3,12 @@
 page_title: "iam_assumed_role function - arn"
 subcategory: ""
 description: |-
-  Builds an iam assumed-role ARN
+  iam assumed-role ARN
 ---
 
 # function: iam_assumed_role
 
-Builds the ARN of an `iam` `assumed-role`:
+Builds the ARN for `iam` `assumed-role`:
 
 ```
 arn:${Partition}:iam::${Account}:assumed-role/${RoleName}/${RoleSessionName}

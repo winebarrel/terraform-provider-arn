@@ -3,12 +3,12 @@
 page_title: "glue_integration function - arn"
 subcategory: ""
 description: |-
-  Builds an glue integration ARN
+  glue integration ARN
 ---
 
 # function: glue_integration
 
-Builds the ARN of an `glue` `integration`:
+Builds the ARN for `glue` `integration`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:integration:${IntegrationId}

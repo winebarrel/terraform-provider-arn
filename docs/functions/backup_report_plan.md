@@ -3,12 +3,12 @@
 page_title: "backup_report_plan function - arn"
 subcategory: ""
 description: |-
-  Builds an backup reportPlan ARN
+  backup reportPlan ARN
 ---
 
 # function: backup_report_plan
 
-Builds the ARN of an `backup` `reportPlan`:
+Builds the ARN for `backup` `reportPlan`:
 
 ```
 arn:${Partition}:backup:${Region}:${Account}:report-plan:${ReportPlanName}-${ReportPlanId}

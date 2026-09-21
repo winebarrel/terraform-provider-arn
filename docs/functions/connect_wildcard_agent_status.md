@@ -3,12 +3,12 @@
 page_title: "connect_wildcard_agent_status function - arn"
 subcategory: ""
 description: |-
-  Builds an connect wildcard-agent-status ARN
+  connect wildcard-agent-status ARN
 ---
 
 # function: connect_wildcard_agent_status
 
-Builds the ARN of an `connect` `wildcard-agent-status`:
+Builds the ARN for `connect` `wildcard-agent-status`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/agent-state/*

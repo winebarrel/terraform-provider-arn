@@ -3,12 +3,12 @@
 page_title: "ec2_volume function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 volume ARN
+  ec2 volume ARN
 ---
 
 # function: ec2_volume
 
-Builds the ARN of an `ec2` `volume`:
+Builds the ARN for `ec2` `volume`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:volume/${VolumeId}

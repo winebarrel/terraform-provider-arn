@@ -3,12 +3,12 @@
 page_title: "wisdom_session function - arn"
 subcategory: ""
 description: |-
-  Builds an wisdom Session ARN
+  wisdom Session ARN
 ---
 
 # function: wisdom_session
 
-Builds the ARN of an `wisdom` `Session`:
+Builds the ARN for `wisdom` `Session`:
 
 ```
 arn:${Partition}:wisdom:${Region}:${Account}:session/${AssistantId}/${SessionId}

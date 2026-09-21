@@ -3,12 +3,12 @@
 page_title: "ssm_windowtarget function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm windowtarget ARN
+  ssm windowtarget ARN
 ---
 
 # function: ssm_windowtarget
 
-Builds the ARN of an `ssm` `windowtarget`:
+Builds the ARN for `ssm` `windowtarget`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:windowtarget/${WindowTargetId}

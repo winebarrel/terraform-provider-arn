@@ -3,12 +3,12 @@
 page_title: "ram_permission function - arn"
 subcategory: ""
 description: |-
-  Builds an ram permission ARN
+  ram permission ARN
 ---
 
 # function: ram_permission
 
-Builds the ARN of an `ram` `permission`:
+Builds the ARN for `ram` `permission`:
 
 ```
 arn:${Partition}:ram::${Account}:permission/${ResourcePath}

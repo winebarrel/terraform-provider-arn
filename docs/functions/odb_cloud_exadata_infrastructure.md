@@ -3,12 +3,12 @@
 page_title: "odb_cloud_exadata_infrastructure function - arn"
 subcategory: ""
 description: |-
-  Builds an odb cloud-exadata-infrastructure ARN
+  odb cloud-exadata-infrastructure ARN
 ---
 
 # function: odb_cloud_exadata_infrastructure
 
-Builds the ARN of an `odb` `cloud-exadata-infrastructure`:
+Builds the ARN for `odb` `cloud-exadata-infrastructure`:
 
 ```
 arn:${Partition}:odb:${Region}:${Account}:cloud-exadata-infrastructure/${CloudExadataInfrastructureId}

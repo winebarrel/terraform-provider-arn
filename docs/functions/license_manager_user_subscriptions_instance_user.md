@@ -3,12 +3,12 @@
 page_title: "license_manager_user_subscriptions_instance_user function - arn"
 subcategory: ""
 description: |-
-  Builds an license-manager-user-subscriptions instance-user ARN
+  license-manager-user-subscriptions instance-user ARN
 ---
 
 # function: license_manager_user_subscriptions_instance_user
 
-Builds the ARN of an `license-manager-user-subscriptions` `instance-user`:
+Builds the ARN for `license-manager-user-subscriptions` `instance-user`:
 
 ```
 arn:${Partition}:license-manager-user-subscriptions:${Region}:${Account}:instance-user/${InstanceUserId}

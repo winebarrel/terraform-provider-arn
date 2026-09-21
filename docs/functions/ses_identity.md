@@ -3,12 +3,12 @@
 page_title: "ses_identity function - arn"
 subcategory: ""
 description: |-
-  Builds an ses identity ARN
+  ses identity ARN
 ---
 
 # function: ses_identity
 
-Builds the ARN of an `ses` `identity`:
+Builds the ARN for `ses` `identity`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:identity/${IdentityName}

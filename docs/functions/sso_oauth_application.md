@@ -3,12 +3,12 @@
 page_title: "sso_oauth_application function - arn"
 subcategory: ""
 description: |-
-  Builds an sso-oauth Application ARN
+  sso-oauth Application ARN
 ---
 
 # function: sso_oauth_application
 
-Builds the ARN of an `sso-oauth` `Application`:
+Builds the ARN for `sso-oauth` `Application`:
 
 ```
 arn:${Partition}:sso::${AccountId}:application/${InstanceId}/${ApplicationId}

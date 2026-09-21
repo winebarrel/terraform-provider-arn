@@ -3,12 +3,12 @@
 page_title: "kendra_data_source function - arn"
 subcategory: ""
 description: |-
-  Builds an kendra data-source ARN
+  kendra data-source ARN
 ---
 
 # function: kendra_data_source
 
-Builds the ARN of an `kendra` `data-source`:
+Builds the ARN for `kendra` `data-source`:
 
 ```
 arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/data-source/${DataSourceId}

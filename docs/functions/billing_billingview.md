@@ -3,12 +3,12 @@
 page_title: "billing_billingview function - arn"
 subcategory: ""
 description: |-
-  Builds an billing billingview ARN
+  billing billingview ARN
 ---
 
 # function: billing_billingview
 
-Builds the ARN of an `billing` `billingview`:
+Builds the ARN for `billing` `billingview`:
 
 ```
 arn:${Partition}:billing::${Account}:billingview/${ResourceId}

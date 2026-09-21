@@ -3,12 +3,12 @@
 page_title: "purchase_orders_purchase_order function - arn"
 subcategory: ""
 description: |-
-  Builds an purchase-orders purchase-order ARN
+  purchase-orders purchase-order ARN
 ---
 
 # function: purchase_orders_purchase_order
 
-Builds the ARN of an `purchase-orders` `purchase-order`:
+Builds the ARN for `purchase-orders` `purchase-order`:
 
 ```
 arn:${Partition}:purchase-orders::${Account}:purchase-order/${ResourceName}

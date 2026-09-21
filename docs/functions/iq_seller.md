@@ -3,12 +3,12 @@
 page_title: "iq_seller function - arn"
 subcategory: ""
 description: |-
-  Builds an iq seller ARN
+  iq seller ARN
 ---
 
 # function: iq_seller
 
-Builds the ARN of an `iq` `seller`:
+Builds the ARN for `iq` `seller`:
 
 ```
 arn:${Partition}:iq:${Region}::seller/${SellerAwsAccountId}

@@ -3,12 +3,12 @@
 page_title: "iam_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an iam policy ARN
+  iam policy ARN
 ---
 
 # function: iam_policy
 
-Builds the ARN of an `iam` `policy`:
+Builds the ARN for `iam` `policy`:
 
 ```
 arn:${Partition}:iam::${Account}:policy/${PolicyNameWithPath}

@@ -3,12 +3,12 @@
 page_title: "connect_contact function - arn"
 subcategory: ""
 description: |-
-  Builds an connect contact ARN
+  connect contact ARN
 ---
 
 # function: connect_contact
 
-Builds the ARN of an `connect` `contact`:
+Builds the ARN for `connect` `contact`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/contact/${ContactId}

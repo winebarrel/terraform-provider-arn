@@ -3,12 +3,12 @@
 page_title: "imagebuilder_image_recipe function - arn"
 subcategory: ""
 description: |-
-  Builds an imagebuilder imageRecipe ARN
+  imagebuilder imageRecipe ARN
 ---
 
 # function: imagebuilder_image_recipe
 
-Builds the ARN of an `imagebuilder` `imageRecipe`:
+Builds the ARN for `imagebuilder` `imageRecipe`:
 
 ```
 arn:${Partition}:imagebuilder:${Region}:${Account}:image-recipe/${ImageRecipeName}/${ImageRecipeVersion}

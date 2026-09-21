@@ -3,12 +3,12 @@
 page_title: "connect_qualified_aws_managed_view function - arn"
 subcategory: ""
 description: |-
-  Builds an connect qualified-aws-managed-view ARN
+  connect qualified-aws-managed-view ARN
 ---
 
 # function: connect_qualified_aws_managed_view
 
-Builds the ARN of an `connect` `qualified-aws-managed-view`:
+Builds the ARN for `connect` `qualified-aws-managed-view`:
 
 ```
 arn:${Partition}:connect:${Region}:aws:view/${ViewId}:${ViewQualifier}

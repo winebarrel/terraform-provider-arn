@@ -3,12 +3,12 @@
 page_title: "sts_context_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an sts context-provider ARN
+  sts context-provider ARN
 ---
 
 # function: sts_context_provider
 
-Builds the ARN of an `sts` `context-provider`:
+Builds the ARN for `sts` `context-provider`:
 
 ```
 arn:${Partition}:iam::aws:contextProvider/${ContextProviderName}

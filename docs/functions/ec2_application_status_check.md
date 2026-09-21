@@ -3,12 +3,12 @@
 page_title: "ec2_application_status_check function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 application-status-check ARN
+  ec2 application-status-check ARN
 ---
 
 # function: ec2_application_status_check
 
-Builds the ARN of an `ec2` `application-status-check`:
+Builds the ARN for `ec2` `application-status-check`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:application-status-check/${ApplicationStatusCheckId}

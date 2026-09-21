@@ -3,12 +3,12 @@
 page_title: "dynamodb_export function - arn"
 subcategory: ""
 description: |-
-  Builds an dynamodb export ARN
+  dynamodb export ARN
 ---
 
 # function: dynamodb_export
 
-Builds the ARN of an `dynamodb` `export`:
+Builds the ARN for `dynamodb` `export`:
 
 ```
 arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/export/${ExportName}

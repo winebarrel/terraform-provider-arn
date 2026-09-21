@@ -3,12 +3,12 @@
 page_title: "ec2_capacity_reservation_fleet function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 capacity-reservation-fleet ARN
+  ec2 capacity-reservation-fleet ARN
 ---
 
 # function: ec2_capacity_reservation_fleet
 
-Builds the ARN of an `ec2` `capacity-reservation-fleet`:
+Builds the ARN for `ec2` `capacity-reservation-fleet`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:capacity-reservation-fleet/${CapacityReservationFleetId}

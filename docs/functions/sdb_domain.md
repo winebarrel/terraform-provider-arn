@@ -3,12 +3,12 @@
 page_title: "sdb_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an sdb domain ARN
+  sdb domain ARN
 ---
 
 # function: sdb_domain
 
-Builds the ARN of an `sdb` `domain`:
+Builds the ARN for `sdb` `domain`:
 
 ```
 arn:${Partition}:sdb:${Region}:${Account}:domain/${DomainName}

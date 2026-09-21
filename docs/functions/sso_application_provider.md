@@ -3,12 +3,12 @@
 page_title: "sso_application_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an sso ApplicationProvider ARN
+  sso ApplicationProvider ARN
 ---
 
 # function: sso_application_provider
 
-Builds the ARN of an `sso` `ApplicationProvider`:
+Builds the ARN for `sso` `ApplicationProvider`:
 
 ```
 arn:${Partition}:sso::aws:applicationProvider/${ApplicationProviderId}

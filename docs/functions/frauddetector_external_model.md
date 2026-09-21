@@ -3,12 +3,12 @@
 page_title: "frauddetector_external_model function - arn"
 subcategory: ""
 description: |-
-  Builds an frauddetector external-model ARN
+  frauddetector external-model ARN
 ---
 
 # function: frauddetector_external_model
 
-Builds the ARN of an `frauddetector` `external-model`:
+Builds the ARN for `frauddetector` `external-model`:
 
 ```
 arn:${Partition}:frauddetector:${Region}:${Account}:external-model/${ResourcePath}

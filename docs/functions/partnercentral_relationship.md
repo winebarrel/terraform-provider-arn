@@ -3,12 +3,12 @@
 page_title: "partnercentral_relationship function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral Relationship ARN
+  partnercentral Relationship ARN
 ---
 
 # function: partnercentral_relationship
 
-Builds the ARN of an `partnercentral` `Relationship`:
+Builds the ARN for `partnercentral` `Relationship`:
 
 ```
 arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/program-management-account/${ProgramManagementAccountId}/relationship/${RelationshipId}

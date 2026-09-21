@@ -3,12 +3,12 @@
 page_title: "cleanrooms_idmappingtable function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms idmappingtable ARN
+  cleanrooms idmappingtable ARN
 ---
 
 # function: cleanrooms_idmappingtable
 
-Builds the ARN of an `cleanrooms` `idmappingtable`:
+Builds the ARN for `cleanrooms` `idmappingtable`:
 
 ```
 arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/idmappingtable/${IdMappingTableId}

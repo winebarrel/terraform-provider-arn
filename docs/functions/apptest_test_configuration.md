@@ -3,12 +3,12 @@
 page_title: "apptest_test_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an apptest TestConfiguration ARN
+  apptest TestConfiguration ARN
 ---
 
 # function: apptest_test_configuration
 
-Builds the ARN of an `apptest` `TestConfiguration`:
+Builds the ARN for `apptest` `TestConfiguration`:
 
 ```
 arn:${Partition}:apptest:${Region}:${Account}:testconfiguration/${TestConfigurationId}

@@ -3,12 +3,12 @@
 page_title: "guardduty_detector function - arn"
 subcategory: ""
 description: |-
-  Builds an guardduty detector ARN
+  guardduty detector ARN
 ---
 
 # function: guardduty_detector
 
-Builds the ARN of an `guardduty` `detector`:
+Builds the ARN for `guardduty` `detector`:
 
 ```
 arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}

@@ -3,12 +3,12 @@
 page_title: "lightsail_certificate function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail Certificate ARN
+  lightsail Certificate ARN
 ---
 
 # function: lightsail_certificate
 
-Builds the ARN of an `lightsail` `Certificate`:
+Builds the ARN for `lightsail` `Certificate`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:Certificate/${Id}

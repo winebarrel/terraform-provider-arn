@@ -3,12 +3,12 @@
 page_title: "worklink_fleet function - arn"
 subcategory: ""
 description: |-
-  Builds an worklink fleet ARN
+  worklink fleet ARN
 ---
 
 # function: worklink_fleet
 
-Builds the ARN of an `worklink` `fleet`:
+Builds the ARN for `worklink` `fleet`:
 
 ```
 arn:${Partition}:worklink::${Account}:fleet/${FleetName}

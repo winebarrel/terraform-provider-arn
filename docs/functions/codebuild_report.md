@@ -3,12 +3,12 @@
 page_title: "codebuild_report function - arn"
 subcategory: ""
 description: |-
-  Builds an codebuild report ARN
+  codebuild report ARN
 ---
 
 # function: codebuild_report
 
-Builds the ARN of an `codebuild` `report`:
+Builds the ARN for `codebuild` `report`:
 
 ```
 arn:${Partition}:codebuild:${Region}:${Account}:report/${ReportGroupName}:${ReportId}

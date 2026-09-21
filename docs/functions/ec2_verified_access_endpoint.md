@@ -3,12 +3,12 @@
 page_title: "ec2_verified_access_endpoint function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 verified-access-endpoint ARN
+  ec2 verified-access-endpoint ARN
 ---
 
 # function: ec2_verified_access_endpoint
 
-Builds the ARN of an `ec2` `verified-access-endpoint`:
+Builds the ARN for `ec2` `verified-access-endpoint`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:verified-access-endpoint/${VerifiedAccessEndpointId}

@@ -3,12 +3,12 @@
 page_title: "finspace_user function - arn"
 subcategory: ""
 description: |-
-  Builds an finspace user ARN
+  finspace user ARN
 ---
 
 # function: finspace_user
 
-Builds the ARN of an `finspace` `user`:
+Builds the ARN for `finspace` `user`:
 
 ```
 arn:${Partition}:finspace:${Region}:${Account}:user/${UserId}

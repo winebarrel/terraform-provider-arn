@@ -3,12 +3,12 @@
 page_title: "a4b_skillgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an a4b skillgroup ARN
+  a4b skillgroup ARN
 ---
 
 # function: a4b_skillgroup
 
-Builds the ARN of an `a4b` `skillgroup`:
+Builds the ARN for `a4b` `skillgroup`:
 
 ```
 arn:${Partition}:a4b:${Region}:${Account}:skill-group/${ResourceId}

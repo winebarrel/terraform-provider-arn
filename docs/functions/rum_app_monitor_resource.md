@@ -3,12 +3,12 @@
 page_title: "rum_app_monitor_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an rum AppMonitorResource ARN
+  rum AppMonitorResource ARN
 ---
 
 # function: rum_app_monitor_resource
 
-Builds the ARN of an `rum` `AppMonitorResource`:
+Builds the ARN for `rum` `AppMonitorResource`:
 
 ```
 arn:${Partition}:rum:${Region}:${Account}:appmonitor/${Name}

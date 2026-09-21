@@ -3,12 +3,12 @@
 page_title: "lightsail_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail Instance ARN
+  lightsail Instance ARN
 ---
 
 # function: lightsail_instance
 
-Builds the ARN of an `lightsail` `Instance`:
+Builds the ARN for `lightsail` `Instance`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:Instance/${Id}

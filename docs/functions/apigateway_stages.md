@@ -3,12 +3,12 @@
 page_title: "apigateway_stages function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Stages ARN
+  apigateway Stages ARN
 ---
 
 # function: apigateway_stages
 
-Builds the ARN of an `apigateway` `Stages`:
+Builds the ARN for `apigateway` `Stages`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/stages

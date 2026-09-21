@@ -3,12 +3,12 @@
 page_title: "iotanalytics_dataset function - arn"
 subcategory: ""
 description: |-
-  Builds an iotanalytics dataset ARN
+  iotanalytics dataset ARN
 ---
 
 # function: iotanalytics_dataset
 
-Builds the ARN of an `iotanalytics` `dataset`:
+Builds the ARN for `iotanalytics` `dataset`:
 
 ```
 arn:${Partition}:iotanalytics:${Region}:${Account}:dataset/${DatasetName}

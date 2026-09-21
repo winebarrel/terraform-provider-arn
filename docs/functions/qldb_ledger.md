@@ -3,12 +3,12 @@
 page_title: "qldb_ledger function - arn"
 subcategory: ""
 description: |-
-  Builds an qldb ledger ARN
+  qldb ledger ARN
 ---
 
 # function: qldb_ledger
 
-Builds the ARN of an `qldb` `ledger`:
+Builds the ARN for `qldb` `ledger`:
 
 ```
 arn:${Partition}:qldb:${Region}:${Account}:ledger/${LedgerName}

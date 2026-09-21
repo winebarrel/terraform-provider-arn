@@ -3,12 +3,12 @@
 page_title: "ec2_verified_access_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 verified-access-policy ARN
+  ec2 verified-access-policy ARN
 ---
 
 # function: ec2_verified_access_policy
 
-Builds the ARN of an `ec2` `verified-access-policy`:
+Builds the ARN for `ec2` `verified-access-policy`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:verified-access-policy/${VerifiedAccessPolicyId}

@@ -3,12 +3,12 @@
 page_title: "eks_access_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an eks access-policy ARN
+  eks access-policy ARN
 ---
 
 # function: eks_access_policy
 
-Builds the ARN of an `eks` `access-policy`:
+Builds the ARN for `eks` `access-policy`:
 
 ```
 arn:${Partition}:eks::aws:cluster-access-policy/${AccessPolicyName}

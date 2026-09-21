@@ -3,12 +3,12 @@
 page_title: "ssm_sap_application function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm-sap application ARN
+  ssm-sap application ARN
 ---
 
 # function: ssm_sap_application
 
-Builds the ARN of an `ssm-sap` `application`:
+Builds the ARN for `ssm-sap` `application`:
 
 ```
 arn:${Partition}:ssm-sap:${Region}:${Account}:${ApplicationType}/${ApplicationId}

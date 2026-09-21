@@ -3,12 +3,12 @@
 page_title: "dataexchange_data_grants function - arn"
 subcategory: ""
 description: |-
-  Builds an dataexchange data-grants ARN
+  dataexchange data-grants ARN
 ---
 
 # function: dataexchange_data_grants
 
-Builds the ARN of an `dataexchange` `data-grants`:
+Builds the ARN for `dataexchange` `data-grants`:
 
 ```
 arn:${Partition}:dataexchange:${Region}:${Account}:data-grants/${DataGrantId}

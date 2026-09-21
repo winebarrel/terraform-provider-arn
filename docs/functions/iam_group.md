@@ -3,12 +3,12 @@
 page_title: "iam_group function - arn"
 subcategory: ""
 description: |-
-  Builds an iam group ARN
+  iam group ARN
 ---
 
 # function: iam_group
 
-Builds the ARN of an `iam` `group`:
+Builds the ARN for `iam` `group`:
 
 ```
 arn:${Partition}:iam::${Account}:group/${GroupNameWithPath}

@@ -3,12 +3,12 @@
 page_title: "codecatalyst_space function - arn"
 subcategory: ""
 description: |-
-  Builds an codecatalyst space ARN
+  codecatalyst space ARN
 ---
 
 # function: codecatalyst_space
 
-Builds the ARN of an `codecatalyst` `space`:
+Builds the ARN for `codecatalyst` `space`:
 
 ```
 arn:${Partition}:codecatalyst:::space/${SpaceId}

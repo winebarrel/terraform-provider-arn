@@ -3,12 +3,12 @@
 page_title: "mediaconnect_router_input function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconnect RouterInput ARN
+  mediaconnect RouterInput ARN
 ---
 
 # function: mediaconnect_router_input
 
-Builds the ARN of an `mediaconnect` `RouterInput`:
+Builds the ARN for `mediaconnect` `RouterInput`:
 
 ```
 arn:${Partition}:mediaconnect:${Region}:${Account}:routerInput:${RouterInputId}

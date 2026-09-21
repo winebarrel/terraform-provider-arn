@@ -3,12 +3,12 @@
 page_title: "gamelift_matchmaking_rule_set function - arn"
 subcategory: ""
 description: |-
-  Builds an gamelift matchmakingRuleSet ARN
+  gamelift matchmakingRuleSet ARN
 ---
 
 # function: gamelift_matchmaking_rule_set
 
-Builds the ARN of an `gamelift` `matchmakingRuleSet`:
+Builds the ARN for `gamelift` `matchmakingRuleSet`:
 
 ```
 arn:${Partition}:gamelift:${Region}:${Account}:matchmakingruleset/${MatchmakingRuleSetName}

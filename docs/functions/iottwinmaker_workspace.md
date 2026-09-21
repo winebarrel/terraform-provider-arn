@@ -3,12 +3,12 @@
 page_title: "iottwinmaker_workspace function - arn"
 subcategory: ""
 description: |-
-  Builds an iottwinmaker workspace ARN
+  iottwinmaker workspace ARN
 ---
 
 # function: iottwinmaker_workspace
 
-Builds the ARN of an `iottwinmaker` `workspace`:
+Builds the ARN for `iottwinmaker` `workspace`:
 
 ```
 arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}

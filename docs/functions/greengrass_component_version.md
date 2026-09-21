@@ -3,12 +3,12 @@
 page_title: "greengrass_component_version function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass componentVersion ARN
+  greengrass componentVersion ARN
 ---
 
 # function: greengrass_component_version
 
-Builds the ARN of an `greengrass` `componentVersion`:
+Builds the ARN for `greengrass` `componentVersion`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:components:${ComponentName}:versions:${ComponentVersion}

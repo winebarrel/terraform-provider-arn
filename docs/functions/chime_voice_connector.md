@@ -3,12 +3,12 @@
 page_title: "chime_voice_connector function - arn"
 subcategory: ""
 description: |-
-  Builds an chime voice-connector ARN
+  chime voice-connector ARN
 ---
 
 # function: chime_voice_connector
 
-Builds the ARN of an `chime` `voice-connector`:
+Builds the ARN for `chime` `voice-connector`:
 
 ```
 arn:${Partition}:chime:${Region}:${AccountId}:vc/${VoiceConnectorId}

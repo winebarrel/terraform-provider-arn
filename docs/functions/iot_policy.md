@@ -3,12 +3,12 @@
 page_title: "iot_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an iot policy ARN
+  iot policy ARN
 ---
 
 # function: iot_policy
 
-Builds the ARN of an `iot` `policy`:
+Builds the ARN for `iot` `policy`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:policy/${PolicyName}

@@ -3,12 +3,12 @@
 page_title: "mediaconnect_offering function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconnect Offering ARN
+  mediaconnect Offering ARN
 ---
 
 # function: mediaconnect_offering
 
-Builds the ARN of an `mediaconnect` `Offering`:
+Builds the ARN for `mediaconnect` `Offering`:
 
 ```
 arn:${Partition}:mediaconnect:${Region}:offering:${OfferingId}

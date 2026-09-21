@@ -3,12 +3,12 @@
 page_title: "personalize_feature_transformation function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize featureTransformation ARN
+  personalize featureTransformation ARN
 ---
 
 # function: personalize_feature_transformation
 
-Builds the ARN of an `personalize` `featureTransformation`:
+Builds the ARN for `personalize` `featureTransformation`:
 
 ```
 arn:${Partition}:personalize:::feature-transformation/${ResourceId}

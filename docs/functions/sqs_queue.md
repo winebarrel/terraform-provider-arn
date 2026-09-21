@@ -3,12 +3,12 @@
 page_title: "sqs_queue function - arn"
 subcategory: ""
 description: |-
-  Builds an sqs queue ARN
+  sqs queue ARN
 ---
 
 # function: sqs_queue
 
-Builds the ARN of an `sqs` `queue`:
+Builds the ARN for `sqs` `queue`:
 
 ```
 arn:${Partition}:sqs:${Region}:${Account}:${QueueName}

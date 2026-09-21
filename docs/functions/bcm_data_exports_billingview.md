@@ -3,12 +3,12 @@
 page_title: "bcm_data_exports_billingview function - arn"
 subcategory: ""
 description: |-
-  Builds an bcm-data-exports billingview ARN
+  bcm-data-exports billingview ARN
 ---
 
 # function: bcm_data_exports_billingview
 
-Builds the ARN of an `bcm-data-exports` `billingview`:
+Builds the ARN for `bcm-data-exports` `billingview`:
 
 ```
 arn:${Partition}:billing::${Account}:billingview/${ResourceId}

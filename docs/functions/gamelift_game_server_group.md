@@ -3,12 +3,12 @@
 page_title: "gamelift_game_server_group function - arn"
 subcategory: ""
 description: |-
-  Builds an gamelift gameServerGroup ARN
+  gamelift gameServerGroup ARN
 ---
 
 # function: gamelift_game_server_group
 
-Builds the ARN of an `gamelift` `gameServerGroup`:
+Builds the ARN for `gamelift` `gameServerGroup`:
 
 ```
 arn:${Partition}:gamelift:${Region}:${Account}:gameservergroup/${GameServerGroupName}

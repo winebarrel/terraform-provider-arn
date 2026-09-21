@@ -3,12 +3,12 @@
 page_title: "logs_delivery_source function - arn"
 subcategory: ""
 description: |-
-  Builds an logs delivery-source ARN
+  logs delivery-source ARN
 ---
 
 # function: logs_delivery_source
 
-Builds the ARN of an `logs` `delivery-source`:
+Builds the ARN for `logs` `delivery-source`:
 
 ```
 arn:${Partition}:logs:${Region}:${Account}:delivery-source:${DeliverySourceName}

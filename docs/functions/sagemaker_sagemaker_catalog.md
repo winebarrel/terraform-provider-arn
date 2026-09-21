@@ -3,12 +3,12 @@
 page_title: "sagemaker_sagemaker_catalog function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker sagemaker-catalog ARN
+  sagemaker sagemaker-catalog ARN
 ---
 
 # function: sagemaker_sagemaker_catalog
 
-Builds the ARN of an `sagemaker` `sagemaker-catalog`:
+Builds the ARN for `sagemaker` `sagemaker-catalog`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:sagemaker-catalog/${ResourceCatalogName}

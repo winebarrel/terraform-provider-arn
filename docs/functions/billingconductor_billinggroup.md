@@ -3,12 +3,12 @@
 page_title: "billingconductor_billinggroup function - arn"
 subcategory: ""
 description: |-
-  Builds an billingconductor billinggroup ARN
+  billingconductor billinggroup ARN
 ---
 
 # function: billingconductor_billinggroup
 
-Builds the ARN of an `billingconductor` `billinggroup`:
+Builds the ARN for `billingconductor` `billinggroup`:
 
 ```
 arn:${Partition}:billingconductor::${Account}:billinggroup/${BillingGroupId}

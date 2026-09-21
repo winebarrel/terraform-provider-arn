@@ -3,12 +3,12 @@
 page_title: "fsx_backup function - arn"
 subcategory: ""
 description: |-
-  Builds an fsx backup ARN
+  fsx backup ARN
 ---
 
 # function: fsx_backup
 
-Builds the ARN of an `fsx` `backup`:
+Builds the ARN for `fsx` `backup`:
 
 ```
 arn:${Partition}:fsx:${Region}:${Account}:backup/${BackupId}

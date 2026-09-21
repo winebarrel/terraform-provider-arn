@@ -3,12 +3,12 @@
 page_title: "ec2_traffic_mirror_filter_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 traffic-mirror-filter-rule ARN
+  ec2 traffic-mirror-filter-rule ARN
 ---
 
 # function: ec2_traffic_mirror_filter_rule
 
-Builds the ARN of an `ec2` `traffic-mirror-filter-rule`:
+Builds the ARN for `ec2` `traffic-mirror-filter-rule`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:traffic-mirror-filter-rule/${TrafficMirrorFilterRuleId}

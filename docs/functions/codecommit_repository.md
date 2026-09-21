@@ -3,12 +3,12 @@
 page_title: "codecommit_repository function - arn"
 subcategory: ""
 description: |-
-  Builds an codecommit repository ARN
+  codecommit repository ARN
 ---
 
 # function: codecommit_repository
 
-Builds the ARN of an `codecommit` `repository`:
+Builds the ARN for `codecommit` `repository`:
 
 ```
 arn:${Partition}:codecommit:${Region}:${Account}:${RepositoryName}

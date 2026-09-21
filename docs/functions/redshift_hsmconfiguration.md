@@ -3,12 +3,12 @@
 page_title: "redshift_hsmconfiguration function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift hsmconfiguration ARN
+  redshift hsmconfiguration ARN
 ---
 
 # function: redshift_hsmconfiguration
 
-Builds the ARN of an `redshift` `hsmconfiguration`:
+Builds the ARN for `redshift` `hsmconfiguration`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:hsmconfiguration:${HSMConfigurationId}

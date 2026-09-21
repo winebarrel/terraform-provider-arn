@@ -3,12 +3,12 @@
 page_title: "ec2_capacity_block function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 capacity-block ARN
+  ec2 capacity-block ARN
 ---
 
 # function: ec2_capacity_block
 
-Builds the ARN of an `ec2` `capacity-block`:
+Builds the ARN for `ec2` `capacity-block`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:capacity-block/${CapacityBlockId}

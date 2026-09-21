@@ -3,12 +3,12 @@
 page_title: "mediatailor_source_location function - arn"
 subcategory: ""
 description: |-
-  Builds an mediatailor sourceLocation ARN
+  mediatailor sourceLocation ARN
 ---
 
 # function: mediatailor_source_location
 
-Builds the ARN of an `mediatailor` `sourceLocation`:
+Builds the ARN for `mediatailor` `sourceLocation`:
 
 ```
 arn:${Partition}:mediatailor:${Region}:${Account}:sourceLocation/${SourceLocationName}

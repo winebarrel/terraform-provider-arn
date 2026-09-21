@@ -3,12 +3,12 @@
 page_title: "proton_deployment function - arn"
 subcategory: ""
 description: |-
-  Builds an proton deployment ARN
+  proton deployment ARN
 ---
 
 # function: proton_deployment
 
-Builds the ARN of an `proton` `deployment`:
+Builds the ARN for `proton` `deployment`:
 
 ```
 arn:${Partition}:proton:${Region}:${Account}:deployment/${Id}

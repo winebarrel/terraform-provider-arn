@@ -3,12 +3,12 @@
 page_title: "memorydb_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an memorydb cluster ARN
+  memorydb cluster ARN
 ---
 
 # function: memorydb_cluster
 
-Builds the ARN of an `memorydb` `cluster`:
+Builds the ARN for `memorydb` `cluster`:
 
 ```
 arn:${Partition}:memorydb:${Region}:${Account}:cluster/${ClusterName}

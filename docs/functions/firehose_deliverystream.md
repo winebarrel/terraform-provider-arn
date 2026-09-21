@@ -3,12 +3,12 @@
 page_title: "firehose_deliverystream function - arn"
 subcategory: ""
 description: |-
-  Builds an firehose deliverystream ARN
+  firehose deliverystream ARN
 ---
 
 # function: firehose_deliverystream
 
-Builds the ARN of an `firehose` `deliverystream`:
+Builds the ARN for `firehose` `deliverystream`:
 
 ```
 arn:${Partition}:firehose:${Region}:${Account}:deliverystream/${DeliveryStreamName}

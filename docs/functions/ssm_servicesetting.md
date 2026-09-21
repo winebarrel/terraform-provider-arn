@@ -3,12 +3,12 @@
 page_title: "ssm_servicesetting function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm servicesetting ARN
+  ssm servicesetting ARN
 ---
 
 # function: ssm_servicesetting
 
-Builds the ARN of an `ssm` `servicesetting`:
+Builds the ARN for `ssm` `servicesetting`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:servicesetting/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "apigateway_stage_2 function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway Stage ARN
+  apigateway Stage ARN
 ---
 
 # function: apigateway_stage_2
 
-Builds the ARN of an `apigateway` `Stage`:
+Builds the ARN for `apigateway` `Stage`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/stages/${StageName}

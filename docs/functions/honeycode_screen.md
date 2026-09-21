@@ -3,12 +3,12 @@
 page_title: "honeycode_screen function - arn"
 subcategory: ""
 description: |-
-  Builds an honeycode screen ARN
+  honeycode screen ARN
 ---
 
 # function: honeycode_screen
 
-Builds the ARN of an `honeycode` `screen`:
+Builds the ARN for `honeycode` `screen`:
 
 ```
 arn:${Partition}:honeycode:${Region}:${Account}:screen:workbook/${WorkbookId}/app/${AppId}/screen/${ScreenId}

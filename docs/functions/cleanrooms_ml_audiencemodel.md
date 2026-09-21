@@ -3,12 +3,12 @@
 page_title: "cleanrooms_ml_audiencemodel function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms-ml audiencemodel ARN
+  cleanrooms-ml audiencemodel ARN
 ---
 
 # function: cleanrooms_ml_audiencemodel
 
-Builds the ARN of an `cleanrooms-ml` `audiencemodel`:
+Builds the ARN for `cleanrooms-ml` `audiencemodel`:
 
 ```
 arn:${Partition}:cleanrooms-ml:${Region}:${Account}:audience-model/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "sagemaker_artifact function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker artifact ARN
+  sagemaker artifact ARN
 ---
 
 # function: sagemaker_artifact
 
-Builds the ARN of an `sagemaker` `artifact`:
+Builds the ARN for `sagemaker` `artifact`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:artifact/${HashOfArtifactSource}

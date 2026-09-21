@@ -3,12 +3,12 @@
 page_title: "elemental_appliances_software_quote function - arn"
 subcategory: ""
 description: |-
-  Builds an elemental-appliances-software quote ARN
+  elemental-appliances-software quote ARN
 ---
 
 # function: elemental_appliances_software_quote
 
-Builds the ARN of an `elemental-appliances-software` `quote`:
+Builds the ARN for `elemental-appliances-software` `quote`:
 
 ```
 arn:${Partition}:elemental-appliances-software:${Region}:${Account}:quote/${ResourceId}

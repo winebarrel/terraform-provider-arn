@@ -3,12 +3,12 @@
 page_title: "rds_cluster_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an rds cluster-snapshot ARN
+  rds cluster-snapshot ARN
 ---
 
 # function: rds_cluster_snapshot
 
-Builds the ARN of an `rds` `cluster-snapshot`:
+Builds the ARN for `rds` `cluster-snapshot`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:cluster-snapshot:${ClusterSnapshotName}

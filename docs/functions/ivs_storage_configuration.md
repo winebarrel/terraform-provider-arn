@@ -3,12 +3,12 @@
 page_title: "ivs_storage_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an ivs Storage-Configuration ARN
+  ivs Storage-Configuration ARN
 ---
 
 # function: ivs_storage_configuration
 
-Builds the ARN of an `ivs` `Storage-Configuration`:
+Builds the ARN for `ivs` `Storage-Configuration`:
 
 ```
 arn:${Partition}:ivs:${Region}:${Account}:storage-configuration/${ResourceId}

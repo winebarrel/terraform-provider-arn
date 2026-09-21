@@ -3,12 +3,12 @@
 page_title: "cloudformation_stack function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudformation stack ARN
+  cloudformation stack ARN
 ---
 
 # function: cloudformation_stack
 
-Builds the ARN of an `cloudformation` `stack`:
+Builds the ARN for `cloudformation` `stack`:
 
 ```
 arn:${Partition}:cloudformation:${Region}:${Account}:stack/${StackName}/${Id}

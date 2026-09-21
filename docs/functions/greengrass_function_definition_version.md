@@ -3,12 +3,12 @@
 page_title: "greengrass_function_definition_version function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass functionDefinitionVersion ARN
+  greengrass functionDefinitionVersion ARN
 ---
 
 # function: greengrass_function_definition_version
 
-Builds the ARN of an `greengrass` `functionDefinitionVersion`:
+Builds the ARN for `greengrass` `functionDefinitionVersion`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/functions/${FunctionDefinitionId}/versions/${VersionId}

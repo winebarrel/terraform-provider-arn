@@ -3,12 +3,12 @@
 page_title: "lookoutequipment_label_group function - arn"
 subcategory: ""
 description: |-
-  Builds an lookoutequipment label-group ARN
+  lookoutequipment label-group ARN
 ---
 
 # function: lookoutequipment_label_group
 
-Builds the ARN of an `lookoutequipment` `label-group`:
+Builds the ARN for `lookoutequipment` `label-group`:
 
 ```
 arn:${Partition}:lookoutequipment:${Region}:${Account}:label-group/${LabelGroupName}/${LabelGroupId}

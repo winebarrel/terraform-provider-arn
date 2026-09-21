@@ -3,12 +3,12 @@
 page_title: "route53_vpc function - arn"
 subcategory: ""
 description: |-
-  Builds an route53 vpc ARN
+  route53 vpc ARN
 ---
 
 # function: route53_vpc
 
-Builds the ARN of an `route53` `vpc`:
+Builds the ARN for `route53` `vpc`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:vpc/${VpcId}

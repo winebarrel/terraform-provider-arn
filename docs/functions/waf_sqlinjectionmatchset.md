@@ -3,12 +3,12 @@
 page_title: "waf_sqlinjectionmatchset function - arn"
 subcategory: ""
 description: |-
-  Builds an waf sqlinjectionmatchset ARN
+  waf sqlinjectionmatchset ARN
 ---
 
 # function: waf_sqlinjectionmatchset
 
-Builds the ARN of an `waf` `sqlinjectionmatchset`:
+Builds the ARN for `waf` `sqlinjectionmatchset`:
 
 ```
 arn:${Partition}:waf::${Account}:sqlinjectionset/${Id}

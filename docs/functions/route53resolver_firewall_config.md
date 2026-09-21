@@ -3,12 +3,12 @@
 page_title: "route53resolver_firewall_config function - arn"
 subcategory: ""
 description: |-
-  Builds an route53resolver firewall-config ARN
+  route53resolver firewall-config ARN
 ---
 
 # function: route53resolver_firewall_config
 
-Builds the ARN of an `route53resolver` `firewall-config`:
+Builds the ARN for `route53resolver` `firewall-config`:
 
 ```
 arn:${Partition}:route53resolver:${Region}:${Account}:firewall-config/${ResourceId}

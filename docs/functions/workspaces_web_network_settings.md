@@ -3,12 +3,12 @@
 page_title: "workspaces_web_network_settings function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces-web networkSettings ARN
+  workspaces-web networkSettings ARN
 ---
 
 # function: workspaces_web_network_settings
 
-Builds the ARN of an `workspaces-web` `networkSettings`:
+Builds the ARN for `workspaces-web` `networkSettings`:
 
 ```
 arn:${Partition}:workspaces-web:${Region}:${Account}:networkSettings/${NetworkSettingsId}

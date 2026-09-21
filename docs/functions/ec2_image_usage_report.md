@@ -3,12 +3,12 @@
 page_title: "ec2_image_usage_report function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 image-usage-report ARN
+  ec2 image-usage-report ARN
 ---
 
 # function: ec2_image_usage_report
 
-Builds the ARN of an `ec2` `image-usage-report`:
+Builds the ARN for `ec2` `image-usage-report`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:image-usage-report/${ImageUsageReportId}

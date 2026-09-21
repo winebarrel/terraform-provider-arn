@@ -3,12 +3,12 @@
 page_title: "waf_regexpatternset function - arn"
 subcategory: ""
 description: |-
-  Builds an waf regexpatternset ARN
+  waf regexpatternset ARN
 ---
 
 # function: waf_regexpatternset
 
-Builds the ARN of an `waf` `regexpatternset`:
+Builds the ARN for `waf` `regexpatternset`:
 
 ```
 arn:${Partition}:waf::${Account}:regexpatternset/${Id}

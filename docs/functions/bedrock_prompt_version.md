@@ -3,12 +3,12 @@
 page_title: "bedrock_prompt_version function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock prompt-version ARN
+  bedrock prompt-version ARN
 ---
 
 # function: bedrock_prompt_version
 
-Builds the ARN of an `bedrock` `prompt-version`:
+Builds the ARN for `bedrock` `prompt-version`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:prompt/${PromptId}:${PromptVersion}

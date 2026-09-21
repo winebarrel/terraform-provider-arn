@@ -3,12 +3,12 @@
 page_title: "securityhub_product function - arn"
 subcategory: ""
 description: |-
-  Builds an securityhub product ARN
+  securityhub product ARN
 ---
 
 # function: securityhub_product
 
-Builds the ARN of an `securityhub` `product`:
+Builds the ARN for `securityhub` `product`:
 
 ```
 arn:${Partition}:securityhub:${Region}:${Account}:product/${Company}/${ProductId}

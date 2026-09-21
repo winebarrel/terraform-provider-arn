@@ -3,12 +3,12 @@
 page_title: "mgn_application_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgn ApplicationResource ARN
+  mgn ApplicationResource ARN
 ---
 
 # function: mgn_application_resource
 
-Builds the ARN of an `mgn` `ApplicationResource`:
+Builds the ARN for `mgn` `ApplicationResource`:
 
 ```
 arn:${Partition}:mgn:${Region}:${Account}:application/${ApplicationID}

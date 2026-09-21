@@ -3,12 +3,12 @@
 page_title: "imagebuilder_distribution_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an imagebuilder distributionConfiguration ARN
+  imagebuilder distributionConfiguration ARN
 ---
 
 # function: imagebuilder_distribution_configuration
 
-Builds the ARN of an `imagebuilder` `distributionConfiguration`:
+Builds the ARN for `imagebuilder` `distributionConfiguration`:
 
 ```
 arn:${Partition}:imagebuilder:${Region}:${Account}:distribution-configuration/${DistributionConfigurationName}

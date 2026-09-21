@@ -3,12 +3,12 @@
 page_title: "ses_reputation_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an ses reputation-policy ARN
+  ses reputation-policy ARN
 ---
 
 # function: ses_reputation_policy
 
-Builds the ARN of an `ses` `reputation-policy`:
+Builds the ARN for `ses` `reputation-policy`:
 
 ```
 arn:${Partition}:ses:${Region}:aws:reputation-policy/${ReputationPolicyName}

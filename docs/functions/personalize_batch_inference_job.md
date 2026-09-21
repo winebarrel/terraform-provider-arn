@@ -3,12 +3,12 @@
 page_title: "personalize_batch_inference_job function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize batchInferenceJob ARN
+  personalize batchInferenceJob ARN
 ---
 
 # function: personalize_batch_inference_job
 
-Builds the ARN of an `personalize` `batchInferenceJob`:
+Builds the ARN for `personalize` `batchInferenceJob`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:batch-inference-job/${ResourceId}

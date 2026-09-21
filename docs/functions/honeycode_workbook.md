@@ -3,12 +3,12 @@
 page_title: "honeycode_workbook function - arn"
 subcategory: ""
 description: |-
-  Builds an honeycode workbook ARN
+  honeycode workbook ARN
 ---
 
 # function: honeycode_workbook
 
-Builds the ARN of an `honeycode` `workbook`:
+Builds the ARN for `honeycode` `workbook`:
 
 ```
 arn:${Partition}:honeycode:${Region}:${Account}:workbook:workbook/${WorkbookId}

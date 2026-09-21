@@ -3,12 +3,12 @@
 page_title: "s3vectors_index function - arn"
 subcategory: ""
 description: |-
-  Builds an s3vectors Index ARN
+  s3vectors Index ARN
 ---
 
 # function: s3vectors_index
 
-Builds the ARN of an `s3vectors` `Index`:
+Builds the ARN for `s3vectors` `Index`:
 
 ```
 arn:${Partition}:s3vectors:${Region}:${Account}:bucket/${BucketName}/index/${IndexName}

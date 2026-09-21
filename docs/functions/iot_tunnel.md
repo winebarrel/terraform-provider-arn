@@ -3,12 +3,12 @@
 page_title: "iot_tunnel function - arn"
 subcategory: ""
 description: |-
-  Builds an iot tunnel ARN
+  iot tunnel ARN
 ---
 
 # function: iot_tunnel
 
-Builds the ARN of an `iot` `tunnel`:
+Builds the ARN for `iot` `tunnel`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:tunnel/${TunnelId}

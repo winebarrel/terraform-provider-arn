@@ -3,12 +3,12 @@
 page_title: "osis_pipeline function - arn"
 subcategory: ""
 description: |-
-  Builds an osis pipeline ARN
+  osis pipeline ARN
 ---
 
 # function: osis_pipeline
 
-Builds the ARN of an `osis` `pipeline`:
+Builds the ARN for `osis` `pipeline`:
 
 ```
 arn:${Partition}:osis:${Region}:${Account}:pipeline/${PipelineName}

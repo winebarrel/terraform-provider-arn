@@ -3,12 +3,12 @@
 page_title: "bedrock_mantle_reservation function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-mantle reservation ARN
+  bedrock-mantle reservation ARN
 ---
 
 # function: bedrock_mantle_reservation
 
-Builds the ARN of an `bedrock-mantle` `reservation`:
+Builds the ARN for `bedrock-mantle` `reservation`:
 
 ```
 arn:${Partition}:bedrock-mantle:${Region}:${Account}:reservation/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "iotsitewise_dashboard function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise dashboard ARN
+  iotsitewise dashboard ARN
 ---
 
 # function: iotsitewise_dashboard
 
-Builds the ARN of an `iotsitewise` `dashboard`:
+Builds the ARN for `iotsitewise` `dashboard`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:dashboard/${DashboardId}

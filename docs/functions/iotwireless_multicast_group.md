@@ -3,12 +3,12 @@
 page_title: "iotwireless_multicast_group function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless MulticastGroup ARN
+  iotwireless MulticastGroup ARN
 ---
 
 # function: iotwireless_multicast_group
 
-Builds the ARN of an `iotwireless` `MulticastGroup`:
+Builds the ARN for `iotwireless` `MulticastGroup`:
 
 ```
 arn:${Partition}:iotwireless:${Region}:${Account}:MulticastGroup/${MulticastGroupId}

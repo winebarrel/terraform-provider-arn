@@ -3,12 +3,12 @@
 page_title: "aps_scraper function - arn"
 subcategory: ""
 description: |-
-  Builds an aps scraper ARN
+  aps scraper ARN
 ---
 
 # function: aps_scraper
 
-Builds the ARN of an `aps` `scraper`:
+Builds the ARN for `aps` `scraper`:
 
 ```
 arn:${Partition}:aps:${Region}:${Account}:scraper/${ScraperId}

@@ -3,12 +3,12 @@
 page_title: "logs_log_group function - arn"
 subcategory: ""
 description: |-
-  Builds an logs log-group ARN
+  logs log-group ARN
 ---
 
 # function: logs_log_group
 
-Builds the ARN of an `logs` `log-group`:
+Builds the ARN for `logs` `log-group`:
 
 ```
 arn:${Partition}:logs:${Region}:${Account}:log-group:${LogGroupName}

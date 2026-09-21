@@ -3,12 +3,12 @@
 page_title: "apigateway_private_base_path_mapping function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway PrivateBasePathMapping ARN
+  apigateway PrivateBasePathMapping ARN
 ---
 
 # function: apigateway_private_base_path_mapping
 
-Builds the ARN of an `apigateway` `PrivateBasePathMapping`:
+Builds the ARN for `apigateway` `PrivateBasePathMapping`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}+${DomainIdentifier}/basepathmappings/${BasePath}

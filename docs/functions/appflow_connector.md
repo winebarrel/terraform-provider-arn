@@ -3,12 +3,12 @@
 page_title: "appflow_connector function - arn"
 subcategory: ""
 description: |-
-  Builds an appflow connector ARN
+  appflow connector ARN
 ---
 
 # function: appflow_connector
 
-Builds the ARN of an `appflow` `connector`:
+Builds the ARN for `appflow` `connector`:
 
 ```
 arn:${Partition}:appflow:${Region}:${Account}:connector/${ConnectorLabel}

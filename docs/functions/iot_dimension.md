@@ -3,12 +3,12 @@
 page_title: "iot_dimension function - arn"
 subcategory: ""
 description: |-
-  Builds an iot dimension ARN
+  iot dimension ARN
 ---
 
 # function: iot_dimension
 
-Builds the ARN of an `iot` `dimension`:
+Builds the ARN for `iot` `dimension`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:dimension/${DimensionName}

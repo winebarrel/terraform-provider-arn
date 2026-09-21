@@ -3,12 +3,12 @@
 page_title: "mq_configurations function - arn"
 subcategory: ""
 description: |-
-  Builds an mq configurations ARN
+  mq configurations ARN
 ---
 
 # function: mq_configurations
 
-Builds the ARN of an `mq` `configurations`:
+Builds the ARN for `mq` `configurations`:
 
 ```
 arn:${Partition}:mq:${Region}:${Account}:configuration:${ConfigurationId}

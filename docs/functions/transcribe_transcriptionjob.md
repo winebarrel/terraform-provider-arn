@@ -3,12 +3,12 @@
 page_title: "transcribe_transcriptionjob function - arn"
 subcategory: ""
 description: |-
-  Builds an transcribe transcriptionjob ARN
+  transcribe transcriptionjob ARN
 ---
 
 # function: transcribe_transcriptionjob
 
-Builds the ARN of an `transcribe` `transcriptionjob`:
+Builds the ARN for `transcribe` `transcriptionjob`:
 
 ```
 arn:${Partition}:transcribe:${Region}:${Account}:transcription-job/${JobName}

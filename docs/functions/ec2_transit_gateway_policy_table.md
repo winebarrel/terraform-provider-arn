@@ -3,12 +3,12 @@
 page_title: "ec2_transit_gateway_policy_table function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 transit-gateway-policy-table ARN
+  ec2 transit-gateway-policy-table ARN
 ---
 
 # function: ec2_transit_gateway_policy_table
 
-Builds the ARN of an `ec2` `transit-gateway-policy-table`:
+Builds the ARN for `ec2` `transit-gateway-policy-table`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:transit-gateway-policy-table/${TransitGatewayPolicyTableId}

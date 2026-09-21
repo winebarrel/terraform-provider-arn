@@ -3,12 +3,12 @@
 page_title: "ssm_session function - arn"
 subcategory: ""
 description: |-
-  Builds an ssm session ARN
+  ssm session ARN
 ---
 
 # function: ssm_session
 
-Builds the ARN of an `ssm` `session`:
+Builds the ARN for `ssm` `session`:
 
 ```
 arn:${Partition}:ssm:${Region}:${Account}:session/${SessionId}

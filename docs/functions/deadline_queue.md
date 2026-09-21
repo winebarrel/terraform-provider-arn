@@ -3,12 +3,12 @@
 page_title: "deadline_queue function - arn"
 subcategory: ""
 description: |-
-  Builds an deadline queue ARN
+  deadline queue ARN
 ---
 
 # function: deadline_queue
 
-Builds the ARN of an `deadline` `queue`:
+Builds the ARN for `deadline` `queue`:
 
 ```
 arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/queue/${QueueId}

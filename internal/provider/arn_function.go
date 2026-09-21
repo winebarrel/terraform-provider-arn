@@ -49,7 +49,7 @@ func (f ARNFunction) Definition(_ context.Context, _ function.DefinitionRequest,
 	}
 
 	resp.Definition = function.Definition{
-		Summary:             fmt.Sprintf("Builds an %s %s ARN", f.spec.Service, f.spec.Resource),
+		Summary:             fmt.Sprintf("%s %s ARN", f.spec.Service, f.spec.Resource),
 		MarkdownDescription: f.markdownDescription(),
 		Parameters:          params,
 		VariadicParameter: function.MapParameter{
@@ -68,7 +68,7 @@ const optionsDoc = "Optional overrides: `account` (the name of an `account` bloc
 
 func (f ARNFunction) markdownDescription() string {
 	var b strings.Builder
-	fmt.Fprintf(&b, "Builds the ARN of an `%s` `%s`:\n\n```\n%s\n```\n\n",
+	fmt.Fprintf(&b, "Builds the ARN for `%s` `%s`:\n\n```\n%s\n```\n\n",
 		f.spec.Service, f.spec.Resource, f.spec.Template)
 	fmt.Fprintf(&b, "`${Partition}`, `${Region}` and `${Account}` come from the configuration file "+
 		"(`.arn.hcl`, or the path in `ARN_CONFIG`).")

@@ -3,12 +3,12 @@
 page_title: "waf_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an waf rule ARN
+  waf rule ARN
 ---
 
 # function: waf_rule
 
-Builds the ARN of an `waf` `rule`:
+Builds the ARN for `waf` `rule`:
 
 ```
 arn:${Partition}:waf::${Account}:rule/${Id}

@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_apikeycredentialprovider function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore apikeycredentialprovider ARN
+  bedrock-agentcore apikeycredentialprovider ARN
 ---
 
 # function: bedrock_agentcore_apikeycredentialprovider
 
-Builds the ARN of an `bedrock-agentcore` `apikeycredentialprovider`:
+Builds the ARN for `bedrock-agentcore` `apikeycredentialprovider`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:token-vault/${TokenVaultId}/apikeycredentialprovider/${Name}

@@ -3,12 +3,12 @@
 page_title: "iotsitewise_computation_model function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise computation-model ARN
+  iotsitewise computation-model ARN
 ---
 
 # function: iotsitewise_computation_model
 
-Builds the ARN of an `iotsitewise` `computation-model`:
+Builds the ARN for `iotsitewise` `computation-model`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:computation-model/${ComputationModelId}

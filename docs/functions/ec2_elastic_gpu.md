@@ -3,12 +3,12 @@
 page_title: "ec2_elastic_gpu function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 elastic-gpu ARN
+  ec2 elastic-gpu ARN
 ---
 
 # function: ec2_elastic_gpu
 
-Builds the ARN of an `ec2` `elastic-gpu`:
+Builds the ARN for `ec2` `elastic-gpu`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:elastic-gpu/${ElasticGpuId}

@@ -3,12 +3,12 @@
 page_title: "aws_external_anthropic_workspace function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-external-anthropic workspace ARN
+  aws-external-anthropic workspace ARN
 ---
 
 # function: aws_external_anthropic_workspace
 
-Builds the ARN of an `aws-external-anthropic` `workspace`:
+Builds the ARN for `aws-external-anthropic` `workspace`:
 
 ```
 arn:${Partition}:aws-external-anthropic:${Region}:${Account}:workspace/${ResourceId}

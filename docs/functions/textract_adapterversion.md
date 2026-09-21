@@ -3,12 +3,12 @@
 page_title: "textract_adapterversion function - arn"
 subcategory: ""
 description: |-
-  Builds an textract adapterversion ARN
+  textract adapterversion ARN
 ---
 
 # function: textract_adapterversion
 
-Builds the ARN of an `textract` `adapterversion`:
+Builds the ARN for `textract` `adapterversion`:
 
 ```
 arn:${Partition}:textract:${Region}:${Account}:/adapters/${AdapterId}/versions/${AdapterVersion}

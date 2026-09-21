@@ -3,12 +3,12 @@
 page_title: "elasticfilesystem_file_system function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticfilesystem file-system ARN
+  elasticfilesystem file-system ARN
 ---
 
 # function: elasticfilesystem_file_system
 
-Builds the ARN of an `elasticfilesystem` `file-system`:
+Builds the ARN for `elasticfilesystem` `file-system`:
 
 ```
 arn:${Partition}:elasticfilesystem:${Region}:${Account}:file-system/${FileSystemId}

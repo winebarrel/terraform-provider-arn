@@ -3,12 +3,12 @@
 page_title: "mgn_export_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an mgn ExportResource ARN
+  mgn ExportResource ARN
 ---
 
 # function: mgn_export_resource
 
-Builds the ARN of an `mgn` `ExportResource`:
+Builds the ARN for `mgn` `ExportResource`:
 
 ```
 arn:${Partition}:mgn:${Region}:${Account}:export/${ExportID}

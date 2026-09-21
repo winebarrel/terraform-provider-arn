@@ -3,12 +3,12 @@
 page_title: "ec2_export_instance_task function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 export-instance-task ARN
+  ec2 export-instance-task ARN
 ---
 
 # function: ec2_export_instance_task
 
-Builds the ARN of an `ec2` `export-instance-task`:
+Builds the ARN for `ec2` `export-instance-task`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:export-instance-task/${ExportTaskId}

@@ -3,12 +3,12 @@
 page_title: "kendra_index function - arn"
 subcategory: ""
 description: |-
-  Builds an kendra index ARN
+  kendra index ARN
 ---
 
 # function: kendra_index
 
-Builds the ARN of an `kendra` `index`:
+Builds the ARN for `kendra` `index`:
 
 ```
 arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}

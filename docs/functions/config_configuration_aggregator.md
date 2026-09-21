@@ -3,12 +3,12 @@
 page_title: "config_configuration_aggregator function - arn"
 subcategory: ""
 description: |-
-  Builds an config ConfigurationAggregator ARN
+  config ConfigurationAggregator ARN
 ---
 
 # function: config_configuration_aggregator
 
-Builds the ARN of an `config` `ConfigurationAggregator`:
+Builds the ARN for `config` `ConfigurationAggregator`:
 
 ```
 arn:${Partition}:config:${Region}:${Account}:config-aggregator/${AggregatorId}

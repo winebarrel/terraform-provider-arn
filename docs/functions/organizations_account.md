@@ -3,12 +3,12 @@
 page_title: "organizations_account function - arn"
 subcategory: ""
 description: |-
-  Builds an organizations account ARN
+  organizations account ARN
 ---
 
 # function: organizations_account
 
-Builds the ARN of an `organizations` `account`:
+Builds the ARN for `organizations` `account`:
 
 ```
 arn:${Partition}:organizations::${Account}:account/o-${OrganizationId}/${AccountId}

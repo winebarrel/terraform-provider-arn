@@ -3,12 +3,12 @@
 page_title: "ce_anomalysubscription function - arn"
 subcategory: ""
 description: |-
-  Builds an ce anomalysubscription ARN
+  ce anomalysubscription ARN
 ---
 
 # function: ce_anomalysubscription
 
-Builds the ARN of an `ce` `anomalysubscription`:
+Builds the ARN for `ce` `anomalysubscription`:
 
 ```
 arn:${Partition}:ce::${Account}:anomalysubscription/${Identifier}

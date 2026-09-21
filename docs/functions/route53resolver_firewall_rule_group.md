@@ -3,12 +3,12 @@
 page_title: "route53resolver_firewall_rule_group function - arn"
 subcategory: ""
 description: |-
-  Builds an route53resolver firewall-rule-group ARN
+  route53resolver firewall-rule-group ARN
 ---
 
 # function: route53resolver_firewall_rule_group
 
-Builds the ARN of an `route53resolver` `firewall-rule-group`:
+Builds the ARN for `route53resolver` `firewall-rule-group`:
 
 ```
 arn:${Partition}:route53resolver:${Region}:${Account}:firewall-rule-group/${ResourceId}

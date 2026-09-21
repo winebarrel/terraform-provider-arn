@@ -3,12 +3,12 @@
 page_title: "eks_addon function - arn"
 subcategory: ""
 description: |-
-  Builds an eks addon ARN
+  eks addon ARN
 ---
 
 # function: eks_addon
 
-Builds the ARN of an `eks` `addon`:
+Builds the ARN for `eks` `addon`:
 
 ```
 arn:${Partition}:eks:${Region}:${Account}:addon/${ClusterName}/${AddonName}/${UUID}

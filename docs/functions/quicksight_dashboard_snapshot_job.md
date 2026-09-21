@@ -3,12 +3,12 @@
 page_title: "quicksight_dashboard_snapshot_job function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight dashboardSnapshotJob ARN
+  quicksight dashboardSnapshotJob ARN
 ---
 
 # function: quicksight_dashboard_snapshot_job
 
-Builds the ARN of an `quicksight` `dashboardSnapshotJob`:
+Builds the ARN for `quicksight` `dashboardSnapshotJob`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:dashboard/${DashboardId}/snapshot-job/${ResourceId}

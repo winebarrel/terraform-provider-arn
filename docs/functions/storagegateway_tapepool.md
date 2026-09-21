@@ -3,12 +3,12 @@
 page_title: "storagegateway_tapepool function - arn"
 subcategory: ""
 description: |-
-  Builds an storagegateway tapepool ARN
+  storagegateway tapepool ARN
 ---
 
 # function: storagegateway_tapepool
 
-Builds the ARN of an `storagegateway` `tapepool`:
+Builds the ARN for `storagegateway` `tapepool`:
 
 ```
 arn:${Partition}:storagegateway:${Region}:${Account}:tapepool/${PoolId}

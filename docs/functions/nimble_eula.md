@@ -3,12 +3,12 @@
 page_title: "nimble_eula function - arn"
 subcategory: ""
 description: |-
-  Builds an nimble eula ARN
+  nimble eula ARN
 ---
 
 # function: nimble_eula
 
-Builds the ARN of an `nimble` `eula`:
+Builds the ARN for `nimble` `eula`:
 
 ```
 arn:${Partition}:nimble:${Region}:${Account}:eula/${EulaId}

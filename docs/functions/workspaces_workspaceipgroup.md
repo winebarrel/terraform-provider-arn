@@ -3,12 +3,12 @@
 page_title: "workspaces_workspaceipgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an workspaces workspaceipgroup ARN
+  workspaces workspaceipgroup ARN
 ---
 
 # function: workspaces_workspaceipgroup
 
-Builds the ARN of an `workspaces` `workspaceipgroup`:
+Builds the ARN for `workspaces` `workspaceipgroup`:
 
 ```
 arn:${Partition}:workspaces:${Region}:${Account}:workspaceipgroup/${GroupId}

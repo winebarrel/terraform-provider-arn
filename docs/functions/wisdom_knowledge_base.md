@@ -3,12 +3,12 @@
 page_title: "wisdom_knowledge_base function - arn"
 subcategory: ""
 description: |-
-  Builds an wisdom KnowledgeBase ARN
+  wisdom KnowledgeBase ARN
 ---
 
 # function: wisdom_knowledge_base
 
-Builds the ARN of an `wisdom` `KnowledgeBase`:
+Builds the ARN for `wisdom` `KnowledgeBase`:
 
 ```
 arn:${Partition}:wisdom:${Region}:${Account}:knowledge-base/${KnowledgeBaseId}

@@ -3,12 +3,12 @@
 page_title: "ec2_reserved_instances function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 reserved-instances ARN
+  ec2 reserved-instances ARN
 ---
 
 # function: ec2_reserved_instances
 
-Builds the ARN of an `ec2` `reserved-instances`:
+Builds the ARN for `ec2` `reserved-instances`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:reserved-instances/${ReservationId}

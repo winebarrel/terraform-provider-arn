@@ -3,12 +3,12 @@
 page_title: "qbusiness_index function - arn"
 subcategory: ""
 description: |-
-  Builds an qbusiness index ARN
+  qbusiness index ARN
 ---
 
 # function: qbusiness_index
 
-Builds the ARN of an `qbusiness` `index`:
+Builds the ARN for `qbusiness` `index`:
 
 ```
 arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/index/${IndexId}

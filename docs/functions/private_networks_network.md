@@ -3,12 +3,12 @@
 page_title: "private_networks_network function - arn"
 subcategory: ""
 description: |-
-  Builds an private-networks network ARN
+  private-networks network ARN
 ---
 
 # function: private_networks_network
 
-Builds the ARN of an `private-networks` `network`:
+Builds the ARN for `private-networks` `network`:
 
 ```
 arn:${Partition}:private-networks:${Region}:${Account}:network/${NetworkName}

@@ -3,12 +3,12 @@
 page_title: "ec2_spot_instances_request function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 spot-instances-request ARN
+  ec2 spot-instances-request ARN
 ---
 
 # function: ec2_spot_instances_request
 
-Builds the ARN of an `ec2` `spot-instances-request`:
+Builds the ARN for `ec2` `spot-instances-request`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:spot-instances-request/${SpotInstanceRequestId}

@@ -3,12 +3,12 @@
 page_title: "ec2_traffic_mirror_session function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 traffic-mirror-session ARN
+  ec2 traffic-mirror-session ARN
 ---
 
 # function: ec2_traffic_mirror_session
 
-Builds the ARN of an `ec2` `traffic-mirror-session`:
+Builds the ARN for `ec2` `traffic-mirror-session`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:traffic-mirror-session/${TrafficMirrorSessionId}

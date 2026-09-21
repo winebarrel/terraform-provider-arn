@@ -3,12 +3,12 @@
 page_title: "drs_replication_configuration_template_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an drs ReplicationConfigurationTemplateResource ARN
+  drs ReplicationConfigurationTemplateResource ARN
 ---
 
 # function: drs_replication_configuration_template_resource
 
-Builds the ARN of an `drs` `ReplicationConfigurationTemplateResource`:
+Builds the ARN for `drs` `ReplicationConfigurationTemplateResource`:
 
 ```
 arn:${Partition}:drs:${Region}:${Account}:replication-configuration-template/${ReplicationConfigurationTemplateID}

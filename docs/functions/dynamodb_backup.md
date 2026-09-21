@@ -3,12 +3,12 @@
 page_title: "dynamodb_backup function - arn"
 subcategory: ""
 description: |-
-  Builds an dynamodb backup ARN
+  dynamodb backup ARN
 ---
 
 # function: dynamodb_backup
 
-Builds the ARN of an `dynamodb` `backup`:
+Builds the ARN for `dynamodb` `backup`:
 
 ```
 arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/backup/${BackupName}

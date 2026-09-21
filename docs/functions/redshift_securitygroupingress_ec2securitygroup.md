@@ -3,12 +3,12 @@
 page_title: "redshift_securitygroupingress_ec2securitygroup function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift securitygroupingress-ec2securitygroup ARN
+  redshift securitygroupingress-ec2securitygroup ARN
 ---
 
 # function: redshift_securitygroupingress_ec2securitygroup
 
-Builds the ARN of an `redshift` `securitygroupingress-ec2securitygroup`:
+Builds the ARN for `redshift` `securitygroupingress-ec2securitygroup`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:securitygroupingress:${SecurityGroupName}/ec2securitygroup/${Owner}/${Ece2SecuritygroupId}

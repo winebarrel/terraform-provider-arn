@@ -3,12 +3,12 @@
 page_title: "acm_pca_certificate_authority function - arn"
 subcategory: ""
 description: |-
-  Builds an acm-pca certificate-authority ARN
+  acm-pca certificate-authority ARN
 ---
 
 # function: acm_pca_certificate_authority
 
-Builds the ARN of an `acm-pca` `certificate-authority`:
+Builds the ARN for `acm-pca` `certificate-authority`:
 
 ```
 arn:${Partition}:acm-pca:${Region}:${Account}:certificate-authority/${CertificateAuthorityId}

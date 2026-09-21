@@ -3,12 +3,12 @@
 page_title: "dataexchange_data_sets function - arn"
 subcategory: ""
 description: |-
-  Builds an dataexchange data-sets ARN
+  dataexchange data-sets ARN
 ---
 
 # function: dataexchange_data_sets
 
-Builds the ARN of an `dataexchange` `data-sets`:
+Builds the ARN for `dataexchange` `data-sets`:
 
 ```
 arn:${Partition}:dataexchange:${Region}:${Account}:data-sets/${DataSetId}

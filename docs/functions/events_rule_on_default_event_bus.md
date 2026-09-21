@@ -3,12 +3,12 @@
 page_title: "events_rule_on_default_event_bus function - arn"
 subcategory: ""
 description: |-
-  Builds an events rule-on-default-event-bus ARN
+  events rule-on-default-event-bus ARN
 ---
 
 # function: events_rule_on_default_event_bus
 
-Builds the ARN of an `events` `rule-on-default-event-bus`:
+Builds the ARN for `events` `rule-on-default-event-bus`:
 
 ```
 arn:${Partition}:events:${Region}:${Account}:rule/${RuleName}

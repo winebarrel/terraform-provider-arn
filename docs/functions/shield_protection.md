@@ -3,12 +3,12 @@
 page_title: "shield_protection function - arn"
 subcategory: ""
 description: |-
-  Builds an shield protection ARN
+  shield protection ARN
 ---
 
 # function: shield_protection
 
-Builds the ARN of an `shield` `protection`:
+Builds the ARN for `shield` `protection`:
 
 ```
 arn:${Partition}:shield::${Account}:protection/${Id}

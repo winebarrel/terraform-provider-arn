@@ -3,12 +3,12 @@
 page_title: "s3_storagelensgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an s3 storagelensgroup ARN
+  s3 storagelensgroup ARN
 ---
 
 # function: s3_storagelensgroup
 
-Builds the ARN of an `s3` `storagelensgroup`:
+Builds the ARN for `s3` `storagelensgroup`:
 
 ```
 arn:${Partition}:s3:${Region}:${Account}:storage-lens-group/${Name}

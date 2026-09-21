@@ -3,12 +3,12 @@
 page_title: "deadline_job function - arn"
 subcategory: ""
 description: |-
-  Builds an deadline job ARN
+  deadline job ARN
 ---
 
 # function: deadline_job
 
-Builds the ARN of an `deadline` `job`:
+Builds the ARN for `deadline` `job`:
 
 ```
 arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/queue/${QueueId}/job/${JobId}

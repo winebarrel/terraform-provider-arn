@@ -3,12 +3,12 @@
 page_title: "partnercentral_program_management_account function - arn"
 subcategory: ""
 description: |-
-  Builds an partnercentral ProgramManagementAccount ARN
+  partnercentral ProgramManagementAccount ARN
 ---
 
 # function: partnercentral_program_management_account
 
-Builds the ARN of an `partnercentral` `ProgramManagementAccount`:
+Builds the ARN for `partnercentral` `ProgramManagementAccount`:
 
 ```
 arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/program-management-account/${Identifier}

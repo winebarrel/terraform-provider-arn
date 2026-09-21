@@ -3,12 +3,12 @@
 page_title: "backup_gateway_hypervisor function - arn"
 subcategory: ""
 description: |-
-  Builds an backup-gateway hypervisor ARN
+  backup-gateway hypervisor ARN
 ---
 
 # function: backup_gateway_hypervisor
 
-Builds the ARN of an `backup-gateway` `hypervisor`:
+Builds the ARN for `backup-gateway` `hypervisor`:
 
 ```
 arn:${Partition}:backup-gateway:${Region}:${Account}:hypervisor/${HypervisorId}

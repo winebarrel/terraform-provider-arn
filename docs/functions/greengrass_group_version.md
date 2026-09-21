@@ -3,12 +3,12 @@
 page_title: "greengrass_group_version function - arn"
 subcategory: ""
 description: |-
-  Builds an greengrass groupVersion ARN
+  greengrass groupVersion ARN
 ---
 
 # function: greengrass_group_version
 
-Builds the ARN of an `greengrass` `groupVersion`:
+Builds the ARN for `greengrass` `groupVersion`:
 
 ```
 arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/groups/${GroupId}/versions/${VersionId}

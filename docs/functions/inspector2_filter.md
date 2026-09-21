@@ -3,12 +3,12 @@
 page_title: "inspector2_filter function - arn"
 subcategory: ""
 description: |-
-  Builds an inspector2 Filter ARN
+  inspector2 Filter ARN
 ---
 
 # function: inspector2_filter
 
-Builds the ARN of an `inspector2` `Filter`:
+Builds the ARN for `inspector2` `Filter`:
 
 ```
 arn:${Partition}:inspector2:${Region}:${Account}:owner/${OwnerId}/filter/${FilterId}

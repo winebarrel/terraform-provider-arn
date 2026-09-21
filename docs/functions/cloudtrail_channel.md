@@ -3,12 +3,12 @@
 page_title: "cloudtrail_channel function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudtrail channel ARN
+  cloudtrail channel ARN
 ---
 
 # function: cloudtrail_channel
 
-Builds the ARN of an `cloudtrail` `channel`:
+Builds the ARN for `cloudtrail` `channel`:
 
 ```
 arn:${Partition}:cloudtrail:${Region}:${Account}:channel/${ChannelId}

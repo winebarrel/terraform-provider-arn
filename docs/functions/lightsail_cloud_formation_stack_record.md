@@ -3,12 +3,12 @@
 page_title: "lightsail_cloud_formation_stack_record function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail CloudFormationStackRecord ARN
+  lightsail CloudFormationStackRecord ARN
 ---
 
 # function: lightsail_cloud_formation_stack_record
 
-Builds the ARN of an `lightsail` `CloudFormationStackRecord`:
+Builds the ARN for `lightsail` `CloudFormationStackRecord`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:CloudFormationStackRecord/${Id}

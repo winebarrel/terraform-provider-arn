@@ -3,12 +3,12 @@
 page_title: "gamelift_matchmaking_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an gamelift matchmakingConfiguration ARN
+  gamelift matchmakingConfiguration ARN
 ---
 
 # function: gamelift_matchmaking_configuration
 
-Builds the ARN of an `gamelift` `matchmakingConfiguration`:
+Builds the ARN for `gamelift` `matchmakingConfiguration`:
 
 ```
 arn:${Partition}:gamelift:${Region}:${Account}:matchmakingconfiguration/${MatchmakingConfigurationName}

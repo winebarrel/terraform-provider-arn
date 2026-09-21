@@ -3,12 +3,12 @@
 page_title: "elasticache_reserved_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an elasticache reserved-instance ARN
+  elasticache reserved-instance ARN
 ---
 
 # function: elasticache_reserved_instance
 
-Builds the ARN of an `elasticache` `reserved-instance`:
+Builds the ARN for `elasticache` `reserved-instance`:
 
 ```
 arn:${Partition}:elasticache:${Region}:${Account}:reserved-instance:${ReservedCacheNodeId}

@@ -3,12 +3,12 @@
 page_title: "waf_regional_loadbalancer_app function - arn"
 subcategory: ""
 description: |-
-  Builds an waf-regional loadbalancer/app/ ARN
+  waf-regional loadbalancer/app/ ARN
 ---
 
 # function: waf_regional_loadbalancer_app
 
-Builds the ARN of an `waf-regional` `loadbalancer/app/`:
+Builds the ARN for `waf-regional` `loadbalancer/app/`:
 
 ```
 arn:${Partition}:elasticloadbalancing:${Region}:${Account}:loadbalancer/app/${LoadBalancerName}/${LoadBalancerId}

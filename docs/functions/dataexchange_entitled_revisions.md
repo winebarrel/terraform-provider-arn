@@ -3,12 +3,12 @@
 page_title: "dataexchange_entitled_revisions function - arn"
 subcategory: ""
 description: |-
-  Builds an dataexchange entitled-revisions ARN
+  dataexchange entitled-revisions ARN
 ---
 
 # function: dataexchange_entitled_revisions
 
-Builds the ARN of an `dataexchange` `entitled-revisions`:
+Builds the ARN for `dataexchange` `entitled-revisions`:
 
 ```
 arn:${Partition}:dataexchange:${Region}::data-sets/${DataSetId}/revisions/${RevisionId}

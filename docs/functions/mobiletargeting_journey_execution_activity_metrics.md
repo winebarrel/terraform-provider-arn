@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_journey_execution_activity_metrics function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting journey-execution-activity-metrics ARN
+  mobiletargeting journey-execution-activity-metrics ARN
 ---
 
 # function: mobiletargeting_journey_execution_activity_metrics
 
-Builds the ARN of an `mobiletargeting` `journey-execution-activity-metrics`:
+Builds the ARN for `mobiletargeting` `journey-execution-activity-metrics`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/journeys/${JourneyId}/activities/${JourneyActivityId}/execution-metrics

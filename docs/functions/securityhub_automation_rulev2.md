@@ -3,12 +3,12 @@
 page_title: "securityhub_automation_rulev2 function - arn"
 subcategory: ""
 description: |-
-  Builds an securityhub automation-rulev2 ARN
+  securityhub automation-rulev2 ARN
 ---
 
 # function: securityhub_automation_rulev2
 
-Builds the ARN of an `securityhub` `automation-rulev2`:
+Builds the ARN for `securityhub` `automation-rulev2`:
 
 ```
 arn:${Partition}:securityhub:${Region}:${Account}:automation-rulev2/${AutomationRuleV2Id}

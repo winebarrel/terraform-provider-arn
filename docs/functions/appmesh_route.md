@@ -3,12 +3,12 @@
 page_title: "appmesh_route function - arn"
 subcategory: ""
 description: |-
-  Builds an appmesh route ARN
+  appmesh route ARN
 ---
 
 # function: appmesh_route
 
-Builds the ARN of an `appmesh` `route`:
+Builds the ARN for `appmesh` `route`:
 
 ```
 arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualRouter/${VirtualRouterName}/route/${RouteName}

@@ -3,12 +3,12 @@
 page_title: "lambda_event_source_mapping function - arn"
 subcategory: ""
 description: |-
-  Builds an lambda eventSourceMapping ARN
+  lambda eventSourceMapping ARN
 ---
 
 # function: lambda_event_source_mapping
 
-Builds the ARN of an `lambda` `eventSourceMapping`:
+Builds the ARN for `lambda` `eventSourceMapping`:
 
 ```
 arn:${Partition}:lambda:${Region}:${Account}:event-source-mapping:${UUID}

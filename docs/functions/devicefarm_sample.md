@@ -3,12 +3,12 @@
 page_title: "devicefarm_sample function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm sample ARN
+  devicefarm sample ARN
 ---
 
 # function: devicefarm_sample
 
-Builds the ARN of an `devicefarm` `sample`:
+Builds the ARN for `devicefarm` `sample`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:sample:${ResourceId}

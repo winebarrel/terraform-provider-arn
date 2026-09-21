@@ -3,12 +3,12 @@
 page_title: "amplifybackend_created_backend function - arn"
 subcategory: ""
 description: |-
-  Builds an amplifybackend created-backend ARN
+  amplifybackend created-backend ARN
 ---
 
 # function: amplifybackend_created_backend
 
-Builds the ARN of an `amplifybackend` `created-backend`:
+Builds the ARN for `amplifybackend` `created-backend`:
 
 ```
 arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/*

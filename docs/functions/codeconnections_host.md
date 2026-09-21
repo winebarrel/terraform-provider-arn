@@ -3,12 +3,12 @@
 page_title: "codeconnections_host function - arn"
 subcategory: ""
 description: |-
-  Builds an codeconnections Host ARN
+  codeconnections Host ARN
 ---
 
 # function: codeconnections_host
 
-Builds the ARN of an `codeconnections` `Host`:
+Builds the ARN for `codeconnections` `Host`:
 
 ```
 arn:${Partition}:codeconnections:${Region}:${Account}:host/${HostId}

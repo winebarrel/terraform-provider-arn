@@ -3,12 +3,12 @@
 page_title: "backup_tiering_configuration function - arn"
 subcategory: ""
 description: |-
-  Builds an backup tieringConfiguration ARN
+  backup tieringConfiguration ARN
 ---
 
 # function: backup_tiering_configuration
 
-Builds the ARN of an `backup` `tieringConfiguration`:
+Builds the ARN for `backup` `tieringConfiguration`:
 
 ```
 arn:${Partition}:backup:${Region}:${Account}:tiering-configuration:${TieringConfigurationName}-${TieringConfigurationId}

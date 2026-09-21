@@ -3,12 +3,12 @@
 page_title: "robomaker_simulation_job function - arn"
 subcategory: ""
 description: |-
-  Builds an robomaker simulationJob ARN
+  robomaker simulationJob ARN
 ---
 
 # function: robomaker_simulation_job
 
-Builds the ARN of an `robomaker` `simulationJob`:
+Builds the ARN for `robomaker` `simulationJob`:
 
 ```
 arn:${Partition}:robomaker:${Region}:${Account}:simulation-job/${SimulationJobId}

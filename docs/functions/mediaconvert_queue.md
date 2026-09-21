@@ -3,12 +3,12 @@
 page_title: "mediaconvert_queue function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconvert Queue ARN
+  mediaconvert Queue ARN
 ---
 
 # function: mediaconvert_queue
 
-Builds the ARN of an `mediaconvert` `Queue`:
+Builds the ARN for `mediaconvert` `Queue`:
 
 ```
 arn:${Partition}:mediaconvert:${Region}:${Account}:queues/${QueueName}

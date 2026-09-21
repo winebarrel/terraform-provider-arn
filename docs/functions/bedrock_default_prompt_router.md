@@ -3,12 +3,12 @@
 page_title: "bedrock_default_prompt_router function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock default-prompt-router ARN
+  bedrock default-prompt-router ARN
 ---
 
 # function: bedrock_default_prompt_router
 
-Builds the ARN of an `bedrock` `default-prompt-router`:
+Builds the ARN for `bedrock` `default-prompt-router`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:default-prompt-router/${ResourceId}

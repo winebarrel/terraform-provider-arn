@@ -3,12 +3,12 @@
 page_title: "lookoutmetrics_anomaly_detector function - arn"
 subcategory: ""
 description: |-
-  Builds an lookoutmetrics AnomalyDetector ARN
+  lookoutmetrics AnomalyDetector ARN
 ---
 
 # function: lookoutmetrics_anomaly_detector
 
-Builds the ARN of an `lookoutmetrics` `AnomalyDetector`:
+Builds the ARN for `lookoutmetrics` `AnomalyDetector`:
 
 ```
 arn:${Partition}:lookoutmetrics:${Region}:${Account}:AnomalyDetector:${AnomalyDetectorName}

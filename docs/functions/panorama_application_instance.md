@@ -3,12 +3,12 @@
 page_title: "panorama_application_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an panorama applicationInstance ARN
+  panorama applicationInstance ARN
 ---
 
 # function: panorama_application_instance
 
-Builds the ARN of an `panorama` `applicationInstance`:
+Builds the ARN for `panorama` `applicationInstance`:
 
 ```
 arn:${Partition}:panorama:${Region}:${Account}:applicationInstance/${ApplicationInstanceId}

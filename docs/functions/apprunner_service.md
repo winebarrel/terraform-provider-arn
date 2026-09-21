@@ -3,12 +3,12 @@
 page_title: "apprunner_service function - arn"
 subcategory: ""
 description: |-
-  Builds an apprunner service ARN
+  apprunner service ARN
 ---
 
 # function: apprunner_service
 
-Builds the ARN of an `apprunner` `service`:
+Builds the ARN for `apprunner` `service`:
 
 ```
 arn:${Partition}:apprunner:${Region}:${Account}:service/${ServiceName}/${ServiceId}

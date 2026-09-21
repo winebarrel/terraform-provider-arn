@@ -3,12 +3,12 @@
 page_title: "iotfleetwise_decodermanifest function - arn"
 subcategory: ""
 description: |-
-  Builds an iotfleetwise decodermanifest ARN
+  iotfleetwise decodermanifest ARN
 ---
 
 # function: iotfleetwise_decodermanifest
 
-Builds the ARN of an `iotfleetwise` `decodermanifest`:
+Builds the ARN for `iotfleetwise` `decodermanifest`:
 
 ```
 arn:${Partition}:iotfleetwise:${Region}:${Account}:decoder-manifest/${Name}

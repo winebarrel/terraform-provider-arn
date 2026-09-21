@@ -3,12 +3,12 @@
 page_title: "quicksight_automation_group function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight automationGroup ARN
+  quicksight automationGroup ARN
 ---
 
 # function: quicksight_automation_group
 
-Builds the ARN of an `quicksight` `automationGroup`:
+Builds the ARN for `quicksight` `automationGroup`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:automation-group/${ResourceId}

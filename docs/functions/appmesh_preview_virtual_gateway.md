@@ -3,12 +3,12 @@
 page_title: "appmesh_preview_virtual_gateway function - arn"
 subcategory: ""
 description: |-
-  Builds an appmesh-preview virtualGateway ARN
+  appmesh-preview virtualGateway ARN
 ---
 
 # function: appmesh_preview_virtual_gateway
 
-Builds the ARN of an `appmesh-preview` `virtualGateway`:
+Builds the ARN for `appmesh-preview` `virtualGateway`:
 
 ```
 arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}/virtualGateway/${VirtualGatewayName}

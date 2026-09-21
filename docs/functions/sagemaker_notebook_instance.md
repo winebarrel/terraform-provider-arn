@@ -3,12 +3,12 @@
 page_title: "sagemaker_notebook_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker notebook-instance ARN
+  sagemaker notebook-instance ARN
 ---
 
 # function: sagemaker_notebook_instance
 
-Builds the ARN of an `sagemaker` `notebook-instance`:
+Builds the ARN for `sagemaker` `notebook-instance`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:notebook-instance/${NotebookInstanceName}

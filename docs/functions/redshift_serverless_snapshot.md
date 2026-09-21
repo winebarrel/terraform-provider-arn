@@ -3,12 +3,12 @@
 page_title: "redshift_serverless_snapshot function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift-serverless snapshot ARN
+  redshift-serverless snapshot ARN
 ---
 
 # function: redshift_serverless_snapshot
 
-Builds the ARN of an `redshift-serverless` `snapshot`:
+Builds the ARN for `redshift-serverless` `snapshot`:
 
 ```
 arn:${Partition}:redshift-serverless:${Region}:${Account}:snapshot/${SnapshotId}

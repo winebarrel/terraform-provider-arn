@@ -3,12 +3,12 @@
 page_title: "guardduty_filter function - arn"
 subcategory: ""
 description: |-
-  Builds an guardduty filter ARN
+  guardduty filter ARN
 ---
 
 # function: guardduty_filter
 
-Builds the ARN of an `guardduty` `filter`:
+Builds the ARN for `guardduty` `filter`:
 
 ```
 arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/filter/${FilterName}

@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_reports function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting reports ARN
+  mobiletargeting reports ARN
 ---
 
 # function: mobiletargeting_reports
 
-Builds the ARN of an `mobiletargeting` `reports`:
+Builds the ARN for `mobiletargeting` `reports`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:reports

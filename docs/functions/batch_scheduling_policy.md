@@ -3,12 +3,12 @@
 page_title: "batch_scheduling_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an batch scheduling-policy ARN
+  batch scheduling-policy ARN
 ---
 
 # function: batch_scheduling_policy
 
-Builds the ARN of an `batch` `scheduling-policy`:
+Builds the ARN for `batch` `scheduling-policy`:
 
 ```
 arn:${Partition}:batch:${Region}:${Account}:scheduling-policy/${SchedulingPolicyName}

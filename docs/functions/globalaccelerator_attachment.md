@@ -3,12 +3,12 @@
 page_title: "globalaccelerator_attachment function - arn"
 subcategory: ""
 description: |-
-  Builds an globalaccelerator attachment ARN
+  globalaccelerator attachment ARN
 ---
 
 # function: globalaccelerator_attachment
 
-Builds the ARN of an `globalaccelerator` `attachment`:
+Builds the ARN for `globalaccelerator` `attachment`:
 
 ```
 arn:${Partition}:globalaccelerator::${Account}:attachment/${ResourceId}

@@ -3,12 +3,12 @@
 page_title: "medialive_network function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive network ARN
+  medialive network ARN
 ---
 
 # function: medialive_network
 
-Builds the ARN of an `medialive` `network`:
+Builds the ARN for `medialive` `network`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:network:${NetworkId}

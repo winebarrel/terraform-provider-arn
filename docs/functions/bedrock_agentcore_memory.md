@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_memory function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore memory ARN
+  bedrock-agentcore memory ARN
 ---
 
 # function: bedrock_agentcore_memory
 
-Builds the ARN of an `bedrock-agentcore` `memory`:
+Builds the ARN for `bedrock-agentcore` `memory`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:memory/${MemoryId}

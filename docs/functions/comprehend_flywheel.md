@@ -3,12 +3,12 @@
 page_title: "comprehend_flywheel function - arn"
 subcategory: ""
 description: |-
-  Builds an comprehend flywheel ARN
+  comprehend flywheel ARN
 ---
 
 # function: comprehend_flywheel
 
-Builds the ARN of an `comprehend` `flywheel`:
+Builds the ARN for `comprehend` `flywheel`:
 
 ```
 arn:${Partition}:comprehend:${Region}:${Account}:flywheel/${FlywheelName}

@@ -3,12 +3,12 @@
 page_title: "iq_conversation function - arn"
 subcategory: ""
 description: |-
-  Builds an iq conversation ARN
+  iq conversation ARN
 ---
 
 # function: iq_conversation
 
-Builds the ARN of an `iq` `conversation`:
+Builds the ARN for `iq` `conversation`:
 
 ```
 arn:${Partition}:iq:${Region}::conversation/${ConversationId}

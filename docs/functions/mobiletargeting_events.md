@@ -3,12 +3,12 @@
 page_title: "mobiletargeting_events function - arn"
 subcategory: ""
 description: |-
-  Builds an mobiletargeting events ARN
+  mobiletargeting events ARN
 ---
 
 # function: mobiletargeting_events
 
-Builds the ARN of an `mobiletargeting` `events`:
+Builds the ARN for `mobiletargeting` `events`:
 
 ```
 arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/events

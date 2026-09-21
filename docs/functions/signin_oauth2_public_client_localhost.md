@@ -3,12 +3,12 @@
 page_title: "signin_oauth2_public_client_localhost function - arn"
 subcategory: ""
 description: |-
-  Builds an signin oauth2-public-client-localhost ARN
+  signin oauth2-public-client-localhost ARN
 ---
 
 # function: signin_oauth2_public_client_localhost
 
-Builds the ARN of an `signin` `oauth2-public-client-localhost`:
+Builds the ARN for `signin` `oauth2-public-client-localhost`:
 
 ```
 arn:${Partition}:signin:${Region}:${Account}:oauth2/public-client/localhost

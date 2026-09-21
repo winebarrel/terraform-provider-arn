@@ -3,12 +3,12 @@
 page_title: "wafv2_ipset function - arn"
 subcategory: ""
 description: |-
-  Builds an wafv2 ipset ARN
+  wafv2 ipset ARN
 ---
 
 # function: wafv2_ipset
 
-Builds the ARN of an `wafv2` `ipset`:
+Builds the ARN for `wafv2` `ipset`:
 
 ```
 arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/ipset/${Name}/${Id}

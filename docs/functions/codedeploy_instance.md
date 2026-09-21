@@ -3,12 +3,12 @@
 page_title: "codedeploy_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an codedeploy instance ARN
+  codedeploy instance ARN
 ---
 
 # function: codedeploy_instance
 
-Builds the ARN of an `codedeploy` `instance`:
+Builds the ARN for `codedeploy` `instance`:
 
 ```
 arn:${Partition}:codedeploy:${Region}:${Account}:instance:${InstanceName}

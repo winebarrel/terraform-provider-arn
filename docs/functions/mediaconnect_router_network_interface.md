@@ -3,12 +3,12 @@
 page_title: "mediaconnect_router_network_interface function - arn"
 subcategory: ""
 description: |-
-  Builds an mediaconnect RouterNetworkInterface ARN
+  mediaconnect RouterNetworkInterface ARN
 ---
 
 # function: mediaconnect_router_network_interface
 
-Builds the ARN of an `mediaconnect` `RouterNetworkInterface`:
+Builds the ARN for `mediaconnect` `RouterNetworkInterface`:
 
 ```
 arn:${Partition}:mediaconnect:${Region}:${Account}:routerNetworkInterface:${RouterNetworkInterfaceId}

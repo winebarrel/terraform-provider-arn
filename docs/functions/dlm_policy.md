@@ -3,12 +3,12 @@
 page_title: "dlm_policy function - arn"
 subcategory: ""
 description: |-
-  Builds an dlm policy ARN
+  dlm policy ARN
 ---
 
 # function: dlm_policy
 
-Builds the ARN of an `dlm` `policy`:
+Builds the ARN for `dlm` `policy`:
 
 ```
 arn:${Partition}:dlm:${Region}:${Account}:policy/${ResourceName}

@@ -3,12 +3,12 @@
 page_title: "apigateway_usage_plan_key function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway UsagePlanKey ARN
+  apigateway UsagePlanKey ARN
 ---
 
 # function: apigateway_usage_plan_key
 
-Builds the ARN of an `apigateway` `UsagePlanKey`:
+Builds the ARN for `apigateway` `UsagePlanKey`:
 
 ```
 arn:${Partition}:apigateway:${Region}::/usageplans/${UsagePlanId}/keys/${Id}

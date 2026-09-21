@@ -3,12 +3,12 @@
 page_title: "frauddetector_outcome function - arn"
 subcategory: ""
 description: |-
-  Builds an frauddetector outcome ARN
+  frauddetector outcome ARN
 ---
 
 # function: frauddetector_outcome
 
-Builds the ARN of an `frauddetector` `outcome`:
+Builds the ARN for `frauddetector` `outcome`:
 
 ```
 arn:${Partition}:frauddetector:${Region}:${Account}:outcome/${ResourcePath}

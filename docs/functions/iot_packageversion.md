@@ -3,12 +3,12 @@
 page_title: "iot_packageversion function - arn"
 subcategory: ""
 description: |-
-  Builds an iot packageversion ARN
+  iot packageversion ARN
 ---
 
 # function: iot_packageversion
 
-Builds the ARN of an `iot` `packageversion`:
+Builds the ARN for `iot` `packageversion`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:package/${PackageName}/version/${VersionName}

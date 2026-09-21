@@ -3,12 +3,12 @@
 page_title: "backup_search_search_export_job function - arn"
 subcategory: ""
 description: |-
-  Builds an backup-search searchExportJob ARN
+  backup-search searchExportJob ARN
 ---
 
 # function: backup_search_search_export_job
 
-Builds the ARN of an `backup-search` `searchExportJob`:
+Builds the ARN for `backup-search` `searchExportJob`:
 
 ```
 arn:${Partition}:backup-search:${Region}:${Account}:search-export-job/${ResourceId}

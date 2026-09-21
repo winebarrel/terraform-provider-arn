@@ -3,12 +3,12 @@
 page_title: "transfer_agreement function - arn"
 subcategory: ""
 description: |-
-  Builds an transfer agreement ARN
+  transfer agreement ARN
 ---
 
 # function: transfer_agreement
 
-Builds the ARN of an `transfer` `agreement`:
+Builds the ARN for `transfer` `agreement`:
 
 ```
 arn:${Partition}:transfer:${Region}:${Account}:agreement/${ServerId}/${AgreementId}

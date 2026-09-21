@@ -3,12 +3,12 @@
 page_title: "events_archive function - arn"
 subcategory: ""
 description: |-
-  Builds an events archive ARN
+  events archive ARN
 ---
 
 # function: events_archive
 
-Builds the ARN of an `events` `archive`:
+Builds the ARN for `events` `archive`:
 
 ```
 arn:${Partition}:events:${Region}:${Account}:archive/${ArchiveName}

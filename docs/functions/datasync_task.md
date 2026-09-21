@@ -3,12 +3,12 @@
 page_title: "datasync_task function - arn"
 subcategory: ""
 description: |-
-  Builds an datasync task ARN
+  datasync task ARN
 ---
 
 # function: datasync_task
 
-Builds the ARN of an `datasync` `task`:
+Builds the ARN for `datasync` `task`:
 
 ```
 arn:${Partition}:datasync:${Region}:${AccountId}:task/${TaskId}

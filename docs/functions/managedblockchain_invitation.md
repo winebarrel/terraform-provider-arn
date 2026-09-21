@@ -3,12 +3,12 @@
 page_title: "managedblockchain_invitation function - arn"
 subcategory: ""
 description: |-
-  Builds an managedblockchain invitation ARN
+  managedblockchain invitation ARN
 ---
 
 # function: managedblockchain_invitation
 
-Builds the ARN of an `managedblockchain` `invitation`:
+Builds the ARN for `managedblockchain` `invitation`:
 
 ```
 arn:${Partition}:managedblockchain:${Region}:${Account}:invitations/${InvitationId}

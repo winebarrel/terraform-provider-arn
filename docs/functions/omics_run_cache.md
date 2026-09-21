@@ -3,12 +3,12 @@
 page_title: "omics_run_cache function - arn"
 subcategory: ""
 description: |-
-  Builds an omics runCache ARN
+  omics runCache ARN
 ---
 
 # function: omics_run_cache
 
-Builds the ARN of an `omics` `runCache`:
+Builds the ARN for `omics` `runCache`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:runCache/${Id}

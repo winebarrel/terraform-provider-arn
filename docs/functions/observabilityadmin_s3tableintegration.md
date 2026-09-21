@@ -3,12 +3,12 @@
 page_title: "observabilityadmin_s3tableintegration function - arn"
 subcategory: ""
 description: |-
-  Builds an observabilityadmin s3tableintegration ARN
+  observabilityadmin s3tableintegration ARN
 ---
 
 # function: observabilityadmin_s3tableintegration
 
-Builds the ARN of an `observabilityadmin` `s3tableintegration`:
+Builds the ARN for `observabilityadmin` `s3tableintegration`:
 
 ```
 arn:${Partition}:observabilityadmin:${Region}:${Account}:s3tableintegration/${S3TableIntegrationIdentifier}

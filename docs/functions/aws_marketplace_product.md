@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_product function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace Product ARN
+  aws-marketplace Product ARN
 ---
 
 # function: aws_marketplace_product
 
-Builds the ARN of an `aws-marketplace` `Product`:
+Builds the ARN for `aws-marketplace` `Product`:
 
 ```
 arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/product/${ProductId}

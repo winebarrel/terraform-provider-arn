@@ -3,12 +3,12 @@
 page_title: "gameliftstreams_application function - arn"
 subcategory: ""
 description: |-
-  Builds an gameliftstreams application ARN
+  gameliftstreams application ARN
 ---
 
 # function: gameliftstreams_application
 
-Builds the ARN of an `gameliftstreams` `application`:
+Builds the ARN for `gameliftstreams` `application`:
 
 ```
 arn:${Partition}:gameliftstreams:${Region}:${Account}:application/${ApplicationId}

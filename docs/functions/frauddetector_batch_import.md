@@ -3,12 +3,12 @@
 page_title: "frauddetector_batch_import function - arn"
 subcategory: ""
 description: |-
-  Builds an frauddetector batch-import ARN
+  frauddetector batch-import ARN
 ---
 
 # function: frauddetector_batch_import
 
-Builds the ARN of an `frauddetector` `batch-import`:
+Builds the ARN for `frauddetector` `batch-import`:
 
 ```
 arn:${Partition}:frauddetector:${Region}:${Account}:batch-import/${ResourcePath}

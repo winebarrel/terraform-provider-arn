@@ -3,12 +3,12 @@
 page_title: "transform_custom_package function - arn"
 subcategory: ""
 description: |-
-  Builds an transform-custom package ARN
+  transform-custom package ARN
 ---
 
 # function: transform_custom_package
 
-Builds the ARN of an `transform-custom` `package`:
+Builds the ARN for `transform-custom` `package`:
 
 ```
 arn:${Partition}:transform-custom:${Region}:${Account}:package/${Name}

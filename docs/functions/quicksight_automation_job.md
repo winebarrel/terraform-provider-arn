@@ -3,12 +3,12 @@
 page_title: "quicksight_automation_job function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight automationJob ARN
+  quicksight automationJob ARN
 ---
 
 # function: quicksight_automation_job
 
-Builds the ARN of an `quicksight` `automationJob`:
+Builds the ARN for `quicksight` `automationJob`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:automation-group/${AutomationGroupId}/automation/${AutomationId}/job/${ResourceId}

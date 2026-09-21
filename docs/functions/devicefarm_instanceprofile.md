@@ -3,12 +3,12 @@
 page_title: "devicefarm_instanceprofile function - arn"
 subcategory: ""
 description: |-
-  Builds an devicefarm instanceprofile ARN
+  devicefarm instanceprofile ARN
 ---
 
 # function: devicefarm_instanceprofile
 
-Builds the ARN of an `devicefarm` `instanceprofile`:
+Builds the ARN for `devicefarm` `instanceprofile`:
 
 ```
 arn:${Partition}:devicefarm:${Region}:${Account}:instanceprofile:${ResourceId}

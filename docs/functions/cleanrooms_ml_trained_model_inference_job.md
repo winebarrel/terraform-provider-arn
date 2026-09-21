@@ -3,12 +3,12 @@
 page_title: "cleanrooms_ml_trained_model_inference_job function - arn"
 subcategory: ""
 description: |-
-  Builds an cleanrooms-ml TrainedModelInferenceJob ARN
+  cleanrooms-ml TrainedModelInferenceJob ARN
 ---
 
 # function: cleanrooms_ml_trained_model_inference_job
 
-Builds the ARN of an `cleanrooms-ml` `TrainedModelInferenceJob`:
+Builds the ARN for `cleanrooms-ml` `TrainedModelInferenceJob`:
 
 ```
 arn:${Partition}:cleanrooms-ml:${Region}:${Account}:membership/${MembershipId}/trained-model-inference-job/${ResourceId}

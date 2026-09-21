@@ -3,12 +3,12 @@
 page_title: "cloudformation_type_hook function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudformation typeHook ARN
+  cloudformation typeHook ARN
 ---
 
 # function: cloudformation_type_hook
 
-Builds the ARN of an `cloudformation` `typeHook`:
+Builds the ARN for `cloudformation` `typeHook`:
 
 ```
 arn:${Partition}:cloudformation:${Region}:${Account}:type/hook/${Type}

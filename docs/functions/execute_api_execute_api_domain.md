@@ -3,12 +3,12 @@
 page_title: "execute_api_execute_api_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an execute-api execute-api-domain ARN
+  execute-api execute-api-domain ARN
 ---
 
 # function: execute_api_execute_api_domain
 
-Builds the ARN of an `execute-api` `execute-api-domain`:
+Builds the ARN for `execute-api` `execute-api-domain`:
 
 ```
 arn:${Partition}:execute-api:${Region}:${Account}:/domainnames/${DomainName}+${DomainIdentifier}

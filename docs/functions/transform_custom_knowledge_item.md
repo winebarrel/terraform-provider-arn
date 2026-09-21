@@ -3,12 +3,12 @@
 page_title: "transform_custom_knowledge_item function - arn"
 subcategory: ""
 description: |-
-  Builds an transform-custom knowledge-item ARN
+  transform-custom knowledge-item ARN
 ---
 
 # function: transform_custom_knowledge_item
 
-Builds the ARN of an `transform-custom` `knowledge-item`:
+Builds the ARN for `transform-custom` `knowledge-item`:
 
 ```
 arn:${Partition}:transform-custom:${Region}:${Account}:package/${TransformationPackageName}/knowledge-item/${Id}

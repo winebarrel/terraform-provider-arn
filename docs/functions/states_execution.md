@@ -3,12 +3,12 @@
 page_title: "states_execution function - arn"
 subcategory: ""
 description: |-
-  Builds an states execution ARN
+  states execution ARN
 ---
 
 # function: states_execution
 
-Builds the ARN of an `states` `execution`:
+Builds the ARN for `states` `execution`:
 
 ```
 arn:${Partition}:states:${Region}:${Account}:execution:${StateMachineName}:${ExecutionId}

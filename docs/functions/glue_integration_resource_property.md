@@ -3,12 +3,12 @@
 page_title: "glue_integration_resource_property function - arn"
 subcategory: ""
 description: |-
-  Builds an glue integrationResourceProperty ARN
+  glue integrationResourceProperty ARN
 ---
 
 # function: glue_integration_resource_property
 
-Builds the ARN of an `glue` `integrationResourceProperty`:
+Builds the ARN for `glue` `integrationResourceProperty`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:integrationresourceproperty/${ResourceType}/${ResourceName}

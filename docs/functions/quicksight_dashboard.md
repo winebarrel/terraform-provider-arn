@@ -3,12 +3,12 @@
 page_title: "quicksight_dashboard function - arn"
 subcategory: ""
 description: |-
-  Builds an quicksight dashboard ARN
+  quicksight dashboard ARN
 ---
 
 # function: quicksight_dashboard
 
-Builds the ARN of an `quicksight` `dashboard`:
+Builds the ARN for `quicksight` `dashboard`:
 
 ```
 arn:${Partition}:quicksight:${Region}:${Account}:dashboard/${ResourceId}

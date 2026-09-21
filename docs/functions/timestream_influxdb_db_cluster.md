@@ -3,12 +3,12 @@
 page_title: "timestream_influxdb_db_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an timestream-influxdb db-cluster ARN
+  timestream-influxdb db-cluster ARN
 ---
 
 # function: timestream_influxdb_db_cluster
 
-Builds the ARN of an `timestream-influxdb` `db-cluster`:
+Builds the ARN for `timestream-influxdb` `db-cluster`:
 
 ```
 arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-cluster/${DbClusterId}

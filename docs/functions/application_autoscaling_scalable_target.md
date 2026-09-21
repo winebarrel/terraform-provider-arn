@@ -3,12 +3,12 @@
 page_title: "application_autoscaling_scalable_target function - arn"
 subcategory: ""
 description: |-
-  Builds an application-autoscaling ScalableTarget ARN
+  application-autoscaling ScalableTarget ARN
 ---
 
 # function: application_autoscaling_scalable_target
 
-Builds the ARN of an `application-autoscaling` `ScalableTarget`:
+Builds the ARN for `application-autoscaling` `ScalableTarget`:
 
 ```
 arn:${Partition}:application-autoscaling:${Region}:${Account}:scalable-target/${ResourceId}

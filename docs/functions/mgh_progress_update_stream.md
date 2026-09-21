@@ -3,12 +3,12 @@
 page_title: "mgh_progress_update_stream function - arn"
 subcategory: ""
 description: |-
-  Builds an mgh progressUpdateStream ARN
+  mgh progressUpdateStream ARN
 ---
 
 # function: mgh_progress_update_stream
 
-Builds the ARN of an `mgh` `progressUpdateStream`:
+Builds the ARN for `mgh` `progressUpdateStream`:
 
 ```
 arn:${Partition}:mgh:${Region}:${Account}:progressUpdateStream/${Stream}

@@ -3,12 +3,12 @@
 page_title: "redshift_data_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift-data cluster ARN
+  redshift-data cluster ARN
 ---
 
 # function: redshift_data_cluster
 
-Builds the ARN of an `redshift-data` `cluster`:
+Builds the ARN for `redshift-data` `cluster`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:cluster:${ClusterName}

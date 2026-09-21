@@ -3,12 +3,12 @@
 page_title: "iotsitewise_asset function - arn"
 subcategory: ""
 description: |-
-  Builds an iotsitewise asset ARN
+  iotsitewise asset ARN
 ---
 
 # function: iotsitewise_asset
 
-Builds the ARN of an `iotsitewise` `asset`:
+Builds the ARN for `iotsitewise` `asset`:
 
 ```
 arn:${Partition}:iotsitewise:${Region}:${Account}:asset/${AssetId}

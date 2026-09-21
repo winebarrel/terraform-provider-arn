@@ -3,12 +3,12 @@
 page_title: "notifications_notification_event function - arn"
 subcategory: ""
 description: |-
-  Builds an notifications NotificationEvent ARN
+  notifications NotificationEvent ARN
 ---
 
 # function: notifications_notification_event
 
-Builds the ARN of an `notifications` `NotificationEvent`:
+Builds the ARN for `notifications` `NotificationEvent`:
 
 ```
 arn:${Partition}:notifications:${Region}:${Account}:configuration/${NotificationConfigurationId}/event/${NotificationEventId}

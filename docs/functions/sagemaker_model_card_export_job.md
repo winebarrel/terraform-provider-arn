@@ -3,12 +3,12 @@
 page_title: "sagemaker_model_card_export_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker model-card-export-job ARN
+  sagemaker model-card-export-job ARN
 ---
 
 # function: sagemaker_model_card_export_job
 
-Builds the ARN of an `sagemaker` `model-card-export-job`:
+Builds the ARN for `sagemaker` `model-card-export-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:model-card/${ModelCardName}/export-job/${ExportJobName}

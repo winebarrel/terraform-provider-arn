@@ -3,12 +3,12 @@
 page_title: "sagemaker_optimization_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker optimization-job ARN
+  sagemaker optimization-job ARN
 ---
 
 # function: sagemaker_optimization_job
 
-Builds the ARN of an `sagemaker` `optimization-job`:
+Builds the ARN for `sagemaker` `optimization-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:optimization-job/${OptimizationJobName}

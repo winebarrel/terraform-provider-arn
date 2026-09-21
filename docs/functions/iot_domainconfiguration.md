@@ -3,12 +3,12 @@
 page_title: "iot_domainconfiguration function - arn"
 subcategory: ""
 description: |-
-  Builds an iot domainconfiguration ARN
+  iot domainconfiguration ARN
 ---
 
 # function: iot_domainconfiguration
 
-Builds the ARN of an `iot` `domainconfiguration`:
+Builds the ARN for `iot` `domainconfiguration`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:domainconfiguration/${DomainConfigurationName}/${Id}

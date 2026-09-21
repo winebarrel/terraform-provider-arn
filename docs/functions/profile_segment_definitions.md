@@ -3,12 +3,12 @@
 page_title: "profile_segment_definitions function - arn"
 subcategory: ""
 description: |-
-  Builds an profile segment-definitions ARN
+  profile segment-definitions ARN
 ---
 
 # function: profile_segment_definitions
 
-Builds the ARN of an `profile` `segment-definitions`:
+Builds the ARN for `profile` `segment-definitions`:
 
 ```
 arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/segment-definitions/${SegmentDefinitionName}

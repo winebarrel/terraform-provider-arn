@@ -3,12 +3,12 @@
 page_title: "connect_email_address function - arn"
 subcategory: ""
 description: |-
-  Builds an connect email-address ARN
+  connect email-address ARN
 ---
 
 # function: connect_email_address
 
-Builds the ARN of an `connect` `email-address`:
+Builds the ARN for `connect` `email-address`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/email-address/${EmailAddressId}

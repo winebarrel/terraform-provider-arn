@@ -3,12 +3,12 @@
 page_title: "rds_db function - arn"
 subcategory: ""
 description: |-
-  Builds an rds db ARN
+  rds db ARN
 ---
 
 # function: rds_db
 
-Builds the ARN of an `rds` `db`:
+Builds the ARN for `rds` `db`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:db:${DbInstanceName}

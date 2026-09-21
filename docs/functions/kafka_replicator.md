@@ -3,12 +3,12 @@
 page_title: "kafka_replicator function - arn"
 subcategory: ""
 description: |-
-  Builds an kafka replicator ARN
+  kafka replicator ARN
 ---
 
 # function: kafka_replicator
 
-Builds the ARN of an `kafka` `replicator`:
+Builds the ARN for `kafka` `replicator`:
 
 ```
 arn:${Partition}:kafka:${Region}:${Account}:replicator/${ReplicatorName}/${Uuid}

@@ -3,12 +3,12 @@
 page_title: "aws_marketplace_invoice_submission_task function - arn"
 subcategory: ""
 description: |-
-  Builds an aws-marketplace InvoiceSubmissionTask ARN
+  aws-marketplace InvoiceSubmissionTask ARN
 ---
 
 # function: aws_marketplace_invoice_submission_task
 
-Builds the ARN of an `aws-marketplace` `InvoiceSubmissionTask`:
+Builds the ARN for `aws-marketplace` `InvoiceSubmissionTask`:
 
 ```
 arn:${Partition}:aws-marketplace:${Region}:${Account}:catalog/${Catalog}/invoice-submission-task/${ResourceId}

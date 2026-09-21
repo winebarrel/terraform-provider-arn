@@ -3,12 +3,12 @@
 page_title: "medialive_cluster function - arn"
 subcategory: ""
 description: |-
-  Builds an medialive cluster ARN
+  medialive cluster ARN
 ---
 
 # function: medialive_cluster
 
-Builds the ARN of an `medialive` `cluster`:
+Builds the ARN for `medialive` `cluster`:
 
 ```
 arn:${Partition}:medialive:${Region}:${Account}:cluster:${ClusterId}

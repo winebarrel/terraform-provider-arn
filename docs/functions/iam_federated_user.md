@@ -3,12 +3,12 @@
 page_title: "iam_federated_user function - arn"
 subcategory: ""
 description: |-
-  Builds an iam federated-user ARN
+  iam federated-user ARN
 ---
 
 # function: iam_federated_user
 
-Builds the ARN of an `iam` `federated-user`:
+Builds the ARN for `iam` `federated-user`:
 
 ```
 arn:${Partition}:iam::${Account}:federated-user/${UserName}

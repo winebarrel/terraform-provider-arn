@@ -3,12 +3,12 @@
 page_title: "resource_groups_tag_sync_task function - arn"
 subcategory: ""
 description: |-
-  Builds an resource-groups tagSyncTask ARN
+  resource-groups tagSyncTask ARN
 ---
 
 # function: resource_groups_tag_sync_task
 
-Builds the ARN of an `resource-groups` `tagSyncTask`:
+Builds the ARN for `resource-groups` `tagSyncTask`:
 
 ```
 arn:${Partition}:resource-groups:${Region}:${Account}:group/${GroupName}/tag-sync-task/${TaskId}

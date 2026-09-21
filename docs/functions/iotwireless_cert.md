@@ -3,12 +3,12 @@
 page_title: "iotwireless_cert function - arn"
 subcategory: ""
 description: |-
-  Builds an iotwireless cert ARN
+  iotwireless cert ARN
 ---
 
 # function: iotwireless_cert
 
-Builds the ARN of an `iotwireless` `cert`:
+Builds the ARN for `iotwireless` `cert`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:cert/${Certificate}

@@ -3,12 +3,12 @@
 page_title: "redshift_subnetgroup function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift subnetgroup ARN
+  redshift subnetgroup ARN
 ---
 
 # function: redshift_subnetgroup
 
-Builds the ARN of an `redshift` `subnetgroup`:
+Builds the ARN for `redshift` `subnetgroup`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:subnetgroup:${SubnetGroupName}

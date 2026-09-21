@@ -3,12 +3,12 @@
 page_title: "sagemaker_transform_job function - arn"
 subcategory: ""
 description: |-
-  Builds an sagemaker transform-job ARN
+  sagemaker transform-job ARN
 ---
 
 # function: sagemaker_transform_job
 
-Builds the ARN of an `sagemaker` `transform-job`:
+Builds the ARN for `sagemaker` `transform-job`:
 
 ```
 arn:${Partition}:sagemaker:${Region}:${Account}:transform-job/${TransformJobName}

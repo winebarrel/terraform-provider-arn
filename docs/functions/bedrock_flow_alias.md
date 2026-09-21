@@ -3,12 +3,12 @@
 page_title: "bedrock_flow_alias function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock flow-alias ARN
+  bedrock flow-alias ARN
 ---
 
 # function: bedrock_flow_alias
 
-Builds the ARN of an `bedrock` `flow-alias`:
+Builds the ARN for `bedrock` `flow-alias`:
 
 ```
 arn:${Partition}:bedrock:${Region}:${Account}:flow/${FlowId}/alias/${FlowAliasId}

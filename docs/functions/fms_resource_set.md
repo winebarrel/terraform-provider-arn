@@ -3,12 +3,12 @@
 page_title: "fms_resource_set function - arn"
 subcategory: ""
 description: |-
-  Builds an fms resource-set ARN
+  fms resource-set ARN
 ---
 
 # function: fms_resource_set
 
-Builds the ARN of an `fms` `resource-set`:
+Builds the ARN for `fms` `resource-set`:
 
 ```
 arn:${Partition}:fms:${Region}:${Account}:resource-set/${Id}

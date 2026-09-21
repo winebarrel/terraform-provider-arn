@@ -3,12 +3,12 @@
 page_title: "datasync_location function - arn"
 subcategory: ""
 description: |-
-  Builds an datasync location ARN
+  datasync location ARN
 ---
 
 # function: datasync_location
 
-Builds the ARN of an `datasync` `location`:
+Builds the ARN for `datasync` `location`:
 
 ```
 arn:${Partition}:datasync:${Region}:${AccountId}:location/${LocationId}

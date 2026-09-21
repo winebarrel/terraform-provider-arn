@@ -3,12 +3,12 @@
 page_title: "amplifybackend_api function - arn"
 subcategory: ""
 description: |-
-  Builds an amplifybackend api ARN
+  amplifybackend api ARN
 ---
 
 # function: amplifybackend_api
 
-Builds the ARN of an `amplifybackend` `api`:
+Builds the ARN for `amplifybackend` `api`:
 
 ```
 arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/api/*

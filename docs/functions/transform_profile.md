@@ -3,12 +3,12 @@
 page_title: "transform_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an transform profile ARN
+  transform profile ARN
 ---
 
 # function: transform_profile
 
-Builds the ARN of an `transform` `profile`:
+Builds the ARN for `transform` `profile`:
 
 ```
 arn:${Partition}:transform:${Region}:${Account}:profile/${Identifier}

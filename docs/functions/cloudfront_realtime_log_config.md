@@ -3,12 +3,12 @@
 page_title: "cloudfront_realtime_log_config function - arn"
 subcategory: ""
 description: |-
-  Builds an cloudfront realtime-log-config ARN
+  cloudfront realtime-log-config ARN
 ---
 
 # function: cloudfront_realtime_log_config
 
-Builds the ARN of an `cloudfront` `realtime-log-config`:
+Builds the ARN for `cloudfront` `realtime-log-config`:
 
 ```
 arn:${Partition}:cloudfront::${Account}:realtime-log-config/${Name}

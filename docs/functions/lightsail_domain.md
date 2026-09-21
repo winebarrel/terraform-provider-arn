@@ -3,12 +3,12 @@
 page_title: "lightsail_domain function - arn"
 subcategory: ""
 description: |-
-  Builds an lightsail Domain ARN
+  lightsail Domain ARN
 ---
 
 # function: lightsail_domain
 
-Builds the ARN of an `lightsail` `Domain`:
+Builds the ARN for `lightsail` `Domain`:
 
 ```
 arn:${Partition}:lightsail:${Region}:${Account}:Domain/${Id}

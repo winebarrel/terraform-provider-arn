@@ -3,12 +3,12 @@
 page_title: "ecs_container_instance function - arn"
 subcategory: ""
 description: |-
-  Builds an ecs container-instance ARN
+  ecs container-instance ARN
 ---
 
 # function: ecs_container_instance
 
-Builds the ARN of an `ecs` `container-instance`:
+Builds the ARN for `ecs` `container-instance`:
 
 ```
 arn:${Partition}:ecs:${Region}:${Account}:container-instance/${ClusterName}/${ContainerInstanceId}

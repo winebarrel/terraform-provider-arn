@@ -3,12 +3,12 @@
 page_title: "glue_custom_entity_type function - arn"
 subcategory: ""
 description: |-
-  Builds an glue customEntityType ARN
+  glue customEntityType ARN
 ---
 
 # function: glue_custom_entity_type
 
-Builds the ARN of an `glue` `customEntityType`:
+Builds the ARN for `glue` `customEntityType`:
 
 ```
 arn:${Partition}:glue:${Region}:${Account}:customEntityType/${CustomEntityTypeId}

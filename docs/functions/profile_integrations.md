@@ -3,12 +3,12 @@
 page_title: "profile_integrations function - arn"
 subcategory: ""
 description: |-
-  Builds an profile integrations ARN
+  profile integrations ARN
 ---
 
 # function: profile_integrations
 
-Builds the ARN of an `profile` `integrations`:
+Builds the ARN for `profile` `integrations`:
 
 ```
 arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/integrations/${Uri}

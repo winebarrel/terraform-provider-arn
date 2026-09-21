@@ -3,12 +3,12 @@
 page_title: "personalize_event_tracker function - arn"
 subcategory: ""
 description: |-
-  Builds an personalize eventTracker ARN
+  personalize eventTracker ARN
 ---
 
 # function: personalize_event_tracker
 
-Builds the ARN of an `personalize` `eventTracker`:
+Builds the ARN for `personalize` `eventTracker`:
 
 ```
 arn:${Partition}:personalize:${Region}:${Account}:event-tracker/${ResourceId}

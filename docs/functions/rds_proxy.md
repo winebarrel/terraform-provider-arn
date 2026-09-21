@@ -3,12 +3,12 @@
 page_title: "rds_proxy function - arn"
 subcategory: ""
 description: |-
-  Builds an rds proxy ARN
+  rds proxy ARN
 ---
 
 # function: rds_proxy
 
-Builds the ARN of an `rds` `proxy`:
+Builds the ARN for `rds` `proxy`:
 
 ```
 arn:${Partition}:rds:${Region}:${Account}:db-proxy:${DbProxyId}

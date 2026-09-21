@@ -3,12 +3,12 @@
 page_title: "payments_payment_instrument function - arn"
 subcategory: ""
 description: |-
-  Builds an payments payment-instrument ARN
+  payments payment-instrument ARN
 ---
 
 # function: payments_payment_instrument
 
-Builds the ARN of an `payments` `payment-instrument`:
+Builds the ARN for `payments` `payment-instrument`:
 
 ```
 arn:${Partition}:payments::${Account}:payment-instrument:${ResourceId}

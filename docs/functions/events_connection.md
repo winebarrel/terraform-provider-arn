@@ -3,12 +3,12 @@
 page_title: "events_connection function - arn"
 subcategory: ""
 description: |-
-  Builds an events connection ARN
+  events connection ARN
 ---
 
 # function: events_connection
 
-Builds the ARN of an `events` `connection`:
+Builds the ARN for `events` `connection`:
 
 ```
 arn:${Partition}:events:${Region}:${Account}:connection/${ConnectionName}

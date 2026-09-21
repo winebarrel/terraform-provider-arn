@@ -3,12 +3,12 @@
 page_title: "connect_wildcard_contact_flow function - arn"
 subcategory: ""
 description: |-
-  Builds an connect wildcard-contact-flow ARN
+  connect wildcard-contact-flow ARN
 ---
 
 # function: connect_wildcard_contact_flow
 
-Builds the ARN of an `connect` `wildcard-contact-flow`:
+Builds the ARN for `connect` `wildcard-contact-flow`:
 
 ```
 arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/contact-flow/*

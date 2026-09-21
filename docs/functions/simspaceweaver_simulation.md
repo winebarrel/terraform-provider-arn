@@ -3,12 +3,12 @@
 page_title: "simspaceweaver_simulation function - arn"
 subcategory: ""
 description: |-
-  Builds an simspaceweaver Simulation ARN
+  simspaceweaver Simulation ARN
 ---
 
 # function: simspaceweaver_simulation
 
-Builds the ARN of an `simspaceweaver` `Simulation`:
+Builds the ARN for `simspaceweaver` `Simulation`:
 
 ```
 arn:${Partition}:simspaceweaver:${Region}:${Account}:simulation/${SimulationName}

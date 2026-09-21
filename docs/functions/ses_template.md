@@ -3,12 +3,12 @@
 page_title: "ses_template function - arn"
 subcategory: ""
 description: |-
-  Builds an ses template ARN
+  ses template ARN
 ---
 
 # function: ses_template
 
-Builds the ARN of an `ses` `template`:
+Builds the ARN for `ses` `template`:
 
 ```
 arn:${Partition}:ses:${Region}:${Account}:template/${TemplateName}

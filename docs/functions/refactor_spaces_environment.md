@@ -3,12 +3,12 @@
 page_title: "refactor_spaces_environment function - arn"
 subcategory: ""
 description: |-
-  Builds an refactor-spaces environment ARN
+  refactor-spaces environment ARN
 ---
 
 # function: refactor_spaces_environment
 
-Builds the ARN of an `refactor-spaces` `environment`:
+Builds the ARN for `refactor-spaces` `environment`:
 
 ```
 arn:${Partition}:refactor-spaces:${Region}:${Account}:environment/${EnvironmentId}

@@ -3,12 +3,12 @@
 page_title: "wellarchitected_profile function - arn"
 subcategory: ""
 description: |-
-  Builds an wellarchitected profile ARN
+  wellarchitected profile ARN
 ---
 
 # function: wellarchitected_profile
 
-Builds the ARN of an `wellarchitected` `profile`:
+Builds the ARN for `wellarchitected` `profile`:
 
 ```
 arn:${Partition}:wellarchitected:${Region}:${Account}:profile/${ResourceId}

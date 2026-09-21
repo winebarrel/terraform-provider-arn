@@ -3,12 +3,12 @@
 page_title: "omics_task_resource function - arn"
 subcategory: ""
 description: |-
-  Builds an omics TaskResource ARN
+  omics TaskResource ARN
 ---
 
 # function: omics_task_resource
 
-Builds the ARN of an `omics` `TaskResource`:
+Builds the ARN for `omics` `TaskResource`:
 
 ```
 arn:${Partition}:omics:${Region}:${Account}:task/${Id}

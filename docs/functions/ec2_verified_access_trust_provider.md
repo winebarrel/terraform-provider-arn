@@ -3,12 +3,12 @@
 page_title: "ec2_verified_access_trust_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an ec2 verified-access-trust-provider ARN
+  ec2 verified-access-trust-provider ARN
 ---
 
 # function: ec2_verified_access_trust_provider
 
-Builds the ARN of an `ec2` `verified-access-trust-provider`:
+Builds the ARN for `ec2` `verified-access-trust-provider`:
 
 ```
 arn:${Partition}:ec2:${Region}:${Account}:verified-access-trust-provider/${VerifiedAccessTrustProviderId}

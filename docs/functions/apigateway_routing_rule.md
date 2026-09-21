@@ -3,12 +3,12 @@
 page_title: "apigateway_routing_rule function - arn"
 subcategory: ""
 description: |-
-  Builds an apigateway RoutingRule ARN
+  apigateway RoutingRule ARN
 ---
 
 # function: apigateway_routing_rule
 
-Builds the ARN of an `apigateway` `RoutingRule`:
+Builds the ARN for `apigateway` `RoutingRule`:
 
 ```
 arn:${Partition}:apigateway:${Region}:${Account}:/domainnames/${DomainName}/routingrules/${RoutingRuleId}

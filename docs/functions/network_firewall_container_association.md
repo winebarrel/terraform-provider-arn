@@ -3,12 +3,12 @@
 page_title: "network_firewall_container_association function - arn"
 subcategory: ""
 description: |-
-  Builds an network-firewall ContainerAssociation ARN
+  network-firewall ContainerAssociation ARN
 ---
 
 # function: network_firewall_container_association
 
-Builds the ARN of an `network-firewall` `ContainerAssociation`:
+Builds the ARN for `network-firewall` `ContainerAssociation`:
 
 ```
 arn:${Partition}:network-firewall:${Region}:${Account}:container-association/${Name}

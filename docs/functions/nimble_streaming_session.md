@@ -3,12 +3,12 @@
 page_title: "nimble_streaming_session function - arn"
 subcategory: ""
 description: |-
-  Builds an nimble streaming-session ARN
+  nimble streaming-session ARN
 ---
 
 # function: nimble_streaming_session
 
-Builds the ARN of an `nimble` `streaming-session`:
+Builds the ARN for `nimble` `streaming-session`:
 
 ```
 arn:${Partition}:nimble:${Region}:${Account}:streaming-session/${StreamingSessionId}

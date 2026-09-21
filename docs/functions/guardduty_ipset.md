@@ -3,12 +3,12 @@
 page_title: "guardduty_ipset function - arn"
 subcategory: ""
 description: |-
-  Builds an guardduty ipset ARN
+  guardduty ipset ARN
 ---
 
 # function: guardduty_ipset
 
-Builds the ARN of an `guardduty` `ipset`:
+Builds the ARN for `guardduty` `ipset`:
 
 ```
 arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}/ipset/${IPSetId}

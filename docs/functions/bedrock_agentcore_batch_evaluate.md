@@ -3,12 +3,12 @@
 page_title: "bedrock_agentcore_batch_evaluate function - arn"
 subcategory: ""
 description: |-
-  Builds an bedrock-agentcore batch-evaluate ARN
+  bedrock-agentcore batch-evaluate ARN
 ---
 
 # function: bedrock_agentcore_batch_evaluate
 
-Builds the ARN of an `bedrock-agentcore` `batch-evaluate`:
+Builds the ARN for `bedrock-agentcore` `batch-evaluate`:
 
 ```
 arn:${Partition}:bedrock-agentcore:${Region}:${Account}:batch-evaluate/${BatchEvaluationId}

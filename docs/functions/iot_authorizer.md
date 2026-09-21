@@ -3,12 +3,12 @@
 page_title: "iot_authorizer function - arn"
 subcategory: ""
 description: |-
-  Builds an iot authorizer ARN
+  iot authorizer ARN
 ---
 
 # function: iot_authorizer
 
-Builds the ARN of an `iot` `authorizer`:
+Builds the ARN for `iot` `authorizer`:
 
 ```
 arn:${Partition}:iot:${Region}:${Account}:authorizer/${AuthorizerName}

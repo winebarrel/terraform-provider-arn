@@ -3,12 +3,12 @@
 page_title: "mediatailor_live_source function - arn"
 subcategory: ""
 description: |-
-  Builds an mediatailor liveSource ARN
+  mediatailor liveSource ARN
 ---
 
 # function: mediatailor_live_source
 
-Builds the ARN of an `mediatailor` `liveSource`:
+Builds the ARN for `mediatailor` `liveSource`:
 
 ```
 arn:${Partition}:mediatailor:${Region}:${Account}:liveSource/${SourceLocationName}/${LiveSourceName}

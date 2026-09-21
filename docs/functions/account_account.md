@@ -3,12 +3,12 @@
 page_title: "account_account function - arn"
 subcategory: ""
 description: |-
-  Builds an account account ARN
+  account account ARN
 ---
 
 # function: account_account
 
-Builds the ARN of an `account` `account`:
+Builds the ARN for `account` `account`:
 
 ```
 arn:${Partition}:account::${Account}:account

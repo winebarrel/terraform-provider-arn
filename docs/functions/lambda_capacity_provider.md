@@ -3,12 +3,12 @@
 page_title: "lambda_capacity_provider function - arn"
 subcategory: ""
 description: |-
-  Builds an lambda capacityProvider ARN
+  lambda capacityProvider ARN
 ---
 
 # function: lambda_capacity_provider
 
-Builds the ARN of an `lambda` `capacityProvider`:
+Builds the ARN for `lambda` `capacityProvider`:
 
 ```
 arn:${Partition}:lambda:${Region}:${Account}:capacity-provider:${CapacityProviderName}

@@ -3,12 +3,12 @@
 page_title: "redshift_dbuser function - arn"
 subcategory: ""
 description: |-
-  Builds an redshift dbuser ARN
+  redshift dbuser ARN
 ---
 
 # function: redshift_dbuser
 
-Builds the ARN of an `redshift` `dbuser`:
+Builds the ARN for `redshift` `dbuser`:
 
 ```
 arn:${Partition}:redshift:${Region}:${Account}:dbuser:${ClusterName}/${DbUser}

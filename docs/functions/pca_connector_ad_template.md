@@ -3,12 +3,12 @@
 page_title: "pca_connector_ad_template function - arn"
 subcategory: ""
 description: |-
-  Builds an pca-connector-ad Template ARN
+  pca-connector-ad Template ARN
 ---
 
 # function: pca_connector_ad_template
 
-Builds the ARN of an `pca-connector-ad` `Template`:
+Builds the ARN for `pca-connector-ad` `Template`:
 
 ```
 arn:${Partition}:pca-connector-ad:${Region}:${Account}:connector/${ConnectorId}/template/${TemplateId}

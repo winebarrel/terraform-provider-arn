@@ -3,12 +3,12 @@
 page_title: "ivs_public_key function - arn"
 subcategory: ""
 description: |-
-  Builds an ivs Public-Key ARN
+  ivs Public-Key ARN
 ---
 
 # function: ivs_public_key
 
-Builds the ARN of an `ivs` `Public-Key`:
+Builds the ARN for `ivs` `Public-Key`:
 
 ```
 arn:${Partition}:ivs:${Region}:${Account}:public-key/${ResourceId}

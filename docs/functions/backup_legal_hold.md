@@ -3,12 +3,12 @@
 page_title: "backup_legal_hold function - arn"
 subcategory: ""
 description: |-
-  Builds an backup legalHold ARN
+  backup legalHold ARN
 ---
 
 # function: backup_legal_hold
 
-Builds the ARN of an `backup` `legalHold`:
+Builds the ARN for `backup` `legalHold`:
 
 ```
 arn:${Partition}:backup:${Region}:${Account}:legal-hold:${LegalHoldId}
