@@ -245,11 +245,21 @@ func TestFunction_AWSManagedPolicy(t *testing.T) {
 		"arn:aws:iam::aws:policy/AdministratorAccess")
 }
 
-// An ARN written for an IAM policy may wildcard the region and the account.
+// An ARN written for an IAM policy may wildcard any of the structural fields.
 func TestFunction_Wildcards(t *testing.T) {
 	useConfig(t, testConfigFile)
 	okStep(t, out(`provider::arn::ec2_vpc("*", { region = "*" })`), "arn:aws:ec2:*:111111111111:vpc/*")
 	okStep(t, out(`provider::arn::iam_role("*", { account_id = "*" })`), "arn:aws:iam::*:role/*")
+	okStep(t, out(`provider::arn::s3_object("my-bucket", "*", { partition = "*" })`), "arn:*:s3:::my-bucket/*")
+}
+
+// chime spells the account field as a template placeholder, so it arrives as
+// an argument. It gets the same check as { account_id = ... } does.
+func TestFunction_ValidatesAnAccountFieldArgument(t *testing.T) {
+	useConfig(t, testConfigFile)
+	errStep(t, out(`provider::arn::chime_meeting("abc", "m1")`), `invalid account id "abc"`)
+	okStep(t, out(`provider::arn::chime_meeting("222222222222", "m1")`),
+		"arn:aws:chime:ap-northeast-1:222222222222:meeting/m1")
 }
 
 // A slash is part of plenty of legitimate names.

@@ -212,7 +212,9 @@ func TestResolveValidatesPartition(t *testing.T) {
 	c, err := arnconf.Load(write(t, `account_id = "111111111111"`))
 	require.NoError(t, err)
 
-	for _, p := range []string{"aws", "aws-cn", "aws-us-gov", "aws-iso", "aws-iso-b"} {
+	// IAM Access Analyzer reports the supported values as "*, aws, aws-cn,
+	// aws-us-gov", so the wildcard is one of them.
+	for _, p := range []string{"aws", "aws-cn", "aws-us-gov", "aws-iso", "aws-iso-b", "*"} {
 		_, err := c.Resolve(arnconf.Opts{Partition: p})
 		require.NoError(t, err, p)
 	}

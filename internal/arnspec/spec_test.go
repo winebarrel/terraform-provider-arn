@@ -148,6 +148,12 @@ func TestGeneratedSpecsAllBuild(t *testing.T) {
 	for _, s := range arnspec.All() {
 		args := make([]string, len(s.Args))
 		for i := range args {
+			// An argument that lands in the account field is checked like
+			// any other account id, so it needs a plausible one.
+			if s.ArgIsAccountID(i) {
+				args[i] = "222222222222"
+				continue
+			}
 			args[i] = "x"
 		}
 		got, err := s.Build(v, args)
@@ -286,6 +292,39 @@ func TestGeneratedStructuralArguments(t *testing.T) {
 	s, ok := arnspec.Lookup("iam_role")
 	require.True(t, ok)
 	assert.False(t, s.ArgIsStructural(0))
+	assert.False(t, s.ArgIsAccountID(0))
+
+	// Every structural argument but one is the account field. The exception
+	// is backup_recovery_point, which parameterises the service field.
+	for name, args := range structural {
+		s, ok := arnspec.Lookup(name)
+		require.True(t, ok, name)
+		for i := range args {
+			want := name != "backup_recovery_point"
+			assert.Equal(t, want, s.ArgIsAccountID(i), "%s arg %d", name, i)
+		}
+	}
+}
+
+// An argument that lands in the account field gets the same check as one that
+// came from the configuration file.
+func TestBuildValidatesAnAccountFieldArgument(t *testing.T) {
+	s := parse(t, "arn:${Partition}:chime:${Region}:${AccountId}:meeting/${MeetingId}")
+	v := arnspec.Values{Partition: "aws", Region: "us-east-1"}
+
+	_, err := s.Build(v, []string{"abc", "m1"})
+	require.ErrorContains(t, err, `invalid account id "abc"`)
+
+	for _, id := range []string{"111111111111", "aws", "*"} {
+		_, err := s.Build(v, []string{id, "m1"})
+		require.NoError(t, err, id)
+	}
+
+	// The service field is not an account id, so it keeps only the colon rule.
+	s = parse(t, "arn:${Partition}:${Vendor}:${Region}:*:${ResourceType}:${RecoveryPointId}")
+	got, err := s.Build(v, []string{"backup", "rt", "rp"})
+	require.NoError(t, err)
+	assert.Equal(t, "arn:aws:backup:us-east-1:*:rt:rp", got)
 }
 
 // A slash is not a field separator, and is part of plenty of legitimate

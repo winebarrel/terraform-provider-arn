@@ -74,15 +74,18 @@ asked about. What the checks catch is the value that could never be right,
 which would otherwise be interpolated into a syntactically valid ARN and fail
 much later, at apply time, somewhere unhelpful.
 
-| Value | Rule |
+An ARN is `arn:partition:service:region:account:resource`.
+
+| Field | Rule |
 |---|---|
-| `account_id` | Twelve digits, `aws`, or `*` |
+| `partition` | `aws`, `aws-` plus one or more words, or `*` |
 | `region` | A name like `ap-northeast-1`, including `us-gov-west-1` and `us-iso-east-1`, or `*` |
-| `partition` | `aws`, or `aws-` plus one or more words |
-| Arguments | Not empty |
+| `account` | Twelve digits, `aws`, or `*` |
+| Arguments | Not empty, and no `:` in a structural field |
 
 `aws` is the account AWS-managed policies carry, and `*` is how an ARN written
-for an IAM policy wildcards a field:
+for an IAM policy wildcards a field. IAM Access Analyzer reports the supported
+partitions as `*, aws, aws-cn, aws-us-gov`.
 
 ```hcl
 provider::arn::iam_policy("AdministratorAccess", { account_id = "aws" })
@@ -90,13 +93,26 @@ provider::arn::iam_policy("AdministratorAccess", { account_id = "aws" })
 
 provider::arn::ec2_vpc("*", { region = "*" })
 # arn:aws:ec2:*:111111111111:vpc/*
+
+provider::arn::s3_object("my-bucket", "*", { partition = "*" })
+# arn:*:s3:::my-bucket/*
 ```
 
-An ARN is `arn:partition:service:region:account:resource`. An argument that
-lands in one of the five structural fields cannot contain a `:`, because that
-would shift every field after it and name something else entirely. A few
-templates do put an argument there: chime and datasync spell the account field
-`${AccountId}` rather than `${Account}`.
+A rule applies wherever its field comes from. Most templates take the account
+from the configuration, but a few spell it as a placeholder, so it arrives as
+an argument instead: chime and datasync write `${AccountId}` rather than
+`${Account}`. Those arguments are checked like any other account id, and which
+ones they are follows from the field's position in the template rather than
+from what AWS named the placeholder.
+
+```hcl
+provider::arn::chime_meeting("abc", "m1")
+# invalid account id "abc"
+```
+
+An argument in one of the five structural fields cannot contain a `:` either,
+because that would shift every field after it and name something else
+entirely.
 
 Inside the resource part a colon is just a character, and what it separates is
 up to the service, so it is left alone:

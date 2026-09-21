@@ -10,13 +10,13 @@ package arnconf
 import (
 	"fmt"
 	"os"
-	"regexp"
 	"sort"
 	"strings"
 	"sync"
 
 	"github.com/hashicorp/hcl/v2/gohcl"
 	"github.com/hashicorp/hcl/v2/hclparse"
+	"github.com/winebarrel/terraform-provider-arn/internal/arnvalue"
 )
 
 const (
@@ -179,49 +179,21 @@ func (c *Config) Resolve(o Opts) (Values, error) {
 	return v, nil
 }
 
-// Shapes of the three configuration-supplied fields. These check form, not
-// existence: an account that does not exist, or a region AWS has not built
-// yet, is not something a string can be asked about. What they catch is the
-// value that could never be right, which would otherwise be interpolated into
-// a syntactically valid ARN and fail much later, at apply time, with an error
-// pointing nowhere near the configuration.
-var (
-	// An AWS account id is exactly twelve digits, and has been for the life
-	// of the service. Two other values belong in the field:
-	//
-	//   - "aws", which is what AWS-managed policies carry:
-	//     arn:aws:iam::aws:policy/AdministratorAccess.
-	//   - "*", since an ARN written for an IAM policy may wildcard the field.
-	reAccountID = regexp.MustCompile(`^([0-9]{12}|aws|\*)$`)
-
-	// Region names run "xx-word-N", with extra words for the isolated
-	// partitions: us-east-1, ap-northeast-1, us-gov-west-1, us-iso-east-1.
-	// Global resources carry an empty region field rather than a name like
-	// "aws-global", so there is no such case to allow through here. "*" is
-	// allowed for the same reason as in the account field.
-	reRegion = regexp.MustCompile(`^([a-z]{2}(-[a-z]+)+-[0-9]+|\*)$`)
-
-	// Every partition to date is "aws" or "aws-" plus one or more words:
-	// aws-cn, aws-us-gov, aws-iso-b. Matching the shape rather than a fixed
-	// list means a new partition works without a release here. Unlike the
-	// other two fields, AWS does not accept a wildcard here.
-	rePartition = regexp.MustCompile(`^aws(-[a-z0-9]+)*$`)
-)
-
 // validate rejects values that cannot be part of a well-formed ARN. It runs
 // after resolution, so it covers both the configuration file and the
 // call-site options without having to check each separately.
 func (v Values) validate() error {
-	if v.AccountID != "" && !reAccountID.MatchString(v.AccountID) {
-		return fmt.Errorf("invalid account id %q: expected twelve digits, \"aws\" for an AWS-managed resource, or \"*\"", v.AccountID)
+	if v.AccountID != "" {
+		if err := arnvalue.AccountID(v.AccountID); err != nil {
+			return err
+		}
 	}
-	if v.Region != "" && !reRegion.MatchString(v.Region) {
-		return fmt.Errorf("invalid region %q: expected a name like ap-northeast-1, or \"*\"", v.Region)
+	if v.Region != "" {
+		if err := arnvalue.Region(v.Region); err != nil {
+			return err
+		}
 	}
-	if !rePartition.MatchString(v.Partition) {
-		return fmt.Errorf("invalid partition %q: expected aws, aws-cn, aws-us-gov or another aws- partition", v.Partition)
-	}
-	return nil
+	return arnvalue.Partition(v.Partition)
 }
 
 func (c *Config) accountNames() []string {

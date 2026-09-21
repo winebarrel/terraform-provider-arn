@@ -15,6 +15,8 @@ package arnspec
 import (
 	"fmt"
 	"strings"
+
+	"github.com/winebarrel/terraform-provider-arn/internal/arnvalue"
 )
 
 // Placeholder names the feed uses for values that come from configuration
@@ -44,9 +46,11 @@ type Spec struct {
 	// used when reporting which part of the template was left empty.
 	argsRaw []string
 
-	// argStructural marks the arguments that land in one of the ARN's five
-	// structural fields rather than in the resource part. See Build.
-	argStructural []bool
+	// argField is the ARN field each argument lands in, counted in colons:
+	// 1 partition, 2 service, 3 region, 4 account, 5 and beyond the resource
+	// part. Which checks apply to an argument follows from this, not from
+	// what the feed happens to have named the placeholder. See Build.
+	argField []int
 
 	NeedsRegion  bool
 	NeedsAccount bool
@@ -82,15 +86,18 @@ func Parse(s *Spec) error {
 		default:
 			s.argsRaw = append(s.argsRaw, h)
 			s.Args = append(s.Args, SnakeCase(h))
-			s.argStructural = append(s.argStructural, colons < resourceFieldIndex)
+			s.argField = append(s.argField, colons)
 		}
 	}
 	return nil
 }
 
-// resourceFieldIndex is the number of colons that precede the resource part
-// of an ARN: arn:partition:service:region:account:resource.
-const resourceFieldIndex = 5
+// Colon counts that identify an ARN's fields:
+// arn:partition:service:region:account:resource.
+const (
+	accountFieldIndex  = 4
+	resourceFieldIndex = 5
+)
 
 // split breaks a template into literal parts and placeholder names.
 func split(tmpl string) (parts, holes []string, err error) {
@@ -170,9 +177,18 @@ func (s *Spec) Build(v Values, args []string) (string, error) {
 			// it separates is up to the service. S3 object keys may contain
 			// one, so rejecting it there would block an ARN that is perfectly
 			// valid.
-			if s.argStructural[arg] && strings.Contains(args[arg], ":") {
+			if s.argField[arg] < resourceFieldIndex && strings.Contains(args[arg], ":") {
 				return "", fmt.Errorf("%s: argument %s (%s) is an ARN field and cannot contain a colon: %q",
 					s.Name, s.Args[arg], h, args[arg])
+			}
+			// An argument that lands in the account field is an account id,
+			// whatever the feed calls it, and gets the same check as one that
+			// came from the configuration. The field is identified by its
+			// position, not by the placeholder's name.
+			if s.argField[arg] == accountFieldIndex {
+				if err := arnvalue.AccountID(args[arg]); err != nil {
+					return "", fmt.Errorf("%s: argument %s (%s): %w", s.Name, s.Args[arg], h, err)
+				}
 			}
 			b.WriteString(args[arg])
 			arg++
@@ -236,4 +252,7 @@ func (s *Spec) ArgRaw(i int) string { return s.argsRaw[i] }
 
 // ArgIsStructural reports whether argument i lands in one of the ARN's five
 // structural fields rather than in the resource part.
-func (s *Spec) ArgIsStructural(i int) bool { return s.argStructural[i] }
+func (s *Spec) ArgIsStructural(i int) bool { return s.argField[i] < resourceFieldIndex }
+
+// ArgIsAccountID reports whether argument i lands in the ARN's account field.
+func (s *Spec) ArgIsAccountID(i int) bool { return s.argField[i] == accountFieldIndex }
