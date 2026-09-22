@@ -1,0 +1,79 @@
+name: Regenerate
+
+on:
+  schedule:
+    # Monday 00:00 UTC. AWS publishes resource types often enough to be worth
+    # watching and rarely enough that a weekly check does not pile up PRs.
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+# create-pull-request pushes the branch and opens the pull request as
+# github-actions[bot], which needs both.
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+          cache: false
+      - uses: hashicorp/setup-terraform@v4
+        with:
+          terraform_wrapper: false
+
+      - name: Regenerate from the AWS service reference
+        run: |
+          make gen
+          make docs
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "The AWS service reference has not changed."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --stat -- internal/arnspec/
+          fi
+
+      # A pull request opened with GITHUB_TOKEN does not start a workflow
+      # run, so CI will not run on it. These steps stand in for it, and run
+      # before the pull request is opened so a feed change that breaks
+      # something shows up here.
+      - uses: golangci/golangci-lint-action@v9
+        if: steps.diff.outputs.changed == 'true'
+      - name: Vet
+        if: steps.diff.outputs.changed == 'true'
+        run: make vet
+      - name: Test
+        if: steps.diff.outputs.changed == 'true'
+        run: make test
+
+      - uses: peter-evans/create-pull-request@v8
+        if: steps.diff.outputs.changed == 'true'
+        with:
+          # GITHUB_TOKEN, so the commit is signed and shows as verified like
+          # every other commit here. The cost is that the pull request starts
+          # no workflow run, which is why the steps above exist.
+          sign-commits: true
+          branch: regenerate
+          delete-branch: true
+          title: Regenerate from the AWS service reference
+          commit-message: Regenerate from the AWS service reference
+          body: |
+            `make gen` and `make docs` against the current
+            [AWS service reference](https://servicereference.us-east-1.amazonaws.com).
+
+            Read `internal/arnspec/` first: it says which resource types AWS
+            added, removed or reshaped. Everything under `docs/` and
+            `examples/` follows from it.
+
+            CI does not run on this pull request, because it was opened with
+            `GITHUB_TOKEN`. Lint, vet and the tests ran in the job that
+            opened it.
