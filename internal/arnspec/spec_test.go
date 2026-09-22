@@ -312,10 +312,9 @@ func TestBuildAllowsSlashInArgument(t *testing.T) {
 }
 
 // The whole classification rests on the correspondence between an ARN field
-// and the names AWS puts in it, so pin it across every template rather than
-// for a few named functions. A new spelling at the account field would
-// otherwise set NeedsAccount, silently drop an argument, and pass every other
-// test here.
+// and the names AWS puts in it, so check it across every template rather than
+// for a few named functions. Neither assertion moves when AWS adds a resource
+// type of the usual shape, so regenerating does not have to touch this test.
 func TestGeneratedPlaceholderPositions(t *testing.T) {
 	// Field index counted in colons: 1 partition, 2 service, 3 region,
 	// 4 account, 5 and beyond the resource part. Field 0 is the text before
@@ -335,9 +334,15 @@ func TestGeneratedPlaceholderPositions(t *testing.T) {
 		},
 	}
 
-	counts := map[int]map[string]int{0: {}, 1: {}, 2: {}, 3: {}, 4: {}}
-
 	for _, s := range arnspec.All() {
+		// An ARN has six fields, so a template has at least five colons. A
+		// shorter one would push a resource placeholder into a structural
+		// field, where it would be read as the region or the account and stop
+		// being an argument. The name check below catches most of those, but
+		// not one whose placeholder happens to be named Region.
+		assert.GreaterOrEqual(t, strings.Count(s.Template, ":"), 5,
+			"%s: template has fewer fields than an ARN: %s", s.Name, s.Template)
+
 		rest, field := s.Template, 0
 		for {
 			i := strings.Index(rest, "${")
@@ -352,19 +357,8 @@ func TestGeneratedPlaceholderPositions(t *testing.T) {
 			if field < 5 {
 				assert.True(t, want[field][name],
 					"%s: unexpected placeholder ${%s} in ARN field %d: %s", s.Name, name, field, s.Template)
-				counts[field][name]++
 			}
 			rest = rest[i+j+1:]
 		}
 	}
-
-	// The counts themselves, so a template moving between fields shows up
-	// even when the name is already known.
-	assert.Equal(t, map[int]map[string]int{
-		0: {},
-		1: {"Partition": 2332},
-		2: {"Vendor": 1},
-		3: {"Region": 2106},
-		4: {"Account": 2131, "AccountId": 22, "ManagementAccountId": 1, "VpcOwnerAccount": 1},
-	}, counts)
 }
