@@ -7,8 +7,11 @@ on:
     - cron: "0 0 * * 1"
   workflow_dispatch:
 
+# create-pull-request pushes the branch and opens the pull request as
+# github-actions[bot], which needs both.
 permissions:
-  contents: read
+  contents: write
+  pull-requests: write
 
 jobs:
   regenerate:
@@ -39,9 +42,15 @@ jobs:
             git diff --stat -- internal/arnspec/
           fi
 
-      # Runs before the pull request is opened so a failure shows up here
-      # rather than as a red check on a PR nobody asked for. A feed change
-      # that breaks a test is the case worth looking at.
+      # A pull request opened with GITHUB_TOKEN does not start a workflow
+      # run, so CI will not run on it. These steps stand in for it, and run
+      # before the pull request is opened so a feed change that breaks
+      # something shows up here.
+      - uses: golangci/golangci-lint-action@v9
+        if: steps.diff.outputs.changed == 'true'
+      - name: Vet
+        if: steps.diff.outputs.changed == 'true'
+        run: make vet
       - name: Test
         if: steps.diff.outputs.changed == 'true'
         run: make test
@@ -49,11 +58,10 @@ jobs:
       - uses: peter-evans/create-pull-request@v8
         if: steps.diff.outputs.changed == 'true'
         with:
-          # A PAT rather than GITHUB_TOKEN: a pull request opened with
-          # GITHUB_TOKEN does not start a workflow run, so CI would never run
-          # on it. The commit is unsigned in exchange, since the action can
-          # only sign with GITHUB_TOKEN or a GitHub App token.
-          token: ${{ secrets.GEN_PR_TOKEN }}
+          # GITHUB_TOKEN, so the commit is signed and shows as verified like
+          # every other commit here. The cost is that the pull request starts
+          # no workflow run, which is why the steps above exist.
+          sign-commits: true
           branch: regenerate
           delete-branch: true
           title: Regenerate from the AWS service reference
@@ -65,3 +73,7 @@ jobs:
             Read `internal/arnspec/` first: it says which resource types AWS
             added, removed or reshaped. Everything under `docs/` and
             `examples/` follows from it.
+
+            CI does not run on this pull request, because it was opened with
+            `GITHUB_TOKEN`. Lint, vet and the tests ran in the job that
+            opened it.
