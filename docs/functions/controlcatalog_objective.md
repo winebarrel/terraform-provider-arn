@@ -16,7 +16,14 @@ arn:${Partition}:controlcatalog:::objective/${ObjectiveId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:controlcatalog:::objective/objective-id
+output "controlcatalog_objective" {
+  value = provider::arn::controlcatalog_objective("objective-id")
+}
+```
 
 ## Signature
 

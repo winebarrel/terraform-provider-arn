@@ -16,7 +16,14 @@ arn:${Partition}:elasticache:${Region}:${Account}:serverlesscachesnapshot:${Serv
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:elasticache:ap-northeast-1:111111111111:serverlesscachesnapshot:serverless-cache-snapshot-name
+output "elasticache_serverlesscachesnapshot" {
+  value = provider::arn::elasticache_serverlesscachesnapshot("serverless-cache-snapshot-name")
+}
+```
 
 ## Signature
 

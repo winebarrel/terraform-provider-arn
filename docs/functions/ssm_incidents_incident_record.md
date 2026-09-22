@@ -16,7 +16,14 @@ arn:${Partition}:ssm-incidents::${Account}:incident-record/${ResponsePlan}/${Inc
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ssm-incidents::111111111111:incident-record/response-plan/incident-record
+output "ssm_incidents_incident_record" {
+  value = provider::arn::ssm_incidents_incident_record("response-plan", "incident-record")
+}
+```
 
 ## Signature
 

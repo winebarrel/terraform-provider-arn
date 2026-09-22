@@ -16,7 +16,14 @@ arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/offerSet/${OfferSetId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:aws-marketplace:::catalog/catalog-name/offerSet/offer-set-id
+output "aws_marketplace_offer_set" {
+  value = provider::arn::aws_marketplace_offer_set("catalog-name", "offer-set-id")
+}
+```
 
 ## Signature
 

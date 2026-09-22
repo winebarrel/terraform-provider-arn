@@ -16,7 +16,14 @@ arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/access-control-con
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:kendra:ap-northeast-1:111111111111:index/index-id/access-control-configuration/access-control-configuration-id
+output "kendra_access_control_configuration" {
+  value = provider::arn::kendra_access_control_configuration("index-id", "access-control-configuration-id")
+}
+```
 
 ## Signature
 

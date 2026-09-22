@@ -16,7 +16,14 @@ arn:${Partition}:bedrock-agentcore:${Region}:${Account}:capacity-provider/${Capa
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock-agentcore:ap-northeast-1:111111111111:capacity-provider/capacity-provider-id
+output "bedrock_agentcore_capacity_provider" {
+  value = provider::arn::bedrock_agentcore_capacity_provider("capacity-provider-id")
+}
+```
 
 ## Signature
 

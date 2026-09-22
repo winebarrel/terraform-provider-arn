@@ -16,7 +16,14 @@ arn:${Partition}:mq:${Region}:${Account}:broker:${BrokerName}:${BrokerId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mq:ap-northeast-1:111111111111:broker:broker-name:broker-id
+output "mq_brokers" {
+  value = provider::arn::mq_brokers("broker-name", "broker-id")
+}
+```
 
 ## Signature
 

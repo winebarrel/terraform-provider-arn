@@ -16,7 +16,14 @@ arn:${Partition}:elasticache:${Region}:${Account}:subnetgroup:${CacheSubnetGroup
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:elasticache:ap-northeast-1:111111111111:subnetgroup:cache-subnet-group-name
+output "elasticache_subnetgroup" {
+  value = provider::arn::elasticache_subnetgroup("cache-subnet-group-name")
+}
+```
 
 ## Signature
 

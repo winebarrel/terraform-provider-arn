@@ -16,7 +16,14 @@ arn:${Partition}:braket:${Region}:${Account}:job/${RandomId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:braket:ap-northeast-1:111111111111:job/random-id
+output "braket_job" {
+  value = provider::arn::braket_job("random-id")
+}
+```
 
 ## Signature
 

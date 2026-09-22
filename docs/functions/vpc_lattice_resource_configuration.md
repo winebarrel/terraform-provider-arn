@@ -16,7 +16,14 @@ arn:${Partition}:vpc-lattice:${Region}:${Account}:resourceconfiguration/${Resour
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:vpc-lattice:ap-northeast-1:111111111111:resourceconfiguration/resource-configuration-id
+output "vpc_lattice_resource_configuration" {
+  value = provider::arn::vpc_lattice_resource_configuration("resource-configuration-id")
+}
+```
 
 ## Signature
 

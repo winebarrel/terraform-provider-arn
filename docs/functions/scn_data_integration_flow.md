@@ -16,7 +16,14 @@ arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/data-integratio
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:scn:ap-northeast-1:111111111111:instance/instance-id/data-integration-flows/flow-name
+output "scn_data_integration_flow" {
+  value = provider::arn::scn_data_integration_flow("instance-id", "flow-name")
+}
+```
 
 ## Signature
 

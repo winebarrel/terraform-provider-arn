@@ -16,7 +16,14 @@ arn:${Partition}:workspaces-web:${Region}:${Account}:userAccessLoggingSettings/$
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:workspaces-web:ap-northeast-1:111111111111:userAccessLoggingSettings/user-access-logging-settings-id
+output "workspaces_web_user_access_logging_settings" {
+  value = provider::arn::workspaces_web_user_access_logging_settings("user-access-logging-settings-id")
+}
+```
 
 ## Signature
 

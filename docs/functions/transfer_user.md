@@ -16,7 +16,14 @@ arn:${Partition}:transfer:${Region}:${Account}:user/${ServerId}/${UserName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:transfer:ap-northeast-1:111111111111:user/server-id/user-name
+output "transfer_user" {
+  value = provider::arn::transfer_user("server-id", "user-name")
+}
+```
 
 ## Signature
 

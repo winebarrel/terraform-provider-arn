@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:edge-deployment/${EdgeDeployment
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:edge-deployment/edge-deployment-plan-name
+output "sagemaker_edge_deployment_plan" {
+  value = provider::arn::sagemaker_edge_deployment_plan("edge-deployment-plan-name")
+}
+```
 
 ## Signature
 

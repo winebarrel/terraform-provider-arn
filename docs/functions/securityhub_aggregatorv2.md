@@ -16,7 +16,14 @@ arn:${Partition}:securityhub:${Region}:${Account}:aggregatorv2/${AggregatorV2Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:securityhub:ap-northeast-1:111111111111:aggregatorv2/aggregator-v2-id
+output "securityhub_aggregatorv2" {
+  value = provider::arn::securityhub_aggregatorv2("aggregator-v2-id")
+}
+```
 
 ## Signature
 

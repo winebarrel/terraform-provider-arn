@@ -16,7 +16,14 @@ arn:${Partition}:omics:${Region}:${Account}:runBatch/${BatchId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:omics:ap-northeast-1:111111111111:runBatch/batch-id
+output "omics_run_batch" {
+  value = provider::arn::omics_run_batch("batch-id")
+}
+```
 
 ## Signature
 

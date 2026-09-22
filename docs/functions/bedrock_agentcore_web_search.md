@@ -16,7 +16,14 @@ arn:${Partition}:bedrock-agentcore:${Region}:${Account}:tool/web-search.v1
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock-agentcore:ap-northeast-1:111111111111:tool/web-search.v1
+output "bedrock_agentcore_web_search" {
+  value = provider::arn::bedrock_agentcore_web_search()
+}
+```
 
 ## Signature
 

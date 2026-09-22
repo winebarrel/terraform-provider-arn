@@ -16,7 +16,14 @@ arn:${Partition}:iam::${Account}:server-certificate/${CertificateNameWithPath}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::111111111111:server-certificate/certificate-name-with-path
+output "iam_server_certificate" {
+  value = provider::arn::iam_server_certificate("certificate-name-with-path")
+}
+```
 
 ## Signature
 

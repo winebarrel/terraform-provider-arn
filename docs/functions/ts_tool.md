@@ -16,7 +16,14 @@ arn:${Partition}:ts::aws:tool/${ToolId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ts::aws:tool/tool-id
+output "ts_tool" {
+  value = provider::arn::ts_tool("tool-id")
+}
+```
 
 ## Signature
 

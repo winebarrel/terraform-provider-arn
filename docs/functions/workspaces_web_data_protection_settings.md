@@ -16,7 +16,14 @@ arn:${Partition}:workspaces-web:${Region}:${Account}:dataProtectionSettings/${Da
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:workspaces-web:ap-northeast-1:111111111111:dataProtectionSettings/data-protection-settings-id
+output "workspaces_web_data_protection_settings" {
+  value = provider::arn::workspaces_web_data_protection_settings("data-protection-settings-id")
+}
+```
 
 ## Signature
 

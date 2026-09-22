@@ -16,7 +16,14 @@ arn:${Partition}:mediatailor:${Region}:${Account}:sourceLocation/${SourceLocatio
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediatailor:ap-northeast-1:111111111111:sourceLocation/source-location-name
+output "mediatailor_source_location" {
+  value = provider::arn::mediatailor_source_location("source-location-name")
+}
+```
 
 ## Signature
 

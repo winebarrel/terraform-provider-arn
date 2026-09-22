@@ -16,7 +16,14 @@ arn:${Partition}:catalog:${Region}:${Account}:portfolio/${PortfolioId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:catalog:ap-northeast-1:111111111111:portfolio/portfolio-id
+output "servicecatalog_portfolio" {
+  value = provider::arn::servicecatalog_portfolio("portfolio-id")
+}
+```
 
 ## Signature
 

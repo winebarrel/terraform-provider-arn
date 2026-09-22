@@ -16,7 +16,14 @@ arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/program-
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:partnercentral:ap-northeast-1:111111111111:catalog/catalog/program-management-account/identifier
+output "partnercentral_program_management_account" {
+  value = provider::arn::partnercentral_program_management_account("catalog", "identifier")
+}
+```
 
 ## Signature
 

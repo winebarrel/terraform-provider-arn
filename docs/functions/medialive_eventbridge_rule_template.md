@@ -16,7 +16,14 @@ arn:${Partition}:medialive:${Region}:${Account}:eventbridge-rule-template:${Even
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:medialive:ap-northeast-1:111111111111:eventbridge-rule-template:event-bridge-rule-template-id
+output "medialive_eventbridge_rule_template" {
+  value = provider::arn::medialive_eventbridge_rule_template("event-bridge-rule-template-id")
+}
+```
 
 ## Signature
 

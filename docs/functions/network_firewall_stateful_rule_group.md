@@ -16,7 +16,14 @@ arn:${Partition}:network-firewall:${Region}:${Account}:stateful-rulegroup/${Name
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:network-firewall:ap-northeast-1:111111111111:stateful-rulegroup/name
+output "network_firewall_stateful_rule_group" {
+  value = provider::arn::network_firewall_stateful_rule_group("name")
+}
+```
 
 ## Signature
 

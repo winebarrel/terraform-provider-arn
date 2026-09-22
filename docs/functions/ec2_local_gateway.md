@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:local-gateway/${LocalGatewayId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:local-gateway/local-gateway-id
+output "ec2_local_gateway" {
+  value = provider::arn::ec2_local_gateway("local-gateway-id")
+}
+```
 
 ## Signature
 

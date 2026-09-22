@@ -16,7 +16,14 @@ arn:${Partition}:aws-marketplace:${Region}:${Account}:catalog/${Catalog}/invoice
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:aws-marketplace:ap-northeast-1:111111111111:catalog/catalog/invoice-submission-task/resource-id
+output "aws_marketplace_invoice_submission_task" {
+  value = provider::arn::aws_marketplace_invoice_submission_task("catalog", "resource-id")
+}
+```
 
 ## Signature
 

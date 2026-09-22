@@ -16,7 +16,14 @@ arn:${Partition}:route53resolver:${Region}:${Account}:firewall-config/${Resource
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:route53resolver:ap-northeast-1:111111111111:firewall-config/resource-id
+output "route53resolver_firewall_config" {
+  value = provider::arn::route53resolver_firewall_config("resource-id")
+}
+```
 
 ## Signature
 

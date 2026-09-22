@@ -16,7 +16,14 @@ arn:${Partition}:acm:${Region}:${Account}:certificate/${CertificateId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:acm:ap-northeast-1:111111111111:certificate/certificate-id
+output "acm_certificate" {
+  value = provider::arn::acm_certificate("certificate-id")
+}
+```
 
 ## Signature
 

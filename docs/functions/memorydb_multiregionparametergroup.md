@@ -16,7 +16,14 @@ arn:${Partition}:memorydb::${Account}:multiregionparametergroup/${MultiRegionPar
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:memorydb::111111111111:multiregionparametergroup/multi-region-parameter-group-name
+output "memorydb_multiregionparametergroup" {
+  value = provider::arn::memorydb_multiregionparametergroup("multi-region-parameter-group-name")
+}
+```
 
 ## Signature
 

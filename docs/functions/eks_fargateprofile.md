@@ -16,7 +16,14 @@ arn:${Partition}:eks:${Region}:${Account}:fargateprofile/${ClusterName}/${Fargat
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:eks:ap-northeast-1:111111111111:fargateprofile/cluster-name/fargate-profile-name/uuid
+output "eks_fargateprofile" {
+  value = provider::arn::eks_fargateprofile("cluster-name", "fargate-profile-name", "uuid")
+}
+```
 
 ## Signature
 

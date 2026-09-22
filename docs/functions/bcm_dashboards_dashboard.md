@@ -16,7 +16,14 @@ arn:${Partition}:bcm-dashboards::${Account}:dashboard/${DashboardName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bcm-dashboards::111111111111:dashboard/dashboard-name
+output "bcm_dashboards_dashboard" {
+  value = provider::arn::bcm_dashboards_dashboard("dashboard-name")
+}
+```
 
 ## Signature
 

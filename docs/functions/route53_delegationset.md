@@ -16,7 +16,14 @@ arn:${Partition}:route53:::delegationset/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:route53:::delegationset/id
+output "route53_delegationset" {
+  value = provider::arn::route53_delegationset("id")
+}
+```
 
 ## Signature
 

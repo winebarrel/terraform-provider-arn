@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:instance-event-window/${InstanceEventW
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:instance-event-window/instance-event-window-id
+output "ec2_instance_event_window" {
+  value = provider::arn::ec2_instance_event_window("instance-event-window-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:s3:${Region}:${Account}:access-grants/default/location/${Token}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:s3:ap-northeast-1:111111111111:access-grants/default/location/token
+output "s3_accessgrantslocation" {
+  value = provider::arn::s3_accessgrantslocation("token")
+}
+```
 
 ## Signature
 

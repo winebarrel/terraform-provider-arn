@@ -16,7 +16,14 @@ arn:${Partition}:redshift-serverless:${Region}:${Account}:managed-workgroup/${Ma
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:redshift-serverless:ap-northeast-1:111111111111:managed-workgroup/managed-workgroup-id
+output "redshift_data_managed_workgroup" {
+  value = provider::arn::redshift_data_managed_workgroup("managed-workgroup-id")
+}
+```
 
 ## Signature
 

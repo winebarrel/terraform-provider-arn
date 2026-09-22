@@ -16,7 +16,14 @@ arn:${Partition}:elemental-inference:${Region}:${Account}:feed/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:elemental-inference:ap-northeast-1:111111111111:feed/id
+output "elemental_inference_feed" {
+  value = provider::arn::elemental_inference_feed("id")
+}
+```
 
 ## Signature
 

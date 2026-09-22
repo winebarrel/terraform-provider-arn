@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:model-explainability-job-definit
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:model-explainability-job-definition/model-explainability-job-definition-name
+output "sagemaker_model_explainability_job_definition" {
+  value = provider::arn::sagemaker_model_explainability_job_definition("model-explainability-job-definition-name")
+}
+```
 
 ## Signature
 

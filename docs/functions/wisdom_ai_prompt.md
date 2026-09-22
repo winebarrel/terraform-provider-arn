@@ -16,7 +16,14 @@ arn:${Partition}:wisdom:${Region}:${Account}:ai-prompt/${AssistantId}/${AIPrompt
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:wisdom:ap-northeast-1:111111111111:ai-prompt/assistant-id/ai-prompt-id
+output "wisdom_ai_prompt" {
+  value = provider::arn::wisdom_ai_prompt("assistant-id", "ai-prompt-id")
+}
+```
 
 ## Signature
 

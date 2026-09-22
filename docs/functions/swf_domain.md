@@ -16,7 +16,14 @@ arn:${Partition}:swf::${Account}:/domain/${DomainName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:swf::111111111111:/domain/domain-name
+output "swf_domain" {
+  value = provider::arn::swf_domain("domain-name")
+}
+```
 
 ## Signature
 

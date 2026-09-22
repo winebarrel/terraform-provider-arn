@@ -16,7 +16,14 @@ arn:${Partition}:appstream:${Region}:${Account}:fleet/${FleetName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appstream:ap-northeast-1:111111111111:fleet/fleet-name
+output "appstream_fleet" {
+  value = provider::arn::appstream_fleet("fleet-name")
+}
+```
 
 ## Signature
 

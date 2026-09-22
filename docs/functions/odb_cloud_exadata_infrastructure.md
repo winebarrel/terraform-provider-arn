@@ -16,7 +16,14 @@ arn:${Partition}:odb:${Region}:${Account}:cloud-exadata-infrastructure/${CloudEx
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:odb:ap-northeast-1:111111111111:cloud-exadata-infrastructure/cloud-exadata-infrastructure-id
+output "odb_cloud_exadata_infrastructure" {
+  value = provider::arn::odb_cloud_exadata_infrastructure("cloud-exadata-infrastructure-id")
+}
+```
 
 ## Signature
 

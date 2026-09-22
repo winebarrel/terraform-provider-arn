@@ -16,7 +16,14 @@ arn:${Partition}:ses:${Region}:${Account}:export-job/${ExportJobId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ses:ap-northeast-1:111111111111:export-job/export-job-id
+output "ses_export_job" {
+  value = provider::arn::ses_export_job("export-job-id")
+}
+```
 
 ## Signature
 

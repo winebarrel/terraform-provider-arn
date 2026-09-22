@@ -16,7 +16,14 @@ arn:${Partition}:bedrock:${Region}:${Account}:agent-alias/${AgentId}/${AgentAlia
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock:ap-northeast-1:111111111111:agent-alias/agent-id/agent-alias-id
+output "bedrock_agent_alias" {
+  value = provider::arn::bedrock_agent_alias("agent-id", "agent-alias-id")
+}
+```
 
 ## Signature
 

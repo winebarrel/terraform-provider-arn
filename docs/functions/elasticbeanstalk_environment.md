@@ -16,7 +16,14 @@ arn:${Partition}:elasticbeanstalk:${Region}:${Account}:environment/${Application
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:elasticbeanstalk:ap-northeast-1:111111111111:environment/application-name/environment-name
+output "elasticbeanstalk_environment" {
+  value = provider::arn::elasticbeanstalk_environment("application-name", "environment-name")
+}
+```
 
 ## Signature
 

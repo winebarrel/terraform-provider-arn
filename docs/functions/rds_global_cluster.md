@@ -16,7 +16,14 @@ arn:${Partition}:rds::${Account}:global-cluster:${GlobalCluster}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds::111111111111:global-cluster:global-cluster
+output "rds_global_cluster" {
+  value = provider::arn::rds_global_cluster("global-cluster")
+}
+```
 
 ## Signature
 

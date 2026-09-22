@@ -16,7 +16,14 @@ arn:${Partition}:mediaconvert:${Region}:${Account}:certificates/${CertificateArn
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediaconvert:ap-northeast-1:111111111111:certificates/certificate-arn
+output "mediaconvert_certificate_association" {
+  value = provider::arn::mediaconvert_certificate_association("certificate-arn")
+}
+```
 
 ## Signature
 

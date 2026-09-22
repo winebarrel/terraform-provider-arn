@@ -16,7 +16,14 @@ arn:${Partition}:eks:${Region}:${Account}:access-entry/${ClusterName}/${IamIdent
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:eks:ap-northeast-1:111111111111:access-entry/cluster-name/iam-identity-type/iam-identity-account-id/iam-identity-name/uuid
+output "eks_access_entry" {
+  value = provider::arn::eks_access_entry("cluster-name", "iam-identity-type", "iam-identity-account-id", "iam-identity-name", "uuid")
+}
+```
 
 ## Signature
 

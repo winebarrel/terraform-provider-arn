@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:hub-content/${HubName}/${HubCont
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:hub-content/hub-name/hub-content-type/hub-content-name
+output "sagemaker_hub_content" {
+  value = provider::arn::sagemaker_hub_content("hub-name", "hub-content-type", "hub-content-name")
+}
+```
 
 ## Signature
 

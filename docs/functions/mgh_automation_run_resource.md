@@ -16,7 +16,14 @@ arn:${Partition}:mgh:${Region}:${Account}:automation-run/${RunID}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mgh:ap-northeast-1:111111111111:automation-run/run-id
+output "mgh_automation_run_resource" {
+  value = provider::arn::mgh_automation_run_resource("run-id")
+}
+```
 
 ## Signature
 

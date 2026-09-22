@@ -16,7 +16,14 @@ arn:${Partition}:resource-explorer-2:${Region}:${Account}:index/${IndexUuid}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:resource-explorer-2:ap-northeast-1:111111111111:index/index-uuid
+output "resource_explorer_2_index" {
+  value = provider::arn::resource_explorer_2_index("index-uuid")
+}
+```
 
 ## Signature
 

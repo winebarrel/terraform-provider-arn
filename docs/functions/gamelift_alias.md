@@ -16,7 +16,14 @@ arn:${Partition}:gamelift:${Region}::alias/${AliasId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:gamelift:ap-northeast-1::alias/alias-id
+output "gamelift_alias" {
+  value = provider::arn::gamelift_alias("alias-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:workmailmessageflow:${Region}:${Account}:message/${Organization
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:workmailmessageflow:ap-northeast-1:111111111111:message/organization-id/context/message-id
+output "workmailmessageflow_raw_message" {
+  value = provider::arn::workmailmessageflow_raw_message("organization-id", "context", "message-id")
+}
+```
 
 ## Signature
 

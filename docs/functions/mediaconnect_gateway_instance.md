@@ -16,7 +16,14 @@ arn:${Partition}:mediaconnect:${Region}:${Account}:gateway:${GatewayId}:${Gatewa
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediaconnect:ap-northeast-1:111111111111:gateway:gateway-id:gateway-name:instance:instance-id
+output "mediaconnect_gateway_instance" {
+  value = provider::arn::mediaconnect_gateway_instance("gateway-id", "gateway-name", "instance-id")
+}
+```
 
 ## Signature
 

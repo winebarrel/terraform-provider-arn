@@ -16,7 +16,14 @@ arn:${Partition}:lex:${Region}:${Account}:slottype:${SlotName}:${SlotVersion}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:lex:ap-northeast-1:111111111111:slottype:slot-name:slot-version
+output "lex_slottype_version" {
+  value = provider::arn::lex_slottype_version("slot-name", "slot-version")
+}
+```
 
 ## Signature
 

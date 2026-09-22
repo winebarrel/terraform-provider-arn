@@ -16,7 +16,14 @@ arn:${Partition}:iq:${Region}::paymentRequest/${ConversationId}/${ProposalId}/${
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iq:ap-northeast-1::paymentRequest/conversation-id/proposal-id/payment-request-id
+output "iq_payment_request" {
+  value = provider::arn::iq_payment_request("conversation-id", "proposal-id", "payment-request-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:${Vendor}:${Region}:*:${ResourceType}:${RecoveryPointId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:vendor:ap-northeast-1:*:resource-type:recovery-point-id
+output "backup_recovery_point" {
+  value = provider::arn::backup_recovery_point("vendor", "resource-type", "recovery-point-id")
+}
+```
 
 ## Signature
 

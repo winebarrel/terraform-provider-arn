@@ -16,7 +16,14 @@ arn:${Partition}:aws-marketplace:${Region}:${Account}:DeploymentParameter:catalo
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:aws-marketplace:ap-northeast-1:111111111111:DeploymentParameter:catalogs/catalog-name/products/product-id/resource-id
+output "aws_marketplace_deployment_parameter" {
+  value = provider::arn::aws_marketplace_deployment_parameter("catalog-name", "product-id", "resource-id")
+}
+```
 
 ## Signature
 

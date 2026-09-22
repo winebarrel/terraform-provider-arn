@@ -16,7 +16,14 @@ arn:${Partition}:ses:${Region}:${Account}:configuration-set/${ConfigurationSetNa
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ses:ap-northeast-1:111111111111:configuration-set/configuration-set-name
+output "ses_configuration_set" {
+  value = provider::arn::ses_configuration_set("configuration-set-name")
+}
+```
 
 ## Signature
 

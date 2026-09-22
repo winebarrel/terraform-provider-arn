@@ -16,7 +16,14 @@ arn:${Partition}:qbusiness:${Region}:${Account}:application/${ApplicationId}/sub
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:qbusiness:ap-northeast-1:111111111111:application/application-id/subscription/subscription-id
+output "qbusiness_subscription" {
+  value = provider::arn::qbusiness_subscription("application-id", "subscription-id")
+}
+```
 
 ## Signature
 

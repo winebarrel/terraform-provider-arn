@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:route-server-peer/${RouteServerPeerId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:route-server-peer/route-server-peer-id
+output "ec2_route_server_peer" {
+  value = provider::arn::ec2_route_server_peer("route-server-peer-id")
+}
+```
 
 ## Signature
 

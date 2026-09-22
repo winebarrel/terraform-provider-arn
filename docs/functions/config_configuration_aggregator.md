@@ -16,7 +16,14 @@ arn:${Partition}:config:${Region}:${Account}:config-aggregator/${AggregatorId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:config:ap-northeast-1:111111111111:config-aggregator/aggregator-id
+output "config_configuration_aggregator" {
+  value = provider::arn::config_configuration_aggregator("aggregator-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:mediaconvert:${Region}:${Account}:jobs/${JobId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediaconvert:ap-northeast-1:111111111111:jobs/job-id
+output "mediaconvert_job" {
+  value = provider::arn::mediaconvert_job("job-id")
+}
+```
 
 ## Signature
 

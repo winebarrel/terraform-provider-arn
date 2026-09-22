@@ -16,7 +16,14 @@ arn:${Partition}:health:*::event/${Service}/${EventTypeCode}/*
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:health:*::event/service/event-type-code/*
+output "health_event" {
+  value = provider::arn::health_event("service", "event-type-code")
+}
+```
 
 ## Signature
 

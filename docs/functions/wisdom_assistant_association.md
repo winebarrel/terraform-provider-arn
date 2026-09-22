@@ -16,7 +16,14 @@ arn:${Partition}:wisdom:${Region}:${Account}:association/${AssistantId}/${Assist
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:wisdom:ap-northeast-1:111111111111:association/assistant-id/assistant-association-id
+output "wisdom_assistant_association" {
+  value = provider::arn::wisdom_assistant_association("assistant-id", "assistant-association-id")
+}
+```
 
 ## Signature
 

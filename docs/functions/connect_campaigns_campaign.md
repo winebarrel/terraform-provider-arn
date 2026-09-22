@@ -16,7 +16,14 @@ arn:${Partition}:connect-campaigns:${Region}:${Account}:campaign/${CampaignId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:connect-campaigns:ap-northeast-1:111111111111:campaign/campaign-id
+output "connect_campaigns_campaign" {
+  value = provider::arn::connect_campaigns_campaign("campaign-id")
+}
+```
 
 ## Signature
 

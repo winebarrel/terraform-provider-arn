@@ -16,7 +16,14 @@ arn:${Partition}:codeartifact:${Region}:${Account}:repository/${DomainName}/${Re
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codeartifact:ap-northeast-1:111111111111:repository/domain-name/repository-name
+output "codeartifact_repository" {
+  value = provider::arn::codeartifact_repository("domain-name", "repository-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:kinesis:${Region}:${Account}:stream/${StreamName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:kinesis:ap-northeast-1:111111111111:stream/stream-name
+output "kinesis_stream" {
+  value = provider::arn::kinesis_stream("stream-name")
+}
+```
 
 ## Signature
 

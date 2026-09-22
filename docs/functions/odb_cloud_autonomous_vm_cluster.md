@@ -16,7 +16,14 @@ arn:${Partition}:odb:${Region}:${Account}:cloud-autonomous-vm-cluster/${CloudAut
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:odb:ap-northeast-1:111111111111:cloud-autonomous-vm-cluster/cloud-autonomous-vm-cluster-id
+output "odb_cloud_autonomous_vm_cluster" {
+  value = provider::arn::odb_cloud_autonomous_vm_cluster("cloud-autonomous-vm-cluster-id")
+}
+```
 
 ## Signature
 

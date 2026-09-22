@@ -16,7 +16,14 @@ arn:${Partition}:mpa:${Region}:${Account}:approval-team/${ApprovalTeamId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mpa:ap-northeast-1:111111111111:approval-team/approval-team-id
+output "mpa_approval_team" {
+  value = provider::arn::mpa_approval_team("approval-team-id")
+}
+```
 
 ## Signature
 

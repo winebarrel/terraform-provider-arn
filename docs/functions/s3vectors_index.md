@@ -16,7 +16,14 @@ arn:${Partition}:s3vectors:${Region}:${Account}:bucket/${BucketName}/index/${Ind
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:s3vectors:ap-northeast-1:111111111111:bucket/bucket-name/index/index-name
+output "s3vectors_index" {
+  value = provider::arn::s3vectors_index("bucket-name", "index-name")
+}
+```
 
 ## Signature
 

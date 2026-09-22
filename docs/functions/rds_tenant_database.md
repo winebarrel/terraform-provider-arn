@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:tenant-database:${TenantResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:tenant-database:tenant-resource-id
+output "rds_tenant_database" {
+  value = provider::arn::rds_tenant_database("tenant-resource-id")
+}
+```
 
 ## Signature
 

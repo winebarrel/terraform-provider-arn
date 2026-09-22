@@ -16,7 +16,14 @@ arn:${Partition}:iottwinmaker:${Region}:${Account}:metadata-transfer-job/${Metad
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iottwinmaker:ap-northeast-1:111111111111:metadata-transfer-job/metadata-transfer-job-id
+output "iottwinmaker_metadata_transfer_job" {
+  value = provider::arn::iottwinmaker_metadata_transfer_job("metadata-transfer-job-id")
+}
+```
 
 ## Signature
 

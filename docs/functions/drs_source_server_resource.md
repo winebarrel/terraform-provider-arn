@@ -16,7 +16,14 @@ arn:${Partition}:drs:${Region}:${Account}:source-server/${SourceServerID}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:drs:ap-northeast-1:111111111111:source-server/source-server-id
+output "drs_source_server_resource" {
+  value = provider::arn::drs_source_server_resource("source-server-id")
+}
+```
 
 ## Signature
 

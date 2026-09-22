@@ -16,7 +16,14 @@ arn:${Partition}:vpc-lattice:${Region}:${Account}:service/${ServiceId}/${Request
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:vpc-lattice:ap-northeast-1:111111111111:service/service-id/request-path
+output "vpc_lattice_svcs_service" {
+  value = provider::arn::vpc_lattice_svcs_service("service-id", "request-path")
+}
+```
 
 ## Signature
 

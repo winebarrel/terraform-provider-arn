@@ -16,7 +16,14 @@ arn:${Partition}:billing::${Account}:billingview/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:billing::111111111111:billingview/resource-id
+output "billing_billingview" {
+  value = provider::arn::billing_billingview("resource-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:finspace:${Region}:${Account}:environment/${EnvironmentId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:finspace:ap-northeast-1:111111111111:environment/environment-id
+output "finspace_environment" {
+  value = provider::arn::finspace_environment("environment-id")
+}
+```
 
 ## Signature
 

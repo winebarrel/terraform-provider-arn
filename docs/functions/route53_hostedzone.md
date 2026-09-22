@@ -16,7 +16,14 @@ arn:${Partition}:route53:::hostedzone/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:route53:::hostedzone/id
+output "route53_hostedzone" {
+  value = provider::arn::route53_hostedzone("id")
+}
+```
 
 ## Signature
 

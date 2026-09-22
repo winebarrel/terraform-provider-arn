@@ -16,7 +16,14 @@ arn:${Partition}:ivs:${Region}:${Account}:public-key/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ivs:ap-northeast-1:111111111111:public-key/resource-id
+output "ivs_public_key" {
+  value = provider::arn::ivs_public_key("resource-id")
+}
+```
 
 ## Signature
 

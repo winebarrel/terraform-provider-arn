@@ -16,7 +16,14 @@ arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/view/${View
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:connect:ap-northeast-1:111111111111:instance/instance-id/view/view-id:view-version
+output "connect_customer_managed_view_version" {
+  value = provider::arn::connect_customer_managed_view_version("instance-id", "view-id", "view-version")
+}
+```
 
 ## Signature
 

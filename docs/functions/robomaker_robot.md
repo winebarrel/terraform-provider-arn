@@ -16,7 +16,14 @@ arn:${Partition}:robomaker:${Region}:${Account}:robot/${RobotName}/${CreatedOnEp
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:robomaker:ap-northeast-1:111111111111:robot/robot-name/created-on-epoch
+output "robomaker_robot" {
+  value = provider::arn::robomaker_robot("robot-name", "created-on-epoch")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:iq:${Region}::seller/${SellerAwsAccountId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iq:ap-northeast-1::seller/seller-aws-account-id
+output "iq_seller" {
+  value = provider::arn::iq_seller("seller-aws-account-id")
+}
+```
 
 ## Signature
 

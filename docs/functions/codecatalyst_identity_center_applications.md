@@ -16,7 +16,14 @@ arn:${Partition}:codecatalyst:${Region}:${Account}:/identity-center-applications
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codecatalyst:ap-northeast-1:111111111111:/identity-center-applications/identity-center-application-id
+output "codecatalyst_identity_center_applications" {
+  value = provider::arn::codecatalyst_identity_center_applications("identity-center-application-id")
+}
+```
 
 ## Signature
 

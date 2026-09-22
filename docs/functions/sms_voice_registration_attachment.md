@@ -16,7 +16,14 @@ arn:${Partition}:sms-voice:${Region}:${Account}:registration-attachment/${Regist
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sms-voice:ap-northeast-1:111111111111:registration-attachment/registration-attachment-id
+output "sms_voice_registration_attachment" {
+  value = provider::arn::sms_voice_registration_attachment("registration-attachment-id")
+}
+```
 
 ## Signature
 

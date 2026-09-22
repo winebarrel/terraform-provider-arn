@@ -16,7 +16,14 @@ arn:${Partition}:ses:${Region}:${Account}:mailmanager-ingress-point/${IngressPoi
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ses:ap-northeast-1:111111111111:mailmanager-ingress-point/ingress-point-id
+output "ses_mailmanager_ingress_point" {
+  value = provider::arn::ses_mailmanager_ingress_point("ingress-point-id")
+}
+```
 
 ## Signature
 

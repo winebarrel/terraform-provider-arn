@@ -16,7 +16,14 @@ arn:${Partition}:mobiletargeting:${Region}:${Account}:phone/number/validate
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:mobiletargeting:ap-northeast-1:111111111111:phone/number/validate
+output "mobiletargeting_phone_number_validate" {
+  value = provider::arn::mobiletargeting_phone_number_validate()
+}
+```
 
 ## Signature
 

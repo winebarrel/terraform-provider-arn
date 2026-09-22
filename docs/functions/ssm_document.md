@@ -16,7 +16,14 @@ arn:${Partition}:ssm:${Region}:${Account}:document/${DocumentName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ssm:ap-northeast-1:111111111111:document/document-name
+output "ssm_document" {
+  value = provider::arn::ssm_document("document-name")
+}
+```
 
 ## Signature
 

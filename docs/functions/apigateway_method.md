@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/resources/${Resour
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1::/restapis/rest-api-id/resources/resource-id/methods/http-method-type
+output "apigateway_method" {
+  value = provider::arn::apigateway_method("rest-api-id", "resource-id", "http-method-type")
+}
+```
 
 ## Signature
 

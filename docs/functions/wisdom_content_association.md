@@ -16,7 +16,14 @@ arn:${Partition}:wisdom:${Region}:${Account}:content-association/${KnowledgeBase
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:wisdom:ap-northeast-1:111111111111:content-association/knowledge-base-id/content-id/content-association-id
+output "wisdom_content_association" {
+  value = provider::arn::wisdom_content_association("knowledge-base-id", "content-id", "content-association-id")
+}
+```
 
 ## Signature
 

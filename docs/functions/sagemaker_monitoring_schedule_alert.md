@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:monitoring-schedule/${Monitoring
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:monitoring-schedule/monitoring-schedule-name/alert/monitoring-schedule-alert-name
+output "sagemaker_monitoring_schedule_alert" {
+  value = provider::arn::sagemaker_monitoring_schedule_alert("monitoring-schedule-name", "monitoring-schedule-alert-name")
+}
+```
 
 ## Signature
 

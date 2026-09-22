@@ -16,7 +16,14 @@ arn:${Partition}:ec2::${Account}:ipam-prefix-list-resolver/${IpamPrefixListResol
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2::111111111111:ipam-prefix-list-resolver/ipam-prefix-list-resolver-id
+output "ec2_ipam_prefix_list_resolver" {
+  value = provider::arn::ec2_ipam_prefix_list_resolver("ipam-prefix-list-resolver-id")
+}
+```
 
 ## Signature
 

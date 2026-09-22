@@ -16,7 +16,14 @@ arn:${Partition}:dms:${Region}:${Account}:migration-project:*
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:dms:ap-northeast-1:111111111111:migration-project:*
+output "dms_migration_project" {
+  value = provider::arn::dms_migration_project()
+}
+```
 
 ## Signature
 

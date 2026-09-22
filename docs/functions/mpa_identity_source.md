@@ -16,7 +16,14 @@ arn:${Partition}:mpa:${Region}:${Account}:identity-source/${IdentitySourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mpa:ap-northeast-1:111111111111:identity-source/identity-source-id
+output "mpa_identity_source" {
+  value = provider::arn::mpa_identity_source("identity-source-id")
+}
+```
 
 ## Signature
 

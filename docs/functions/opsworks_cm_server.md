@@ -16,7 +16,14 @@ arn:${Partition}:opsworks-cm::${Account}:server/${ServerName}/${UniqueId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:opsworks-cm::111111111111:server/server-name/unique-id
+output "opsworks_cm_server" {
+  value = provider::arn::opsworks_cm_server("server-name", "unique-id")
+}
+```
 
 ## Signature
 

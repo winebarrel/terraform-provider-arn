@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:vpc-peering-connection/${VpcPeeringCon
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:vpc-peering-connection/vpc-peering-connection-id
+output "ec2_vpc_peering_connection" {
+  value = provider::arn::ec2_vpc_peering_connection("vpc-peering-connection-id")
+}
+```
 
 ## Signature
 

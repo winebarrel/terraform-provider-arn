@@ -16,7 +16,14 @@ arn:${Partition}:codeguru-reviewer:${Region}:${Account}:association:${ResourceId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codeguru-reviewer:ap-northeast-1:111111111111:association:resource-id:codereview:code-review-id
+output "codeguru_reviewer_codereview" {
+  value = provider::arn::codeguru_reviewer_codereview("resource-id", "code-review-id")
+}
+```
 
 ## Signature
 

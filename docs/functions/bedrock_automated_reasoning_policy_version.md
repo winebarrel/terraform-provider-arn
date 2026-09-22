@@ -16,7 +16,14 @@ arn:${Partition}:bedrock:${Region}:${Account}:automated-reasoning-policy/${Autom
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock:ap-northeast-1:111111111111:automated-reasoning-policy/automated-reasoning-policy-id:automated-reasoning-policy-version
+output "bedrock_automated_reasoning_policy_version" {
+  value = provider::arn::bedrock_automated_reasoning_policy_version("automated-reasoning-policy-id", "automated-reasoning-policy-version")
+}
+```
 
 ## Signature
 

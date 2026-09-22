@@ -16,7 +16,14 @@ arn:${Partition}:ses:${Region}:${Account}:addon-subscription/${AddonSubscription
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ses:ap-northeast-1:111111111111:addon-subscription/addon-subscription-id
+output "ses_addon_subscription" {
+  value = provider::arn::ses_addon_subscription("addon-subscription-id")
+}
+```
 
 ## Signature
 

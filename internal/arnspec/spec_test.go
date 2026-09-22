@@ -362,9 +362,9 @@ func TestGeneratedPlaceholderPositions(t *testing.T) {
 	// even when the name is already known.
 	assert.Equal(t, map[int]map[string]int{
 		0: {},
-		1: {"Partition": 2321},
+		1: {"Partition": 2332},
 		2: {"Vendor": 1},
-		3: {"Region": 2095},
-		4: {"Account": 2120, "AccountId": 22, "ManagementAccountId": 1, "VpcOwnerAccount": 1},
+		3: {"Region": 2106},
+		4: {"Account": 2131, "AccountId": 22, "ManagementAccountId": 1, "VpcOwnerAccount": 1},
 	}, counts)
 }

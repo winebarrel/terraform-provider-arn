@@ -16,7 +16,14 @@ arn:${Partition}:mediastore:${Region}:${Account}:container/${ContainerName}/${Ob
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediastore:ap-northeast-1:111111111111:container/container-name/object-path
+output "mediastore_object" {
+  value = provider::arn::mediastore_object("container-name", "object-path")
+}
+```
 
 ## Signature
 

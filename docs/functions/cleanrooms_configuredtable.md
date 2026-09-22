@@ -16,7 +16,14 @@ arn:${Partition}:cleanrooms:${Region}:${Account}:configuredtable/${ConfiguredTab
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cleanrooms:ap-northeast-1:111111111111:configuredtable/configured-table-id
+output "cleanrooms_configuredtable" {
+  value = provider::arn::cleanrooms_configuredtable("configured-table-id")
+}
+```
 
 ## Signature
 

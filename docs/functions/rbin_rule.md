@@ -16,7 +16,14 @@ arn:${Partition}:rbin:${Region}:${Account}:rule/${ResourceName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rbin:ap-northeast-1:111111111111:rule/resource-name
+output "rbin_rule" {
+  value = provider::arn::rbin_rule("resource-name")
+}
+```
 
 ## Signature
 

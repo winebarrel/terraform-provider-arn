@@ -16,7 +16,14 @@ arn:${Partition}:bedrock:${Region}:${Account}:blueprint-optimization-invocation/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock:ap-northeast-1:111111111111:blueprint-optimization-invocation/resource-id
+output "bedrock_blueprint_optimization_invocation" {
+  value = provider::arn::bedrock_blueprint_optimization_invocation("resource-id")
+}
+```
 
 ## Signature
 

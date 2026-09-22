@@ -16,7 +16,14 @@ arn:${Partition}:bedrock-agentcore:${Region}:${Account}:workload-identity-direct
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock-agentcore:ap-northeast-1:111111111111:workload-identity-directory/directory-id/workload-identity/workload-identity-name
+output "bedrock_agentcore_workload_identity" {
+  value = provider::arn::bedrock_agentcore_workload_identity("directory-id", "workload-identity-name")
+}
+```
 
 ## Signature
 

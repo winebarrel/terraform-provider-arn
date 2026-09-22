@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:ai-benchmark-job/${AIBenchmarkJo
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:ai-benchmark-job/ai-benchmark-job-name
+output "sagemaker_ai_benchmark_job" {
+  value = provider::arn::sagemaker_ai_benchmark_job("ai-benchmark-job-name")
+}
+```
 
 ## Signature
 

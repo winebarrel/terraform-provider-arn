@@ -16,7 +16,14 @@ arn:${Partition}:config:${Region}:${Account}:organization-conformance-pack/${Org
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:config:ap-northeast-1:111111111111:organization-conformance-pack/organization-conformance-pack-id
+output "config_organization_conformance_pack" {
+  value = provider::arn::config_organization_conformance_pack("organization-conformance-pack-id")
+}
+```
 
 ## Signature
 

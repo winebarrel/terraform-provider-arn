@@ -16,7 +16,14 @@ arn:${Partition}:iot:${Region}:${Account}:domainconfiguration/${DomainConfigurat
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iot:ap-northeast-1:111111111111:domainconfiguration/domain-configuration-name/id
+output "iot_domainconfiguration" {
+  value = provider::arn::iot_domainconfiguration("domain-configuration-name", "id")
+}
+```
 
 ## Signature
 

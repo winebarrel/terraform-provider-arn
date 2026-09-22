@@ -16,7 +16,14 @@ arn:${Partition}:ivschat:${Region}:${Account}:logging-configuration/${ResourceId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ivschat:ap-northeast-1:111111111111:logging-configuration/resource-id
+output "ivschat_logging_configuration" {
+  value = provider::arn::ivschat_logging_configuration("resource-id")
+}
+```
 
 ## Signature
 

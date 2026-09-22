@@ -16,7 +16,14 @@ arn:${Partition}:machinelearning:${Region}:${Account}:evaluation/${EvaluationId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:machinelearning:ap-northeast-1:111111111111:evaluation/evaluation-id
+output "machinelearning_evaluation" {
+  value = provider::arn::machinelearning_evaluation("evaluation-id")
+}
+```
 
 ## Signature
 

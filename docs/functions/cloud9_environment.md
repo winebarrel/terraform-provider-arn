@@ -16,7 +16,14 @@ arn:${Partition}:cloud9:${Region}:${Account}:environment:${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloud9:ap-northeast-1:111111111111:environment:resource-id
+output "cloud9_environment" {
+  value = provider::arn::cloud9_environment("resource-id")
+}
+```
 
 ## Signature
 

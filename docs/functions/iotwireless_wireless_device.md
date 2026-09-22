@@ -16,7 +16,14 @@ arn:${Partition}:iotwireless:${Region}:${Account}:WirelessDevice/${WirelessDevic
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotwireless:ap-northeast-1:111111111111:WirelessDevice/wireless-device-id
+output "iotwireless_wireless_device" {
+  value = provider::arn::iotwireless_wireless_device("wireless-device-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:kafkaconnect:${Region}:${Account}:worker-configuration/${Worker
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:kafkaconnect:ap-northeast-1:111111111111:worker-configuration/worker-configuration-name/uuid
+output "kafkaconnect_worker_configuration" {
+  value = provider::arn::kafkaconnect_worker_configuration("worker-configuration-name", "uuid")
+}
+```
 
 ## Signature
 

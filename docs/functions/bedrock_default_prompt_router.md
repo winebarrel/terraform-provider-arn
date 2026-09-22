@@ -16,7 +16,14 @@ arn:${Partition}:bedrock:${Region}:${Account}:default-prompt-router/${ResourceId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock:ap-northeast-1:111111111111:default-prompt-router/resource-id
+output "bedrock_default_prompt_router" {
+  value = provider::arn::bedrock_default_prompt_router("resource-id")
+}
+```
 
 ## Signature
 

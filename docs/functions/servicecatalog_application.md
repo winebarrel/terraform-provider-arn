@@ -16,7 +16,14 @@ arn:${Partition}:servicecatalog:${Region}:${Account}:/applications/${Application
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:servicecatalog:ap-northeast-1:111111111111:/applications/application-id
+output "servicecatalog_application" {
+  value = provider::arn::servicecatalog_application("application-id")
+}
+```
 
 ## Signature
 

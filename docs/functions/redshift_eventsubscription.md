@@ -16,7 +16,14 @@ arn:${Partition}:redshift:${Region}:${Account}:eventsubscription:${EventSubscrip
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:redshift:ap-northeast-1:111111111111:eventsubscription:event-subscription-name
+output "redshift_eventsubscription" {
+  value = provider::arn::redshift_eventsubscription("event-subscription-name")
+}
+```
 
 ## Signature
 

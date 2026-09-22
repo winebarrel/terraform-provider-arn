@@ -16,7 +16,14 @@ arn:${Partition}:apprunner:${Region}:${Account}:autoscalingconfiguration/${Autos
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apprunner:ap-northeast-1:111111111111:autoscalingconfiguration/autoscaling-configuration-name/autoscaling-configuration-version/autoscaling-configuration-id
+output "apprunner_autoscalingconfiguration" {
+  value = provider::arn::apprunner_autoscalingconfiguration("autoscaling-configuration-name", "autoscaling-configuration-version", "autoscaling-configuration-id")
+}
+```
 
 ## Signature
 

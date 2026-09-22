@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:local-gateway-route-table-virtual-inte
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:local-gateway-route-table-virtual-interface-group-association/local-gateway-route-table-virtual-interface-group-association-id
+output "ec2_local_gateway_route_table_virtual_interface_group_association" {
+  value = provider::arn::ec2_local_gateway_route_table_virtual_interface_group_association("local-gateway-route-table-virtual-interface-group-association-id")
+}
+```
 
 ## Signature
 

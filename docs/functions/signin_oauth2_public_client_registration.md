@@ -16,7 +16,14 @@ arn:${Partition}:signin:${Region}::external-client/dcr/*
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:signin:ap-northeast-1::external-client/dcr/*
+output "signin_oauth2_public_client_registration" {
+  value = provider::arn::signin_oauth2_public_client_registration()
+}
+```
 
 ## Signature
 

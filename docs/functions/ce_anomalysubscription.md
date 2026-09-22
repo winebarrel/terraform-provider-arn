@@ -16,7 +16,14 @@ arn:${Partition}:ce::${Account}:anomalysubscription/${Identifier}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ce::111111111111:anomalysubscription/identifier
+output "ce_anomalysubscription" {
+  value = provider::arn::ce_anomalysubscription("identifier")
+}
+```
 
 ## Signature
 

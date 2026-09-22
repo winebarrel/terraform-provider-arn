@@ -16,7 +16,14 @@ arn:${Partition}:identity-sync:${Region}:${Account}:target/${SyncProfileName}/${
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:identity-sync:ap-northeast-1:111111111111:target/sync-profile-name/sync-target-name
+output "identity_sync_sync_target_resource" {
+  value = provider::arn::identity_sync_sync_target_resource("sync-profile-name", "sync-target-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:ses:${Region}:${Account}:multi-region-endpoint/${EndpointName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ses:ap-northeast-1:111111111111:multi-region-endpoint/endpoint-name
+output "ses_multi_region_endpoint" {
+  value = provider::arn::ses_multi_region_endpoint("endpoint-name")
+}
+```
 
 ## Signature
 

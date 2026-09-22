@@ -16,7 +16,14 @@ arn:${Partition}:neptune-db:${Region}:${Account}:${ClusterResourceId}/*
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:neptune-db:ap-northeast-1:111111111111:cluster-resource-id/*
+output "neptune_db_database" {
+  value = provider::arn::neptune_db_database("cluster-resource-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:events:${Region}:${Account}:target/terminate-instance
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:events:ap-northeast-1:111111111111:target/terminate-instance
+output "events_terminate_instance" {
+  value = provider::arn::events_terminate_instance()
+}
+```
 
 ## Signature
 

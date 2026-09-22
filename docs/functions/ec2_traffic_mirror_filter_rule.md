@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:traffic-mirror-filter-rule/${TrafficMi
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:traffic-mirror-filter-rule/traffic-mirror-filter-rule-id
+output "ec2_traffic_mirror_filter_rule" {
+  value = provider::arn::ec2_traffic_mirror_filter_rule("traffic-mirror-filter-rule-id")
+}
+```
 
 ## Signature
 

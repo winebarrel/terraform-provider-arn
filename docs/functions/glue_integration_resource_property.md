@@ -16,7 +16,14 @@ arn:${Partition}:glue:${Region}:${Account}:integrationresourceproperty/${Resourc
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:glue:ap-northeast-1:111111111111:integrationresourceproperty/resource-type/resource-name
+output "glue_integration_resource_property" {
+  value = provider::arn::glue_integration_resource_property("resource-type", "resource-name")
+}
+```
 
 ## Signature
 

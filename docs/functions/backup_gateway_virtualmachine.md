@@ -16,7 +16,14 @@ arn:${Partition}:backup-gateway:${Region}:${Account}:vm/${VirtualmachineId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:backup-gateway:ap-northeast-1:111111111111:vm/virtualmachine-id
+output "backup_gateway_virtualmachine" {
+  value = provider::arn::backup_gateway_virtualmachine("virtualmachine-id")
+}
+```
 
 ## Signature
 

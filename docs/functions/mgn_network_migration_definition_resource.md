@@ -16,7 +16,14 @@ arn:${Partition}:mgn:${Region}:${Account}:network-migration-definition/${Network
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mgn:ap-northeast-1:111111111111:network-migration-definition/network-migration-definition-id
+output "mgn_network_migration_definition_resource" {
+  value = provider::arn::mgn_network_migration_definition_resource("network-migration-definition-id")
+}
+```
 
 ## Signature
 

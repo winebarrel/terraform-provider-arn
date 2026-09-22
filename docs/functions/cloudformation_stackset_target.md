@@ -16,7 +16,14 @@ arn:${Partition}:cloudformation:${Region}:${Account}:stackset-target/${StackSetT
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudformation:ap-northeast-1:111111111111:stackset-target/stack-set-target
+output "cloudformation_stackset_target" {
+  value = provider::arn::cloudformation_stackset_target("stack-set-target")
+}
+```
 
 ## Signature
 

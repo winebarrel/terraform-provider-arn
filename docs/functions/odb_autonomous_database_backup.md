@@ -16,7 +16,14 @@ arn:${Partition}:odb:${Region}:${Account}:autonomous-database-backup/${Autonomou
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:odb:ap-northeast-1:111111111111:autonomous-database-backup/autonomous-database-backup-id
+output "odb_autonomous_database_backup" {
+  value = provider::arn::odb_autonomous_database_backup("autonomous-database-backup-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:mediaconnect:${Region}:${Account}:routerNetworkInterface:${Rout
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediaconnect:ap-northeast-1:111111111111:routerNetworkInterface:router-network-interface-id
+output "mediaconnect_router_network_interface" {
+  value = provider::arn::mediaconnect_router_network_interface("router-network-interface-id")
+}
+```
 
 ## Signature
 

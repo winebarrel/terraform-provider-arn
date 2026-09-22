@@ -16,7 +16,14 @@ arn:${Partition}:codestar-notifications:${Region}:${Account}:notificationrule/${
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codestar-notifications:ap-northeast-1:111111111111:notificationrule/notification-rule-id
+output "codestar_notifications_notificationrule" {
+  value = provider::arn::codestar_notifications_notificationrule("notification-rule-id")
+}
+```
 
 ## Signature
 

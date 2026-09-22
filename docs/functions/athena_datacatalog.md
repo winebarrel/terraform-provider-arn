@@ -16,7 +16,14 @@ arn:${Partition}:athena:${Region}:${Account}:datacatalog/${DataCatalogName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:athena:ap-northeast-1:111111111111:datacatalog/data-catalog-name
+output "athena_datacatalog" {
+  value = provider::arn::athena_datacatalog("data-catalog-name")
+}
+```
 
 ## Signature
 

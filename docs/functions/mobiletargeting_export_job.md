@@ -16,7 +16,14 @@ arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/jobs/export/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mobiletargeting:ap-northeast-1:111111111111:apps/app-id/jobs/export/job-id
+output "mobiletargeting_export_job" {
+  value = provider::arn::mobiletargeting_export_job("app-id", "job-id")
+}
+```
 
 ## Signature
 

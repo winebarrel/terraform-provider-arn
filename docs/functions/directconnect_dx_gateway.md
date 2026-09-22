@@ -16,7 +16,14 @@ arn:${Partition}:directconnect::${Account}:dx-gateway/${DirectConnectGatewayId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:directconnect::111111111111:dx-gateway/direct-connect-gateway-id
+output "directconnect_dx_gateway" {
+  value = provider::arn::directconnect_dx_gateway("direct-connect-gateway-id")
+}
+```
 
 ## Signature
 

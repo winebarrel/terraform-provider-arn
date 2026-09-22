@@ -16,7 +16,14 @@ arn:${Partition}:codeguru-profiler:${Region}:${Account}:profilingGroup/${Profili
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codeguru-profiler:ap-northeast-1:111111111111:profilingGroup/profiling-group-name
+output "codeguru_profiler_profiling_group" {
+  value = provider::arn::codeguru_profiler_profiling_group("profiling-group-name")
+}
+```
 
 ## Signature
 

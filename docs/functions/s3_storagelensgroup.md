@@ -16,7 +16,14 @@ arn:${Partition}:s3:${Region}:${Account}:storage-lens-group/${Name}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:s3:ap-northeast-1:111111111111:storage-lens-group/name
+output "s3_storagelensgroup" {
+  value = provider::arn::s3_storagelensgroup("name")
+}
+```
 
 ## Signature
 

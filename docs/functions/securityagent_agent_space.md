@@ -16,7 +16,14 @@ arn:${Partition}:securityagent:${Region}:${Account}:agent-space/${AgentId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:securityagent:ap-northeast-1:111111111111:agent-space/agent-id
+output "securityagent_agent_space" {
+  value = provider::arn::securityagent_agent_space("agent-id")
+}
+```
 
 ## Signature
 

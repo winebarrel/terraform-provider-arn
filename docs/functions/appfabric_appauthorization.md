@@ -16,7 +16,14 @@ arn:${Partition}:appfabric:${Region}:${Account}:appbundle/${AppbundleId}/appauth
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appfabric:ap-northeast-1:111111111111:appbundle/appbundle-id/appauthorization/app-authorization-identifier
+output "appfabric_appauthorization" {
+  value = provider::arn::appfabric_appauthorization("appbundle-id", "app-authorization-identifier")
+}
+```
 
 ## Signature
 

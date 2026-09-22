@@ -16,7 +16,14 @@ arn:${Partition}:appflow:${Region}:${Account}:connector/${ConnectorLabel}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appflow:ap-northeast-1:111111111111:connector/connector-label
+output "appflow_connector" {
+  value = provider::arn::appflow_connector("connector-label")
+}
+```
 
 ## Signature
 

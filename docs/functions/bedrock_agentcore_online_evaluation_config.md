@@ -16,7 +16,14 @@ arn:${Partition}:bedrock-agentcore:${Region}:${Account}:online-evaluation-config
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock-agentcore:ap-northeast-1:111111111111:online-evaluation-config/online-evaluation-config-id
+output "bedrock_agentcore_online_evaluation_config" {
+  value = provider::arn::bedrock_agentcore_online_evaluation_config("online-evaluation-config-id")
+}
+```
 
 ## Signature
 

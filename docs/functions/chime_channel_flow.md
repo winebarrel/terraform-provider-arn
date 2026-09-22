@@ -16,7 +16,14 @@ arn:${Partition}:chime:${Region}:${AccountId}:app-instance/${AppInstanceId}/chan
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:chime:ap-northeast-1:111111111111:app-instance/app-instance-id/channel-flow/channel-flow-id
+output "chime_channel_flow" {
+  value = provider::arn::chime_channel_flow("app-instance-id", "channel-flow-id")
+}
+```
 
 ## Signature
 

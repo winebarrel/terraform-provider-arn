@@ -16,7 +16,14 @@ arn:${Partition}:cloudwatch:${Region}:${Account}:metric-stream/${MetricStreamNam
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudwatch:ap-northeast-1:111111111111:metric-stream/metric-stream-name
+output "cloudwatch_metric_stream" {
+  value = provider::arn::cloudwatch_metric_stream("metric-stream-name")
+}
+```
 
 ## Signature
 

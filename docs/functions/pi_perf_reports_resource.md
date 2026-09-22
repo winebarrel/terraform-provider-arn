@@ -16,7 +16,14 @@ arn:${Partition}:pi:${Region}:${Account}:perf-reports/${ServiceType}/${Identifie
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:pi:ap-northeast-1:111111111111:perf-reports/service-type/identifier/report-id
+output "pi_perf_reports_resource" {
+  value = provider::arn::pi_perf_reports_resource("service-type", "identifier", "report-id")
+}
+```
 
 ## Signature
 

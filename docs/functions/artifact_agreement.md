@@ -16,7 +16,14 @@ arn:${Partition}:artifact:::agreement/*
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:artifact:::agreement/*
+output "artifact_agreement" {
+  value = provider::arn::artifact_agreement()
+}
+```
 
 ## Signature
 

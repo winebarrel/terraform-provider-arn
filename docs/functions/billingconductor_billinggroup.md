@@ -16,7 +16,14 @@ arn:${Partition}:billingconductor::${Account}:billinggroup/${BillingGroupId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:billingconductor::111111111111:billinggroup/billing-group-id
+output "billingconductor_billinggroup" {
+  value = provider::arn::billingconductor_billinggroup("billing-group-id")
+}
+```
 
 ## Signature
 

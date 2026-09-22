@@ -16,7 +16,14 @@ arn:${Partition}:chatbot::${Account}:chat-configuration/${ConfigurationType}/${C
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:chatbot::111111111111:chat-configuration/configuration-type/chatbot-configuration-name
+output "chatbot_chatbot_configuration" {
+  value = provider::arn::chatbot_chatbot_configuration("configuration-type", "chatbot-configuration-name")
+}
+```
 
 ## Signature
 

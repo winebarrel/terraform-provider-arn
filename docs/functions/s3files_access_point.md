@@ -16,7 +16,14 @@ arn:${Partition}:s3files:${Region}:${Account}:file-system/${FileSystemId}/access
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:s3files:ap-northeast-1:111111111111:file-system/file-system-id/access-point/access-point-id
+output "s3files_access_point" {
+  value = provider::arn::s3files_access_point("file-system-id", "access-point-id")
+}
+```
 
 ## Signature
 

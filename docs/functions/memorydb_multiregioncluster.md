@@ -16,7 +16,14 @@ arn:${Partition}:memorydb::${Account}:multiregioncluster/${ClusterName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:memorydb::111111111111:multiregioncluster/cluster-name
+output "memorydb_multiregioncluster" {
+  value = provider::arn::memorydb_multiregioncluster("cluster-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:waf-regional:${Region}:${Account}:rule/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:waf-regional:ap-northeast-1:111111111111:rule/id
+output "waf_regional_rule" {
+  value = provider::arn::waf_regional_rule("id")
+}
+```
 
 ## Signature
 

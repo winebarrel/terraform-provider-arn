@@ -16,7 +16,14 @@ arn:${Partition}:health-agent:${Region}:${Account}:domain/${DomainId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:health-agent:ap-northeast-1:111111111111:domain/domain-id
+output "health_agent_domain" {
+  value = provider::arn::health_agent_domain("domain-id")
+}
+```
 
 ## Signature
 

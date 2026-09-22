@@ -16,7 +16,14 @@ arn:${Partition}:medialive:${Region}:${Account}:input:${InputId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:medialive:ap-northeast-1:111111111111:input:input-id
+output "medialive_input" {
+  value = provider::arn::medialive_input("input-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:bedrock-mantle:${Region}:${Account}:reservation/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock-mantle:ap-northeast-1:111111111111:reservation/resource-id
+output "bedrock_mantle_reservation" {
+  value = provider::arn::bedrock_mantle_reservation("resource-id")
+}
+```
 
 ## Signature
 

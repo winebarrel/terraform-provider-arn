@@ -16,7 +16,14 @@ arn:${Partition}:iam::${Account}:role/aws-service-role/opensearchservice.amazona
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::111111111111:role/aws-service-role/opensearchservice.amazonaws.com/AWSServiceRoleForAmazonOpenSearchService
+output "es_opensearchservice_role" {
+  value = provider::arn::es_opensearchservice_role()
+}
+```
 
 ## Signature
 

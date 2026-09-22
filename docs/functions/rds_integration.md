@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:integration:${IntegrationIdentifier}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:integration:integration-identifier
+output "rds_integration" {
+  value = provider::arn::rds_integration("integration-identifier")
+}
+```
 
 ## Signature
 

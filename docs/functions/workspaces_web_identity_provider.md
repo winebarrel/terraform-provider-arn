@@ -16,7 +16,14 @@ arn:${Partition}:workspaces-web:${Region}:${Account}:identityProvider/${PortalId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:workspaces-web:ap-northeast-1:111111111111:identityProvider/portal-id/identity-provider-id
+output "workspaces_web_identity_provider" {
+  value = provider::arn::workspaces_web_identity_provider("portal-id", "identity-provider-id")
+}
+```
 
 ## Signature
 

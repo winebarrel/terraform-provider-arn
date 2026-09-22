@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:lineage-group/${LineageGroupName
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:lineage-group/lineage-group-name
+output "sagemaker_lineage_group" {
+  value = provider::arn::sagemaker_lineage_group("lineage-group-name")
+}
+```
 
 ## Signature
 

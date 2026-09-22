@@ -16,7 +16,14 @@ arn:${Partition}:iot:${Region}:${Account}:tunnel/${TunnelId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iot:ap-northeast-1:111111111111:tunnel/tunnel-id
+output "iot_tunnel" {
+  value = provider::arn::iot_tunnel("tunnel-id")
+}
+```
 
 ## Signature
 

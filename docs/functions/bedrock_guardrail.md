@@ -16,7 +16,14 @@ arn:${Partition}:bedrock:${Region}:${Account}:guardrail/${GuardrailId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock:ap-northeast-1:111111111111:guardrail/guardrail-id
+output "bedrock_guardrail" {
+  value = provider::arn::bedrock_guardrail("guardrail-id")
+}
+```
 
 ## Signature
 

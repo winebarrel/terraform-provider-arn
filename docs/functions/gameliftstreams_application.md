@@ -16,7 +16,14 @@ arn:${Partition}:gameliftstreams:${Region}:${Account}:application/${ApplicationI
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:gameliftstreams:ap-northeast-1:111111111111:application/application-id
+output "gameliftstreams_application" {
+  value = provider::arn::gameliftstreams_application("application-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:endpoint/${EndpointName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:endpoint/endpoint-name
+output "sagemaker_endpoint" {
+  value = provider::arn::sagemaker_endpoint("endpoint-name")
+}
+```
 
 ## Signature
 

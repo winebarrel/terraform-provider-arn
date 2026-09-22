@@ -16,7 +16,14 @@ arn:${Partition}:route53:::queryloggingconfig/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:route53:::queryloggingconfig/id
+output "route53_queryloggingconfig" {
+  value = provider::arn::route53_queryloggingconfig("id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:states:${Region}:${Account}:execution:${StateMachineName}:${Exe
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:states:ap-northeast-1:111111111111:execution:state-machine-name:execution-id
+output "states_execution" {
+  value = provider::arn::states_execution("state-machine-name", "execution-id")
+}
+```
 
 ## Signature
 

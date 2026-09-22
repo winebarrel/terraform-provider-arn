@@ -16,7 +16,14 @@ arn:${Partition}:sso::${AccountId}:trustedTokenIssuer/${InstanceId}/${TrustedTok
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sso::111111111111:trustedTokenIssuer/instance-id/trusted-token-issuer-id
+output "sso_trusted_token_issuer" {
+  value = provider::arn::sso_trusted_token_issuer("instance-id", "trusted-token-issuer-id")
+}
+```
 
 ## Signature
 

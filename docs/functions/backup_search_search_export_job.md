@@ -16,7 +16,14 @@ arn:${Partition}:backup-search:${Region}:${Account}:search-export-job/${Resource
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:backup-search:ap-northeast-1:111111111111:search-export-job/resource-id
+output "backup_search_search_export_job" {
+  value = provider::arn::backup_search_search_export_job("resource-id")
+}
+```
 
 ## Signature
 

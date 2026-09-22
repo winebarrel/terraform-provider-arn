@@ -16,7 +16,14 @@ arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/rule/${Rule
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:connect:ap-northeast-1:111111111111:instance/instance-id/rule/rule-id
+output "connect_rule" {
+  value = provider::arn::connect_rule("instance-id", "rule-id")
+}
+```
 
 ## Signature
 

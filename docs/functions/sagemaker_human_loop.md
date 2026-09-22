@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:human-loop/${HumanLoopName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:human-loop/human-loop-name
+output "sagemaker_human_loop" {
+  value = provider::arn::sagemaker_human_loop("human-loop-name")
+}
+```
 
 ## Signature
 

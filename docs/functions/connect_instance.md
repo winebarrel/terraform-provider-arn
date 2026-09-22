@@ -16,7 +16,14 @@ arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:connect:ap-northeast-1:111111111111:instance/instance-id
+output "connect_instance" {
+  value = provider::arn::connect_instance("instance-id")
+}
+```
 
 ## Signature
 

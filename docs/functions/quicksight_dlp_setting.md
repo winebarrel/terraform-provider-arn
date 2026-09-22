@@ -16,7 +16,14 @@ arn:${Partition}:quicksight:${Region}:${Account}:dlpsetting/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:quicksight:ap-northeast-1:111111111111:dlpsetting/resource-id
+output "quicksight_dlp_setting" {
+  value = provider::arn::quicksight_dlp_setting("resource-id")
+}
+```
 
 ## Signature
 

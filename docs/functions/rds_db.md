@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:db:${DbInstanceName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:db:db-instance-name
+output "rds_db" {
+  value = provider::arn::rds_db("db-instance-name")
+}
+```
 
 ## Signature
 

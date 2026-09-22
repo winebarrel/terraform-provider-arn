@@ -16,7 +16,14 @@ arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/events
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mobiletargeting:ap-northeast-1:111111111111:apps/app-id/events
+output "mobiletargeting_events" {
+  value = provider::arn::mobiletargeting_events("app-id")
+}
+```
 
 ## Signature
 

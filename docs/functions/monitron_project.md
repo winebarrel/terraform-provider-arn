@@ -16,7 +16,14 @@ arn:${Partition}:monitron:${Region}:${Account}:project/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:monitron:ap-northeast-1:111111111111:project/resource-id
+output "monitron_project" {
+  value = provider::arn::monitron_project("resource-id")
+}
+```
 
 ## Signature
 

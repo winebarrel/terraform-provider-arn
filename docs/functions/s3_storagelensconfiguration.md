@@ -16,7 +16,14 @@ arn:${Partition}:s3:${Region}:${Account}:storage-lens/${ConfigId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:s3:ap-northeast-1:111111111111:storage-lens/config-id
+output "s3_storagelensconfiguration" {
+  value = provider::arn::s3_storagelensconfiguration("config-id")
+}
+```
 
 ## Signature
 

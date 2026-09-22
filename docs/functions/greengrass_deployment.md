@@ -16,7 +16,14 @@ arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/groups/${GroupId}/d
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:greengrass:ap-northeast-1:111111111111:/greengrass/groups/group-id/deployments/deployment-id
+output "greengrass_deployment" {
+  value = provider::arn::greengrass_deployment("group-id", "deployment-id")
+}
+```
 
 ## Signature
 

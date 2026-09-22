@@ -16,7 +16,14 @@ arn:${Partition}:controlcatalog:::common-control/${CommonControlId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:controlcatalog:::common-control/common-control-id
+output "controlcatalog_common_control" {
+  value = provider::arn::controlcatalog_common_control("common-control-id")
+}
+```
 
 ## Signature
 

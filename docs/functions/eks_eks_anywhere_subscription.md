@@ -16,7 +16,14 @@ arn:${Partition}:eks:${Region}:${Account}:eks-anywhere-subscription/${UUID}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:eks:ap-northeast-1:111111111111:eks-anywhere-subscription/uuid
+output "eks_eks_anywhere_subscription" {
+  value = provider::arn::eks_eks_anywhere_subscription("uuid")
+}
+```
 
 ## Signature
 

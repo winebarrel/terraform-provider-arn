@@ -16,7 +16,14 @@ arn:${Partition}:amplifybackend:${Region}:${Account}:/backend/${AppId}/environme
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:amplifybackend:ap-northeast-1:111111111111:/backend/app-id/environments/*
+output "amplifybackend_environment" {
+  value = provider::arn::amplifybackend_environment("app-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:schemas:${Region}:${Account}:schema/${RegistryName}/${SchemaNam
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:schemas:ap-northeast-1:111111111111:schema/registry-name/schema-name
+output "schemas_schema" {
+  value = provider::arn::schemas_schema("registry-name", "schema-name")
+}
+```
 
 ## Signature
 

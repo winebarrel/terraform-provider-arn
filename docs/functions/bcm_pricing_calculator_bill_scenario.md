@@ -16,7 +16,14 @@ arn:${Partition}:bcm-pricing-calculator::${Account}:bill-scenario/${BillScenario
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bcm-pricing-calculator::111111111111:bill-scenario/bill-scenario-id
+output "bcm_pricing_calculator_bill_scenario" {
+  value = provider::arn::bcm_pricing_calculator_bill_scenario("bill-scenario-id")
+}
+```
 
 ## Signature
 

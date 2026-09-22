@@ -16,7 +16,14 @@ arn:${Partition}:kafkaconnect:${Region}:${Account}:connector/${ConnectorName}/${
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:kafkaconnect:ap-northeast-1:111111111111:connector/connector-name/uuid
+output "kafkaconnect_connector" {
+  value = provider::arn::kafkaconnect_connector("connector-name", "uuid")
+}
+```
 
 ## Signature
 

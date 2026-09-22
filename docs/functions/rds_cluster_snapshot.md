@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:cluster-snapshot:${ClusterSnapshotName
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:cluster-snapshot:cluster-snapshot-name
+output "rds_cluster_snapshot" {
+  value = provider::arn::rds_cluster_snapshot("cluster-snapshot-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:iam::aws:role-template/${AWSServicePrincipal}/${RoleTemplateNam
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::aws:role-template/aws-service-principal/role-template-name:role-template-major-version
+output "iam_role_template" {
+  value = provider::arn::iam_role_template("aws-service-principal", "role-template-name", "role-template-major-version")
+}
+```
 
 ## Signature
 

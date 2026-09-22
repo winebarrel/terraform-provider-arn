@@ -16,7 +16,14 @@ arn:${Partition}:codebuild:${Region}:${Account}:report-group/${ReportGroupName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codebuild:ap-northeast-1:111111111111:report-group/report-group-name
+output "codebuild_report_group" {
+  value = provider::arn::codebuild_report_group("report-group-name")
+}
+```
 
 ## Signature
 

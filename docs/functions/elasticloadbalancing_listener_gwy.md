@@ -16,7 +16,14 @@ arn:${Partition}:elasticloadbalancing:${Region}:${Account}:listener/gwy/${LoadBa
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:elasticloadbalancing:ap-northeast-1:111111111111:listener/gwy/load-balancer-name/load-balancer-id/listener-id
+output "elasticloadbalancing_listener_gwy" {
+  value = provider::arn::elasticloadbalancing_listener_gwy("load-balancer-name", "load-balancer-id", "listener-id")
+}
+```
 
 ## Signature
 

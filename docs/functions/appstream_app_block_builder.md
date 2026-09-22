@@ -16,7 +16,14 @@ arn:${Partition}:appstream:${Region}:${Account}:app-block-builder/${AppBlockBuil
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appstream:ap-northeast-1:111111111111:app-block-builder/app-block-builder-name
+output "appstream_app_block_builder" {
+  value = provider::arn::appstream_app_block_builder("app-block-builder-name")
+}
+```
 
 ## Signature
 

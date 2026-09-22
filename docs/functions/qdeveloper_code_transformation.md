@@ -16,7 +16,14 @@ arn:${Partition}:qdeveloper:${Region}:${Account}:codeTransformation/${Identifier
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:qdeveloper:ap-northeast-1:111111111111:codeTransformation/identifier
+output "qdeveloper_code_transformation" {
+  value = provider::arn::qdeveloper_code_transformation("identifier")
+}
+```
 
 ## Signature
 

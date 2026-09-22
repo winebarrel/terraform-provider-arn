@@ -16,7 +16,14 @@ arn:${Partition}:lookoutequipment:${Region}:${Account}:model/${ModelName}/${Mode
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:lookoutequipment:ap-northeast-1:111111111111:model/model-name/model-id/model-version/model-version-number
+output "lookoutequipment_model_version" {
+  value = provider::arn::lookoutequipment_model_version("model-name", "model-id", "model-version-number")
+}
+```
 
 ## Signature
 

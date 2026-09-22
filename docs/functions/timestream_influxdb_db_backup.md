@@ -16,7 +16,14 @@ arn:${Partition}:timestream-influxdb:${Region}:${Account}:db-backup/${DbBackupId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:timestream-influxdb:ap-northeast-1:111111111111:db-backup/db-backup-id
+output "timestream_influxdb_db_backup" {
+  value = provider::arn::timestream_influxdb_db_backup("db-backup-id")
+}
+```
 
 ## Signature
 

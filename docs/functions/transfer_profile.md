@@ -16,7 +16,14 @@ arn:${Partition}:transfer:${Region}:${Account}:profile/${ProfileId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:transfer:ap-northeast-1:111111111111:profile/profile-id
+output "transfer_profile" {
+  value = provider::arn::transfer_profile("profile-id")
+}
+```
 
 ## Signature
 

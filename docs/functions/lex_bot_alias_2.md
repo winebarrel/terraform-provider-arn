@@ -16,7 +16,14 @@ arn:${Partition}:lex:${Region}:${Account}:bot:${BotName}:${BotAlias}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:lex:ap-northeast-1:111111111111:bot:bot-name:bot-alias
+output "lex_bot_alias_2" {
+  value = provider::arn::lex_bot_alias_2("bot-name", "bot-alias")
+}
+```
 
 ## Signature
 

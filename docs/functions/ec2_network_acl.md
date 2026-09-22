@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:network-acl/${NaclId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:network-acl/nacl-id
+output "ec2_network_acl" {
+  value = provider::arn::ec2_network_acl("nacl-id")
+}
+```
 
 ## Signature
 

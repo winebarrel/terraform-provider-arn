@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}::/usageplans
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1::/usageplans
+output "apigateway_usage_plans" {
+  value = provider::arn::apigateway_usage_plans()
+}
+```
 
 ## Signature
 

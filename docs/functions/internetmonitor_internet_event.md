@@ -16,7 +16,14 @@ arn:${Partition}:internetmonitor::${Account}:internet-event/${InternetEventId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:internetmonitor::111111111111:internet-event/internet-event-id
+output "internetmonitor_internet_event" {
+  value = provider::arn::internetmonitor_internet_event("internet-event-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:transfer:${Region}:${Account}:certificate/${CertificateId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:transfer:ap-northeast-1:111111111111:certificate/certificate-id
+output "transfer_certificate" {
+  value = provider::arn::transfer_certificate("certificate-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:iotfleetwise:${Region}:${Account}:model-manifest/${Name}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotfleetwise:ap-northeast-1:111111111111:model-manifest/name
+output "iotfleetwise_modelmanifest" {
+  value = provider::arn::iotfleetwise_modelmanifest("name")
+}
+```
 
 ## Signature
 

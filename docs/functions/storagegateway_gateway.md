@@ -16,7 +16,14 @@ arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:storagegateway:ap-northeast-1:111111111111:gateway/gateway-id
+output "storagegateway_gateway" {
+  value = provider::arn::storagegateway_gateway("gateway-id")
+}
+```
 
 ## Signature
 

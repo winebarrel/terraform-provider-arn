@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:cluster-endpoint:${DbClusterEndpoint}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:cluster-endpoint:db-cluster-endpoint
+output "rds_cluster_endpoint" {
+  value = provider::arn::rds_cluster_endpoint("db-cluster-endpoint")
+}
+```
 
 ## Signature
 

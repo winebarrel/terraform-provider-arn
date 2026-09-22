@@ -16,7 +16,14 @@ arn:${Partition}:geo:${Region}:${Account}:route-calculator/${CalculatorName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:geo:ap-northeast-1:111111111111:route-calculator/calculator-name
+output "geo_route_calculator" {
+  value = provider::arn::geo_route_calculator("calculator-name")
+}
+```
 
 ## Signature
 

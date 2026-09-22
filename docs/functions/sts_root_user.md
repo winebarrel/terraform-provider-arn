@@ -16,7 +16,14 @@ arn:${Partition}:iam::${Account}:root
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::111111111111:root
+output "sts_root_user" {
+  value = provider::arn::sts_root_user()
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:backup:${Region}:${Account}:legal-hold:${LegalHoldId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:backup:ap-northeast-1:111111111111:legal-hold:legal-hold-id
+output "backup_legal_hold" {
+  value = provider::arn::backup_legal_hold("legal-hold-id")
+}
+```
 
 ## Signature
 

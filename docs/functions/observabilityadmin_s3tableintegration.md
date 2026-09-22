@@ -16,7 +16,14 @@ arn:${Partition}:observabilityadmin:${Region}:${Account}:s3tableintegration/${S3
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:observabilityadmin:ap-northeast-1:111111111111:s3tableintegration/s3-table-integration-identifier
+output "observabilityadmin_s3tableintegration" {
+  value = provider::arn::observabilityadmin_s3tableintegration("s3-table-integration-identifier")
+}
+```
 
 ## Signature
 

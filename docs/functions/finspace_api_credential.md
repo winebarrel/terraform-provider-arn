@@ -16,7 +16,14 @@ arn:${Partition}:finspace-api:${Region}:${Account}:/credentials/programmatic
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:finspace-api:ap-northeast-1:111111111111:/credentials/programmatic
+output "finspace_api_credential" {
+  value = provider::arn::finspace_api_credential()
+}
+```
 
 ## Signature
 

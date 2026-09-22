@@ -16,7 +16,14 @@ arn:${Partition}:bedrock-agentcore:${Region}:${Account}:token-vault/${TokenVault
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock-agentcore:ap-northeast-1:111111111111:token-vault/token-vault-id/apikeycredentialprovider/name
+output "bedrock_agentcore_apikeycredentialprovider" {
+  value = provider::arn::bedrock_agentcore_apikeycredentialprovider("token-vault-id", "name")
+}
+```
 
 ## Signature
 

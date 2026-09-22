@@ -16,7 +16,14 @@ arn:${Partition}:lambda:${Region}:${Account}:event-source-mapping:${UUID}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:lambda:ap-northeast-1:111111111111:event-source-mapping:uuid
+output "lambda_event_source_mapping" {
+  value = provider::arn::lambda_event_source_mapping("uuid")
+}
+```
 
 ## Signature
 

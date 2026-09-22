@@ -16,7 +16,14 @@ arn:${Partition}:kms:${Region}:${Account}:key/${KeyId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:kms:ap-northeast-1:111111111111:key/key-id
+output "kinesis_kms_key" {
+  value = provider::arn::kinesis_kms_key("key-id")
+}
+```
 
 ## Signature
 

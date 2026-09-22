@@ -16,7 +16,14 @@ arn:${Partition}:mobiletargeting:${Region}:${Account}:templates
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:mobiletargeting:ap-northeast-1:111111111111:templates
+output "mobiletargeting_templates" {
+  value = provider::arn::mobiletargeting_templates()
+}
+```
 
 ## Signature
 

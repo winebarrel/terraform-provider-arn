@@ -16,7 +16,14 @@ arn:${Partition}:ses:${Region}:${Account}:custom-verification-email-template/${T
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ses:ap-northeast-1:111111111111:custom-verification-email-template/template-name
+output "ses_custom_verification_email_template" {
+  value = provider::arn::ses_custom_verification_email_template("template-name")
+}
+```
 
 ## Signature
 

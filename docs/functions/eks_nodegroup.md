@@ -16,7 +16,14 @@ arn:${Partition}:eks:${Region}:${Account}:nodegroup/${ClusterName}/${NodegroupNa
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:eks:ap-northeast-1:111111111111:nodegroup/cluster-name/nodegroup-name/uuid
+output "eks_nodegroup" {
+  value = provider::arn::eks_nodegroup("cluster-name", "nodegroup-name", "uuid")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:ecs:${Region}:${Account}:container-instance/${ClusterName}/${Co
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ecs:ap-northeast-1:111111111111:container-instance/cluster-name/container-instance-id
+output "ecs_container_instance" {
+  value = provider::arn::ecs_container_instance("cluster-name", "container-instance-id")
+}
+```
 
 ## Signature
 

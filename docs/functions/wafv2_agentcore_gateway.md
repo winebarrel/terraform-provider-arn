@@ -16,7 +16,14 @@ arn:${Partition}:bedrock-agentcore:${Region}:${Account}:gateway/${GatewayId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock-agentcore:ap-northeast-1:111111111111:gateway/gateway-id
+output "wafv2_agentcore_gateway" {
+  value = provider::arn::wafv2_agentcore_gateway("gateway-id")
+}
+```
 
 ## Signature
 

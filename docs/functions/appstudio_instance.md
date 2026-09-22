@@ -16,7 +16,14 @@ arn:${Partition}:appstudio:${Region}:${Account}:instance/${InstanceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appstudio:ap-northeast-1:111111111111:instance/instance-id
+output "appstudio_instance" {
+  value = provider::arn::appstudio_instance("instance-id")
+}
+```
 
 ## Signature
 

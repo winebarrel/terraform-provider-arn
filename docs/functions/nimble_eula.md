@@ -16,7 +16,14 @@ arn:${Partition}:nimble:${Region}:${Account}:eula/${EulaId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:nimble:ap-northeast-1:111111111111:eula/eula-id
+output "nimble_eula" {
+  value = provider::arn::nimble_eula("eula-id")
+}
+```
 
 ## Signature
 

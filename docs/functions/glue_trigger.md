@@ -16,7 +16,14 @@ arn:${Partition}:glue:${Region}:${Account}:trigger/${TriggerName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:glue:ap-northeast-1:111111111111:trigger/trigger-name
+output "glue_trigger" {
+  value = provider::arn::glue_trigger("trigger-name")
+}
+```
 
 ## Signature
 

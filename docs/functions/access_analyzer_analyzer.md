@@ -16,7 +16,14 @@ arn:${Partition}:access-analyzer:${Region}:${Account}:analyzer/${AnalyzerName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:access-analyzer:ap-northeast-1:111111111111:analyzer/analyzer-name
+output "access_analyzer_analyzer" {
+  value = provider::arn::access_analyzer_analyzer("analyzer-name")
+}
+```
 
 ## Signature
 

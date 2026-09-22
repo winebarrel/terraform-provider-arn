@@ -16,7 +16,14 @@ arn:${Partition}:license-manager::${Account}:license:${LicenseId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:license-manager::111111111111:license:license-id
+output "license_manager_license" {
+  value = provider::arn::license_manager_license("license-id")
+}
+```
 
 ## Signature
 

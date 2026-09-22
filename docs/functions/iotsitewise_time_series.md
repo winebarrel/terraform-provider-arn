@@ -16,7 +16,14 @@ arn:${Partition}:iotsitewise:${Region}:${Account}:time-series/${TimeSeriesId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotsitewise:ap-northeast-1:111111111111:time-series/time-series-id
+output "iotsitewise_time_series" {
+  value = provider::arn::iotsitewise_time_series("time-series-id")
+}
+```
 
 ## Signature
 

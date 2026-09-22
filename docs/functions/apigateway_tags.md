@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}::/tags/${UrlEncodedResourceARN}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1::/tags/url-encoded-resource-arn
+output "apigateway_tags" {
+  value = provider::arn::apigateway_tags("url-encoded-resource-arn")
+}
+```
 
 ## Signature
 

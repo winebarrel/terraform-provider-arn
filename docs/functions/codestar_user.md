@@ -16,7 +16,14 @@ arn:${Partition}:iam::${Account}:user/${AwsUserName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::111111111111:user/aws-user-name
+output "codestar_user" {
+  value = provider::arn::codestar_user("aws-user-name")
+}
+```
 
 ## Signature
 

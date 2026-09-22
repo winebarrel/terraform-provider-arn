@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:application-status-check/${Application
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:application-status-check/application-status-check-id
+output "ec2_application_status_check" {
+  value = provider::arn::ec2_application_status_check("application-status-check-id")
+}
+```
 
 ## Signature
 

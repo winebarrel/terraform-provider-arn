@@ -16,7 +16,14 @@ arn:${Partition}:directconnect::${Account}:dx-resiliency-group/${ResiliencyGroup
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:directconnect::111111111111:dx-resiliency-group/resiliency-group-id
+output "directconnect_dx_resiliency_group" {
+  value = provider::arn::directconnect_dx_resiliency_group("resiliency-group-id")
+}
+```
 
 ## Signature
 

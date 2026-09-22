@@ -16,7 +16,14 @@ arn:${Partition}:comprehend:${Region}:${Account}:key-phrases-detection-job/${Job
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:comprehend:ap-northeast-1:111111111111:key-phrases-detection-job/job-id
+output "comprehend_key_phrases_detection_job" {
+  value = provider::arn::comprehend_key_phrases_detection_job("job-id")
+}
+```
 
 ## Signature
 

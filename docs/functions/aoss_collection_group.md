@@ -16,7 +16,14 @@ arn:${Partition}:aoss:${Region}:${Account}:collection-group/${CollectionGroupId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:aoss:ap-northeast-1:111111111111:collection-group/collection-group-id
+output "aoss_collection_group" {
+  value = provider::arn::aoss_collection_group("collection-group-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:athena:${Region}:${Account}:workgroup/${WorkGroupName}/session/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:athena:ap-northeast-1:111111111111:workgroup/work-group-name/session/session-id
+output "athena_session" {
+  value = provider::arn::athena_session("work-group-name", "session-id")
+}
+```
 
 ## Signature
 

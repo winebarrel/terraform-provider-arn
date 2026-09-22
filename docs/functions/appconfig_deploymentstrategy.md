@@ -16,7 +16,14 @@ arn:${Partition}:appconfig:${Region}:${Account}:deploymentstrategy/${DeploymentS
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appconfig:ap-northeast-1:111111111111:deploymentstrategy/deployment-strategy-id
+output "appconfig_deploymentstrategy" {
+  value = provider::arn::appconfig_deploymentstrategy("deployment-strategy-id")
+}
+```
 
 ## Signature
 

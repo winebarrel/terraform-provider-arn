@@ -16,7 +16,14 @@ arn:${Partition}:robomaker:${Region}:${Account}:deployment-fleet/${FleetName}/${
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:robomaker:ap-northeast-1:111111111111:deployment-fleet/fleet-name/created-on-epoch
+output "robomaker_deployment_fleet" {
+  value = provider::arn::robomaker_deployment_fleet("fleet-name", "created-on-epoch")
+}
+```
 
 ## Signature
 

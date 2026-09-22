@@ -16,7 +16,14 @@ arn:${Partition}:s3::${Account}:accesspoint/${AccessPointAlias}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:s3::111111111111:accesspoint/access-point-alias
+output "s3_multiregionaccesspoint" {
+  value = provider::arn::s3_multiregionaccesspoint("access-point-alias")
+}
+```
 
 ## Signature
 

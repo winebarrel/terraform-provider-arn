@@ -16,7 +16,14 @@ arn:${Partition}:quicksight::${Account}:assignment/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:quicksight::111111111111:assignment/resource-id
+output "quicksight_assignment" {
+  value = provider::arn::quicksight_assignment("resource-id")
+}
+```
 
 ## Signature
 

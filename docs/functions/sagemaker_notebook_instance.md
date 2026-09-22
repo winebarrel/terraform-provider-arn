@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:notebook-instance/${NotebookInst
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:notebook-instance/notebook-instance-name
+output "sagemaker_notebook_instance" {
+  value = provider::arn::sagemaker_notebook_instance("notebook-instance-name")
+}
+```
 
 ## Signature
 

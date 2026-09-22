@@ -16,7 +16,14 @@ arn:${Partition}:imagebuilder:${Region}:${Account}:workflow-step-execution/${Wor
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:imagebuilder:ap-northeast-1:111111111111:workflow-step-execution/workflow-step-execution-id
+output "imagebuilder_workflow_step_execution" {
+  value = provider::arn::imagebuilder_workflow_step_execution("workflow-step-execution-id")
+}
+```
 
 ## Signature
 

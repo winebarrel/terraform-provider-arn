@@ -16,7 +16,14 @@ arn:${Partition}:emr-containers:${Region}:${Account}:/virtualclusters/${VirtualC
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:emr-containers:ap-northeast-1:111111111111:/virtualclusters/virtual-cluster-id/jobruns/job-run-id
+output "emr_containers_job_run" {
+  value = provider::arn::emr_containers_job_run("virtual-cluster-id", "job-run-id")
+}
+```
 
 ## Signature
 

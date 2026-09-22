@@ -16,7 +16,14 @@ arn:${Partition}:mediatailor:${Region}:${Account}:program/${ChannelName}/${Progr
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediatailor:ap-northeast-1:111111111111:program/channel-name/program-name
+output "mediatailor_program" {
+  value = provider::arn::mediatailor_program("channel-name", "program-name")
+}
+```
 
 ## Signature
 

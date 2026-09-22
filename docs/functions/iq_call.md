@@ -16,7 +16,14 @@ arn:${Partition}:iq:${Region}::call/${CallId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iq:ap-northeast-1::call/call-id
+output "iq_call" {
+  value = provider::arn::iq_call("call-id")
+}
+```
 
 ## Signature
 

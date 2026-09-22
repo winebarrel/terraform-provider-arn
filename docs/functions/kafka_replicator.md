@@ -16,7 +16,14 @@ arn:${Partition}:kafka:${Region}:${Account}:replicator/${ReplicatorName}/${Uuid}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:kafka:ap-northeast-1:111111111111:replicator/replicator-name/uuid
+output "kafka_replicator" {
+  value = provider::arn::kafka_replicator("replicator-name", "uuid")
+}
+```
 
 ## Signature
 

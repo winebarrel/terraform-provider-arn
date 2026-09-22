@@ -16,7 +16,14 @@ arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/resource
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:partnercentral:ap-northeast-1:111111111111:catalog/catalog/resource-snapshot-job/identifier
+output "partnercentral_resource_snapshot_job" {
+  value = provider::arn::partnercentral_resource_snapshot_job("catalog", "identifier")
+}
+```
 
 ## Signature
 

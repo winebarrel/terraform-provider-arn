@@ -16,7 +16,14 @@ arn:${Partition}:fms:${Region}:${Account}:policy/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:fms:ap-northeast-1:111111111111:policy/id
+output "fms_policy" {
+  value = provider::arn::fms_policy("id")
+}
+```
 
 ## Signature
 

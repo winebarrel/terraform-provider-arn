@@ -16,7 +16,14 @@ arn:${Partition}:workspaces-instances:${Region}:${Account}:workspaceinstance/${W
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:workspaces-instances:ap-northeast-1:111111111111:workspaceinstance/workspace-instance-id
+output "workspaces_instances_workspace_instance_id" {
+  value = provider::arn::workspaces_instances_workspace_instance_id("workspace-instance-id")
+}
+```
 
 ## Signature
 

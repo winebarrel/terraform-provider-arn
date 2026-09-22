@@ -16,7 +16,14 @@ arn:${Partition}:organizations::${Account}:handshake/o-${OrganizationId}/${Hands
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:organizations::111111111111:handshake/o-organization-id/handshake-type/h-handshake-id
+output "organizations_handshake" {
+  value = provider::arn::organizations_handshake("organization-id", "handshake-type", "handshake-id")
+}
+```
 
 ## Signature
 

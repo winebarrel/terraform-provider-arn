@@ -16,7 +16,14 @@ arn:${Partition}:autoscaling:${Region}:${Account}:autoScalingGroup:${GroupId}:au
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:autoscaling:ap-northeast-1:111111111111:autoScalingGroup:group-id:autoScalingGroupName/group-friendly-name
+output "autoscaling_auto_scaling_group" {
+  value = provider::arn::autoscaling_auto_scaling_group("group-id", "group-friendly-name")
+}
+```
 
 ## Signature
 

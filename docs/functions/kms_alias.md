@@ -16,7 +16,14 @@ arn:${Partition}:kms:${Region}:${Account}:alias/${Alias}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:kms:ap-northeast-1:111111111111:alias/alias
+output "kms_alias" {
+  value = provider::arn::kms_alias("alias")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:kafka:${Region}:${Account}:group/${ClusterName}/${ClusterUuid}/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:kafka:ap-northeast-1:111111111111:group/cluster-name/cluster-uuid/group-name
+output "kafka_cluster_group" {
+  value = provider::arn::kafka_cluster_group("cluster-name", "cluster-uuid", "group-name")
+}
+```
 
 ## Signature
 

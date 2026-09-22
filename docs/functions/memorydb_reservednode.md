@@ -16,7 +16,14 @@ arn:${Partition}:memorydb:${Region}:${Account}:reservednode/${ReservationID}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:memorydb:ap-northeast-1:111111111111:reservednode/reservation-id
+output "memorydb_reservednode" {
+  value = provider::arn::memorydb_reservednode("reservation-id")
+}
+```
 
 ## Signature
 

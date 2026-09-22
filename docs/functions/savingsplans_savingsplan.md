@@ -16,7 +16,14 @@ arn:${Partition}:savingsplans::${Account}:savingsplan/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:savingsplans::111111111111:savingsplan/resource-id
+output "savingsplans_savingsplan" {
+  value = provider::arn::savingsplans_savingsplan("resource-id")
+}
+```
 
 ## Signature
 

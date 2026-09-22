@@ -16,7 +16,14 @@ arn:${Partition}:lambda:${Region}:${Account}:code-signing-config:${CodeSigningCo
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:lambda:ap-northeast-1:111111111111:code-signing-config:code-signing-config-id
+output "lambda_code_signing_config" {
+  value = provider::arn::lambda_code_signing_config("code-signing-config-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:storagegateway:${Region}:${Account}:gateway/${GatewayId}/target
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:storagegateway:ap-northeast-1:111111111111:gateway/gateway-id/target/iscsi-target
+output "storagegateway_target" {
+  value = provider::arn::storagegateway_target("gateway-id", "iscsi-target")
+}
+```
 
 ## Signature
 

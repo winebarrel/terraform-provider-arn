@@ -16,7 +16,14 @@ arn:${Partition}:sso:::instance/${InstanceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sso:::instance/instance-id
+output "sso_instance" {
+  value = provider::arn::sso_instance("instance-id")
+}
+```
 
 ## Signature
 

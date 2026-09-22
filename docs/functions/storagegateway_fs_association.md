@@ -16,7 +16,14 @@ arn:${Partition}:storagegateway:${Region}:${Account}:fs-association/${FsaId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:storagegateway:ap-northeast-1:111111111111:fs-association/fsa-id
+output "storagegateway_fs_association" {
+  value = provider::arn::storagegateway_fs_association("fsa-id")
+}
+```
 
 ## Signature
 

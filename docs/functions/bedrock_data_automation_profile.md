@@ -16,7 +16,14 @@ arn:${Partition}:bedrock:${Region}:${Account}:data-automation-profile/${ProfileI
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock:ap-northeast-1:111111111111:data-automation-profile/profile-id
+output "bedrock_data_automation_profile" {
+  value = provider::arn::bedrock_data_automation_profile("profile-id")
+}
+```
 
 ## Signature
 

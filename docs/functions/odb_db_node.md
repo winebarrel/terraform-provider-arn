@@ -16,7 +16,14 @@ arn:${Partition}:odb:${Region}:${Account}:db-node/${DbNodeId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:odb:ap-northeast-1:111111111111:db-node/db-node-id
+output "odb_db_node" {
+  value = provider::arn::odb_db_node("db-node-id")
+}
+```
 
 ## Signature
 

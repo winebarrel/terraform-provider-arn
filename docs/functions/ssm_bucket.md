@@ -16,7 +16,14 @@ arn:${Partition}:s3:::${BucketName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:s3:::bucket-name
+output "ssm_bucket" {
+  value = provider::arn::ssm_bucket("bucket-name")
+}
+```
 
 ## Signature
 

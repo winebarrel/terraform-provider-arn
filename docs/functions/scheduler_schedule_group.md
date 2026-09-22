@@ -16,7 +16,14 @@ arn:${Partition}:scheduler:${Region}:${Account}:schedule-group/${GroupName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:scheduler:ap-northeast-1:111111111111:schedule-group/group-name
+output "scheduler_schedule_group" {
+  value = provider::arn::scheduler_schedule_group("group-name")
+}
+```
 
 ## Signature
 

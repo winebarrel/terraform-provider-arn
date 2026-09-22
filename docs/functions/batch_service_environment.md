@@ -16,7 +16,14 @@ arn:${Partition}:batch:${Region}:${Account}:service-environment/${ServiceEnviron
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:batch:ap-northeast-1:111111111111:service-environment/service-environment-name
+output "batch_service_environment" {
+  value = provider::arn::batch_service_environment("service-environment-name")
+}
+```
 
 ## Signature
 

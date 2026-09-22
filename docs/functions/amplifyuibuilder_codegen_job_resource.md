@@ -16,7 +16,14 @@ arn:${Partition}:amplifyuibuilder:${Region}:${Account}:app/${AppId}/environment/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:amplifyuibuilder:ap-northeast-1:111111111111:app/app-id/environment/environment-name/codegen-jobs/id
+output "amplifyuibuilder_codegen_job_resource" {
+  value = provider::arn::amplifyuibuilder_codegen_job_resource("app-id", "environment-name", "id")
+}
+```
 
 ## Signature
 

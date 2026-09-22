@@ -16,7 +16,14 @@ arn:${Partition}:repostspace:${Region}:${Account}:space/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:repostspace:ap-northeast-1:111111111111:space/resource-id
+output "repostspace_space" {
+  value = provider::arn::repostspace_space("resource-id")
+}
+```
 
 ## Signature
 

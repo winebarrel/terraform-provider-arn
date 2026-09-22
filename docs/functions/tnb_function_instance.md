@@ -16,7 +16,14 @@ arn:${Partition}:tnb:${Region}:${Account}:function-instance/${FunctionInstanceId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:tnb:ap-northeast-1:111111111111:function-instance/function-instance-id
+output "tnb_function_instance" {
+  value = provider::arn::tnb_function_instance("function-instance-id")
+}
+```
 
 ## Signature
 

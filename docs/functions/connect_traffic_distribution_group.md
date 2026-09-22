@@ -16,7 +16,14 @@ arn:${Partition}:connect:${Region}:${Account}:traffic-distribution-group/${Traff
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:connect:ap-northeast-1:111111111111:traffic-distribution-group/traffic-distribution-group-id
+output "connect_traffic_distribution_group" {
+  value = provider::arn::connect_traffic_distribution_group("traffic-distribution-group-id")
+}
+```
 
 ## Signature
 

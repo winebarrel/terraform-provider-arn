@@ -16,7 +16,14 @@ arn:${Partition}:robomaker:${Region}:${Account}:world/${WorldId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:robomaker:ap-northeast-1:111111111111:world/world-id
+output "robomaker_world" {
+  value = provider::arn::robomaker_world("world-id")
+}
+```
 
 ## Signature
 

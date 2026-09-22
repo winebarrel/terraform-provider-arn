@@ -16,7 +16,14 @@ arn:${Partition}:lex:${Region}:${Account}:intent:${IntentName}:${IntentVersion}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:lex:ap-northeast-1:111111111111:intent:intent-name:intent-version
+output "lex_intent_version" {
+  value = provider::arn::lex_intent_version("intent-name", "intent-version")
+}
+```
 
 ## Signature
 

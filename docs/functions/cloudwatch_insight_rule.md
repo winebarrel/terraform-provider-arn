@@ -16,7 +16,14 @@ arn:${Partition}:cloudwatch:${Region}:${Account}:insight-rule/${InsightRuleName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudwatch:ap-northeast-1:111111111111:insight-rule/insight-rule-name
+output "cloudwatch_insight_rule" {
+  value = provider::arn::cloudwatch_insight_rule("insight-rule-name")
+}
+```
 
 ## Signature
 

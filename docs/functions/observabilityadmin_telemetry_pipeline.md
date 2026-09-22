@@ -16,7 +16,14 @@ arn:${Partition}:observabilityadmin:${Region}:${Account}:telemetry-pipeline/${Te
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:observabilityadmin:ap-northeast-1:111111111111:telemetry-pipeline/telemetry-pipeline-identifier
+output "observabilityadmin_telemetry_pipeline" {
+  value = provider::arn::observabilityadmin_telemetry_pipeline("telemetry-pipeline-identifier")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/metric/${Me
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:connect:ap-northeast-1:111111111111:instance/instance-id/metric/metric-id:metric-qualifier
+output "connect_qualified_metric" {
+  value = provider::arn::connect_qualified_metric("instance-id", "metric-id", "metric-qualifier")
+}
+```
 
 ## Signature
 

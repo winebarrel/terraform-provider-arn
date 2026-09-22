@@ -16,7 +16,14 @@ arn:${Partition}:dms:${Region}:${Account}:endpoint:*
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:dms:ap-northeast-1:111111111111:endpoint:*
+output "dms_endpoint" {
+  value = provider::arn::dms_endpoint()
+}
+```
 
 ## Signature
 

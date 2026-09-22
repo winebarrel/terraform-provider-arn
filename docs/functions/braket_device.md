@@ -16,7 +16,14 @@ arn:${Partition}:braket:*:*:device/${DeviceType}/${Provider}/${DeviceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:braket:*:*:device/device-type/provider/device-id
+output "braket_device" {
+  value = provider::arn::braket_device("device-type", "provider", "device-id")
+}
+```
 
 ## Signature
 

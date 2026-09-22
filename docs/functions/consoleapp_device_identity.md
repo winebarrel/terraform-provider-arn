@@ -16,7 +16,14 @@ arn:${Partition}:consoleapp::${Account}:device/${DeviceId}/identity/${IdentityId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:consoleapp::111111111111:device/device-id/identity/identity-id
+output "consoleapp_device_identity" {
+  value = provider::arn::consoleapp_device_identity("device-id", "identity-id")
+}
+```
 
 ## Signature
 

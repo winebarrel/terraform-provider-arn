@@ -16,7 +16,14 @@ arn:${Partition}:cleanrooms-ml:${Region}:${Account}:configured-audience-model/${
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cleanrooms-ml:ap-northeast-1:111111111111:configured-audience-model/resource-id
+output "cleanrooms_ml_configuredaudiencemodel" {
+  value = provider::arn::cleanrooms_ml_configuredaudiencemodel("resource-id")
+}
+```
 
 ## Signature
 

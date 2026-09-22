@@ -16,7 +16,14 @@ arn:${Partition}:transform-custom:${Region}:${Account}:remediation/${Remediation
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:transform-custom:ap-northeast-1:111111111111:remediation/remediation-id
+output "transform_custom_remediation" {
+  value = provider::arn::transform_custom_remediation("remediation-id")
+}
+```
 
 ## Signature
 

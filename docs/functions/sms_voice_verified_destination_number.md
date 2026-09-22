@@ -16,7 +16,14 @@ arn:${Partition}:sms-voice:${Region}:${Account}:verified-destination-number/${Ve
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sms-voice:ap-northeast-1:111111111111:verified-destination-number/verified-destination-number-id
+output "sms_voice_verified_destination_number" {
+  value = provider::arn::sms_voice_verified_destination_number("verified-destination-number-id")
+}
+```
 
 ## Signature
 

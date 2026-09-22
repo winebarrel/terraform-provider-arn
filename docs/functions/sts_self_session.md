@@ -16,7 +16,14 @@ arn:${Partition}:sts::${Account}:self
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:sts::111111111111:self
+output "sts_self_session" {
+  value = provider::arn::sts_self_session()
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:oam:${Region}:${Account}:link/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:oam:ap-northeast-1:111111111111:link/resource-id
+output "oam_link" {
+  value = provider::arn::oam_link("resource-id")
+}
+```
 
 ## Signature
 

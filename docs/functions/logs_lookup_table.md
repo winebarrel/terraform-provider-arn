@@ -16,7 +16,14 @@ arn:${Partition}:logs:${Region}:${Account}:lookup-table:${LookupTableName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:logs:ap-northeast-1:111111111111:lookup-table:lookup-table-name
+output "logs_lookup_table" {
+  value = provider::arn::logs_lookup_table("lookup-table-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:aps:${Region}:${Account}:scraper/${ScraperId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:aps:ap-northeast-1:111111111111:scraper/scraper-id
+output "aps_scraper" {
+  value = provider::arn::aps_scraper("scraper-id")
+}
+```
 
 ## Signature
 

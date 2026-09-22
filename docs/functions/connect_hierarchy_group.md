@@ -16,7 +16,14 @@ arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/agent-group
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:connect:ap-northeast-1:111111111111:instance/instance-id/agent-group/hierarchy-group-id
+output "connect_hierarchy_group" {
+  value = provider::arn::connect_hierarchy_group("instance-id", "hierarchy-group-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:arc-region-switch::${Account}:plan/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:arc-region-switch::111111111111:plan/resource-id
+output "arc_region_switch_plan" {
+  value = provider::arn::arc_region_switch_plan("resource-id")
+}
+```
 
 ## Signature
 

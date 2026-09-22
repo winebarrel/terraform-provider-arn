@@ -16,7 +16,14 @@ arn:${Partition}:cloudtrail:${Region}:${Account}:dashboard/${DashboardName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudtrail:ap-northeast-1:111111111111:dashboard/dashboard-name
+output "cloudtrail_dashboard" {
+  value = provider::arn::cloudtrail_dashboard("dashboard-name")
+}
+```
 
 ## Signature
 

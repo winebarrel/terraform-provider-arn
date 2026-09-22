@@ -16,7 +16,14 @@ arn:${Partition}:groundstation:${Region}:${Account}:contact/${ContactId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:groundstation:ap-northeast-1:111111111111:contact/contact-id
+output "groundstation_contact" {
+  value = provider::arn::groundstation_contact("contact-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:cloudwatch::${Account}:dashboard/${DashboardName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudwatch::111111111111:dashboard/dashboard-name
+output "cloudwatch_dashboard" {
+  value = provider::arn::cloudwatch_dashboard("dashboard-name")
+}
+```
 
 ## Signature
 

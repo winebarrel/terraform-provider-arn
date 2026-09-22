@@ -16,7 +16,14 @@ arn:${Partition}:billingconductor::${Account}:customlineitem/${CustomLineItemId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:billingconductor::111111111111:customlineitem/custom-line-item-id
+output "billingconductor_customlineitem" {
+  value = provider::arn::billingconductor_customlineitem("custom-line-item-id")
+}
+```
 
 ## Signature
 

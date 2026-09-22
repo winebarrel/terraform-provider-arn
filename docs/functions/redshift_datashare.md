@@ -16,7 +16,14 @@ arn:${Partition}:redshift:${Region}:${Account}:datashare:${ProducerClusterNamesp
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:redshift:ap-northeast-1:111111111111:datashare:producer-cluster-namespace/data-share-name
+output "redshift_datashare" {
+  value = provider::arn::redshift_datashare("producer-cluster-namespace", "data-share-name")
+}
+```
 
 ## Signature
 

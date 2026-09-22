@@ -16,7 +16,14 @@ arn:${Partition}:omics:${Region}:${Account}:workflow/${Id}/version/${VersionName
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:omics:ap-northeast-1:111111111111:workflow/id/version/version-name
+output "omics_workflow_version" {
+  value = provider::arn::omics_workflow_version("id", "version-name")
+}
+```
 
 ## Signature
 

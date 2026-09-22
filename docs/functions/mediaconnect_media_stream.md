@@ -16,7 +16,14 @@ arn:${Partition}:mediaconnect:${Region}:${Account}:flow:${FlowId}:${FlowName}/me
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediaconnect:ap-northeast-1:111111111111:flow:flow-id:flow-name/mediaStream/media-stream-name
+output "mediaconnect_media_stream" {
+  value = provider::arn::mediaconnect_media_stream("flow-id", "flow-name", "media-stream-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:iam::${Account}:oidc-provider/${OidcProviderName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::111111111111:oidc-provider/oidc-provider-name
+output "iam_oidc_provider" {
+  value = provider::arn::iam_oidc_provider("oidc-provider-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:mediapackage-vod:${Region}:${Account}:assets/${AssetIdentifier}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediapackage-vod:ap-northeast-1:111111111111:assets/asset-identifier
+output "mediapackage_vod_assets" {
+  value = provider::arn::mediapackage_vod_assets("asset-identifier")
+}
+```
 
 ## Signature
 

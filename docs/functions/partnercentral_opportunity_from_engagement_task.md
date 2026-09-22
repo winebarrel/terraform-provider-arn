@@ -16,7 +16,14 @@ arn:${Partition}:partnercentral:${Region}::catalog/${Catalog}/opportunity-from-e
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:partnercentral:ap-northeast-1::catalog/catalog/opportunity-from-engagement-task/task-id
+output "partnercentral_opportunity_from_engagement_task" {
+  value = provider::arn::partnercentral_opportunity_from_engagement_task("catalog", "task-id")
+}
+```
 
 ## Signature
 

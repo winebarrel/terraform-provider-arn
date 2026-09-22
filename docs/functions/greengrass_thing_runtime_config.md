@@ -16,7 +16,14 @@ arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/things/${ThingName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:greengrass:ap-northeast-1:111111111111:/greengrass/things/thing-name/runtimeconfig
+output "greengrass_thing_runtime_config" {
+  value = provider::arn::greengrass_thing_runtime_config("thing-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:cloudfront::${Account}:streaming-distribution/${DistributionId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudfront::111111111111:streaming-distribution/distribution-id
+output "cloudfront_streaming_distribution" {
+  value = provider::arn::cloudfront_streaming_distribution("distribution-id")
+}
+```
 
 ## Signature
 

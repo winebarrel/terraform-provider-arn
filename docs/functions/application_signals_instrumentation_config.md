@@ -16,7 +16,14 @@ arn:${Partition}:application-signals:${Region}:${Account}:instrumentationConfig/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:application-signals:ap-northeast-1:111111111111:instrumentationConfig/service/environment/signal-type/location-hash
+output "application_signals_instrumentation_config" {
+  value = provider::arn::application_signals_instrumentation_config("service", "environment", "signal-type", "location-hash")
+}
+```
 
 ## Signature
 

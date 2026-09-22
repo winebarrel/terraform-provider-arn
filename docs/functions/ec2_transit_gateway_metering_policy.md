@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:transit-gateway-metering-policy/${Tran
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:transit-gateway-metering-policy/transit-gateway-metering-policy-id
+output "ec2_transit_gateway_metering_policy" {
+  value = provider::arn::ec2_transit_gateway_metering_policy("transit-gateway-metering-policy-id")
+}
+```
 
 ## Signature
 

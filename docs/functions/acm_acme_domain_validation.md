@@ -16,7 +16,14 @@ arn:${Partition}:acm:${Region}:${Account}:acme-endpoint/${AcmeEndpointId}/acme-d
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:acm:ap-northeast-1:111111111111:acme-endpoint/acme-endpoint-id/acme-domain-validation/acme-domain-validation-id
+output "acm_acme_domain_validation" {
+  value = provider::arn::acm_acme_domain_validation("acme-endpoint-id", "acme-domain-validation-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:export-instance-task/${ExportTaskId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:export-instance-task/export-task-id
+output "ec2_export_instance_task" {
+  value = provider::arn::ec2_export_instance_task("export-task-id")
+}
+```
 
 ## Signature
 

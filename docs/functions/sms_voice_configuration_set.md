@@ -16,7 +16,14 @@ arn:${Partition}:sms-voice:${Region}:${Account}:configuration-set/${Configuratio
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sms-voice:ap-northeast-1:111111111111:configuration-set/configuration-set-name
+output "sms_voice_configuration_set" {
+  value = provider::arn::sms_voice_configuration_set("configuration-set-name")
+}
+```
 
 ## Signature
 

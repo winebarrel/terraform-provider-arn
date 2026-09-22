@@ -16,7 +16,14 @@ arn:${Partition}:cloudfront::${Account}:realtime-log-config/${Name}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudfront::111111111111:realtime-log-config/name
+output "cloudfront_realtime_log_config" {
+  value = provider::arn::cloudfront_realtime_log_config("name")
+}
+```
 
 ## Signature
 

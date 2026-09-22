@@ -16,7 +16,14 @@ arn:${Partition}:ecs:${Region}:${Account}:daemon/${ClusterName}/${DaemonName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ecs:ap-northeast-1:111111111111:daemon/cluster-name/daemon-name
+output "ecs_daemon" {
+  value = provider::arn::ecs_daemon("cluster-name", "daemon-name")
+}
+```
 
 ## Signature
 

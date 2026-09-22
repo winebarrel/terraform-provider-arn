@@ -16,7 +16,14 @@ arn:${Partition}:vpc-lattice:${Region}:${Account}:servicenetwork/${ServiceNetwor
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:vpc-lattice:ap-northeast-1:111111111111:servicenetwork/service-network-id
+output "vpc_lattice_service_network" {
+  value = provider::arn::vpc_lattice_service_network("service-network-id")
+}
+```
 
 ## Signature
 

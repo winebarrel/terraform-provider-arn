@@ -16,7 +16,14 @@ arn:${Partition}:eks:${Region}:${Account}:addon/${ClusterName}/${AddonName}/${UU
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:eks:ap-northeast-1:111111111111:addon/cluster-name/addon-name/uuid
+output "eks_addon" {
+  value = provider::arn::eks_addon("cluster-name", "addon-name", "uuid")
+}
+```
 
 ## Signature
 

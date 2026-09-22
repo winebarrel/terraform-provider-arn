@@ -16,7 +16,14 @@ arn:${Partition}:signin:::console/${ConsoleName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:signin:::console/console-name
+output "signin_console" {
+  value = provider::arn::signin_console("console-name")
+}
+```
 
 ## Signature
 

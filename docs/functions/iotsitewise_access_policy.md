@@ -16,7 +16,14 @@ arn:${Partition}:iotsitewise:${Region}:${Account}:access-policy/${AccessPolicyId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotsitewise:ap-northeast-1:111111111111:access-policy/access-policy-id
+output "iotsitewise_access_policy" {
+  value = provider::arn::iotsitewise_access_policy("access-policy-id")
+}
+```
 
 ## Signature
 

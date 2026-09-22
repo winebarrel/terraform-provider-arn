@@ -16,7 +16,14 @@ arn:${Partition}:rekognition:${Region}:${Account}:project/${ProjectName}/${Creat
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rekognition:ap-northeast-1:111111111111:project/project-name/creation-timestamp
+output "rekognition_project" {
+  value = provider::arn::rekognition_project("project-name", "creation-timestamp")
+}
+```
 
 ## Signature
 

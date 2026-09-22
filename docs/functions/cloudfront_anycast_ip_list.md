@@ -16,7 +16,14 @@ arn:${Partition}:cloudfront::${Account}:anycast-ip-list/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudfront::111111111111:anycast-ip-list/id
+output "cloudfront_anycast_ip_list" {
+  value = provider::arn::cloudfront_anycast_ip_list("id")
+}
+```
 
 ## Signature
 

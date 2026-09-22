@@ -16,7 +16,14 @@ arn:${Partition}:machinelearning:${Region}:${Account}:batchprediction/${BatchPre
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:machinelearning:ap-northeast-1:111111111111:batchprediction/batch-prediction-id
+output "machinelearning_batchprediction" {
+  value = provider::arn::machinelearning_batchprediction("batch-prediction-id")
+}
+```
 
 ## Signature
 

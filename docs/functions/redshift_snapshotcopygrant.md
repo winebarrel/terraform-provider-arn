@@ -16,7 +16,14 @@ arn:${Partition}:redshift:${Region}:${Account}:snapshotcopygrant:${SnapshotCopyG
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:redshift:ap-northeast-1:111111111111:snapshotcopygrant:snapshot-copy-grant-name
+output "redshift_snapshotcopygrant" {
+  value = provider::arn::redshift_snapshotcopygrant("snapshot-copy-grant-name")
+}
+```
 
 ## Signature
 

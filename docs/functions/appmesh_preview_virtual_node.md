@@ -16,7 +16,14 @@ arn:${Partition}:appmesh-preview:${Region}:${Account}:mesh/${MeshName}/virtualNo
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appmesh-preview:ap-northeast-1:111111111111:mesh/mesh-name/virtualNode/virtual-node-name
+output "appmesh_preview_virtual_node" {
+  value = provider::arn::appmesh_preview_virtual_node("mesh-name", "virtual-node-name")
+}
+```
 
 ## Signature
 

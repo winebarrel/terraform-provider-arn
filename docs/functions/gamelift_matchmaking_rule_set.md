@@ -16,7 +16,14 @@ arn:${Partition}:gamelift:${Region}:${Account}:matchmakingruleset/${MatchmakingR
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:gamelift:ap-northeast-1:111111111111:matchmakingruleset/matchmaking-rule-set-name
+output "gamelift_matchmaking_rule_set" {
+  value = provider::arn::gamelift_matchmaking_rule_set("matchmaking-rule-set-name")
+}
+```
 
 ## Signature
 

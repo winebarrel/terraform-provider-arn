@@ -16,7 +16,14 @@ arn:${Partition}:codebuild:${Region}:${Account}:fleet/${FleetName}:${FleetId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codebuild:ap-northeast-1:111111111111:fleet/fleet-name:fleet-id
+output "codebuild_fleet" {
+  value = provider::arn::codebuild_fleet("fleet-name", "fleet-id")
+}
+```
 
 ## Signature
 

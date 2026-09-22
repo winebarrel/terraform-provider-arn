@@ -16,7 +16,14 @@ arn:${Partition}:cognito-sync:${Region}:${Account}:identitypool/${IdentityPoolId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cognito-sync:ap-northeast-1:111111111111:identitypool/identity-pool-id
+output "cognito_sync_identitypool" {
+  value = provider::arn::cognito_sync_identitypool("identity-pool-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:inspector2:${Region}:${Account}:finding/${FindingId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:inspector2:ap-northeast-1:111111111111:finding/finding-id
+output "inspector2_finding" {
+  value = provider::arn::inspector2_finding("finding-id")
+}
+```
 
 ## Signature
 

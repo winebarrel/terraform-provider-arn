@@ -16,7 +16,14 @@ arn:${Partition}:iotwireless:${Region}:${Account}:WirelessGatewayTaskDefinition/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotwireless:ap-northeast-1:111111111111:WirelessGatewayTaskDefinition/wireless-gateway-task-definition-id
+output "iotwireless_wireless_gateway_task_definition" {
+  value = provider::arn::iotwireless_wireless_gateway_task_definition("wireless-gateway-task-definition-id")
+}
+```
 
 ## Signature
 

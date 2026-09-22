@@ -16,7 +16,14 @@ arn:${Partition}:ts::${Account}:execution/${UserId}/${ToolId}/${ExecutionId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ts::111111111111:execution/user-id/tool-id/execution-id
+output "ts_execution" {
+  value = provider::arn::ts_execution("user-id", "tool-id", "execution-id")
+}
+```
 
 ## Signature
 

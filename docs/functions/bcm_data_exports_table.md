@@ -16,7 +16,14 @@ arn:${Partition}:bcm-data-exports:${Region}:${Account}:table/${Identifier}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bcm-data-exports:ap-northeast-1:111111111111:table/identifier
+output "bcm_data_exports_table" {
+  value = provider::arn::bcm_data_exports_table("identifier")
+}
+```
 
 ## Signature
 

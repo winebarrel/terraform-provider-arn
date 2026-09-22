@@ -16,7 +16,14 @@ arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:managed-thing/${Ide
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotmanagedintegrations:ap-northeast-1:111111111111:managed-thing/identifier
+output "iotmanagedintegrations_managed_thing" {
+  value = provider::arn::iotmanagedintegrations_managed_thing("identifier")
+}
+```
 
 ## Signature
 

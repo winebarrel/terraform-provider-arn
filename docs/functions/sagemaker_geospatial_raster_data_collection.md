@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker-geospatial:${Region}:${Account}:raster-data-collectio
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker-geospatial:ap-northeast-1:111111111111:raster-data-collection/collection-id
+output "sagemaker_geospatial_raster_data_collection" {
+  value = provider::arn::sagemaker_geospatial_raster_data_collection("collection-id")
+}
+```
 
 ## Signature
 

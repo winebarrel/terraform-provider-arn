@@ -16,7 +16,14 @@ arn:${Partition}:frauddetector:${Region}:${Account}:label/${ResourcePath}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:frauddetector:ap-northeast-1:111111111111:label/resource-path
+output "frauddetector_label" {
+  value = provider::arn::frauddetector_label("resource-path")
+}
+```
 
 ## Signature
 

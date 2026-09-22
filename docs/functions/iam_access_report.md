@@ -16,7 +16,14 @@ arn:${Partition}:iam::${Account}:access-report/${EntityPath}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::111111111111:access-report/entity-path
+output "iam_access_report" {
+  value = provider::arn::iam_access_report("entity-path")
+}
+```
 
 ## Signature
 

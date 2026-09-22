@@ -16,7 +16,14 @@ arn:${Partition}:backup:${Region}:${Account}:accesspoint/${AccessPointName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:backup:ap-northeast-1:111111111111:accesspoint/access-point-name
+output "backup_backup_access_point" {
+  value = provider::arn::backup_backup_access_point("access-point-name")
+}
+```
 
 ## Signature
 

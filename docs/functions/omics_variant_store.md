@@ -16,7 +16,14 @@ arn:${Partition}:omics:${Region}:${Account}:variantStore/${VariantStoreName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:omics:ap-northeast-1:111111111111:variantStore/variant-store-name
+output "omics_variant_store" {
+  value = provider::arn::omics_variant_store("variant-store-name")
+}
+```
 
 ## Signature
 

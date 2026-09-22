@@ -16,7 +16,14 @@ arn:${Partition}:iq-permission:${Region}::permission/${PermissionRequestId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iq-permission:ap-northeast-1::permission/permission-request-id
+output "iq_permission_permission" {
+  value = provider::arn::iq_permission_permission("permission-request-id")
+}
+```
 
 ## Signature
 

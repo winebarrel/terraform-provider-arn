@@ -16,7 +16,14 @@ arn:${Partition}:evidently:${Region}:${Account}:project/${ProjectName}/launch/${
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:evidently:ap-northeast-1:111111111111:project/project-name/launch/launch-name
+output "evidently_launch" {
+  value = provider::arn::evidently_launch("project-name", "launch-name")
+}
+```
 
 ## Signature
 

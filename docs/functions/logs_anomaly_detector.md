@@ -16,7 +16,14 @@ arn:${Partition}:logs:${Region}:${Account}:anomaly-detector:${DetectorId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:logs:ap-northeast-1:111111111111:anomaly-detector:detector-id
+output "logs_anomaly_detector" {
+  value = provider::arn::logs_anomaly_detector("detector-id")
+}
+```
 
 ## Signature
 

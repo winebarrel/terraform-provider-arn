@@ -16,7 +16,14 @@ arn:${Partition}:personalize:${Region}:${Account}:data-insights-job/${ResourceId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:personalize:ap-northeast-1:111111111111:data-insights-job/resource-id
+output "personalize_data_insights_job" {
+  value = provider::arn::personalize_data_insights_job("resource-id")
+}
+```
 
 ## Signature
 

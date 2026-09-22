@@ -16,7 +16,14 @@ arn:${Partition}:devicefarm:${Region}:${Account}:testgrid-project:${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:devicefarm:ap-northeast-1:111111111111:testgrid-project:resource-id
+output "devicefarm_testgrid_project" {
+  value = provider::arn::devicefarm_testgrid_project("resource-id")
+}
+```
 
 ## Signature
 

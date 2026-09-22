@@ -16,7 +16,14 @@ arn:${Partition}:redshift:${Region}:${Account}:dbuser:${ClusterName}/${DbUser}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:redshift:ap-northeast-1:111111111111:dbuser:cluster-name/db-user
+output "redshift_dbuser" {
+  value = provider::arn::redshift_dbuser("cluster-name", "db-user")
+}
+```
 
 ## Signature
 

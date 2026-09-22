@@ -16,7 +16,14 @@ arn:${Partition}:imagebuilder:${Region}:${Account}:image/${ImageName}/${ImageVer
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:imagebuilder:ap-northeast-1:111111111111:image/image-name/image-version/*
+output "imagebuilder_all_image_build_versions" {
+  value = provider::arn::imagebuilder_all_image_build_versions("image-name", "image-version")
+}
+```
 
 ## Signature
 

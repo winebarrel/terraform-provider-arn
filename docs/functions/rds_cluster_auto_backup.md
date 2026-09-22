@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:cluster-auto-backup:${DbClusterAutomat
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:cluster-auto-backup:db-cluster-automated-backup-id
+output "rds_cluster_auto_backup" {
+  value = provider::arn::rds_cluster_auto_backup("db-cluster-automated-backup-id")
+}
+```
 
 ## Signature
 

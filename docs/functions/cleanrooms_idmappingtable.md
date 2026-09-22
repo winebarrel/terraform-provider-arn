@@ -16,7 +16,14 @@ arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/idma
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cleanrooms:ap-northeast-1:111111111111:membership/membership-id/idmappingtable/id-mapping-table-id
+output "cleanrooms_idmappingtable" {
+  value = provider::arn::cleanrooms_idmappingtable("membership-id", "id-mapping-table-id")
+}
+```
 
 ## Signature
 

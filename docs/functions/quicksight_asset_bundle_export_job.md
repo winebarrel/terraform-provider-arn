@@ -16,7 +16,14 @@ arn:${Partition}:quicksight:${Region}:${Account}:asset-bundle-export-job/${Resou
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:quicksight:ap-northeast-1:111111111111:asset-bundle-export-job/resource-id
+output "quicksight_asset_bundle_export_job" {
+  value = provider::arn::quicksight_asset_bundle_export_job("resource-id")
+}
+```
 
 ## Signature
 

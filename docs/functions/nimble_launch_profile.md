@@ -16,7 +16,14 @@ arn:${Partition}:nimble:${Region}:${Account}:launch-profile/${LaunchProfileId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:nimble:ap-northeast-1:111111111111:launch-profile/launch-profile-id
+output "nimble_launch_profile" {
+  value = provider::arn::nimble_launch_profile("launch-profile-id")
+}
+```
 
 ## Signature
 

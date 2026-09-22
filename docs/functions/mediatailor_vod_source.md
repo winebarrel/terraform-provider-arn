@@ -16,7 +16,14 @@ arn:${Partition}:mediatailor:${Region}:${Account}:vodSource/${SourceLocationName
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediatailor:ap-northeast-1:111111111111:vodSource/source-location-name/vod-source-name
+output "mediatailor_vod_source" {
+  value = provider::arn::mediatailor_vod_source("source-location-name", "vod-source-name")
+}
+```
 
 ## Signature
 

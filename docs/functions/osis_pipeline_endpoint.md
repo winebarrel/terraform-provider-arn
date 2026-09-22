@@ -16,7 +16,14 @@ arn:${Partition}:osis:${Region}:${Account}:endpoint/${EndpointId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:osis:ap-northeast-1:111111111111:endpoint/endpoint-id
+output "osis_pipeline_endpoint" {
+  value = provider::arn::osis_pipeline_endpoint("endpoint-id")
+}
+```
 
 ## Signature
 

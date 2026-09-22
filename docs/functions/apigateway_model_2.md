@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/models/${ModelName
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1::/restapis/rest-api-id/models/model-name
+output "apigateway_model_2" {
+  value = provider::arn::apigateway_model_2("rest-api-id", "model-name")
+}
+```
 
 ## Signature
 

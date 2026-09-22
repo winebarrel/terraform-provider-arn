@@ -16,7 +16,14 @@ arn:${Partition}:neptune-graph:${Region}:${Account}:graph/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:neptune-graph:ap-northeast-1:111111111111:graph/resource-id
+output "neptune_graph_graph" {
+  value = provider::arn::neptune_graph_graph("resource-id")
+}
+```
 
 ## Signature
 

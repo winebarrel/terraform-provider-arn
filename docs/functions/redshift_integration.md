@@ -16,7 +16,14 @@ arn:${Partition}:redshift:${Region}:${Account}:integration:${IntegrationIdentifi
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:redshift:ap-northeast-1:111111111111:integration:integration-identifier
+output "redshift_integration" {
+  value = provider::arn::redshift_integration("integration-identifier")
+}
+```
 
 ## Signature
 
