@@ -16,7 +16,14 @@ arn:${Partition}:elasticbeanstalk:${Region}::solutionstack/${SolutionStackName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:elasticbeanstalk:ap-northeast-1::solutionstack/solution-stack-name
+output "elasticbeanstalk_solutionstack" {
+  value = provider::arn::elasticbeanstalk_solutionstack("solution-stack-name")
+}
+```
 
 ## Signature
 

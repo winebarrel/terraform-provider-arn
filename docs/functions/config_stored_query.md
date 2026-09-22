@@ -16,7 +16,14 @@ arn:${Partition}:config:${Region}:${Account}:stored-query/${StoredQueryName}/${S
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:config:ap-northeast-1:111111111111:stored-query/stored-query-name/stored-query-id
+output "config_stored_query" {
+  value = provider::arn::config_stored_query("stored-query-name", "stored-query-id")
+}
+```
 
 ## Signature
 

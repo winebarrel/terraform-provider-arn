@@ -16,7 +16,14 @@ arn:${Partition}:comprehend:${Region}:${Account}:entity-recognizer-endpoint/${En
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:comprehend:ap-northeast-1:111111111111:entity-recognizer-endpoint/entity-recognizer-endpoint-name
+output "comprehend_entity_recognizer_endpoint" {
+  value = provider::arn::comprehend_entity_recognizer_endpoint("entity-recognizer-endpoint-name")
+}
+```
 
 ## Signature
 

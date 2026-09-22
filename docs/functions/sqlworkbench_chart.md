@@ -16,7 +16,14 @@ arn:${Partition}:sqlworkbench:${Region}:${Account}:chart/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sqlworkbench:ap-northeast-1:111111111111:chart/resource-id
+output "sqlworkbench_chart" {
+  value = provider::arn::sqlworkbench_chart("resource-id")
+}
+```
 
 ## Signature
 

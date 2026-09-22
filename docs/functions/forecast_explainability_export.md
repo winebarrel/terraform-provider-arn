@@ -16,7 +16,14 @@ arn:${Partition}:forecast:${Region}:${Account}:explainability-export/${ResourceI
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:forecast:ap-northeast-1:111111111111:explainability-export/resource-id
+output "forecast_explainability_export" {
+  value = provider::arn::forecast_explainability_export("resource-id")
+}
+```
 
 ## Signature
 

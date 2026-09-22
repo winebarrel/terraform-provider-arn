@@ -16,7 +16,14 @@ arn:${Partition}:observabilityadmin:${Region}:${Account}:telemetry-rule/${Teleme
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:observabilityadmin:ap-northeast-1:111111111111:telemetry-rule/telemetry-rule-name
+output "observabilityadmin_telemetry_rule" {
+  value = provider::arn::observabilityadmin_telemetry_rule("telemetry-rule-name")
+}
+```
 
 ## Signature
 

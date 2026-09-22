@@ -16,7 +16,14 @@ arn:${Partition}:synthetics:${Region}:${Account}:canary:${CanaryName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:synthetics:ap-northeast-1:111111111111:canary:canary-name
+output "synthetics_canary" {
+  value = provider::arn::synthetics_canary("canary-name")
+}
+```
 
 ## Signature
 

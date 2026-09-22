@@ -16,7 +16,14 @@ arn:${Partition}:dms:${Region}:${Account}:es:*
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:dms:ap-northeast-1:111111111111:es:*
+output "dms_event_subscription" {
+  value = provider::arn::dms_event_subscription()
+}
+```
 
 ## Signature
 

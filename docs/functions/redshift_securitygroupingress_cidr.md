@@ -16,7 +16,14 @@ arn:${Partition}:redshift:${Region}:${Account}:securitygroupingress:${SecurityGr
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:redshift:ap-northeast-1:111111111111:securitygroupingress:security-group-name/cidrip/ip-range
+output "redshift_securitygroupingress_cidr" {
+  value = provider::arn::redshift_securitygroupingress_cidr("security-group-name", "ip-range")
+}
+```
 
 ## Signature
 

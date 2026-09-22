@@ -16,7 +16,14 @@ arn:${Partition}:pcs:${Region}:${Account}:cluster/${ClusterIdentifier}/queue/${Q
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:pcs:ap-northeast-1:111111111111:cluster/cluster-identifier/queue/queue-identifier
+output "pcs_queue" {
+  value = provider::arn::pcs_queue("cluster-identifier", "queue-identifier")
+}
+```
 
 ## Signature
 

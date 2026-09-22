@@ -16,7 +16,14 @@ arn:${Partition}:aws-marketplace:${Region}:${Account}:verification-type/${Verifi
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:aws-marketplace:ap-northeast-1:111111111111:verification-type/verification-type/verification-evidence/resource-id
+output "aws_marketplace_verification_evidence" {
+  value = provider::arn::aws_marketplace_verification_evidence("verification-type", "resource-id")
+}
+```
 
 ## Signature
 

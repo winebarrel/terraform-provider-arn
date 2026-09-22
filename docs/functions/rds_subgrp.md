@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:subgrp:${SubnetGroupName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:subgrp:subnet-group-name
+output "rds_subgrp" {
+  value = provider::arn::rds_subgrp("subnet-group-name")
+}
+```
 
 ## Signature
 

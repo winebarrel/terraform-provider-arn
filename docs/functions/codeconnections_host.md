@@ -16,7 +16,14 @@ arn:${Partition}:codeconnections:${Region}:${Account}:host/${HostId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codeconnections:ap-northeast-1:111111111111:host/host-id
+output "codeconnections_host" {
+  value = provider::arn::codeconnections_host("host-id")
+}
+```
 
 ## Signature
 

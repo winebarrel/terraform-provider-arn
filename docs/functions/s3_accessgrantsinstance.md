@@ -16,7 +16,14 @@ arn:${Partition}:s3:${Region}:${Account}:access-grants/default
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:s3:ap-northeast-1:111111111111:access-grants/default
+output "s3_accessgrantsinstance" {
+  value = provider::arn::s3_accessgrantsinstance()
+}
+```
 
 ## Signature
 

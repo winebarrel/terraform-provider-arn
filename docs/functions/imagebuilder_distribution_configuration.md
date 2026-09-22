@@ -16,7 +16,14 @@ arn:${Partition}:imagebuilder:${Region}:${Account}:distribution-configuration/${
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:imagebuilder:ap-northeast-1:111111111111:distribution-configuration/distribution-configuration-name
+output "imagebuilder_distribution_configuration" {
+  value = provider::arn::imagebuilder_distribution_configuration("distribution-configuration-name")
+}
+```
 
 ## Signature
 

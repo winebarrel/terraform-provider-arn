@@ -16,7 +16,14 @@ arn:${Partition}:execute-api:${Region}:${Account}:/domainnames/${DomainName}+${D
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:execute-api:ap-northeast-1:111111111111:/domainnames/domain-name+domain-identifier
+output "execute_api_execute_api_domain" {
+  value = provider::arn::execute_api_execute_api_domain("domain-name", "domain-identifier")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:groundstation:${Region}:${Account}:dataflow-endpoint-group/${Da
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:groundstation:ap-northeast-1:111111111111:dataflow-endpoint-group/dataflow-endpoint-group-id
+output "groundstation_dataflow_endpoint_group" {
+  value = provider::arn::groundstation_dataflow_endpoint_group("dataflow-endpoint-group-id")
+}
+```
 
 ## Signature
 

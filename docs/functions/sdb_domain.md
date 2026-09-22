@@ -16,7 +16,14 @@ arn:${Partition}:sdb:${Region}:${Account}:domain/${DomainName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sdb:ap-northeast-1:111111111111:domain/domain-name
+output "sdb_domain" {
+  value = provider::arn::sdb_domain("domain-name")
+}
+```
 
 ## Signature
 

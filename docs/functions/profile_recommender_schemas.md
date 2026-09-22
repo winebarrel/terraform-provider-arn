@@ -16,7 +16,14 @@ arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/recommender-
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:profile:ap-northeast-1:111111111111:domains/domain-name/recommender-schemas/recommender-schema-name
+output "profile_recommender_schemas" {
+  value = provider::arn::profile_recommender_schemas("domain-name", "recommender-schema-name")
+}
+```
 
 ## Signature
 

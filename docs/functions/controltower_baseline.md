@@ -16,7 +16,14 @@ arn:${Partition}:controltower:${Region}::baseline/${BaselineId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:controltower:ap-northeast-1::baseline/baseline-id
+output "controltower_baseline" {
+  value = provider::arn::controltower_baseline("baseline-id")
+}
+```
 
 ## Signature
 

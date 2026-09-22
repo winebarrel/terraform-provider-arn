@@ -16,7 +16,14 @@ arn:${Partition}:mediapackage:${Region}:${Account}:origin_endpoints/${OriginEndp
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediapackage:ap-northeast-1:111111111111:origin_endpoints/origin-endpoint-identifier
+output "mediapackage_origin_endpoints" {
+  value = provider::arn::mediapackage_origin_endpoints("origin-endpoint-identifier")
+}
+```
 
 ## Signature
 

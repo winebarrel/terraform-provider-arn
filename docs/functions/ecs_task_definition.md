@@ -16,7 +16,14 @@ arn:${Partition}:ecs:${Region}:${Account}:task-definition/${TaskDefinitionFamily
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ecs:ap-northeast-1:111111111111:task-definition/task-definition-family-name:task-definition-revision-number
+output "ecs_task_definition" {
+  value = provider::arn::ecs_task_definition("task-definition-family-name", "task-definition-revision-number")
+}
+```
 
 ## Signature
 

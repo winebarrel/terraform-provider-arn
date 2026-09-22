@@ -16,7 +16,14 @@ arn:${Partition}:braket:${Region}:${Account}:spending-limit/${RandomId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:braket:ap-northeast-1:111111111111:spending-limit/random-id
+output "braket_spending_limit" {
+  value = provider::arn::braket_spending_limit("random-id")
+}
+```
 
 ## Signature
 

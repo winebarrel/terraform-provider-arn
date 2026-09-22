@@ -16,7 +16,14 @@ arn:${Partition}:wafv2:${Region}:${Account}:${Scope}/rulegroup/${Name}/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:wafv2:ap-northeast-1:111111111111:scope/rulegroup/name/id
+output "wafv2_rulegroup" {
+  value = provider::arn::wafv2_rulegroup("scope", "name", "id")
+}
+```
 
 ## Signature
 

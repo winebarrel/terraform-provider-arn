@@ -16,7 +16,14 @@ arn:${Partition}:synthetics:${Region}:${Account}:group:${GroupId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:synthetics:ap-northeast-1:111111111111:group:group-id
+output "synthetics_group" {
+  value = provider::arn::synthetics_group("group-id")
+}
+```
 
 ## Signature
 

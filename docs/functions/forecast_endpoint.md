@@ -16,7 +16,14 @@ arn:${Partition}:forecast:${Region}:${Account}:forecast-endpoint/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:forecast:ap-northeast-1:111111111111:forecast-endpoint/resource-id
+output "forecast_endpoint" {
+  value = provider::arn::forecast_endpoint("resource-id")
+}
+```
 
 ## Signature
 

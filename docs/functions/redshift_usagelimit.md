@@ -16,7 +16,14 @@ arn:${Partition}:redshift:${Region}:${Account}:usagelimit:${UsageLimitId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:redshift:ap-northeast-1:111111111111:usagelimit:usage-limit-id
+output "redshift_usagelimit" {
+  value = provider::arn::redshift_usagelimit("usage-limit-id")
+}
+```
 
 ## Signature
 

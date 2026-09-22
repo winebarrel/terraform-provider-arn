@@ -16,7 +16,14 @@ arn:${Partition}:codeguru-security:${Region}:${Account}:scans/${ScanName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codeguru-security:ap-northeast-1:111111111111:scans/scan-name
+output "codeguru_security_scan_name" {
+  value = provider::arn::codeguru_security_scan_name("scan-name")
+}
+```
 
 ## Signature
 

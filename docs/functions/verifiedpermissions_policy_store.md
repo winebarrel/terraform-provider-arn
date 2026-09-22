@@ -16,7 +16,14 @@ arn:${Partition}:verifiedpermissions::${Account}:policy-store/${PolicyStoreId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:verifiedpermissions::111111111111:policy-store/policy-store-id
+output "verifiedpermissions_policy_store" {
+  value = provider::arn::verifiedpermissions_policy_store("policy-store-id")
+}
+```
 
 ## Signature
 

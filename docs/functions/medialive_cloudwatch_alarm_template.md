@@ -16,7 +16,14 @@ arn:${Partition}:medialive:${Region}:${Account}:cloudwatch-alarm-template:${Clou
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:medialive:ap-northeast-1:111111111111:cloudwatch-alarm-template:cloud-watch-alarm-template-id
+output "medialive_cloudwatch_alarm_template" {
+  value = provider::arn::medialive_cloudwatch_alarm_template("cloud-watch-alarm-template-id")
+}
+```
 
 ## Signature
 

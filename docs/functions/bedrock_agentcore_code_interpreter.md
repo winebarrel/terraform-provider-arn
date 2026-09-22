@@ -16,7 +16,14 @@ arn:${Partition}:bedrock-agentcore:${Region}:aws:code-interpreter/${CodeInterpre
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock-agentcore:ap-northeast-1:aws:code-interpreter/code-interpreter-id
+output "bedrock_agentcore_code_interpreter" {
+  value = provider::arn::bedrock_agentcore_code_interpreter("code-interpreter-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:verified-access-trust-provider/${Verif
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:verified-access-trust-provider/verified-access-trust-provider-id
+output "ec2_verified_access_trust_provider" {
+  value = provider::arn::ec2_verified_access_trust_provider("verified-access-trust-provider-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:one:${Region}:${Account}:device-instance/${DeviceInstanceId}/co
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:one:ap-northeast-1:111111111111:device-instance/device-instance-id/configuration/version
+output "one_configuration" {
+  value = provider::arn::one_configuration("device-instance-id", "version")
+}
+```
 
 ## Signature
 

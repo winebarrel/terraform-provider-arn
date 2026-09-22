@@ -16,7 +16,14 @@ arn:${Partition}:partnercentral::${Account}:catalog/${Catalog}/ReportingData/${T
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:partnercentral::111111111111:catalog/catalog/ReportingData/table-id/Dashboard/dashboard-id
+output "partnercentral_dashboard" {
+  value = provider::arn::partnercentral_dashboard("catalog", "table-id", "dashboard-id")
+}
+```
 
 ## Signature
 

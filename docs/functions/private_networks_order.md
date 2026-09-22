@@ -16,7 +16,14 @@ arn:${Partition}:private-networks:${Region}:${Account}:order/${NetworkName}/${Or
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:private-networks:ap-northeast-1:111111111111:order/network-name/order-id
+output "private_networks_order" {
+  value = provider::arn::private_networks_order("network-name", "order-id")
+}
+```
 
 ## Signature
 

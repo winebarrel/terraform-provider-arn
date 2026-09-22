@@ -16,7 +16,14 @@ arn:${Partition}:amplify:${Region}:${Account}:webhooks/${WebhookId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:amplify:ap-northeast-1:111111111111:webhooks/webhook-id
+output "amplify_webhooks" {
+  value = provider::arn::amplify_webhooks("webhook-id")
+}
+```
 
 ## Signature
 

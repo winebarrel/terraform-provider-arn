@@ -16,7 +16,14 @@ arn:${Partition}:chime:${Region}:${AccountId}:media-pipeline-kinesis-video-strea
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:chime:ap-northeast-1:111111111111:media-pipeline-kinesis-video-stream-pool/pool-name
+output "chime_media_pipeline_kinesis_video_stream_pool" {
+  value = provider::arn::chime_media_pipeline_kinesis_video_stream_pool("pool-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:bedrock-agentcore:${Region}:${Account}:configuration-bundle/${C
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock-agentcore:ap-northeast-1:111111111111:configuration-bundle/configuration-bundle-id
+output "bedrock_agentcore_configuration_bundle" {
+  value = provider::arn::bedrock_agentcore_configuration_bundle("configuration-bundle-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:transform:${Region}:${Account}:connector/${WorkspaceId}/${Conne
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:transform:ap-northeast-1:111111111111:connector/workspace-id/connector-id
+output "transform_connector" {
+  value = provider::arn::transform_connector("workspace-id", "connector-id")
+}
+```
 
 ## Signature
 

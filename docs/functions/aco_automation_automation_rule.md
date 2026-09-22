@@ -16,7 +16,14 @@ arn:${Partition}:compute-optimizer::${Account}:automation-rule/${RuleId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:compute-optimizer::111111111111:automation-rule/rule-id
+output "aco_automation_automation_rule" {
+  value = provider::arn::aco_automation_automation_rule("rule-id")
+}
+```
 
 ## Signature
 

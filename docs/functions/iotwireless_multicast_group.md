@@ -16,7 +16,14 @@ arn:${Partition}:iotwireless:${Region}:${Account}:MulticastGroup/${MulticastGrou
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotwireless:ap-northeast-1:111111111111:MulticastGroup/multicast-group-id
+output "iotwireless_multicast_group" {
+  value = provider::arn::iotwireless_multicast_group("multicast-group-id")
+}
+```
 
 ## Signature
 

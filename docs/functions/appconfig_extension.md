@@ -16,7 +16,14 @@ arn:${Partition}:appconfig:${Region}:${Account}:extension/${ExtensionId}/${Exten
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appconfig:ap-northeast-1:111111111111:extension/extension-id/extension-version-number
+output "appconfig_extension" {
+  value = provider::arn::appconfig_extension("extension-id", "extension-version-number")
+}
+```
 
 ## Signature
 

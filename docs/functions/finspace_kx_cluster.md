@@ -16,7 +16,14 @@ arn:${Partition}:finspace:${Region}:${Account}:kxEnvironment/${EnvironmentId}/kx
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:finspace:ap-northeast-1:111111111111:kxEnvironment/environment-id/kxCluster/kx-cluster
+output "finspace_kx_cluster" {
+  value = provider::arn::finspace_kx_cluster("environment-id", "kx-cluster")
+}
+```
 
 ## Signature
 

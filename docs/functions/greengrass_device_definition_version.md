@@ -16,7 +16,14 @@ arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/devices/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:greengrass:ap-northeast-1:111111111111:/greengrass/definition/devices/device-definition-id/versions/version-id
+output "greengrass_device_definition_version" {
+  value = provider::arn::greengrass_device_definition_version("device-definition-id", "version-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:docdb-elastic:${Region}:${Account}:cluster-snapshot/${ResourceI
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:docdb-elastic:ap-northeast-1:111111111111:cluster-snapshot/resource-id
+output "docdb_elastic_cluster_snapshot" {
+  value = provider::arn::docdb_elastic_cluster_snapshot("resource-id")
+}
+```
 
 ## Signature
 

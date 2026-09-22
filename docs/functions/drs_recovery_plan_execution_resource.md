@@ -16,7 +16,14 @@ arn:${Partition}:drs:${Region}:${Account}:recovery-plan-execution/${RecoveryPlan
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:drs:ap-northeast-1:111111111111:recovery-plan-execution/recovery-plan-execution-id
+output "drs_recovery_plan_execution_resource" {
+  value = provider::arn::drs_recovery_plan_execution_resource("recovery-plan-execution-id")
+}
+```
 
 ## Signature
 

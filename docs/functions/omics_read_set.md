@@ -16,7 +16,14 @@ arn:${Partition}:omics:${Region}:${Account}:sequenceStore/${SequenceStoreId}/rea
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:omics:ap-northeast-1:111111111111:sequenceStore/sequence-store-id/readSet/read-set-id
+output "omics_read_set" {
+  value = provider::arn::omics_read_set("sequence-store-id", "read-set-id")
+}
+```
 
 ## Signature
 

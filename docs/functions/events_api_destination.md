@@ -16,7 +16,14 @@ arn:${Partition}:events:${Region}:${Account}:api-destination/${ApiDestinationNam
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:events:ap-northeast-1:111111111111:api-destination/api-destination-name
+output "events_api_destination" {
+  value = provider::arn::events_api_destination("api-destination-name")
+}
+```
 
 ## Signature
 

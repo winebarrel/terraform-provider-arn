@@ -16,7 +16,14 @@ arn:${Partition}:guardduty::aws:detection-rule/custom/${RuleId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:guardduty::aws:detection-rule/custom/rule-id
+output "guardduty_customdetectionrule" {
+  value = provider::arn::guardduty_customdetectionrule("rule-id")
+}
+```
 
 ## Signature
 

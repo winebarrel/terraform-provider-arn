@@ -16,7 +16,14 @@ arn:${Partition}:iot:${Region}:${Account}:stream/${StreamId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iot:ap-northeast-1:111111111111:stream/stream-id
+output "iot_stream" {
+  value = provider::arn::iot_stream("stream-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:redshift-serverless:${Region}:${Account}:namespace/${NamespaceI
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:redshift-serverless:ap-northeast-1:111111111111:namespace/namespace-id
+output "redshift_serverless_namespace" {
+  value = provider::arn::redshift_serverless_namespace("namespace-id")
+}
+```
 
 ## Signature
 

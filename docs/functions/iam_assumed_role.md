@@ -16,7 +16,14 @@ arn:${Partition}:iam::${Account}:assumed-role/${RoleName}/${RoleSessionName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::111111111111:assumed-role/role-name/role-session-name
+output "iam_assumed_role" {
+  value = provider::arn::iam_assumed_role("role-name", "role-session-name")
+}
+```
 
 ## Signature
 

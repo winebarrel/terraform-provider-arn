@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}::/apis
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1::/apis
+output "apigateway_apis" {
+  value = provider::arn::apigateway_apis()
+}
+```
 
 ## Signature
 

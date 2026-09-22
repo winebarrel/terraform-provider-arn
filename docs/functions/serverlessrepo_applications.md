@@ -16,7 +16,14 @@ arn:${Partition}:serverlessrepo:${Region}:${Account}:applications/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:serverlessrepo:ap-northeast-1:111111111111:applications/resource-id
+output "serverlessrepo_applications" {
+  value = provider::arn::serverlessrepo_applications("resource-id")
+}
+```
 
 ## Signature
 

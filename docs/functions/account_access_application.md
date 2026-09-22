@@ -16,7 +16,14 @@ arn:${Partition}:account-access:${Region}:${Account}:application/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:account-access:ap-northeast-1:111111111111:application/resource-id
+output "account_access_application" {
+  value = provider::arn::account_access_application("resource-id")
+}
+```
 
 ## Signature
 

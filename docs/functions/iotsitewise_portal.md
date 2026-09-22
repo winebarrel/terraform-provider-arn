@@ -16,7 +16,14 @@ arn:${Partition}:iotsitewise:${Region}:${Account}:portal/${PortalId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotsitewise:ap-northeast-1:111111111111:portal/portal-id
+output "iotsitewise_portal" {
+  value = provider::arn::iotsitewise_portal("portal-id")
+}
+```
 
 ## Signature
 

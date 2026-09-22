@@ -16,7 +16,14 @@ arn:${Partition}:securityhub:${Region}:${Account}:configuration-policy/${Configu
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:securityhub:ap-northeast-1:111111111111:configuration-policy/configuration-policy-id
+output "securityhub_configuration_policy" {
+  value = provider::arn::securityhub_configuration_policy("configuration-policy-id")
+}
+```
 
 ## Signature
 

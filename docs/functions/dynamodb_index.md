@@ -16,7 +16,14 @@ arn:${Partition}:dynamodb:${Region}:${Account}:table/${TableName}/index/${IndexN
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:dynamodb:ap-northeast-1:111111111111:table/table-name/index/index-name
+output "dynamodb_index" {
+  value = provider::arn::dynamodb_index("table-name", "index-name")
+}
+```
 
 ## Signature
 

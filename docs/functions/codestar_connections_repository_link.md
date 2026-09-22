@@ -16,7 +16,14 @@ arn:${Partition}:codestar-connections:${Region}:${Account}:repository-link/${Rep
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codestar-connections:ap-northeast-1:111111111111:repository-link/repository-link-id
+output "codestar_connections_repository_link" {
+  value = provider::arn::codestar_connections_repository_link("repository-link-id")
+}
+```
 
 ## Signature
 

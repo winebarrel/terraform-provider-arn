@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:cev:${Engine}/${EngineVersion}/${Custo
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:cev:engine/engine-version/custom-db-engine-version-id
+output "rds_cev" {
+  value = provider::arn::rds_cev("engine", "engine-version", "custom-db-engine-version-id")
+}
+```
 
 ## Signature
 

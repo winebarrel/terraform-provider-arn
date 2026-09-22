@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:image-version/${ImageName}/${Ver
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:image-version/image-name/version
+output "sagemaker_image_version" {
+  value = provider::arn::sagemaker_image_version("image-name", "version")
+}
+```
 
 ## Signature
 

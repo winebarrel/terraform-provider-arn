@@ -16,7 +16,14 @@ arn:${Partition}:ecs:${Region}:${Account}:capacity-provider/${CapacityProviderNa
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ecs:ap-northeast-1:111111111111:capacity-provider/capacity-provider-name
+output "ecs_capacity_provider" {
+  value = provider::arn::ecs_capacity_provider("capacity-provider-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:resource-explorer-2:${Region}:${Account}:view/${ViewName}/${Vie
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:resource-explorer-2:ap-northeast-1:111111111111:view/view-name/view-uuid
+output "resource_explorer_2_view" {
+  value = provider::arn::resource_explorer_2_view("view-name", "view-uuid")
+}
+```
 
 ## Signature
 

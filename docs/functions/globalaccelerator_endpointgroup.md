@@ -16,7 +16,14 @@ arn:${Partition}:globalaccelerator::${Account}:accelerator/${ResourceId}/listene
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:globalaccelerator::111111111111:accelerator/resource-id/listener/listener-id/endpoint-group/endpoint-group-id
+output "globalaccelerator_endpointgroup" {
+  value = provider::arn::globalaccelerator_endpointgroup("resource-id", "listener-id", "endpoint-group-id")
+}
+```
 
 ## Signature
 

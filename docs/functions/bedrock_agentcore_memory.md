@@ -16,7 +16,14 @@ arn:${Partition}:bedrock-agentcore:${Region}:${Account}:memory/${MemoryId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock-agentcore:ap-northeast-1:111111111111:memory/memory-id
+output "bedrock_agentcore_memory" {
+  value = provider::arn::bedrock_agentcore_memory("memory-id")
+}
+```
 
 ## Signature
 

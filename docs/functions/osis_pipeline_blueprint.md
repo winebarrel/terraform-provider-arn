@@ -16,7 +16,14 @@ arn:${Partition}:osis:${Region}:${Account}:blueprint/${BlueprintName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:osis:ap-northeast-1:111111111111:blueprint/blueprint-name
+output "osis_pipeline_blueprint" {
+  value = provider::arn::osis_pipeline_blueprint("blueprint-name")
+}
+```
 
 ## Signature
 

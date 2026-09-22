@@ -16,7 +16,14 @@ arn:${Partition}:codedeploy:${Region}:${Account}:deploymentconfig:${DeploymentCo
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codedeploy:ap-northeast-1:111111111111:deploymentconfig:deployment-configuration-name
+output "codedeploy_deploymentconfig" {
+  value = provider::arn::codedeploy_deploymentconfig("deployment-configuration-name")
+}
+```
 
 ## Signature
 

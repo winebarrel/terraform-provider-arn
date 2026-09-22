@@ -16,7 +16,14 @@ arn:${Partition}:iotwireless:${Region}:${Account}:DeviceProfile/${DeviceProfileI
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotwireless:ap-northeast-1:111111111111:DeviceProfile/device-profile-id
+output "iotwireless_device_profile" {
+  value = provider::arn::iotwireless_device_profile("device-profile-id")
+}
+```
 
 ## Signature
 

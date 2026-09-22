@@ -16,7 +16,14 @@ arn:${Partition}:events:${Region}:${Account}:target/create-snapshot
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:events:ap-northeast-1:111111111111:target/create-snapshot
+output "events_create_snapshot" {
+  value = provider::arn::events_create_snapshot()
+}
+```
 
 ## Signature
 

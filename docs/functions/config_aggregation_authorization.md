@@ -16,7 +16,14 @@ arn:${Partition}:config:${Region}:${Account}:aggregation-authorization/${Aggrega
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:config:ap-northeast-1:111111111111:aggregation-authorization/aggregator-account/aggregator-region
+output "config_aggregation_authorization" {
+  value = provider::arn::config_aggregation_authorization("aggregator-account", "aggregator-region")
+}
+```
 
 ## Signature
 

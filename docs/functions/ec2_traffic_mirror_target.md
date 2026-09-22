@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:traffic-mirror-target/${TrafficMirrorT
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:traffic-mirror-target/traffic-mirror-target-id
+output "ec2_traffic_mirror_target" {
+  value = provider::arn::ec2_traffic_mirror_target("traffic-mirror-target-id")
+}
+```
 
 ## Signature
 

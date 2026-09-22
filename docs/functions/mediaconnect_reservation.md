@@ -16,7 +16,14 @@ arn:${Partition}:mediaconnect:${Region}:${Account}:reservation:${ReservationId}:
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediaconnect:ap-northeast-1:111111111111:reservation:reservation-id:reservation-name
+output "mediaconnect_reservation" {
+  value = provider::arn::mediaconnect_reservation("reservation-id", "reservation-name")
+}
+```
 
 ## Signature
 

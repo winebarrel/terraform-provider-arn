@@ -16,7 +16,14 @@ arn:${Partition}:fms:${Region}:${Account}:applications-list/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:fms:ap-northeast-1:111111111111:applications-list/id
+output "fms_applications_list" {
+  value = provider::arn::fms_applications_list("id")
+}
+```
 
 ## Signature
 

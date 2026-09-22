@@ -16,7 +16,14 @@ arn:${Partition}:trustedadvisor:${Region}:${Account}:checks/${CategoryCode}/${Ch
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:trustedadvisor:ap-northeast-1:111111111111:checks/category-code/check-id
+output "trustedadvisor_checks" {
+  value = provider::arn::trustedadvisor_checks("category-code", "check-id")
+}
+```
 
 ## Signature
 

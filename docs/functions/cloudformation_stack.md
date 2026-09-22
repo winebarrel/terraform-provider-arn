@@ -16,7 +16,14 @@ arn:${Partition}:cloudformation:${Region}:${Account}:stack/${StackName}/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudformation:ap-northeast-1:111111111111:stack/stack-name/id
+output "cloudformation_stack" {
+  value = provider::arn::cloudformation_stack("stack-name", "id")
+}
+```
 
 ## Signature
 

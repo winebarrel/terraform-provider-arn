@@ -16,7 +16,14 @@ arn:${Partition}:cases:${Region}:${Account}:domain/${DomainId}/field/${FieldId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cases:ap-northeast-1:111111111111:domain/domain-id/field/field-id
+output "cases_field" {
+  value = provider::arn::cases_field("domain-id", "field-id")
+}
+```
 
 ## Signature
 

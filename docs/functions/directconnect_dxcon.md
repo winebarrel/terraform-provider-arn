@@ -16,7 +16,14 @@ arn:${Partition}:directconnect:${Region}:${Account}:dxcon/${ConnectionId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:directconnect:ap-northeast-1:111111111111:dxcon/connection-id
+output "directconnect_dxcon" {
+  value = provider::arn::directconnect_dxcon("connection-id")
+}
+```
 
 ## Signature
 

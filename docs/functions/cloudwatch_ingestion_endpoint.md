@@ -16,7 +16,14 @@ arn:${Partition}:cloudwatch:${Region}:${Account}:ingestion-endpoint/${IngestionE
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudwatch:ap-northeast-1:111111111111:ingestion-endpoint/ingestion-endpoint-name/ingestion-endpoint-id
+output "cloudwatch_ingestion_endpoint" {
+  value = provider::arn::cloudwatch_ingestion_endpoint("ingestion-endpoint-name", "ingestion-endpoint-id")
+}
+```
 
 ## Signature
 

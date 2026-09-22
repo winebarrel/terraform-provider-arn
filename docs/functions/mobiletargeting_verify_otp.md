@@ -16,7 +16,14 @@ arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/verify-otp
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mobiletargeting:ap-northeast-1:111111111111:apps/app-id/verify-otp
+output "mobiletargeting_verify_otp" {
+  value = provider::arn::mobiletargeting_verify_otp("app-id")
+}
+```
 
 ## Signature
 

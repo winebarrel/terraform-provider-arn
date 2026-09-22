@@ -16,7 +16,14 @@ arn:${Partition}:cleanrooms-ml:${Region}:${Account}:membership/${MembershipId}/m
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cleanrooms-ml:ap-northeast-1:111111111111:membership/membership-id/ml-input-channel/resource-id
+output "cleanrooms_ml_ml_input_channel" {
+  value = provider::arn::cleanrooms_ml_ml_input_channel("membership-id", "resource-id")
+}
+```
 
 ## Signature
 

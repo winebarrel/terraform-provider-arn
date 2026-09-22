@@ -16,7 +16,14 @@ arn:${Partition}:odb:${Region}:${Account}:exascale-db-storage-vault/${ExascaleDb
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:odb:ap-northeast-1:111111111111:exascale-db-storage-vault/exascale-db-storage-vault-id
+output "odb_exascale_db_storage_vault" {
+  value = provider::arn::odb_exascale_db_storage_vault("exascale-db-storage-vault-id")
+}
+```
 
 ## Signature
 

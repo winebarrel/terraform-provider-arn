@@ -16,7 +16,14 @@ arn:${Partition}:cloudwatch:${Region}:${Account}:alarm-mute-rule:${AlarmMuteRule
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudwatch:ap-northeast-1:111111111111:alarm-mute-rule:alarm-mute-rule-name
+output "cloudwatch_alarm_mute_rule" {
+  value = provider::arn::cloudwatch_alarm_mute_rule("alarm-mute-rule-name")
+}
+```
 
 ## Signature
 

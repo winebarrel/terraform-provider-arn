@@ -16,7 +16,14 @@ arn:${Partition}:mediatailor:${Region}:${Account}:playbackConfiguration/${Resour
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediatailor:ap-northeast-1:111111111111:playbackConfiguration/resource-id
+output "mediatailor_playback_configuration" {
+  value = provider::arn::mediatailor_playback_configuration("resource-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:signer:${Region}:${Account}:/signing-profiles/${ProfileName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:signer:ap-northeast-1:111111111111:/signing-profiles/profile-name
+output "signer_signing_profile" {
+  value = provider::arn::signer_signing_profile("profile-name")
+}
+```
 
 ## Signature
 

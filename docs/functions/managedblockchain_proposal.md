@@ -16,7 +16,14 @@ arn:${Partition}:managedblockchain:${Region}::proposals/${ProposalId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:managedblockchain:ap-northeast-1::proposals/proposal-id
+output "managedblockchain_proposal" {
+  value = provider::arn::managedblockchain_proposal("proposal-id")
+}
+```
 
 ## Signature
 

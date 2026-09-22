@@ -16,7 +16,14 @@ arn:${Partition}:networkmanager::${Account}:core-network/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:networkmanager::111111111111:core-network/resource-id
+output "networkmanager_core_network" {
+  value = provider::arn::networkmanager_core_network("resource-id")
+}
+```
 
 ## Signature
 

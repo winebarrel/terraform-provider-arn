@@ -16,7 +16,14 @@ arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/cores/${
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:greengrass:ap-northeast-1:111111111111:/greengrass/definition/cores/core-definition-id
+output "greengrass_core_definition" {
+  value = provider::arn::greengrass_core_definition("core-definition-id")
+}
+```
 
 ## Signature
 

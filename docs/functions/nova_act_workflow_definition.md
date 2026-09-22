@@ -16,7 +16,14 @@ arn:${Partition}:nova-act:${Region}:${Account}:workflow-definition/${WorkflowDef
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:nova-act:ap-northeast-1:111111111111:workflow-definition/workflow-definition-name
+output "nova_act_workflow_definition" {
+  value = provider::arn::nova_act_workflow_definition("workflow-definition-name")
+}
+```
 
 ## Signature
 

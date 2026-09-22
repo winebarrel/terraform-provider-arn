@@ -16,7 +16,14 @@ arn:${Partition}:deadline:${Region}:${Account}:farm/${FarmId}/fleet/${FleetId}/w
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:deadline:ap-northeast-1:111111111111:farm/farm-id/fleet/fleet-id/worker/worker-id
+output "deadline_worker" {
+  value = provider::arn::deadline_worker("farm-id", "fleet-id", "worker-id")
+}
+```
 
 ## Signature
 

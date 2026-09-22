@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}::/domainnames/${DomainName}+${DomainIdenti
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1::/domainnames/domain-name+domain-identifier/basepathmappings/base-path
+output "apigateway_private_base_path_mapping" {
+  value = provider::arn::apigateway_private_base_path_mapping("domain-name", "domain-identifier", "base-path")
+}
+```
 
 ## Signature
 

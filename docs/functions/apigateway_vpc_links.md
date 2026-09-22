@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}::/vpclinks
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1::/vpclinks
+output "apigateway_vpc_links" {
+  value = provider::arn::apigateway_vpc_links()
+}
+```
 
 ## Signature
 

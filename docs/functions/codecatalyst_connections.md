@@ -16,7 +16,14 @@ arn:${Partition}:codecatalyst:${Region}:${Account}:/connections/${ConnectionId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codecatalyst:ap-northeast-1:111111111111:/connections/connection-id
+output "codecatalyst_connections" {
+  value = provider::arn::codecatalyst_connections("connection-id")
+}
+```
 
 ## Signature
 

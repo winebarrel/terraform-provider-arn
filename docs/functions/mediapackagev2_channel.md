@@ -16,7 +16,14 @@ arn:${Partition}:mediapackagev2:${Region}:${Account}:channelGroup/${ChannelGroup
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediapackagev2:ap-northeast-1:111111111111:channelGroup/channel-group-name/channel/channel-name
+output "mediapackagev2_channel" {
+  value = provider::arn::mediapackagev2_channel("channel-group-name", "channel-name")
+}
+```
 
 ## Signature
 

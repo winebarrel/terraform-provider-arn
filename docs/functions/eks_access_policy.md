@@ -16,7 +16,14 @@ arn:${Partition}:eks::aws:cluster-access-policy/${AccessPolicyName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:eks::aws:cluster-access-policy/access-policy-name
+output "eks_access_policy" {
+  value = provider::arn::eks_access_policy("access-policy-name")
+}
+```
 
 ## Signature
 

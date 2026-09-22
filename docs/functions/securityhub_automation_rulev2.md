@@ -16,7 +16,14 @@ arn:${Partition}:securityhub:${Region}:${Account}:automation-rulev2/${Automation
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:securityhub:ap-northeast-1:111111111111:automation-rulev2/automation-rule-v2-id
+output "securityhub_automation_rulev2" {
+  value = provider::arn::securityhub_automation_rulev2("automation-rule-v2-id")
+}
+```
 
 ## Signature
 

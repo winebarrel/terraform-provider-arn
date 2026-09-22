@@ -16,7 +16,14 @@ arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/authenticat
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:connect:ap-northeast-1:111111111111:instance/instance-id/authentication-profile/authentication-profile-id
+output "connect_authentication_profile" {
+  value = provider::arn::connect_authentication_profile("instance-id", "authentication-profile-id")
+}
+```
 
 ## Signature
 

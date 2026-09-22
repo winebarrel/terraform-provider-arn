@@ -16,7 +16,14 @@ arn:${Partition}:guardduty:${Region}:${Account}:detector/${DetectorId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:guardduty:ap-northeast-1:111111111111:detector/detector-id
+output "guardduty_detector" {
+  value = provider::arn::guardduty_detector("detector-id")
+}
+```
 
 ## Signature
 

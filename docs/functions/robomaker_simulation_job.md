@@ -16,7 +16,14 @@ arn:${Partition}:robomaker:${Region}:${Account}:simulation-job/${SimulationJobId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:robomaker:ap-northeast-1:111111111111:simulation-job/simulation-job-id
+output "robomaker_simulation_job" {
+  value = provider::arn::robomaker_simulation_job("simulation-job-id")
+}
+```
 
 ## Signature
 

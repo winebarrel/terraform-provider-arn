@@ -16,7 +16,14 @@ arn:${Partition}:snow-device-management:${Region}:${Account}:task/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:snow-device-management:ap-northeast-1:111111111111:task/resource-id
+output "snow_device_management_task" {
+  value = provider::arn::snow_device_management_task("resource-id")
+}
+```
 
 ## Signature
 

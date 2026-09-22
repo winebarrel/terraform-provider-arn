@@ -16,7 +16,14 @@ arn:${Partition}:qdeveloper:${Region}:${Account}:plugin/${Identifier}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:qdeveloper:ap-northeast-1:111111111111:plugin/identifier
+output "q_plugin" {
+  value = provider::arn::q_plugin("identifier")
+}
+```
 
 ## Signature
 

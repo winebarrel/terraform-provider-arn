@@ -16,7 +16,14 @@ arn:${Partition}:ec2::${Account}:ipam-internet-registry-association/${IpamIntern
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2::111111111111:ipam-internet-registry-association/ipam-internet-registry-association-id
+output "ec2_ipam_internet_registry_association" {
+  value = provider::arn::ec2_ipam_internet_registry_association("ipam-internet-registry-association-id")
+}
+```
 
 ## Signature
 

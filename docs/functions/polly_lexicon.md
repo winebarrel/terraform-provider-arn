@@ -16,7 +16,14 @@ arn:${Partition}:polly:${Region}:${Account}:lexicon/${LexiconName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:polly:ap-northeast-1:111111111111:lexicon/lexicon-name
+output "polly_lexicon" {
+  value = provider::arn::polly_lexicon("lexicon-name")
+}
+```
 
 ## Signature
 

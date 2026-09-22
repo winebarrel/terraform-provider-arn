@@ -16,7 +16,14 @@ arn:${Partition}:elasticmapreduce:${Region}:${Account}:studio/${StudioId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:elasticmapreduce:ap-northeast-1:111111111111:studio/studio-id
+output "elasticmapreduce_studio" {
+  value = provider::arn::elasticmapreduce_studio("studio-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:comprehend:${Region}:${Account}:document-classifier/${DocumentC
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:comprehend:ap-northeast-1:111111111111:document-classifier/document-classifier-name
+output "comprehend_document_classifier" {
+  value = provider::arn::comprehend_document_classifier("document-classifier-name")
+}
+```
 
 ## Signature
 

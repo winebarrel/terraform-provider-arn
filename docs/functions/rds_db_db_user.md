@@ -16,7 +16,14 @@ arn:${Partition}:rds-db:${Region}:${Account}:dbuser:${DbiResourceId}/${DbUserNam
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds-db:ap-northeast-1:111111111111:dbuser:dbi-resource-id/db-user-name
+output "rds_db_db_user" {
+  value = provider::arn::rds_db_db_user("dbi-resource-id", "db-user-name")
+}
+```
 
 ## Signature
 

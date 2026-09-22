@@ -16,7 +16,14 @@ arn:${Partition}:medialive:${Region}:${Account}:signal-map:${SignalMapId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:medialive:ap-northeast-1:111111111111:signal-map:signal-map-id
+output "medialive_signal_map" {
+  value = provider::arn::medialive_signal_map("signal-map-id")
+}
+```
 
 ## Signature
 

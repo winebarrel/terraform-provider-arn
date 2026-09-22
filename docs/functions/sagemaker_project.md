@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:project/${ProjectName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:project/project-name
+output "sagemaker_project" {
+  value = provider::arn::sagemaker_project("project-name")
+}
+```
 
 ## Signature
 

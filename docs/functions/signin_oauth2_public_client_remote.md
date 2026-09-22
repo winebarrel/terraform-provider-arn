@@ -16,7 +16,14 @@ arn:${Partition}:signin:${Region}:${Account}:oauth2/public-client/remote
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:signin:ap-northeast-1:111111111111:oauth2/public-client/remote
+output "signin_oauth2_public_client_remote" {
+  value = provider::arn::signin_oauth2_public_client_remote()
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}::/restapis/${RestApiId}/stages/${StageName
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1::/restapis/rest-api-id/stages/stage-name/sdks/sdk-type
+output "apigateway_sdk" {
+  value = provider::arn::apigateway_sdk("rest-api-id", "stage-name", "sdk-type")
+}
+```
 
 ## Signature
 

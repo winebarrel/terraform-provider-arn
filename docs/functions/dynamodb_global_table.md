@@ -16,7 +16,14 @@ arn:${Partition}:dynamodb::${Account}:global-table/${GlobalTableName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:dynamodb::111111111111:global-table/global-table-name
+output "dynamodb_global_table" {
+  value = provider::arn::dynamodb_global_table("global-table-name")
+}
+```
 
 ## Signature
 

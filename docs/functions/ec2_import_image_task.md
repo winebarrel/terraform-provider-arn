@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:import-image-task/${ImportImageTaskId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:import-image-task/import-image-task-id
+output "ec2_import_image_task" {
+  value = provider::arn::ec2_import_image_task("import-image-task-id")
+}
+```
 
 ## Signature
 

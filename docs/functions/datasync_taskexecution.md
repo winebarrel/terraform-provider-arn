@@ -16,7 +16,14 @@ arn:${Partition}:datasync:${Region}:${AccountId}:task/${TaskId}/execution/${Exec
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:datasync:ap-northeast-1:111111111111:task/task-id/execution/execution-id
+output "datasync_taskexecution" {
+  value = provider::arn::datasync_taskexecution("task-id", "execution-id")
+}
+```
 
 ## Signature
 

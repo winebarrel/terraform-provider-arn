@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:transit-gateway-connect-peer/${Transit
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:transit-gateway-connect-peer/transit-gateway-connect-peer-id
+output "ec2_transit_gateway_connect_peer" {
+  value = provider::arn::ec2_transit_gateway_connect_peer("transit-gateway-connect-peer-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:workspaces-web:${Region}:${Account}:ipAccessSettings/${IpAccess
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:workspaces-web:ap-northeast-1:111111111111:ipAccessSettings/ip-access-settings-id
+output "workspaces_web_ip_access_settings" {
+  value = provider::arn::workspaces_web_ip_access_settings("ip-access-settings-id")
+}
+```
 
 ## Signature
 

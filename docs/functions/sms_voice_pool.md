@@ -16,7 +16,14 @@ arn:${Partition}:sms-voice:${Region}:${Account}:pool/${PoolId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sms-voice:ap-northeast-1:111111111111:pool/pool-id
+output "sms_voice_pool" {
+  value = provider::arn::sms_voice_pool("pool-id")
+}
+```
 
 ## Signature
 

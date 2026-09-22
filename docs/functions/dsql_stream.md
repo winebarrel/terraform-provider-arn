@@ -16,7 +16,14 @@ arn:${Partition}:dsql:${Region}:${Account}:cluster/${ClusterId}/stream/${StreamI
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:dsql:ap-northeast-1:111111111111:cluster/cluster-id/stream/stream-id
+output "dsql_stream" {
+  value = provider::arn::dsql_stream("cluster-id", "stream-id")
+}
+```
 
 ## Signature
 

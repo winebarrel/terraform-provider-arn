@@ -16,7 +16,14 @@ arn:${Partition}:omics:${Region}:${Account}:task/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:omics:ap-northeast-1:111111111111:task/id
+output "omics_task_resource" {
+  value = provider::arn::omics_task_resource("id")
+}
+```
 
 ## Signature
 

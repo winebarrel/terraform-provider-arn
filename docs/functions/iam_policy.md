@@ -16,7 +16,14 @@ arn:${Partition}:iam::${Account}:policy/${PolicyNameWithPath}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::111111111111:policy/policy-name-with-path
+output "iam_policy" {
+  value = provider::arn::iam_policy("policy-name-with-path")
+}
+```
 
 ## Signature
 

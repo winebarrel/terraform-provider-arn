@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/routes/${RouteId}/requestp
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1::/apis/api-id/routes/route-id/requestparameters/request-parameter-key
+output "apigateway_route_request_parameter" {
+  value = provider::arn::apigateway_route_request_parameter("api-id", "route-id", "request-parameter-key")
+}
+```
 
 ## Signature
 

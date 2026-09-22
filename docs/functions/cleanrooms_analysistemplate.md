@@ -16,7 +16,14 @@ arn:${Partition}:cleanrooms:${Region}:${Account}:membership/${MembershipId}/anal
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cleanrooms:ap-northeast-1:111111111111:membership/membership-id/analysistemplate/analysis-template-id
+output "cleanrooms_analysistemplate" {
+  value = provider::arn::cleanrooms_analysistemplate("membership-id", "analysis-template-id")
+}
+```
 
 ## Signature
 

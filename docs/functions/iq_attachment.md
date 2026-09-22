@@ -16,7 +16,14 @@ arn:${Partition}:iq:${Region}::attachment/${AttachmentId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iq:ap-northeast-1::attachment/attachment-id
+output "iq_attachment" {
+  value = provider::arn::iq_attachment("attachment-id")
+}
+```
 
 ## Signature
 

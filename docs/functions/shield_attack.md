@@ -16,7 +16,14 @@ arn:${Partition}:shield::${Account}:attack/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:shield::111111111111:attack/id
+output "shield_attack" {
+  value = provider::arn::shield_attack("id")
+}
+```
 
 ## Signature
 

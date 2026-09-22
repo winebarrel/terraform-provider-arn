@@ -16,7 +16,14 @@ arn:${Partition}:glue:${Region}:${Account}:catalog
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:glue:ap-northeast-1:111111111111:catalog
+output "glue_rootcatalog" {
+  value = provider::arn::glue_rootcatalog()
+}
+```
 
 ## Signature
 

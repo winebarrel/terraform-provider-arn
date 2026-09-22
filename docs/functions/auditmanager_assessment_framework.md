@@ -16,7 +16,14 @@ arn:${Partition}:auditmanager:${Region}:${Account}:assessmentFramework/${Assessm
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:auditmanager:ap-northeast-1:111111111111:assessmentFramework/assessment-framework-id
+output "auditmanager_assessment_framework" {
+  value = provider::arn::auditmanager_assessment_framework("assessment-framework-id")
+}
+```
 
 ## Signature
 

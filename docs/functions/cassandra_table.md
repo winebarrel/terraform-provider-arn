@@ -16,7 +16,14 @@ arn:${Partition}:cassandra:${Region}:${Account}:/keyspace/${KeyspaceName}/table/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cassandra:ap-northeast-1:111111111111:/keyspace/keyspace-name/table/table-name
+output "cassandra_table" {
+  value = provider::arn::cassandra_table("keyspace-name", "table-name")
+}
+```
 
 ## Signature
 

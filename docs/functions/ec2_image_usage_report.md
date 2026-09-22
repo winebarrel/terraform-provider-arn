@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:image-usage-report/${ImageUsageReportI
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:image-usage-report/image-usage-report-id
+output "ec2_image_usage_report" {
+  value = provider::arn::ec2_image_usage_report("image-usage-report-id")
+}
+```
 
 ## Signature
 

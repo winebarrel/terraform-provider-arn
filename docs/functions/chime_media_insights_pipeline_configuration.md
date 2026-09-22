@@ -16,7 +16,14 @@ arn:${Partition}:chime:${Region}:${AccountId}:media-insights-pipeline-configurat
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:chime:ap-northeast-1:111111111111:media-insights-pipeline-configuration/configuration-name
+output "chime_media_insights_pipeline_configuration" {
+  value = provider::arn::chime_media_insights_pipeline_configuration("configuration-name")
+}
+```
 
 ## Signature
 

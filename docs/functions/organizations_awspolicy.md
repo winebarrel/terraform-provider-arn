@@ -16,7 +16,14 @@ arn:${Partition}:organizations::aws:policy/${PolicyType}/p-${PolicyId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:organizations::aws:policy/policy-type/p-policy-id
+output "organizations_awspolicy" {
+  value = provider::arn::organizations_awspolicy("policy-type", "policy-id")
+}
+```
 
 ## Signature
 

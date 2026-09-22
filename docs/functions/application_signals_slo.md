@@ -16,7 +16,14 @@ arn:${Partition}:application-signals:${Region}:${Account}:slo/${SloName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:application-signals:ap-northeast-1:111111111111:slo/slo-name
+output "application_signals_slo" {
+  value = provider::arn::application_signals_slo("slo-name")
+}
+```
 
 ## Signature
 

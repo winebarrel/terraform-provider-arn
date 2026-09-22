@@ -16,7 +16,14 @@ arn:${Partition}:iam::${Account}:saml-provider/${SamlProviderName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::111111111111:saml-provider/saml-provider-name
+output "iam_saml_provider" {
+  value = provider::arn::iam_saml_provider("saml-provider-name")
+}
+```
 
 ## Signature
 

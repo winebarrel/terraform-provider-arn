@@ -16,7 +16,14 @@ arn:${Partition}:entityresolution:${Region}:${Account}:providerservice/${Provide
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:entityresolution:ap-northeast-1:111111111111:providerservice/provider-name/provider-service-name
+output "entityresolution_provider_service" {
+  value = provider::arn::entityresolution_provider_service("provider-name", "provider-service-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:iotdeviceadvisor:${Region}:${Account}:suitedefinition/${SuiteDe
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotdeviceadvisor:ap-northeast-1:111111111111:suitedefinition/suite-definition-id
+output "iotdeviceadvisor_suitedefinition" {
+  value = provider::arn::iotdeviceadvisor_suitedefinition("suite-definition-id")
+}
+```
 
 ## Signature
 

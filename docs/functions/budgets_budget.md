@@ -16,7 +16,14 @@ arn:${Partition}:budgets::${Account}:budget/${BudgetName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:budgets::111111111111:budget/budget-name
+output "budgets_budget" {
+  value = provider::arn::budgets_budget("budget-name")
+}
+```
 
 ## Signature
 

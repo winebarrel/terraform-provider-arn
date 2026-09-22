@@ -16,7 +16,14 @@ arn:${Partition}:timestream:${Region}:${Account}:database/${DatabaseName}/table/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:timestream:ap-northeast-1:111111111111:database/database-name/table/table-name
+output "timestream_table" {
+  value = provider::arn::timestream_table("database-name", "table-name")
+}
+```
 
 ## Signature
 

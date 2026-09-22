@@ -16,7 +16,14 @@ arn:${Partition}:s3:us-west-2:${Account}:async-request/mrap/${Operation}/${Token
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:s3:us-west-2:111111111111:async-request/mrap/operation/token
+output "s3_multiregionaccesspointrequestarn" {
+  value = provider::arn::s3_multiregionaccesspointrequestarn("operation", "token")
+}
+```
 
 ## Signature
 

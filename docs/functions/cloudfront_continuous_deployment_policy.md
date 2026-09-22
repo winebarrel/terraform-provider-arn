@@ -16,7 +16,14 @@ arn:${Partition}:cloudfront::${Account}:continuous-deployment-policy/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudfront::111111111111:continuous-deployment-policy/id
+output "cloudfront_continuous_deployment_policy" {
+  value = provider::arn::cloudfront_continuous_deployment_policy("id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:firehose:${Region}:${Account}:deliverystream/${DeliveryStreamNa
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:firehose:ap-northeast-1:111111111111:deliverystream/delivery-stream-name
+output "firehose_deliverystream" {
+  value = provider::arn::firehose_deliverystream("delivery-stream-name")
+}
+```
 
 ## Signature
 

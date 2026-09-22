@@ -16,7 +16,14 @@ arn:${Partition}:one:${Region}:${Account}:device-configuration-template/${Templa
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:one:ap-northeast-1:111111111111:device-configuration-template/template-id
+output "one_device_configuration_template" {
+  value = provider::arn::one_device_configuration_template("template-id")
+}
+```
 
 ## Signature
 

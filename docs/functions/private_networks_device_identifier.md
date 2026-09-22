@@ -16,7 +16,14 @@ arn:${Partition}:private-networks:${Region}:${Account}:device-identifier/${Netwo
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:private-networks:ap-northeast-1:111111111111:device-identifier/network-name/device-id
+output "private_networks_device_identifier" {
+  value = provider::arn::private_networks_device_identifier("network-name", "device-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:bedrock:${Region}:${Account}:model-copy-job/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock:ap-northeast-1:111111111111:model-copy-job/resource-id
+output "bedrock_model_copy_job" {
+  value = provider::arn::bedrock_model_copy_job("resource-id")
+}
+```
 
 ## Signature
 

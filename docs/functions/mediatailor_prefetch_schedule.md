@@ -16,7 +16,14 @@ arn:${Partition}:mediatailor:${Region}:${Account}:prefetchSchedule/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediatailor:ap-northeast-1:111111111111:prefetchSchedule/resource-id
+output "mediatailor_prefetch_schedule" {
+  value = provider::arn::mediatailor_prefetch_schedule("resource-id")
+}
+```
 
 ## Signature
 

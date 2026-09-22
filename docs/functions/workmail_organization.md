@@ -16,7 +16,14 @@ arn:${Partition}:workmail:${Region}:${Account}:organization/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:workmail:ap-northeast-1:111111111111:organization/resource-id
+output "workmail_organization" {
+  value = provider::arn::workmail_organization("resource-id")
+}
+```
 
 ## Signature
 

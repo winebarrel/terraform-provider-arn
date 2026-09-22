@@ -16,7 +16,14 @@ arn:${Partition}:glue:${Region}:${Account}:registry/${RegistryName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:glue:ap-northeast-1:111111111111:registry/registry-name
+output "glue_registry" {
+  value = provider::arn::glue_registry("registry-name")
+}
+```
 
 ## Signature
 

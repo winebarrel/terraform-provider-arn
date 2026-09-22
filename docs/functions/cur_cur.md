@@ -16,7 +16,14 @@ arn:${Partition}:cur:${Region}:${Account}:definition/${ReportName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cur:ap-northeast-1:111111111111:definition/report-name
+output "cur_cur" {
+  value = provider::arn::cur_cur("report-name")
+}
+```
 
 ## Signature
 

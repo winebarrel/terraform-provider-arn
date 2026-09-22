@@ -16,7 +16,14 @@ arn:${Partition}:mediaconvert:${Region}:${Account}:queues/${QueueName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediaconvert:ap-northeast-1:111111111111:queues/queue-name
+output "mediaconvert_queue" {
+  value = provider::arn::mediaconvert_queue("queue-name")
+}
+```
 
 ## Signature
 

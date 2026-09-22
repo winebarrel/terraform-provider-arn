@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:host-reservation/${HostReservationId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:host-reservation/host-reservation-id
+output "ec2_host_reservation" {
+  value = provider::arn::ec2_host_reservation("host-reservation-id")
+}
+```
 
 ## Signature
 

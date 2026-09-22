@@ -16,7 +16,14 @@ arn:${Partition}:iot:${Region}:${Account}:index/${IndexName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iot:ap-northeast-1:111111111111:index/index-name
+output "iot_index" {
+  value = provider::arn::iot_index("index-name")
+}
+```
 
 ## Signature
 

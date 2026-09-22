@@ -16,7 +16,14 @@ arn:${Partition}:chime:${Region}:${AccountId}:voice-profile/${VoiceProfileId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:chime:ap-northeast-1:111111111111:voice-profile/voice-profile-id
+output "chime_voice_profile" {
+  value = provider::arn::chime_voice_profile("voice-profile-id")
+}
+```
 
 ## Signature
 

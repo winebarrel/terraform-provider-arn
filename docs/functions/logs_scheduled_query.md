@@ -16,7 +16,14 @@ arn:${Partition}:logs:${Region}:${Account}:scheduled-query:${ScheduledQueryId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:logs:ap-northeast-1:111111111111:scheduled-query:scheduled-query-id
+output "logs_scheduled_query" {
+  value = provider::arn::logs_scheduled_query("scheduled-query-id")
+}
+```
 
 ## Signature
 

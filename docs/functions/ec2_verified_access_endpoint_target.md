@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:verified-access-endpoint-target/${Veri
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:verified-access-endpoint-target/verified-access-endpoint-target-id
+output "ec2_verified_access_endpoint_target" {
+  value = provider::arn::ec2_verified_access_endpoint_target("verified-access-endpoint-target-id")
+}
+```
 
 ## Signature
 

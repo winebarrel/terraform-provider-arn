@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}:${Account}:/portalproducts/${PortalProduct
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1:111111111111:/portalproducts/portal-product-id/productrestendpointpages/product-rest-endpoint-page-id
+output "apigateway_product_rest_endpoint_page" {
+  value = provider::arn::apigateway_product_rest_endpoint_page("portal-product-id", "product-rest-endpoint-page-id")
+}
+```
 
 ## Signature
 

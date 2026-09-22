@@ -16,7 +16,14 @@ arn:${Partition}:lambda:${Region}:${Account}:layer:${LayerName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:lambda:ap-northeast-1:111111111111:layer:layer-name
+output "lambda_layer" {
+  value = provider::arn::lambda_layer("layer-name")
+}
+```
 
 ## Signature
 

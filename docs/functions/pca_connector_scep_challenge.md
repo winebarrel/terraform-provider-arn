@@ -16,7 +16,14 @@ arn:${Partition}:pca-connector-scep:${Region}:${Account}:connector/${ConnectorId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:pca-connector-scep:ap-northeast-1:111111111111:connector/connector-id/challenge/challenge-id
+output "pca_connector_scep_challenge" {
+  value = provider::arn::pca_connector_scep_challenge("connector-id", "challenge-id")
+}
+```
 
 ## Signature
 

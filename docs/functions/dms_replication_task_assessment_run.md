@@ -16,7 +16,14 @@ arn:${Partition}:dms:${Region}:${Account}:assessment-run:*
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:dms:ap-northeast-1:111111111111:assessment-run:*
+output "dms_replication_task_assessment_run" {
+  value = provider::arn::dms_replication_task_assessment_run()
+}
+```
 
 ## Signature
 

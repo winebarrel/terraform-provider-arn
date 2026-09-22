@@ -16,7 +16,14 @@ arn:${Partition}:iotmanagedintegrations:${Region}:${Account}:credential-locker/$
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotmanagedintegrations:ap-northeast-1:111111111111:credential-locker/identifier
+output "iotmanagedintegrations_credential_locker" {
+  value = provider::arn::iotmanagedintegrations_credential_locker("identifier")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:ivs:${Region}:${Account}:channel/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ivs:ap-northeast-1:111111111111:channel/resource-id
+output "ivs_channel" {
+  value = provider::arn::ivs_channel("resource-id")
+}
+```
 
 ## Signature
 

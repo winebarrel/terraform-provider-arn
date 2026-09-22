@@ -16,7 +16,14 @@ arn:${Partition}:apptest:${Region}:${Account}:testcase/${TestCaseId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apptest:ap-northeast-1:111111111111:testcase/test-case-id
+output "apptest_test_case" {
+  value = provider::arn::apptest_test_case("test-case-id")
+}
+```
 
 ## Signature
 

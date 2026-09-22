@@ -16,7 +16,14 @@ arn:${Partition}:cloudfront::${Account}:response-headers-policy/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudfront::111111111111:response-headers-policy/id
+output "cloudfront_response_headers_policy" {
+  value = provider::arn::cloudfront_response_headers_policy("id")
+}
+```
 
 ## Signature
 

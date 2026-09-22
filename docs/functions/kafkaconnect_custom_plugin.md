@@ -16,7 +16,14 @@ arn:${Partition}:kafkaconnect:${Region}:${Account}:custom-plugin/${CustomPluginN
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:kafkaconnect:ap-northeast-1:111111111111:custom-plugin/custom-plugin-name/uuid
+output "kafkaconnect_custom_plugin" {
+  value = provider::arn::kafkaconnect_custom_plugin("custom-plugin-name", "uuid")
+}
+```
 
 ## Signature
 

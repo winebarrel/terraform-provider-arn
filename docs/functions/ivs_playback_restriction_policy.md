@@ -16,7 +16,14 @@ arn:${Partition}:ivs:${Region}:${Account}:playback-restriction-policy/${Resource
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ivs:ap-northeast-1:111111111111:playback-restriction-policy/resource-id
+output "ivs_playback_restriction_policy" {
+  value = provider::arn::ivs_playback_restriction_policy("resource-id")
+}
+```
 
 ## Signature
 

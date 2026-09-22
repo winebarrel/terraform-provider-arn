@@ -16,7 +16,14 @@ arn:${Partition}:entityresolution:${Region}:${Account}:schemamapping/${SchemaNam
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:entityresolution:ap-northeast-1:111111111111:schemamapping/schema-name
+output "entityresolution_schema_mapping" {
+  value = provider::arn::entityresolution_schema_mapping("schema-name")
+}
+```
 
 ## Signature
 

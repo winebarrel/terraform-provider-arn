@@ -16,7 +16,14 @@ arn:${Partition}:route53resolver:${Region}:${Account}:resolver-rule/${ResourceId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:route53resolver:ap-northeast-1:111111111111:resolver-rule/resource-id
+output "route53resolver_resolver_rule" {
+  value = provider::arn::route53resolver_resolver_rule("resource-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:memorydb:${Region}:${Account}:snapshot/${SnapshotName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:memorydb:ap-northeast-1:111111111111:snapshot/snapshot-name
+output "memorydb_snapshot" {
+  value = provider::arn::memorydb_snapshot("snapshot-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:sso:::permissionSet/${InstanceId}/${PermissionSetId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sso:::permissionSet/instance-id/permission-set-id
+output "sso_permission_set" {
+  value = provider::arn::sso_permission_set("instance-id", "permission-set-id")
+}
+```
 
 ## Signature
 

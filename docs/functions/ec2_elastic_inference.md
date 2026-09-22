@@ -16,7 +16,14 @@ arn:${Partition}:elastic-inference:${Region}:${Account}:elastic-inference-accele
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:elastic-inference:ap-northeast-1:111111111111:elastic-inference-accelerator/accelerator-id
+output "ec2_elastic_inference" {
+  value = provider::arn::ec2_elastic_inference("accelerator-id")
+}
+```
 
 ## Signature
 

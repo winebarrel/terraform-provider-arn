@@ -16,7 +16,14 @@ arn:${Partition}:app-integrations:${Region}:${Account}:event-integration/${Event
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:app-integrations:ap-northeast-1:111111111111:event-integration/event-integration-name
+output "app_integrations_event_integration" {
+  value = provider::arn::app_integrations_event_integration("event-integration-name")
+}
+```
 
 ## Signature
 

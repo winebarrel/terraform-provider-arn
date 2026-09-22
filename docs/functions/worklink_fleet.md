@@ -16,7 +16,14 @@ arn:${Partition}:worklink::${Account}:fleet/${FleetName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:worklink::111111111111:fleet/fleet-name
+output "worklink_fleet" {
+  value = provider::arn::worklink_fleet("fleet-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:app-integrations:${Region}:${Account}:data-integration-associat
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:app-integrations:ap-northeast-1:111111111111:data-integration-association/data-integration-id/resource-id
+output "app_integrations_data_integration_association" {
+  value = provider::arn::app_integrations_data_integration_association("data-integration-id", "resource-id")
+}
+```
 
 ## Signature
 

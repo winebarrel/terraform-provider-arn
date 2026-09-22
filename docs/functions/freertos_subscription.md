@@ -16,7 +16,14 @@ arn:${Partition}:freertos:${Region}:${Account}:subscription/${SubscriptionID}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:freertos:ap-northeast-1:111111111111:subscription/subscription-id
+output "freertos_subscription" {
+  value = provider::arn::freertos_subscription("subscription-id")
+}
+```
 
 ## Signature
 

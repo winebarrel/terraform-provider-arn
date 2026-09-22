@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:pipeline/${PipelineName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:pipeline/pipeline-name
+output "sagemaker_pipeline" {
+  value = provider::arn::sagemaker_pipeline("pipeline-name")
+}
+```
 
 ## Signature
 

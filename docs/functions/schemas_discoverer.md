@@ -16,7 +16,14 @@ arn:${Partition}:schemas:${Region}:${Account}:discoverer/${DiscovererId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:schemas:ap-northeast-1:111111111111:discoverer/discoverer-id
+output "schemas_discoverer" {
+  value = provider::arn::schemas_discoverer("discoverer-id")
+}
+```
 
 ## Signature
 

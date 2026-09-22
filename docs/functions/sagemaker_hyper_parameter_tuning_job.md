@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:hyper-parameter-tuning-job/${Hyp
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:hyper-parameter-tuning-job/hyper-parameter-tuning-job-name
+output "sagemaker_hyper_parameter_tuning_job" {
+  value = provider::arn::sagemaker_hyper_parameter_tuning_job("hyper-parameter-tuning-job-name")
+}
+```
 
 ## Signature
 

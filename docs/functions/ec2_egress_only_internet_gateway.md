@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:egress-only-internet-gateway/${EgressO
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:egress-only-internet-gateway/egress-only-internet-gateway-id
+output "ec2_egress_only_internet_gateway" {
+  value = provider::arn::ec2_egress_only_internet_gateway("egress-only-internet-gateway-id")
+}
+```
 
 ## Signature
 

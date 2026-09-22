@@ -16,7 +16,14 @@ arn:${Partition}:wellarchitected:${Region}:${Account}:lens/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:wellarchitected:ap-northeast-1:111111111111:lens/resource-id
+output "wellarchitected_lens" {
+  value = provider::arn::wellarchitected_lens("resource-id")
+}
+```
 
 ## Signature
 

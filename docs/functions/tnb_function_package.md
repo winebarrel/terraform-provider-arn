@@ -16,7 +16,14 @@ arn:${Partition}:tnb:${Region}:${Account}:function-package/${FunctionPackageId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:tnb:ap-northeast-1:111111111111:function-package/function-package-id
+output "tnb_function_package" {
+  value = provider::arn::tnb_function_package("function-package-id")
+}
+```
 
 ## Signature
 

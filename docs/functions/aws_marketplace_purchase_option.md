@@ -16,7 +16,14 @@ arn:${Partition}:aws-marketplace:::catalog/${CatalogName}/purchaseOption/${Purch
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:aws-marketplace:::catalog/catalog-name/purchaseOption/purchase-option-id
+output "aws_marketplace_purchase_option" {
+  value = provider::arn::aws_marketplace_purchase_option("catalog-name", "purchase-option-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:network-firewall:${Region}:${Account}:vpc-endpoint-association/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:network-firewall:ap-northeast-1:111111111111:vpc-endpoint-association/name
+output "network_firewall_vpc_endpoint_association" {
+  value = provider::arn::network_firewall_vpc_endpoint_association("name")
+}
+```
 
 ## Signature
 

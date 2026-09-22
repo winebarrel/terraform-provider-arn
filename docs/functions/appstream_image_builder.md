@@ -16,7 +16,14 @@ arn:${Partition}:appstream:${Region}:${Account}:image-builder/${ImageBuilderName
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appstream:ap-northeast-1:111111111111:image-builder/image-builder-name
+output "appstream_image_builder" {
+  value = provider::arn::appstream_image_builder("image-builder-name")
+}
+```
 
 ## Signature
 

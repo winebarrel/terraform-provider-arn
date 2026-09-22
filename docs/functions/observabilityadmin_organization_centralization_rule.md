@@ -16,7 +16,14 @@ arn:${Partition}:observabilityadmin:${Region}:${Account}:organization-centraliza
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:observabilityadmin:ap-northeast-1:111111111111:organization-centralization-rule/centralization-rule-name
+output "observabilityadmin_organization_centralization_rule" {
+  value = provider::arn::observabilityadmin_organization_centralization_rule("centralization-rule-name")
+}
+```
 
 ## Signature
 

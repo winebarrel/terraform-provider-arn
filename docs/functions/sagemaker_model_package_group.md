@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:model-package-group/${ModelPacka
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:model-package-group/model-package-group-name
+output "sagemaker_model_package_group" {
+  value = provider::arn::sagemaker_model_package_group("model-package-group-name")
+}
+```
 
 ## Signature
 

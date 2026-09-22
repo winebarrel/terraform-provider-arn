@@ -16,7 +16,14 @@ arn:${Partition}:route53-recovery-readiness::${Account}:cell/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:route53-recovery-readiness::111111111111:cell/resource-id
+output "route53_recovery_readiness_cell" {
+  value = provider::arn::route53_recovery_readiness_cell("resource-id")
+}
+```
 
 ## Signature
 

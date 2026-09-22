@@ -16,7 +16,14 @@ arn:${Partition}:kendra:${Region}:${Account}:index/${IndexId}/experience/${Exper
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:kendra:ap-northeast-1:111111111111:index/index-id/experience/experience-id
+output "kendra_experience" {
+  value = provider::arn::kendra_experience("index-id", "experience-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:proton:${Region}:${Account}:repository/${Provider}:${Name}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:proton:ap-northeast-1:111111111111:repository/provider:name
+output "proton_repository" {
+  value = provider::arn::proton_repository("provider", "name")
+}
+```
 
 ## Signature
 

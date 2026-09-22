@@ -16,7 +16,14 @@ arn:${Partition}:drs:${Region}:${Account}:job/${JobID}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:drs:ap-northeast-1:111111111111:job/job-id
+output "drs_job_resource" {
+  value = provider::arn::drs_job_resource("job-id")
+}
+```
 
 ## Signature
 

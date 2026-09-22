@@ -16,7 +16,14 @@ arn:${Partition}:quicksight:${Region}:${Account}:limits-profile/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:quicksight:ap-northeast-1:111111111111:limits-profile/resource-id
+output "quicksight_limits_profile" {
+  value = provider::arn::quicksight_limits_profile("resource-id")
+}
+```
 
 ## Signature
 

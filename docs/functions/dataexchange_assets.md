@@ -16,7 +16,14 @@ arn:${Partition}:dataexchange:${Region}:${Account}:data-sets/${DataSetId}/revisi
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:dataexchange:ap-northeast-1:111111111111:data-sets/data-set-id/revisions/revision-id/assets/asset-id
+output "dataexchange_assets" {
+  value = provider::arn::dataexchange_assets("data-set-id", "revision-id", "asset-id")
+}
+```
 
 ## Signature
 

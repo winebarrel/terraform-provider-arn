@@ -16,7 +16,14 @@ arn:${Partition}:groundstation:${Region}:${Account}:mission-profile/${MissionPro
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:groundstation:ap-northeast-1:111111111111:mission-profile/mission-profile-id
+output "groundstation_mission_profile" {
+  value = provider::arn::groundstation_mission_profile("mission-profile-id")
+}
+```
 
 ## Signature
 

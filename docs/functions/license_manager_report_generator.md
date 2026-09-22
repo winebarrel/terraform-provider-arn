@@ -16,7 +16,14 @@ arn:${Partition}:license-manager:${Region}:${Account}:report-generator:${ReportG
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:license-manager:ap-northeast-1:111111111111:report-generator:report-generator-id
+output "license_manager_report_generator" {
+  value = provider::arn::license_manager_report_generator("report-generator-id")
+}
+```
 
 ## Signature
 

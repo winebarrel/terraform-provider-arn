@@ -16,7 +16,14 @@ arn:${Partition}:iam::${Account}:federated-user/${UserName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::111111111111:federated-user/user-name
+output "iam_federated_user" {
+  value = provider::arn::iam_federated_user("user-name")
+}
+```
 
 ## Signature
 

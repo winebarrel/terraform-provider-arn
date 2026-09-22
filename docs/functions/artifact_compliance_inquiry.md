@@ -16,7 +16,14 @@ arn:${Partition}:artifact:${Region}:${Account}:compliance-inquiry/*
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:artifact:ap-northeast-1:111111111111:compliance-inquiry/*
+output "artifact_compliance_inquiry" {
+  value = provider::arn::artifact_compliance_inquiry()
+}
+```
 
 ## Signature
 

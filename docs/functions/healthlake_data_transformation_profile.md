@@ -16,7 +16,14 @@ arn:${Partition}:healthlake:${Region}:${Account}:dataTransformationProfile/${Pro
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:healthlake:ap-northeast-1:111111111111:dataTransformationProfile/profile-id
+output "healthlake_data_transformation_profile" {
+  value = provider::arn::healthlake_data_transformation_profile("profile-id")
+}
+```
 
 ## Signature
 

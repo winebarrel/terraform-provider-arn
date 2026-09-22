@@ -16,7 +16,14 @@ arn:${Partition}:codestar:${Region}:${Account}:project/${ProjectId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codestar:ap-northeast-1:111111111111:project/project-id
+output "codestar_project" {
+  value = provider::arn::codestar_project("project-id")
+}
+```
 
 ## Signature
 

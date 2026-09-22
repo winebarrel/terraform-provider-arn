@@ -16,7 +16,14 @@ arn:${Partition}:codebuild:${Region}:${Account}:build-batch/${BuildBatchId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codebuild:ap-northeast-1:111111111111:build-batch/build-batch-id
+output "codebuild_build_batch" {
+  value = provider::arn::codebuild_build_batch("build-batch-id")
+}
+```
 
 ## Signature
 

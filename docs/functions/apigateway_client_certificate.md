@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}::/clientcertificates/${ClientCertificateId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1::/clientcertificates/client-certificate-id
+output "apigateway_client_certificate" {
+  value = provider::arn::apigateway_client_certificate("client-certificate-id")
+}
+```
 
 ## Signature
 

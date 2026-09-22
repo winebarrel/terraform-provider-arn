@@ -16,7 +16,14 @@ arn:${Partition}:lookoutvision:${Region}:${Account}:model/${ProjectName}/${Model
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:lookoutvision:ap-northeast-1:111111111111:model/project-name/model-version
+output "lookoutvision_model" {
+  value = provider::arn::lookoutvision_model("project-name", "model-version")
+}
+```
 
 ## Signature
 

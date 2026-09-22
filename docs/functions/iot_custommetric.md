@@ -16,7 +16,14 @@ arn:${Partition}:iot:${Region}:${Account}:custommetric/${MetricName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iot:ap-northeast-1:111111111111:custommetric/metric-name
+output "iot_custommetric" {
+  value = provider::arn::iot_custommetric("metric-name")
+}
+```
 
 ## Signature
 

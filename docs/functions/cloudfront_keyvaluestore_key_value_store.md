@@ -16,7 +16,14 @@ arn:${Partition}:cloudfront::${Account}:key-value-store/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudfront::111111111111:key-value-store/resource-id
+output "cloudfront_keyvaluestore_key_value_store" {
+  value = provider::arn::cloudfront_keyvaluestore_key_value_store("resource-id")
+}
+```
 
 ## Signature
 

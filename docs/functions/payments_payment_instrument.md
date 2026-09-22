@@ -16,7 +16,14 @@ arn:${Partition}:payments::${Account}:payment-instrument:${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:payments::111111111111:payment-instrument:resource-id
+output "payments_payment_instrument" {
+  value = provider::arn::payments_payment_instrument("resource-id")
+}
+```
 
 ## Signature
 

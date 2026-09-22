@@ -16,7 +16,14 @@ arn:${Partition}:partnercentral:${Region}:${Account}:catalog/${Catalog}/channel-
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:partnercentral:ap-northeast-1:111111111111:catalog/catalog/channel-handshake/identifier
+output "partnercentral_channel_handshake" {
+  value = provider::arn::partnercentral_channel_handshake("catalog", "identifier")
+}
+```
 
 ## Signature
 

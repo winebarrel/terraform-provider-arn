@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}::/apis/${ApiId}/authorizers/${AuthorizerId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1::/apis/api-id/authorizers/authorizer-id
+output "apigateway_authorizer" {
+  value = provider::arn::apigateway_authorizer("api-id", "authorizer-id")
+}
+```
 
 ## Signature
 

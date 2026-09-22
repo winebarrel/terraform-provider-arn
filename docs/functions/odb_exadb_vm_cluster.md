@@ -16,7 +16,14 @@ arn:${Partition}:odb:${Region}:${Account}:exadb-vm-cluster/${ExadbVmClusterId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:odb:ap-northeast-1:111111111111:exadb-vm-cluster/exadb-vm-cluster-id
+output "odb_exadb_vm_cluster" {
+  value = provider::arn::odb_exadb_vm_cluster("exadb-vm-cluster-id")
+}
+```
 
 ## Signature
 

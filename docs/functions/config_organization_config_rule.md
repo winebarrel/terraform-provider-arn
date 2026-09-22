@@ -16,7 +16,14 @@ arn:${Partition}:config:${Region}:${Account}:organization-config-rule/${Organiza
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:config:ap-northeast-1:111111111111:organization-config-rule/organization-config-rule-id
+output "config_organization_config_rule" {
+  value = provider::arn::config_organization_config_rule("organization-config-rule-id")
+}
+```
 
 ## Signature
 

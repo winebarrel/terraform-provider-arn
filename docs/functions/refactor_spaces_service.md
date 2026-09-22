@@ -16,7 +16,14 @@ arn:${Partition}:refactor-spaces:${Region}:${Account}:environment/${EnvironmentI
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:refactor-spaces:ap-northeast-1:111111111111:environment/environment-id/application/application-id/service/service-id
+output "refactor_spaces_service" {
+  value = provider::arn::refactor_spaces_service("environment-id", "application-id", "service-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:backup:${Region}:${Account}:report-plan:${ReportPlanName}-${Rep
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:backup:ap-northeast-1:111111111111:report-plan:report-plan-name-report-plan-id
+output "backup_report_plan" {
+  value = provider::arn::backup_report_plan("report-plan-name", "report-plan-id")
+}
+```
 
 ## Signature
 

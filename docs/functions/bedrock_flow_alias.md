@@ -16,7 +16,14 @@ arn:${Partition}:bedrock:${Region}:${Account}:flow/${FlowId}/alias/${FlowAliasId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock:ap-northeast-1:111111111111:flow/flow-id/alias/flow-alias-id
+output "bedrock_flow_alias" {
+  value = provider::arn::bedrock_flow_alias("flow-id", "flow-alias-id")
+}
+```
 
 ## Signature
 

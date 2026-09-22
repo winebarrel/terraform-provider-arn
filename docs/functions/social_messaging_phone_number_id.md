@@ -16,7 +16,14 @@ arn:${Partition}:social-messaging:${Region}:${Account}:phone-number-id/${Origina
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:social-messaging:ap-northeast-1:111111111111:phone-number-id/origination-phone-number-id
+output "social_messaging_phone_number_id" {
+  value = provider::arn::social_messaging_phone_number_id("origination-phone-number-id")
+}
+```
 
 ## Signature
 

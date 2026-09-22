@@ -16,7 +16,14 @@ arn:${Partition}:application-signals-mcp:${Region}:${Account}:mcp-server/*
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:application-signals-mcp:ap-northeast-1:111111111111:mcp-server/*
+output "application_signals_mcp_mcp_server" {
+  value = provider::arn::application_signals_mcp_mcp_server()
+}
+```
 
 ## Signature
 

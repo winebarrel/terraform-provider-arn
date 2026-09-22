@@ -16,7 +16,14 @@ arn:${Partition}:wisdom:${Region}:${Account}:quick-response/${KnowledgeBaseId}/$
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:wisdom:ap-northeast-1:111111111111:quick-response/knowledge-base-id/quick-response-id
+output "wisdom_quick_response" {
+  value = provider::arn::wisdom_quick_response("knowledge-base-id", "quick-response-id")
+}
+```
 
 ## Signature
 

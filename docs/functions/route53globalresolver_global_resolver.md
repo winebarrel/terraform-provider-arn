@@ -16,7 +16,14 @@ arn:${Partition}:route53globalresolver::${Account}:global-resolver/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:route53globalresolver::111111111111:global-resolver/id
+output "route53globalresolver_global_resolver" {
+  value = provider::arn::route53globalresolver_global_resolver("id")
+}
+```
 
 ## Signature
 

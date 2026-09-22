@@ -16,7 +16,14 @@ arn:${Partition}:ssm-quicksetup:${Region}:${Account}:configuration-manager/${Con
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ssm-quicksetup:ap-northeast-1:111111111111:configuration-manager/configuration-manager-id
+output "ssm_quicksetup_configuration_manager" {
+  value = provider::arn::ssm_quicksetup_configuration_manager("configuration-manager-id")
+}
+```
 
 ## Signature
 

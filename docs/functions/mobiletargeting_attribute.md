@@ -16,7 +16,14 @@ arn:${Partition}:mobiletargeting:${Region}:${Account}:apps/${AppId}/attributes/$
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mobiletargeting:ap-northeast-1:111111111111:apps/app-id/attributes/attribute-type
+output "mobiletargeting_attribute" {
+  value = provider::arn::mobiletargeting_attribute("app-id", "attribute-type")
+}
+```
 
 ## Signature
 

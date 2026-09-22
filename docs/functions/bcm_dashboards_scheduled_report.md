@@ -16,7 +16,14 @@ arn:${Partition}:bcm-dashboards::${Account}:scheduled-report/${ScheduledReportNa
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bcm-dashboards::111111111111:scheduled-report/scheduled-report-name
+output "bcm_dashboards_scheduled_report" {
+  value = provider::arn::bcm_dashboards_scheduled_report("scheduled-report-name")
+}
+```
 
 ## Signature
 

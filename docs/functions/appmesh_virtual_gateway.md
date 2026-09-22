@@ -16,7 +16,14 @@ arn:${Partition}:appmesh:${Region}:${Account}:mesh/${MeshName}/virtualGateway/${
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appmesh:ap-northeast-1:111111111111:mesh/mesh-name/virtualGateway/virtual-gateway-name
+output "appmesh_virtual_gateway" {
+  value = provider::arn::appmesh_virtual_gateway("mesh-name", "virtual-gateway-name")
+}
+```
 
 ## Signature
 

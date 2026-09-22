@@ -16,7 +16,14 @@ arn:${Partition}:iotevents:${Region}:${Account}:detectorModel/${DetectorModelNam
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotevents:ap-northeast-1:111111111111:detectorModel/detector-model-name
+output "iotevents_detector_model" {
+  value = provider::arn::iotevents_detector_model("detector-model-name")
+}
+```
 
 ## Signature
 

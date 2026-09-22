@@ -16,7 +16,14 @@ arn:${Partition}:organizations::${Account}:ou/o-${OrganizationId}/ou-${Organizat
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:organizations::111111111111:ou/o-organization-id/ou-organizational-unit-id
+output "organizations_organizationalunit" {
+  value = provider::arn::organizations_organizationalunit("organization-id", "organizational-unit-id")
+}
+```
 
 ## Signature
 

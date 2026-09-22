@@ -16,7 +16,14 @@ arn:${Partition}:iot:${Region}:${Account}:command/${CommandId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iot:ap-northeast-1:111111111111:command/command-id
+output "iot_command" {
+  value = provider::arn::iot_command("command-id")
+}
+```
 
 ## Signature
 

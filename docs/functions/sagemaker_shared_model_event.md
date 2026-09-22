@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:shared-model-event/${EventId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:shared-model-event/event-id
+output "sagemaker_shared_model_event" {
+  value = provider::arn::sagemaker_shared_model_event("event-id")
+}
+```
 
 ## Signature
 

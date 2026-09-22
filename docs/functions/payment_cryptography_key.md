@@ -16,7 +16,14 @@ arn:${Partition}:payment-cryptography:${Region}:${Account}:key/${KeyId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:payment-cryptography:ap-northeast-1:111111111111:key/key-id
+output "payment_cryptography_key" {
+  value = provider::arn::payment_cryptography_key("key-id")
+}
+```
 
 ## Signature
 

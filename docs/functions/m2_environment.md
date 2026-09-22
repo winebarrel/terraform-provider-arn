@@ -16,7 +16,14 @@ arn:${Partition}:m2:${Region}:${Account}:env/${EnvironmentId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:m2:ap-northeast-1:111111111111:env/environment-id
+output "m2_environment" {
+  value = provider::arn::m2_environment("environment-id")
+}
+```
 
 ## Signature
 

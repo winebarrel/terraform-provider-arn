@@ -16,7 +16,14 @@ arn:${Partition}:dlm:${Region}:${Account}:policy/${ResourceName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:dlm:ap-northeast-1:111111111111:policy/resource-name
+output "dlm_policy" {
+  value = provider::arn::dlm_policy("resource-name")
+}
+```
 
 ## Signature
 

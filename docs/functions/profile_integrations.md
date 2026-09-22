@@ -16,7 +16,14 @@ arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/integrations
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:profile:ap-northeast-1:111111111111:domains/domain-name/integrations/uri
+output "profile_integrations" {
+  value = provider::arn::profile_integrations("domain-name", "uri")
+}
+```
 
 ## Signature
 

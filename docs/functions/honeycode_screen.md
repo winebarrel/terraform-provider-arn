@@ -16,7 +16,14 @@ arn:${Partition}:honeycode:${Region}:${Account}:screen:workbook/${WorkbookId}/ap
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:honeycode:ap-northeast-1:111111111111:screen:workbook/workbook-id/app/app-id/screen/screen-id
+output "honeycode_screen" {
+  value = provider::arn::honeycode_screen("workbook-id", "app-id", "screen-id")
+}
+```
 
 ## Signature
 

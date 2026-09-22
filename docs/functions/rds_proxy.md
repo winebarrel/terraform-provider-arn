@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:db-proxy:${DbProxyId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:db-proxy:db-proxy-id
+output "rds_proxy" {
+  value = provider::arn::rds_proxy("db-proxy-id")
+}
+```
 
 ## Signature
 

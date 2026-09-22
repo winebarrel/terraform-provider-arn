@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:instance-connect-endpoint/${InstanceCo
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:instance-connect-endpoint/instance-connect-endpoint-id
+output "ec2_instance_connect_endpoint" {
+  value = provider::arn::ec2_instance_connect_endpoint("instance-connect-endpoint-id")
+}
+```
 
 ## Signature
 

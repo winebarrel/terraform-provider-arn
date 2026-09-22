@@ -16,7 +16,14 @@ arn:${Partition}:bedrock-agentcore:${Region}:${Account}:policy-engine/${PolicyEn
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock-agentcore:ap-northeast-1:111111111111:policy-engine/policy-engine-id/policy-generation/policy-generation-id
+output "bedrock_agentcore_policy_generation" {
+  value = provider::arn::bedrock_agentcore_policy_generation("policy-engine-id", "policy-generation-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:batch:${Region}:${Account}:job-queue/${JobQueueName}/quota-shar
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:batch:ap-northeast-1:111111111111:job-queue/job-queue-name/quota-share/quota-share-name
+output "batch_quota_share" {
+  value = provider::arn::batch_quota_share("job-queue-name", "quota-share-name")
+}
+```
 
 ## Signature
 

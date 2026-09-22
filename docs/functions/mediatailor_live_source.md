@@ -16,7 +16,14 @@ arn:${Partition}:mediatailor:${Region}:${Account}:liveSource/${SourceLocationNam
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mediatailor:ap-northeast-1:111111111111:liveSource/source-location-name/live-source-name
+output "mediatailor_live_source" {
+  value = provider::arn::mediatailor_live_source("source-location-name", "live-source-name")
+}
+```
 
 ## Signature
 

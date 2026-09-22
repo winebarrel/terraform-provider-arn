@@ -16,7 +16,14 @@ arn:${Partition}:evs:${Region}:${Account}:environment/${EnvironmentIdentifier}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:evs:ap-northeast-1:111111111111:environment/environment-identifier
+output "evs_environment" {
+  value = provider::arn::evs_environment("environment-identifier")
+}
+```
 
 ## Signature
 

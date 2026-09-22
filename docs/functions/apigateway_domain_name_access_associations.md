@@ -16,7 +16,14 @@ arn:${Partition}:apigateway:${Region}:${Account}:/domainnameaccessassociations
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:apigateway:ap-northeast-1:111111111111:/domainnameaccessassociations
+output "apigateway_domain_name_access_associations" {
+  value = provider::arn::apigateway_domain_name_access_associations()
+}
+```
 
 ## Signature
 

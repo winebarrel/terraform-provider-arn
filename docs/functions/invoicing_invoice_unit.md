@@ -16,7 +16,14 @@ arn:${Partition}:invoicing::${Account}:invoice-unit/${Identifier}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:invoicing::111111111111:invoice-unit/identifier
+output "invoicing_invoice_unit" {
+  value = provider::arn::invoicing_invoice_unit("identifier")
+}
+```
 
 ## Signature
 

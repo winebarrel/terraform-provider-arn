@@ -16,7 +16,14 @@ arn:${Partition}:bcm-pricing-calculator::${Account}:workload-estimate/${Workload
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bcm-pricing-calculator::111111111111:workload-estimate/workload-estimate-id
+output "bcm_pricing_calculator_workload_estimate" {
+  value = provider::arn::bcm_pricing_calculator_workload_estimate("workload-estimate-id")
+}
+```
 
 ## Signature
 

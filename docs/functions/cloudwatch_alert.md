@@ -16,7 +16,14 @@ arn:${Partition}:cloudwatch:${Region}:${Account}:alert/${AlertId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudwatch:ap-northeast-1:111111111111:alert/alert-id
+output "cloudwatch_alert" {
+  value = provider::arn::cloudwatch_alert("alert-id")
+}
+```
 
 ## Signature
 

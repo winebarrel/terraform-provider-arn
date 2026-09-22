@@ -16,7 +16,14 @@ arn:${Partition}:elasticloadbalancing:${Region}:${Account}:targetgroup/${TargetG
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:elasticloadbalancing:ap-northeast-1:111111111111:targetgroup/target-group-name/target-group-id
+output "elasticloadbalancing_targetgroup" {
+  value = provider::arn::elasticloadbalancing_targetgroup("target-group-name", "target-group-id")
+}
+```
 
 ## Signature
 

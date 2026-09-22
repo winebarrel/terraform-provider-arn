@@ -16,7 +16,14 @@ arn:${Partition}:profile:${Region}:${Account}:domains/${DomainName}/event-trigge
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:profile:ap-northeast-1:111111111111:domains/domain-name/event-triggers/event-trigger-name
+output "profile_event_triggers" {
+  value = provider::arn::profile_event_triggers("domain-name", "event-trigger-name")
+}
+```
 
 ## Signature
 

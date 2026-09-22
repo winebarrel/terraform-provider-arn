@@ -16,7 +16,14 @@ arn:${Partition}:imagebuilder:${Region}:${Account}:lifecycle-execution/${Lifecyc
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:imagebuilder:ap-northeast-1:111111111111:lifecycle-execution/lifecycle-execution-id
+output "imagebuilder_lifecycle_execution" {
+  value = provider::arn::imagebuilder_lifecycle_execution("lifecycle-execution-id")
+}
+```
 
 ## Signature
 

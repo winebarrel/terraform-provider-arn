@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:edge-packaging-job/${EdgePackagi
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:edge-packaging-job/edge-packaging-job-name
+output "sagemaker_edge_packaging_job" {
+  value = provider::arn::sagemaker_edge_packaging_job("edge-packaging-job-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:odb:${Region}:${Account}:odb-peering-connection/${OdbPeeringCon
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:odb:ap-northeast-1:111111111111:odb-peering-connection/odb-peering-connection-id
+output "odb_odb_peering_connection" {
+  value = provider::arn::odb_odb_peering_connection("odb-peering-connection-id")
+}
+```
 
 ## Signature
 

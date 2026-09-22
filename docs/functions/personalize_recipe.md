@@ -16,7 +16,14 @@ arn:${Partition}:personalize:::recipe/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:personalize:::recipe/resource-id
+output "personalize_recipe" {
+  value = provider::arn::personalize_recipe("resource-id")
+}
+```
 
 ## Signature
 

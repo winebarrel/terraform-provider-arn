@@ -16,7 +16,14 @@ arn:${Partition}:cloudfront::${Account}:origin-request-policy/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudfront::111111111111:origin-request-policy/id
+output "cloudfront_origin_request_policy" {
+  value = provider::arn::cloudfront_origin_request_policy("id")
+}
+```
 
 ## Signature
 

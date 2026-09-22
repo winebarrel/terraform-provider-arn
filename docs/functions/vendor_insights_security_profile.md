@@ -16,7 +16,14 @@ arn:${Partition}:vendor-insights:::security-profile:${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:vendor-insights:::security-profile:resource-id
+output "vendor_insights_security_profile" {
+  value = provider::arn::vendor_insights_security_profile("resource-id")
+}
+```
 
 ## Signature
 

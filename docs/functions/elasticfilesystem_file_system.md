@@ -16,7 +16,14 @@ arn:${Partition}:elasticfilesystem:${Region}:${Account}:file-system/${FileSystem
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:elasticfilesystem:ap-northeast-1:111111111111:file-system/file-system-id
+output "elasticfilesystem_file_system" {
+  value = provider::arn::elasticfilesystem_file_system("file-system-id")
+}
+```
 
 ## Signature
 

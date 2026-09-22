@@ -16,7 +16,14 @@ arn:${Partition}:aidevops:${Region}:${Account}:agentspace/${AgentSpaceId}/trigge
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:aidevops:ap-northeast-1:111111111111:agentspace/agent-space-id/trigger/trigger-id
+output "aidevops_trigger" {
+  value = provider::arn::aidevops_trigger("agent-space-id", "trigger-id")
+}
+```
 
 ## Signature
 

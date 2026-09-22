@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:spot-instances-request/${SpotInstanceR
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:spot-instances-request/spot-instance-request-id
+output "ec2_spot_instances_request" {
+  value = provider::arn::ec2_spot_instances_request("spot-instance-request-id")
+}
+```
 
 ## Signature
 

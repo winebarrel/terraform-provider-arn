@@ -16,7 +16,14 @@ arn:${Partition}:mgn:${Region}:${Account}:wave/${WaveID}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:mgn:ap-northeast-1:111111111111:wave/wave-id
+output "mgn_wave_resource" {
+  value = provider::arn::mgn_wave_resource("wave-id")
+}
+```
 
 ## Signature
 

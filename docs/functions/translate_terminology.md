@@ -16,7 +16,14 @@ arn:${Partition}:translate:${Region}:${Account}:terminology/${ResourceName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:translate:ap-northeast-1:111111111111:terminology/resource-name
+output "translate_terminology" {
+  value = provider::arn::translate_terminology("resource-name")
+}
+```
 
 ## Signature
 

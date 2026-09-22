@@ -16,7 +16,14 @@ arn:${Partition}:translate:${Region}:${Account}:parallel-data/${ResourceName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:translate:ap-northeast-1:111111111111:parallel-data/resource-name
+output "translate_parallel_data" {
+  value = provider::arn::translate_parallel_data("resource-name")
+}
+```
 
 ## Signature
 

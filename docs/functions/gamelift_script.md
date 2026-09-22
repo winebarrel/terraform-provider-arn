@@ -16,7 +16,14 @@ arn:${Partition}:gamelift:${Region}:${Account}:script/${ScriptId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:gamelift:ap-northeast-1:111111111111:script/script-id
+output "gamelift_script" {
+  value = provider::arn::gamelift_script("script-id")
+}
+```
 
 ## Signature
 

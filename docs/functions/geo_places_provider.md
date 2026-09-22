@@ -16,7 +16,14 @@ arn:${Partition}:geo-places:${Region}::provider/default
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:geo-places:ap-northeast-1::provider/default
+output "geo_places_provider" {
+  value = provider::arn::geo_places_provider()
+}
+```
 
 ## Signature
 

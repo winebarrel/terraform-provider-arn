@@ -16,7 +16,14 @@ arn:${Partition}:qapps:${Region}:${Account}:application/${ApplicationId}/qapp/${
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:qapps:ap-northeast-1:111111111111:application/application-id/qapp/app-id
+output "qapps_qapp" {
+  value = provider::arn::qapps_qapp("application-id", "app-id")
+}
+```
 
 ## Signature
 

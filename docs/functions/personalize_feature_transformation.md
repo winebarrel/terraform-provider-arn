@@ -16,7 +16,14 @@ arn:${Partition}:personalize:::feature-transformation/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:personalize:::feature-transformation/resource-id
+output "personalize_feature_transformation" {
+  value = provider::arn::personalize_feature_transformation("resource-id")
+}
+```
 
 ## Signature
 

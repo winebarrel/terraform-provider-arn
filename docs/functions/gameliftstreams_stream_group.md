@@ -16,7 +16,14 @@ arn:${Partition}:gameliftstreams:${Region}:${Account}:streamgroup/${StreamGroupI
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:gameliftstreams:ap-northeast-1:111111111111:streamgroup/stream-group-id
+output "gameliftstreams_stream_group" {
+  value = provider::arn::gameliftstreams_stream_group("stream-group-id")
+}
+```
 
 ## Signature
 

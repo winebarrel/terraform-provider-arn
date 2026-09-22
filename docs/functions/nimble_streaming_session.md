@@ -16,7 +16,14 @@ arn:${Partition}:nimble:${Region}:${Account}:streaming-session/${StreamingSessio
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:nimble:ap-northeast-1:111111111111:streaming-session/streaming-session-id
+output "nimble_streaming_session" {
+  value = provider::arn::nimble_streaming_session("streaming-session-id")
+}
+```
 
 ## Signature
 

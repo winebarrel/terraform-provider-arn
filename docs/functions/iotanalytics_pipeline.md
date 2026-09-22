@@ -16,7 +16,14 @@ arn:${Partition}:iotanalytics:${Region}:${Account}:pipeline/${PipelineName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotanalytics:ap-northeast-1:111111111111:pipeline/pipeline-name
+output "iotanalytics_pipeline" {
+  value = provider::arn::iotanalytics_pipeline("pipeline-name")
+}
+```
 
 ## Signature
 

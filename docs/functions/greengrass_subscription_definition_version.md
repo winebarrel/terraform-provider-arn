@@ -16,7 +16,14 @@ arn:${Partition}:greengrass:${Region}:${Account}:/greengrass/definition/subscrip
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:greengrass:ap-northeast-1:111111111111:/greengrass/definition/subscriptions/subscription-definition-id/versions/version-id
+output "greengrass_subscription_definition_version" {
+  value = provider::arn::greengrass_subscription_definition_version("subscription-definition-id", "version-id")
+}
+```
 
 ## Signature
 

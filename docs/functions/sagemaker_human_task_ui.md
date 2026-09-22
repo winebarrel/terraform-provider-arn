@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:human-task-ui/${HumanTaskUiName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:human-task-ui/human-task-ui-name
+output "sagemaker_human_task_ui" {
+  value = provider::arn::sagemaker_human_task_ui("human-task-ui-name")
+}
+```
 
 ## Signature
 

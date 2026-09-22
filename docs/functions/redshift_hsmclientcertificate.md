@@ -16,7 +16,14 @@ arn:${Partition}:redshift:${Region}:${Account}:hsmclientcertificate:${HSMClientC
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:redshift:ap-northeast-1:111111111111:hsmclientcertificate:hsm-client-certificate-id
+output "redshift_hsmclientcertificate" {
+  value = provider::arn::redshift_hsmclientcertificate("hsm-client-certificate-id")
+}
+```
 
 ## Signature
 

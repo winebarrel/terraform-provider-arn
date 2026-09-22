@@ -16,7 +16,14 @@ arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/bill-of-materia
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:scn:ap-northeast-1:111111111111:instance/instance-id/bill-of-materials-import-job/job-id
+output "scn_bill_of_materials_import_job" {
+  value = provider::arn::scn_bill_of_materials_import_job("instance-id", "job-id")
+}
+```
 
 ## Signature
 

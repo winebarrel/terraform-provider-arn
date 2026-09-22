@@ -16,7 +16,14 @@ arn:${Partition}:migrationhub-orchestrator:${Region}:${Account}:template/${Resou
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:migrationhub-orchestrator:ap-northeast-1:111111111111:template/resource-id
+output "migrationhub_orchestrator_template" {
+  value = provider::arn::migrationhub_orchestrator_template("resource-id")
+}
+```
 
 ## Signature
 

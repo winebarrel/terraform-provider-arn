@@ -16,7 +16,14 @@ arn:${Partition}:greengrass:${Region}:${Account}:components:${ComponentName}:ver
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:greengrass:ap-northeast-1:111111111111:components:component-name:versions:component-version
+output "greengrass_component_version" {
+  value = provider::arn::greengrass_component_version("component-name", "component-version")
+}
+```
 
 ## Signature
 

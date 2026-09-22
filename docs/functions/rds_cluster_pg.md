@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:cluster-pg:${ClusterParameterGroupName
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:cluster-pg:cluster-parameter-group-name
+output "rds_cluster_pg" {
+  value = provider::arn::rds_cluster_pg("cluster-parameter-group-name")
+}
+```
 
 ## Signature
 

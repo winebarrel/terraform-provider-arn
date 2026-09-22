@@ -16,7 +16,14 @@ arn:${Partition}:identitystore:::membership/*
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:identitystore:::membership/*
+output "identitystore_all_group_memberships" {
+  value = provider::arn::identitystore_all_group_memberships()
+}
+```
 
 ## Signature
 

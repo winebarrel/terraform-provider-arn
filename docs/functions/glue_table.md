@@ -16,7 +16,14 @@ arn:${Partition}:glue:${Region}:${Account}:table/${DatabaseName}/${TableName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:glue:ap-northeast-1:111111111111:table/database-name/table-name
+output "glue_table" {
+  value = provider::arn::glue_table("database-name", "table-name")
+}
+```
 
 ## Signature
 

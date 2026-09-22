@@ -16,7 +16,14 @@ arn:${Partition}:networkflowmonitor:${Region}:${Account}:scope/${ScopeId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:networkflowmonitor:ap-northeast-1:111111111111:scope/scope-id
+output "networkflowmonitor_scope" {
+  value = provider::arn::networkflowmonitor_scope("scope-id")
+}
+```
 
 ## Signature
 

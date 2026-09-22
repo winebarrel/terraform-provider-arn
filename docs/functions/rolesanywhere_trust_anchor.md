@@ -16,7 +16,14 @@ arn:${Partition}:rolesanywhere:${Region}:${Account}:trust-anchor/${TrustAnchorId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rolesanywhere:ap-northeast-1:111111111111:trust-anchor/trust-anchor-id
+output "rolesanywhere_trust_anchor" {
+  value = provider::arn::rolesanywhere_trust_anchor("trust-anchor-id")
+}
+```
 
 ## Signature
 

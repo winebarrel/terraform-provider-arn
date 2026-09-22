@@ -16,7 +16,14 @@ arn:${Partition}:imagebuilder:${Region}:${Account}:workflow/${WorkflowType}/${Wo
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:imagebuilder:ap-northeast-1:111111111111:workflow/workflow-type/workflow-name/workflow-version/workflow-build-version
+output "imagebuilder_workflow" {
+  value = provider::arn::imagebuilder_workflow("workflow-type", "workflow-name", "workflow-version", "workflow-build-version")
+}
+```
 
 ## Signature
 

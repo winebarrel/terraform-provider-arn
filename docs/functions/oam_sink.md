@@ -16,7 +16,14 @@ arn:${Partition}:oam:${Region}:${Account}:sink/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:oam:ap-northeast-1:111111111111:sink/resource-id
+output "oam_sink" {
+  value = provider::arn::oam_sink("resource-id")
+}
+```
 
 ## Signature
 

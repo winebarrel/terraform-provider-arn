@@ -16,7 +16,14 @@ arn:${Partition}:opsworks:${Region}:${Account}:stack/${StackId}/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:opsworks:ap-northeast-1:111111111111:stack/stack-id/
+output "opsworks_stack" {
+  value = provider::arn::opsworks_stack("stack-id")
+}
+```
 
 ## Signature
 

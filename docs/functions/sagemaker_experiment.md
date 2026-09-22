@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:experiment/${ExperimentName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:experiment/experiment-name
+output "sagemaker_experiment" {
+  value = provider::arn::sagemaker_experiment("experiment-name")
+}
+```
 
 ## Signature
 

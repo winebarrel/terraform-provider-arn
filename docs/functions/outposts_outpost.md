@@ -16,7 +16,14 @@ arn:${Partition}:outposts:${Region}:${Account}:outpost/${OutpostId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:outposts:ap-northeast-1:111111111111:outpost/outpost-id
+output "outposts_outpost" {
+  value = provider::arn::outposts_outpost("outpost-id")
+}
+```
 
 ## Signature
 

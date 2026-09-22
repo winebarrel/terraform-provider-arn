@@ -16,7 +16,14 @@ arn:${Partition}:apprunner:${Region}:${Account}:observabilityconfiguration/${Obs
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apprunner:ap-northeast-1:111111111111:observabilityconfiguration/observability-configuration-name/observability-configuration-version/observability-configuration-id
+output "apprunner_observabilityconfiguration" {
+  value = provider::arn::apprunner_observabilityconfiguration("observability-configuration-name", "observability-configuration-version", "observability-configuration-id")
+}
+```
 
 ## Signature
 

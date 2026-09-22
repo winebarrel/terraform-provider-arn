@@ -16,7 +16,14 @@ arn:${Partition}:notifications::${Account}:configuration/${NotificationConfigura
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:notifications::111111111111:configuration/notification-configuration-id/rule/event-rule-id
+output "notifications_event_rule" {
+  value = provider::arn::notifications_event_rule("notification-configuration-id", "event-rule-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:iam::${Account}:sms-mfa/${MfaTokenIdWithPath}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::111111111111:sms-mfa/mfa-token-id-with-path
+output "iam_sms_mfa" {
+  value = provider::arn::iam_sms_mfa("mfa-token-id-with-path")
+}
+```
 
 ## Signature
 

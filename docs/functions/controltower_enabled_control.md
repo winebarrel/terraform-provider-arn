@@ -16,7 +16,14 @@ arn:${Partition}:controltower:${Region}:${Account}:enabledcontrol/${EnabledContr
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:controltower:ap-northeast-1:111111111111:enabledcontrol/enabled-control-id
+output "controltower_enabled_control" {
+  value = provider::arn::controltower_enabled_control("enabled-control-id")
+}
+```
 
 ## Signature
 

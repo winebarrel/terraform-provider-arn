@@ -16,7 +16,14 @@ arn:${Partition}:comprehend:${Region}:${Account}:events-detection-job/${JobId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:comprehend:ap-northeast-1:111111111111:events-detection-job/job-id
+output "comprehend_events_detection_job" {
+  value = provider::arn::comprehend_events_detection_job("job-id")
+}
+```
 
 ## Signature
 

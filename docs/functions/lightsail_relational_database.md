@@ -16,7 +16,14 @@ arn:${Partition}:lightsail:${Region}:${Account}:RelationalDatabase/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:lightsail:ap-northeast-1:111111111111:RelationalDatabase/id
+output "lightsail_relational_database" {
+  value = provider::arn::lightsail_relational_database("id")
+}
+```
 
 ## Signature
 

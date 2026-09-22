@@ -16,7 +16,14 @@ arn:${Partition}:codecatalyst:::space/${SpaceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codecatalyst:::space/space-id
+output "codecatalyst_space" {
+  value = provider::arn::codecatalyst_space("space-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:lookoutequipment:${Region}:${Account}:inference-scheduler/${Inf
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:lookoutequipment:ap-northeast-1:111111111111:inference-scheduler/inference-scheduler-name/inference-scheduler-id
+output "lookoutequipment_inference_scheduler" {
+  value = provider::arn::lookoutequipment_inference_scheduler("inference-scheduler-name", "inference-scheduler-id")
+}
+```
 
 ## Signature
 

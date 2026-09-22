@@ -16,7 +16,14 @@ arn:${Partition}:controltower:${Region}:${Account}:landingzone/${LandingZoneId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:controltower:ap-northeast-1:111111111111:landingzone/landing-zone-id
+output "controltower_landing_zone" {
+  value = provider::arn::controltower_landing_zone("landing-zone-id")
+}
+```
 
 ## Signature
 

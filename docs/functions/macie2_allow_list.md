@@ -16,7 +16,14 @@ arn:${Partition}:macie2:${Region}:${Account}:allow-list/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:macie2:ap-northeast-1:111111111111:allow-list/resource-id
+output "macie2_allow_list" {
+  value = provider::arn::macie2_allow_list("resource-id")
+}
+```
 
 ## Signature
 

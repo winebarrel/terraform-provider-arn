@@ -16,7 +16,14 @@ arn:${Partition}:elasticache::${Account}:globalreplicationgroup:${GlobalReplicat
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:elasticache::111111111111:globalreplicationgroup:global-replication-group-id
+output "elasticache_globalreplicationgroup" {
+  value = provider::arn::elasticache_globalreplicationgroup("global-replication-group-id")
+}
+```
 
 ## Signature
 

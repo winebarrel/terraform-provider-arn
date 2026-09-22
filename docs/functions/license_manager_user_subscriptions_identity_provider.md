@@ -16,7 +16,14 @@ arn:${Partition}:license-manager-user-subscriptions:${Region}:${Account}:identit
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:license-manager-user-subscriptions:ap-northeast-1:111111111111:identity-provider/identity-provider-id
+output "license_manager_user_subscriptions_identity_provider" {
+  value = provider::arn::license_manager_user_subscriptions_identity_provider("identity-provider-id")
+}
+```
 
 ## Signature
 

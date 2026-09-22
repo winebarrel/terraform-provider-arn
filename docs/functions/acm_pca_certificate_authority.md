@@ -16,7 +16,14 @@ arn:${Partition}:acm-pca:${Region}:${Account}:certificate-authority/${Certificat
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:acm-pca:ap-northeast-1:111111111111:certificate-authority/certificate-authority-id
+output "acm_pca_certificate_authority" {
+  value = provider::arn::acm_pca_certificate_authority("certificate-authority-id")
+}
+```
 
 ## Signature
 

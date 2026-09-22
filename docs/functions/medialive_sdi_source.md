@@ -16,7 +16,14 @@ arn:${Partition}:medialive:${Region}:${Account}:sdiSource:${SdiSourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:medialive:ap-northeast-1:111111111111:sdiSource:sdi-source-id
+output "medialive_sdi_source" {
+  value = provider::arn::medialive_sdi_source("sdi-source-id")
+}
+```
 
 ## Signature
 

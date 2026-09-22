@@ -16,7 +16,14 @@ arn:${Partition}:iottwinmaker:${Region}:${Account}:workspace/${WorkspaceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iottwinmaker:ap-northeast-1:111111111111:workspace/workspace-id
+output "iottwinmaker_workspace" {
+  value = provider::arn::iottwinmaker_workspace("workspace-id")
+}
+```
 
 ## Signature
 

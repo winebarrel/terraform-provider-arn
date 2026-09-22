@@ -16,7 +16,14 @@ arn:${Partition}:a4b:${Region}:${Account}:gateway/${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:a4b:ap-northeast-1:111111111111:gateway/resource-id
+output "a4b_gateway" {
+  value = provider::arn::a4b_gateway("resource-id")
+}
+```
 
 ## Signature
 

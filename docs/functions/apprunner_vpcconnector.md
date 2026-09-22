@@ -16,7 +16,14 @@ arn:${Partition}:apprunner:${Region}:${Account}:vpcconnector/${VpcConnectorName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:apprunner:ap-northeast-1:111111111111:vpcconnector/vpc-connector-name/vpc-connector-version/vpc-connector-id
+output "apprunner_vpcconnector" {
+  value = provider::arn::apprunner_vpcconnector("vpc-connector-name", "vpc-connector-version", "vpc-connector-id")
+}
+```
 
 ## Signature
 

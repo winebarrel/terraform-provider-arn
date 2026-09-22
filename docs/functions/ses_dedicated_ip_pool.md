@@ -16,7 +16,14 @@ arn:${Partition}:ses:${Region}:${Account}:dedicated-ip-pool/${DedicatedIPPool}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ses:ap-northeast-1:111111111111:dedicated-ip-pool/dedicated-ip-pool
+output "ses_dedicated_ip_pool" {
+  value = provider::arn::ses_dedicated_ip_pool("dedicated-ip-pool")
+}
+```
 
 ## Signature
 

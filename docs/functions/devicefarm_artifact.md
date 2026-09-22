@@ -16,7 +16,14 @@ arn:${Partition}:devicefarm:${Region}:${Account}:artifact:${ResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:devicefarm:ap-northeast-1:111111111111:artifact:resource-id
+output "devicefarm_artifact" {
+  value = provider::arn::devicefarm_artifact("resource-id")
+}
+```
 
 ## Signature
 

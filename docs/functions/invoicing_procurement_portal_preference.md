@@ -16,7 +16,14 @@ arn:${Partition}:invoicing::${Account}:procurement-portal-preference/${Identifie
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:invoicing::111111111111:procurement-portal-preference/identifier
+output "invoicing_procurement_portal_preference" {
+  value = provider::arn::invoicing_procurement_portal_preference("identifier")
+}
+```
 
 ## Signature
 

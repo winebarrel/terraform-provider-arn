@@ -16,7 +16,14 @@ arn:${Partition}:fis:${Region}:${Account}:experiment/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:fis:ap-northeast-1:111111111111:experiment/id
+output "fis_experiment" {
+  value = provider::arn::fis_experiment("id")
+}
+```
 
 ## Signature
 

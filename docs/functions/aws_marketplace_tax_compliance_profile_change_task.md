@@ -16,7 +16,14 @@ arn:${Partition}:aws-marketplace:${Region}:${Account}:tax-compliance-profile-cha
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:aws-marketplace:ap-northeast-1:111111111111:tax-compliance-profile-change-task/resource-id
+output "aws_marketplace_tax_compliance_profile_change_task" {
+  value = provider::arn::aws_marketplace_tax_compliance_profile_change_task("resource-id")
+}
+```
 
 ## Signature
 

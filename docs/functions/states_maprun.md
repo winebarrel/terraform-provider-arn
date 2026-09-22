@@ -16,7 +16,14 @@ arn:${Partition}:states:${Region}:${Account}:mapRun:${StateMachineName}/${MapRun
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:states:ap-northeast-1:111111111111:mapRun:state-machine-name/map-run-label:map-run-id
+output "states_maprun" {
+  value = provider::arn::states_maprun("state-machine-name", "map-run-label", "map-run-id")
+}
+```
 
 ## Signature
 

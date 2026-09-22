@@ -16,7 +16,14 @@ arn:${Partition}:kafka:${Region}:${VpcOwnerAccount}:vpc-connection/${ClusterOwne
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:kafka:ap-northeast-1:111111111111:vpc-connection/cluster-owner-account/cluster-name/uuid
+output "kafka_vpc_connection" {
+  value = provider::arn::kafka_vpc_connection("cluster-owner-account", "cluster-name", "uuid")
+}
+```
 
 ## Signature
 

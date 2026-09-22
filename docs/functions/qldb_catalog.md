@@ -16,7 +16,14 @@ arn:${Partition}:qldb:${Region}:${Account}:ledger/${LedgerName}/information_sche
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:qldb:ap-northeast-1:111111111111:ledger/ledger-name/information_schema/user_tables
+output "qldb_catalog" {
+  value = provider::arn::qldb_catalog("ledger-name")
+}
+```
 
 ## Signature
 

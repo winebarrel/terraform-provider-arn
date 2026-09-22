@@ -16,7 +16,14 @@ arn:${Partition}:aiops:${Region}:${Account}:investigation-group/${InvestigationG
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:aiops:ap-northeast-1:111111111111:investigation-group/investigation-group-id
+output "aiops_investigation_group" {
+  value = provider::arn::aiops_investigation_group("investigation-group-id")
+}
+```
 
 ## Signature
 

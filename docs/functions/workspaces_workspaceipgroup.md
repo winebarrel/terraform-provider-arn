@@ -16,7 +16,14 @@ arn:${Partition}:workspaces:${Region}:${Account}:workspaceipgroup/${GroupId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:workspaces:ap-northeast-1:111111111111:workspaceipgroup/group-id
+output "workspaces_workspaceipgroup" {
+  value = provider::arn::workspaces_workspaceipgroup("group-id")
+}
+```
 
 ## Signature
 

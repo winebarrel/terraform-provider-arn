@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:shard-group:${DbShardGroupResourceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:shard-group:db-shard-group-resource-id
+output "rds_shardgrp" {
+  value = provider::arn::rds_shardgrp("db-shard-group-resource-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:redshift:${Region}:${Account}:dbname:${ClusterName}/${DbName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:redshift:ap-northeast-1:111111111111:dbname:cluster-name/db-name
+output "redshift_dbname" {
+  value = provider::arn::redshift_dbname("cluster-name", "db-name")
+}
+```
 
 ## Signature
 

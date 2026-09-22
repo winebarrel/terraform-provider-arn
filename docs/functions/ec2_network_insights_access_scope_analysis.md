@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:network-insights-access-scope-analysis
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:network-insights-access-scope-analysis/network-insights-access-scope-analysis-id
+output "ec2_network_insights_access_scope_analysis" {
+  value = provider::arn::ec2_network_insights_access_scope_analysis("network-insights-access-scope-analysis-id")
+}
+```
 
 ## Signature
 

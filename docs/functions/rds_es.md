@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:es:${SubscriptionName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:es:subscription-name
+output "rds_es" {
+  value = provider::arn::rds_es("subscription-name")
+}
+```
 
 ## Signature
 

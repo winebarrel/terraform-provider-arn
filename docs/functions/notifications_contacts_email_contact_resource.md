@@ -16,7 +16,14 @@ arn:${Partition}:notifications-contacts::${Account}:emailcontact/${EmailContactI
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:notifications-contacts::111111111111:emailcontact/email-contact-id
+output "notifications_contacts_email_contact_resource" {
+  value = provider::arn::notifications_contacts_email_contact_resource("email-contact-id")
+}
+```
 
 ## Signature
 

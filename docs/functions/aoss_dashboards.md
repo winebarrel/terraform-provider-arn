@@ -16,7 +16,14 @@ arn:${Partition}:aoss:${Region}:${Account}:dashboards/default
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:aoss:ap-northeast-1:111111111111:dashboards/default
+output "aoss_dashboards" {
+  value = provider::arn::aoss_dashboards()
+}
+```
 
 ## Signature
 

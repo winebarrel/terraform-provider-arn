@@ -16,7 +16,14 @@ arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/datasources/$
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appsync:ap-northeast-1:111111111111:apis/graph-qlapi-id/datasources/datasource-name
+output "appsync_datasource" {
+  value = provider::arn::appsync_datasource("graph-qlapi-id", "datasource-name")
+}
+```
 
 ## Signature
 

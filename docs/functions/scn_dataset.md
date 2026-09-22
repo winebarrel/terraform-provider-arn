@@ -16,7 +16,14 @@ arn:${Partition}:scn:${Region}:${Account}:instance/${InstanceId}/namespaces/${Na
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:scn:ap-northeast-1:111111111111:instance/instance-id/namespaces/namespace/datasets/dataset-name
+output "scn_dataset" {
+  value = provider::arn::scn_dataset("instance-id", "namespace", "dataset-name")
+}
+```
 
 ## Signature
 

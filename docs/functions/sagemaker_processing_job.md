@@ -16,7 +16,14 @@ arn:${Partition}:sagemaker:${Region}:${Account}:processing-job/${ProcessingJobNa
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:sagemaker:ap-northeast-1:111111111111:processing-job/processing-job-name
+output "sagemaker_processing_job" {
+  value = provider::arn::sagemaker_processing_job("processing-job-name")
+}
+```
 
 ## Signature
 

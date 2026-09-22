@@ -16,7 +16,14 @@ arn:${Partition}:ec2:${Region}:${Account}:security-group-rule/${SecurityGroupRul
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ec2:ap-northeast-1:111111111111:security-group-rule/security-group-rule-id
+output "ec2_security_group_rule" {
+  value = provider::arn::ec2_security_group_rule("security-group-rule-id")
+}
+```
 
 ## Signature
 

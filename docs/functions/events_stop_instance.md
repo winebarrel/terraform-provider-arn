@@ -16,7 +16,14 @@ arn:${Partition}:events:${Region}:${Account}:target/stop-instance
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`).
 
+## Example Usage
 
+```terraform
+# arn:aws:events:ap-northeast-1:111111111111:target/stop-instance
+output "events_stop_instance" {
+  value = provider::arn::events_stop_instance()
+}
+```
 
 ## Signature
 

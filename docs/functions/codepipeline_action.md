@@ -16,7 +16,14 @@ arn:${Partition}:codepipeline:${Region}:${Account}:${PipelineName}/${StageName}/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:codepipeline:ap-northeast-1:111111111111:pipeline-name/stage-name/action-name
+output "codepipeline_action" {
+  value = provider::arn::codepipeline_action("pipeline-name", "stage-name", "action-name")
+}
+```
 
 ## Signature
 

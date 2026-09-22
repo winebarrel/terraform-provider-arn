@@ -16,7 +16,14 @@ arn:${Partition}:cloudfront::${Account}:origin-access-control/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudfront::111111111111:origin-access-control/id
+output "cloudfront_origin_access_control" {
+  value = provider::arn::cloudfront_origin_access_control("id")
+}
+```
 
 ## Signature
 

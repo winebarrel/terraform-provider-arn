@@ -16,7 +16,14 @@ arn:${Partition}:managedblockchain:${Region}:${Account}:nodes/${NodeId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:managedblockchain:ap-northeast-1:111111111111:nodes/node-id
+output "managedblockchain_node" {
+  value = provider::arn::managedblockchain_node("node-id")
+}
+```
 
 ## Signature
 

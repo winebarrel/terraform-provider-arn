@@ -16,7 +16,14 @@ arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/transfer-de
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:connect:ap-northeast-1:111111111111:instance/instance-id/transfer-destination/*
+output "connect_wildcard_quick_connect" {
+  value = provider::arn::connect_wildcard_quick_connect("instance-id")
+}
+```
 
 ## Signature
 

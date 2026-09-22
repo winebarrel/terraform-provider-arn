@@ -16,7 +16,14 @@ arn:${Partition}:servicediscovery:${Region}:${Account}:service/${ServiceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:servicediscovery:ap-northeast-1:111111111111:service/service-id
+output "servicediscovery_service" {
+  value = provider::arn::servicediscovery_service("service-id")
+}
+```
 
 ## Signature
 

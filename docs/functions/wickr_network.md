@@ -16,7 +16,14 @@ arn:${Partition}:wickr:${Region}:${Account}:network/${NetworkId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:wickr:ap-northeast-1:111111111111:network/network-id
+output "wickr_network" {
+  value = provider::arn::wickr_network("network-id")
+}
+```
 
 ## Signature
 

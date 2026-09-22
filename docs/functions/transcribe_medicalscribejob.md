@@ -16,7 +16,14 @@ arn:${Partition}:transcribe:${Region}:${Account}:medical-scribe-job/${JobName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:transcribe:ap-northeast-1:111111111111:medical-scribe-job/job-name
+output "transcribe_medicalscribejob" {
+  value = provider::arn::transcribe_medicalscribejob("job-name")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:purchase-orders::${Account}:purchase-order/${ResourceName}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:purchase-orders::111111111111:purchase-order/resource-name
+output "purchase_orders_purchase_order" {
+  value = provider::arn::purchase_orders_purchase_order("resource-name")
+}
+```
 
 ## Signature
 

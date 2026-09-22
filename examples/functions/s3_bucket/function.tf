@@ -1,4 +1,4 @@
-# arn:aws:s3:::my-bucket
-output "bucket" {
-  value = provider::arn::s3_bucket("my-bucket")
+# arn:aws:s3:::bucket-name
+output "s3_bucket" {
+  value = provider::arn::s3_bucket("bucket-name")
 }

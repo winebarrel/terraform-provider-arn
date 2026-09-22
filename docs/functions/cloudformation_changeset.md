@@ -16,7 +16,14 @@ arn:${Partition}:cloudformation:${Region}:${Account}:changeSet/${ChangeSetName}/
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudformation:ap-northeast-1:111111111111:changeSet/change-set-name/id
+output "cloudformation_changeset" {
+  value = provider::arn::cloudformation_changeset("change-set-name", "id")
+}
+```
 
 ## Signature
 

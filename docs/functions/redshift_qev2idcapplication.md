@@ -16,7 +16,14 @@ arn:${Partition}:redshift:${Region}:${Account}:qev2idcapplication:${Qev2IdcAppli
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:redshift:ap-northeast-1:111111111111:qev2idcapplication:qev2-idc-application-id
+output "redshift_qev2idcapplication" {
+  value = provider::arn::redshift_qev2idcapplication("qev2-idc-application-id")
+}
+```
 
 ## Signature
 

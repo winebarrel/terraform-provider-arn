@@ -16,7 +16,14 @@ arn:${Partition}:panorama:${Region}:${Account}:applicationInstance/${Application
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:panorama:ap-northeast-1:111111111111:applicationInstance/application-instance-id
+output "panorama_application_instance" {
+  value = provider::arn::panorama_application_instance("application-instance-id")
+}
+```
 
 ## Signature
 

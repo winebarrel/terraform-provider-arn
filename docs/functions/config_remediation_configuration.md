@@ -16,7 +16,14 @@ arn:${Partition}:config:${Region}:${Account}:remediation-configuration/${Remedia
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:config:ap-northeast-1:111111111111:remediation-configuration/remediation-configuration-id
+output "config_remediation_configuration" {
+  value = provider::arn::config_remediation_configuration("remediation-configuration-id")
+}
+```
 
 ## Signature
 

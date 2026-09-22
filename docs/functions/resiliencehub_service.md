@@ -16,7 +16,14 @@ arn:${Partition}:resiliencehub:${Region}:${Account}:service/${ServiceId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:resiliencehub:ap-northeast-1:111111111111:service/service-id
+output "resiliencehub_service" {
+  value = provider::arn::resiliencehub_service("service-id")
+}
+```
 
 ## Signature
 

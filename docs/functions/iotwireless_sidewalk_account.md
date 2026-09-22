@@ -16,7 +16,14 @@ arn:${Partition}:iotwireless:${Region}:${Account}:SidewalkAccount/${SidewalkAcco
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotwireless:ap-northeast-1:111111111111:SidewalkAccount/sidewalk-account-id
+output "iotwireless_sidewalk_account" {
+  value = provider::arn::iotwireless_sidewalk_account("sidewalk-account-id")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:cloudfront::${Account}:field-level-encryption-config/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:cloudfront::111111111111:field-level-encryption-config/id
+output "cloudfront_field_level_encryption_config" {
+  value = provider::arn::cloudfront_field_level_encryption_config("id")
+}
+```
 
 ## Signature
 

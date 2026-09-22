@@ -16,7 +16,14 @@ arn:${Partition}:waf::${Account}:xssmatchset/${Id}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:waf::111111111111:xssmatchset/id
+output "waf_xssmatchset" {
+  value = provider::arn::waf_xssmatchset("id")
+}
+```
 
 ## Signature
 

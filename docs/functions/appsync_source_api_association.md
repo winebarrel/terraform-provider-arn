@@ -16,7 +16,14 @@ arn:${Partition}:appsync:${Region}:${Account}:apis/${MergedGraphQLAPIId}/sourceA
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appsync:ap-northeast-1:111111111111:apis/merged-graph-qlapi-id/sourceApiAssociations/associationid
+output "appsync_source_api_association" {
+  value = provider::arn::appsync_source_api_association("merged-graph-qlapi-id", "associationid")
+}
+```
 
 ## Signature
 

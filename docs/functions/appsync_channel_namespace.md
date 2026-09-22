@@ -16,7 +16,14 @@ arn:${Partition}:appsync:${Region}:${Account}:apis/${ApiId}/channelNamespace/${C
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appsync:ap-northeast-1:111111111111:apis/api-id/channelNamespace/channel-namespace-name
+output "appsync_channel_namespace" {
+  value = provider::arn::appsync_channel_namespace("api-id", "channel-namespace-name")
+}
+```
 
 ## Signature
 

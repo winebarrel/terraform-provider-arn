@@ -16,7 +16,14 @@ arn:${Partition}:batch:${Region}:${Account}:consumable-resource/${ConsumableReso
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:batch:ap-northeast-1:111111111111:consumable-resource/consumable-resource-name
+output "batch_consumable_resource" {
+  value = provider::arn::batch_consumable_resource("consumable-resource-name")
+}
+```
 
 ## Signature
 

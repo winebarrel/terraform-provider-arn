@@ -16,7 +16,14 @@ arn:${Partition}:tnb:${Region}:${Account}:network-package/${NetworkPackageId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:tnb:ap-northeast-1:111111111111:network-package/network-package-id
+output "tnb_network_package" {
+  value = provider::arn::tnb_network_package("network-package-id")
+}
+```
 
 ## Signature
 

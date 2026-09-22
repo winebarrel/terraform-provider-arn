@@ -16,7 +16,14 @@ arn:${Partition}:aws-marketplace::${Account}:${Catalog}/ReportingData/${FactTabl
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:aws-marketplace::111111111111:catalog/ReportingData/fact-table/Dashboard/dashboard-name
+output "aws_marketplace_seller_dashboard" {
+  value = provider::arn::aws_marketplace_seller_dashboard("catalog", "fact-table", "dashboard-name")
+}
+```
 
 ## Signature
 

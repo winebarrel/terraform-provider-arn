@@ -16,7 +16,14 @@ arn:${Partition}:artifact:${Region}::report/${ReportId}:${Version}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:artifact:ap-northeast-1::report/report-id:version
+output "artifact_report" {
+  value = provider::arn::artifact_report("report-id", "version")
+}
+```
 
 ## Signature
 

@@ -16,7 +16,14 @@ arn:${Partition}:appsync:${Region}:${Account}:apis/${GraphQLAPIId}/functions/${F
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:appsync:ap-northeast-1:111111111111:apis/graph-qlapi-id/functions/function-id
+output "appsync_function" {
+  value = provider::arn::appsync_function("graph-qlapi-id", "function-id")
+}
+```
 
 ## Signature
 

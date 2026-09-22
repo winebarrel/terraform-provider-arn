@@ -16,7 +16,14 @@ arn:${Partition}:bedrock:${Region}:${Account}:advanced-prompt-optimization-job/$
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:bedrock:ap-northeast-1:111111111111:advanced-prompt-optimization-job/resource-id
+output "bedrock_advanced_prompt_optimization_job" {
+  value = provider::arn::bedrock_advanced_prompt_optimization_job("resource-id")
+}
+```
 
 ## Signature
 

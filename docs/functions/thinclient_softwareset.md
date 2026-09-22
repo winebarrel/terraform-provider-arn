@@ -16,7 +16,14 @@ arn:${Partition}:thinclient:${Region}:${Account}:softwareset/${SoftwareSetId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:thinclient:ap-northeast-1:111111111111:softwareset/software-set-id
+output "thinclient_softwareset" {
+  value = provider::arn::thinclient_softwareset("software-set-id")
+}
+```
 
 ## Signature
 

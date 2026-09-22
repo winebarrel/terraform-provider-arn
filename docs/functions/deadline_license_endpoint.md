@@ -16,7 +16,14 @@ arn:${Partition}:deadline:${Region}:${Account}:license-endpoint/${LicenseEndpoin
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:deadline:ap-northeast-1:111111111111:license-endpoint/license-endpoint-id
+output "deadline_license_endpoint" {
+  value = provider::arn::deadline_license_endpoint("license-endpoint-id")
+}
+```
 
 ## Signature
 

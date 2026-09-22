@@ -16,7 +16,14 @@ arn:${Partition}:ses:${Region}:${Account}:mailmanager-address-list/${AddressList
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ses:ap-northeast-1:111111111111:mailmanager-address-list/address-list-id
+output "ses_mailmanager_address_list" {
+  value = provider::arn::ses_mailmanager_address_list("address-list-id")
+}
+```
 
 ## Signature
 

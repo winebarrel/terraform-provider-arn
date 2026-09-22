@@ -16,7 +16,14 @@ arn:${Partition}:opsworks-cm::${Account}:backup/${ServerName}-{Date-and-Time-Sta
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:opsworks-cm::111111111111:backup/server-name-{Date-and-Time-Stamp-of-Backup}
+output "opsworks_cm_backup" {
+  value = provider::arn::opsworks_cm_backup("server-name")
+}
+```
 
 ## Signature
 

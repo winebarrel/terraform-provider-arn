@@ -16,7 +16,14 @@ arn:${Partition}:iotwireless:${Region}:${Account}:FuotaTask/${FuotaTaskId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iotwireless:ap-northeast-1:111111111111:FuotaTask/fuota-task-id
+output "iotwireless_fuota_task" {
+  value = provider::arn::iotwireless_fuota_task("fuota-task-id")
+}
+```
 
 ## Signature
 

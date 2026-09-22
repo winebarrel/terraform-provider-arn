@@ -16,7 +16,14 @@ arn:${Partition}:ssm-contacts:${Region}:${Account}:contact/${ContactAlias}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ssm-contacts:ap-northeast-1:111111111111:contact/contact-alias
+output "ssm_contacts_contact" {
+  value = provider::arn::ssm_contacts_contact("contact-alias")
+}
+```
 
 ## Signature
 

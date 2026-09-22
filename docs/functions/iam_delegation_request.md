@@ -16,7 +16,14 @@ arn:${Partition}:iam::${Account}:delegation-request/${DelegationRequestId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:iam::111111111111:delegation-request/delegation-request-id
+output "iam_delegation_request" {
+  value = provider::arn::iam_delegation_request("delegation-request-id")
+}
+```
 
 ## Signature
 

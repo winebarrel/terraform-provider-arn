@@ -16,7 +16,14 @@ arn:${Partition}:transform-custom:${Region}:${Account}:repository/${RepositoryId
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:transform-custom:ap-northeast-1:111111111111:repository/repository-id
+output "transform_custom_repository" {
+  value = provider::arn::transform_custom_repository("repository-id")
+}
+```
 
 ## Signature
 

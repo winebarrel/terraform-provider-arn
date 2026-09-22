@@ -16,7 +16,14 @@ arn:${Partition}:ram:${Region}:${Account}:permission/${ResourcePath}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:ram:ap-northeast-1:111111111111:permission/resource-path
+output "ram_customer_managed_permission" {
+  value = provider::arn::ram_customer_managed_permission("resource-path")
+}
+```
 
 ## Signature
 

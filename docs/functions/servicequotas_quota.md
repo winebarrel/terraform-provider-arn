@@ -16,7 +16,14 @@ arn:${Partition}:servicequotas:${Region}:${Account}:${ServiceCode}/${QuotaCode}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:servicequotas:ap-northeast-1:111111111111:service-code/quota-code
+output "servicequotas_quota" {
+  value = provider::arn::servicequotas_quota("service-code", "quota-code")
+}
+```
 
 ## Signature
 

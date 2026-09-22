@@ -16,7 +16,14 @@ arn:${Partition}:rds:${Region}:${Account}:target-group:${TargetGroupId}
 
 The partition, region and account fields come from the configuration file (`.arn.hcl`, or the path in `ARN_CONFIG`). The remaining placeholders are the arguments, in template order.
 
+## Example Usage
 
+```terraform
+# arn:aws:rds:ap-northeast-1:111111111111:target-group:target-group-id
+output "rds_target_group" {
+  value = provider::arn::rds_target_group("target-group-id")
+}
+```
 
 ## Signature
 
