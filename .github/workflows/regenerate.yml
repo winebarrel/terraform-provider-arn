@@ -1,0 +1,67 @@
+name: Regenerate
+
+on:
+  schedule:
+    # Monday 00:00 UTC. AWS publishes resource types often enough to be worth
+    # watching and rarely enough that a weekly check does not pile up PRs.
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+          cache: false
+      - uses: hashicorp/setup-terraform@v4
+        with:
+          terraform_wrapper: false
+
+      - name: Regenerate from the AWS service reference
+        run: |
+          make gen
+          make docs
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "The AWS service reference has not changed."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git diff --stat -- internal/arnspec/
+          fi
+
+      # Runs before the pull request is opened so a failure shows up here
+      # rather than as a red check on a PR nobody asked for. A feed change
+      # that breaks a test is the case worth looking at.
+      - name: Test
+        if: steps.diff.outputs.changed == 'true'
+        run: make test
+
+      - uses: peter-evans/create-pull-request@v8
+        if: steps.diff.outputs.changed == 'true'
+        with:
+          # A PAT rather than GITHUB_TOKEN: a pull request opened with
+          # GITHUB_TOKEN does not start a workflow run, so CI would never run
+          # on it. The commit is unsigned in exchange, since the action can
+          # only sign with GITHUB_TOKEN or a GitHub App token.
+          token: ${{ secrets.GEN_PR_TOKEN }}
+          branch: regenerate
+          delete-branch: true
+          title: Regenerate from the AWS service reference
+          commit-message: Regenerate from the AWS service reference
+          body: |
+            `make gen` and `make docs` against the current
+            [AWS service reference](https://servicereference.us-east-1.amazonaws.com).
+
+            Read `internal/arnspec/` first: it says which resource types AWS
+            added, removed or reshaped. Everything under `docs/` and
+            `examples/` follows from it.
