@@ -2,7 +2,7 @@
 //
 // Service: connect
 // Source: https://servicereference.us-east-1.amazonaws.com/v1/connect/connect.json
-// Functions: 44
+// Functions: 45
 //
 // Regenerate with: make gen
 
@@ -12,6 +12,7 @@ func init() {
 	register([]Spec{
 		{Name: "connect_agent_status", Service: "connect", Resource: "agent-status", Template: "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/agent-state/${AgentStatusId}"},
 		{Name: "connect_ai_agent", Service: "connect", Resource: "ai-agent", Template: "arn:${Partition}:wisdom:${Region}:${Account}:ai-agent/${AssistantId}/${AIAgentId}:${Version}"},
+		{Name: "connect_application", Service: "connect", Resource: "application", Template: "arn:${Partition}:app-integrations:${Region}:${Account}:application/${ApplicationId}"},
 		{Name: "connect_attached_file", Service: "connect", Resource: "attached-file", Template: "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/file/${FileId}"},
 		{Name: "connect_authentication_profile", Service: "connect", Resource: "authentication-profile", Template: "arn:${Partition}:connect:${Region}:${Account}:instance/${InstanceId}/authentication-profile/${AuthenticationProfileId}"},
 		{Name: "connect_aws_managed_view", Service: "connect", Resource: "aws-managed-view", Template: "arn:${Partition}:connect:${Region}:aws:view/${ViewId}"},
