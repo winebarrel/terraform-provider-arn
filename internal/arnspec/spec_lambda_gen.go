@@ -2,7 +2,7 @@
 //
 // Service: lambda
 // Source: https://servicereference.us-east-1.amazonaws.com/v1/lambda/lambda.json
-// Functions: 11
+// Functions: 14
 //
 // Regenerate with: make gen
 
@@ -21,5 +21,8 @@ func init() {
 		{Name: "lambda_layer_version", Service: "lambda", Resource: "layerVersion", Template: "arn:${Partition}:lambda:${Region}:${Account}:layer:${LayerName}:${LayerVersion}"},
 		{Name: "lambda_microvm_image", Service: "lambda", Resource: "microvmImage", Template: "arn:${Partition}:lambda:${Region}:${Account}:microvm-image:${MicrovmImageName}"},
 		{Name: "lambda_network_connector", Service: "lambda", Resource: "networkConnector", Template: "arn:${Partition}:lambda:${Region}:${Account}:network-connector:${NetworkConnectorId}"},
+		{Name: "lambda_web_function", Service: "lambda", Resource: "webFunction", Template: "arn:${Partition}:lambda:${Region}:${Account}:web-function/${FunctionName}"},
+		{Name: "lambda_web_function_endpoint", Service: "lambda", Resource: "webFunctionEndpoint", Template: "arn:${Partition}:lambda:${Region}:${Account}:web-function/${FunctionName}/endpoint/${EndpointName}"},
+		{Name: "lambda_web_function_revision", Service: "lambda", Resource: "webFunctionRevision", Template: "arn:${Partition}:lambda:${Region}:${Account}:web-function/${FunctionName}/revision/${RevisionId}"},
 	})
 }
